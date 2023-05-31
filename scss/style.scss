@@ -2,6 +2,9 @@ $ikeaBlue: #0058ab;
 $ikeaYellow: #fec202;
 $ikeaBl: #171717;
 $grey: #e9e9e9;
+$boxGrey: #f0f0f0;
+$carotBtn: #cccccc;
+$bgW: #f9f9f9;
 $fontColorW: #eee;
 $ikeaFont: 'IKEA Sans';
 $fontColorBl: #333;
@@ -9,6 +12,10 @@ $fontColorGr: #969696;
 
 $tablet: 999px;
 $mobile: 639px;
+
+body {
+	overflow-x: hidden;
+}
 
 //common
 @import 'common/header';

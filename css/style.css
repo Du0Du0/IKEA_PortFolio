@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 header {
   width: 25%;
   height: 90px;
@@ -127,6 +131,112 @@ a {
 }
 #visual .visualWrap .bg:nth-of-type(14) {
   grid-row: span 2;
+}
+
+#products {
+  width: 100vw;
+  height: 450px;
+  background: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 96px 10vw 96px;
+}
+#products .productsContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#products .productsContainer .productsTit {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  background: #f9f9f9;
+  font: bold 26px/7 "IKEA Sans";
+  color: #333;
+}
+#products .productsContainer .productsSub {
+  width: 100%;
+  height: 100%;
+  flex: 5;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#products .productsContainer .productsSub .slideWrap {
+  width: 100%;
+  height: 50%;
+  flex: 2.5;
+  display: flex;
+  gap: 20px;
+}
+#products .productsContainer .productsSub .slideWrap .slideItem {
+  width: 20%;
+  height: 100%;
+  background: #f0f0f0;
+}
+#products .productsContainer .productsSub .btnWrap {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  gap: 20px;
+}
+#products .productsContainer .productsSub .btnWrap .arrowBtns {
+  width: 18.5185185185%;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+#products .productsContainer .productsSub .btnWrap .arrowBtns .leftArrowBtn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background: #171717;
+  font: 24px "IKEA Sans";
+  color: #eee;
+}
+#products .productsContainer .productsSub .btnWrap .arrowBtns .rigtArrowBtn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background: #171717;
+  font: 24px/5px "IKEA Sans";
+  color: #eee;
+}
+#products .productsContainer .productsSub .btnWrap .circleBtns {
+  width: 18.5185185185%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0px 2vw 0px;
+  gap: 20px;
+}
+#products .productsContainer .productsSub .btnWrap .circleBtns button {
+  width: 25%;
+  height: 15px;
+  border-radius: 50%;
+  border: none;
+  background: #cccccc;
+}
+#products .productsContainer .productsSub .btnWrap .hyperBtns {
+  width: 18.5185185185%;
+  height: 100%;
+  font: 16px/1 "IKEA Sans";
+  color: #333;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

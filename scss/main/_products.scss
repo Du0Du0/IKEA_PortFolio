@@ -1,0 +1,117 @@
+#products {
+	width: 100vw;
+	height: 450px;
+	background: $bgW;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 96px 10vw 96px;
+
+	.productsContainer {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.productsTit {
+			width: 100%;
+			height: 100%;
+			flex: 1;
+			background: $bgW;
+			font: bold 26px/7 $ikeaFont;
+			color: $fontColorBl;
+		}
+
+		.productsSub {
+			width: 100%;
+			height: 100%;
+			flex: 5;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+
+			.slideWrap {
+				width: 100%;
+				height: calc(100% / 2);
+				flex: 2.5;
+				display: flex;
+				gap: 20px;
+
+				.slideItem {
+					width: calc(100% / 5);
+					height: 100%;
+					background: $boxGrey;
+				}
+			}
+
+			.btnWrap {
+				width: 100%;
+				height: calc(100% / 1);
+				flex: 1;
+				display: flex;
+				gap: 20px;
+
+				.arrowBtns {
+					width: calc(100% / 5.4);
+					height: 100%;
+					display: flex;
+					text-align: center;
+					justify-content: center;
+
+					.leftArrowBtn {
+						width: 100%;
+						height: 100%;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						flex: 1;
+						background: $ikeaBl;
+						font: 24px $ikeaFont;
+						color: $fontColorW;
+					}
+
+					.rigtArrowBtn {
+						width: 100%;
+						height: 100%;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						flex: 1;
+						background: $ikeaBl;
+						font: 24px/5px $ikeaFont;
+						color: $fontColorW;
+					}
+				}
+
+				.circleBtns {
+					width: calc(100% / 5.4);
+					height: 100%;
+					display: flex;
+					align-items: center;
+					padding: 0px 2vw 0px;
+					gap: 20px;
+
+					button {
+						width: calc(100% / 4);
+						height: 15px;
+						border-radius: 50%;
+						border: none;
+						background: $carotBtn;
+					}
+				}
+
+				.hyperBtns {
+					width: calc(100% / 5.4);
+					height: 100%;
+					font: 16px/1 $ikeaFont;
+					color: $fontColorBl;
+					text-align: center;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+			}
+		}
+	}
+}
