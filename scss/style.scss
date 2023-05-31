@@ -1,0 +1,29 @@
+$ikeaBlue: #0058ab;
+$ikeaYellow: #fec202;
+$ikeaBl: #171717;
+$grey: #e9e9e9;
+$fontColorW: #eee;
+$ikeaFont: 'IKEA Sans';
+$fontColorBl: #333;
+$fontColorGr: #969696;
+
+$tablet: 999px;
+$mobile: 639px;
+
+//common
+@import 'common/header';
+@import 'common/footer';
+@import 'common/layout';
+@import 'common/reset';
+
+//main
+@import 'main/visual';
+@import 'main/products';
+@import 'main/room';
+@import 'main/vids';
+@import 'main/news';
+@import 'main/notice';
+@import 'main/promotion';
+@import 'main/sns';
+@import 'main/showRoom';
+@import 'main/gallery';

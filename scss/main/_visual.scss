@@ -1,0 +1,107 @@
+#visual {
+	width: 100vw;
+	height: 100vh;
+	background-image: url(../img/bg4.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	.visualWrap {
+		width: 100%;
+		height: 100%;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+		grid-template-rows: 0.8fr 1.7fr 1.7fr 3fr;
+		backdrop-filter: brightness(0.6);
+
+		.bg {
+			height: 100%;
+			border: 1px solid rgba(#3b3b3b, 0.5);
+			color: yellow;
+
+			&:nth-of-type(2) {
+				grid-column: span 3;
+			}
+
+			&:nth-of-type(5) {
+				display: flex;
+				background: $ikeaBl;
+				color: $fontColorW;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				border: none;
+
+				.menu {
+					flex: 1.5;
+					font: 25px/1 $ikeaFont;
+					color: $grey;
+				}
+
+				.logo {
+					flex: 5;
+					font: bold 28px/1 $ikeaFont;
+					color: $grey;
+				}
+			}
+
+			&:nth-of-type(7) {
+				grid-column: span 3;
+			}
+
+			&:nth-of-type(8) {
+				padding: 20px 1vw 0px;
+				font: bold 16px/1 $ikeaFont;
+				color: $grey;
+				border: 1px solid $fontColorW;
+			}
+
+			&:nth-of-type(9) {
+				padding: 140px 1vw 0px;
+				font: bold 16px/1 $ikeaFont;
+				color: $grey;
+				text-align: start;
+			}
+
+			&:nth-of-type(11) {
+				grid-row: span 2;
+			}
+
+			&:nth-of-type(12) {
+				grid-column: span 4;
+				grid-row: span 4;
+				color: $grey;
+				padding: 60px 0vw 0px;
+
+				h1 {
+					width: 420px;
+					font: bold 30px/1 $ikeaFont;
+					text-align: justify;
+					word-break: break-all;
+				}
+
+				p {
+					font: bold 16px/1 $ikeaFont;
+					text-align: justify;
+					word-break: break-all;
+					margin-bottom: 20px;
+				}
+			}
+
+			// Main pointBox2 (yellow box)
+			&:nth-of-type(13) {
+				text-align: end;
+				padding: 130px 1vw 0px;
+				background: $ikeaYellow;
+				font: bold 16px/1 $ikeaFont;
+				color: $fontColorBl;
+				box-shadow: 0 0 50px 15px rgba($ikeaYellow, 0.45);
+				border: none;
+			}
+
+			&:nth-of-type(14) {
+				grid-row: span 2;
+			}
+		}
+	}
+}
