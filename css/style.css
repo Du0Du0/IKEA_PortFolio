@@ -341,17 +341,26 @@ a {
 }
 #vids .vidsContainer .vidsTextWrap {
   flex: 1;
-  background: red;
   display: flex;
   flex-wrap: wrap;
 }
 #vids .vidsContainer .vidsTextWrap .vidsTit {
   flex: 1.65;
-  background: yellow;
+  font: bold 26px/1 "IKEA Sans";
+  color: #333;
 }
 #vids .vidsContainer .vidsTextWrap .vidsSub {
   flex: 1;
-  background: orange;
+  font: 18px/1 "IKEA Sans";
+  color: #969696;
+  text-align: justify;
+  word-break: break-all;
+  letter-spacing: 0.1px;
+}
+#vids .vidsContainer .vidsTextWrap .vidsSub strong {
+  font: bold 18px/1 "IKEA Sans";
+  color: #333;
+  letter-spacing: 0.1px;
 }
 #vids .vidsContainer .vidsVideoWrap {
   flex: 2.5;
@@ -378,7 +387,7 @@ a {
 #vids .vidsContainer .vidsVideoWrap .video:nth-of-type(5) {
   flex: 1;
 }
-#vids .vidsContainer .vidsVideoWrap .video:hover {
+#vids .vidsContainer .vidsVideoWrap .video.on {
   flex: 5;
   background: black;
 }

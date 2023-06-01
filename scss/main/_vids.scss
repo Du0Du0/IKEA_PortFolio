@@ -15,18 +15,28 @@
 
 		.vidsTextWrap {
 			flex: 1;
-			background: red;
 			display: flex;
 			flex-wrap: wrap;
 
 			.vidsTit {
 				flex: 1.65;
-				background: yellow;
+				font: bold 26px/1 $ikeaFont;
+				color: $fontColorBl;
 			}
 
 			.vidsSub {
 				flex: 1;
-				background: orange;
+				font: 18px/1 $ikeaFont;
+				color: $fontColorGr;
+				text-align: justify;
+				word-break: break-all;
+				letter-spacing: 0.1px;
+
+				strong {
+					font: bold 18px/1 $ikeaFont;
+					color: $fontColorBl;
+					letter-spacing: 0.1px;
+				}
 			}
 		}
 
@@ -59,7 +69,7 @@
 				&:nth-of-type(5) {
 					flex: 1;
 				}
-				&:hover {
+				&.on {
 					flex: 5;
 					background: black;
 				}
