@@ -1,7 +1,6 @@
 #room {
 	width: 100vw;
 	height: 820px;
-	background: #313438;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -18,7 +17,6 @@
 
 		.roomBg {
 			flex: 7;
-			background: black;
 			background-image: url(../img/preview1.png);
 			background-position: center;
 			background-repeat: no-repeat;
@@ -41,6 +39,11 @@
 				color: $fontColorBl;
 				border: 1px solid rgba($ikeaBl, 0.5);
 				font: 16px/1 $ikeaFont;
+
+				&.on {
+					background: $ikeaBl;
+					color: $fontColorW;
+				}
 			}
 		}
 	}
