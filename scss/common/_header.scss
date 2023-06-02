@@ -58,6 +58,7 @@ header {
 		animation-fill-mode: backwards;
 		animation-delay: 0s;
 		display: none;
+		overflow: hidden;
 
 		.leftBarWrap {
 			width: 100%;
@@ -71,7 +72,7 @@ header {
 				padding: 0px 10vw 0px;
 
 				h2 {
-					font: bold 26px/1 $ikeaFont;
+					font: bold 32px/1 $ikeaFont;
 					color: $fontColorW;
 					animation: appear 0.5s linear;
 					animation-fill-mode: backwards;
@@ -95,6 +96,18 @@ header {
 				padding: 60px 0px 60px;
 				text-align: left;
 				padding: 60px 10vw 0px;
+
+				.circle {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 150px;
+					height: 150px;
+					border-radius: 50%;
+					background-color: $bgW;
+					transform: translate(-50%, -50%);
+					mix-blend-mode: difference;
+				}
 
 				.listLine {
 					width: 50px;
@@ -163,6 +176,26 @@ header {
 		font: 25px/1 $ikeaFont;
 		color: $grey;
 		cursor: pointer;
+
+		.fa-bars-staggered {
+			display: block;
+		}
+
+		.fa-xmark {
+			display: none;
+			animation: roateCloseBtn 0.5s ease-in;
+			animation-fill-mode: backwards;
+			animation-duration: 0.5s;
+
+			@keyframes roateCloseBtn {
+				from {
+					transform: rotate(0deg);
+				}
+				to {
+					transform: rotate(720deg);
+				}
+			}
+		}
 	}
 
 	.logo {
