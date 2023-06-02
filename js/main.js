@@ -1,3 +1,9 @@
+//header
+const headerSection = document.querySelector('header');
+const rightBar = headerSection.querySelector('.rightBar');
+const leftBar = headerSection.querySelector('.leftBar');
+const menuBtn = headerSection.querySelector('.menu');
+
 //room
 const roomSection = document.querySelector('#room');
 const roomBtns = roomSection.querySelectorAll('.roomTab');
@@ -9,6 +15,18 @@ const roomSub = roomSection.querySelector('.previewSub');
 //vids
 const vidsSection = document.querySelector('#vids');
 const videos = vidsSection.querySelectorAll('.video');
+
+//header
+//header menu 클릭하면 오른쪽 바 내려옴
+headerSection.addEventListener('click', (e) => {
+	const isRgtOn = rightBar.classList.contains('rgt');
+	const isLeftOn = leftBar.classList.contains('lft');
+
+	//header menu 클릭 시 사이드 바 나오는 기능
+	isRgtOn
+		? (rightBar.classList.remove('rgt'), leftBar.classList.remove('lft'))
+		: (rightBar.classList.add('rgt'), leftBar.classList.add('lft'));
+});
 
 //room
 const roomImgs = ['preview1.png', 'preview2.png', 'preview3.png', 'preview4.png'];
