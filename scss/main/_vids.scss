@@ -191,6 +191,19 @@
 				&.on {
 					flex: 5;
 					background: black;
+					animation: videoMove 0.5s linear;
+					animation-fill-mode: backwards;
+					animation-duration: 0.5s;
+
+					@keyframes videoMove {
+						from {
+							flex: 1;
+							writing-mode: vertical-rl;
+						}
+						to {
+							flex: 5;
+						}
+					}
 				}
 			}
 		}
