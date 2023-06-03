@@ -687,17 +687,34 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 96px 10vw 96px;
   background-image: url(../img/news10.png);
   background-position: center;
   background-size: cover;
   opacity: 0.9;
 }
+#news .grid {
+  display: grid;
+  grid-template-columns: 300px 50px 100px 50px 50px 50px 50px 50px;
+  overflow: hidden;
+  height: 100%;
+  border: 1px solid white;
+  z-index: -10;
+  position: relative;
+}
+#news .grid:nth-of-type(1) {
+  width: 100px;
+}
+#news .grid:nth-of-type(8) {
+  width: 100px;
+}
 #news .newsContainer {
+  padding: 96px 10vw 96px;
   width: 100%;
   height: 628px;
   display: flex;
   flex-wrap: wrap;
+  z-index: 10;
+  position: absolute;
 }
 #news .newsContainer .newsWrap {
   width: 33.3333333333%;
@@ -710,7 +727,8 @@ a {
 #news .newsContainer .newsWrap:nth-of-type(1) {
   flex: 1;
   font: 50px/1 "IKEA Sans";
-  color: white;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
   align-items: center;
 }
 #news .newsContainer .newsWrap:nth-of-type(2) {
@@ -736,22 +754,56 @@ a {
   border: 1.5px solid white;
   position: relative;
 }
-#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox p {
+#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(1) h4 {
   width: 100%;
   font: 18px/1 "IKEA Sans";
   color: white;
   position: relative;
   z-index: 1000;
 }
-#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox h2 {
+#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(1) h2 {
   width: 100%;
   font: bold 26px/1 "IKEA Sans";
   color: white;
   position: relative;
   z-index: 1000;
 }
-#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:hover {
-  background-image: url(../img/news10.png);
+#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(1) p {
+  font: bold 120px/1 "IKEA Sans";
+  position: relative;
+  z-index: 1000;
+  bottom: -8vw;
+  left: 7vw;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(1) p.on {
+  animation: fillingText 2s infinite;
+  animation-duration: 0;
+  animation-fill-mode: backwards;
+  display: none;
+}
+#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(1) p.on.on:after {
+  content: "I";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+@keyframes fillingText {
+  0% {
+    width: 0%;
+    transform: translateX(0);
+  }
+  100% {
+    width: 100%;
+    transform: translateX(80px);
+  }
+}
+#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(1):hover {
+  background-image: url(../img/news9.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -759,7 +811,7 @@ a {
   background-blend-mode: darken;
   border: none;
 }
-#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:hover::before {
+#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(1):hover::before {
   content: "";
   position: absolute;
   top: 0;
@@ -775,21 +827,55 @@ a {
   margin-top: 3vw;
   position: relative;
 }
-#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox p {
+#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(2) h4 {
   width: 100%;
   font: 18px/1 "IKEA Sans";
   color: white;
   position: relative;
   z-index: 1000;
 }
-#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox h2 {
+#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(2) h2 {
   width: 100%;
   font: bold 26px/1 "IKEA Sans";
   color: white;
   position: relative;
   z-index: 1000;
 }
-#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:hover {
+#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(2) p {
+  font: bold 120px/1 "IKEA Sans";
+  position: relative;
+  z-index: 1000;
+  bottom: -8vw;
+  left: 7vw;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(2) p.on {
+  animation: fillingText 2s infinite;
+  animation-duration: 0;
+  animation-fill-mode: backwards;
+  display: none;
+}
+#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(2) p.on.on:after {
+  content: "K";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+@keyframes fillingText {
+  0% {
+    width: 0%;
+    transform: translateX(0);
+  }
+  100% {
+    width: 100%;
+    transform: translateX(80px);
+  }
+}
+#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(2):hover {
   background-image: url(../img/news10.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -798,7 +884,7 @@ a {
   background-blend-mode: darken;
   border: none;
 }
-#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:hover::before {
+#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(2):hover::before {
   content: "";
   position: absolute;
   top: 0;
@@ -813,21 +899,55 @@ a {
   border: 1.5px solid white;
   position: relative;
 }
-#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox p {
+#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(3) h4 {
   width: 100%;
   font: 18px/1 "IKEA Sans";
   color: white;
   position: relative;
   z-index: 1000;
 }
-#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox h2 {
+#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(3) h2 {
   width: 100%;
   font: bold 26px/1 "IKEA Sans";
   color: white;
   position: relative;
   z-index: 1000;
 }
-#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:hover {
+#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(3) p {
+  font: bold 120px/1 "IKEA Sans";
+  position: relative;
+  z-index: 1000;
+  bottom: -8vw;
+  left: 7vw;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(3) p.on {
+  animation: fillingText 2s infinite;
+  animation-duration: 0;
+  animation-fill-mode: backwards;
+  display: none;
+}
+#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(3) p.on.on:after {
+  content: "E";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+@keyframes fillingText {
+  0% {
+    width: 0%;
+    transform: translateX(0);
+  }
+  100% {
+    width: 100%;
+    transform: translateX(80px);
+  }
+}
+#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(3):hover {
   background-image: url(../img/news10.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -836,7 +956,7 @@ a {
   background-blend-mode: darken;
   border: none;
 }
-#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:hover::before {
+#news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(3):hover::before {
   content: "";
   position: absolute;
   top: 0;
@@ -857,7 +977,7 @@ a {
   border-radius: 50%;
   background: transparent;
   border: 1px solid white;
-  font: 25px/1 "IKEA Sans";
+  font: 18px/1 "IKEA Sans";
   color: white;
 }
 #news .newsContainer .newsWrap:nth-of-type(3) {
@@ -865,7 +985,8 @@ a {
   flex: 1;
   align-items: center;
   font: 50px/1 "IKEA Sans";
-  color: white;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
 }
 
 #notice {
