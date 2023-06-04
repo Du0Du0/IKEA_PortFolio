@@ -1,6 +1,6 @@
 #products {
 	width: 100vw;
-	height: 450px;
+	height: 500px;
 	background: $bgW;
 	display: flex;
 	align-items: center;
@@ -19,14 +19,14 @@
 			height: 100%;
 			flex: 1;
 			background: $bgW;
-			font: bold 26px/7 $ikeaFont;
+			font: 70px/180px $ikeaFont;
 			color: $fontColorBl;
 		}
 
 		.productsSub {
 			width: 100%;
 			height: 100%;
-			flex: 5;
+			flex: 3;
 			display: flex;
 			flex-wrap: wrap;
 			flex-direction: column;
@@ -42,23 +42,142 @@
 					width: calc(100% / 5);
 					height: 100%;
 					background: $boxGrey;
+					flex-direction: column;
+					display: flex;
+
+					// products slide box1
+					&:nth-of-type(1) {
+						display: flex;
+						justify-content: center;
+						text-align: center;
+
+						.productsImg {
+							flex: 3;
+							background-image: url(../img/products1.png);
+							background-position: center;
+							background-repeat: no-repeat;
+							background-size: contain;
+							object-fit: cover;
+						}
+						.productsName {
+							flex: 1;
+							text-align: center;
+							font: 18px/25px $ikeaFont;
+							color: $fontColorBl;
+							margin-top: auto;
+						}
+					}
+
+					// products slide box2
+					&:nth-of-type(2) {
+						display: flex;
+						justify-content: center;
+						text-align: center;
+
+						.productsImg {
+							flex: 3;
+							background-image: url(../img/products2.png);
+							background-position: center;
+							background-repeat: no-repeat;
+							background-size: contain;
+							object-fit: cover;
+						}
+						.productsName {
+							flex: 1;
+							text-align: center;
+							font: 18px/25px $ikeaFont;
+							color: $fontColorBl;
+							margin-top: auto;
+						}
+					}
+
+					// products slide box3
+					&:nth-of-type(3) {
+						display: flex;
+						justify-content: center;
+						text-align: center;
+
+						.productsImg {
+							flex: 3;
+							background-image: url(../img/products3.png);
+							background-position: center;
+							background-repeat: no-repeat;
+							background-size: contain;
+							object-fit: cover;
+						}
+						.productsName {
+							flex: 1;
+							text-align: center;
+							font: 18px/25px $ikeaFont;
+							color: $fontColorBl;
+							margin-top: auto;
+						}
+					}
+
+					// products slide box4
+					&:nth-of-type(4) {
+						display: flex;
+						justify-content: center;
+						text-align: center;
+
+						.productsImg {
+							flex: 3;
+							background-image: url(../img/products4.png);
+							background-position: center;
+							background-repeat: no-repeat;
+							background-size: contain;
+							object-fit: cover;
+						}
+						.productsName {
+							flex: 1;
+							text-align: center;
+							font: 18px/25px $ikeaFont;
+							color: $fontColorBl;
+							margin-top: auto;
+						}
+					}
+
+					// products slide box5
+					&:nth-of-type(5) {
+						display: flex;
+						justify-content: center;
+						text-align: center;
+
+						.productsImg {
+							flex: 3;
+							background-image: url(../img/products5.png);
+							background-position: center;
+							background-repeat: no-repeat;
+							background-size: contain;
+							object-fit: cover;
+						}
+						.productsName {
+							flex: 1;
+							text-align: center;
+							font: 18px/25px $ikeaFont;
+							color: $fontColorBl;
+							margin-top: auto;
+						}
+					}
 				}
 			}
 
+			// products 하단 버튼 메뉴들
 			.btnWrap {
 				width: 100%;
 				height: calc(100% / 1);
-				flex: 1;
+				flex: 1.2;
 				display: flex;
 				gap: 20px;
 
 				.arrowBtns {
 					width: calc(100% / 5.4);
-					height: 100%;
+					height: 90%;
 					display: flex;
 					text-align: center;
 					justify-content: center;
 
+					// products 왼쪽 화살표
 					.leftArrowBtn {
 						width: 100%;
 						height: 100%;
@@ -67,10 +186,12 @@
 						align-items: center;
 						flex: 1;
 						background: $ikeaBl;
-						font: 24px $ikeaFont;
+						font: 26px $ikeaFont;
 						color: $fontColorW;
+						cursor: pointer;
 					}
 
+					//  products 오른쪽 화살표
 					.rigtArrowBtn {
 						width: 100%;
 						height: 100%;
@@ -79,11 +200,13 @@
 						align-items: center;
 						flex: 1;
 						background: $ikeaBl;
-						font: 24px/5px $ikeaFont;
+						font: 26px/5px $ikeaFont;
 						color: $fontColorW;
+						cursor: pointer;
 					}
 				}
 
+				// products 캐럿셀 원형 버튼
 				.circleBtns {
 					width: calc(100% / 5.4);
 					height: 100%;
@@ -93,23 +216,30 @@
 					gap: 20px;
 
 					button {
-						width: calc(100% / 4);
+						width: 15px;
 						height: 15px;
 						border-radius: 50%;
 						border: none;
 						background: $carotBtn;
+						cursor: pointer;
+
+						&.on {
+							background: $ikeaBl;
+						}
 					}
 				}
 
+				// products 모든 카테고리 바로가기
 				.hyperBtns {
 					width: calc(100% / 5.4);
 					height: 100%;
-					font: 16px/1 $ikeaFont;
+					font: 18px/1 $ikeaFont;
 					color: $fontColorBl;
 					text-align: center;
 					display: flex;
 					justify-content: center;
 					align-items: center;
+					cursor: pointer;
 				}
 			}
 		}

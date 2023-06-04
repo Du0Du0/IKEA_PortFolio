@@ -1,6 +1,6 @@
 header {
-	width: 24.1%;
-	height: 90px;
+	width: 24.4%;
+	height: 108px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -12,8 +12,8 @@ header {
 	z-index: 999;
 
 	.rightBar {
-		width: 24.1%;
-		margin-top: 90px;
+		width: 24.4%;
+		margin-top: 108px;
 		height: 100vh;
 		background: $black;
 		position: fixed;
@@ -23,7 +23,7 @@ header {
 		display: none;
 
 		&.rgt {
-			width: 24.1%;
+			width: 24.4%;
 			background: $black;
 			position: fixed;
 			top: 0;
@@ -46,7 +46,7 @@ header {
 
 	.leftBar {
 		height: 100%;
-		width: 50.5%;
+		width: 50.4%;
 		background: $black;
 		position: fixed;
 		display: flex;
@@ -64,7 +64,7 @@ header {
 			width: 100%;
 
 			.leftBarTit {
-				height: 56px;
+				height: 20px;
 				text-align: left;
 				display: flex;
 				justify-content: end;
@@ -72,8 +72,8 @@ header {
 				padding: 0px 10vw 0px;
 
 				h2 {
-					font: bold 32px/1 $ikeaFont;
-					color: $fontColorW;
+					font: 70px/1 $ikeaFont;
+					color: $grey;
 					animation: appear 0.5s linear;
 					animation-fill-mode: backwards;
 					animation-delay: 0.5s;
@@ -110,7 +110,7 @@ header {
 				}
 
 				.listLine {
-					width: 50px;
+					width: 100px;
 					height: 1px;
 					background: $grey;
 					margin-bottom: 30px;
@@ -130,7 +130,7 @@ header {
 				}
 
 				li {
-					font: bold 16px/25px $ikeaFont;
+					font: 24px/35px $ikeaFont;
 					color: $fontColorGr;
 					animation: appear 0.5s linear;
 					animation-fill-mode: backwards;
@@ -173,7 +173,7 @@ header {
 
 	.menu {
 		flex: 1.5;
-		font: 25px/1 $ikeaFont;
+		font: 35px/1 $ikeaFont;
 		color: $grey;
 		cursor: pointer;
 
@@ -203,7 +203,7 @@ header {
 		cursor: pointer;
 
 		p {
-			font: bold 28px/1 $ikeaFont;
+			font: 35px/1 $ikeaFont;
 			color: $grey;
 		}
 	}

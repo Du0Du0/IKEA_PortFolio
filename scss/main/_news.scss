@@ -1,22 +1,32 @@
 #news {
 	width: 100vw;
-	height: 840px;
+	height: 850px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 	background-image: url(../img/news10.png);
 	background-position: center;
 	background-size: cover;
 	opacity: 0.9;
+	position: relative;
+
+	span {
+		position: absolute;
+		left: 1vw;
+		bottom: 3vw;
+		font: 150px/1 'arial';
+		color: transparent;
+		-webkit-text-stroke: 1px white;
+		z-index: 1;
+	}
 
 	.grid {
 		display: grid;
 		grid-template-columns: 300px 50px 100px 50px 50px 50px 50px 50px;
 		overflow: hidden;
 		height: 100%;
-		border: 1px solid white;
-		z-index: -10;
+		border: 1px solid rgba($grey, 0.5);
+		z-index: 0;
 		position: relative;
 
 		&:nth-of-type(1) {
@@ -29,7 +39,7 @@
 	}
 
 	.newsContainer {
-		padding: 96px 10vw 96px;
+		padding: 0px 1vw 0px;
 		width: 100%;
 		height: 628px;
 		display: flex;
@@ -47,7 +57,7 @@
 
 			//news 슬라이드 왼쪽 화살표
 			&:nth-of-type(1) {
-				flex: 1;
+				flex: 1.8;
 				font: 50px/1 $ikeaFont;
 				color: transparent;
 				-webkit-text-stroke: 1px white;
@@ -76,8 +86,8 @@
 
 						//news 슬라이드 1 start
 						&:nth-of-type(1) {
-							width: 315px;
-							height: 418px;
+							width: 350px;
+							height: 465px;
 							border: 1.5px solid white;
 							position: relative;
 
@@ -159,8 +169,8 @@
 
 						//news 슬라이드 2 start
 						&:nth-of-type(2) {
-							width: 315px;
-							height: 418px;
+							width: 350px;
+							height: 465px;
 							border: 1.5px solid white;
 							margin-top: 3vw;
 							position: relative;
@@ -243,8 +253,8 @@
 
 						//news 슬라이드 3 start
 						&:nth-of-type(3) {
-							width: 315px;
-							height: 418px;
+							width: 350px;
+							height: 465px;
 							border: 1.5px solid white;
 							position: relative;
 
@@ -304,7 +314,7 @@
 							}
 
 							&:hover {
-								background-image: url(../img/news10.png);
+								background-image: url(../img/news7.png);
 								background-position: center;
 								background-repeat: no-repeat;
 								background-size: cover;
@@ -349,7 +359,7 @@
 			//news 슬라이드 오른쪽 화살표
 			&:nth-of-type(3) {
 				height: 628px;
-				flex: 1;
+				flex: 1.8;
 				align-items: center;
 				font: 50px/1 $ikeaFont;
 				color: transparent;

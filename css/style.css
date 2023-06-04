@@ -4,8 +4,8 @@ body {
 }
 
 header {
-  width: 24.1%;
-  height: 90px;
+  width: 24.4%;
+  height: 108px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,8 +17,8 @@ header {
   z-index: 999;
 }
 header .rightBar {
-  width: 24.1%;
-  margin-top: 90px;
+  width: 24.4%;
+  margin-top: 108px;
   height: 100vh;
   background: #010001;
   position: fixed;
@@ -28,7 +28,7 @@ header .rightBar {
   display: none;
 }
 header .rightBar.rgt {
-  width: 24.1%;
+  width: 24.4%;
   background: #010001;
   position: fixed;
   top: 0;
@@ -48,7 +48,7 @@ header .rightBar.rgt {
 }
 header .leftBar {
   height: 100%;
-  width: 50.5%;
+  width: 50.4%;
   background: #010001;
   position: fixed;
   display: flex;
@@ -66,7 +66,7 @@ header .leftBar .leftBarWrap {
   width: 100%;
 }
 header .leftBar .leftBarWrap .leftBarTit {
-  height: 56px;
+  height: 20px;
   text-align: left;
   display: flex;
   justify-content: end;
@@ -74,8 +74,8 @@ header .leftBar .leftBarWrap .leftBarTit {
   padding: 0px 10vw 0px;
 }
 header .leftBar .leftBarWrap .leftBarTit h2 {
-  font: bold 32px/1 "IKEA Sans";
-  color: #eee;
+  font: 70px/1 "IKEA Sans";
+  color: #e9e9e9;
   animation: appear 0.5s linear;
   animation-fill-mode: backwards;
   animation-delay: 0.5s;
@@ -108,7 +108,7 @@ header .leftBar .leftBarWrap .leftBarList .circle {
   mix-blend-mode: difference;
 }
 header .leftBar .leftBarWrap .leftBarList .listLine {
-  width: 50px;
+  width: 100px;
   height: 1px;
   background: #e9e9e9;
   margin-bottom: 30px;
@@ -126,7 +126,7 @@ header .leftBar .leftBarWrap .leftBarList .listLine {
   }
 }
 header .leftBar .leftBarWrap .leftBarList li {
-  font: bold 16px/25px "IKEA Sans";
+  font: 24px/35px "IKEA Sans";
   color: #969696;
   animation: appear 0.5s linear;
   animation-fill-mode: backwards;
@@ -162,7 +162,7 @@ header .leftBar.lft {
 }
 header .menu {
   flex: 1.5;
-  font: 25px/1 "IKEA Sans";
+  font: 35px/1 "IKEA Sans";
   color: #e9e9e9;
   cursor: pointer;
 }
@@ -188,8 +188,14 @@ header .logo {
   cursor: pointer;
 }
 header .logo p {
-  font: bold 28px/1 "IKEA Sans";
+  font: 35px/1 "IKEA Sans";
   color: #e9e9e9;
+}
+
+footer {
+  width: 100vw;
+  height: 422px;
+  background: #171717;
 }
 
 * {
@@ -211,7 +217,7 @@ a {
 #visual {
   width: 100vw;
   height: 100vh;
-  background-image: url(../img/bg4.png);
+  background-image: url(../img/visual1.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -233,35 +239,20 @@ a {
   grid-column: span 3;
 }
 #visual .visualWrap .bg:nth-of-type(5) {
-  display: flex;
-  background: #171717;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border: none;
-}
-#visual .visualWrap .bg:nth-of-type(5) .menu {
-  flex: 1.5;
-  font: 25px/1 "IKEA Sans";
-  color: #e9e9e9;
-}
-#visual .visualWrap .bg:nth-of-type(5) .logo {
-  flex: 5;
-  font: bold 28px/1 "IKEA Sans";
-  color: #e9e9e9;
+  background: red;
 }
 #visual .visualWrap .bg:nth-of-type(7) {
   grid-column: span 3;
 }
 #visual .visualWrap .bg:nth-of-type(8) {
   padding: 20px 1vw 0px;
-  font: bold 16px/1 "IKEA Sans";
+  font: 18px/1 "IKEA Sans";
   color: #e9e9e9;
   border: 1px solid #eee;
 }
 #visual .visualWrap .bg:nth-of-type(9) {
-  padding: 140px 1vw 0px;
-  font: bold 16px/1 "IKEA Sans";
+  padding: 170px 1vw 0px;
+  font: 18px/1 "IKEA Sans";
   color: #e9e9e9;
   text-align: start;
 }
@@ -271,26 +262,27 @@ a {
 #visual .visualWrap .bg:nth-of-type(12) {
   grid-column: span 4;
   grid-row: span 4;
-  color: #e9e9e9;
   padding: 60px 0vw 0px;
 }
 #visual .visualWrap .bg:nth-of-type(12) h1 {
   width: 420px;
-  font: bold 30px/1 "IKEA Sans";
+  font: 30px/1 "IKEA Sans";
+  color: #e9e9e9;
   text-align: justify;
   word-break: break-all;
 }
 #visual .visualWrap .bg:nth-of-type(12) p {
-  font: bold 16px/1 "IKEA Sans";
+  font: 18px/1 "IKEA Sans";
+  color: #969696;
   text-align: justify;
   word-break: break-all;
   margin-bottom: 20px;
 }
 #visual .visualWrap .bg:nth-of-type(13) {
   text-align: end;
-  padding: 130px 1vw 0px;
+  padding: 170px 1vw 0px;
   background: #fec202;
-  font: bold 16px/1 "IKEA Sans";
+  font: 18px/1 "IKEA Sans";
   color: #333;
   box-shadow: 0 0 50px 15px rgba(254, 194, 2, 0.45);
   border: none;
@@ -301,7 +293,7 @@ a {
 
 #products {
   width: 100vw;
-  height: 450px;
+  height: 500px;
   background: #f9f9f9;
   display: flex;
   align-items: center;
@@ -320,13 +312,13 @@ a {
   height: 100%;
   flex: 1;
   background: #f9f9f9;
-  font: bold 26px/7 "IKEA Sans";
+  font: 70px/180px "IKEA Sans";
   color: #333;
 }
 #products .productsContainer .productsSub {
   width: 100%;
   height: 100%;
-  flex: 5;
+  flex: 3;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -342,17 +334,119 @@ a {
   width: 20%;
   height: 100%;
   background: #f0f0f0;
+  flex-direction: column;
+  display: flex;
+}
+#products .productsContainer .productsSub .slideWrap .slideItem:nth-of-type(1) {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#products .productsContainer .productsSub .slideWrap .slideItem:nth-of-type(1) .productsImg {
+  flex: 3;
+  background-image: url(../img/products1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-fit: cover;
+}
+#products .productsContainer .productsSub .slideWrap .slideItem:nth-of-type(1) .productsName {
+  flex: 1;
+  text-align: center;
+  font: 18px/25px "IKEA Sans";
+  color: #333;
+  margin-top: auto;
+}
+#products .productsContainer .productsSub .slideWrap .slideItem:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#products .productsContainer .productsSub .slideWrap .slideItem:nth-of-type(2) .productsImg {
+  flex: 3;
+  background-image: url(../img/products2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-fit: cover;
+}
+#products .productsContainer .productsSub .slideWrap .slideItem:nth-of-type(2) .productsName {
+  flex: 1;
+  text-align: center;
+  font: 18px/25px "IKEA Sans";
+  color: #333;
+  margin-top: auto;
+}
+#products .productsContainer .productsSub .slideWrap .slideItem:nth-of-type(3) {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#products .productsContainer .productsSub .slideWrap .slideItem:nth-of-type(3) .productsImg {
+  flex: 3;
+  background-image: url(../img/products3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-fit: cover;
+}
+#products .productsContainer .productsSub .slideWrap .slideItem:nth-of-type(3) .productsName {
+  flex: 1;
+  text-align: center;
+  font: 18px/25px "IKEA Sans";
+  color: #333;
+  margin-top: auto;
+}
+#products .productsContainer .productsSub .slideWrap .slideItem:nth-of-type(4) {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#products .productsContainer .productsSub .slideWrap .slideItem:nth-of-type(4) .productsImg {
+  flex: 3;
+  background-image: url(../img/products4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-fit: cover;
+}
+#products .productsContainer .productsSub .slideWrap .slideItem:nth-of-type(4) .productsName {
+  flex: 1;
+  text-align: center;
+  font: 18px/25px "IKEA Sans";
+  color: #333;
+  margin-top: auto;
+}
+#products .productsContainer .productsSub .slideWrap .slideItem:nth-of-type(5) {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#products .productsContainer .productsSub .slideWrap .slideItem:nth-of-type(5) .productsImg {
+  flex: 3;
+  background-image: url(../img/products5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-fit: cover;
+}
+#products .productsContainer .productsSub .slideWrap .slideItem:nth-of-type(5) .productsName {
+  flex: 1;
+  text-align: center;
+  font: 18px/25px "IKEA Sans";
+  color: #333;
+  margin-top: auto;
 }
 #products .productsContainer .productsSub .btnWrap {
   width: 100%;
   height: 100%;
-  flex: 1;
+  flex: 1.2;
   display: flex;
   gap: 20px;
 }
 #products .productsContainer .productsSub .btnWrap .arrowBtns {
   width: 18.5185185185%;
-  height: 100%;
+  height: 90%;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -365,8 +459,9 @@ a {
   align-items: center;
   flex: 1;
   background: #171717;
-  font: 24px "IKEA Sans";
+  font: 26px "IKEA Sans";
   color: #eee;
+  cursor: pointer;
 }
 #products .productsContainer .productsSub .btnWrap .arrowBtns .rigtArrowBtn {
   width: 100%;
@@ -376,8 +471,9 @@ a {
   align-items: center;
   flex: 1;
   background: #171717;
-  font: 24px/5px "IKEA Sans";
+  font: 26px/5px "IKEA Sans";
   color: #eee;
+  cursor: pointer;
 }
 #products .productsContainer .productsSub .btnWrap .circleBtns {
   width: 18.5185185185%;
@@ -388,26 +484,31 @@ a {
   gap: 20px;
 }
 #products .productsContainer .productsSub .btnWrap .circleBtns button {
-  width: 25%;
+  width: 15px;
   height: 15px;
   border-radius: 50%;
   border: none;
   background: #cccccc;
+  cursor: pointer;
+}
+#products .productsContainer .productsSub .btnWrap .circleBtns button.on {
+  background: #171717;
 }
 #products .productsContainer .productsSub .btnWrap .hyperBtns {
   width: 18.5185185185%;
   height: 100%;
-  font: 16px/1 "IKEA Sans";
+  font: 18px/1 "IKEA Sans";
   color: #333;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 #room {
   width: 100vw;
-  height: 820px;
+  height: 999px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -416,7 +517,7 @@ a {
 }
 #room .roomContainer {
   width: 100%;
-  height: 630px;
+  height: 780px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -435,16 +536,18 @@ a {
   display: flex;
   gap: 20px;
   align-items: center;
+  padding-left: 3vw;
 }
 #room .roomContainer .roomBtns button {
-  width: 125px;
-  height: 36px;
-  border-radius: 50px;
+  width: 140px;
+  height: 40px;
   border: none;
-  background: #e9e9e9;
+  background: transparent;
   color: #333;
+  border-radius: 50px;
   border: 1px solid rgba(23, 23, 23, 0.5);
-  font: 16px/1 "IKEA Sans";
+  font: 15px/1 "IKEA Sans";
+  letter-spacing: 0.5px;
 }
 #room .roomContainer .roomBtns button.on {
   background: #171717;
@@ -460,10 +563,10 @@ a {
   justify-content: center;
   align-items: center;
   margin-right: 50px;
-  right: 200px;
-  bottom: 105px;
+  right: 250px;
+  bottom: 145px;
   padding: 30px 0 30px;
-  border: 1px solid rgba(23, 23, 23, 0.5);
+  border: 1px solid rgba(23, 23, 23, 0.1);
 }
 #room .previewContainer .previewBg {
   width: 290px;
@@ -480,13 +583,13 @@ a {
   padding: 20px 0 0;
 }
 #room .previewContainer .previewTxt h3 {
-  font: bold 26px/1 "IKEA Sans";
+  font: 30px/1 "IKEA Sans";
   color: #333;
   margin-bottom: 20px;
 }
 #room .previewContainer .previewTxt p {
   font: 18px/1 "IKEA Sans";
-  color: #333;
+  color: rgba(16, 16, 16, 0.6);
   text-align: justify;
   word-break: break-all;
   letter-spacing: 0.1px;
@@ -494,9 +597,9 @@ a {
 
 #vids {
   width: 100vw;
-  height: 700px;
+  height: 900px;
   background: #f9f9f9;
-  padding: 96px 10vw 96px;
+  padding: 96px 10vw 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -511,22 +614,23 @@ a {
   flex: 1;
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 1vw;
 }
 #vids .vidsContainer .vidsTextWrap .vidsTit {
   flex: 1.65;
-  font: bold 26px/1 "IKEA Sans";
+  font: 70px/1 "IKEA Sans";
   color: #333;
 }
 #vids .vidsContainer .vidsTextWrap .vidsSub {
   flex: 1;
-  font: 18px/1 "IKEA Sans";
-  color: #969696;
+  font: 26px/1 "IKEA Sans";
+  color: rgba(16, 16, 16, 0.6);
   text-align: justify;
   word-break: break-all;
   letter-spacing: 0.1px;
 }
 #vids .vidsContainer .vidsTextWrap .vidsSub strong {
-  font: bold 18px/1 "IKEA Sans";
+  font: 26px/1 "IKEA Sans";
   color: #333;
   letter-spacing: 0.1px;
 }
@@ -552,7 +656,7 @@ a {
   flex: 1;
   width: 5vw;
   height: 20px;
-  font: bold 23px/4 "IKEA Sans";
+  font: bold 23px/4.5 "IKEA Sans";
   color: #333;
   border-bottom: 2px solid #e9e9e9;
 }
@@ -577,7 +681,7 @@ a {
   flex: 1;
   width: 5vw;
   height: 20px;
-  font: bold 23px/4 "IKEA Sans";
+  font: bold 23px/4.5 "IKEA Sans";
   color: #333;
   border-bottom: 2px solid #e9e9e9;
 }
@@ -602,7 +706,7 @@ a {
   flex: 1;
   width: 5vw;
   height: 20px;
-  font: bold 23px/4 "IKEA Sans";
+  font: bold 23px/4.5 "IKEA Sans";
   color: #333;
   border-bottom: 2px solid #e9e9e9;
 }
@@ -627,7 +731,7 @@ a {
   flex: 1;
   width: 5vw;
   height: 20px;
-  font: bold 23px/4 "IKEA Sans";
+  font: bold 23px/4.5 "IKEA Sans";
   color: #333;
   border-bottom: 2px solid #e9e9e9;
 }
@@ -652,7 +756,7 @@ a {
   flex: 1;
   width: 5vw;
   height: 20px;
-  font: bold 23px/4 "IKEA Sans";
+  font: bold 23px/4.5 "IKEA Sans";
   color: #333;
   border-bottom: 2px solid #e9e9e9;
 }
@@ -670,6 +774,32 @@ a {
   animation: videoMove 0.5s linear;
   animation-fill-mode: backwards;
   animation-duration: 0.5s;
+  position: relative;
+}
+#vids .vidsContainer .vidsVideoWrap .video.on.on::after {
+  content: "Discover Now";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 209px;
+  height: 71px;
+  background: #623fe4;
+  font: 18px/71px "IKEA Sans";
+  color: #eee;
+}
+#vids .vidsContainer .vidsVideoWrap .video.on.on::before {
+  content: "02 \a Branding \a Design";
+  white-space: pre;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  font: 30px/1.3 "IKEA Sans";
+  color: #e9e9e9;
+  padding: 35px 3vw;
 }
 @keyframes videoMove {
   from {
@@ -683,7 +813,7 @@ a {
 
 #news {
   width: 100vw;
-  height: 840px;
+  height: 850px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -691,14 +821,24 @@ a {
   background-position: center;
   background-size: cover;
   opacity: 0.9;
+  position: relative;
+}
+#news span {
+  position: absolute;
+  left: 1vw;
+  bottom: 3vw;
+  font: 150px/1 "arial";
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  z-index: 1;
 }
 #news .grid {
   display: grid;
   grid-template-columns: 300px 50px 100px 50px 50px 50px 50px 50px;
   overflow: hidden;
   height: 100%;
-  border: 1px solid white;
-  z-index: -10;
+  border: 1px solid rgba(233, 233, 233, 0.5);
+  z-index: 0;
   position: relative;
 }
 #news .grid:nth-of-type(1) {
@@ -708,7 +848,7 @@ a {
   width: 100px;
 }
 #news .newsContainer {
-  padding: 96px 10vw 96px;
+  padding: 0px 1vw 0px;
   width: 100%;
   height: 628px;
   display: flex;
@@ -725,7 +865,7 @@ a {
   z-index: 2;
 }
 #news .newsContainer .newsWrap:nth-of-type(1) {
-  flex: 1;
+  flex: 1.8;
   font: 50px/1 "IKEA Sans";
   color: transparent;
   -webkit-text-stroke: 1px white;
@@ -749,8 +889,8 @@ a {
   padding: 40px 3vw;
 }
 #news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(1) {
-  width: 315px;
-  height: 418px;
+  width: 350px;
+  height: 465px;
   border: 1.5px solid white;
   position: relative;
 }
@@ -821,8 +961,8 @@ a {
   background: rgba(0, 0, 0, 0.2); /* 배경에 덧씌울 어두운 색상 */
 }
 #news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(2) {
-  width: 315px;
-  height: 418px;
+  width: 350px;
+  height: 465px;
   border: 1.5px solid white;
   margin-top: 3vw;
   position: relative;
@@ -894,8 +1034,8 @@ a {
   background: rgba(0, 0, 0, 0.2); /* 배경에 덧씌울 어두운 색상 */
 }
 #news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(3) {
-  width: 315px;
-  height: 418px;
+  width: 350px;
+  height: 465px;
   border: 1.5px solid white;
   position: relative;
 }
@@ -948,7 +1088,7 @@ a {
   }
 }
 #news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(3):hover {
-  background-image: url(../img/news10.png);
+  background-image: url(../img/news7.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -982,7 +1122,7 @@ a {
 }
 #news .newsContainer .newsWrap:nth-of-type(3) {
   height: 628px;
-  flex: 1;
+  flex: 1.8;
   align-items: center;
   font: 50px/1 "IKEA Sans";
   color: transparent;
@@ -991,121 +1131,369 @@ a {
 
 #notice {
   width: 100vw;
-  height: 787px;
+  height: 860px;
   display: flex;
-  padding: 96px 10vw 96px;
+  background: white;
+}
+#notice .grid {
+  display: grid;
+  grid-template-columns: 300px 50px 100px 50px 50px 50px 50px 300px;
+  overflow: hidden;
+  width: 80%;
+  height: 860px;
+  border: 1px solid rgba(233, 233, 233, 0.7);
+  z-index: 0;
+  position: relative;
+}
+#notice .grid:nth-of-type(1) {
+  width: 200px;
+}
+#notice .grid:nth-of-type(8) {
+  width: 200px;
+}
+#notice .marquee {
+  width: 100vw;
+  height: 120px;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 38.5vw;
+  z-index: 0;
+}
+#notice .marquee span {
+  width: 100vw;
+  height: 120px;
+  font: 140px/1 "IKEA Sans";
+  color: white;
+  background: -webkit-linear-gradient(left, #32aaff 0%, #4edd8e 27%, #fadb29 64%, #f07569 100%);
+  -webkit-text-stroke: 3px rgba(255, 255, 255, 0.01);
+  -webkit-background-clip: text;
+  animation: marquee 20s linear infinite;
+  white-space: nowrap;
+  will-change: transform;
+  pointer-events: none;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-135%);
+  }
 }
 #notice .noticeContainer {
-  width: 100%;
-  height: 520px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 0px 5vw 0px;
-}
-#notice .noticeContainer .noticeWrap {
-  width: 99vw;
-  height: 100%;
+  padding: 96px 10vw 150px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
 }
-#notice .noticeContainer .noticeWrap .noticebox {
-  width: 33.3333333333%;
-  height: 777px;
-  background: gray;
-}
-#notice .noticeContainer .noticeWrap .noticebox:nth-of-type(1) {
-  height: 580px;
-  position: relative;
-  top: -10vw;
-  background: rgb(153, 35, 55);
+#notice .noticeContainer .leftWrap {
+  flex: 1;
   display: flex;
   flex-direction: column;
 }
-#notice .noticeContainer .noticeWrap .noticebox:nth-of-type(1) .box1Bg {
-  width: 50%;
-  width: 100%;
-  height: 100%;
-  flex: 2;
-  background: rgb(175, 194, 29);
-  background-image: url("../img/bg6.png");
-}
-#notice .noticeContainer .noticeWrap .noticebox:nth-of-type(1) .box1Bg .box1BgTit {
-  width: 100%;
-  height: 100%;
+#notice .noticeContainer .leftWrap .titWrap {
+  flex: 2.8;
+  align-items: center;
   position: relative;
-  backdrop-filter: brightness(0.6);
-  padding: 35px 3vw 20px;
 }
-#notice .noticeContainer .noticeWrap .noticebox:nth-of-type(1) .box1Bg .box1BgTit p {
-  font: 18px/1 "IKEA Sans";
-  color: #eee;
-  margin-bottom: 20px;
+#notice .noticeContainer .leftWrap .titWrap h2 {
+  position: relative;
+  font-size: 70px;
+  top: 6vw;
 }
-#notice .noticeContainer .noticeWrap .noticebox:nth-of-type(1) .box1Bg .box1BgTit h3 {
-  width: 13.5vw;
-  font: 35px/1 "IKEA Sans";
-  color: #eee;
-  padding-bottom: 1vw;
-  border-bottom: 2px solid #e9e9e9;
-}
-#notice .noticeContainer .noticeWrap .noticebox:nth-of-type(1) .box1Txt {
-  width: 100%;
-  height: 100%;
-  flex: 1;
-  background: black;
-  padding: 35px 3vw 20px;
-  z-index: 3;
-}
-#notice .noticeContainer .noticeWrap .noticebox:nth-of-type(1) .box1Txt p {
-  font: 18px/1 "IKEA Sans";
-  color: #eee;
-  margin-bottom: 35px;
+#notice .noticeContainer .leftWrap .titWrap P {
+  width: 480px;
+  position: relative;
+  font-size: 18px;
+  top: 7vw;
   text-align: justify;
   word-break: break-all;
 }
-#notice .noticeContainer .noticeWrap .noticebox:nth-of-type(1) .box1Txt button {
-  width: 125px;
-  height: 36px;
-  background: #171717;
-  color: #f9f9f9;
-  border: 1px solid #e9e9e9;
-  font: 16px/1 "IKEA Sans";
-}
-#notice .noticeContainer .noticeWrap .noticebox:nth-of-type(2) {
-  width: 240px;
-  height: 520px;
+#notice .noticeContainer .leftWrap .loadingWrap {
+  flex: 1;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font: 26px/1 "IKEA Sans";
 }
-#notice .noticeContainer .noticeWrap .noticebox:nth-of-type(2) .boxTitWrap {
-  flex: 1;
-}
-#notice .noticeContainer .noticeWrap .noticebox:nth-of-type(2) .boxImgWrap {
-  flex: 1;
-}
-#notice .noticeContainer .noticeWrap .noticebox:nth-of-type(2) .boxContWrap {
-  flex: 1;
-}
-#notice .noticeContainer .noticeWrap .noticebox:nth-of-type(3) {
-  width: 240px;
-  height: 520px;
+#notice .noticeContainer .rightWrap {
+  flex: 1.3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
+}
+#notice .noticeContainer .rightWrap .noticeBox {
+  border-radius: 10px;
+  position: relative;
+}
+#notice .noticeContainer .rightWrap .noticeBox:nth-child(odd) {
+  margin-top: -3vw;
+}
+#notice .noticeContainer .rightWrap .noticeBox:nth-child(even) {
+  margin-top: -13vw;
+}
+#notice .noticeContainer .rightWrap .noticeBox:nth-of-type(1) {
+  width: 356px;
+  height: 456px;
+  background: black;
+  background-image: url(../img/bg1.png);
+}
+#notice .noticeContainer .rightWrap .noticeBox:nth-of-type(2) {
+  width: 356px;
+  height: 456px;
+  background: rgb(52, 14, 85);
+  background-image: url(../img/bg2.png);
+}
+
+#promotion {
+  width: 100vw;
+  height: 810px;
+  background: linear-gradient(to right, #0058ab, #fff94c);
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#promotion .grid {
+  display: grid;
+  grid-template-columns: 300px 50px 100px 50px 50px 50px 50px 300px;
+  overflow: hidden;
+  width: 100%;
+  margin-top: -37.2vw;
+  height: 96px;
+  border: 1px solid rgba(233, 233, 233, 0.7);
+  z-index: 0;
+  position: relative;
+  border-bottom: none;
+}
+#promotion .grid:nth-of-type(1) {
+  width: 250px;
+}
+#promotion .grid:nth-of-type(8) {
+  width: 250px;
+}
+#promotion .promotionContainer {
+  width: 100vw;
+  height: 820px;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  padding: 150px 10vw 150px;
+}
+#promotion .promotionContainer .promotionWrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#promotion .promotionContainer .promotionWrap:nth-of-type(1) {
+  width: 100%;
+  height: 100%;
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 }
-#notice .noticeContainer .noticeWrap .noticebox:nth-of-type(3) .boxTitWrap {
+#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg {
+  width: 60%;
+  height: 50%;
+  flex: 3;
+  display: flex;
+  margin: 0px auto;
+}
+#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg img {
+  width: 90%;
+  height: 100%;
+}
+#promotion .promotionContainer .promotionWrap:nth-of-type(1) .promotionBtns {
+  height: 50%;
+  flex: 1;
+  text-align: center;
+}
+#promotion .promotionContainer .promotionWrap:nth-of-type(1) .promotionBtns p {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font: 18px/26px "IKEA Sans";
+  color: #eee;
+}
+#promotion .promotionContainer .promotionWrap:nth-of-type(1) .promotionBtns button {
+  width: 140px;
+  height: 40px;
+  background: #171717;
+  color: #eee;
+  width: 140px;
+  border-radius: 50px;
+  border: 1px solid rgba(23, 23, 23, 0.5);
+  font: 15px/1 "IKEA Sans";
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+#promotion .promotionContainer .promotionWrap:nth-of-type(2) {
+  width: 100%;
+  flex: 1;
+  padding: 0;
+  font: 70px/1 "IKEA Sans";
+  color: #333;
+}
+#promotion .promotionContainer .promotionWrap:nth-of-type(2) h4 {
+  margin: 0px auto;
+  text-orientation: upright;
+  writing-mode: vertical-rl;
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+#promotion .promotionContainer .promotionWrap:nth-of-type(3) {
+  width: 100%;
+  flex: 2;
+  overflow-x: hidden;
+}
+#promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: none;
+}
+#promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns h4 {
+  font: 26px/1 "IKEA Sans";
+  color: #eee;
+}
+#promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns p {
+  font: 18px/1 "IKEA Sans";
+  color: #eee;
+}
+
+#sns {
+  width: 100vw;
+  height: 750px;
+  background: orange;
+  padding: 150px 10vw 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sns .snsContainer {
+  width: 100vw;
+  height: 810px;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  padding: 150px 1vw 140px;
+}
+#sns .snsContainer .snsWrap {
+  width: 14.2857142857%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#sns .snsContainer .snsWrap:nth-of-type(1) {
+  background: yellow;
   flex: 1;
 }
-#notice .noticeContainer .noticeWrap .noticebox:nth-of-type(3) .boxImgWrap {
+#sns .snsContainer .snsWrap:nth-of-type(2) {
+  background: rgb(119, 119, 66);
   flex: 1;
 }
-#notice .noticeContainer .noticeWrap .noticebox:nth-of-type(3) .boxContWrap {
+#sns .snsContainer .snsWrap:nth-of-type(3) {
+  flex: 3;
+  border: 1px solid red;
+  border-radius: 50%;
+}
+#sns .snsContainer .snsWrap:nth-of-type(4) {
   flex: 1;
+  width: 100%;
+  flex: 1;
+  padding: 0;
+  font: 70px/1 "IKEA Sans";
+  color: #333;
+}
+#sns .snsContainer .snsWrap:nth-of-type(4) h4 {
+  margin: 0px auto;
+  text-orientation: upright;
+  writing-mode: vertical-rl;
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+#sns .snsContainer .snsWrap:nth-of-type(5) {
+  flex: 3;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+#sns .snsContainer .snsWrap:nth-of-type(6) {
+  background: rgb(31, 23, 143);
+  flex: 1;
+}
+#sns .snsContainer .snsWrap:nth-of-type(7) {
+  background: rgb(30, 255, 0);
+  flex: 1;
+}
+
+#showRoom {
+  width: 100vw;
+  height: 750px;
+  background: red;
+  padding: 96px 10vw 96px;
+  display: flex;
+}
+#showRoom .showRoomContainer {
+  width: 100%;
+  height: 100%;
+  background: yellow;
+  display: flex;
+}
+#showRoom .showRoomContainer .showRoomWrap {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#showRoom .showRoomContainer .showRoomWrap:nth-of-type(1) {
+  flex: 1;
+  background: blue;
+}
+#showRoom .showRoomContainer .showRoomWrap:nth-of-type(2) {
+  flex: 2;
+  background: rgb(25, 179, 102);
+}
+
+#gallery {
+  width: 100vw;
+  height: 750px;
+  background: green;
+  padding: 96px 10vw 96px;
+}
+#gallery .galleryContainer {
+  width: 100%;
+  height: 100%;
+  background: yellow;
+  display: flex;
+}
+#gallery .galleryContainer .galleryWrap {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#gallery .galleryContainer .galleryWrap:nth-of-type(1) {
+  flex: 1;
+  background: blue;
+}
+#gallery .galleryContainer .galleryWrap:nth-of-type(2) {
+  flex: 2;
+  background: rgb(25, 179, 102);
 }
 
 /*# sourceMappingURL=style.css.map */

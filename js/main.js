@@ -18,6 +18,8 @@ const roomSub = roomSection.querySelector('.previewSub');
 //vids
 const vidsSection = document.querySelector('#vids');
 const videos = vidsSection.querySelectorAll('.video');
+const vidsNum = vidsSection.querySelectorAll('.vidsNum');
+const vidsBarTit = vidsSection.querySelectorAll('.vidsBarTit');
 
 //header
 //header menu 클릭하면 오른쪽 바 내려옴
@@ -92,5 +94,16 @@ videos.forEach((video, idx) => {
 
 		for (const video of videos) video.classList.remove('on');
 		videos[idx].classList.add('on');
+
+		videos[idx].classList.contains('on')
+			? (vidsNum[idx].style.display = 'none')
+			: (vidsBarTit[idx].style.display = 'none');
+
+		for (let i = 0; i < videos.length; i++) {
+			if (!videos[i].classList.contains('on')) {
+				vidsBarTit[i].style.display = 'block';
+				vidsNum[i].style.display = 'block';
+			}
+		}
 	});
 });
