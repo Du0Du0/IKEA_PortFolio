@@ -89,6 +89,11 @@ roomBtns.forEach((roomBtn, idx) => {
 //vids
 // box클릭하면 해당 box열리는 기본 기능
 videos.forEach((video, idx) => {
+	if (videos[idx].classList.contains('on')) {
+		vidsNum[idx].style.display = 'none';
+		vidsBarTit[idx].style.display = 'none';
+	}
+
 	video.addEventListener('click', (e) => {
 		e.preventDefault();
 
@@ -96,8 +101,8 @@ videos.forEach((video, idx) => {
 		videos[idx].classList.add('on');
 
 		videos[idx].classList.contains('on')
-			? (vidsNum[idx].style.display = 'none')
-			: (vidsBarTit[idx].style.display = 'none');
+			? ((vidsNum[idx].style.display = 'none'), (vidsBarTit[idx].style.display = 'none'))
+			: ((vidsNum[idx].style.display = 'block'), (vidsBarTit[idx].style.display = 'block'));
 
 		for (let i = 0; i < videos.length; i++) {
 			if (!videos[i].classList.contains('on')) {

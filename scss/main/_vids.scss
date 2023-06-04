@@ -76,6 +76,42 @@
 						padding-top: 1.5vw;
 						text-align: left;
 					}
+
+					&.on {
+						flex: 5;
+						background: black;
+						animation: videoMove 0.5s linear;
+						animation-fill-mode: backwards;
+						animation-duration: 0.5s;
+						position: relative;
+
+						&.on::after {
+							content: 'Discover Now';
+							position: absolute;
+							right: 0;
+							bottom: 0;
+							width: 209px;
+							height: 71px;
+							background: #623fe4;
+							font: 18px/71px $ikeaFont;
+							color: $fontColorW;
+						}
+
+						&.on::before {
+							content: '01. \A Furniture \A Design';
+							white-space: pre;
+							display: block;
+							position: absolute;
+							top: 0;
+							left: 0;
+							width: 100%;
+							height: 100%;
+							text-align: left;
+							font: 30px/1.3 $ikeaFont;
+							color: $grey;
+							padding: 35px 3vw;
+						}
+					}
 				}
 
 				&:nth-of-type(2) {
@@ -103,6 +139,42 @@
 						writing-mode: vertical-rl;
 						padding-top: 1.5vw;
 						text-align: left;
+					}
+
+					&.on {
+						flex: 5;
+						background: black;
+						animation: videoMove 0.5s linear;
+						animation-fill-mode: backwards;
+						animation-duration: 0.5s;
+						position: relative;
+
+						&.on::after {
+							content: 'Discover Now';
+							position: absolute;
+							right: 0;
+							bottom: 0;
+							width: 209px;
+							height: 71px;
+							background: #623fe4;
+							font: 18px/71px $ikeaFont;
+							color: $fontColorW;
+						}
+
+						&.on::before {
+							content: '02. \A Branding \A Design';
+							white-space: pre;
+							display: block;
+							position: absolute;
+							top: 0;
+							left: 0;
+							width: 100%;
+							height: 100%;
+							text-align: left;
+							font: 30px/1.3 $ikeaFont;
+							color: $grey;
+							padding: 35px 3vw;
+						}
 					}
 				}
 
@@ -132,6 +204,41 @@
 						padding-top: 1.5vw;
 						text-align: left;
 					}
+					&.on {
+						flex: 5;
+						background: black;
+						animation: videoMove 0.5s linear;
+						animation-fill-mode: backwards;
+						animation-duration: 0.5s;
+						position: relative;
+
+						&.on::after {
+							content: 'Discover Now';
+							position: absolute;
+							right: 0;
+							bottom: 0;
+							width: 209px;
+							height: 71px;
+							background: #623fe4;
+							font: 18px/71px $ikeaFont;
+							color: $fontColorW;
+						}
+
+						&.on::before {
+							content: '03. \A Video \A Design';
+							white-space: pre;
+							display: block;
+							position: absolute;
+							top: 0;
+							left: 0;
+							width: 100%;
+							height: 100%;
+							text-align: left;
+							font: 30px/1.3 $ikeaFont;
+							color: $grey;
+							padding: 35px 3vw;
+						}
+					}
 				}
 
 				&:nth-of-type(4) {
@@ -159,6 +266,42 @@
 						writing-mode: vertical-rl;
 						padding-top: 1.5vw;
 						text-align: left;
+					}
+
+					&.on {
+						flex: 5;
+						background: black;
+						animation: videoMove 0.5s linear;
+						animation-fill-mode: backwards;
+						animation-duration: 0.5s;
+						position: relative;
+
+						&.on::after {
+							content: 'Discover Now';
+							position: absolute;
+							right: 0;
+							bottom: 0;
+							width: 209px;
+							height: 71px;
+							background: #623fe4;
+							font: 18px/71px $ikeaFont;
+							color: $fontColorW;
+						}
+
+						&.on::before {
+							content: '04. \A Outdoor \A Design';
+							white-space: pre;
+							display: block;
+							position: absolute;
+							top: 0;
+							left: 0;
+							width: 100%;
+							height: 100%;
+							text-align: left;
+							font: 30px/1.3 $ikeaFont;
+							color: $grey;
+							padding: 35px 3vw;
+						}
 					}
 				}
 
@@ -211,7 +354,7 @@
 					}
 
 					&.on::before {
-						content: '02 \A Branding \A Design';
+						content: '05. \A Cooking \A Design';
 						white-space: pre;
 						display: block;
 						position: absolute;
@@ -219,7 +362,6 @@
 						left: 0;
 						width: 100%;
 						height: 100%;
-
 						text-align: left;
 						font: 30px/1.3 $ikeaFont;
 						color: $grey;
