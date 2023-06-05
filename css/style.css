@@ -194,7 +194,7 @@ header .logo p {
 
 footer {
   width: 100vw;
-  height: 422px;
+  height: 311px;
   background: #171717;
 }
 
@@ -525,7 +525,7 @@ a {
 }
 #room .roomContainer .roomBg {
   flex: 7;
-  background-image: url(../img/preview1.png);
+  background-image: url(../img/bg1.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -548,6 +548,7 @@ a {
   border: 1px solid rgba(23, 23, 23, 0.5);
   font: 15px/1 "IKEA Sans";
   letter-spacing: 0.5px;
+  cursor: pointer;
 }
 #room .roomContainer .roomBtns button.on {
   background: #171717;
@@ -566,12 +567,12 @@ a {
   right: 250px;
   bottom: 145px;
   padding: 30px 0 30px;
-  border: 1px solid rgba(23, 23, 23, 0.1);
+  border: 1px solid rgba(23, 23, 23, 0.4);
 }
 #room .previewContainer .previewBg {
   width: 290px;
   height: 183px;
-  background-image: url(../img/preview1.png);
+  background-image: url(../img/bg1.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -623,7 +624,7 @@ a {
 }
 #vids .vidsContainer .vidsTextWrap .vidsSub {
   flex: 1;
-  font: 26px/1 "IKEA Sans";
+  font: 26px/1.3 "IKEA Sans";
   color: rgba(16, 16, 16, 0.6);
   text-align: justify;
   word-break: break-all;
@@ -659,6 +660,7 @@ a {
   font: bold 23px/4.5 "IKEA Sans";
   color: #333;
   border-bottom: 2px solid #e9e9e9;
+  cursor: pointer;
 }
 #vids .vidsContainer .vidsVideoWrap .video:nth-of-type(1) .vidsBarTit {
   flex: 3.5;
@@ -667,6 +669,7 @@ a {
   writing-mode: vertical-rl;
   padding-top: 1.5vw;
   text-align: left;
+  cursor: pointer;
 }
 #vids .vidsContainer .vidsVideoWrap .video:nth-of-type(1).on {
   flex: 5;
@@ -686,6 +689,7 @@ a {
   background: #623fe4;
   font: 18px/71px "IKEA Sans";
   color: #eee;
+  cursor: pointer;
 }
 #vids .vidsContainer .vidsVideoWrap .video:nth-of-type(1).on.on::before {
   content: "01. \a Furniture \a Design";
@@ -717,6 +721,7 @@ a {
   font: bold 23px/4.5 "IKEA Sans";
   color: #333;
   border-bottom: 2px solid #e9e9e9;
+  cursor: pointer;
 }
 #vids .vidsContainer .vidsVideoWrap .video:nth-of-type(2) .vidsBarTit {
   flex: 3.5;
@@ -725,6 +730,7 @@ a {
   writing-mode: vertical-rl;
   padding-top: 1.5vw;
   text-align: left;
+  cursor: pointer;
 }
 #vids .vidsContainer .vidsVideoWrap .video:nth-of-type(2).on {
   flex: 5;
@@ -744,6 +750,7 @@ a {
   background: #623fe4;
   font: 18px/71px "IKEA Sans";
   color: #eee;
+  cursor: pointer;
 }
 #vids .vidsContainer .vidsVideoWrap .video:nth-of-type(2).on.on::before {
   content: "02. \a Branding \a Design";
@@ -775,6 +782,7 @@ a {
   font: bold 23px/4.5 "IKEA Sans";
   color: #333;
   border-bottom: 2px solid #e9e9e9;
+  cursor: pointer;
 }
 #vids .vidsContainer .vidsVideoWrap .video:nth-of-type(3) .vidsBarTit {
   flex: 3.5;
@@ -783,6 +791,7 @@ a {
   writing-mode: vertical-rl;
   padding-top: 1.5vw;
   text-align: left;
+  cursor: pointer;
 }
 #vids .vidsContainer .vidsVideoWrap .video:nth-of-type(3).on {
   flex: 5;
@@ -802,6 +811,7 @@ a {
   background: #623fe4;
   font: 18px/71px "IKEA Sans";
   color: #eee;
+  cursor: pointer;
 }
 #vids .vidsContainer .vidsVideoWrap .video:nth-of-type(3).on.on::before {
   content: "03. \aVideo \a Design";
@@ -833,6 +843,7 @@ a {
   font: bold 23px/4.5 "IKEA Sans";
   color: #333;
   border-bottom: 2px solid #e9e9e9;
+  cursor: pointer;
 }
 #vids .vidsContainer .vidsVideoWrap .video:nth-of-type(4) .vidsBarTit {
   flex: 3.5;
@@ -841,6 +852,7 @@ a {
   writing-mode: vertical-rl;
   padding-top: 1.5vw;
   text-align: left;
+  cursor: pointer;
 }
 #vids .vidsContainer .vidsVideoWrap .video:nth-of-type(4).on {
   flex: 5;
@@ -860,6 +872,7 @@ a {
   background: #623fe4;
   font: 18px/71px "IKEA Sans";
   color: #eee;
+  cursor: pointer;
 }
 #vids .vidsContainer .vidsVideoWrap .video:nth-of-type(4).on.on::before {
   content: "04. \aOutdoor \a Design";
@@ -891,6 +904,7 @@ a {
   font: bold 23px/4.5 "IKEA Sans";
   color: #333;
   border-bottom: 2px solid #e9e9e9;
+  cursor: pointer;
 }
 #vids .vidsContainer .vidsVideoWrap .video:nth-of-type(5) .vidsBarTit {
   flex: 3.5;
@@ -899,6 +913,7 @@ a {
   writing-mode: vertical-rl;
   padding-top: 1.5vw;
   text-align: left;
+  cursor: pointer;
 }
 #vids .vidsContainer .vidsVideoWrap .video.on {
   flex: 5;
@@ -918,6 +933,7 @@ a {
   background: #623fe4;
   font: 18px/71px "IKEA Sans";
   color: #eee;
+  cursor: pointer;
 }
 #vids .vidsContainer .vidsVideoWrap .video.on.on::before {
   content: "05. \a Cooking \a Design";
@@ -961,7 +977,8 @@ a {
   bottom: 3vw;
   font: 150px/1 "arial";
   color: transparent;
-  -webkit-text-stroke: 1px white;
+  -webkit-text-stroke: 1px #eee;
+  opacity: 0.6;
   z-index: 1;
 }
 #news .grid {
@@ -998,10 +1015,11 @@ a {
 }
 #news .newsContainer .newsWrap:nth-of-type(1) {
   flex: 1.8;
-  font: 50px/1 "IKEA Sans";
+  font: 70px/1 "IKEA Sans";
   color: transparent;
-  -webkit-text-stroke: 1px white;
+  -webkit-text-stroke: 1px #eee;
   align-items: center;
+  cursor: pointer;
 }
 #news .newsContainer .newsWrap:nth-of-type(2) {
   width: 100%;
@@ -1023,45 +1041,46 @@ a {
 #news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(1) {
   width: 350px;
   height: 465px;
-  border: 1.5px solid white;
+  border: 1.5px solid #eee;
   position: relative;
+  cursor: pointer;
 }
 #news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(1) h4 {
   width: 100%;
   font: 18px/1 "IKEA Sans";
-  color: white;
+  color: #eee;
   position: relative;
   z-index: 1000;
+  margin-bottom: 8vw;
 }
 #news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(1) h2 {
   width: 100%;
-  font: bold 26px/1 "IKEA Sans";
-  color: white;
+  font: bold 30px/1 "IKEA Sans";
+  color: #eee;
   position: relative;
   z-index: 1000;
 }
 #news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(1) p {
-  font: bold 120px/1 "IKEA Sans";
+  font: 154px/1 "IKEA Sans";
   position: relative;
   z-index: 1000;
-  bottom: -8vw;
-  left: 7vw;
+  bottom: -6.5vw;
+  right: 2vw;
   color: transparent;
-  -webkit-text-stroke: 1px white;
+  -webkit-text-stroke: 1px #eee;
 }
 #news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(1) p.on {
-  animation: fillingText 2s infinite;
+  animation: fillingText 2s;
   animation-duration: 0;
-  animation-fill-mode: backwards;
-  display: none;
+  animation-fill-mode: forwards;
 }
 #news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(1) p.on.on:after {
-  content: "I";
+  content: "K";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  color: white;
+  color: #eee;
   overflow: hidden;
 }
 @keyframes fillingText {
@@ -1075,11 +1094,12 @@ a {
   }
 }
 #news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(1):hover {
-  background-image: url(../img/news9.png);
+  background-image: url(../img/news10.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 24px 21px 31px -1px rgba(33, 33, 33, 0.6);
+  border-radius: 0;
+  box-shadow: 24px 21px 31px -1px rgba(24, 24, 24, 0.6);
   background-blend-mode: darken;
   border: none;
 }
@@ -1095,38 +1115,39 @@ a {
 #news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(2) {
   width: 350px;
   height: 465px;
-  border: 1.5px solid white;
-  margin-top: 3vw;
+  border: 1.5px solid #f9f9f9;
+  margin-top: 2vw;
   position: relative;
+  cursor: pointer;
 }
 #news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(2) h4 {
   width: 100%;
   font: 18px/1 "IKEA Sans";
-  color: white;
+  color: #eee;
   position: relative;
   z-index: 1000;
+  margin-bottom: 8vw;
 }
 #news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(2) h2 {
   width: 100%;
-  font: bold 26px/1 "IKEA Sans";
-  color: white;
+  font: bold 30px/1 "IKEA Sans";
+  color: #eee;
   position: relative;
   z-index: 1000;
 }
 #news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(2) p {
-  font: bold 120px/1 "IKEA Sans";
+  font: 154px/1 "IKEA Sans";
   position: relative;
   z-index: 1000;
-  bottom: -8vw;
-  left: 7vw;
+  bottom: -6.5vw;
+  left: 9vw;
   color: transparent;
-  -webkit-text-stroke: 1px white;
+  -webkit-text-stroke: 1px #eee;
 }
 #news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(2) p.on {
   animation: fillingText 2s infinite;
   animation-duration: 0;
-  animation-fill-mode: backwards;
-  display: none;
+  animation-fill-mode: forwards;
 }
 #news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(2) p.on.on:after {
   content: "K";
@@ -1134,7 +1155,7 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  color: white;
+  color: #eee;
   overflow: hidden;
 }
 @keyframes fillingText {
@@ -1152,7 +1173,8 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 24px 21px 31px -1px rgba(33, 33, 33, 0.6);
+  border-radius: 0;
+  box-shadow: 24px 21px 31px -1px rgba(24, 24, 24, 0.6);
   background-blend-mode: darken;
   border: none;
 }
@@ -1168,45 +1190,46 @@ a {
 #news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(3) {
   width: 350px;
   height: 465px;
-  border: 1.5px solid white;
+  border: 1.5px solid #f9f9f9;
   position: relative;
+  cursor: pointer;
 }
 #news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(3) h4 {
   width: 100%;
   font: 18px/1 "IKEA Sans";
-  color: white;
+  color: #eee;
   position: relative;
   z-index: 1000;
+  margin-bottom: 8vw;
 }
 #news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(3) h2 {
   width: 100%;
-  font: bold 26px/1 "IKEA Sans";
-  color: white;
+  font: bold 30px/1 "IKEA Sans";
+  color: #eee;
   position: relative;
   z-index: 1000;
 }
 #news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(3) p {
-  font: bold 120px/1 "IKEA Sans";
+  font: 154px/1 "IKEA Sans";
   position: relative;
   z-index: 1000;
-  bottom: -8vw;
-  left: 7vw;
+  bottom: -6.5vw;
+  right: 2vw;
   color: transparent;
-  -webkit-text-stroke: 1px white;
+  -webkit-text-stroke: 1px #eee;
 }
 #news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(3) p.on {
-  animation: fillingText 2s infinite;
+  animation: fillingText 2s;
   animation-duration: 0;
-  animation-fill-mode: backwards;
-  display: none;
+  animation-fill-mode: forwards;
 }
 #news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(3) p.on.on:after {
-  content: "E";
+  content: "K";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  color: white;
+  color: #eee;
   overflow: hidden;
 }
 @keyframes fillingText {
@@ -1220,11 +1243,12 @@ a {
   }
 }
 #news .newsContainer .newsWrap:nth-of-type(2) .newsUp .newsBox:nth-of-type(3):hover {
-  background-image: url(../img/news7.png);
+  background-image: url(../img/news10.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 24px 21px 31px -1px rgba(33, 33, 33, 0.6);
+  border-radius: 0;
+  box-shadow: 24px 21px 31px -1px rgba(24, 24, 24, 0.6);
   background-blend-mode: darken;
   border: none;
 }
@@ -1241,31 +1265,39 @@ a {
   flex: 1.5;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: end;
 }
 #news .newsContainer .newsWrap:nth-of-type(2) .newsDown button {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background: transparent;
-  border: 1px solid white;
+  border: 1px solid #f9f9f9;
   font: 18px/1 "IKEA Sans";
-  color: white;
+  color: #eee;
+  cursor: pointer;
+}
+#news .newsContainer .newsWrap:nth-of-type(2) .newsDown button:hover {
+  backdrop-filter: brightness(0.1);
+  opacity: 0.8;
+  border: none;
+  color: #eee;
 }
 #news .newsContainer .newsWrap:nth-of-type(3) {
   height: 628px;
   flex: 1.8;
   align-items: center;
-  font: 50px/1 "IKEA Sans";
+  font: 70px/1 "IKEA Sans";
   color: transparent;
-  -webkit-text-stroke: 1px white;
+  -webkit-text-stroke: 1px #eee;
+  cursor: pointer;
 }
 
 #notice {
   width: 100vw;
   height: 860px;
   display: flex;
-  background: white;
+  background: #f9f9f9;
 }
 #notice .grid {
   display: grid;
@@ -1297,11 +1329,10 @@ a {
   width: 100vw;
   height: 120px;
   font: 140px/1 "IKEA Sans";
-  color: white;
+  color: #f9f9f9;
   background: -webkit-linear-gradient(left, #32aaff 0%, #4edd8e 27%, #fadb29 64%, #f07569 100%);
   -webkit-text-stroke: 3px rgba(255, 255, 255, 0.01);
   -webkit-background-clip: text;
-  animation: marquee 20s linear infinite;
   white-space: nowrap;
   will-change: transform;
   pointer-events: none;
@@ -1315,7 +1346,7 @@ a {
   }
 }
 #notice .noticeContainer {
-  padding: 96px 10vw 150px;
+  padding: 150px 10vw 150px;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -1336,22 +1367,88 @@ a {
 #notice .noticeContainer .leftWrap .titWrap h2 {
   position: relative;
   font-size: 70px;
-  top: 6vw;
+  top: 4vw;
 }
 #notice .noticeContainer .leftWrap .titWrap P {
   width: 480px;
   position: relative;
-  font-size: 18px;
-  top: 7vw;
+  font: 20px/1 "IKEA Sans";
+  color: #969696;
+  top: 6vw;
   text-align: justify;
   word-break: break-all;
 }
 #notice .noticeContainer .leftWrap .loadingWrap {
-  flex: 1;
+  flex: 1.2;
   display: flex;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   font: 26px/1 "IKEA Sans";
+}
+#notice .noticeContainer .leftWrap .loadingWrap .progress-bar {
+  overflow: hidden;
+  width: 50%;
+  flex: 1.6;
+}
+#notice .noticeContainer .leftWrap .loadingWrap .progress-bar span {
+  display: block;
+  width: 19vw;
+  height: 2px;
+}
+#notice .noticeContainer .leftWrap .loadingWrap .progress-bar .bar {
+  background: #e9e9e9;
+}
+#notice .noticeContainer .leftWrap .loadingWrap .progress-bar .progress {
+  animation: loader 8s ease infinite;
+  background: #171717;
+  padding: 1px;
+  width: 0;
+}
+#notice .noticeContainer .leftWrap .loadingWrap .progress-bar .progress-bar {
+  left: 50%;
+  max-width: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+@keyframes loader {
+  0% {
+    width: 0;
+  }
+  20% {
+    width: 10%;
+  }
+  25% {
+    width: 24%;
+  }
+  43% {
+    width: 41%;
+  }
+  56% {
+    width: 50%;
+  }
+  66% {
+    width: 52%;
+  }
+  71% {
+    width: 60%;
+  }
+  75% {
+    width: 76%;
+  }
+  94% {
+    width: 86%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+#notice .noticeContainer .leftWrap .loadingWrap .loadingBtns {
+  width: 50%;
+  flex: 1;
+  margin-top: -0.6vw;
+  color: #333;
+  font: 18/1 "IKEA Sans";
 }
 #notice .noticeContainer .rightWrap {
   flex: 1.3;
@@ -1373,14 +1470,22 @@ a {
 #notice .noticeContainer .rightWrap .noticeBox:nth-of-type(1) {
   width: 356px;
   height: 456px;
-  background: black;
-  background-image: url(../img/bg1.png);
+  background-image: url(../img/news14.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 19px 38px rgba(153, 153, 153, 0.2), 0 15px 12px rgba(155, 155, 155, 0.1);
+  cursor: pointer;
 }
 #notice .noticeContainer .rightWrap .noticeBox:nth-of-type(2) {
   width: 356px;
   height: 456px;
-  background: rgb(52, 14, 85);
-  background-image: url(../img/bg2.png);
+  background-image: url(../img/news13.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 19px 38px rgba(153, 153, 153, 0.2), 0 15px 12px rgba(155, 155, 155, 0.1);
+  cursor: pointer;
 }
 
 #promotion {
@@ -1441,31 +1546,52 @@ a {
   margin: 0px auto;
 }
 #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg img {
-  width: 90%;
+  width: 100%;
   height: 100%;
 }
 #promotion .promotionContainer .promotionWrap:nth-of-type(1) .promotionBtns {
   height: 50%;
   flex: 1;
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
+  gap: 15px;
+  justify-content: center;
 }
 #promotion .promotionContainer .promotionWrap:nth-of-type(1) .promotionBtns p {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 10px;
   font: 18px/26px "IKEA Sans";
   color: #eee;
 }
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .promotionBtns button {
-  width: 140px;
+#promotion .promotionContainer .promotionWrap:nth-of-type(1) .promotionBtns span {
+  border-radius: 50px;
+}
+#promotion .promotionContainer .promotionWrap:nth-of-type(1) .promotionBtns span button {
   height: 40px;
-  background: #171717;
+  border: 1px solid #f9f9f9;
   color: #eee;
+  background: transparent;
   width: 140px;
   border-radius: 50px;
-  border: 1px solid rgba(23, 23, 23, 0.5);
-  font: 15px/1 "IKEA Sans";
+  font: 18px/1 "IKEA Sans";
   letter-spacing: 0.5px;
   cursor: pointer;
+}
+#promotion .promotionContainer .promotionWrap:nth-of-type(1) .promotionBtns span button:nth-of-type(1) {
+  background: #010001;
+  border: none;
+  width: 130px;
+}
+#promotion .promotionContainer .promotionWrap:nth-of-type(1) .promotionBtns span button:nth-of-type(2) {
+  width: 130px;
+}
+#promotion .promotionContainer .promotionWrap:nth-of-type(1) .promotionBtns span button:nth-of-type(3) {
+  width: 130px;
+}
+#promotion .promotionContainer .promotionWrap:nth-of-type(1) .promotionBtns span button:nth-of-type(4) {
+  width: 130px;
 }
 #promotion .promotionContainer .promotionWrap:nth-of-type(2) {
   width: 100%;
@@ -1494,23 +1620,50 @@ a {
   overflow-y: scroll;
   overflow-x: none;
 }
-#promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns h4 {
+#promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns h3 {
   font: 26px/1 "IKEA Sans";
   color: #eee;
+  margin-bottom: 10px;
 }
-#promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns p {
+#promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns h4 {
   font: 18px/1 "IKEA Sans";
   color: #eee;
+  margin-bottom: 10px;
+}
+#promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns p {
+  font: 16px/1 "IKEA Sans";
+  color: #eee;
+}
+#promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns::-webkit-scrollbar {
+  width: 10px;
+}
+#promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns::-webkit-scrollbar-thumb {
+  background-color: #b4ca68;
+}
+#promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns::-webkit-scrollbar-track {
+  background-color: transparent;
 }
 
 #sns {
   width: 100vw;
   height: 750px;
-  background: orange;
-  padding: 150px 10vw 150px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #3589d5;
+}
+#sns::after {
+  content: "";
+  background-image: url(../img/news12.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 750px;
+  right: 0px;
+  margin-right: 50%;
+  top: 0px;
+  width: 50%;
+  filter: brightness(0.7) blur(0.8px);
 }
 #sns .snsContainer {
   width: 100vw;
@@ -1530,20 +1683,62 @@ a {
   flex-wrap: wrap;
 }
 #sns .snsContainer .snsWrap:nth-of-type(1) {
-  background: yellow;
-  flex: 1;
+  flex: 0.5;
+  font: 70px/1 "IKEA Sans";
+  justify-content: center;
+  color: transparent;
+  -webkit-text-stroke: 1px #eee;
+  align-items: center;
+  cursor: pointer;
 }
 #sns .snsContainer .snsWrap:nth-of-type(2) {
-  background: rgb(119, 119, 66);
-  flex: 1;
+  flex: 0.5;
+  height: 20%;
+  justify-content: flex-start;
+  font: 60px/1 "IKEA Sans";
+  color: transparent;
+  transform: rotate(-90deg);
+  -webkit-text-stroke: 1px #eee;
 }
 #sns .snsContainer .snsWrap:nth-of-type(3) {
-  flex: 3;
-  border: 1px solid red;
+  flex: 2;
+  width: 440px;
+  height: 100%;
+  border: 1px solid #f9f9f9;
   border-radius: 50%;
+  text-align: left;
+  position: relative;
+}
+#sns .snsContainer .snsWrap:nth-of-type(3) h3 {
+  font: 26px/1 "IKEA Sans";
+  color: #eee;
+  position: relative;
+  top: 100px;
+  left: 5vw;
+}
+#sns .snsContainer .snsWrap:nth-of-type(3) h2 {
+  font: 26px/1 "IKEA Sans";
+  color: #eee;
+  position: relative;
+  top: 150px;
+  left: 3.5vw;
+}
+#sns .snsContainer .snsWrap:nth-of-type(3) p {
+  font: 26px/1 "IKEA Sans";
+  color: #eee;
+  position: relative;
+  top: 60px;
+  left: 5vw;
+}
+#sns .snsContainer .snsWrap:nth-of-type(3) p:nth-of-type(2) {
+  font: 16px/1 "IKEA Sans";
+  color: #eee;
+  position: relative;
+  top: -5px;
+  left: 5vw;
 }
 #sns .snsContainer .snsWrap:nth-of-type(4) {
-  flex: 1;
+  flex: 3;
   width: 100%;
   flex: 1;
   padding: 0;
@@ -1560,72 +1755,65 @@ a {
   -webkit-text-stroke: 1px white;
 }
 #sns .snsContainer .snsWrap:nth-of-type(5) {
-  flex: 3;
+  flex: 2;
+  width: 440px;
+  height: 100%;
+  border: 1px solid #f9f9f9;
   border-radius: 50%;
-  border: 1px solid red;
+  flex: 2;
+  width: 440px;
+  height: 100%;
+  border: 1px solid #f9f9f9;
+  border-radius: 50%;
+  text-align: left;
+  position: relative;
+}
+#sns .snsContainer .snsWrap:nth-of-type(5) h3 {
+  font: 26px/1 "IKEA Sans";
+  color: #eee;
+  position: relative;
+  top: 100px;
+  left: 5vw;
+}
+#sns .snsContainer .snsWrap:nth-of-type(5) h2 {
+  font: 26px/1 "IKEA Sans";
+  color: #eee;
+  position: relative;
+  top: 150px;
+  left: 3.5vw;
+}
+#sns .snsContainer .snsWrap:nth-of-type(5) p {
+  font: 26px/1 "IKEA Sans";
+  color: #eee;
+  position: relative;
+  top: 60px;
+  left: 5vw;
+}
+#sns .snsContainer .snsWrap:nth-of-type(5) p:nth-of-type(2) {
+  font: 16px/1 "IKEA Sans";
+  color: #eee;
+  position: relative;
+  top: -5px;
+  left: 5vw;
 }
 #sns .snsContainer .snsWrap:nth-of-type(6) {
-  background: rgb(31, 23, 143);
-  flex: 1;
+  flex: 0.5;
+  flex: 0.5;
+  height: 20%;
+  justify-content: flex-start;
+  font: 60px/1 "IKEA Sans";
+  color: transparent;
+  transform: rotate(90deg);
+  -webkit-text-stroke: 1px #eee;
 }
 #sns .snsContainer .snsWrap:nth-of-type(7) {
-  background: rgb(30, 255, 0);
-  flex: 1;
-}
-
-#showRoom {
-  width: 100vw;
-  height: 750px;
-  background: red;
-  padding: 96px 10vw 96px;
-  display: flex;
-}
-#showRoom .showRoomContainer {
-  width: 100%;
-  height: 100%;
-  background: yellow;
-  display: flex;
-}
-#showRoom .showRoomContainer .showRoomWrap {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-#showRoom .showRoomContainer .showRoomWrap:nth-of-type(1) {
-  flex: 1;
-  background: blue;
-}
-#showRoom .showRoomContainer .showRoomWrap:nth-of-type(2) {
-  flex: 2;
-  background: rgb(25, 179, 102);
-}
-
-#gallery {
-  width: 100vw;
-  height: 750px;
-  background: green;
-  padding: 96px 10vw 96px;
-}
-#gallery .galleryContainer {
-  width: 100%;
-  height: 100%;
-  background: yellow;
-  display: flex;
-}
-#gallery .galleryContainer .galleryWrap {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-#gallery .galleryContainer .galleryWrap:nth-of-type(1) {
-  flex: 1;
-  background: blue;
-}
-#gallery .galleryContainer .galleryWrap:nth-of-type(2) {
-  flex: 2;
-  background: rgb(25, 179, 102);
+  flex: 0.5;
+  font: 70px/1 "IKEA Sans";
+  justify-content: center;
+  color: transparent;
+  -webkit-text-stroke: 1px #eee;
+  align-items: center;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -48,7 +48,7 @@ document.addEventListener('mousemove', (e) => {
 });
 
 //room
-const roomImgs = ['preview1.png', 'preview2.png', 'preview3.png', 'preview4.png'];
+const roomImgs = ['bg1.png', 'preview2.png', 'preview3.png', 'preview4.png'];
 
 const preTit = [
 	'Urban kitchen solutions',
