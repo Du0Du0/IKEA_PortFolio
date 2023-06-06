@@ -36,6 +36,11 @@
 				font: 18px/1 $ikeaFont;
 				color: $grey;
 				border: 1px solid $fontColorW;
+
+				&.on {
+					box-shadow: 0 0 50px 15px rgba($ikeaYellow, 0.45);
+					background: $ikeaYellow;
+				}
 			}
 
 			&:nth-of-type(9) {
@@ -75,15 +80,51 @@
 			&:nth-of-type(13) {
 				text-align: end;
 				padding: 170px 1vw 0px;
-				background: $ikeaYellow;
 				font: 18px/1 $ikeaFont;
-				color: $fontColorBl;
-				box-shadow: 0 0 50px 15px rgba($ikeaYellow, 0.45);
-				border: none;
+				color: $grey;
+				border: 1px solid $fontColorW;
+
+				&.on {
+					box-shadow: 0 0 50px 15px rgba($ikeaYellow, 0.45);
+					background: $ikeaYellow;
+				}
 			}
 
 			&:nth-of-type(14) {
 				grid-row: span 2;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	#visual {
+		height: 100vh;
+
+		.visualWrap {
+			grid-template-columns: 0.6fr 0fr 0fr 1fr 1fr 1fr 0.6fr;
+
+			.bg {
+				// Main pointBox1 (none color box)
+				&:nth-of-type(8) {
+					padding: 20px 2vw 0px;
+				}
+
+				&:nth-of-type(9) {
+					padding: 170px 2vw 0px;
+				}
+
+				&:nth-of-type(12) {
+					h1 {
+						width: 90%;
+						font: 28px/1 $ikeaFont;
+					}
+				}
+
+				// Main pointBox2 (yellow box)
+				&:nth-of-type(13) {
+					padding: 170px 2vw 0px;
+				}
 			}
 		}
 	}
