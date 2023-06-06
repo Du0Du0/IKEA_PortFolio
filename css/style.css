@@ -192,6 +192,318 @@ header .logo p {
   color: #e9e9e9;
 }
 
+@media screen and (max-width: 1023px) {
+  header {
+    width: 36.8%;
+  }
+  header .rightBar {
+    width: 36.8%;
+  }
+  header .rightBar.rgt {
+    width: 36.8%;
+  }
+  header .leftBar {
+    height: 100%;
+    width: 50.4%;
+    background: #010001;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    animation: move 0.5s linear;
+    animation-fill-mode: backwards;
+    animation-delay: 0s;
+    display: none;
+    overflow: hidden;
+  }
+  header .leftBar .leftBarWrap {
+    width: 100%;
+  }
+  header .leftBar .leftBarWrap .leftBarTit {
+    height: 20px;
+    text-align: left;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    padding: 0px 10vw 0px;
+  }
+  header .leftBar .leftBarWrap .leftBarTit h2 {
+    font: 70px/1 "IKEA Sans";
+    color: #e9e9e9;
+    animation: appear 0.5s linear;
+    animation-fill-mode: backwards;
+    animation-delay: 0.5s;
+    opacity: 1;
+  }
+  @keyframes appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  header .leftBar .leftBarWrap .leftBarList {
+    width: 100%;
+    height: 300px;
+    padding: 60px 0px 60px;
+    text-align: left;
+    padding: 60px 10vw 0px;
+  }
+  header .leftBar .leftBarWrap .leftBarList .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+  }
+  header .leftBar .leftBarWrap .leftBarList .listLine {
+    width: 100px;
+    height: 1px;
+    background: #e9e9e9;
+    margin-bottom: 30px;
+    animation: appear 0.5s linear;
+    animation-fill-mode: backwards;
+    animation-delay: 0.5s;
+    opacity: 1;
+  }
+  @keyframes appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  header .leftBar .leftBarWrap .leftBarList li {
+    font: 24px/35px "IKEA Sans";
+    color: #969696;
+    animation: appear 0.5s linear;
+    animation-fill-mode: backwards;
+    animation-delay: 0.5s;
+    opacity: 1;
+  }
+  @keyframes appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  header .leftBar.lft {
+    background: #010001;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: block;
+    animation: moveL 0.5s linear;
+    animation-fill-mode: backwards;
+    animation-delay: 0s;
+    display: flex;
+  }
+  @keyframes moveL {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 50.5%;
+    }
+  }
+  header .menu {
+    flex: 1.5;
+    font: 35px/1 "IKEA Sans";
+    color: #e9e9e9;
+    cursor: pointer;
+  }
+  header .menu .fa-bars-staggered {
+    display: block;
+  }
+  header .menu .fa-xmark {
+    display: none;
+    animation: roateCloseBtn 0.5s ease-in;
+    animation-fill-mode: backwards;
+    animation-duration: 0.5s;
+  }
+  @keyframes roateCloseBtn {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(720deg);
+    }
+  }
+  header .logo {
+    flex: 5;
+    cursor: pointer;
+  }
+  header .logo p {
+    font: 35px/1 "IKEA Sans";
+    color: #e9e9e9;
+  }
+}
+@media screen and (max-width: 639px) {
+  header {
+    width: 50%;
+  }
+  header .rightBar {
+    width: 50%;
+  }
+  header .rightBar.rgt {
+    width: 50%;
+  }
+  header .leftBar {
+    height: 100%;
+    width: 50.4%;
+    background: #010001;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    animation: move 0.5s linear;
+    animation-fill-mode: backwards;
+    animation-delay: 0s;
+    display: none;
+    overflow: hidden;
+  }
+  header .leftBar .leftBarWrap {
+    width: 100%;
+  }
+  header .leftBar .leftBarWrap .leftBarTit {
+    height: 20px;
+    text-align: left;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    padding: 0px 10vw 0px;
+  }
+  header .leftBar .leftBarWrap .leftBarTit h2 {
+    font: 70px/1 "IKEA Sans";
+    color: #e9e9e9;
+    animation: appear 0.5s linear;
+    animation-fill-mode: backwards;
+    animation-delay: 0.5s;
+    opacity: 1;
+  }
+  @keyframes appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  header .leftBar .leftBarWrap .leftBarList {
+    width: 100%;
+    height: 300px;
+    padding: 60px 0px 60px;
+    text-align: left;
+    padding: 60px 10vw 0px;
+  }
+  header .leftBar .leftBarWrap .leftBarList .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+  }
+  header .leftBar .leftBarWrap .leftBarList .listLine {
+    width: 100px;
+    height: 1px;
+    background: #e9e9e9;
+    margin-bottom: 30px;
+    animation: appear 0.5s linear;
+    animation-fill-mode: backwards;
+    animation-delay: 0.5s;
+    opacity: 1;
+  }
+  @keyframes appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  header .leftBar .leftBarWrap .leftBarList li {
+    font: 24px/35px "IKEA Sans";
+    color: #969696;
+    animation: appear 0.5s linear;
+    animation-fill-mode: backwards;
+    animation-delay: 0.5s;
+    opacity: 1;
+  }
+  @keyframes appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  header .leftBar.lft {
+    background: #010001;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: block;
+    animation: moveL 0.5s linear;
+    animation-fill-mode: backwards;
+    animation-delay: 0s;
+    display: flex;
+  }
+  @keyframes moveL {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 50.5%;
+    }
+  }
+  header .menu {
+    flex: 1.5;
+    font: 35px/1 "IKEA Sans";
+    color: #e9e9e9;
+    cursor: pointer;
+  }
+  header .menu .fa-bars-staggered {
+    display: block;
+  }
+  header .menu .fa-xmark {
+    display: none;
+    animation: roateCloseBtn 0.5s ease-in;
+    animation-fill-mode: backwards;
+    animation-duration: 0.5s;
+  }
+  @keyframes roateCloseBtn {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(720deg);
+    }
+  }
+  header .logo {
+    flex: 5;
+    cursor: pointer;
+  }
+  header .logo p {
+    font: 35px/1 "IKEA Sans";
+    color: #e9e9e9;
+  }
+}
 footer {
   width: 100vw;
   height: 311px;

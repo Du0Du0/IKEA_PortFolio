@@ -208,3 +208,360 @@ header {
 		}
 	}
 }
+
+@media screen and (max-width: $tablet) {
+	header {
+		width: 36.8%;
+
+		.rightBar {
+			width: 36.8%;
+
+			&.rgt {
+				width: 36.8%;
+			}
+		}
+
+		.leftBar {
+			height: 100%;
+			width: 50.4%;
+			background: $black;
+			position: fixed;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			left: 0;
+			top: 0;
+			animation: move 0.5s linear;
+			animation-fill-mode: backwards;
+			animation-delay: 0s;
+			display: none;
+			overflow: hidden;
+
+			.leftBarWrap {
+				width: 100%;
+
+				.leftBarTit {
+					height: 20px;
+					text-align: left;
+					display: flex;
+					justify-content: end;
+					flex-direction: column;
+					padding: 0px 10vw 0px;
+
+					h2 {
+						font: 70px/1 $ikeaFont;
+						color: $grey;
+						animation: appear 0.5s linear;
+						animation-fill-mode: backwards;
+						animation-delay: 0.5s;
+						opacity: 1;
+
+						@keyframes appear {
+							from {
+								opacity: 0;
+							}
+							to {
+								opacity: 1;
+							}
+						}
+					}
+				}
+
+				.leftBarList {
+					width: 100%;
+					height: 300px;
+					padding: 60px 0px 60px;
+					text-align: left;
+					padding: 60px 10vw 0px;
+
+					.circle {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 150px;
+						height: 150px;
+						border-radius: 50%;
+						background-color: $bgW;
+						transform: translate(-50%, -50%);
+						mix-blend-mode: difference;
+					}
+
+					.listLine {
+						width: 100px;
+						height: 1px;
+						background: $grey;
+						margin-bottom: 30px;
+						animation: appear 0.5s linear;
+						animation-fill-mode: backwards;
+						animation-delay: 0.5s;
+						opacity: 1;
+
+						@keyframes appear {
+							from {
+								opacity: 0;
+							}
+							to {
+								opacity: 1;
+							}
+						}
+					}
+
+					li {
+						font: 24px/35px $ikeaFont;
+						color: $fontColorGr;
+						animation: appear 0.5s linear;
+						animation-fill-mode: backwards;
+						animation-delay: 0.5s;
+						opacity: 1;
+
+						@keyframes appear {
+							from {
+								opacity: 0;
+							}
+							to {
+								opacity: 1;
+							}
+						}
+					}
+				}
+			}
+
+			&.lft {
+				background: $black;
+				position: fixed;
+				left: 0;
+				top: 0;
+				display: block;
+				animation: moveL 0.5s linear;
+				animation-fill-mode: backwards;
+				animation-delay: 0s;
+				display: flex;
+
+				@keyframes moveL {
+					from {
+						width: 0%;
+					}
+					to {
+						width: 50.5%;
+					}
+				}
+			}
+		}
+
+		.menu {
+			flex: 1.5;
+			font: 35px/1 $ikeaFont;
+			color: $grey;
+			cursor: pointer;
+
+			.fa-bars-staggered {
+				display: block;
+			}
+
+			.fa-xmark {
+				display: none;
+				animation: roateCloseBtn 0.5s ease-in;
+				animation-fill-mode: backwards;
+				animation-duration: 0.5s;
+
+				@keyframes roateCloseBtn {
+					from {
+						transform: rotate(0deg);
+					}
+					to {
+						transform: rotate(720deg);
+					}
+				}
+			}
+		}
+
+		.logo {
+			flex: 5;
+			cursor: pointer;
+
+			p {
+				font: 35px/1 $ikeaFont;
+				color: $grey;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	header {
+		width: 50%;
+		height: 60px;
+
+		.rightBar {
+			width: 50%;
+
+			&.rgt {
+				width: 50%;
+			}
+		}
+
+		.leftBar {
+			height: 100%;
+			width: 50.4%;
+			background: $black;
+			position: fixed;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			left: 0;
+			top: 0;
+			animation: move 0.5s linear;
+			animation-fill-mode: backwards;
+			animation-delay: 0s;
+			display: none;
+			overflow: hidden;
+
+			.leftBarWrap {
+				width: 100%;
+
+				.leftBarTit {
+					height: 20px;
+					text-align: left;
+					display: flex;
+					justify-content: end;
+					flex-direction: column;
+					padding: 0px 10vw 0px;
+
+					h2 {
+						font: 70px/1 $ikeaFont;
+						color: $grey;
+						animation: appear 0.5s linear;
+						animation-fill-mode: backwards;
+						animation-delay: 0.5s;
+						opacity: 1;
+
+						@keyframes appear {
+							from {
+								opacity: 0;
+							}
+							to {
+								opacity: 1;
+							}
+						}
+					}
+				}
+
+				.leftBarList {
+					width: 100%;
+					height: 300px;
+					padding: 60px 0px 60px;
+					text-align: left;
+					padding: 60px 10vw 0px;
+
+					.circle {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 150px;
+						height: 150px;
+						border-radius: 50%;
+						background-color: $bgW;
+						transform: translate(-50%, -50%);
+						mix-blend-mode: difference;
+					}
+
+					.listLine {
+						width: 100px;
+						height: 1px;
+						background: $grey;
+						margin-bottom: 30px;
+						animation: appear 0.5s linear;
+						animation-fill-mode: backwards;
+						animation-delay: 0.5s;
+						opacity: 1;
+
+						@keyframes appear {
+							from {
+								opacity: 0;
+							}
+							to {
+								opacity: 1;
+							}
+						}
+					}
+
+					li {
+						font: 24px/35px $ikeaFont;
+						color: $fontColorGr;
+						animation: appear 0.5s linear;
+						animation-fill-mode: backwards;
+						animation-delay: 0.5s;
+						opacity: 1;
+
+						@keyframes appear {
+							from {
+								opacity: 0;
+							}
+							to {
+								opacity: 1;
+							}
+						}
+					}
+				}
+			}
+
+			&.lft {
+				background: $black;
+				position: fixed;
+				left: 0;
+				top: 0;
+				display: block;
+				animation: moveL 0.5s linear;
+				animation-fill-mode: backwards;
+				animation-delay: 0s;
+				display: flex;
+
+				@keyframes moveL {
+					from {
+						width: 0%;
+					}
+					to {
+						width: 50.5%;
+					}
+				}
+			}
+		}
+
+		.menu {
+			flex: 1.5;
+			font: 35px/1 $ikeaFont;
+			color: $grey;
+			cursor: pointer;
+
+			.fa-bars-staggered {
+				display: block;
+			}
+
+			.fa-xmark {
+				display: none;
+				animation: roateCloseBtn 0.5s ease-in;
+				animation-fill-mode: backwards;
+				animation-duration: 0.5s;
+
+				@keyframes roateCloseBtn {
+					from {
+						transform: rotate(0deg);
+					}
+					to {
+						transform: rotate(720deg);
+					}
+				}
+			}
+		}
+
+		.logo {
+			flex: 5;
+			cursor: pointer;
+
+			p {
+				font: 35px/1 $ikeaFont;
+				color: $grey;
+			}
+		}
+	}
+}
