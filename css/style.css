@@ -315,6 +315,35 @@ a {
     padding: 170px 2vw 0px;
   }
 }
+@media screen and (max-width: 639px) {
+  #visual {
+    height: 80vh;
+  }
+  #visual .visualWrap {
+    grid-template-columns: 0.1fr 0fr 0fr 0fr 1fr 1fr 0.1fr;
+    grid-template-rows: 7fr 1.7fr 1.7fr 3fr;
+  }
+  #visual .visualWrap .bg:nth-of-type(8) {
+    padding: 10px 3vw 0px;
+  }
+  #visual .visualWrap .bg:nth-of-type(9) {
+    padding: 170px 3vw 10px;
+  }
+  #visual .visualWrap .bg:nth-of-type(12) {
+    grid-column: span 4;
+    grid-row: span 4;
+    padding: 60px 0vw 0px;
+  }
+  #visual .visualWrap .bg:nth-of-type(12) h1 {
+    display: none;
+  }
+  #visual .visualWrap .bg:nth-of-type(12) p {
+    display: none;
+  }
+  #visual .visualWrap .bg:nth-of-type(13) {
+    padding: 170px 3vw 10px;
+  }
+}
 #products {
   width: 100vw;
   height: 500px;

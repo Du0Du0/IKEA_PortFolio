@@ -129,3 +129,54 @@
 		}
 	}
 }
+
+@media screen and (max-width: $mobile) {
+	#visual {
+		height: 80vh;
+
+		.visualWrap {
+			grid-template-columns: 0.1fr 0fr 0fr 0fr 1fr 1fr 0.1fr;
+			grid-template-rows: 7fr 1.7fr 1.7fr 3fr;
+
+			.bg {
+				// Main pointBox1 (none color box)
+				&:nth-of-type(8) {
+					padding: 10px 3vw 0px;
+				}
+
+				&:nth-of-type(9) {
+					padding: 170px 3vw 10px;
+				}
+
+				&:nth-of-type(12) {
+					grid-column: span 4;
+					grid-row: span 4;
+					padding: 60px 0vw 0px;
+
+					h1 {
+						display: none;
+						// width: 420px;
+						// font: 30px/1 $ikeaFont;
+						// color: $grey;
+						// text-align: justify;
+						// word-break: break-all;
+					}
+
+					p {
+						display: none;
+						// font: 18px/1 $ikeaFont;
+						// color: $fontColorGr;
+						// text-align: justify;
+						// word-break: break-all;
+						// margin-bottom: 20px;
+					}
+				}
+
+				// Main pointBox2 (yellow box)
+				&:nth-of-type(13) {
+					padding: 170px 3vw 10px;
+				}
+			}
+		}
+	}
+}
