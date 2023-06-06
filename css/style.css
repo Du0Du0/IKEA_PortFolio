@@ -351,7 +351,7 @@ header .logo p {
 @media screen and (max-width: 639px) {
   header {
     width: 50%;
-    height: 100px;
+    height: 90px;
   }
   header .rightBar {
     width: 50%;
@@ -634,7 +634,7 @@ a {
   }
   #visual .visualWrap {
     grid-template-columns: 0.1fr 0fr 0fr 0fr 1fr 1fr 0.1fr;
-    grid-template-rows: 7fr 1fr 1fr 5fr;
+    grid-template-rows: 7fr 1.7fr 1.7fr 3fr;
   }
   #visual .visualWrap .bg:nth-of-type(8) {
     padding: 10px 3vw 0px;
@@ -1153,7 +1153,7 @@ a {
     text-align: center;
     font: 18px/25px "IKEA Sans";
     color: #333;
-    margin-top: auto;
+    margin-top: 0px;
   }
   #products .productsContainer .productsSub .slideWrap .slideItem:nth-of-type(2) {
     display: flex;
@@ -1173,7 +1173,7 @@ a {
     text-align: center;
     font: 18px/25px "IKEA Sans";
     color: #333;
-    margin-top: auto;
+    margin-top: 0px;
   }
   #products .productsContainer .productsSub .slideWrap .slideItem:nth-of-type(3) {
     display: flex;
@@ -1193,7 +1193,7 @@ a {
     text-align: center;
     font: 18px/25px "IKEA Sans";
     color: #333;
-    margin-top: auto;
+    margin-top: 0px;
   }
   #products .productsContainer .productsSub .slideWrap .slideItem:nth-of-type(4) {
     display: none;
@@ -1211,7 +1211,7 @@ a {
     text-align: center;
     font: 18px/25px "IKEA Sans";
     color: #333;
-    margin-top: auto;
+    margin-top: 0px;
   }
   #products .productsContainer .productsSub .slideWrap .slideItem:nth-of-type(5) {
     display: none;
@@ -1229,7 +1229,7 @@ a {
     text-align: center;
     font: 18px/25px "IKEA Sans";
     color: #333;
-    margin-top: auto;
+    margin-top: 0px;
   }
   #products .productsContainer .productsSub .btnWrap {
     width: 100%;
@@ -1385,6 +1385,71 @@ a {
   letter-spacing: 0.1px;
 }
 
+@media screen and (max-width: 1023px) {
+  #room {
+    width: 100vw;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 96px 10vw 96px;
+    position: relative;
+  }
+  #room .roomContainer {
+    width: 100%;
+    height: 780px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  #room .roomContainer .roomBg {
+    display: none;
+  }
+  #room .roomContainer .roomBtns {
+    display: none;
+  }
+  #room .previewContainer {
+    width: 350px;
+    height: 480px;
+    background: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    left: 5vw;
+    top: 90px;
+    bottom: 145px;
+    padding: 30px 0 30px;
+    border: 1px solid rgba(23, 23, 23, 0.4);
+  }
+  #room .previewContainer .previewBg {
+    width: 290px;
+    height: 183px;
+    background-image: url(../img/bg1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scaleX(-1);
+  }
+  #room .previewContainer .previewTxt {
+    width: 290px;
+    height: 235px;
+    padding: 20px 0 0;
+  }
+  #room .previewContainer .previewTxt h3 {
+    font: 30px/1 "IKEA Sans";
+    color: #333;
+    margin-bottom: 20px;
+  }
+  #room .previewContainer .previewTxt p {
+    font: 18px/1 "IKEA Sans";
+    color: rgba(16, 16, 16, 0.6);
+    text-align: justify;
+    word-break: break-all;
+    letter-spacing: 0.1px;
+  }
+}
 #vids {
   width: 100vw;
   height: 900px;
