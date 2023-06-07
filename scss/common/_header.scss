@@ -1,6 +1,6 @@
 header {
-	width: 24.4%;
-	height: 108px;
+	width: 25%;
+	height: 79px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -12,8 +12,8 @@ header {
 	z-index: 999;
 
 	.rightBar {
-		width: 24.4%;
-		margin-top: 108px;
+		width: 25%;
+		margin-top: 79px;
 		height: 100vh;
 		background: $black;
 		position: fixed;
@@ -23,7 +23,7 @@ header {
 		display: none;
 
 		&.rgt {
-			width: 24.4%;
+			width: 25%;
 			background: $black;
 			position: fixed;
 			top: 0;
@@ -46,7 +46,7 @@ header {
 
 	.leftBar {
 		height: 100%;
-		width: 50.4%;
+		width: 50%;
 		background: $black;
 		position: fixed;
 		display: flex;
@@ -137,6 +137,30 @@ header {
 					animation-delay: 0.5s;
 					opacity: 1;
 
+					a {
+						&:visited {
+							color: $fontColorGr;
+							cursor: pointer;
+
+							a:link {
+								color: $fontColorGr;
+								cursor: pointer;
+							}
+							a:visited {
+								color: $fontColorGr;
+								cursor: pointer;
+							}
+							a:active {
+								color: $fontColorGr;
+								cursor: pointer;
+							}
+							a:hover {
+								color: $fontColorGr;
+								cursor: pointer;
+							}
+						}
+					}
+
 					@keyframes appear {
 						from {
 							opacity: 0;
@@ -205,19 +229,26 @@ header {
 		p {
 			font: 35px/1 $ikeaFont;
 			color: $grey;
+
+			a {
+				&:visited {
+					color: $grey;
+					cursor: pointer;
+				}
+			}
 		}
 	}
 }
 
 @media screen and (max-width: $tablet) {
 	header {
-		width: 36.8%;
+		width: 38%;
 
 		.rightBar {
-			width: 36.8%;
+			width: 38%;
 
 			&.rgt {
-				width: 36.8%;
+				width: 38%;
 			}
 		}
 
@@ -390,13 +421,14 @@ header {
 @media screen and (max-width: $mobile) {
 	header {
 		width: 50%;
-		height: 90px;
+		height: 95px;
 
 		.rightBar {
 			width: 50%;
 
 			&.rgt {
-				width: 50%;
+				width: 49.6%;
+				margin-top: 95px;
 			}
 		}
 
@@ -425,10 +457,10 @@ header {
 					display: flex;
 					justify-content: end;
 					flex-direction: column;
-					padding: 0px 10vw 0px;
+					padding: 0px 5vw 0px;
 
 					h2 {
-						font: 70px/1 $ikeaFont;
+						font: 44px/1 $ikeaFont;
 						color: $grey;
 						animation: appear 0.5s linear;
 						animation-fill-mode: backwards;
@@ -451,7 +483,7 @@ header {
 					height: 300px;
 					padding: 60px 0px 60px;
 					text-align: left;
-					padding: 60px 10vw 0px;
+					padding: 60px 5vw 0px;
 
 					.circle {
 						position: absolute;
@@ -529,7 +561,7 @@ header {
 
 		.menu {
 			flex: 1.5;
-			font: 35px/1 $ikeaFont;
+			font: 30px/1 $ikeaFont;
 			color: $grey;
 			cursor: pointer;
 
@@ -559,7 +591,7 @@ header {
 			cursor: pointer;
 
 			p {
-				font: 35px/1 $ikeaFont;
+				font: 30px/1 $ikeaFont;
 				color: $grey;
 			}
 		}

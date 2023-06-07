@@ -4,8 +4,8 @@ body {
 }
 
 header {
-  width: 24.4%;
-  height: 108px;
+  width: 25%;
+  height: 79px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,8 +17,8 @@ header {
   z-index: 999;
 }
 header .rightBar {
-  width: 24.4%;
-  margin-top: 108px;
+  width: 25%;
+  margin-top: 79px;
   height: 100vh;
   background: #010001;
   position: fixed;
@@ -28,7 +28,7 @@ header .rightBar {
   display: none;
 }
 header .rightBar.rgt {
-  width: 24.4%;
+  width: 25%;
   background: #010001;
   position: fixed;
   top: 0;
@@ -48,7 +48,7 @@ header .rightBar.rgt {
 }
 header .leftBar {
   height: 100%;
-  width: 50.4%;
+  width: 50%;
   background: #010001;
   position: fixed;
   display: flex;
@@ -133,6 +133,10 @@ header .leftBar .leftBarWrap .leftBarList li {
   animation-delay: 0.5s;
   opacity: 1;
 }
+header .leftBar .leftBarWrap .leftBarList li a:visited {
+  color: #969696;
+  cursor: pointer;
+}
 @keyframes appear {
   from {
     opacity: 0;
@@ -191,16 +195,20 @@ header .logo p {
   font: 35px/1 "IKEA Sans";
   color: #e9e9e9;
 }
+header .logo p a:visited {
+  color: #e9e9e9;
+  cursor: pointer;
+}
 
 @media screen and (max-width: 1023px) {
   header {
-    width: 36.8%;
+    width: 38%;
   }
   header .rightBar {
-    width: 36.8%;
+    width: 38%;
   }
   header .rightBar.rgt {
-    width: 36.8%;
+    width: 38%;
   }
   header .leftBar {
     height: 100%;
@@ -351,13 +359,14 @@ header .logo p {
 @media screen and (max-width: 639px) {
   header {
     width: 50%;
-    height: 90px;
+    height: 95px;
   }
   header .rightBar {
     width: 50%;
   }
   header .rightBar.rgt {
-    width: 50%;
+    width: 49.6%;
+    margin-top: 95px;
   }
   header .leftBar {
     height: 100%;
@@ -384,10 +393,10 @@ header .logo p {
     display: flex;
     justify-content: end;
     flex-direction: column;
-    padding: 0px 10vw 0px;
+    padding: 0px 5vw 0px;
   }
   header .leftBar .leftBarWrap .leftBarTit h2 {
-    font: 70px/1 "IKEA Sans";
+    font: 44px/1 "IKEA Sans";
     color: #e9e9e9;
     animation: appear 0.5s linear;
     animation-fill-mode: backwards;
@@ -407,7 +416,7 @@ header .logo p {
     height: 300px;
     padding: 60px 0px 60px;
     text-align: left;
-    padding: 60px 10vw 0px;
+    padding: 60px 5vw 0px;
   }
   header .leftBar .leftBarWrap .leftBarList .circle {
     position: absolute;
@@ -475,7 +484,7 @@ header .logo p {
   }
   header .menu {
     flex: 1.5;
-    font: 35px/1 "IKEA Sans";
+    font: 30px/1 "IKEA Sans";
     color: #e9e9e9;
     cursor: pointer;
   }
@@ -501,7 +510,7 @@ header .logo p {
     cursor: pointer;
   }
   header .logo p {
-    font: 35px/1 "IKEA Sans";
+    font: 30px/1 "IKEA Sans";
     color: #e9e9e9;
   }
 }
@@ -555,7 +564,7 @@ a {
   grid-column: span 3;
 }
 #visual .visualWrap .bg:nth-of-type(8) {
-  padding: 20px 1vw 0px;
+  padding: 15px 1vw 0px;
   font: 18px/1 "IKEA Sans";
   color: #e9e9e9;
   border: 1px solid #eee;
@@ -565,7 +574,7 @@ a {
   background: #fec202;
 }
 #visual .visualWrap .bg:nth-of-type(9) {
-  padding: 170px 1vw 0px;
+  padding: 170px 1vw 15px;
   font: 18px/1 "IKEA Sans";
   color: #e9e9e9;
   text-align: start;
@@ -594,7 +603,7 @@ a {
 }
 #visual .visualWrap .bg:nth-of-type(13) {
   text-align: end;
-  padding: 170px 1vw 0px;
+  padding: 170px 1vw 15px;
   font: 18px/1 "IKEA Sans";
   color: #e9e9e9;
   border: 1px solid #eee;
@@ -618,14 +627,14 @@ a {
     padding: 20px 2vw 0px;
   }
   #visual .visualWrap .bg:nth-of-type(9) {
-    padding: 170px 2vw 0px;
+    padding: 170px 2vw 15px;
   }
   #visual .visualWrap .bg:nth-of-type(12) h1 {
     width: 90%;
     font: 28px/1 "IKEA Sans";
   }
   #visual .visualWrap .bg:nth-of-type(13) {
-    padding: 170px 2vw 0px;
+    padding: 170px 2vw 15px;
   }
 }
 @media screen and (max-width: 639px) {
@@ -634,7 +643,7 @@ a {
   }
   #visual .visualWrap {
     grid-template-columns: 0.1fr 0fr 0fr 0fr 1fr 1fr 0.1fr;
-    grid-template-rows: 7fr 1.7fr 1.7fr 3fr;
+    grid-template-rows: 7fr 1.5fr 1.5fr 3fr;
   }
   #visual .visualWrap .bg:nth-of-type(8) {
     padding: 10px 3vw 0px;
@@ -842,11 +851,11 @@ a {
   cursor: pointer;
 }
 #products .productsContainer .productsSub .btnWrap .circleBtns {
-  width: 18.5185185185%;
+  width: 20%;
   height: 100%;
   display: flex;
   align-items: center;
-  padding: 0px 2vw 0px;
+  padding: 0px 1.2vw 0px;
   gap: 20px;
 }
 #products .productsContainer .productsSub .btnWrap .circleBtns button {
@@ -861,13 +870,12 @@ a {
   background: #171717;
 }
 #products .productsContainer .productsSub .btnWrap .hyperBtns {
-  width: 18.5185185185%;
+  width: 20%;
   height: 100%;
   font: 18px/1 "IKEA Sans";
   color: #333;
-  text-align: center;
   display: flex;
-  justify-content: center;
+  padding: 0px 0vw 0px;
   align-items: center;
   cursor: pointer;
 }
@@ -1110,7 +1118,7 @@ a {
     height: 40%;
     flex: 1;
     background: #f9f9f9;
-    font: 70px/180px "IKEA Sans";
+    font: 49px/180px "IKEA Sans";
     color: #333;
   }
   #products .productsContainer .productsSub {
@@ -1118,7 +1126,7 @@ a {
     height: 40%;
     flex: 3;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
   }
   #products .productsContainer .productsSub .slideWrap {
@@ -1134,6 +1142,9 @@ a {
     background: #f0f0f0;
     flex-direction: column;
     display: flex;
+    overflow: scroll;
+    background: red;
+    flex-wrap: nowrap;
   }
   #products .productsContainer .productsSub .slideWrap .slideItem:nth-of-type(1) {
     display: flex;
@@ -1195,9 +1206,6 @@ a {
     color: #333;
     margin-top: 0px;
   }
-  #products .productsContainer .productsSub .slideWrap .slideItem:nth-of-type(4) {
-    display: none;
-  }
   #products .productsContainer .productsSub .slideWrap .slideItem:nth-of-type(4) .productsImg {
     flex: 3;
     background-image: url(../img/products4.png);
@@ -1212,9 +1220,6 @@ a {
     font: 18px/25px "IKEA Sans";
     color: #333;
     margin-top: 0px;
-  }
-  #products .productsContainer .productsSub .slideWrap .slideItem:nth-of-type(5) {
-    display: none;
   }
   #products .productsContainer .productsSub .slideWrap .slideItem:nth-of-type(5) .productsImg {
     flex: 3;
@@ -1385,7 +1390,7 @@ a {
   letter-spacing: 0.1px;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 639px) {
   #room {
     width: 100vw;
     height: 650px;

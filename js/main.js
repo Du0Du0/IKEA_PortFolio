@@ -23,7 +23,7 @@ const vidsBarTit = vidsSection.querySelectorAll('.vidsBarTit');
 
 //header
 //header menu 클릭하면 오른쪽 바 내려옴
-headerSection.addEventListener('click', (e) => {
+menuBtn.addEventListener('click', (e) => {
 	const isRgtOn = rightBar.classList.contains('rgt');
 	const isLeftOn = leftBar.classList.contains('lft');
 

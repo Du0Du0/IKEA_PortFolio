@@ -208,11 +208,11 @@
 
 				// products 캐럿셀 원형 버튼
 				.circleBtns {
-					width: calc(100% / 5.4);
+					width: calc(100% / 5);
 					height: 100%;
 					display: flex;
 					align-items: center;
-					padding: 0px 2vw 0px;
+					padding: 0px 1.2vw 0px;
 					gap: 20px;
 
 					button {
@@ -231,13 +231,12 @@
 
 				// products 모든 카테고리 바로가기
 				.hyperBtns {
-					width: calc(100% / 5.4);
+					width: calc(100% / 5);
 					height: 100%;
 					font: 18px/1 $ikeaFont;
 					color: $fontColorBl;
-					text-align: center;
 					display: flex;
-					justify-content: center;
+					padding: 0px 0vw 0px;
 					align-items: center;
 					cursor: pointer;
 				}
@@ -518,7 +517,7 @@
 				height: 40%;
 				flex: 1;
 				background: $bgW;
-				font: 70px/180px $ikeaFont;
+				font: 49px/180px $ikeaFont;
 				color: $fontColorBl;
 			}
 
@@ -527,7 +526,7 @@
 				height: 40%;
 				flex: 3;
 				display: flex;
-				flex-wrap: wrap;
+				flex-wrap: nowrap;
 				flex-direction: column;
 
 				.slideWrap {
@@ -543,6 +542,9 @@
 						background: $boxGrey;
 						flex-direction: column;
 						display: flex;
+						overflow: scroll;
+						background: red;
+						flex-wrap: nowrap;
 
 						// products slide box1
 						&:nth-of-type(1) {
@@ -615,8 +617,6 @@
 
 						// products slide box4
 						&:nth-of-type(4) {
-							display: none;
-
 							.productsImg {
 								flex: 3;
 								background-image: url(../img/products4.png);
@@ -636,8 +636,6 @@
 
 						// products slide box5
 						&:nth-of-type(5) {
-							display: none;
-
 							.productsImg {
 								flex: 3;
 								background-image: url(../img/products5.png);
