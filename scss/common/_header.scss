@@ -1,6 +1,6 @@
 header {
-	width: 25%;
-	height: 79px;
+	width: 24.2%;
+	height: 110px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -12,8 +12,8 @@ header {
 	z-index: 999;
 
 	.rightBar {
-		width: 25%;
-		margin-top: 79px;
+		width: 24.2%;
+		margin-top: 110px;
 		height: 100vh;
 		background: $black;
 		position: fixed;
@@ -23,7 +23,7 @@ header {
 		display: none;
 
 		&.rgt {
-			width: 25%;
+			width: 24.2%;
 			background: $black;
 			position: fixed;
 			top: 0;
@@ -46,7 +46,7 @@ header {
 
 	.leftBar {
 		height: 100%;
-		width: 50%;
+		width: 50.4%;
 		background: $black;
 		position: fixed;
 		display: flex;
@@ -242,13 +242,13 @@ header {
 
 @media screen and (max-width: $tablet) {
 	header {
-		width: 38%;
+		width: 37%;
 
 		.rightBar {
-			width: 38%;
+			width: 37%;
 
 			&.rgt {
-				width: 38%;
+				width: 37%;
 			}
 		}
 
