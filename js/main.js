@@ -7,20 +7,6 @@ const BarBtn = headerSection.querySelector('.fa-bars-staggered');
 const closeBtn = headerSection.querySelector('.fa-xmark');
 const circleMouse = headerSection.querySelector('.circle');
 
-//room
-const roomSection = document.querySelector('#room');
-const roomBtns = roomSection.querySelectorAll('.roomTab');
-const roomBg = roomSection.querySelector('.roomBg');
-const previewBg = roomSection.querySelector('.previewBg');
-const roomTitle = roomSection.querySelector('.previewTit');
-const roomSub = roomSection.querySelector('.previewSub');
-
-//vids
-const vidsSection = document.querySelector('#vids');
-const videos = vidsSection.querySelectorAll('.video');
-const vidsNum = vidsSection.querySelectorAll('.vidsNum');
-const vidsBarTit = vidsSection.querySelectorAll('.vidsBarTit');
-
 //header
 //header menu 클릭하면 오른쪽 바 내려옴
 menuBtn.addEventListener('click', (e) => {
@@ -48,6 +34,13 @@ document.addEventListener('mousemove', (e) => {
 });
 
 //room
+const roomSection = document.querySelector('#room');
+const roomBtns = roomSection.querySelectorAll('.roomTab');
+const roomBg = roomSection.querySelector('.roomBg');
+const previewBg = roomSection.querySelector('.previewBg');
+const roomTitle = roomSection.querySelector('.previewTit');
+const roomSub = roomSection.querySelector('.previewSub');
+
 const roomImgs = ['bg1.png', 'preview2.png', 'preview3.png', 'preview4.png'];
 
 const preTit = [
@@ -87,31 +80,83 @@ roomBtns.forEach((roomBtn, idx) => {
 });
 
 //vids
-// box클릭하면 해당 box열리는 기본 기능
-videos.forEach((video, idx) => {
-	if (videos[idx].classList.contains('on')) {
-		vidsNum[idx].style.display = 'none';
-		vidsBarTit[idx].style.display = 'none';
-	}
 
-	video.addEventListener('click', (e) => {
-		e.preventDefault();
+//youtube api
+const vidsVideoWrap = document.querySelector('.vidsVideoWrap');
+const key = 'AIzaSyCV2KoPa3MQ65lmbMraSlR-HwFY9dRqgF0';
+const list = 'PLWgHnOZUp_4GvPcmipe9YROpmqMu9Tblz';
+const num = 5;
+const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${list}&key=${key}&maxResults=${num}`;
+let videoIsOn; // 변수를 미리 선언
 
-		for (const video of videos) video.classList.remove('on');
-		videos[idx].classList.add('on');
+fetch(url)
+	.then((data) => data.json())
+	.then((json) => {
+		console.log(json.items);
+		let tags = '';
 
-		videos[idx].classList.contains('on')
-			? ((vidsNum[idx].style.display = 'none'), (vidsBarTit[idx].style.display = 'none'))
-			: ((vidsNum[idx].style.display = 'block'), (vidsBarTit[idx].style.display = 'block'));
+		json.items.forEach((item, idx) => {
+			let tit = item.snippet.title;
+			let desc = item.snippet.description;
 
-		for (let i = 0; i < videos.length; i++) {
-			if (!videos[i].classList.contains('on')) {
-				vidsBarTit[i].style.display = 'block';
-				vidsNum[i].style.display = 'block';
+			tags += `
+	  <div class="video ${idx === 1 ? 'on' : ''}" 
+			 style = "background-image : url(${json.items[idx].snippet.thumbnails.maxres.url})">
+          <div class="vidsNum">${item.snippet.position + 1}</div>
+          <div class="vidsBarTit">${tit.length > 20 ? tit.substr(0, 20) : tit}</div>
+      <span class="vidsOnSpan" style ="display: none">
+	<h4>${item.snippet.position + 1}</h4>
+	<h2>${tit.length > 50 ? tit.substr(0, 50) : tit}</h2>
+	<p>${desc.length > 50 ? desc.substr(0, 50) : desc}</p>
+</span>
+
+</div>
+			`;
+		});
+		vidsVideoWrap.innerHTML = tags;
+
+		const vidsSection = document.querySelector('#vids');
+		const videos = vidsSection.querySelectorAll('.video');
+		const vidsNum = vidsSection.querySelectorAll('.vidsNum');
+		const vidsBarTit = vidsSection.querySelectorAll('.vidsBarTit');
+		const vidsSpan = vidsSection.querySelectorAll('.vidsOnSpan');
+
+		// box클릭하면 해당 box열리는 기본 기능
+		videos.forEach((video, idx) => {
+			if (videos[idx].classList.contains('on')) {
+				vidsNum[idx].style.display = 'none';
+				vidsBarTit[idx].style.display = 'none';
+				videos[idx].style.backgroundImage = `url(${json.items[idx].snippet.thumbnails.maxres.url})`;
+				vidsSpan[idx].style.display = 'block';
 			}
-		}
+
+			video.addEventListener('click', (e) => {
+				e.preventDefault();
+
+				for (const video of videos) video.classList.remove('on');
+				videos[idx].classList.add('on');
+
+				videos[idx].classList.contains('on')
+					? ((vidsNum[idx].style.display = 'none'),
+					  (vidsBarTit[idx].style.display = 'none'),
+					  ((videos[
+							idx
+					  ].style.backgroundImage = `url(${json.items[idx].snippet.thumbnails.maxres.url})`),
+					  (vidsSpan[idx].style.display = 'block')))
+					: ((vidsNum[idx].style.display = 'block'),
+					  (vidsBarTit[idx].style.display = 'block'),
+					  (vidsSpan[idx].style.display = 'none'));
+
+				for (let i = 0; i < videos.length; i++) {
+					if (!videos[i].classList.contains('on')) {
+						vidsBarTit[i].style.display = 'block';
+						vidsNum[i].style.display = 'block';
+						vidsSpan[i].style.display = 'none';
+					}
+				}
+			});
+		});
 	});
-});
 
 //products
 const slideWrap = document.querySelector('.slideWrap');
