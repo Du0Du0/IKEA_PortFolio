@@ -101,13 +101,17 @@ fetch(url)
 
 			tags += `
 	  <div class="video ${idx === 1 ? 'on' : ''}" 
-			 style = "background-image : url(${json.items[idx].snippet.thumbnails.maxres.url})">
-          <div class="vidsNum">${item.snippet.position + 1}</div>
-          <div class="vidsBarTit">${tit.length > 20 ? tit.substr(0, 20) : tit}</div>
-      <span class="vidsOnSpan" style ="display: none">
-	<h4>${item.snippet.position + 1}</h4>
-	<h2>${tit.length > 50 ? tit.substr(0, 50) : tit}</h2>
-	<p>${desc.length > 50 ? desc.substr(0, 50) : desc}</p>
+			data-video-id = "${item.snippet.resourceId.videoId}"
+		style = "background-image : url(${json.items[idx].snippet.thumbnails.maxres.url}
+			)">
+    <div class="vidsNum">${item.snippet.position + 1}</div>
+     <div class="vidsBarTit">${(tit.length > 20 ? tit.substr(0, 25) : tit) + '...'}</div>
+
+    <span class="vidsOnSpan" style ="display: none">
+		<h4>${(item.snippet.position + 1).toString().padStart(2, 0)}.</h4>
+		<h2>${(tit.length > 50 ? tit.substr(0, 50) : tit) + '...'}</h2>
+		<p>${(desc.length > 50 ? desc.substr(0, 300) : desc) + '...'}</p>
+		<button class="discoverBtn">Discover Now</button>
 </span>
 
 </div>
@@ -157,6 +161,41 @@ fetch(url)
 			});
 		});
 	});
+
+//vids pop 찹업창 띄우기
+document.body.addEventListener('click', (e) => {
+	console.log(e.target);
+	if (e.target.className === 'discoverBtn')
+		createPop(e.target.closest('.video').getAttribute('data-video-id'));
+	if (e.target.className === 'close') removePop();
+});
+
+//vids 동적으로 팝업 생성 함수
+function createPop(id) {
+	const tags = `	
+			<div class='con'>
+			<iframe src='https://www.youtube.com/embed/${id}'></iframe></div>
+			<span class='close'>x</span>
+	`;
+	const pop = document.createElement('aside');
+	pop.className = 'pop';
+	pop.innerHTML = tags;
+	document.body.append(pop);
+	console.log('.pop');
+
+	//특정 코드를 강제로 동기화시키고 싶을때는 setTimeout에 delay를 0초로 지정해서 코드를 패키징 (강제로 wep api에 넘어갔다가 다시 콜스택 젤 마지막에 등록)
+	setTimeout(() => document.querySelector('.pop').classList.add('on'), 0);
+	document.body.style.overflow = 'hidden';
+}
+
+const vidsCloseBtn = document.querySelector('.close');
+
+//팝업제거 함수
+function removePop() {
+	document.querySelector('.pop').classList.remove('on');
+	setTimeout(() => document.querySelector('.pop').remove(), 1000);
+	document.body.style.overflow = 'auto';
+}
 
 //products
 const slideWrap = document.querySelector('.slideWrap');

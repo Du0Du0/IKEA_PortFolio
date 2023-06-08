@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
 $ikeaBlue: #0058ab;
 $ikeaYellow: #fec202;
 $ikeaBl: #171717;
@@ -7,7 +9,7 @@ $boxGrey: #f0f0f0;
 $carotBtn: #cccccc;
 $bgW: #f9f9f9;
 $fontColorW: #eee;
-$ikeaFont: 'IKEA Sans';
+$ikeaFont: 'Work Sans';
 $fontColorBl: #333;
 $fontColorGr: #969696;
 $fontColorGrC: #10101099;
@@ -24,6 +26,7 @@ body {
 @import 'common/footer';
 @import 'common/layout';
 @import 'common/reset';
+@import 'common/pop';
 
 //main
 @import 'main/visual';

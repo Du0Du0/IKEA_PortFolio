@@ -1,0 +1,39 @@
+.pop {
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.9);
+	position: fixed;
+	top: 0;
+	left: 0px;
+	padding: 110px;
+	z-index: 5;
+	opacity: 0;
+	transition: opacity 1s;
+
+	&.on {
+		opacity: 1;
+	}
+
+	.con {
+		width: 100%;
+		height: 100%;
+
+		iframe,
+		video,
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border: none;
+		}
+	}
+
+	.close {
+		font: 35px/1 '$ikeaFont';
+		color: $fontColorW;
+		position: absolute;
+		top: 30px;
+		left: 50px;
+		cursor: pointer;
+	}
+}

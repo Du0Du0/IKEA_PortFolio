@@ -55,6 +55,8 @@
 				align-items: center;
 				text-align: center;
 				flex: 1;
+				position: relative;
+				background-blend-mode: multiply;
 
 				.vidsNum {
 					flex: 1;
@@ -81,7 +83,7 @@
 
 				&.on {
 					flex: 5;
-					background: orange;
+					background: #a3a3a3;
 					animation: videoMove 0.5s linear;
 					background-position: center;
 					background-size: cover;
@@ -92,42 +94,52 @@
 					color: white;
 					overflow: hidden;
 
-					h4 {
-						color: $fontColorW;
-						font: 30px/1 $ikeaFont;
-						text-align: left;
-						margin-left: 0vw;
-						margin-top: -8vw;
-						margin-bottom: 10px;
-					}
+					.vidsOnSpan {
+						backdrop-filter: blur(10px) opacity(0.3);
 
-					h2 {
-						color: $fontColorW;
+						h4 {
+							color: $grey;
+							font: 26px/1 $ikeaFont;
+							text-align: left;
+						}
 
-						font: 45px/1 $ikeaFont;
-						text-align: left;
-						margin-left: 0vw;
-					}
+						h2 {
+							color: $fontColorW;
+							width: 600px;
+							font: 38px/1.2 $ikeaFont;
+							text-align: left;
+							z-index: 999;
+						}
 
-					p {
-						color: $grey;
-						width: 600px;
-						font: 18px/1 $ikeaFont;
-						text-align: left;
-						margin-top: 6vw;
-						margin-left: 0vw;
+						p {
+							color: $grey;
+							width: 600px;
+							text-align: justify;
+							word-break: break-all;
+							font: 18px/1.2 $ikeaFont;
+							text-align: left;
+							margin-top: 2vw;
+							margin-bottom: 96px;
+						}
 					}
-					&.on::after {
+					.discoverBtn {
 						content: 'Discover Now';
 						position: absolute;
-						right: 0;
-						bottom: 0;
+						float: right;
+						bottom: -2.7vw;
+						right: -4.6vw;
 						width: 209px;
 						height: 71px;
 						background: #623fe4;
+						border: none;
 						font: 18px/71px $ikeaFont;
 						color: $grey;
 						cursor: pointer;
+
+						&:hover {
+							background: $ikeaYellow;
+							color: $ikeaBl;
+						}
 					}
 
 					// &.on::before {
