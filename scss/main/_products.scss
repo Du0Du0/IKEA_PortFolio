@@ -33,156 +33,57 @@
 			padding: 0px 5vw 0px;
 
 			.slideContainer {
+				width: 110%;
 				overflow: hidden;
-				display: inline-flex;
+				display: flex;
 				height: calc(100% / 2);
 				flex: 2.5;
 				position: relative;
 
 				.slideWrap {
 					gap: 20px;
+
 					display: inline-flex;
 					animation: moveRe 20s linear infinite;
 					animation-delay: 0s;
+					justify-content: center;
+
+					.slideItem {
+						width: 214px;
+						height: 100%;
+						background: $boxGrey;
+
+						.productsImg {
+							display: flex;
+							justify-content: center;
+							img {
+								width: 150px;
+								height: 150px;
+							}
+						}
+						.productsName {
+							text-align: center;
+							font: 18px/25px $ikeaFont;
+							color: $fontColorBl;
+							margin-top: auto;
+						}
+
+						&:hover {
+							background: #e9e9e9;
+						}
+					}
 
 					@keyframes moveRe {
 						0% {
 							transform: translate3d(0, 0, 0);
 						}
 						to {
-							transform: translateX(-5000px);
+							transform: translateX(-3000px);
 						}
 					}
 
 					&:hover {
 						animation-play-state: paused;
-					}
-
-					.slideItem {
-						width: 214px;
-						height: 100%;
-						background: $boxGrey;
-						flex-direction: column;
-
-						&:hover {
-							background: #e9e9e9;
-						}
-
-						// products slide box1
-						&:nth-of-type(1) {
-							display: flex;
-							justify-content: center;
-							text-align: center;
-							float: left;
-
-							.productsImg {
-								flex: 3;
-								background-image: url(../img/products1.png);
-								background-position: center;
-								background-repeat: no-repeat;
-								background-size: contain;
-								object-fit: cover;
-							}
-							.productsName {
-								flex: 1;
-								text-align: center;
-								font: 18px/25px $ikeaFont;
-								color: $fontColorBl;
-								margin-top: auto;
-							}
-						}
-
-						// products slide box2
-						&:nth-of-type(2) {
-							display: flex;
-							justify-content: center;
-							text-align: center;
-
-							.productsImg {
-								flex: 3;
-								background-image: url(../img/products2.png);
-								background-position: center;
-								background-repeat: no-repeat;
-								background-size: contain;
-								object-fit: cover;
-							}
-							.productsName {
-								flex: 1;
-								text-align: center;
-								font: 18px/25px $ikeaFont;
-								color: $fontColorBl;
-								margin-top: auto;
-							}
-						}
-
-						// products slide box3
-						&:nth-of-type(3) {
-							display: flex;
-							justify-content: center;
-							text-align: center;
-
-							.productsImg {
-								flex: 3;
-								background-image: url(../img/products3.png);
-								background-position: center;
-								background-repeat: no-repeat;
-								background-size: contain;
-								object-fit: cover;
-							}
-							.productsName {
-								flex: 1;
-								text-align: center;
-								font: 18px/25px $ikeaFont;
-								color: $fontColorBl;
-								margin-top: auto;
-							}
-						}
-
-						// products slide box4
-						&:nth-of-type(4) {
-							display: flex;
-							justify-content: center;
-							text-align: center;
-
-							.productsImg {
-								flex: 3;
-								background-image: url(../img/products4.png);
-								background-position: center;
-								background-repeat: no-repeat;
-								background-size: contain;
-								object-fit: cover;
-							}
-							.productsName {
-								flex: 1;
-								text-align: center;
-								font: 18px/25px $ikeaFont;
-								color: $fontColorBl;
-								margin-top: auto;
-							}
-						}
-
-						// products slide box5
-						&:nth-of-type(5) {
-							display: flex;
-							justify-content: center;
-							text-align: center;
-
-							.productsImg {
-								flex: 3;
-								background-image: url(../img/products5.png);
-								background-position: center;
-								background-repeat: no-repeat;
-								background-size: contain;
-								object-fit: cover;
-							}
-							.productsName {
-								flex: 1;
-								text-align: center;
-								font: 18px/25px $ikeaFont;
-								color: $fontColorBl;
-								margin-top: auto;
-							}
-						}
 					}
 				}
 			}
@@ -273,267 +174,35 @@
 
 @media screen and (max-width: $tablet) {
 	#products {
-		width: 100vw;
 		height: 600px;
-		background: $bgW;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		padding: 0px 10vw 60px;
 
 		.productsContainer {
 			flex-wrap: wrap;
 
 			.productsTit {
-				width: 100%;
 				height: 70px;
-				flex: 1;
-				background: $bgW;
-				font: 70px/180px $ikeaFont;
-				color: $fontColorBl;
 			}
 
 			.productsSub {
-				width: 100%;
 				height: 53%;
-
-				flex: 3;
-				display: flex;
-				flex-wrap: wrap;
-				flex-direction: column;
 				padding: 0px 0vw 0px;
 
-				.slideContainer {
-					overflow: hidden;
-					display: inline-flex;
-					position: relative;
-
-					.slideWrap {
-						gap: 20px;
-						display: inline-flex;
-						animation: moveRe 20s linear infinite;
-						animation-delay: 0s;
-
-						@keyframes moveRe {
-							0% {
-								transform: translate3d(0, 0, 0);
-							}
-							to {
-								transform: translateX(-5000px);
-							}
-						}
-
-						&:hover {
-							animation-play-state: paused;
-						}
-
-						.slideItem {
-							width: 214px;
-							height: 214px;
-							background: $boxGrey;
-							flex-direction: column;
-
-							&:hover {
-								background: #e9e9e9;
-							}
-
-							// products slide box1
-							&:nth-of-type(1) {
-								display: flex;
-								justify-content: center;
-								text-align: center;
-								float: left;
-
-								.productsImg {
-									flex: 3;
-									background-image: url(../img/products1.png);
-									background-position: center;
-									background-repeat: no-repeat;
-									background-size: contain;
-									object-fit: cover;
-								}
-								.productsName {
-									flex: 1;
-									text-align: center;
-									font: 18px/25px $ikeaFont;
-									color: $fontColorBl;
-									margin-top: auto;
-								}
-							}
-
-							// products slide box2
-							&:nth-of-type(2) {
-								display: flex;
-								justify-content: center;
-								text-align: center;
-
-								.productsImg {
-									flex: 3;
-									background-image: url(../img/products2.png);
-									background-position: center;
-									background-repeat: no-repeat;
-									background-size: contain;
-									object-fit: cover;
-								}
-								.productsName {
-									flex: 1;
-									text-align: center;
-									font: 18px/25px $ikeaFont;
-									color: $fontColorBl;
-									margin-top: auto;
-								}
-							}
-
-							// products slide box3
-							&:nth-of-type(3) {
-								display: flex;
-								justify-content: center;
-								text-align: center;
-
-								.productsImg {
-									flex: 3;
-									background-image: url(../img/products3.png);
-									background-position: center;
-									background-repeat: no-repeat;
-									background-size: contain;
-									object-fit: cover;
-								}
-								.productsName {
-									flex: 1;
-									text-align: center;
-									font: 18px/25px $ikeaFont;
-									color: $fontColorBl;
-									margin-top: auto;
-								}
-							}
-
-							// products slide box4
-							&:nth-of-type(4) {
-								display: flex;
-								justify-content: center;
-								text-align: center;
-
-								.productsImg {
-									flex: 3;
-									background-image: url(../img/products4.png);
-									background-position: center;
-									background-repeat: no-repeat;
-									background-size: contain;
-									object-fit: cover;
-								}
-								.productsName {
-									flex: 1;
-									text-align: center;
-									font: 18px/25px $ikeaFont;
-									color: $fontColorBl;
-									margin-top: auto;
-								}
-							}
-
-							// products slide box5
-							&:nth-of-type(5) {
-								display: flex;
-								justify-content: center;
-								text-align: center;
-
-								.productsImg {
-									flex: 3;
-									background-image: url(../img/products5.png);
-									background-position: center;
-									background-repeat: no-repeat;
-									background-size: contain;
-									object-fit: cover;
-								}
-								.productsName {
-									flex: 1;
-									text-align: center;
-									font: 18px/25px $ikeaFont;
-									color: $fontColorBl;
-									margin-top: auto;
-								}
-							}
-						}
-					}
-				}
 				// products 하단 버튼 메뉴들
 				.btnWrap {
-					width: 100%;
-					height: 100%;
-
-					display: flex;
-					gap: 20px;
-
 					.arrowBtns {
 						width: calc(100% / 3.6);
 						height: 90%;
-						display: flex;
-						text-align: center;
-						justify-content: center;
-
-						// products 왼쪽 화살표
-						.leftArrowBtn {
-							width: 100%;
-							height: 100%;
-							display: flex;
-							justify-content: center;
-							align-items: center;
-							flex: 1;
-							background: $ikeaBl;
-							font: 26px $ikeaFont;
-							color: $fontColorW;
-							cursor: pointer;
-						}
-
-						//  products 오른쪽 화살표
-						.rigtArrowBtn {
-							width: 100%;
-							height: 100%;
-							display: flex;
-							justify-content: center;
-							align-items: center;
-							flex: 1;
-							background: $ikeaBl;
-							font: 26px/5px $ikeaFont;
-							color: $fontColorW;
-							cursor: pointer;
-						}
 					}
 
 					// products 캐럿셀 원형 버튼
 					.circleBtns {
 						width: calc(100% / 3.6);
-						height: 100%;
-						display: flex;
-						justify-content: center;
-						align-items: center;
-						padding: 0px 1.2vw 0px;
-						gap: 20px;
-
-						button {
-							width: 15px;
-							height: 15px;
-							border-radius: 50%;
-							border: none;
-							background: $carotBtn;
-							cursor: pointer;
-
-							&.on {
-								background: $ikeaBl;
-							}
-						}
 					}
 
 					// products 모든 카테고리 바로가기
 					.hyperBtns {
 						width: calc(100% / 3.6);
-						height: 100%;
-						font: 18px/1 $ikeaFont;
-						color: $fontColorBl;
-
-						padding: 0px 0vw 0px;
-						justify-content: left;
-						align-items: center;
-						cursor: pointer;
 					}
 				}
 			}
@@ -543,262 +212,33 @@
 
 @media screen and (max-width: $mobile) {
 	#products {
-		width: 100vw;
-		height: 600px;
-		background: $bgW;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		padding: 0px 10vw 60px;
+		padding: 0px 5vw 60px;
 
 		.productsContainer {
-			flex-wrap: wrap;
-
 			.productsTit {
-				width: 100%;
-				height: 70px;
-				flex: 1;
-				background: $bgW;
 				font: 50px/180px $ikeaFont;
-				color: $fontColorBl;
 			}
 
 			.productsSub {
-				width: 100%;
 				height: 53%;
 
-				flex: 3;
-				display: flex;
-				flex-wrap: wrap;
-				flex-direction: column;
-				padding: 0px 0vw 0px;
-
-				.slideContainer {
-					overflow: hidden;
-					display: inline-flex;
-					position: relative;
-
-					.slideWrap {
-						gap: 20px;
-						display: inline-flex;
-						animation: moveRe 20s linear infinite;
-						animation-delay: 0s;
-
-						@keyframes moveRe {
-							0% {
-								transform: translate3d(0, 0, 0);
-							}
-							to {
-								transform: translateX(-5000px);
-							}
-						}
-
-						&:hover {
-							animation-play-state: paused;
-						}
-
-						.slideItem {
-							width: 200px;
-							height: 200px;
-							background: $boxGrey;
-							flex-direction: column;
-
-							&:hover {
-								background: #e9e9e9;
-							}
-
-							// products slide box1
-							&:nth-of-type(1) {
-								display: flex;
-								justify-content: center;
-								text-align: center;
-								float: left;
-
-								.productsImg {
-									flex: 3;
-									background-image: url(../img/products1.png);
-									background-position: center;
-									background-repeat: no-repeat;
-									background-size: contain;
-									object-fit: cover;
-								}
-								.productsName {
-									flex: 1;
-									text-align: center;
-									font: 18px/25px $ikeaFont;
-									color: $fontColorBl;
-									margin-top: auto;
-								}
-							}
-
-							// products slide box2
-							&:nth-of-type(2) {
-								display: flex;
-								justify-content: center;
-								text-align: center;
-
-								.productsImg {
-									flex: 3;
-									background-image: url(../img/products2.png);
-									background-position: center;
-									background-repeat: no-repeat;
-									background-size: contain;
-									object-fit: cover;
-								}
-								.productsName {
-									flex: 1;
-									text-align: center;
-									font: 18px/25px $ikeaFont;
-									color: $fontColorBl;
-									margin-top: auto;
-								}
-							}
-
-							// products slide box3
-							&:nth-of-type(3) {
-								display: flex;
-								justify-content: center;
-								text-align: center;
-
-								.productsImg {
-									flex: 3;
-									background-image: url(../img/products3.png);
-									background-position: center;
-									background-repeat: no-repeat;
-									background-size: contain;
-									object-fit: cover;
-								}
-								.productsName {
-									flex: 1;
-									text-align: center;
-									font: 18px/25px $ikeaFont;
-									color: $fontColorBl;
-									margin-top: auto;
-								}
-							}
-
-							// products slide box4
-							&:nth-of-type(4) {
-								display: flex;
-								justify-content: center;
-								text-align: center;
-
-								.productsImg {
-									flex: 3;
-									background-image: url(../img/products4.png);
-									background-position: center;
-									background-repeat: no-repeat;
-									background-size: contain;
-									object-fit: cover;
-								}
-								.productsName {
-									flex: 1;
-									text-align: center;
-									font: 18px/25px $ikeaFont;
-									color: $fontColorBl;
-									margin-top: auto;
-								}
-							}
-
-							// products slide box5
-							&:nth-of-type(5) {
-								display: flex;
-								justify-content: center;
-								text-align: center;
-
-								.productsImg {
-									flex: 3;
-									background-image: url(../img/products5.png);
-									background-position: center;
-									background-repeat: no-repeat;
-									background-size: contain;
-									object-fit: cover;
-								}
-								.productsName {
-									flex: 1;
-									text-align: center;
-									font: 18px/25px $ikeaFont;
-									color: $fontColorBl;
-									margin-top: auto;
-								}
-							}
-						}
-					}
-				}
 				// products 하단 버튼 메뉴들
 				.btnWrap {
-					width: 100%;
-					height: 100%;
-
-					display: flex;
-					gap: 20px;
-
 					.arrowBtns {
-						width: calc(100% / 2.5);
+						width: calc(100% / 2);
 						height: 80%;
-						display: flex;
-						text-align: center;
-						justify-content: center;
-
-						// products 왼쪽 화살표
-						.leftArrowBtn {
-							width: 100%;
-							height: 100%;
-							display: flex;
-							justify-content: center;
-							align-items: center;
-							flex: 1;
-							background: $ikeaBl;
-							font: 26px $ikeaFont;
-							color: $fontColorW;
-							cursor: pointer;
-						}
-
-						//  products 오른쪽 화살표
-						.rigtArrowBtn {
-							width: 100%;
-							height: 100%;
-							display: flex;
-							justify-content: center;
-							align-items: center;
-							flex: 1;
-							background: $ikeaBl;
-							font: 26px/5px $ikeaFont;
-							color: $fontColorW;
-							cursor: pointer;
-						}
 					}
 
 					// products 캐럿셀 원형 버튼
 					.circleBtns {
 						display: none;
-
-						button {
-							width: 15px;
-							height: 15px;
-							border-radius: 50%;
-							border: none;
-							background: $carotBtn;
-							cursor: pointer;
-
-							&.on {
-								background: $ikeaBl;
-							}
-						}
 					}
 
 					// products 모든 카테고리 바로가기
 					.hyperBtns {
-						width: calc(100% / 3);
-						height: 100%;
-						font: 18px/1 $ikeaFont;
-						color: $fontColorBl;
-
-						padding: 0px 0vw 0px;
-						justify-content: center;
-						align-items: center;
+						width: calc(100% / 2);
+						justify-content: left;
 						margin-top: -7px;
-						cursor: pointer;
 					}
 				}
 			}

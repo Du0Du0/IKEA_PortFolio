@@ -1,0 +1,84 @@
+{
+  "products": [
+    {
+      "category": "Lighting",
+      "pic": "products1.png"
+    },
+    {
+      "category": "Furniture",
+      "pic": "products2.png"
+    },
+    {
+      "category": "Kitchen",
+      "pic": "products3.png"
+    },
+    {
+      "category": "Outdoor",
+      "pic": "products4.png"
+    },
+    {
+      "category": "Textiles",
+      "pic": "products5.png"
+    },
+    {
+      "category": "Decoration",
+      "pic": "products1.png"
+    },
+    {
+      "category": "Cushions",
+      "pic": "products1.png"
+    },
+    {
+      "category": "Bedding",
+      "pic": "products1.png"
+    },
+    {
+      "category": "Baby",
+      "pic": "products1.png"
+    },
+    {
+      "category": "Gardening",
+      "pic": "products1.png"
+    },
+    {
+      "category": "Cleaning",
+      "pic": "products1.png"
+    },
+    {
+      "category": "Rugs",
+      "pic": "products1.png"
+    },
+    {
+      "category": "Food",
+      "pic": "products1.png"
+    },
+    {
+      "category": "Laundary",
+      "pic": "products1.png"
+    },
+    {
+      "category": "Storage",
+      "pic": "products1.png"
+    },
+    {
+      "category": "Kitchenware",
+      "pic": "products1.png"
+    },
+    {
+      "category": "Mattresses",
+      "pic": "products1.png"
+    },
+    {
+      "category": "Home smart",
+      "pic": "products1.png"
+    },
+    {
+      "category": "Electronics",
+      "pic": "products1.png"
+    },
+    {
+      "category": "Pots",
+      "pic": "products1.png"
+    }
+  ]
+}

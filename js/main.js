@@ -113,28 +113,40 @@ videos.forEach((video, idx) => {
 	});
 });
 
-// //products
+//products
 const slideWrap = document.querySelector('.slideWrap');
 const slideItems = Array.from(document.querySelectorAll('.slideItem'));
 const numSlides = slideItems.length;
 const leftArrowBtn = document.querySelector('.leftArrowBtn');
 const rightArrowBtn = document.querySelector('.rightArrowBtn');
-// function slidePrev() {
-// 	slideWrap.style.transform = 'translateX(-600px)';
-// }
 
-// function slideNext() {
-// 	slideWrap.style.transform = 'translateX(600px)';
-// }
+let tags = '';
 
-// leftArrowBtn.addEventListener('click', slidePrev);
-// rightArrowBtn.addEventListener('click', slideNext);
+fetch('DB/products.json')
+	.then((res) => res.json())
+	.then((data) => {
+		const productsData = data.products;
+
+		productsData.map((data) => {
+			tags += `
+  <div class="slideItem">
+  <div class="productsImg">
+  <img src="img/${data.pic}"  />
+  </div>
+  <div class="productsName">${data.category}</div>
+  </div>`;
+		});
+		slideWrap.innerHTML = tags;
+		duplicateSlides();
+	})
+	.catch((err) => {
+		console.log(err);
+	});
 
 function duplicateSlides() {
+	const numSlides = slideItems.length;
 	for (let i = 0; i < numSlides; i++) {
 		const clonedSlide = slideItems[i].cloneNode(true);
 		slideWrap.appendChild(clonedSlide);
 	}
 }
-
-duplicateSlides();

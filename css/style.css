@@ -716,8 +716,9 @@ a {
   padding: 0px 5vw 0px;
 }
 #products .productsContainer .productsSub .slideContainer {
+  width: 110%;
   overflow: hidden;
-  display: inline-flex;
+  display: flex;
   height: 50%;
   flex: 2.5;
   position: relative;
@@ -727,127 +728,40 @@ a {
   display: inline-flex;
   animation: moveRe 20s linear infinite;
   animation-delay: 0s;
+  justify-content: center;
+}
+#products .productsContainer .productsSub .slideContainer .slideWrap .slideItem {
+  width: 214px;
+  height: 100%;
+  background: #f0f0f0;
+}
+#products .productsContainer .productsSub .slideContainer .slideWrap .slideItem .productsImg {
+  display: flex;
+  justify-content: center;
+}
+#products .productsContainer .productsSub .slideContainer .slideWrap .slideItem .productsImg img {
+  width: 150px;
+  height: 150px;
+}
+#products .productsContainer .productsSub .slideContainer .slideWrap .slideItem .productsName {
+  text-align: center;
+  font: 18px/25px "IKEA Sans";
+  color: #333;
+  margin-top: auto;
+}
+#products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:hover {
+  background: #e9e9e9;
 }
 @keyframes moveRe {
   0% {
     transform: translate3d(0, 0, 0);
   }
   to {
-    transform: translateX(-5000px);
+    transform: translateX(-3000px);
   }
 }
 #products .productsContainer .productsSub .slideContainer .slideWrap:hover {
   animation-play-state: paused;
-}
-#products .productsContainer .productsSub .slideContainer .slideWrap .slideItem {
-  width: 214px;
-  height: 100%;
-  background: #f0f0f0;
-  flex-direction: column;
-}
-#products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:hover {
-  background: #e9e9e9;
-}
-#products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(1) {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  float: left;
-}
-#products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(1) .productsImg {
-  flex: 3;
-  background-image: url(../img/products1.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  object-fit: cover;
-}
-#products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(1) .productsName {
-  flex: 1;
-  text-align: center;
-  font: 18px/25px "IKEA Sans";
-  color: #333;
-  margin-top: auto;
-}
-#products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(2) {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-#products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(2) .productsImg {
-  flex: 3;
-  background-image: url(../img/products2.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  object-fit: cover;
-}
-#products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(2) .productsName {
-  flex: 1;
-  text-align: center;
-  font: 18px/25px "IKEA Sans";
-  color: #333;
-  margin-top: auto;
-}
-#products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(3) {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-#products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(3) .productsImg {
-  flex: 3;
-  background-image: url(../img/products3.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  object-fit: cover;
-}
-#products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(3) .productsName {
-  flex: 1;
-  text-align: center;
-  font: 18px/25px "IKEA Sans";
-  color: #333;
-  margin-top: auto;
-}
-#products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(4) {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-#products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(4) .productsImg {
-  flex: 3;
-  background-image: url(../img/products4.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  object-fit: cover;
-}
-#products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(4) .productsName {
-  flex: 1;
-  text-align: center;
-  font: 18px/25px "IKEA Sans";
-  color: #333;
-  margin-top: auto;
-}
-#products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(5) {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-#products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(5) .productsImg {
-  flex: 3;
-  background-image: url(../img/products5.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  object-fit: cover;
-}
-#products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(5) .productsName {
-  flex: 1;
-  text-align: center;
-  font: 18px/25px "IKEA Sans";
-  color: #333;
-  margin-top: auto;
 }
 #products .productsContainer .productsSub .btnWrap {
   width: 100%;
@@ -921,457 +835,51 @@ a {
 
 @media screen and (max-width: 1023px) {
   #products {
-    width: 100vw;
     height: 600px;
-    background: #f9f9f9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 0px 10vw 60px;
   }
   #products .productsContainer {
     flex-wrap: wrap;
   }
   #products .productsContainer .productsTit {
-    width: 100%;
     height: 70px;
-    flex: 1;
-    background: #f9f9f9;
-    font: 70px/180px "IKEA Sans";
-    color: #333;
   }
   #products .productsContainer .productsSub {
-    width: 100%;
     height: 53%;
-    flex: 3;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     padding: 0px 0vw 0px;
-  }
-  #products .productsContainer .productsSub .slideContainer {
-    overflow: hidden;
-    display: inline-flex;
-    position: relative;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap {
-    gap: 20px;
-    display: inline-flex;
-    animation: moveRe 20s linear infinite;
-    animation-delay: 0s;
-  }
-  @keyframes moveRe {
-    0% {
-      transform: translate3d(0, 0, 0);
-    }
-    to {
-      transform: translateX(-5000px);
-    }
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap:hover {
-    animation-play-state: paused;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem {
-    width: 214px;
-    height: 214px;
-    background: #f0f0f0;
-    flex-direction: column;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:hover {
-    background: #e9e9e9;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(1) {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    float: left;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(1) .productsImg {
-    flex: 3;
-    background-image: url(../img/products1.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    object-fit: cover;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(1) .productsName {
-    flex: 1;
-    text-align: center;
-    font: 18px/25px "IKEA Sans";
-    color: #333;
-    margin-top: auto;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(2) {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(2) .productsImg {
-    flex: 3;
-    background-image: url(../img/products2.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    object-fit: cover;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(2) .productsName {
-    flex: 1;
-    text-align: center;
-    font: 18px/25px "IKEA Sans";
-    color: #333;
-    margin-top: auto;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(3) {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(3) .productsImg {
-    flex: 3;
-    background-image: url(../img/products3.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    object-fit: cover;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(3) .productsName {
-    flex: 1;
-    text-align: center;
-    font: 18px/25px "IKEA Sans";
-    color: #333;
-    margin-top: auto;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(4) {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(4) .productsImg {
-    flex: 3;
-    background-image: url(../img/products4.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    object-fit: cover;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(4) .productsName {
-    flex: 1;
-    text-align: center;
-    font: 18px/25px "IKEA Sans";
-    color: #333;
-    margin-top: auto;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(5) {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(5) .productsImg {
-    flex: 3;
-    background-image: url(../img/products5.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    object-fit: cover;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(5) .productsName {
-    flex: 1;
-    text-align: center;
-    font: 18px/25px "IKEA Sans";
-    color: #333;
-    margin-top: auto;
-  }
-  #products .productsContainer .productsSub .btnWrap {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    gap: 20px;
   }
   #products .productsContainer .productsSub .btnWrap .arrowBtns {
     width: 27.7777777778%;
     height: 90%;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-  }
-  #products .productsContainer .productsSub .btnWrap .arrowBtns .leftArrowBtn {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    background: #171717;
-    font: 26px "IKEA Sans";
-    color: #eee;
-    cursor: pointer;
-  }
-  #products .productsContainer .productsSub .btnWrap .arrowBtns .rigtArrowBtn {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    background: #171717;
-    font: 26px/5px "IKEA Sans";
-    color: #eee;
-    cursor: pointer;
   }
   #products .productsContainer .productsSub .btnWrap .circleBtns {
     width: 27.7777777778%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 1.2vw 0px;
-    gap: 20px;
-  }
-  #products .productsContainer .productsSub .btnWrap .circleBtns button {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    border: none;
-    background: #cccccc;
-    cursor: pointer;
-  }
-  #products .productsContainer .productsSub .btnWrap .circleBtns button.on {
-    background: #171717;
   }
   #products .productsContainer .productsSub .btnWrap .hyperBtns {
     width: 27.7777777778%;
-    height: 100%;
-    font: 18px/1 "IKEA Sans";
-    color: #333;
-    padding: 0px 0vw 0px;
-    justify-content: left;
-    align-items: center;
-    cursor: pointer;
   }
 }
 @media screen and (max-width: 639px) {
   #products {
-    width: 100vw;
-    height: 600px;
-    background: #f9f9f9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 10vw 60px;
-  }
-  #products .productsContainer {
-    flex-wrap: wrap;
+    padding: 0px 5vw 60px;
   }
   #products .productsContainer .productsTit {
-    width: 100%;
-    height: 70px;
-    flex: 1;
-    background: #f9f9f9;
     font: 50px/180px "IKEA Sans";
-    color: #333;
   }
   #products .productsContainer .productsSub {
-    width: 100%;
     height: 53%;
-    flex: 3;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: 0px 0vw 0px;
-  }
-  #products .productsContainer .productsSub .slideContainer {
-    overflow: hidden;
-    display: inline-flex;
-    position: relative;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap {
-    gap: 20px;
-    display: inline-flex;
-    animation: moveRe 20s linear infinite;
-    animation-delay: 0s;
-  }
-  @keyframes moveRe {
-    0% {
-      transform: translate3d(0, 0, 0);
-    }
-    to {
-      transform: translateX(-5000px);
-    }
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap:hover {
-    animation-play-state: paused;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem {
-    width: 200px;
-    height: 200px;
-    background: #f0f0f0;
-    flex-direction: column;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:hover {
-    background: #e9e9e9;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(1) {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    float: left;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(1) .productsImg {
-    flex: 3;
-    background-image: url(../img/products1.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    object-fit: cover;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(1) .productsName {
-    flex: 1;
-    text-align: center;
-    font: 18px/25px "IKEA Sans";
-    color: #333;
-    margin-top: auto;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(2) {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(2) .productsImg {
-    flex: 3;
-    background-image: url(../img/products2.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    object-fit: cover;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(2) .productsName {
-    flex: 1;
-    text-align: center;
-    font: 18px/25px "IKEA Sans";
-    color: #333;
-    margin-top: auto;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(3) {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(3) .productsImg {
-    flex: 3;
-    background-image: url(../img/products3.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    object-fit: cover;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(3) .productsName {
-    flex: 1;
-    text-align: center;
-    font: 18px/25px "IKEA Sans";
-    color: #333;
-    margin-top: auto;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(4) {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(4) .productsImg {
-    flex: 3;
-    background-image: url(../img/products4.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    object-fit: cover;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(4) .productsName {
-    flex: 1;
-    text-align: center;
-    font: 18px/25px "IKEA Sans";
-    color: #333;
-    margin-top: auto;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(5) {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(5) .productsImg {
-    flex: 3;
-    background-image: url(../img/products5.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    object-fit: cover;
-  }
-  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:nth-of-type(5) .productsName {
-    flex: 1;
-    text-align: center;
-    font: 18px/25px "IKEA Sans";
-    color: #333;
-    margin-top: auto;
-  }
-  #products .productsContainer .productsSub .btnWrap {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    gap: 20px;
   }
   #products .productsContainer .productsSub .btnWrap .arrowBtns {
-    width: 40%;
+    width: 50%;
     height: 80%;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-  }
-  #products .productsContainer .productsSub .btnWrap .arrowBtns .leftArrowBtn {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    background: #171717;
-    font: 26px "IKEA Sans";
-    color: #eee;
-    cursor: pointer;
-  }
-  #products .productsContainer .productsSub .btnWrap .arrowBtns .rigtArrowBtn {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    background: #171717;
-    font: 26px/5px "IKEA Sans";
-    color: #eee;
-    cursor: pointer;
   }
   #products .productsContainer .productsSub .btnWrap .circleBtns {
     display: none;
   }
-  #products .productsContainer .productsSub .btnWrap .circleBtns button {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    border: none;
-    background: #cccccc;
-    cursor: pointer;
-  }
-  #products .productsContainer .productsSub .btnWrap .circleBtns button.on {
-    background: #171717;
-  }
   #products .productsContainer .productsSub .btnWrap .hyperBtns {
-    width: 33.3333333333%;
-    height: 100%;
-    font: 18px/1 "IKEA Sans";
-    color: #333;
-    padding: 0px 0vw 0px;
-    justify-content: center;
-    align-items: center;
+    width: 50%;
+    justify-content: left;
     margin-top: -7px;
-    cursor: pointer;
   }
 }
 #room {
