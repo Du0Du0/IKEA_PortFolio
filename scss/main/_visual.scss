@@ -36,10 +36,13 @@
 				font: 18px/1 $ikeaFont;
 				color: $grey;
 				border: 1px solid $fontColorW;
+				cursor: pointer;
 
 				&.on {
 					box-shadow: 0 0 50px 15px rgba($ikeaYellow, 0.45);
 					background: $ikeaYellow;
+					color: $ikeaBl;
+					border: none;
 				}
 			}
 
@@ -60,7 +63,7 @@
 				padding: 60px 0vw 0px;
 
 				h1 {
-					width: 420px;
+					width: 80%;
 					font: 30px/1 $ikeaFont;
 					color: $grey;
 					text-align: justify;
@@ -83,10 +86,14 @@
 				font: 18px/1 $ikeaFont;
 				color: $grey;
 				border: 1px solid $fontColorW;
+				cursor: pointer;
 
 				&.on {
 					box-shadow: 0 0 50px 15px rgba($ikeaYellow, 0.45);
 					background: $ikeaYellow;
+					border: none;
+					color: $ikeaBl;
+					cursor: pointer;
 				}
 			}
 
