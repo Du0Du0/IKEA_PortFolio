@@ -9,11 +9,17 @@
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/main.js"></script>
   <script defer type="module" src="js/common/header.js"></script>
+  <script defer typr="module" src="js/main/visual.js"></script>
   <script defer type="module" src="js/main/products.js"></script>
   <script defer type="module" src="js/main/vids.js"></script>
-  <script defer typr="module" src="js/main/visual.js"></script>
+  <script defer type="module" src="js/main/smartHome.js"></script>
+  <script defer type="module" src="js/main/news.js"></script>
+
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://kit.fontawesome.com/1178528ead.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="#">
+
 </head>
 
 <body>
@@ -149,7 +155,7 @@
 
 
   <!-- room start -->
-  <section id="room">
+  <!-- <section id="room">
     <div class="roomContainer">
       <div class="roomBg"></div>
       <div class="roomBtns">
@@ -169,52 +175,29 @@
           voluptates, ducimus facere odit nesciunt nam adipisci.</p>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- room end -->
 
 
 
-  <!-- news start -->
-  <section id="news">
-    <span>IKEA NEWS</span>
-    <div class="grid"></div>
-    <div class="grid"></div>
-    <div class="grid"></div>
-    <div class="grid"></div>
-    <div class="grid"></div>
-    <div class="grid"></div>
-    <div class="grid"></div>
-    <div class="grid"></div>
+  <!-- smartHome start -->
+  <section id="smartHome">
+    <span>Smart Living</span>
+
     <div class="newsContainer">
 
       <!-- news 슬라이드 왼쪽 화살표 -->
       <div class="newsWrap">
-        <i class="fa-sharp fa-solid fa-chevron-left"></i>
+        <i class="fa-solid fa-chevron-left"></i>
       </div>
 
-      <!-- news 중앙 슬라이드 메뉴 -->
+      <!--news 중앙 슬라이드 메뉴-->
       <div class="newsWrap">
         <div class="newsUp">
+          <div class="swiper-container second ">
 
-          <!-- news 슬라이드 1 start -->
-          <div class="newsBox">
-            <h4>소설1</h4>
-            <h2>커버</h2>
-            <p>I</p>
-          </div>
 
-          <!-- news 슬라이드 2 start -->
-          <div class="newsBox">
-            <h4>소설2</h4>
-            <h2>커버</h2>
-            <p class="on">K</p>
-          </div>
 
-          <!-- news 슬라이드 3 start -->
-          <div class="newsBox">
-            <h4>소설3</h4>
-            <h2>커버</h2>
-            <p>E</p>
           </div>
         </div>
         <div class="newsDown">
@@ -224,59 +207,65 @@
 
       <!-- news 슬라이드 오른쪽 화살표 -->
       <div class="newsWrap">
-        <i class="fa-sharp fa-solid fa-chevron-right"></i>
+        <i class=" fa-solid fa-chevron-right rightBtn"></i>
       </div>
     </div>
   </section>
-  <!-- news end -->
+  <!-- museum  end -->
 
-  <!-- notice start -->
-  <section id="notice">
+  <!-- newsRoom start -->
+  <section id="news">
+
+    <!-- <div class="grid"></div>
     <div class="grid"></div>
     <div class="grid"></div>
     <div class="grid"></div>
     <div class="grid"></div>
     <div class="grid"></div>
     <div class="grid"></div>
-    <div class="grid"></div>
-    <div class="grid"></div>
-    <div class="marquee">
+    <div class="grid"></div> -->
+    <!-- <div class="marquee">
       <span>IKEA IKEA IKEA IKEA IKEA IKEA IKEA IKEA IKEA IKEA IKEA IKEA IKEA IKEA IKEA </span>
-    </div>
-    <div class="noticeContainer">
+    </div> -->
+    <div class="newsContainer">
       <div class="leftWrap">
         <div class="titWrap">
-          <h2>NOTICE</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto earum illum voluptatem laborum
-            recusandae
-            eum, eos dignissimos dicta voluptas similique.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Architecto earum illum voluptatem laborum
-            recusandae
-            eum, eos dignissimos dicta voluptas similique.Lorem ipsum dolor sit amet consectetur adipisicing </p>
+          <h2>Newsroom</h2>
+          <p>One brand, many companies, and many, many people – that’s us in a nutshell. Spread all over the world, we
+            have a passion
+            for home furnishing and an inspiring shared vision: to create a better everyday life for the many people.
+            This, together
+            with our straightforward business idea, shared values, and a culture based on the spirit of togetherness,
+            guides us in
+            everything we do.</p>
         </div>
         <div class="loadingWrap">
-          <!-- notice loading bar -->
-          <div class="progress-bar">
-            <span class="bar">
-              <span class="progress"></span>
-            </span>
-          </div>
+
+
           <div class="loadingBtns">
-            <i class="fa-sharp fa-solid fa-chevron-left"></i>
-            &nbsp;&nbsp;&nbsp;4 /
-            4 &nbsp;&nbsp;&nbsp;<i class="fa-sharp fa-solid fa-chevron-right"></i>
-            &nbsp;&nbsp;&nbsp;<span>l&nbsp;l</span></4>
+            <!-- news loading bar -->
+            <span class="swiper-progress-bar">
+              <span class="slide_progress-bar"></span>
+            </span>
+            <button><i class="fa-sharp fa-solid fa-chevron-left"></i></button>
+
+
+            <!-- news count paging -->
+            <span class="swiper-pagination"></span>
+            <button><i class="fa-sharp fa-solid fa-chevron-right"></i></button>
+
+
+            <button><i class="fa-solid fa-pause"></i></button>
+            <button><i class="fa-sharp fa-solid fa-play"></i></button>
           </div>
         </div>
       </div>
-      <div class="rightWrap">
-        <div class="noticeBox">
-        </div>
-        <div class="noticeBox">
-        </div>
+      <div class="swiper-container first">
+
       </div>
+    </div>
   </section>
-  <!-- notice end -->
+  <!-- newsRoom end -->
 
   <!-- promotion start -->
   <section id="promotion">

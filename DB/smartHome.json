@@ -1,0 +1,61 @@
+{
+  "smartHome": [
+    {
+      "title": "Lights",
+      "topic": "Voice",
+      "description": "You can even control the lights in a room",
+      "control": "Turn off the Light",
+      "control1": "Turn on the Light",
+      "picOff": "smartHome1-1.png",
+      "picOn": "smartHome1.png",
+      "animation": "I"
+    },
+    {
+      "title": "Blinds",
+      "topic": "Voice",
+      "description": "Control your blinds by voice",
+      "control": "Lower blinds",
+      "control1": "Raise blinds",
+      "picOn": "smartHome2.png",
+      "picOff": "smartHome2-1.png",
+      "animation": "S"
+    },
+    {
+      "title": "Speakers",
+      "topic": "Voice",
+      "description": "SYMFONISK smart speakers can be controlled by voice",
+      "control": "Play music",
+      "control1": "Stop music",
+      "picOn": "smartHome3.png",
+      "picOff": "smartHome3-1.png",
+      "animation": "M"
+    },
+    {
+      "title": "Speakers lamp",
+      "topic": "Voice",
+      "description": "Speaker lamp w Wi-Fi, glass shade, white/black",
+      "control": "IKEA Home smart app",
+      "picOn": "smartHome4.png",
+      "picOff": "smartHome4-1.png",
+      "animation": "A"
+    },
+    {
+      "title": "Table",
+      "topic": "Voice",
+      "description": "Table with air purifier, stained oak veneer/white smart",
+      "control": "IKEA Home smart app",
+      "picOn": "smartHome5.png",
+      "picOff": "smartHome5-1.png",
+      "animation": "R"
+    },
+    {
+      "title": "Air purifier",
+      "topic": "Voice",
+      "description": "Air purifier, white/smart",
+      "control": "IKEA Home smart app",
+      "picOn": "smartHome6.png",
+      "picOff": "smartHome6-1.png",
+      "animation": "T"
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+#smartHome {
+	width: 100vw;
+	height: 890px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(../img/smartHomeBg6.png);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	padding: 120px 0vw 150px;
+
+	span {
+		position: absolute;
+		left: 2vw;
+		bottom: 3vw;
+		font: 130px/1 $ikeaFont;
+		color: $grey;
+
+		opacity: 0.9;
+	}
+
+	.newsContainer {
+		padding: 0px 3vw 0px;
+		width: 100%;
+		height: 628px;
+		display: flex;
+		position: absolute;
+
+		.newsWrap {
+			width: calc(100% / 3);
+			height: 100%;
+			float: left;
+
+			//news 슬라이드 왼쪽 화살표
+			&:nth-of-type(1) {
+				flex: 1.8;
+				font: 70px/7 $ikeaFont;
+				color: transparent;
+				-webkit-text-stroke: 1px $fontColorW;
+				align-items: center;
+				cursor: pointer;
+				z-index: 555;
+			}
+
+			//news 중앙 슬라이드 메뉴
+			&:nth-of-type(2) {
+				flex: 18;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+
+				//news 슬라이드 중앙 영역 상단부분
+				.newsUp {
+					width: 100%;
+					flex: 7;
+
+					justify-content: space-between;
+
+					//news 슬라이드 start
+					.swiper-container {
+						display: flex;
+						width: 100%;
+						height: 100%;
+						border-radius: 10px;
+
+						.swiper-wrapper {
+							//news 슬라이드 1 start
+							width: 100%;
+							height: 100%;
+
+							&:nth-of-type(even) {
+								margin-top: 2vw;
+							}
+
+							.animation {
+								font: 150px/1 $ikeaFont;
+								position: relative;
+								z-index: 1000;
+								bottom: 60px;
+								left: 180px;
+								color: transparent;
+								-webkit-text-stroke: 1px $fontColorW;
+								display: block;
+
+								&.movingText {
+									animation: fillingText 1s;
+									animation-fill-mode: forwards;
+									animation-duration: 1s;
+
+									@keyframes fillingText {
+										0% {
+											transform: translateX(0);
+										}
+										100% {
+											color: $fontColorW;
+
+											transform: translateX(100px);
+										}
+									}
+								}
+							}
+
+							.swiper-slide {
+								width: 350px;
+								height: 465px;
+								border: 1.5px solid $bgW;
+								top: 1vw;
+								cursor: pointer;
+								overflow: hidden;
+								border-radius: 10px;
+								position: relative;
+								padding: 60px 3vw;
+
+								&.on:hover {
+									border: none;
+									border-radius: 0px;
+								}
+
+								.smartBg {
+									width: 100%;
+									height: 100%;
+									object-fit: fill;
+									position: absolute;
+									top: 50%;
+									left: 50%;
+									transform: translate(-50%, -50%);
+									display: none;
+
+									&.on {
+										display: block;
+									}
+								}
+
+								h4 {
+									position: relative;
+									font: 18px/1 $ikeaFont;
+									color: $fontColorW;
+									margin-bottom: 130px;
+									z-index: 1;
+								}
+
+								h2 {
+									position: relative;
+									font: bold 30px/1 $ikeaFont;
+									color: $fontColorW;
+									z-index: 1;
+									margin-bottom: 100px;
+								}
+
+								.controlBtn {
+									width: 11vw;
+									height: 35px;
+									background: $grey;
+									border: 1px solid $bgW;
+									position: relative;
+									display: flex;
+									justify-content: center;
+									align-items: center;
+									z-index: 1;
+									cursor: pointer;
+									border-radius: 50px;
+									font: bold 12px/1 $ikeaFont;
+									color: $fontColorBl;
+									gap: 10px;
+
+									&:hover {
+										color: $fontColorBl;
+									}
+								}
+							}
+						}
+					}
+				}
+
+				//news 슬라이드 중앙 영역 하단부분
+				.newsDown {
+					flex: 1;
+					display: flex;
+					justify-content: center;
+					align-items: end;
+
+					//news 슬라이드 아래 재생/일시정지 버튼
+					button {
+						width: 50px;
+						height: 50px;
+						border-radius: 50px;
+						background: transparent;
+						border: 1px solid $bgW;
+						font: 18px/1 $ikeaFont;
+						color: $fontColorW;
+						cursor: pointer;
+
+						&:hover {
+							backdrop-filter: brightness(0.1);
+							opacity: 0.8;
+							border: none;
+							color: $fontColorW;
+						}
+					}
+				}
+			}
+
+			//news 슬라이드 오른쪽 화살표
+			&:nth-of-type(3) {
+				height: 628px;
+				flex: 1.8;
+				text-align: end;
+				align-items: center;
+				font: 70px/7 $ikeaFont;
+				color: transparent;
+				-webkit-text-stroke: 1px $fontColorW;
+				cursor: pointer;
+			}
+		}
+	}
+}
