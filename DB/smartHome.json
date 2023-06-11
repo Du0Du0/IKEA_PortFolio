@@ -21,6 +21,16 @@
       "animation": "S"
     },
     {
+      "title": "Speaker",
+      "topic": "Voice",
+      "description": "You can play music with your voice",
+      "control": "Play the music",
+      "control1": "Stop the music",
+      "picOn": "smartHome5.png",
+      "picOff": "smartHome5-1.png",
+      "animation": "R"
+    },
+    {
       "title": "Lights",
       "topic": "Remote control",
       "description": "smart wireless dimmable/colour and white spectrum globe",
@@ -35,24 +45,17 @@
       "topic": "Voice",
       "description": "Speaker lamp w Wi-Fi, glass shade, white/black",
       "control": "IKEA Home smart app",
+      "control1": "Turn on the blue light",
       "picOn": "smartHome4.png",
       "picOff": "smartHome4-1.png",
       "animation": "A"
-    },
-    {
-      "title": "Table",
-      "topic": "Voice",
-      "description": "Table with air purifier, stained oak veneer/white smart",
-      "control": "IKEA Home smart app",
-      "picOn": "smartHome5.png",
-      "picOff": "smartHome5-1.png",
-      "animation": "R"
     },
     {
       "title": "Air purifier",
       "topic": "Voice",
       "description": "Air purifier, white/smart",
       "control": "IKEA Home smart app",
+      "control1": "Turn on the blue light",
       "picOn": "smartHome6.png",
       "picOff": "smartHome6-1.png",
       "animation": "T"

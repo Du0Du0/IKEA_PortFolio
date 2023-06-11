@@ -6,43 +6,23 @@
 	justify-content: center;
 	align-items: center;
 
-	.grid {
-		display: grid;
-		grid-template-columns: 300px 50px 100px 50px 50px 50px 50px 300px;
-		overflow: hidden;
-		width: 100%;
-		margin-top: -37.4vw;
-		height: 96px;
-		border: 1px solid rgba($grey, 0.7);
-		z-index: 0;
-		position: relative;
-		border-bottom: none;
-
-		&:nth-of-type(1) {
-			width: 250px;
-		}
-
-		&:nth-of-type(8) {
-			width: 250px;
-		}
-	}
-
 	.promotionContainer {
 		width: 100vw;
 		height: 820px;
 		display: flex;
 		flex-wrap: wrap;
-		position: absolute;
+		position: relative;
 		justify-content: center;
 		align-items: center;
 		z-index: 1;
-		padding: 150px 10vw 150px;
+		padding: 140px 10vw 140px;
 
 		.promotionWrap {
 			width: 100%;
 			height: 100%;
 			overflow: hidden;
 
+			//gallery
 			&:nth-of-type(1) {
 				width: 100%;
 				height: 100%;
@@ -52,65 +32,258 @@
 				flex-direction: column;
 
 				.itemImg {
-					width: 60%;
+					width: 100%;
 					height: calc(100% / 2);
 					flex: 3;
 					display: flex;
 					margin: 0px auto;
+					display: flex;
+					gap: 15px;
 
-					img {
+					//사진 1
+					.gallery {
 						width: 100%;
 						height: 100%;
-					}
-				}
 
-				.promotionBtns {
-					height: calc(100% / 2);
-					flex: 1;
-					display: flex;
-					flex-wrap: wrap;
-					text-align: center;
-					gap: 15px;
-					justify-content: center;
-
-					p {
-						width: 100%;
-						margin-top: 0px;
-						margin-bottom: 10px;
-						font: 18px/26px $ikeaFont;
-						color: $fontColorW;
-					}
-
-					span {
-						border-radius: 50px;
-
-						button {
-							height: 40px;
-							border: 1px solid $bgW;
-							color: $fontColorW;
-							background: transparent;
-							width: 140px;
-							border-radius: 50px;
-							font: 18px/1 $ikeaFont;
-							letter-spacing: 0.5px;
+						.imgContainer {
+							width: 100%;
+							height: 100%;
 							cursor: pointer;
+							overflow: hidden;
+							position: relative;
 
-							&:nth-of-type(1) {
-								background: $black;
-								border: none;
-								width: 130px;
+							&:hover .imgDescHover {
+								display: block;
+								position: absolute;
 							}
 
-							&:nth-of-type(2) {
-								width: 130px;
+							img {
+								width: 100%;
+								height: 100%;
+								object-fit: cover;
+								transform: scale(1);
+								transition: all 0.3s ease-in-out;
+
+								&:hover {
+									transform: scale(1.05);
+								}
 							}
 
-							&:nth-of-type(3) {
-								width: 130px;
+							.imgDescription {
+								display: none;
+
+								.title {
+									font: 18px/1 $ikeaFont;
+									color: $ikeaBl;
+								}
+
+								.category {
+									font: 18px/1 $ikeaFont;
+									color: $fontColorBl;
+									margin-bottom: 5px;
+								}
+
+								.p {
+									font: 18px/1 $ikeaFont;
+									color: $ikeaBl;
+								}
 							}
 
-							&:nth-of-type(4) {
-								width: 130px;
+							.title {
+								font: 18px/1 $ikeaFont;
+								color: $ikeaBl;
+							}
+
+							.category {
+								font: 18px/1 $ikeaFont;
+								color: $fontColorBl;
+								margin-bottom: 5px;
+							}
+
+							.p {
+								font: 18px/1 $ikeaFont;
+								color: $ikeaBl;
+							}
+						}
+
+						.imgDescHover {
+							z-index: 1;
+							position: absolute;
+							top: 0;
+							left: 0;
+							white-space: nowrap;
+							display: none;
+							padding: 1rem;
+							background: white;
+							font-weight: 400;
+							margin-top: 1.25rem;
+							margin-left: -2rem;
+						}
+					}
+					.gallery2 {
+						width: 80%;
+						height: 100%;
+						display: flex;
+						gap: 15px;
+						flex-direction: column;
+
+						.gallery3 {
+							background: rgb(112, 20, 49);
+							width: 100%;
+							height: 40%;
+
+							.imgContainer {
+								width: 100%;
+								height: 100%;
+								cursor: pointer;
+								overflow: hidden;
+								position: relative;
+
+								&:hover .imgDescHover {
+									display: block;
+									position: absolute;
+								}
+
+								img {
+									width: 100%;
+									height: 100%;
+									object-fit: cover;
+									transform: scale(1);
+									transition: all 0.3s ease-in-out;
+
+									&:hover {
+										transform: scale(1.05);
+									}
+								}
+
+								.imgDescription {
+									display: block;
+
+									.title {
+										font: 18px/1 $ikeaFont;
+										color: $ikeaBl;
+									}
+
+									.category {
+										font: 18px/1 $ikeaFont;
+										color: $fontColorBl;
+										margin-bottom: 5px;
+									}
+
+									.p {
+										font: 18px/1 $ikeaFont;
+										color: $ikeaBl;
+									}
+								}
+
+								.title {
+									font: 18px/1 $ikeaFont;
+									color: $ikeaBl;
+								}
+
+								.category {
+									font: 18px/1 $ikeaFont;
+									color: $fontColorBl;
+									margin-bottom: 5px;
+								}
+
+								.p {
+									font: 18px/1 $ikeaFont;
+									color: $ikeaBl;
+								}
+							}
+
+							.imgDescHover {
+								z-index: 1;
+								position: absolute;
+								top: 0;
+								left: 0;
+								white-space: nowrap;
+								display: none;
+								padding: 1rem;
+								background: white;
+								font-weight: 400;
+								margin-top: 1.25rem;
+								margin-left: -2rem;
+							}
+						}
+						.gallery4 {
+							width: 100%;
+							height: 60%;
+
+							.imgContainer {
+								width: 100%;
+								height: 100%;
+								cursor: pointer;
+								overflow: hidden;
+								position: relative;
+
+								&:hover .imgDescHover {
+									display: block;
+									position: absolute;
+								}
+
+								img {
+									width: 100%;
+									height: 100%;
+									object-fit: cover;
+									transform: scale(1);
+									transition: all 0.3s ease-in-out;
+
+									&:hover {
+										transform: scale(1.05);
+									}
+								}
+
+								.imgDescription {
+									display: none;
+
+									.title {
+										font: 18px/1 $ikeaFont;
+										color: $ikeaBl;
+									}
+
+									.category {
+										font: 18px/1 $ikeaFont;
+										color: $fontColorBl;
+										margin-bottom: 5px;
+									}
+
+									.p {
+										font: 18px/1 $ikeaFont;
+										color: $ikeaBl;
+									}
+								}
+
+								.title {
+									font: 18px/1 $ikeaFont;
+									color: $ikeaBl;
+								}
+
+								.category {
+									font: 18px/1 $ikeaFont;
+									color: $fontColorBl;
+									margin-bottom: 5px;
+								}
+
+								.p {
+									font: 18px/1 $ikeaFont;
+									color: $ikeaBl;
+								}
+							}
+
+							.imgDescHover {
+								z-index: 1;
+								position: absolute;
+								top: 0;
+								left: 0;
+								white-space: nowrap;
+								display: none;
+								padding: 1rem;
+								background: white;
+								font-weight: 400;
+								margin-top: 1.25rem;
+								margin-left: -2rem;
 							}
 						}
 					}
@@ -121,17 +294,15 @@
 				width: 100%;
 				flex: 1;
 				padding: 0;
-				font: 70px/1 $ikeaFont;
-				color: $fontColorBl;
+				font: 65px/1 $ikeaFont;
+				color: $fontColorW;
 
 				h4 {
 					margin: 0px auto;
 					text-orientation: upright;
 					writing-mode: vertical-rl;
-					white-space: nowrap;
-					letter-spacing: 0.2px;
-					color: transparent;
-					-webkit-text-stroke: 1px white;
+					white-space: wrap;
+					letter-spacing: 0px;
 				}
 			}
 

@@ -53,7 +53,8 @@
 				//news 슬라이드 중앙 영역 상단부분
 				.newsUp {
 					width: 100%;
-					flex: 7;
+					height: 640px;
+					flex: 6;
 
 					justify-content: space-between;
 
@@ -70,7 +71,7 @@
 							height: 100%;
 
 							&:nth-of-type(even) {
-								margin-top: 2vw;
+								margin-top: 3vw;
 							}
 
 							.animation {
@@ -175,10 +176,12 @@
 
 				//news 슬라이드 중앙 영역 하단부분
 				.newsDown {
-					flex: 1;
+					flex: 3;
 					display: flex;
 					justify-content: center;
-					align-items: end;
+					align-items: flex-start;
+					height: 400px;
+					width: 100%;
 
 					//news 슬라이드 아래 재생/일시정지 버튼
 					button {
