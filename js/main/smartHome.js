@@ -95,7 +95,7 @@ fetch('DB/smartHome.json')
 			loopAdditionalSlides: 2,
 			loopedSlides: 1,
 			autoplay: {
-				delay: 80000,
+				delay: 3000,
 				stopOnLastSlide: false,
 			},
 
@@ -106,3 +106,23 @@ fetch('DB/smartHome.json')
 			grabCursor: true,
 		});
 	});
+
+//일정시간마다 배경이 바뀌는 스크립트
+const imgArray = [
+	'smartHomeBg1.png',
+	'smartHomeBg2.png',
+	'smartHomeBg3.png',
+	'smartHomeBg4.png',
+	'smartHomeBg5.png',
+	'smartHomeBg6.png',
+];
+
+function showImage() {
+	const imgNum = Math.floor(Math.random() * imgArray.length);
+	const objImg = document.getElementById('smartHome');
+	objImg.style.backgroundImage = `url(img/${imgArray[imgNum]})`;
+
+	setTimeout(showImage, 4500);
+}
+
+showImage();
