@@ -75,37 +75,87 @@ fetch('DB/smartHome.json')
 		const mainSwiper = new Swiper('.second', {
 			speed: 2000,
 			disableOnInteraction: false,
-			spaceBetween: 10,
+			spaceBetween: 252,
 			initialSlide: 0,
 			autoHeight: false,
 			allowTouchMove: true, // false시에 스와이핑이 되지 않으며 버튼으로만 슬라이드 조작이 가능
 			direction: 'horizontal',
 			loop: false,
-			oopedSlides: 1,
+			loopedSlides: 1,
 			breakpoints: {
-				// 브라우저 320px 크기일 경우
+				639: { slidesPerView: 1, spaceBetween: 252 },
+				// 브라우저 1920px 크기일 경우
 				1920: { slidesPerView: 3, spaceBetween: 252 },
-				// 브라우저 640px 크기일 경우
-				640: { slidesPerView: 3, spaceBetween: 100 },
-
-				580: { slidesPerView: 2, spaceBetween: 22 },
-				// 브라우저 480px 크기일 경우
-				480: { slidesPerView: 1, spaceBetween: 52 },
+				// 브라우저 1023px 크기일 경우
+				1023: { slidesPerView: 3, spaceBetween: 252 },
+				// 브라우저 639px 크기일 경우
 			},
-			loopAdditionalSlides: 2,
+			loopAdditionalSlides: 1,
 			loopedSlides: 1,
 			autoplay: {
 				delay: 3000,
 				stopOnLastSlide: false,
 			},
 
-			effect: 'slide',
-			slidesPerView: 3,
-			centeredSlides: false,
-			slidesOffsetBefore: 0,
+			effect: 'fade',
+			slidesPerView: 1,
+			centeredSlides: true,
+
 			grabCursor: true,
 		});
 	});
+
+// let ww = window.innerWidth;
+
+// let swiper = new Swiper('.swiper-container', {
+// 	loop: true,
+// 	spaceBetween: 10,
+// 	slidesPerView: 5,
+// 	autoplay: {
+// 		delay: 1000,
+// 		disableOnInteraction: false,
+// 	},
+// 	effect: 'slide',
+// });
+
+// responsiveSwiper();
+
+// function responsiveSwiper() {
+// 	if (ww >= 1200) {
+// 		// 슬라이드 효과
+// 		swiper = new Swiper('.swiper-container', {
+// 			loop: true,
+// 			spaceBetween: 10,
+// 			slidesPerView: 5,
+// 			autoplay: {
+// 				delay: 1000,
+// 				disableOnInteraction: false,
+// 			},
+// 			effect: 'slide',
+// 		});
+// 	} else if (ww < 1200) {
+// 		// 페이드 효과
+// 		swiper = new Swiper('.swiper-container', {
+// 			loop: true,
+// 			spaceBetween: 10,
+// 			slidesPerView: 5,
+// 			autoplay: {
+// 				delay: 1000,
+// 				disableOnInteraction: false,
+// 			},
+// 			effect: 'fade',
+// 		});
+// 	}
+// }
+
+// window.addEventListener('resize', function () {
+// 	ww = window.innerWidth;
+// 	responsiveSwiper();
+// });
+
+
+https://lpla.tistory.com/181
+
 
 //일정시간마다 배경이 바뀌는 스크립트
 const imgArray = [

@@ -2,23 +2,47 @@
 const vidsSection = document.querySelector('#vids');
 const vidsVideoWrap = vidsSection.querySelector('.vidsVideoWrap');
 const key = 'AIzaSyCV2KoPa3MQ65lmbMraSlR-HwFY9dRqgF0';
+
 const list = 'PLWgHnOZUp_4GvPcmipe9YROpmqMu9Tblz';
-const num = 5;
-const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${list}&key=${key}&maxResults=${num}`;
+
 let videoIsOn;
 
-fetch(url)
-	.then((data) => data.json())
-	.then((json) => {
-		console.log(json.items);
-		let tags = '';
+window.addEventListener('resize', function () {
+	console.log('resize event!');
 
-		json.items.forEach((item, idx) => {
-			let tit = item.snippet.title;
-			let desc = item.snippet.description;
+	let num;
 
-			tags += `
-			<div class="video ${idx === 1 ? 'on' : ''}" data-video-id = "${item.snippet.resourceId.videoId}"
+	if (window.innerWidth >= 1023 && window.innerWidth <= 1920) {
+		num = 5;
+		rr(num);
+		console.log(num);
+	} else if (window.innerWidth >= 639 && window.innerWidth <= 1023) {
+		num = 3;
+		console.log('sas');
+		rr(num);
+		console.log(num);
+	} else if (window.innerWidth < 639) {
+		num = 2;
+		console.log('sas2');
+		rr(num);
+		console.log(num);
+	}
+});
+
+function rr(num) {
+	const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${list}&key=${key}&maxResults=${num}`;
+	fetch(url)
+		.then((data) => data.json())
+		.then((json) => {
+			console.log(json.items);
+			let tags = '';
+
+			json.items.forEach((item, idx) => {
+				let tit = item.snippet.title;
+				let desc = item.snippet.description;
+
+				tags += `
+			<div class="video ${idx === 0 ? 'on' : ''}" data-video-id = "${item.snippet.resourceId.videoId}"
 				style = "background-image : url(${json.items[idx].snippet.thumbnails.maxres.url})">
 				<div class="vidsNum">${item.snippet.position + 1}</div>
 				<div class="vidsBarTit">${(tit.length > 15 ? tit.substr(0, 20) : tit) + '...'}</div>
@@ -31,51 +55,54 @@ fetch(url)
 				</span>
 			</div>
 			`;
-		});
-		vidsVideoWrap.innerHTML = tags;
+			});
 
-		const videos = vidsSection.querySelectorAll('.video');
-		const vidsNum = vidsSection.querySelectorAll('.vidsNum');
-		const vidsBarTit = vidsSection.querySelectorAll('.vidsBarTit');
-		const vidsSpan = vidsSection.querySelectorAll('.vidsOnSpan');
+			vidsVideoWrap.innerHTML = tags;
 
-		// box클릭하면 해당 box열리는 기본 기능
-		videos.forEach((video, idx) => {
-			if (videos[idx].classList.contains('on')) {
-				vidsNum[idx].style.display = 'none';
-				vidsBarTit[idx].style.display = 'none';
-				videos[idx].style.backgroundImage = `url(${json.items[idx].snippet.thumbnails.maxres.url})`;
-				vidsSpan[idx].style.display = 'block';
-			}
+			const videos = vidsSection.querySelectorAll('.video');
+			const vidsNum = vidsSection.querySelectorAll('.vidsNum');
+			const vidsBarTit = vidsSection.querySelectorAll('.vidsBarTit');
+			const vidsSpan = vidsSection.querySelectorAll('.vidsOnSpan');
 
-			video.addEventListener('click', (e) => {
-				e.preventDefault();
-
-				for (const video of videos) video.classList.remove('on');
-				videos[idx].classList.add('on');
-
-				videos[idx].classList.contains('on')
-					? ((vidsNum[idx].style.display = 'none'),
-					  (vidsBarTit[idx].style.display = 'none'),
-					  ((videos[
-							idx
-					  ].style.backgroundImage = `url(${json.items[idx].snippet.thumbnails.maxres.url})`),
-					  (vidsSpan[idx].style.display = 'block')))
-					: ((vidsNum[idx].style.display = 'block'),
-					  (vidsBarTit[idx].style.display = 'block'),
-					  (vidsSpan[idx].style.display = 'none'));
-
-				for (let i = 0; i < videos.length; i++) {
-					if (!videos[i].classList.contains('on')) {
-						vidsBarTit[i].style.display = 'block';
-						vidsNum[i].style.display = 'block';
-						vidsSpan[i].style.display = 'none';
-					}
+			// box클릭하면 해당 box열리는 기본 기능
+			videos.forEach((video, idx) => {
+				if (videos[idx].classList.contains('on')) {
+					vidsNum[idx].style.display = 'none';
+					vidsBarTit[idx].style.display = 'none';
+					videos[
+						idx
+					].style.backgroundImage = `url(${json.items[idx].snippet.thumbnails.maxres.url})`;
+					vidsSpan[idx].style.display = 'block';
 				}
+
+				video.addEventListener('click', (e) => {
+					e.preventDefault();
+
+					for (const video of videos) video.classList.remove('on');
+					videos[idx].classList.add('on');
+
+					videos[idx].classList.contains('on')
+						? ((vidsNum[idx].style.display = 'none'),
+						  (vidsBarTit[idx].style.display = 'none'),
+						  ((videos[
+								idx
+						  ].style.backgroundImage = `url(${json.items[idx].snippet.thumbnails.maxres.url})`),
+						  (vidsSpan[idx].style.display = 'block')))
+						: ((vidsNum[idx].style.display = 'block'),
+						  (vidsBarTit[idx].style.display = 'block'),
+						  (vidsSpan[idx].style.display = 'none'));
+
+					for (let i = 0; i < videos.length; i++) {
+						if (!videos[i].classList.contains('on')) {
+							vidsBarTit[i].style.display = 'block';
+							vidsNum[i].style.display = 'block';
+							vidsSpan[i].style.display = 'none';
+						}
+					}
+				});
 			});
 		});
-	});
-
+}
 //vids pop 찹업창 띄우기
 document.body.addEventListener('click', (e) => {
 	if (e.target.className === 'discoverBtn')

@@ -38,11 +38,11 @@ fetch('DB/news.json')
 			loop: true,
 			breakpoints: {
 				// 브라우저 320px 크기일 경우
-				1920: { slidesPerView: 2, spaceBetween: 252 },
+				639: { slidesPerView: 1, spaceBetween: 252 },
 				// 브라우저 480px 크기일 경우
-				480: { slidesPerView: 3, spaceBetween: 30 },
+				480: { slidesPerView: 1, spaceBetween: 30 },
 				// 브라우저 640px 크기일 경우
-				640: { slidesPerView: 4, spaceBetween: 40 },
+				1920: { slidesPerView: 2, spaceBetween: 40 },
 			},
 			// loopAdditionalSlides: 2,
 			// loopedSlides: 1,
@@ -55,8 +55,8 @@ fetch('DB/news.json')
 				prevEl: '.fa-chevron-left',
 			},
 			effect: 'slide',
-			slidesPerView: 2,
-			centeredSlides: false,
+			slidesPerView: 1,
+			centeredSlides: true,
 			slidesOffsetBefore: 0,
 			grabCursor: true,
 			pagination: {

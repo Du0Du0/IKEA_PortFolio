@@ -171,3 +171,172 @@
 		}
 	}
 }
+
+@media screen and (max-width: $tablet) {
+	#vids {
+		height: 900px;
+		padding: 96px 10vw 120px;
+
+		.vidsContainer {
+			.vidsTextWrap {
+				display: block;
+
+				.vidsTit {
+					width: 100%;
+					height: 50px;
+					flex: 1.65;
+					font: 70px/1 $ikeaFont;
+					color: $fontColorBl;
+					margin-bottom: 50px;
+				}
+
+				.vidsSub {
+					flex: 1;
+					width: 100%;
+					font: 26px/1.3 $ikeaFont;
+					color: $fontColorGrC;
+					text-align: justify;
+					word-break: break-all;
+					letter-spacing: 0.1px;
+					margin-bottom: 50px;
+
+					strong {
+						font: 26px/1 $ikeaFont;
+						color: $fontColorBl;
+						letter-spacing: 0.1px;
+					}
+				}
+			}
+
+			.vidsVideoWrap {
+				flex: 2.5;
+				display: flex;
+				gap: 30px;
+
+				.video {
+					width: calc(100% / 3);
+					height: 93%;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					text-align: center;
+					flex: 1;
+					position: relative;
+					background-blend-mode: multiply;
+
+					.vidsNum {
+						flex: 1;
+						width: 100%;
+						height: 20px;
+						font: 26px/3.5 $ikeaFont;
+						color: $grey;
+						border-bottom: 1px solid #ddd;
+						cursor: pointer;
+						backdrop-filter: brightness(0.8);
+					}
+
+					.vidsBarTit {
+						width: 100%;
+						flex: 3.5;
+						font: 23px/7 $ikeaFont;
+						color: $grey;
+						writing-mode: vertical-rl;
+						padding-top: 1.5vw;
+						text-align: left;
+						cursor: pointer;
+						backdrop-filter: brightness(0.8);
+					}
+
+					&.on {
+						flex: 3;
+						background: #a3a3a3;
+						animation: videoMove 0.5s linear;
+						background-position: center;
+						background-size: cover;
+						background-repeat: no-repeat;
+						animation-fill-mode: backwards;
+						animation-duration: 0.5s;
+						position: relative;
+						color: white;
+						overflow: visible;
+
+						.vidsOnSpan {
+							backdrop-filter: blur(10px) opacity(0.3);
+
+							h4 {
+								position: relative;
+								color: $grey;
+								font: 26px/1 $ikeaFont;
+								text-align: left;
+							}
+
+							h2 {
+								color: $fontColorW;
+								width: 100%;
+								font: 26px/1.2 $ikeaFont;
+								text-align: left;
+								z-index: 999;
+							}
+
+							p {
+								color: $grey;
+								width: 600px;
+								text-align: justify;
+								word-break: break-all;
+								font: 18px/1.2 $ikeaFont;
+								text-align: left;
+								margin-top: 2vw;
+								margin-bottom: 96px;
+							}
+						}
+						.discoverBtn {
+							content: 'Discover Now';
+							position: absolute;
+
+							bottom: 0px;
+							right: 0px;
+							width: 209px;
+							height: 71px;
+							background: #623fe4;
+							border: none;
+							font: 18px/71px $ikeaFont;
+							color: $grey;
+							cursor: pointer;
+
+							&:hover {
+								background: $ikeaYellow;
+								color: $ikeaBl;
+							}
+						}
+
+						// &.on::before {
+						// 	content: '01. \A Cooking \A Design';
+						// 	white-space: pre;
+						// 	display: block;
+						// 	position: absolute;
+						// 	top: 0;
+						// 	left: 0;
+						// 	width: 100%;
+						// 	height: 100%;
+						// 	text-align: left;
+						// 	font: 30px/1.3 $ikeaFont;
+						// 	color: $grey;
+						// 	padding: 35px 3vw;
+						// }
+
+						@keyframes videoMove {
+							from {
+								flex: 1;
+								writing-mode: vertical-rl;
+							}
+							to {
+								flex: 5;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

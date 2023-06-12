@@ -21,6 +21,15 @@ body {
 	overflow-x: hidden;
 }
 
+a:link {
+	color: inherit; /* 링크의 기본 색상을 상속받음 */
+	text-decoration: none; /* 밑줄 제거 */
+}
+
+a:visited {
+	color: inherit; /* 방문한 링크의 색상을 상속받음 */
+}
+
 //common
 @import 'common/header';
 @import 'common/footer';

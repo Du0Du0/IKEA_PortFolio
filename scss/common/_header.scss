@@ -128,45 +128,55 @@ header {
 						}
 					}
 				}
-
-				li {
-					font: 24px/35px $ikeaFont;
-					color: $fontColorGr;
-					animation: appear 0.5s linear;
-					animation-fill-mode: backwards;
-					animation-delay: 0.5s;
-					opacity: 1;
-
-					a {
-						&:visited {
-							color: $fontColorGr;
-							cursor: pointer;
-
-							a:link {
-								color: $fontColorGr;
-								cursor: pointer;
-							}
-							a:visited {
-								color: $fontColorGr;
-								cursor: pointer;
-							}
-							a:active {
-								color: $fontColorGr;
-								cursor: pointer;
-							}
-							a:hover {
-								color: $fontColorGr;
-								cursor: pointer;
-							}
-						}
+				ul {
+					&:nth-of-type(2) {
+						display: flex;
+						float: left;
+						margin-top: 30px;
+						gap: 30px;
+						font: 24px/35px $ikeaFont;
+						color: $fontColorGr;
+						cursor: pointer;
 					}
+					li {
+						font: 24px/35px $ikeaFont;
+						color: $fontColorGr;
+						animation: appear 0.5s linear;
+						animation-fill-mode: backwards;
+						animation-delay: 0.5s;
+						opacity: 1;
 
-					@keyframes appear {
-						from {
-							opacity: 0;
+						a {
+							&:visited {
+								color: $fontColorGr;
+								cursor: pointer;
+
+								a:link {
+									color: $fontColorGr;
+									cursor: pointer;
+								}
+								a:visited {
+									color: $fontColorGr;
+									cursor: pointer;
+								}
+								a:active {
+									color: $fontColorGr;
+									cursor: pointer;
+								}
+								a:hover {
+									color: $fontColorGr;
+									cursor: pointer;
+								}
+							}
 						}
-						to {
-							opacity: 1;
+
+						@keyframes appear {
+							from {
+								opacity: 0;
+							}
+							to {
+								opacity: 1;
+							}
 						}
 					}
 				}
@@ -227,7 +237,7 @@ header {
 		cursor: pointer;
 
 		p {
-			font: 35px/1 $ikeaFont;
+			font: bold 35px/1 $ikeaFont;
 			color: $grey;
 
 			a {
