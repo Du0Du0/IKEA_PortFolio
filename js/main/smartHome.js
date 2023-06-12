@@ -105,58 +105,6 @@ fetch('DB/smartHome.json')
 		});
 	});
 
-// let ww = window.innerWidth;
-
-// let swiper = new Swiper('.swiper-container', {
-// 	loop: true,
-// 	spaceBetween: 10,
-// 	slidesPerView: 5,
-// 	autoplay: {
-// 		delay: 1000,
-// 		disableOnInteraction: false,
-// 	},
-// 	effect: 'slide',
-// });
-
-// responsiveSwiper();
-
-// function responsiveSwiper() {
-// 	if (ww >= 1200) {
-// 		// 슬라이드 효과
-// 		swiper = new Swiper('.swiper-container', {
-// 			loop: true,
-// 			spaceBetween: 10,
-// 			slidesPerView: 5,
-// 			autoplay: {
-// 				delay: 1000,
-// 				disableOnInteraction: false,
-// 			},
-// 			effect: 'slide',
-// 		});
-// 	} else if (ww < 1200) {
-// 		// 페이드 효과
-// 		swiper = new Swiper('.swiper-container', {
-// 			loop: true,
-// 			spaceBetween: 10,
-// 			slidesPerView: 5,
-// 			autoplay: {
-// 				delay: 1000,
-// 				disableOnInteraction: false,
-// 			},
-// 			effect: 'fade',
-// 		});
-// 	}
-// }
-
-// window.addEventListener('resize', function () {
-// 	ww = window.innerWidth;
-// 	responsiveSwiper();
-// });
-
-
-https://lpla.tistory.com/181
-
-
 //일정시간마다 배경이 바뀌는 스크립트
 const imgArray = [
 	'smartHomeBg1.png',

@@ -12,7 +12,7 @@ window.addEventListener('resize', function () {
 
 	let num;
 
-	if (window.innerWidth >= 1023 && window.innerWidth <= 1920) {
+	if (window.innerWidth >= 1024 && window.innerWidth <= 1920) {
 		num = 5;
 		rr(num);
 		console.log(num);
@@ -21,7 +21,7 @@ window.addEventListener('resize', function () {
 		console.log('sas');
 		rr(num);
 		console.log(num);
-	} else if (window.innerWidth < 639) {
+	} else if (window.innerWidth < 638) {
 		num = 2;
 		console.log('sas2');
 		rr(num);
@@ -51,8 +51,8 @@ function rr(num) {
 					<h4>${(item.snippet.position + 1).toString().padStart(2, 0)}.</h4>
 					<h2>${(tit.length > 50 ? tit.substr(0, 50) : tit) + '...'}</h2>
 					<p>${(desc.length > 50 ? desc.substr(0, 250) : desc) + '...'}</p>
-					<button class="discoverBtn">Discover Now</button>
 				</span>
+					<button class="discoverBtn" style ="display: none">Discover Now</button>
 			</div>
 			`;
 			});
@@ -63,7 +63,7 @@ function rr(num) {
 			const vidsNum = vidsSection.querySelectorAll('.vidsNum');
 			const vidsBarTit = vidsSection.querySelectorAll('.vidsBarTit');
 			const vidsSpan = vidsSection.querySelectorAll('.vidsOnSpan');
-
+			const discoverBtn = vidsSection.querySelectorAll('.discoverBtn');
 			// box클릭하면 해당 box열리는 기본 기능
 			videos.forEach((video, idx) => {
 				if (videos[idx].classList.contains('on')) {
@@ -73,6 +73,7 @@ function rr(num) {
 						idx
 					].style.backgroundImage = `url(${json.items[idx].snippet.thumbnails.maxres.url})`;
 					vidsSpan[idx].style.display = 'block';
+					discoverBtn[idx].style.display = 'block';
 				}
 
 				video.addEventListener('click', (e) => {
@@ -87,16 +88,19 @@ function rr(num) {
 						  ((videos[
 								idx
 						  ].style.backgroundImage = `url(${json.items[idx].snippet.thumbnails.maxres.url})`),
-						  (vidsSpan[idx].style.display = 'block')))
+						  (vidsSpan[idx].style.display = 'block')),
+						  (discoverBtn[idx].style.display = 'block'))
 						: ((vidsNum[idx].style.display = 'block'),
 						  (vidsBarTit[idx].style.display = 'block'),
-						  (vidsSpan[idx].style.display = 'none'));
+						  (vidsSpan[idx].style.display = 'none'),
+						  (discoverBtn[idx].style.display = 'none'));
 
 					for (let i = 0; i < videos.length; i++) {
 						if (!videos[i].classList.contains('on')) {
 							vidsBarTit[i].style.display = 'block';
 							vidsNum[i].style.display = 'block';
 							vidsSpan[i].style.display = 'none';
+							discoverBtn[i].style.display = 'none';
 						}
 					}
 				});
