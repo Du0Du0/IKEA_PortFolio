@@ -19,8 +19,8 @@ fetch('DB/smartHome.json')
     <h4>${data.topic}</h4>
     <h2> ${data.title}</h2>
    
-<img class="smartBg " src = 'img/${data.picOn}'>
-<button class="controlBtn "><i class="fa-solid fa-volume-high"></i>${data.control}</button>
+<img class="smartBg on " src = 'img/${data.picOn}'>
+
     </div>
 		<span class="animation">${data.animation}</span>
     </div>
@@ -52,59 +52,73 @@ fetch('DB/smartHome.json')
 			});
 		});
 
-		controlBtns.forEach((btn, idx) => {
-			btn.addEventListener('click', (e) => {
-				e.preventDefault();
-				btn.classList.toggle('on');
+		// controlBtns.forEach((btn, idx) => {
+		// 	btn.addEventListener('click', (e) => {
+		// 		e.preventDefault();
+		// 		btn.classList.toggle('on');
 
-				if (btn.classList.contains('on')) {
-					smartBgs[idx].src = `img/${smartData[idx].picOff}`;
-					controlBtns[
-						idx
-					].innerHTML = `<i class="fa-solid fa-volume-high"></i>${smartData[idx].control1}`;
-				} else {
-					smartBgs[idx].src = `img/${smartData[idx].picOn}`;
-					controlBtns[
-						idx
-					].innerHTML = `<i class="fa-solid fa-volume-high"></i>${smartData[idx].control}`;
-				}
-			});
-		});
+		// 		if (btn.classList.contains('on')) {
+		// 			smartBgs[idx].src = `img/${smartData[idx].picOff}`;
+		// 			controlBtns[
+		// 				idx
+		// 			].innerHTML = `<i class="fa-solid fa-volume-high"></i>${smartData[idx].control1}`;
+		// 		} else {
+		// 			smartBgs[idx].src = `img/${smartData[idx].picOn}`;
+		// 			controlBtns[
+		// 				idx
+		// 			].innerHTML = `<i class="fa-solid fa-volume-high"></i>${smartData[idx].control}`;
+		// 		}
+		// 	});
+		// });
 
 		// Swiper 인스턴스 생성
-		const mainSwiper = new Swiper('.second', {
-			speed: 2000,
-			disableOnInteraction: false,
-			spaceBetween: 252,
-			initialSlide: 0,
-			autoHeight: false,
-			allowTouchMove: true, // false시에 스와이핑이 되지 않으며 버튼으로만 슬라이드 조작이 가능
-			direction: 'horizontal',
-			loop: false,
-			loopedSlides: 1,
-			breakpoints: {
-				639: { slidesPerView: 1, spaceBetween: 252 },
-				// 브라우저 1920px 크기일 경우
-				1920: { slidesPerView: 3, spaceBetween: 252 },
-				// 브라우저 1023px 크기일 경우
-				1023: { slidesPerView: 3, spaceBetween: 252 },
-				// 브라우저 639px 크기일 경우
-			},
-			loopAdditionalSlides: 1,
-			loopedSlides: 1,
-			autoplay: {
-				delay: 3000,
-				stopOnLastSlide: false,
-			},
 
-			effect: 'fade',
-			slidesPerView: 1,
-			centeredSlides: true,
+		let ww = window.innerWidth;
+		let swiper;
 
-			grabCursor: true,
+		responsiveSwiper();
+
+		function initSwiper(effect) {
+			if (typeof swiper == 'object') swiper.destroy();
+
+			return (swiper = new Swiper('.second', {
+				loop: false,
+				spaceBetween: 252,
+				slidesPerView: 3,
+				disableOnInteraction: true,
+				autoHeight: false,
+				autoplay: {
+					delay: 1000,
+					disableOnInteraction: false,
+				},
+				effect: effect,
+				centeredSlides: true,
+				slideToClickedSlide: true,
+				navigation: {
+					nextEl: '.rightBtn',
+					prevEl: '.leftBtn',
+				},
+			}));
+		}
+
+		function responsiveSwiper() {
+			if (ww >= 1920) {
+				// 슬라이드 효과
+				initSwiper('slide');
+			} else if (ww < 1024) {
+				// 페이드 효과
+				initSwiper('fade');
+			} else if (ww < 1200) {
+				// 페이드 효과
+				initSwiper('fade');
+			}
+		}
+
+		window.addEventListener('resize', function () {
+			ww = window.innerWidth;
+			responsiveSwiper();
 		});
 	});
-
 //일정시간마다 배경이 바뀌는 스크립트
 const imgArray = [
 	'smartHomeBg1.png',
