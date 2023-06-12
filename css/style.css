@@ -1741,6 +1741,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 #promotion .promotionContainer {
   width: 100vw;
@@ -1752,6 +1753,22 @@ a {
   align-items: center;
   z-index: 1;
   padding: 140px 10vw 140px;
+}
+#promotion .promotionContainer .circleText {
+  width: 540px;
+  height: 540px;
+  position: absolute;
+  z-index: -1;
+  top: -90px;
+  left: -110px;
+  animation: rotateImage 10s linear infinite;
+  transform-origin: 50% 50%;
+  opacity: 0.4;
+}
+@keyframes rotateImage {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 #promotion .promotionContainer .promotionWrap {
   width: 100%;

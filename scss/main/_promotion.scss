@@ -5,6 +5,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	overflow: hidden;
 
 	.promotionContainer {
 		width: 100vw;
@@ -16,6 +17,24 @@
 		align-items: center;
 		z-index: 1;
 		padding: 140px 10vw 140px;
+
+		.circleText {
+			width: 540px;
+			height: 540px;
+			position: absolute;
+			z-index: -1;
+			top: -90px;
+			left: -110px;
+			animation: rotateImage 10s linear infinite;
+			transform-origin: 50% 50%;
+			opacity: 0.4;
+
+			@keyframes rotateImage {
+				100% {
+					transform: rotate(360deg);
+				}
+			}
+		}
 
 		.promotionWrap {
 			width: 100%;
