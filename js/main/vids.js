@@ -1,9 +1,9 @@
 //vids
 const vidsSection = document.querySelector('#vids');
 const vidsVideoWrap = vidsSection.querySelector('.vidsVideoWrap');
-const key = 'AIzaSyCV2KoPa3MQ65lmbMraSlR-HwFY9dRqgF0';
+const key = 'AIzaSyCKs11Yu98hp6fq7N54tY2iWSY9qvTh4cM';
 
-const list = 'PLWgHnOZUp_4GvPcmipe9YROpmqMu9Tblz';
+const list = 'PLWgHnOZUp_4H3oyXBnWAhhQhWulLsuoPO';
 
 let videoIsOn;
 

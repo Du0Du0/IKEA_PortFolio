@@ -22,7 +22,7 @@ fetch('DB/smartHome.json')
 <img class="smartBg on " src = 'img/${data.picOn}'>
 
     </div>
-		<span class="animation">${data.animation}</span>
+	
     </div>
 		
       `;
@@ -92,7 +92,7 @@ fetch('DB/smartHome.json')
 					disableOnInteraction: false,
 				},
 				effect: effect,
-				centeredSlides: true,
+				centeredSlides: false,
 				slideToClickedSlide: true,
 				navigation: {
 					nextEl: '.rightBtn',
