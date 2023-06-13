@@ -2481,7 +2481,6 @@ a {
     width: 100%;
     height: 100%;
     z-index: 1;
-    flex-wrap: wrap;
     flex-direction: column;
   }
   #news .newsContainer .leftWrap {
@@ -2490,7 +2489,7 @@ a {
     flex-direction: column;
   }
   #news .newsContainer .leftWrap .titWrap {
-    flex: 2.8;
+    flex: 2;
     align-items: center;
     position: relative;
   }
@@ -2512,8 +2511,8 @@ a {
     margin-bottom: 40px;
   }
   #news .newsContainer .leftWrap .loadingWrap {
-    width: 100%;
     flex: 1.2;
+    width: 100%;
     display: flex;
     justify-content: center;
     text-align: left;
@@ -2619,16 +2618,21 @@ a {
     display: none;
   }
   #news .newsContainer .swiper-container {
-    width: 90%;
+    width: 100%;
     flex: 1.3;
-    display: inline-flex;
-    overflow: visible;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
     height: 100%;
   }
   #news .newsContainer .swiper-container .swiper-wrapper {
+    width: 100%;
+    height: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding-left: 10vw;
+    overflow: visible;
+    flex-wrap: nowrap;
   }
   #news .newsContainer .swiper-container .swiper-wrapper:nth-of-type(odd) {
     margin-top: 0vw;
@@ -2639,13 +2643,15 @@ a {
   #news .newsContainer .swiper-container .swiper-wrapper .swiper-slide {
     border-radius: 10px;
     position: relative;
-    width: 256px;
-    height: 388.25px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
     cursor: pointer;
     text-align: center;
     padding: 60px 2vw 30px;
     background-blend-mode: multiply;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    box-shadow: none;
     background: red;
   }
   #news .newsContainer .swiper-container .swiper-wrapper .swiper-slide.on {

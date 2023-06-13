@@ -38,7 +38,7 @@ fetch('DB/news.json')
 			return (swiper = new Swiper('.first', {
 				speed: 2000,
 				disableOnInteraction: false,
-				spaceBetween: 252,
+				spaceBetween: 20,
 				initialSlide: 1,
 				autoHeight: false,
 				allowTouchMove: true, // false시에 스와이핑이 되지 않으며 버튼으로만 슬라이드 조작이 가능
@@ -55,8 +55,8 @@ fetch('DB/news.json')
 					prevEl: '.fa-chevron-left',
 				},
 				effect: effect,
-				slidesPerView: effect ? 2 : 1,
-				centeredSlides: false,
+				slidesPerView: 1,
+				centeredSlides: true,
 				slidesOffsetBefore: 0,
 				grabCursor: true,
 				pagination: {
