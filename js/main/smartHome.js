@@ -92,7 +92,7 @@ fetch('DB/smartHome.json')
 					disableOnInteraction: false,
 				},
 				effect: effect,
-				centeredSlides: false,
+				centeredSlides: true,
 				slideToClickedSlide: true,
 				navigation: {
 					nextEl: '.rightBtn',

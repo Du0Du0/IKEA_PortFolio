@@ -16,7 +16,7 @@ fetch('DB/news.json')
 			tags += `
     
     <div class="swiper-wrapper">
-    // <div class="swiper-slide on" style = "background-image : url('img/${data.pic}')">
+    <div class="swiper-slide on" style = "background-image : url('img/${data.pic}')">
     <h4>${data.title}</h4>
     <h2> ${data.subtitle}</h2>
     <p>${data.data}</p>

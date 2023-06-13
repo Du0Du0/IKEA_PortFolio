@@ -16,7 +16,6 @@
 		bottom: 3vw;
 		font: 130px/1 $ikeaFont;
 		color: $grey;
-
 		opacity: 0.9;
 	}
 
@@ -35,12 +34,13 @@
 			//news 슬라이드 왼쪽 화살표
 			&:nth-of-type(1) {
 				flex: 1.8;
-				font: 70px/7 $ikeaFont;
+				font: 70px/6 $ikeaFont;
 				color: transparent;
 				-webkit-text-stroke: 1px $fontColorW;
 				align-items: center;
 				cursor: pointer;
 				z-index: 555;
+				padding-left: 1vw;
 			}
 
 			//news 중앙 슬라이드 메뉴
@@ -49,7 +49,6 @@
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
-				padding-left: 10vw;
 
 				//news 슬라이드 중앙 영역 상단부분
 				.newsUp {
@@ -57,14 +56,13 @@
 					height: 640px;
 					flex: 6;
 
-					justify-content: space-between;
+					justify-content: center;
 
 					//news 슬라이드 start
 					.swiper-container {
 						display: flex;
 						width: 100%;
 						height: 100%;
-						border-radius: 10px;
 
 						.swiper-wrapper {
 							//news 슬라이드 1 start
@@ -183,7 +181,7 @@
 					flex: 3;
 					display: flex;
 					justify-content: center;
-					align-items: flex-start;
+					align-items: center;
 					height: 400px;
 					width: 100%;
 
@@ -214,10 +212,11 @@
 				flex: 1.8;
 				text-align: end;
 				align-items: center;
-				font: 70px/7 $ikeaFont;
+				font: 70px/6 $ikeaFont;
 				color: transparent;
 				-webkit-text-stroke: 1px $fontColorW;
 				cursor: pointer;
+				padding-right: 1vw;
 			}
 		}
 	}
@@ -234,13 +233,13 @@
 		background-position: center;
 		background-size: cover;
 		position: relative;
-		padding: 150px 5vw 150px;
+		padding: 150px 10vw 150px;
 
 		span {
 			position: absolute;
 			left: 2vw;
 			bottom: 3vw;
-			font: 80px/1 $ikeaFont;
+			font: 90px/1 $ikeaFont;
 			color: $grey;
 			opacity: 0.9;
 			margin-left: 10px;
@@ -261,8 +260,7 @@
 				//news 슬라이드 왼쪽 화살표
 				&:nth-of-type(1) {
 					flex: 1.8;
-					margin-top: 10vw;
-					font: 50px/7 $ikeaFont;
+					font: 70px/6 $ikeaFont;
 					color: transparent;
 					-webkit-text-stroke: 1px $fontColorW;
 					align-items: center;
@@ -277,12 +275,11 @@
 					display: flex;
 					flex-direction: column;
 					justify-content: center;
-					padding-left: 10vw;
 
 					//news 슬라이드 중앙 영역 상단부분
 					.newsUp {
 						width: 100%;
-						height: 640px;
+						height: 540px;
 						flex: 6;
 						justify-content: space-between;
 
@@ -291,7 +288,6 @@
 							display: flex;
 							width: 100%;
 							height: 100%;
-							border-radius: 10px;
 
 							.swiper-wrapper {
 								//news 슬라이드 1 start
@@ -408,7 +404,7 @@
 						flex: 2;
 						display: flex;
 						justify-content: center;
-						align-items: flex-start;
+						align-items: center;
 						height: 400px;
 						width: 100%;
 
@@ -436,10 +432,9 @@
 				//news 슬라이드 오른쪽 화살표
 				&:nth-of-type(3) {
 					height: 628px;
-					flex: 2;
-					margin-top: 10vw;
+					flex: 1.8;
 					align-items: center;
-					font: 50px/7 $ikeaFont;
+					font: 70px/6 $ikeaFont;
 					color: transparent;
 					-webkit-text-stroke: 1px $fontColorW;
 					cursor: pointer;
@@ -462,41 +457,37 @@
 		background-position: center;
 		background-size: cover;
 		position: relative;
-		padding: 150px 5vw 150px;
+		padding: 96px 5vw 96px;
 
 		span {
 			position: absolute;
 			left: 2vw;
 			bottom: 3vw;
-			font: 80px/1 $ikeaFont;
+			font: 60px/1 $ikeaFont;
 			color: $grey;
 			opacity: 0.9;
 			margin-left: 10px;
 		}
 
 		.newsContainer {
-			padding: 0px 3vw 0px;
 			width: 100%;
-			height: 628px;
+			height: 508px;
 			display: flex;
 			position: absolute;
 
 			.newsWrap {
 				width: calc(100% / 3);
-				height: 100%;
+				height: 500px;
 				float: left;
 
 				//news 슬라이드 왼쪽 화살표
 				&:nth-of-type(1) {
-					flex: 1.8;
-					margin-top: 10vw;
-					font: 50px/7 $ikeaFont;
+					flex: 2.8;
+					font: 50px/8 $ikeaFont;
 					color: transparent;
 					-webkit-text-stroke: 1px $fontColorW;
 					align-items: center;
-
 					cursor: pointer;
-					padding-left: 1vw;
 					z-index: 555;
 				}
 
@@ -506,15 +497,14 @@
 					display: flex;
 					flex-direction: column;
 					justify-content: center;
-					padding-left: 10vw;
 
 					//news 슬라이드 중앙 영역 상단부분
 					.newsUp {
 						width: 100%;
-						height: 640px;
-						flex: 6;
+						height: 500px;
+						flex: 7;
 
-						justify-content: space-between;
+						justify-content: center;
 
 						//news 슬라이드 start
 						.swiper-container {
@@ -635,13 +625,15 @@
 
 					//news 슬라이드 중앙 영역 하단부분
 					.newsDown {
-						flex: 2;
+						flex: 1;
+						width: 100%;
+						height: 0px;
 						display: flex;
 						justify-content: center;
-						align-items: flex-start;
+						align-items: center;
+
 						height: 400px;
 						width: 100%;
-
 						//news 슬라이드 아래 재생/일시정지 버튼
 						button {
 							width: 50px;
@@ -665,16 +657,14 @@
 
 				//news 슬라이드 오른쪽 화살표
 				&:nth-of-type(3) {
-					height: 628px;
-					flex: 2;
-					margin-top: 10vw;
+					height: 508px;
+					flex: 2.8;
 					align-items: center;
-					font: 50px/7 $ikeaFont;
+					font: 50px/8 $ikeaFont;
 					color: transparent;
 					-webkit-text-stroke: 1px $fontColorW;
 					cursor: pointer;
 					z-index: 555;
-					padding-right: 1vw;
 				}
 			}
 		}

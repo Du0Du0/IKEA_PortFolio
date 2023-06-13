@@ -382,7 +382,7 @@
 					}
 
 					P {
-						width: 350px;
+						width: 100%;
 						position: relative;
 						font: 18px/1.2 $ikeaFont;
 						color: $fontColorBl;
@@ -394,6 +394,7 @@
 				}
 
 				.loadingWrap {
+					width: 100%;
 					flex: 1.2;
 					display: flex;
 					justify-content: center;
