@@ -319,7 +319,7 @@
 				h4 {
 					margin: 0px auto;
 					text-orientation: upright;
-					writing-mode: horizontal-tb;
+					writing-mode: vertical-rl;
 					white-space: wrap;
 					letter-spacing: 0px;
 				}
@@ -337,19 +337,19 @@
 					overflow-x: none;
 
 					h3 {
-						font: 26px/1 $ikeaFont;
+						font: 23px/1 $ikeaFont;
 						color: $fontColorW;
 						margin-bottom: 10px;
 					}
 
 					h4 {
 						font: 18px/1 $ikeaFont;
-						color: $fontColorW;
+						color: $grey;
 						margin-bottom: 10px;
 					}
 
 					p {
-						font: 16px/1 $ikeaFont;
+						font: 18px/1 $ikeaFont;
 						color: $fontColorW;
 					}
 
@@ -371,32 +371,31 @@
 @media screen and (max-width: $tablet) {
 	#promotion {
 		width: 100vw;
-		height: 810px;
+		height: 1200px;
 		background: linear-gradient(to right, #0058ab, #fff94c);
 		display: flex;
-
 		justify-content: center;
 		align-items: center;
 		overflow: hidden;
 
 		.promotionContainer {
 			width: 100vw;
-			height: 820px;
+			height: 900px;
 			display: block;
 			flex-wrap: wrap;
 			position: relative;
 			justify-content: center;
 			align-items: center;
 			z-index: 1;
-			padding: 140px 10vw 140px;
+			padding: 0px 10vw 96px;
 
 			.circleText {
-				width: 540px;
-				height: 540px;
+				width: 440px;
+				height: 440px;
 				position: absolute;
 				z-index: -1;
-				top: -90px;
-				left: -110px;
+				top: -230px;
+				left: -90px;
 				animation: rotateImage 10s linear infinite;
 				transform-origin: 50% 50%;
 				opacity: 0.5;
@@ -416,7 +415,7 @@
 				//gallery
 				&:nth-of-type(1) {
 					width: 100%;
-					height: 20%;
+					height: 50%;
 					flex: 2;
 					display: flex;
 					flex-wrap: wrap;
@@ -682,8 +681,9 @@
 				}
 
 				&:nth-of-type(2) {
+					margin-top: 40px;
 					width: 100%;
-					height: 40px;
+					height: 100px;
 					flex: 1;
 					padding: 0;
 					font: 65px/1 $ikeaFont;
@@ -704,13 +704,389 @@
 					overflow-x: hidden;
 
 					.sns {
+						margin-top: 10px;
 						width: 100%;
-						height: 100%;
+						height: 40%;
 						overflow-y: scroll;
 						overflow-x: none;
 
 						h3 {
 							font: 26px/1 $ikeaFont;
+							color: $fontColorW;
+							margin-bottom: 10px;
+						}
+
+						h4 {
+							font: 18px/1 $ikeaFont;
+							color: $fontColorW;
+							margin-bottom: 10px;
+						}
+
+						p {
+							font: 16px/1 $ikeaFont;
+							color: $fontColorW;
+						}
+
+						&::-webkit-scrollbar {
+							width: 10px;
+						}
+						&::-webkit-scrollbar-thumb {
+							background-color: #b4ca68;
+						}
+						&::-webkit-scrollbar-track {
+							background-color: transparent;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	#promotion {
+		width: 100vw;
+		height: 800px;
+		background: linear-gradient(to right, #0058ab, #fff94c);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+
+		.promotionContainer {
+			width: 100vw;
+			height: 900px;
+			display: block;
+			flex-wrap: wrap;
+			position: relative;
+			justify-content: center;
+			align-items: center;
+			z-index: 1;
+			padding: 150px 10vw 150px;
+
+			.circleText {
+				width: 440px;
+				height: 440px;
+				position: absolute;
+				z-index: -1;
+				top: -230px;
+				left: -90px;
+				animation: rotateImage 10s linear infinite;
+				transform-origin: 50% 50%;
+				opacity: 0.5;
+
+				@keyframes rotateImage {
+					100% {
+						transform: rotate(360deg);
+					}
+				}
+			}
+
+			.promotionWrap {
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+
+				//gallery
+				&:nth-of-type(1) {
+					width: 100%;
+					height: 30%;
+					flex: 2;
+					display: flex;
+					flex-wrap: wrap;
+					flex-direction: column;
+
+					.itemImg {
+						width: 100%;
+						height: calc(100% / 2);
+						flex: 3;
+						display: flex;
+						margin: 0px auto;
+						display: flex;
+						gap: 15px;
+
+						//사진 1
+						.gallery {
+							width: 100%;
+							height: 100%;
+
+							.imgContainer {
+								width: 100%;
+								height: 100%;
+								cursor: pointer;
+								overflow: hidden;
+								position: relative;
+
+								&:hover .imgDescHover {
+									display: block;
+									position: absolute;
+								}
+
+								img {
+									width: 100%;
+									height: 100%;
+									object-fit: cover;
+									transform: scale(1);
+									transition: all 0.3s ease-in-out;
+
+									&:hover {
+										transform: scale(1.05);
+									}
+								}
+
+								.imgDescription {
+									display: none;
+
+									.title {
+										font: 18px/1 $ikeaFont;
+										color: $ikeaBl;
+									}
+
+									.category {
+										font: 18px/1 $ikeaFont;
+										color: $fontColorBl;
+										margin-bottom: 5px;
+									}
+
+									.p {
+										font: 18px/1 $ikeaFont;
+										color: $ikeaBl;
+									}
+								}
+
+								.title {
+									font: 18px/1 $ikeaFont;
+									color: $ikeaBl;
+								}
+
+								.category {
+									font: 18px/1 $ikeaFont;
+									color: $fontColorBl;
+									margin-bottom: 5px;
+								}
+
+								.p {
+									font: 18px/1 $ikeaFont;
+									color: $ikeaBl;
+								}
+							}
+
+							.imgDescHover {
+								z-index: 1;
+								position: absolute;
+								top: 0;
+								left: 0;
+								white-space: nowrap;
+								display: none;
+								padding: 1rem;
+								background: white;
+								font-weight: 400;
+								margin-top: 1.25rem;
+								margin-left: -2rem;
+							}
+						}
+						.gallery2 {
+							width: 80%;
+							height: 100%;
+							display: flex;
+							gap: 15px;
+							flex-direction: column;
+
+							.gallery3 {
+								background: rgb(112, 20, 49);
+								width: 100%;
+								height: 40%;
+
+								.imgContainer {
+									width: 100%;
+									height: 100%;
+									cursor: pointer;
+									overflow: hidden;
+									position: relative;
+
+									&:hover .imgDescHover {
+										display: block;
+										position: absolute;
+									}
+
+									img {
+										width: 100%;
+										height: 100%;
+										object-fit: cover;
+										transform: scale(1);
+										transition: all 0.3s ease-in-out;
+
+										&:hover {
+											transform: scale(1.05);
+										}
+									}
+
+									.imgDescription {
+										display: block;
+
+										.title {
+											font: 18px/1 $ikeaFont;
+											color: $ikeaBl;
+										}
+
+										.category {
+											font: 18px/1 $ikeaFont;
+											color: $fontColorBl;
+											margin-bottom: 5px;
+										}
+
+										.p {
+											font: 18px/1 $ikeaFont;
+											color: $ikeaBl;
+										}
+									}
+
+									.title {
+										font: 18px/1 $ikeaFont;
+										color: $ikeaBl;
+									}
+
+									.category {
+										font: 18px/1 $ikeaFont;
+										color: $fontColorBl;
+										margin-bottom: 5px;
+									}
+
+									.p {
+										font: 18px/1 $ikeaFont;
+										color: $ikeaBl;
+									}
+								}
+
+								.imgDescHover {
+									z-index: 1;
+									position: absolute;
+									top: 0;
+									left: 0;
+									white-space: nowrap;
+									display: none;
+									padding: 1rem;
+									background: white;
+									font-weight: 400;
+									margin-top: 1.25rem;
+									margin-left: -2rem;
+								}
+							}
+							.gallery4 {
+								width: 100%;
+								height: 60%;
+
+								.imgContainer {
+									width: 100%;
+									height: 100%;
+									cursor: pointer;
+									overflow: hidden;
+									position: relative;
+
+									&:hover .imgDescHover {
+										display: block;
+										position: absolute;
+									}
+
+									img {
+										width: 100%;
+										height: 100%;
+										object-fit: cover;
+										transform: scale(1);
+										transition: all 0.3s ease-in-out;
+
+										&:hover {
+											transform: scale(1.05);
+										}
+									}
+
+									.imgDescription {
+										display: none;
+
+										.title {
+											font: 18px/1 $ikeaFont;
+											color: $ikeaBl;
+										}
+
+										.category {
+											font: 18px/1 $ikeaFont;
+											color: $fontColorBl;
+											margin-bottom: 5px;
+										}
+
+										.p {
+											font: 18px/1 $ikeaFont;
+											color: $ikeaBl;
+										}
+									}
+
+									.title {
+										font: 18px/1 $ikeaFont;
+										color: $ikeaBl;
+									}
+
+									.category {
+										font: 18px/1 $ikeaFont;
+										color: $fontColorBl;
+										margin-bottom: 5px;
+									}
+
+									.p {
+										font: 18px/1 $ikeaFont;
+										color: $ikeaBl;
+									}
+								}
+
+								.imgDescHover {
+									z-index: 1;
+									position: absolute;
+									top: 0;
+									left: 0;
+									white-space: nowrap;
+									display: none;
+									padding: 1rem;
+									background: white;
+									font-weight: 400;
+									margin-top: 1.25rem;
+									margin-left: -2rem;
+								}
+							}
+						}
+					}
+				}
+
+				&:nth-of-type(2) {
+					margin-top: 40px;
+					width: 100%;
+					height: 100px;
+					flex: 1;
+					padding: 0;
+					font: 50px/1 $ikeaFont;
+					color: $fontColorW;
+
+					h4 {
+						margin: 0px auto;
+						text-orientation: upright;
+						writing-mode: horizontal-tb;
+						white-space: wrap;
+						letter-spacing: 0px;
+					}
+				}
+
+				&:nth-of-type(3) {
+					width: 100%;
+					flex: 2;
+					overflow-x: hidden;
+
+					.sns {
+						margin-top: 10px;
+						width: 100%;
+						height: 0%;
+						overflow-y: scroll;
+						overflow-x: none;
+
+						h3 {
+							font: 23px/1 $ikeaFont;
 							color: $fontColorW;
 							margin-bottom: 10px;
 						}
