@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 $ikeaBlue: #0058ab;
 $ikeaYellow: #fec202;
@@ -14,6 +15,12 @@ $fontColorBl: #333;
 $fontColorGr: #969696;
 $fontColorGrC: #10101099;
 
+//members
+$tableBg: #f4f5f6;
+$tableBtn: #1b2539;
+$inputBorder: #cfcfcf;
+$ikeaFontKo: 'Noto Sans KR';
+
 $tablet: 1023px;
 $mobile: 639px;
 
@@ -28,6 +35,13 @@ a:link {
 
 a:visited {
 	color: inherit; /* 방문한 링크의 색상을 상속받음 */
+}
+
+.h {
+	position: absolute;
+	z-index: -99999;
+	top: 0;
+	left: 0;
 }
 
 //common
@@ -48,3 +62,13 @@ a:visited {
 @import 'main/sns';
 @import 'main/showRoom';
 @import 'main/gallery';
+
+//sub
+@import 'sub/department';
+@import 'sub/gallery';
+@import 'sub/location';
+@import 'sub/members';
+@import 'sub/signIn';
+@import 'sub/signUp';
+@import 'sub/video';
+@import 'sub/subvisual';

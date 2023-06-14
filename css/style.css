@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 body {
   overflow-x: hidden;
 }
@@ -11,6 +12,13 @@ a:link {
 
 a:visited {
   color: inherit; /* 방문한 링크의 색상을 상속받음 */
+}
+
+.h {
+  position: absolute;
+  z-index: -99999;
+  top: 0;
+  left: 0;
 }
 
 header {
@@ -135,10 +143,29 @@ header .leftBar .leftBarWrap .leftBarList .listLine {
     opacity: 1;
   }
 }
+header .leftBar .leftBarWrap .leftBarList ul {
+  cursor: pointer;
+}
 header .leftBar .leftBarWrap .leftBarList ul:nth-of-type(2) {
   display: flex;
+  width: 100%;
+  flex-wrap: wrap;
   float: left;
   margin-top: 30px;
+  gap: 0px;
+  font: 24px/35px "Work Sans";
+  color: #969696;
+  cursor: pointer;
+}
+header .leftBar .leftBarWrap .leftBarList ul:nth-of-type(2) li:nth-of-type(1):nth-of-type(1):after {
+  content: "|";
+  padding-left: 15px;
+  padding-right: 15px;
+}
+header .leftBar .leftBarWrap .leftBarList ul:nth-of-type(3) {
+  display: flex;
+  float: left;
+  margin-top: 20px;
   gap: 30px;
   font: 24px/35px "Work Sans";
   color: #969696;
@@ -3807,6 +3834,919 @@ a {
   -webkit-text-stroke: 1px #eee;
   align-items: center;
   cursor: pointer;
+}
+
+.signUp {
+  width: 100vw;
+  height: 100vh;
+}
+.signUp .titContainer {
+  width: 100%;
+  height: 300px;
+  padding: 150px 20vw 150px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 150px;
+}
+.signUp .titContainer h1 {
+  flex: 1;
+  text-align: center;
+  font: bold 70px/1 "Noto Sans KR";
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 96px;
+}
+.signUp .titContainer h2 {
+  flex: 1;
+  text-align: left;
+  font: bold 18px/1.3 "Noto Sans KR";
+  color: #333;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  white-space: nowrap;
+}
+.signUp .timeLine {
+  flex: 1;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #cfcfcf;
+  gap: 104px;
+}
+.signUp .timeLine .timeLineNum {
+  width: 117px;
+  height: 117px;
+  border-radius: 50%;
+  float: left;
+  border: 1px solid #cfcfcf;
+  position: relative;
+}
+.signUp .timeLine .timeLineNum:nth-of-type(2) {
+  background: #fec202;
+  border: none;
+}
+.signUp .timeLine .timeLineNum::after {
+  content: "\f061";
+  position: relative;
+  align-items: center;
+  top: 30%;
+  left: -70%;
+  transform: translate(50%, 50%);
+  font: 30px/1 "Noto Sans KR";
+  color: #cfcfcf;
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+.signUp .timeLine .timeLineNum:nth-of-type(1):after {
+  content: ">";
+  position: relative;
+  align-items: center;
+  top: 50%;
+  left: -50%;
+  transform: translate(50%, 50%);
+  font: bold 25px/1 "Noto Sans KR";
+  color: #969696;
+  display: none;
+}
+.signUp .info1 {
+  width: 100%;
+  height: 517px;
+  margin-bottom: 200px;
+  padding: 150px 20vw 150px;
+}
+.signUp .info1 h2 {
+  font: bold 26px/1 "Noto Sans KR";
+  color: #333;
+  padding-bottom: 2vw;
+}
+.signUp .info1 form table {
+  width: 100%;
+  height: 517px;
+  padding: 30px;
+  background: #f4f5f6;
+}
+.signUp .info1 form table th,
+.signUp .info1 form table td {
+  padding: 16px 18px;
+}
+.signUp .info1 form table th {
+  font: bold 18px/1 "Noto Sans KR";
+  color: #171717;
+  transform: translate(0%, -14%);
+  text-align: left;
+  padding: 0px 2vw 0px;
+}
+.signUp .info1 form table th:nth-of-type(1)::after {
+  content: "*";
+  font: bold 18px/1 "Noto Sans KR";
+  color: red;
+}
+.signUp .info1 form table td {
+  width: 80%;
+}
+.signUp .info1 form table p {
+  font: 16px/1 "Noto Sans KR";
+  color: #333;
+}
+.signUp .info1 form table p::before {
+  content: "\f00c";
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 18px;
+}
+.signUp .info1 form table .checkIdBtn,
+.signUp .info1 form table .checkNickBtn {
+  width: 108px;
+  height: 41px;
+  background: #1b2539;
+  border-radius: 5px;
+  color: #eee;
+  border: none;
+  transform: translate(0, -5%);
+  font: 15px/1 "Noto Sans KR";
+}
+.signUp .info1 form table input[type=text] {
+  padding: 10px;
+  width: 30%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #cfcfcf;
+  background: #f4f5f6;
+  margin-bottom: 15px;
+  font: 16px/1 "Noto Sans KR";
+}
+.signUp .info1 form table input[type=password] {
+  padding: 10px;
+  width: 30%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #cfcfcf;
+  background: #fff;
+  color: red;
+  margin-bottom: 15px;
+}
+.signUp .info1 form table input[placeholder] {
+  padding: 10px;
+  width: 30%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #cfcfcf;
+  background: #fff;
+  font: 16px/1 "Noto Sans KR";
+  color: #333;
+}
+.signUp .info1 form table input[type=email] {
+  padding: 10px;
+  width: 20%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #cfcfcf;
+  background: #fff;
+  font: 16px/1 "Noto Sans KR";
+  color: #333;
+}
+.signUp .info1 form table select {
+  padding: 2px 10px;
+  width: 15%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #cfcfcf;
+  background: #f4f5f6;
+  font: 16px/1 "Noto Sans KR";
+  color: #333;
+  transform: translate(0, -1%);
+}
+.signUp .info2 {
+  width: 100%;
+  height: 517px;
+  margin-bottom: 200px;
+  padding: 150px 20vw 150px;
+}
+.signUp .info2 h2 {
+  font: bold 26px/1 "Noto Sans KR";
+  color: #333;
+  padding-bottom: 2vw;
+}
+.signUp .info2 form table {
+  width: 100%;
+  height: 517px;
+  padding: 30px;
+  background: #f4f5f6;
+}
+.signUp .info2 form table th,
+.signUp .info2 form table td {
+  padding: 16px 18px;
+}
+.signUp .info2 form table th {
+  font: bold 18px/1 "Noto Sans KR";
+  color: #171717;
+  text-align: left;
+  padding: 0px 2vw 0px;
+  transform: translate(0%, -3%);
+}
+.signUp .info2 form table td {
+  width: 80%;
+}
+.signUp .info2 form table span {
+  font: 16px/1 "Noto Sans KR";
+  color: #969696;
+}
+.signUp .info2 form table button {
+  width: 108px;
+  height: 41px;
+  background: #1b2539;
+  border: 1px solid #171717;
+  border-radius: 5px;
+  color: #eee;
+  border: none;
+  transform: translate(0, -5%);
+  font: 15px/1 "Noto Sans KR";
+}
+.signUp .info2 form table input[type=text] {
+  padding: 10px;
+  width: 40%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #cfcfcf;
+  background: #fff;
+  margin-bottom: 10px;
+  font: 16px/1 "Noto Sans KR";
+}
+.signUp .info2 form table textarea[placeholder] {
+  padding: 10px;
+  width: 92%;
+  border-radius: 5px;
+  border: 1px solid #cfcfcf;
+  background: #fff;
+  font: 16px/1 "Noto Sans KR";
+  color: #333;
+}
+.signUp .info2 form table input[placeholder] {
+  padding: 10px;
+  width: 92%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #cfcfcf;
+  background: #fff;
+  font: 16px/1 "Noto Sans KR";
+  color: #333;
+}
+.signUp .info2 form table input[type=checkbox] {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.signUp .info2 form table input[type=checkbox]:nth-of-type(1) {
+  margin-left: 0;
+}
+.signUp .info2 form table select {
+  padding: 10px;
+  width: 15%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #cfcfcf;
+  background: #f4f5f6;
+  font: 16px/1 "Work Sans";
+  color: #333;
+  transform: translate(0, 8%);
+}
+.signUp .info2 form table input[class=address]:nth-of-type(2) {
+  width: 92%;
+}
+.signUp .info2 form table input[class=address]:nth-of-type(3) {
+  width: 92%;
+}
+.signUp .info2 form table .addressTit::after {
+  content: "*";
+  font: bold 18px/1 "Noto Sans KR";
+  color: red;
+}
+.signUp .info3 {
+  width: 100%;
+  height: 185px;
+  margin-top: 480px;
+  margin-bottom: 250px;
+  padding: 50px 20vw 0px;
+}
+.signUp .info3 h2 {
+  font: bold 26px/1 "Noto Sans KR";
+  color: #333;
+  padding-bottom: 2vw;
+}
+.signUp .info3 form table {
+  width: 100%;
+  height: 185px;
+  padding: 30px;
+  background: #f4f5f6;
+}
+.signUp .info3 form table th,
+.signUp .info3 form table td {
+  padding: 16px 18px;
+}
+.signUp .info3 form table th {
+  font: bold 18px/1 "Noto Sans KR";
+  color: #171717;
+  text-align: left;
+  padding: 0px 2vw 0px;
+}
+.signUp .info3 form table td {
+  width: 80%;
+}
+.signUp .info3 form table input[type=radio] {
+  margin-left: 20px;
+}
+.signUp .info3 form table input[type=radio]:nth-of-type(1) {
+  margin-left: -20px;
+}
+.signUp .btnSet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 200px;
+  padding: 0px 20vw 0px;
+  margin: 0px auto;
+  border-top: 1px solid #cfcfcf;
+}
+.signUp .btnSet input {
+  width: 108px;
+  height: 41px;
+  background: #1b2539;
+  border-radius: 5px;
+  color: #eee;
+  border: none;
+  transform: translate(0, -5%);
+  font: 15px/1 "Noto Sans KR";
+  margin-right: 30px;
+  cursor: pointer;
+}
+.signUp .btnSet input:nth-of-type(1) {
+  background: #fff;
+  border: 1px solid #1b2539;
+  color: #333;
+}
+
+@media screen and (max-width: 1023px) {
+  .signUp .titContainer {
+    height: 300px;
+    padding: 150px 10vw 150px;
+    margin-bottom: 150px;
+  }
+  .signUp .titContainer h1 {
+    font: bold 38.4px/1 "Noto Sans KR";
+    margin-top: 20px;
+    margin-bottom: 96px;
+  }
+  .signUp .titContainer h2 {
+    font: bold 16px/1.3 "Noto Sans KR";
+  }
+  .signUp .timeLine {
+    height: 300px;
+    padding-bottom: 60px;
+  }
+  .signUp .timeLine .timeLineNum {
+    width: 104px;
+    height: 104px;
+  }
+  .signUp .timeLine .timeLineNum::after {
+    transform: translate(50%, 50%);
+    font: 18px/1 "Noto Sans KR";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+  .signUp .info1 {
+    width: 100%;
+    height: 517px;
+    margin-bottom: 200px;
+    padding: 150px 10vw 150px;
+  }
+  .signUp .info1 h2 {
+    font: bold 22.4px/1 "Noto Sans KR";
+    color: #333;
+    padding-bottom: 5vw;
+  }
+  .signUp .info1 form table {
+    width: 100%;
+    height: 517px;
+    padding: 30px;
+    background: #f4f5f6;
+  }
+  .signUp .info1 form table th,
+  .signUp .info1 form table td {
+    padding: 16px 18px;
+  }
+  .signUp .info1 form table th {
+    font: bold 14.4px/1 "Noto Sans KR";
+    color: #171717;
+    transform: translate(0%, -14%);
+    text-align: left;
+    padding: 0px 1vw 0px;
+  }
+  .signUp .info1 form table th:nth-of-type(1)::after {
+    font: bold 16px/1 "Noto Sans KR";
+  }
+  .signUp .info1 form table td {
+    width: 80%;
+  }
+  .signUp .info1 form table p {
+    font: 12.8px/1 "Noto Sans KR";
+  }
+  .signUp .info1 form table p::before {
+    margin-right: 5px;
+  }
+  .signUp .info1 form table .checkIdBtn,
+  .signUp .info1 form table .checkNickBtn {
+    width: 96px;
+    height: 37px;
+    font: 12.8px/1 "Noto Sans KR";
+  }
+  .signUp .info1 form table input[type=text] {
+    padding: 5px;
+    width: 50%;
+    height: 37px;
+    margin-bottom: 15px;
+    font: 14.4px/1 "Noto Sans KR";
+  }
+  .signUp .info1 form table input[type=password] {
+    padding: 5px;
+    width: 30%;
+    height: 37px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  .signUp .info1 form table input[placeholder] {
+    padding: 5px;
+    width: 50%;
+    height: 37px;
+    font: 14.4px/1 "Noto Sans KR";
+  }
+  .signUp .info1 form table input[type=email] {
+    padding: 5px;
+    width: 28%;
+    height: 37px;
+    font: 14.4px/1 "Noto Sans KR";
+  }
+  .signUp .info1 form table select {
+    padding: 2px 5px;
+    width: 25%;
+    height: 37px;
+    border-radius: 5px;
+    font: 14.4px/1 "Noto Sans KR";
+    transform: translate(0, -1%);
+  }
+  .signUp .info2 {
+    padding: 150px 10vw 150px;
+  }
+  .signUp .info2 h2 {
+    font: bold 22.4px/1 "Noto Sans KR";
+    padding-bottom: 5vw;
+  }
+  .signUp .info2 form table {
+    width: 100%;
+    height: 517px;
+    padding: 30px;
+  }
+  .signUp .info2 form table th,
+  .signUp .info2 form table td {
+    padding: 16px 18px;
+  }
+  .signUp .info2 form table th {
+    font: bold 14.4px/1 "Noto Sans KR";
+    padding: 0px 1vw 0px;
+  }
+  .signUp .info2 form table span {
+    font: 14.4px/1 "Noto Sans KR";
+  }
+  .signUp .info2 form table button {
+    height: 37px;
+    font: 12.8px/1 "Noto Sans KR";
+  }
+  .signUp .info2 form table input[type=text] {
+    padding: 5px;
+    width: 50%;
+    height: 37px;
+    margin-bottom: 10px;
+    font: 14.4px/1 "Noto Sans KR";
+  }
+  .signUp .info2 form table textarea[placeholder] {
+    padding: 5px;
+    font: 14.4px/1 "Noto Sans KR";
+  }
+  .signUp .info2 form table input[placeholder] {
+    padding: 5px;
+    width: 50%;
+    height: 37px;
+    font: 14.4px/1 "Noto Sans KR";
+  }
+  .signUp .info2 form table select {
+    padding: 5px;
+    width: 18%;
+    height: 37px;
+    font: 14.4px/1 "Work Sans";
+  }
+  .signUp .info2 form table input[class=address]:nth-of-type(2) {
+    width: 92%;
+  }
+  .signUp .info2 form table input[class=address]:nth-of-type(3) {
+    width: 92%;
+  }
+  .signUp .info2 form table .addressTit::after {
+    font: bold 14.4px/1 "Noto Sans KR";
+  }
+  .signUp .info3 {
+    margin-top: 530px;
+    padding: 0px 10vw 0px;
+  }
+  .signUp .info3 h2 {
+    font: bold 22.4px/1 "Noto Sans KR";
+    padding-bottom: 5vw;
+  }
+  .signUp .info3 form table th,
+  .signUp .info3 form table th {
+    font: bold 14.4px/1 "Noto Sans KR";
+    padding: 0px 1vw 0px;
+  }
+  .signUp .btnSet {
+    width: 80%;
+    padding: 0px 10vw 0px;
+  }
+  .signUp .btnSet input {
+    font: 12.8px/1 "Noto Sans KR";
+  }
+}
+@media screen and (max-width: 639px) {
+  .signUp .titContainer {
+    height: 300px;
+    padding: 150px 5vw 150px;
+    margin-bottom: 150px;
+  }
+  .signUp .titContainer h1 {
+    font: bold 33.6px/1 "Noto Sans KR";
+    margin-top: 20px;
+    margin-bottom: 96px;
+  }
+  .signUp .titContainer h2 {
+    font: bold 14px/1.3 "Noto Sans KR";
+  }
+  .signUp .timeLine {
+    height: 300px;
+    padding-bottom: 60px;
+  }
+  .signUp .timeLine .timeLineNum {
+    width: 91px;
+    height: 91px;
+  }
+  .signUp .timeLine .timeLineNum:nth-child(2):after {
+    display: none;
+  }
+  .signUp .timeLine .timeLineNum:nth-of-type(1) {
+    display: none;
+  }
+  .signUp .timeLine .timeLineNum::after {
+    font: bold 16px/1 "Noto Sans KR";
+    transform: translate(50%, 50%);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+  .signUp .info1 {
+    width: 100%;
+    height: 517px;
+    padding: 96px 5vw 96px;
+    margin-bottom: 96px;
+  }
+  .signUp .info1 h2 {
+    font: bold 19.6px/1 "Noto Sans KR";
+    padding-bottom: 10vw;
+  }
+  .signUp .info1 form table {
+    width: 100%;
+    height: 517px;
+    padding: 30px 10px 20px;
+    background: #f4f5f6;
+  }
+  .signUp .info1 form table th,
+  .signUp .info1 form table td {
+    padding: 16px 0px;
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .signUp .info1 form table th {
+    font: bold 14.4px/1 "Noto Sans KR";
+    transform: translate(0%, -14%);
+    padding: 0px 1vw 0px;
+  }
+  .signUp .info1 form table th:nth-of-type(1)::after {
+    font: bold 12.6px/1 "Noto Sans KR";
+  }
+  .signUp .info1 form table td {
+    width: 100%;
+  }
+  .signUp .info1 form table p {
+    width: 100%;
+    font: 11.2px/1 "Noto Sans KR";
+  }
+  .signUp .info1 form table p::before {
+    margin-right: 5px;
+  }
+  .signUp .info1 form table .checkIdBtn,
+  .signUp .info1 form table .checkNickBtn {
+    width: 30%;
+    height: 32.8px;
+    margin-left: 5px;
+    font: 11.2px/1 "Noto Sans KR";
+  }
+  .signUp .info1 form table input[type=text] {
+    padding: 5px;
+    width: 65%;
+    height: 32.8px;
+    margin-bottom: 10px;
+    font: 12.6px/1 "Noto Sans KR";
+  }
+  .signUp .info1 form table input[type=password] {
+    width: 100%;
+    height: 32.8px;
+    margin-bottom: 10px;
+  }
+  .signUp .info1 form table input[placeholder] {
+    padding: 5px;
+    width: 100%;
+    height: 32.8px;
+    font: 12.6px/1 "Noto Sans KR";
+  }
+  .signUp .info1 form table input[type=email] {
+    padding: 5px;
+    width: 29%;
+    height: 32.8px;
+    font: 14.4px/1 "Noto Sans KR";
+  }
+  .signUp .info1 form table select {
+    padding: 2px 5px;
+    width: 30%;
+    height: 32.8px;
+    border-radius: 5px;
+    font: 14.4px/1 "Noto Sans KR";
+    transform: translate(0, -1%);
+    margin-left: 5px;
+  }
+  .signUp .info2 {
+    margin-top: 150px;
+    width: 100%;
+    height: 517px;
+    padding: 96px 5vw 96px;
+  }
+  .signUp .info2 h2 {
+    font: bold 19.6px/1 "Noto Sans KR";
+    padding-bottom: 10vw;
+  }
+  .signUp .info2 form table {
+    width: 100%;
+    height: 517px;
+    padding: 30px 10px 20px;
+  }
+  .signUp .info2 form table th,
+  .signUp .info2 form table td {
+    padding: 16px 0px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .signUp .info2 form table td {
+    width: 100%;
+    font: 12.6px/1 "Noto Sans KR";
+  }
+  .signUp .info2 form table th {
+    font: bold 14.4px/1 "Noto Sans KR";
+    padding: 0px 1vw 0px;
+  }
+  .signUp .info2 form table span {
+    font: 12.6px/1 "Noto Sans KR";
+  }
+  .signUp .info2 form table button {
+    height: 32.8px;
+    font: 11.2px/1 "Noto Sans KR";
+  }
+  .signUp .info2 form table input[type=text] {
+    padding: 5px;
+    width: 100%;
+    height: 32.8px;
+    font: 12.6px/1 "Noto Sans KR";
+  }
+  .signUp .info2 form table textarea[placeholder] {
+    padding: 5px;
+    width: 100%;
+    font: 12.6px/1 "Noto Sans KR";
+  }
+  .signUp .info2 form table input[type=checkbox] {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .signUp .info2 form table input[type=checkbox]:nth-of-type(1) {
+    margin-left: 0;
+  }
+  .signUp .info2 form table input[placeholder] {
+    padding: 5px;
+    width: 100%;
+    height: 32.8px;
+    font: 12.6px/1 "Noto Sans KR";
+  }
+  .signUp .info2 form table select {
+    padding: 5px;
+    width: 30%;
+    height: 32.8px;
+    font: 12.6px/1 "Work Sans";
+  }
+  .signUp .info2 form table input[class=address]:nth-of-type(1) {
+    width: 40%;
+    margin-right: 5px;
+  }
+  .signUp .info2 form table input[class=address]:nth-of-type(2) {
+    width: 100%;
+  }
+  .signUp .info2 form table input[class=address]:nth-of-type(3) {
+    width: 100%;
+  }
+  .signUp .info2 form table .addressTit::after {
+    font: bold 12.6px/1 "Noto Sans KR";
+  }
+  .signUp .info3 {
+    margin-top: 150px;
+    padding: 206px 5vw 150px;
+  }
+  .signUp .info3 h2 {
+    font: bold 19.6px/1 "Noto Sans KR";
+    padding-bottom: 10vw;
+  }
+  .signUp .info3 form table {
+    width: 100%;
+    height: 193px;
+    padding: 30px 10px 20px;
+  }
+  .signUp .info3 form table th,
+  .signUp .info3 form table td {
+    padding: 0px 1vw 0px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .signUp .info3 form table th {
+    margin-bottom: 20px;
+    font: bold 14.4px/1 "Noto Sans KR";
+  }
+  .signUp .info3 form table td {
+    font: 12.6px/1 "Noto Sans KR";
+    margin-bottom: 20px;
+    margin-left: 5vw;
+  }
+  .signUp .btnSet {
+    width: 85%;
+    padding: 0px 10vw 0px;
+  }
+  .signUp .btnSet input {
+    font: 12.8px/1 "Noto Sans KR";
+    margin-right: 10px;
+  }
+}
+#subVisual {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/visual1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#subVisual .visualWrap {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+  grid-template-rows: 0.8fr 1.7fr 1.7fr 3fr;
+  backdrop-filter: brightness(0.6);
+}
+#subVisual .visualWrap .bg {
+  height: 100%;
+  border: 1px solid rgba(59, 59, 59, 0.5);
+  color: yellow;
+}
+#subVisual .visualWrap .bg:nth-of-type(2) {
+  grid-column: span 3;
+}
+#subVisual .visualWrap .bg:nth-of-type(7) {
+  grid-column: span 3;
+}
+#subVisual .visualWrap .bg:nth-of-type(8) {
+  padding: 15px 1vw 0px;
+  font: 18px/1 "Work Sans";
+  color: #e9e9e9;
+  border: 1px solid #eee;
+  cursor: pointer;
+}
+#subVisual .visualWrap .bg:nth-of-type(8).on {
+  box-shadow: 0 0 50px 15px rgba(254, 194, 2, 0.45);
+  background: #fec202;
+  color: #171717;
+  border: none;
+}
+#subVisual .visualWrap .bg:nth-of-type(9) {
+  padding: 170px 1vw 15px;
+  font: 18px/1 "Work Sans";
+  color: #e9e9e9;
+  text-align: start;
+}
+#subVisual .visualWrap .bg:nth-of-type(11) {
+  grid-row: span 2;
+}
+#subVisual .visualWrap .bg:nth-of-type(12) {
+  grid-column: span 4;
+  grid-row: span 4;
+  padding: 60px 0vw 0px;
+}
+#subVisual .visualWrap .bg:nth-of-type(12) h1 {
+  width: 80%;
+  font: 30px/1 "Work Sans";
+  color: #e9e9e9;
+  text-align: justify;
+  word-break: break-all;
+}
+#subVisual .visualWrap .bg:nth-of-type(12) p {
+  font: 18px/1 "Work Sans";
+  color: #969696;
+  text-align: justify;
+  word-break: break-all;
+  margin-bottom: 20px;
+}
+#subVisual .visualWrap .bg:nth-of-type(13) {
+  text-align: end;
+  padding: 170px 1vw 15px;
+  font: 18px/1 "Work Sans";
+  color: #e9e9e9;
+  border: 1px solid #eee;
+  cursor: pointer;
+}
+#subVisual .visualWrap .bg:nth-of-type(13).on {
+  box-shadow: 0 0 50px 15px rgba(254, 194, 2, 0.45);
+  background: #fec202;
+  border: none;
+  color: #171717;
+  cursor: pointer;
+}
+#subVisual .visualWrap .bg:nth-of-type(14) {
+  grid-row: span 2;
+}
+
+@media screen and (max-width: 1023px) {
+  #visual {
+    height: 100vh;
+  }
+  #visual .visualWrap {
+    grid-template-columns: 0.6fr 0fr 0fr 1fr 1fr 1fr 0.6fr;
+  }
+  #visual .visualWrap .bg:nth-of-type(8) {
+    padding: 20px 2vw 0px;
+  }
+  #visual .visualWrap .bg:nth-of-type(9) {
+    padding: 170px 2vw 15px;
+  }
+  #visual .visualWrap .bg:nth-of-type(12) h1 {
+    width: 90%;
+    font: 28px/1 "Work Sans";
+  }
+  #visual .visualWrap .bg:nth-of-type(13) {
+    padding: 170px 2vw 15px;
+  }
+}
+@media screen and (max-width: 639px) {
+  #visual {
+    height: 80vh;
+  }
+  #visual .visualWrap {
+    grid-template-columns: 0.1fr 0fr 0fr 0fr 1fr 1fr 0.1fr;
+    grid-template-rows: 7fr 1.5fr 1.5fr 3fr;
+  }
+  #visual .visualWrap .bg:nth-of-type(8) {
+    padding: 10px 3vw 0px;
+  }
+  #visual .visualWrap .bg:nth-of-type(9) {
+    padding: 170px 3vw 10px;
+  }
+  #visual .visualWrap .bg:nth-of-type(12) {
+    grid-column: span 4;
+    grid-row: span 4;
+    padding: 60px 0vw 0px;
+  }
+  #visual .visualWrap .bg:nth-of-type(12) h1 {
+    display: none;
+  }
+  #visual .visualWrap .bg:nth-of-type(12) p {
+    display: none;
+  }
+  #visual .visualWrap .bg:nth-of-type(13) {
+    padding: 170px 3vw 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

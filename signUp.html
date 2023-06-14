@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/sub/signUp.js"></script>
+  <script defer src="js/common/header.js"></script>
+  <script defer src="js/common/footer.js"></script>
+  <script defer src="js/sub/subVisual.js"></script>
+  <script src="https://kit.fontawesome.com/1178528ead.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+  <!-- header start -->
+  <header>
+    <div class="menu">
+      <i class="fa-solid fa-bars-staggered" style="rotate: 90deg;"></i>
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+    <div class="logo">
+      <p><a href="index.html">IKEA</a></p>
+    </div>
+    <div class="rightBar"></div>
+    <div class="leftBar">
+      <div class="leftBarWrap">
+        <div class="leftBarTit">
+          <h2>IKEA Category</h2>
+        </div>
+        <div class="leftBarList">
+          <!-- <div class="circle"></div> -->
+          <div class="listLine"></div>
+          <ul>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="video.html"></a>Video</a></li>
+            <li><a href="communtity.html"></a>Communtity</a></li>
+            <li><a href="gallery.html"></a>Gallery</a></li>
+            <li><a href="department.html"></a>Department</a></li>
+          </ul>
+          <ul>
+            <li><a href="signUp.html"></a>Sign Up</a></li>
+            <li><a href="signIn.html"></a>Sign In</a></li>
+          </ul>
+          <ul>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"></a><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"></a><i class="fa-solid fa-envelope"></i></a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+
+  <!-- Sign Up start -->
+  <section class="content signUp">
+
+    <!-- Upper Title & Timeline Container -->
+    <div class="titContainer">
+      <h1>회원가입</h1>
+      <!-- Sign Up start -->
+      <div class="timeLine">
+        <div class="timeLineNum">
+          <h2>01<br>약관동의</h2>
+        </div>
+
+        <div class="timeLineNum">
+          <h2>02<br>정보입력</h2>
+        </div>
+
+        <div class="timeLineNum">
+          <h2>03<br>가입완료</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- form1 start-->
+    <div class="info1">
+      <!-- form1 title-->
+      <h2>필수정보입력</h2>
+      <form action="result.html" method="get" id="signUp">
+        <!-- <legend class="h">회원가입 폼 필수정보 항목
+            </legend> -->
+        <table>
+          <tbody>
+            <!-- user id-->
+            <tr>
+              <th scope="row">
+                <label for="userid">아이디</label>
+              </th>
+              <td>
+                <input type="text" name="userid" id="userid">
+                <button type="button" class="checkIdBtn">중복확인</button><br>
+                <p>영문(소문자만가능), 숫자를 포함한 6~12자 조합으로 입력해주세요.</p>
+              </td>
+            </tr>
+            <!-- nickname -->
+            <tr>
+              <th scope="row">
+                <label for="nickname">닉네임</label>
+              </th>
+              <td>
+                <input type="text" name="nickname" id="nickname">
+                <button type="button" class="checkNickBtn">중복확인</button><br>
+                <p>영문(소문자만가능), 숫자를 포함한 6~12자 조합으로 입력해주세요.</p>
+              </td>
+            </tr>
+
+            <!-- password -->
+            <tr>
+              <th>
+                <label for="password">비밀번호</label>
+              </th>
+              <td>
+                <input type="password" name="password" id="password" placeholder="새 비밀번호"><br>
+                <p>비밀번호를 입력해주세요.</p>
+              </td>
+            </tr>
+
+            <!-- password double check-->
+            <tr>
+              <th>
+                <label for="passwordCheck">비밀번호 확인</label>
+              </th>
+              <td>
+                <input type="password" name="passwordCheck" id="passwordCheck" placeholder="변경할 비밀번호 확인"><br>
+                <p>비밀번호 확인을 위해 다시 한번 입력해 주세요.</p>
+              </td>
+            </tr>
+
+            <!-- email-->
+            <tr>
+              <th>
+                <label for="email">이메일</label>
+              </th>
+              <td>
+                <input type="email" name="email" id="email">&nbsp;<span>@</span>&nbsp;<input type="email" name="email"
+                  id="email">
+                <select name="emailAdress" id="emailAdress">
+                  <option value="write">직접입력</option>
+                  <option value="naver">naver.com</option>
+                  <option value="gmail">goole.com</option>
+                </select>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+    <!-- form1 end-->
+
+    <!-- form1 start-->
+    <div class="info2">
+      <h2>선택정보입력</h2>
+      <form action="result.html" method="get" id="signUp">
+        <!-- <legend class="h">회원가입 폼 선택정보 항목 -->
+        <table>
+          <!-- job -->
+          <tr>
+            <th scope="row">
+              <label for="job">직업</label>
+            </th>
+            <td>
+              <input type="text" name="job" id="job">
+            </td>
+          </tr>
+
+          <!-- introduce -->
+          <tr>
+            <th scope="row">
+              <label for="introduce">프로필 소개</label>
+            </th>
+            <td>
+              <textarea name="introduce" id="introduce" placeholder="프로필 소개를 입력해주세요." cols="30" rows="6"></textarea><br>
+              <span>(0/200)</span>
+            </td>
+          </tr>
+
+          <!-- interest -->
+          <tr>
+            <th scope="row">
+              취미
+            </th>
+            <td>
+              <input type="checkbox" name="hobby" id="game" value="game">
+              <label for="game">게임</label>
+
+              <input type="checkbox" name="hobby" id="song" value="song">
+              <label for="song">노래</label>
+
+              <input type="checkbox" name="hobby" id="hiking" value="hiking">
+              <label for="song">등산</label>
+
+              <input type="checkbox" name="hobby" id="reading" value="reading">
+              <label for="reading">읽기</label>
+
+              <input type="checkbox" name="hobby" id="etc" value="etc">
+              <label for="etc">기타</label>
+          </tr>
+
+          <tr>
+            <th scope="row">
+              <label for="domain">홈페이지</label>
+            </th>
+            <td>
+              <input type="text" name="domain" id="domain" placeholder="홈페이지가 있는 경우 링크를 입력해주세요. 예)www.myhome.co.kr">
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">
+              <label for="city">지역</label>
+            </th>
+            <td>
+              <select name="city" id="city">
+                <option value="seoul">서울</option>
+                <option value="busan">부산</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">
+              <label for="address" class="addressTit">주소</label>
+            </th>
+            <td>
+              <input class="address" type="text" name="address" id="address">&nbsp;<button
+                class="addressBtn">우편번호</button><br>
+              <input class="address" type="text" name="address" id="address"><br>
+              <input class="address" type="text" name="address" id="address">
+            </td>
+          </tr>
+
+          <tbody>
+            <tr>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+    <!-- form1 end-->
+
+    <div class="info3">
+      <h2>정보수신 동의</h2>
+      <form action="result.html" method="get" id="signUp">
+        <!-- <legend class="h">회원가입 폼 정보수신동의 항목 -->
+        <table>
+          <!-- job -->
+          <tr>
+            <th scope="row">
+              메일수신
+            </th>
+            <td>
+              <input type="radio" name="mail" id="mail" value="true">
+              <label for="mail">받겠습니다.</label>
+
+              <input type="radio" name="mail" id="mail" value="false">
+              <label for="mail">받지않겠습니다.</label>
+            </td>
+          </tr>
+
+          <!-- sms -->
+          <tr>
+            <th scope="row">
+              SMS 수신
+            </th>
+            <td>
+
+              <input type="radio" name="sms" id="sms" value="true">
+              <label for="sms">받겠습니다.</label>
+
+              <input type="radio" name="sms" id="sms" value="false">
+              <label for="sms">받지않겠습니다.</label>
+            </td>
+          </tr>
+
+
+          <!-- sms -->
+          <tr>
+            <th scope="row">
+              알림톡 수신
+            </th>
+            <td>
+              <input type="radio" name="kakao" id="kakao" value="true">
+              <label for="kakao">받겠습니다.</label>
+
+              <input type="radio" name="kakao" id="kakao" value="false">
+              <label for="sms">받지않겠습니다.</label>
+            </td>
+          </tr>
+
+
+          <tbody>
+        </table>
+      </form>
+    </div>
+
+    <div class="btnSet">
+      <input type="reset" value="취소">
+      <input type="submit" value="제출">
+    </div>
+  </section>
+  <!-- Sign Up end -->
+
+</body>
+
+</html>
