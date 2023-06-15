@@ -3861,7 +3861,7 @@ a {
   padding: 150px 15vw 150px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 150px;
+  margin-bottom: 96px;
 }
 .members .titContainer h1 {
   flex: 1;
@@ -3879,15 +3879,6 @@ a {
   flex-wrap: wrap;
   position: relative;
   margin-bottom: 50px;
-}
-.members .membersBox .membersImg {
-  flex: 2;
-  width: 50%;
-  height: 100%;
-  background: rgb(32, 32, 32);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .members .membersBox:nth-of-type(1) {
   width: 100%;
@@ -3927,6 +3918,28 @@ a {
   width: 90%;
   font: bold 18px/1.2 "Work Sans";
   color: #333;
+}
+.members .membersBox:nth-of-type(1) .membersImg {
+  flex: 2;
+  width: 50%;
+  height: 100%;
+  background: rgb(32, 32, 32);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -5;
+  overflow: hidden;
+}
+.members .membersBox:nth-of-type(1) .membersImg .colorBg {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  background: #fec202;
+  z-index: 999;
+  transform: translate(50%, 40%);
+  opacity: 0.6;
+  mix-blend-mode: darken;
 }
 .members .membersBox:nth-of-type(2) {
   width: 100%;
@@ -3971,6 +3984,28 @@ a {
   text-align: right;
   margin-left: 10%;
 }
+.members .membersBox:nth-of-type(2) .membersImg {
+  flex: 2;
+  width: 50%;
+  height: 100%;
+  background: rgb(32, 32, 32);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -5;
+  overflow: hidden;
+}
+.members .membersBox:nth-of-type(2) .membersImg .colorBg {
+  width: 650px;
+  height: 300px;
+  position: relative;
+  background: #fec202;
+  z-index: 999;
+  transform: translate(15%, 40%);
+  opacity: 0.6;
+  mix-blend-mode: darken;
+}
 .members .membersBox:nth-of-type(3) {
   width: 100%;
   height: 519px;
@@ -4009,6 +4044,28 @@ a {
   width: 90%;
   font: bold 18px/1.2 "Work Sans";
   color: #333;
+}
+.members .membersBox:nth-of-type(3) .membersImg {
+  flex: 2;
+  width: 50%;
+  height: 100%;
+  background: rgb(32, 32, 32);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -5;
+  overflow: hidden;
+}
+.members .membersBox:nth-of-type(3) .membersImg .colorBg {
+  width: 700px;
+  height: 500px;
+  position: relative;
+  background: #fec202;
+  z-index: 999;
+  transform: translate(30%, 40%);
+  opacity: 0.6;
+  mix-blend-mode: darken;
 }
 .members .membersBox:nth-of-type(4) {
   width: 100%;
@@ -4054,7 +4111,320 @@ a {
   text-align: right;
   margin-left: 10%;
 }
+.members .membersBox:nth-of-type(4) .membersImg {
+  flex: 2;
+  width: 50%;
+  height: 100%;
+  background: rgb(32, 32, 32);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -5;
+  overflow: hidden;
+}
+.members .membersBox:nth-of-type(4) .membersImg .colorBg {
+  width: 600px;
+  height: 500px;
+  position: relative;
+  background: #fec202;
+  z-index: 999;
+  transform: translate(20%, 20%);
+  opacity: 0.6;
+  mix-blend-mode: darken;
+}
 
+@media screen and (max-width: 1023px) {
+  .members .subVisual {
+    height: 480px;
+  }
+  .members .subVisual .background {
+    width: 50%;
+    height: 80px;
+    background: rgb(192, 110, 110);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .members .titContainer {
+    width: 100%;
+    height: 300px;
+    padding: 150px 15vw 150px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 96px;
+  }
+  .members .titContainer h1 {
+    flex: 1;
+    text-align: left;
+    font: bold 70px/1 "Noto Sans KR";
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 96px;
+  }
+  .members .membersBox {
+    width: 100%;
+    height: 754px;
+    padding: 0px 15vw 0px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .members .membersBox:nth-of-type(1) {
+    width: 100%;
+    height: 519px;
+    display: flex;
+  }
+  .members .membersBox:nth-of-type(1) .membersName {
+    flex: 1;
+    height: 50px;
+    padding: 180px 0px;
+  }
+  .members .membersBox:nth-of-type(1) .membersName h1 {
+    font: bold 50px/1 "Work Sans";
+    color: #333;
+    margin-bottom: 20px;
+  }
+  .members .membersBox:nth-of-type(1) .membersName h3 {
+    font: 20px/1 "Work Sans";
+    color: rgba(16, 16, 16, 0.6);
+  }
+  .members .membersBox:nth-of-type(1) .membersDesc {
+    font: 18px/1 "Work Sans";
+    color: #333;
+    text-align: justify;
+    word-break: break-all;
+    padding: 60px 0px 60px;
+    width: 35%;
+    height: 240px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 500;
+    bottom: 0;
+    left: 0;
+    margin-left: 15vw;
+  }
+  .members .membersBox:nth-of-type(1) .membersDesc p {
+    width: 90%;
+    font: bold 18px/1.2 "Work Sans";
+    color: #333;
+  }
+  .members .membersBox:nth-of-type(1) .membersImg {
+    flex: 2;
+    width: 50%;
+    height: 100%;
+    background: rgb(32, 32, 32);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -5;
+    overflow: hidden;
+  }
+  .members .membersBox:nth-of-type(1) .membersImg .colorBg {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    background: #fec202;
+    z-index: 999;
+    transform: translate(50%, 40%);
+    opacity: 0.6;
+    mix-blend-mode: darken;
+  }
+  .members .membersBox:nth-of-type(2) {
+    width: 100%;
+    height: 519px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .members .membersBox:nth-of-type(2) .membersName {
+    flex: 1;
+    height: 50px;
+    padding: 180px 0px;
+    text-align: right;
+  }
+  .members .membersBox:nth-of-type(2) .membersName h1 {
+    font: bold 50px/1 "Work Sans";
+    color: #333;
+    margin-bottom: 20px;
+  }
+  .members .membersBox:nth-of-type(2) .membersName h3 {
+    font: 20px/1 "Work Sans";
+    color: rgba(16, 16, 16, 0.6);
+  }
+  .members .membersBox:nth-of-type(2) .membersDesc {
+    font: 18px/1 "Work Sans";
+    color: #333;
+    text-align: justify;
+    word-break: break-all;
+    padding: 60px 0px 60px;
+    width: 35%;
+    height: 240px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 500;
+    bottom: 0;
+    right: 0;
+    margin-right: 15vw;
+  }
+  .members .membersBox:nth-of-type(2) .membersDesc p {
+    width: 90%;
+    font: bold 18px/1.2 "Work Sans";
+    color: #333;
+    text-align: right;
+    margin-left: 10%;
+  }
+  .members .membersBox:nth-of-type(2) .membersImg {
+    flex: 2;
+    width: 50%;
+    height: 100%;
+    background: rgb(32, 32, 32);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -5;
+    overflow: hidden;
+  }
+  .members .membersBox:nth-of-type(2) .membersImg .colorBg {
+    width: 650px;
+    height: 300px;
+    position: relative;
+    background: #fec202;
+    z-index: 999;
+    transform: translate(15%, 40%);
+    opacity: 0.6;
+    mix-blend-mode: darken;
+  }
+  .members .membersBox:nth-of-type(3) {
+    width: 100%;
+    height: 519px;
+    display: flex;
+  }
+  .members .membersBox:nth-of-type(3) .membersName {
+    flex: 1;
+    height: 50px;
+    padding: 180px 0px;
+  }
+  .members .membersBox:nth-of-type(3) .membersName h1 {
+    font: bold 50px/1 "Work Sans";
+    color: #333;
+    margin-bottom: 20px;
+  }
+  .members .membersBox:nth-of-type(3) .membersName h3 {
+    font: 20px/1 "Work Sans";
+    color: rgba(16, 16, 16, 0.6);
+  }
+  .members .membersBox:nth-of-type(3) .membersDesc {
+    font: 18px/1 "Work Sans";
+    color: #333;
+    text-align: justify;
+    word-break: break-all;
+    padding: 60px 0px 60px;
+    width: 35%;
+    height: 240px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 500;
+    bottom: 0;
+    left: 0;
+    margin-left: 15vw;
+  }
+  .members .membersBox:nth-of-type(3) .membersDesc p {
+    width: 90%;
+    font: bold 18px/1.2 "Work Sans";
+    color: #333;
+  }
+  .members .membersBox:nth-of-type(3) .membersImg {
+    flex: 2;
+    width: 50%;
+    height: 100%;
+    background: rgb(32, 32, 32);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -5;
+    overflow: hidden;
+  }
+  .members .membersBox:nth-of-type(3) .membersImg .colorBg {
+    width: 700px;
+    height: 500px;
+    position: relative;
+    background: #fec202;
+    z-index: 999;
+    transform: translate(30%, 40%);
+    opacity: 0.6;
+    mix-blend-mode: darken;
+  }
+  .members .membersBox:nth-of-type(4) {
+    width: 100%;
+    height: 519px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 150px;
+  }
+  .members .membersBox:nth-of-type(4) .membersName {
+    flex: 1;
+    height: 50px;
+    padding: 180px 0px;
+    text-align: right;
+  }
+  .members .membersBox:nth-of-type(4) .membersName h1 {
+    font: bold 50px/1 "Work Sans";
+    color: #333;
+    margin-bottom: 20px;
+  }
+  .members .membersBox:nth-of-type(4) .membersName h3 {
+    font: 20px/1 "Work Sans";
+    color: rgba(16, 16, 16, 0.6);
+  }
+  .members .membersBox:nth-of-type(4) .membersDesc {
+    font: 18px/1 "Work Sans";
+    color: #333;
+    text-align: justify;
+    word-break: break-all;
+    padding: 60px 0px 60px;
+    width: 35%;
+    height: 240px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 500;
+    bottom: 0;
+    right: 0;
+    margin-right: 15vw;
+  }
+  .members .membersBox:nth-of-type(4) .membersDesc p {
+    width: 90%;
+    font: bold 18px/1.2 "Work Sans";
+    color: #333;
+    text-align: right;
+    margin-left: 10%;
+  }
+  .members .membersBox:nth-of-type(4) .membersImg {
+    flex: 2;
+    width: 50%;
+    height: 100%;
+    background: rgb(32, 32, 32);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -5;
+    overflow: hidden;
+  }
+  .members .membersBox:nth-of-type(4) .membersImg .colorBg {
+    width: 600px;
+    height: 500px;
+    position: relative;
+    background: #fec202;
+    z-index: 999;
+    transform: translate(20%, 20%);
+    opacity: 0.6;
+    mix-blend-mode: darken;
+  }
+}
 .signUp {
   width: 100vw;
   height: 100vh;
@@ -4830,6 +5200,280 @@ a {
     margin-right: 10px;
   }
 }
+.video {
+  width: 100vw;
+  height: 100vh;
+}
+.video .subVisual {
+  width: 100%;
+  height: 480px;
+  position: relative;
+  background-image: url("../img/video_visual.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(1.2);
+}
+.video .subVisual .background {
+  width: 50%;
+  height: 80px;
+  background: #090909;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.video .titContainer {
+  width: 100%;
+  height: 300px;
+  padding: 150px 15vw 246px;
+  background: #090909;
+}
+.video .titContainer h1 {
+  text-align: left;
+  font: bold 70px/1 "Noto Sans KR";
+  color: #eee;
+  margin-top: 20px;
+  margin-bottom: 96px;
+}
+.video .subtitle {
+  width: 100%;
+  height: 500px;
+  background: #090909;
+  padding: 0px 15vw 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.video .subtitle .subLeft {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  padding-right: 100px;
+}
+.video .subtitle .subLeft h3 {
+  font: 26px/1 "Noto Sans KR";
+  color: #eee;
+  margin-bottom: 30px;
+}
+.video .subtitle .subLeft h2 {
+  font: bold 51px/1 "Noto Sans KR";
+  color: #eee;
+  margin-bottom: 20px;
+}
+.video .subtitle .subLeft p {
+  font: 16px/1.8 "Noto Sans KR";
+  color: #eee;
+  text-align: justify;
+  word-break: break-all;
+  width: 100%;
+}
+.video .subtitle .subLeft img {
+  transform: translate(-15%, 5%);
+  width: 250px;
+  height: 250px;
+  position: relative;
+}
+.video .subtitle .subRight {
+  width: 50%;
+  height: 220%;
+  margin-top: -26vw;
+}
+.video .subtitle .subRight video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.video .middleText {
+  width: 100%;
+  height: auto;
+  background: #090909;
+  display: flex;
+  flex-direction: column;
+  padding: 150px 15vw 96px;
+}
+.video .middleText p {
+  font: 36px/1.3 "Noto Sans KR";
+  color: #eee;
+  margin-bottom: 96px;
+  text-align: justify;
+  word-wrap: break-word;
+}
+.video .middleText button {
+  width: 259px;
+  height: 56px;
+  background-color: #f9f9f9;
+  font: 15px/1 "Noto Sans KR";
+  color: #171717;
+  border-radius: 50px;
+  margin: 0px auto;
+  margin-bottom: 50px;
+}
+.video .imgBoxContainer {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  background: #090909;
+  padding: 0px 15vw 150px;
+}
+.video .imgBoxContainer .imgBoxLeft {
+  width: 50%;
+  height: 100%;
+}
+.video .imgBoxContainer .imgBoxLeft video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.video .imgBoxContainer .imgBoxRight {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.video .imgBoxContainer .imgBoxRight .imgBoxTop {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+.video .imgBoxContainer .imgBoxRight .imgBoxTop .imgBox1 {
+  flex: 1;
+  width: 50%;
+  height: 100%;
+  background: lightblue;
+  overflow: hidden;
+}
+.video .imgBoxContainer .imgBoxRight .imgBoxTop .imgBox1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.video .imgBoxContainer .imgBoxRight .imgBoxTop .imgBox2 {
+  flex: 1;
+  width: 50%;
+  height: 100%;
+  background: rgb(89, 135, 150);
+  overflow: hidden;
+}
+.video .imgBoxContainer .imgBoxRight .imgBoxTop .imgBox2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.video .imgBoxContainer .imgBoxRight .imgBoxDown {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  overflow: hidden;
+}
+.video .imgBoxContainer .imgBoxRight .imgBoxDown img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.video .imbedVideoContainer {
+  width: 100%;
+  height: 453.39px;
+  padding: 0px 15vw 0px;
+  background: #090909;
+  display: flex;
+}
+.video .imbedVideoContainer .imbedText {
+  flex: 0.6;
+  width: 50%;
+  height: 100%;
+  background: #1b1b1b;
+  padding: 42px;
+}
+.video .imbedVideoContainer .imbedText h2 {
+  margin-top: 5vw;
+  font: bold 26px/1 "Noto Sans KR";
+  color: #eee;
+}
+.video .imbedVideoContainer .imbedText p {
+  margin-top: 3vw;
+  font: 16px/1.5 "Noto Sans KR";
+  color: #eee;
+}
+.video .imbedVideoContainer .imbedVideo {
+  flex: 1;
+  width: 50%;
+  height: 100%;
+  background: grey;
+}
+.video .btnContainer {
+  width: 100%;
+  height: auto;
+  background: #090909;
+  display: flex;
+  padding: 96px 15vw 0px;
+}
+.video .btnContainer button {
+  width: 259px;
+  height: 56px;
+  background-color: #f9f9f9;
+  font: 15px/1 "Noto Sans KR";
+  color: #171717;
+  border-radius: 50px;
+  margin: 0px auto;
+}
+.video .videoListContainer {
+  width: 100%;
+  height: auto;
+  background: #090909;
+  padding: 150px 15vw 150px;
+  flex-direction: row;
+  margin-bottom: 150px;
+}
+.video .videoListContainer .container1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background: #090909;
+  justify-content: center;
+  gap: 30px;
+}
+.video .videoListContainer .container1 .viedoBox1 {
+  width: 300px;
+  height: 300px;
+  background: #090909;
+  position: relative;
+  margin-bottom: 50px;
+}
+.video .videoListContainer .container1 .viedoBox1 .textBox {
+  width: 50%;
+  height: 100%;
+  background: #090909;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid rgb(138, 138, 138);
+  padding: 30px;
+}
+.video .videoListContainer .container1 .viedoBox1 .textBox h3 {
+  font: bold 26px/1.5 "Noto Sans KR";
+  color: #eee;
+}
+.video .videoListContainer .container1 .viedoBox1 .textBox h4 {
+  font: 18px/1.5 "Noto Sans KR";
+  color: #e9e9e9;
+}
+.video .videoListContainer .container1 .viedoBox1 .textBox p {
+  margin-top: 3vw;
+  font: 16px/1.5 "Noto Sans KR";
+  color: #e9e9e9;
+}
+.video .videoListContainer .container1 .videoCircle {
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f9;
+  border-radius: 50%;
+}
+
 #subVisual {
   width: 100vw;
   height: 100vh;

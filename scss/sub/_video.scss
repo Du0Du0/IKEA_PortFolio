@@ -1,0 +1,313 @@
+.video {
+	width: 100vw;
+	height: 100vh;
+
+	.subVisual {
+		width: 100%;
+		height: 480px;
+		position: relative;
+		background-image: url('../img/video_visual.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		filter: brightness(1.2);
+
+		.background {
+			width: 50%;
+			height: 80px;
+			background: $videoBgBl;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+	}
+
+	.titContainer {
+		width: 100%;
+		height: 300px;
+		padding: 150px 15vw 246px;
+		background: $videoBgBl;
+
+		h1 {
+			text-align: left;
+			font: bold 70px/1 $ikeaFontKo;
+			color: $fontColorW;
+			margin-top: 20px;
+			margin-bottom: 96px;
+		}
+	}
+
+	.subtitle {
+		width: 100%;
+		height: 500px;
+		background: $videoBgBl;
+		padding: 0px 15vw 50px;
+		display: flex;
+		flex-wrap: wrap;
+
+		.subLeft {
+			width: 50%;
+			height: 100%;
+			position: relative;
+			padding-right: 100px;
+
+			h3 {
+				font: 26px/1 $ikeaFontKo;
+				color: $fontColorW;
+				margin-bottom: 30px;
+			}
+
+			h2 {
+				font: bold 51px/1 $ikeaFontKo;
+				color: $fontColorW;
+				margin-bottom: 20px;
+			}
+
+			p {
+				font: 16px/1.8 $ikeaFontKo;
+				color: $fontColorW;
+				text-align: justify;
+				word-break: break-all;
+				width: 100%;
+			}
+
+			img {
+				transform: translate(-15%, 5%);
+				width: 250px;
+				height: 250px;
+				position: relative;
+			}
+		}
+
+		.subRight {
+			width: 50%;
+			height: 220%;
+			margin-top: -26vw;
+
+			video {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+
+	.middleText {
+		width: 100%;
+		height: auto;
+		background: $videoBgBl;
+		display: flex;
+		flex-direction: column;
+		padding: 150px 15vw 96px;
+
+		p {
+			font: 36px/1.3 $ikeaFontKo;
+			color: $fontColorW;
+			margin-bottom: 96px;
+			text-align: justify;
+			word-wrap: break-word;
+		}
+
+		button {
+			width: 259px;
+			height: 56px;
+			background-color: $bgW;
+			font: 15px/1 $ikeaFontKo;
+			color: $ikeaBl;
+			border-radius: 50px;
+			margin: 0px auto;
+			margin-bottom: 50px;
+		}
+	}
+
+	.imgBoxContainer {
+		width: 100%;
+		height: 900px;
+		display: flex;
+		flex-wrap: wrap;
+		background: $videoBgBl;
+		padding: 0px 15vw 150px;
+
+		.imgBoxLeft {
+			width: 50%;
+			height: 100%;
+
+			video {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
+			}
+		}
+
+		.imgBoxRight {
+			width: 50%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+
+			.imgBoxTop {
+				width: 100%;
+				height: 50%;
+				display: flex;
+
+				.imgBox1 {
+					flex: 1;
+					width: calc(100% / 2);
+					height: 100%;
+					background: lightblue;
+					overflow: hidden;
+
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+						object-position: center;
+					}
+				}
+				.imgBox2 {
+					flex: 1;
+					width: calc(100% / 2);
+					height: 100%;
+					background: rgb(89, 135, 150);
+					overflow: hidden;
+
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+						object-position: center;
+					}
+				}
+			}
+
+			.imgBoxDown {
+				width: 100%;
+				height: 50%;
+				display: flex;
+				overflow: hidden;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					object-position: center;
+				}
+			}
+		}
+	}
+
+	.imbedVideoContainer {
+		width: 100%;
+		height: 453.39px;
+		padding: 0px 15vw 0px;
+		background: $videoBgBl;
+		display: flex;
+
+		.imbedText {
+			flex: 0.6;
+			width: calc(100% / 2);
+			height: 100%;
+			background: #1b1b1b;
+			padding: 42px;
+
+			h2 {
+				margin-top: 5vw;
+				font: bold 26px/1 $ikeaFontKo;
+				color: $fontColorW;
+			}
+
+			p {
+				margin-top: 3vw;
+				font: 16px/1.5 $ikeaFontKo;
+				color: $fontColorW;
+			}
+		}
+
+		.imbedVideo {
+			flex: 1;
+			width: calc(100% / 2);
+			height: 100%;
+			background: grey;
+		}
+	}
+
+	.btnContainer {
+		width: 100%;
+		height: auto;
+		background: $videoBgBl;
+		display: flex;
+		padding: 96px 15vw 0px;
+
+		button {
+			width: 259px;
+			height: 56px;
+			background-color: $bgW;
+			font: 15px/1 $ikeaFontKo;
+			color: $ikeaBl;
+			border-radius: 50px;
+			margin: 0px auto;
+		}
+	}
+
+	.videoListContainer {
+		width: 100%;
+		height: auto;
+		background: $videoBgBl;
+		padding: 150px 15vw 150px;
+		flex-direction: row;
+		margin-bottom: 150px;
+
+		.container1 {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			background: $videoBgBl;
+			justify-content: center;
+			gap: 30px;
+
+			.viedoBox1 {
+				width: 300px;
+				height: 300px;
+				background: $videoBgBl;
+				position: relative;
+				margin-bottom: 50px;
+
+				.textBox {
+					width: 50%;
+					height: 100%;
+					background: $videoBgBl;
+					position: absolute;
+					top: 0;
+					right: 0;
+					border: 1px solid rgb(138, 138, 138);
+					padding: 30px;
+
+					h3 {
+						font: bold 26px/1.5 $ikeaFontKo;
+						color: $fontColorW;
+					}
+
+					h4 {
+						font: 18px/1.5 $ikeaFontKo;
+						color: $grey;
+					}
+
+					p {
+						margin-top: 3vw;
+						font: 16px/1.5 $ikeaFontKo;
+						color: $grey;
+					}
+				}
+			}
+
+			.videoCircle {
+				width: 100%;
+				height: 100%;
+				background-color: $bgW;
+				border-radius: 50%;
+			}
+		}
+	}
+}

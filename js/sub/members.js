@@ -13,7 +13,7 @@ fetch('DB/members.json')
 			tags += `
        <div class="membersBox">
        <div class="membersName"><h1>${data.name}</h1><h3>${data.sub}</h3></div>
-        <div class="membersImg" style="background-image : url(img/${data.pic})"></div>
+        <div class="membersImg" style="background-image : url(img/${data.pic})"><div class="colorBg">1</div></div>
         <div class="membersDesc"><p>${data.description}</p></div>
 
      </div>

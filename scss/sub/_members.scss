@@ -25,7 +25,7 @@
 		padding: 150px 15vw 150px;
 		display: flex;
 		flex-direction: column;
-		margin-bottom: 150px;
+		margin-bottom: 96px;
 
 		///Sign Up pagee title
 		h1 {
@@ -46,16 +46,6 @@
 		flex-wrap: wrap;
 		position: relative;
 		margin-bottom: 50px;
-
-		.membersImg {
-			flex: 2;
-			width: calc(100% / 2);
-			height: 100%;
-			background: rgb(32, 32, 32);
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
-		}
 
 		&:nth-of-type(1) {
 			width: 100%;
@@ -98,6 +88,30 @@
 					width: 90%;
 					font: bold 18px/1.2 $ikeaFont;
 					color: $fontColorBl;
+				}
+			}
+
+			.membersImg {
+				flex: 2;
+				width: calc(100% / 2);
+				height: 100%;
+				background: rgb(32, 32, 32);
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				position: relative;
+				z-index: -5;
+				overflow: hidden;
+
+				.colorBg {
+					width: 500px;
+					height: 500px;
+					position: relative;
+					background: $ikeaYellow;
+					z-index: 999;
+					transform: translate(50%, 40%);
+					opacity: 0.6;
+					mix-blend-mode: darken;
 				}
 			}
 		}
@@ -149,6 +163,30 @@
 					margin-left: 10%;
 				}
 			}
+
+			.membersImg {
+				flex: 2;
+				width: calc(100% / 2);
+				height: 100%;
+				background: rgb(32, 32, 32);
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				position: relative;
+				z-index: -5;
+				overflow: hidden;
+
+				.colorBg {
+					width: 650px;
+					height: 300px;
+					position: relative;
+					background: $ikeaYellow;
+					z-index: 999;
+					transform: translate(15%, 40%);
+					opacity: 0.6;
+					mix-blend-mode: darken;
+				}
+			}
 		}
 
 		&:nth-of-type(3) {
@@ -192,6 +230,30 @@
 					width: 90%;
 					font: bold 18px/1.2 $ikeaFont;
 					color: $fontColorBl;
+				}
+			}
+
+			.membersImg {
+				flex: 2;
+				width: calc(100% / 2);
+				height: 100%;
+				background: rgb(32, 32, 32);
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				position: relative;
+				z-index: -5;
+				overflow: hidden;
+
+				.colorBg {
+					width: 700px;
+					height: 500px;
+					position: relative;
+					background: $ikeaYellow;
+					z-index: 999;
+					transform: translate(30%, 40%);
+					opacity: 0.6;
+					mix-blend-mode: darken;
 				}
 			}
 		}
@@ -242,6 +304,361 @@
 					color: $fontColorBl;
 					text-align: right;
 					margin-left: 10%;
+				}
+			}
+
+			.membersImg {
+				flex: 2;
+				width: calc(100% / 2);
+				height: 100%;
+				background: rgb(32, 32, 32);
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				position: relative;
+				z-index: -5;
+				overflow: hidden;
+
+				.colorBg {
+					width: 600px;
+					height: 500px;
+					position: relative;
+					background: $ikeaYellow;
+					z-index: 999;
+					transform: translate(20%, 20%);
+					opacity: 0.6;
+					mix-blend-mode: darken;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	.members {
+		.subVisual {
+			height: 480px;
+
+			.background {
+				width: 50%;
+				height: 80px;
+				background: rgb(192, 110, 110);
+				position: absolute;
+				bottom: 0;
+				left: 0;
+			}
+		}
+
+		.titContainer {
+			width: 100%;
+			height: 300px;
+			padding: 150px 15vw 150px;
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 96px;
+
+			///Sign Up pagee title
+			h1 {
+				flex: 1;
+				text-align: left;
+				font: bold 70px/1 $ikeaFontKo;
+				color: $fontColorBl;
+				margin-top: 20px;
+				margin-bottom: 96px;
+			}
+		}
+
+		.membersBox {
+			width: 100%;
+			height: 754px;
+			padding: 0px 15vw 0px;
+			display: flex;
+			flex-wrap: wrap;
+			position: relative;
+			margin-bottom: 50px;
+
+			&:nth-of-type(1) {
+				width: 100%;
+				height: 519px;
+				display: flex;
+
+				.membersName {
+					flex: 1;
+					height: 50px;
+					padding: 180px 0px;
+
+					h1 {
+						font: bold 50px/1 $ikeaFont;
+						color: $fontColorBl;
+						margin-bottom: 20px;
+					}
+
+					h3 {
+						font: 20px/1 $ikeaFont;
+						color: $fontColorGrC;
+					}
+				}
+
+				.membersDesc {
+					font: 18px/1 $ikeaFont;
+					color: $fontColorBl;
+					text-align: justify;
+					word-break: break-all;
+					padding: 60px 0px 60px;
+					width: 35%;
+					height: 240px;
+					background: rgb(255, 255, 255);
+					position: absolute;
+					z-index: 500;
+					bottom: 0;
+					left: 0;
+					margin-left: 15vw;
+
+					p {
+						width: 90%;
+						font: bold 18px/1.2 $ikeaFont;
+						color: $fontColorBl;
+					}
+				}
+
+				.membersImg {
+					flex: 2;
+					width: calc(100% / 2);
+					height: 100%;
+					background: rgb(32, 32, 32);
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: cover;
+					position: relative;
+					z-index: -5;
+					overflow: hidden;
+
+					.colorBg {
+						width: 500px;
+						height: 500px;
+						position: relative;
+						background: $ikeaYellow;
+						z-index: 999;
+						transform: translate(50%, 40%);
+						opacity: 0.6;
+						mix-blend-mode: darken;
+					}
+				}
+			}
+
+			&:nth-of-type(2) {
+				width: 100%;
+				height: 519px;
+				display: flex;
+				flex-direction: row-reverse;
+
+				.membersName {
+					flex: 1;
+					height: 50px;
+					padding: 180px 0px;
+					text-align: right;
+
+					h1 {
+						font: bold 50px/1 $ikeaFont;
+						color: $fontColorBl;
+						margin-bottom: 20px;
+					}
+
+					h3 {
+						font: 20px/1 $ikeaFont;
+						color: $fontColorGrC;
+					}
+				}
+
+				.membersDesc {
+					font: 18px/1 $ikeaFont;
+					color: $fontColorBl;
+					text-align: justify;
+					word-break: break-all;
+					padding: 60px 0px 60px;
+					width: 35%;
+					height: 240px;
+					background: rgb(255, 255, 255);
+					position: absolute;
+					z-index: 500;
+					bottom: 0;
+					right: 0;
+					margin-right: 15vw;
+
+					p {
+						width: 90%;
+						font: bold 18px/1.2 $ikeaFont;
+						color: $fontColorBl;
+						text-align: right;
+						margin-left: 10%;
+					}
+				}
+
+				.membersImg {
+					flex: 2;
+					width: calc(100% / 2);
+					height: 100%;
+					background: rgb(32, 32, 32);
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: cover;
+					position: relative;
+					z-index: -5;
+					overflow: hidden;
+
+					.colorBg {
+						width: 650px;
+						height: 300px;
+						position: relative;
+						background: $ikeaYellow;
+						z-index: 999;
+						transform: translate(15%, 40%);
+						opacity: 0.6;
+						mix-blend-mode: darken;
+					}
+				}
+			}
+
+			&:nth-of-type(3) {
+				width: 100%;
+				height: 519px;
+				display: flex;
+
+				.membersName {
+					flex: 1;
+					height: 50px;
+					padding: 180px 0px;
+
+					h1 {
+						font: bold 50px/1 $ikeaFont;
+						color: $fontColorBl;
+						margin-bottom: 20px;
+					}
+
+					h3 {
+						font: 20px/1 $ikeaFont;
+						color: $fontColorGrC;
+					}
+				}
+
+				.membersDesc {
+					font: 18px/1 $ikeaFont;
+					color: $fontColorBl;
+					text-align: justify;
+					word-break: break-all;
+					padding: 60px 0px 60px;
+					width: 35%;
+					height: 240px;
+					background: rgb(255, 255, 255);
+					position: absolute;
+					z-index: 500;
+					bottom: 0;
+					left: 0;
+					margin-left: 15vw;
+
+					p {
+						width: 90%;
+						font: bold 18px/1.2 $ikeaFont;
+						color: $fontColorBl;
+					}
+				}
+
+				.membersImg {
+					flex: 2;
+					width: calc(100% / 2);
+					height: 100%;
+					background: rgb(32, 32, 32);
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: cover;
+					position: relative;
+					z-index: -5;
+					overflow: hidden;
+
+					.colorBg {
+						width: 700px;
+						height: 500px;
+						position: relative;
+						background: $ikeaYellow;
+						z-index: 999;
+						transform: translate(30%, 40%);
+						opacity: 0.6;
+						mix-blend-mode: darken;
+					}
+				}
+			}
+
+			&:nth-of-type(4) {
+				width: 100%;
+				height: 519px;
+				display: flex;
+				flex-direction: row-reverse;
+				margin-bottom: 150px;
+
+				.membersName {
+					flex: 1;
+					height: 50px;
+					padding: 180px 0px;
+					text-align: right;
+
+					h1 {
+						font: bold 50px/1 $ikeaFont;
+						color: $fontColorBl;
+						margin-bottom: 20px;
+					}
+
+					h3 {
+						font: 20px/1 $ikeaFont;
+						color: $fontColorGrC;
+					}
+				}
+
+				.membersDesc {
+					font: 18px/1 $ikeaFont;
+					color: $fontColorBl;
+					text-align: justify;
+					word-break: break-all;
+					padding: 60px 0px 60px;
+					width: 35%;
+					height: 240px;
+					background: rgb(255, 255, 255);
+					position: absolute;
+					z-index: 500;
+					bottom: 0;
+					right: 0;
+					margin-right: 15vw;
+
+					p {
+						width: 90%;
+						font: bold 18px/1.2 $ikeaFont;
+						color: $fontColorBl;
+						text-align: right;
+						margin-left: 10%;
+					}
+				}
+
+				.membersImg {
+					flex: 2;
+					width: calc(100% / 2);
+					height: 100%;
+					background: rgb(32, 32, 32);
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: cover;
+					position: relative;
+					z-index: -5;
+					overflow: hidden;
+
+					.colorBg {
+						width: 600px;
+						height: 500px;
+						position: relative;
+						background: $ikeaYellow;
+						z-index: 999;
+						transform: translate(20%, 20%);
+						opacity: 0.6;
+						mix-blend-mode: darken;
+					}
 				}
 			}
 		}
