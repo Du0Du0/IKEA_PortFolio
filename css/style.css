@@ -5288,7 +5288,9 @@ a {
   background: #090909;
   display: flex;
   flex-direction: column;
-  padding: 150px 15vw 96px;
+  padding: 96px 14.9vw 96px;
+  background: #090909;
+  z-index: 2;
 }
 .video .middleText p {
   font: 36px/1.3 "Noto Sans KR";
@@ -5296,6 +5298,8 @@ a {
   margin-bottom: 96px;
   text-align: justify;
   word-wrap: break-word;
+  background: #090909;
+  padding-top: 36px;
 }
 .video .middleText button {
   width: 259px;
@@ -5306,6 +5310,7 @@ a {
   border-radius: 50px;
   margin: 0px auto;
   margin-bottom: 50px;
+  cursor: pointer;
 }
 .video .imgBoxContainer {
   width: 100%;
@@ -5419,6 +5424,7 @@ a {
   color: #171717;
   border-radius: 50px;
   margin: 0px auto;
+  cursor: pointer;
 }
 .video .videoListContainer {
   width: 100%;
@@ -5435,7 +5441,7 @@ a {
   flex-wrap: wrap;
   background: #090909;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
 }
 .video .videoListContainer .container1 .viedoBox1 {
   width: 300px;
@@ -5474,6 +5480,112 @@ a {
   border-radius: 50%;
 }
 
+@media screen and (max-width: 1023px) {
+  .video .subVisual {
+    height: 380px;
+  }
+  .video .subVisual .background {
+    background: rgb(52, 52, 52);
+  }
+  .video .titContainer {
+    padding: 150px 10vw 246px;
+    background: #090909;
+  }
+  .video .titContainer h1 {
+    font: bold 70px/1 "Noto Sans KR";
+    margin-top: 20px;
+    margin-bottom: 96px;
+  }
+  .video .subtitle {
+    height: auto;
+    padding: 150px 10vw 50px;
+  }
+  .video .subtitle .subLeft {
+    order: 2;
+    width: 100%;
+    padding-top: 450px;
+  }
+  .video .subtitle .subRight {
+    width: 100%;
+    height: 500px;
+    margin-top: -16vw;
+  }
+  .video .subtitle .subRight video {
+    width: 100%;
+    height: 900px;
+  }
+  .video .middleText {
+    padding: 0px 10vw 26px;
+  }
+  .video .middleText p {
+    margin-bottom: 66px;
+  }
+  .video .imgBoxContainer {
+    padding: 35px 10vw 90px;
+  }
+  .video .imbedVideoContainer {
+    height: 676px;
+    padding: 0px 10vw 0px;
+    flex-direction: column;
+  }
+  .video .imbedVideoContainer .imbedText {
+    flex: 0.2;
+    width: 100%;
+    height: 197px;
+    padding: 42px;
+  }
+  .video .imbedVideoContainer .imbedText h2 {
+    margin-top: 0;
+  }
+  .video .imbedVideoContainer .imbedText p {
+    margin-top: 2vw;
+  }
+  .video .imbedVideoContainer .imbedVideo {
+    flex: 1;
+    width: 100%;
+    height: 479px;
+    background: grey;
+  }
+  .video .btnContainer {
+    width: 100%;
+    height: auto;
+    background: #090909;
+    display: flex;
+    padding: 86px 15vw 0px;
+  }
+  .video .videoListContainer {
+    padding: 96px 10vw 150px;
+  }
+  .video .videoListContainer .container1 {
+    gap: 40px;
+  }
+  .video .videoListContainer .container1 .viedoBox1 {
+    margin-bottom: 10px;
+  }
+  .video .videoListContainer .container1 .viedoBox1 .textBox {
+    border: 1px solid rgb(138, 138, 138);
+    padding: 30px;
+  }
+  .video .videoListContainer .container1 .viedoBox1 .textBox h3 {
+    font: bold 26px/1.5 "Noto Sans KR";
+    color: #eee;
+  }
+  .video .videoListContainer .container1 .viedoBox1 .textBox h4 {
+    font: 18px/1.5 "Noto Sans KR";
+    color: #e9e9e9;
+  }
+  .video .videoListContainer .container1 .viedoBox1 .textBox p {
+    margin-top: 3vw;
+    font: 16px/1.5 "Noto Sans KR";
+    color: #e9e9e9;
+  }
+  .video .videoListContainer .container1 .videoCircle {
+    width: 100%;
+    height: 100%;
+    background-color: #f9f9f9;
+    border-radius: 50%;
+  }
+}
 #subVisual {
   width: 100vw;
   height: 100vh;

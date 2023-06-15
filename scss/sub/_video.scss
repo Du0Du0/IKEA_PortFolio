@@ -98,7 +98,9 @@
 		background: $videoBgBl;
 		display: flex;
 		flex-direction: column;
-		padding: 150px 15vw 96px;
+		padding: 96px 14.9vw 96px;
+		background: $videoBgBl;
+		z-index: 2;
 
 		p {
 			font: 36px/1.3 $ikeaFontKo;
@@ -106,6 +108,8 @@
 			margin-bottom: 96px;
 			text-align: justify;
 			word-wrap: break-word;
+			background: $videoBgBl;
+			padding-top: 36px;
 		}
 
 		button {
@@ -117,6 +121,7 @@
 			border-radius: 50px;
 			margin: 0px auto;
 			margin-bottom: 50px;
+			cursor: pointer;
 		}
 	}
 
@@ -247,6 +252,7 @@
 			color: $ikeaBl;
 			border-radius: 50px;
 			margin: 0px auto;
+			cursor: pointer;
 		}
 	}
 
@@ -265,7 +271,7 @@
 			flex-wrap: wrap;
 			background: $videoBgBl;
 			justify-content: center;
-			gap: 30px;
+			gap: 40px;
 
 			.viedoBox1 {
 				width: 300px;
@@ -307,6 +313,138 @@
 				height: 100%;
 				background-color: $bgW;
 				border-radius: 50%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	.video {
+		.subVisual {
+			height: 380px;
+
+			.background {
+				background: rgb(52, 52, 52);
+			}
+		}
+
+		.titContainer {
+			padding: 150px 10vw 246px;
+			background: $videoBgBl;
+
+			h1 {
+				font: bold 70px/1 $ikeaFontKo;
+				margin-top: 20px;
+				margin-bottom: 96px;
+			}
+		}
+
+		.subtitle {
+			height: auto;
+			padding: 150px 10vw 50px;
+
+			.subLeft {
+				order: 2;
+				width: 100%;
+				padding-top: 450px;
+			}
+
+			.subRight {
+				width: 100%;
+				height: 500px;
+				margin-top: -16vw;
+
+				video {
+					width: 100%;
+					height: 900px;
+				}
+			}
+		}
+
+		.middleText {
+			padding: 0px 10vw 26px;
+
+			p {
+				margin-bottom: 66px;
+			}
+		}
+
+		.imgBoxContainer {
+			padding: 35px 10vw 90px;
+		}
+
+		.imbedVideoContainer {
+			height: 676px;
+			padding: 0px 10vw 0px;
+			flex-direction: column;
+
+			.imbedText {
+				flex: 0.2;
+				width: 100%;
+				height: 197px;
+				padding: 42px;
+
+				h2 {
+					margin-top: 0;
+				}
+				p {
+					margin-top: 2vw;
+				}
+			}
+
+			.imbedVideo {
+				flex: 1;
+				width: 100%;
+				height: 479px;
+				background: grey;
+			}
+		}
+
+		.btnContainer {
+			width: 100%;
+			height: auto;
+			background: $videoBgBl;
+			display: flex;
+			padding: 86px 15vw 0px;
+		}
+
+		.videoListContainer {
+			padding: 96px 10vw 150px;
+
+			.container1 {
+				gap: 40px;
+
+				.viedoBox1 {
+					margin-bottom: 10px;
+
+					.textBox {
+						border: 1px solid rgb(138, 138, 138);
+						padding: 30px;
+
+						h3 {
+							font: bold 26px/1.5 $ikeaFontKo;
+							color: $fontColorW;
+						}
+
+						h4 {
+							font: 18px/1.5 $ikeaFontKo;
+							color: $grey;
+						}
+
+						p {
+							margin-top: 3vw;
+							font: 16px/1.5 $ikeaFontKo;
+							color: $grey;
+						}
+					}
+				}
+
+				.videoCircle {
+					width: 100%;
+					height: 100%;
+					background-color: $bgW;
+					border-radius: 50%;
+				}
 			}
 		}
 	}
