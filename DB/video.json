@@ -1,0 +1,51 @@
+{
+  "video": [
+    {
+      "title": "The story behind BRÖNDEN",
+      "subtitle": "A collaboration with nine Latin American creatives",
+      "vid": "newsRoom1.png"
+    },
+    {
+      "title": "The duo behind five decades <br>of IKEA design",
+      "subtitle": "IKEA Museum",
+      "data": "2023.01.27",
+      "pic": "newsRoom2.png"
+    },
+    {
+      "title": "Solar power to the people!",
+      "subtitle": "The SAMMANLÄNKAD collection",
+      "data": "2023.02.13",
+      "pic": "newsRoom3.png"
+    },
+    {
+      "title": "The talented designer, remembered",
+      "subtitle": "Introducing our newest collection: MÄVINN",
+      "data": "2023.02.13",
+      "pic": "newsRoom4.png"
+    },
+    {
+      "title": "The extra mile",
+      "subtitle": "Making design dreams come true, one project at a time",
+      "data": "2023.02.13",
+      "pic": "newsRoom5.png"
+    },
+    {
+      "title": "3D-printed meatballs!",
+      "subtitle": "Jobs at IKEA",
+      "data": "2023.02.13",
+      "pic": "newsRoom6.png"
+    },
+    {
+      "title": "Highlights from Milano",
+      "subtitle": "IKEA Festival at Design Week",
+      "data": "2023.02.13",
+      "pic": "newsRoom7.png"
+    },
+    {
+      "title": "Explore the IKEA Festival",
+      "subtitle": "Ideas for loving life at home",
+      "data": "2023.02.13",
+      "pic": "newsRoom8.png"
+    }
+  ]
+}
