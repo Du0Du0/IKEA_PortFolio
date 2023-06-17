@@ -3854,9 +3854,12 @@ a {
 .members .subVisual {
   width: 100%;
   height: 480px;
-  background: black;
   position: relative;
-  background-image: url("../img/bg1.png");
+  overflow: hidden;
+}
+.members .subVisual video {
+  object-fit: contain;
+  object-position: 0vw -20vw;
 }
 .members .subVisual .background {
   width: 50%;
@@ -3869,7 +3872,7 @@ a {
 .members .titContainer {
   width: 100%;
   height: 300px;
-  padding: 150px 15vw 150px;
+  padding: 150px 15vw 0px;
   display: flex;
   flex-direction: column;
   margin-bottom: 96px;
@@ -3881,6 +3884,454 @@ a {
   color: #333;
   margin-top: 20px;
   margin-bottom: 96px;
+}
+.members .slider {
+  width: 100%;
+  height: 584px;
+  margin: 0 auto;
+  position: relative;
+  background: tomato;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+.members .slide {
+  height: 600px;
+  color: white;
+  font-size: 50px;
+  width: 100%;
+  height: 100%;
+  display: none;
+  line-height: 300px;
+  display: inline-block;
+}
+.members .slide:nth-of-type(1) {
+  width: 100%;
+  height: 100%;
+  background: #ff9dd1;
+  padding: 40px;
+}
+.members .slide:nth-of-type(1) .slideBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.members .slide:nth-of-type(1) .slideBox .left {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/memberSlider1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.members .slide:nth-of-type(1) .slideBox .right {
+  flex: 1.7;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding: 25px 0px 0px 70px;
+}
+.members .slide:nth-of-type(1) .slideBox .right h3 {
+  font: 14px/1 "Noto Sans KR";
+  color: #333;
+  margin-bottom: 15px;
+}
+.members .slide:nth-of-type(1) .slideBox .right h2 {
+  font: bold 36px/1 "Noto Sans KR";
+  color: #333;
+  margin-bottom: 20px;
+}
+.members .slide:nth-of-type(1) .slideBox .right p {
+  font: 16px/1.8 "Noto Sans KR";
+  color: #333;
+  padding-right: 20vw;
+}
+.members .slide:nth-of-type(1) .slideBox .right p span {
+  font: 25px/1 "Noto Sans KR";
+  color: #333;
+}
+.members .slide:nth-of-type(2) {
+  width: 100%;
+  height: 100%;
+  background: #67e9c3;
+  padding: 40px;
+}
+.members .slide:nth-of-type(2) .slideBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.members .slide:nth-of-type(2) .slideBox .left {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/memberSlider2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.members .slide:nth-of-type(2) .slideBox .right {
+  flex: 1.7;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding: 25px 0px 0px 70px;
+}
+.members .slide:nth-of-type(2) .slideBox .right h3 {
+  font: 14px/1 "Noto Sans KR";
+  color: #333;
+  margin-bottom: 15px;
+}
+.members .slide:nth-of-type(2) .slideBox .right h2 {
+  font: bold 36px/1 "Noto Sans KR";
+  color: #333;
+  margin-bottom: 20px;
+}
+.members .slide:nth-of-type(2) .slideBox .right p {
+  font: 16px/1.8 "Noto Sans KR";
+  color: #333;
+  padding-right: 20vw;
+}
+.members .slide:nth-of-type(2) .slideBox .right p span {
+  font: 25px/1 "Noto Sans KR";
+  color: #333;
+}
+.members .slide:nth-of-type(3) {
+  width: 100%;
+  height: 100%;
+  background: #66c2f6;
+  padding: 40px;
+}
+.members .slide:nth-of-type(3) .slideBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.members .slide:nth-of-type(3) .slideBox .left {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/memberSlider3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.members .slide:nth-of-type(3) .slideBox .right {
+  flex: 1.7;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding: 25px 0px 0px 70px;
+}
+.members .slide:nth-of-type(3) .slideBox .right h3 {
+  font: 14px/1 "Noto Sans KR";
+  color: #333;
+  margin-bottom: 15px;
+}
+.members .slide:nth-of-type(3) .slideBox .right h2 {
+  font: bold 36px/1 "Noto Sans KR";
+  color: #333;
+  margin-bottom: 20px;
+}
+.members .slide:nth-of-type(3) .slideBox .right p {
+  font: 16px/1.8 "Noto Sans KR";
+  color: #333;
+  padding-right: 20vw;
+}
+.members .slide:nth-of-type(3) .slideBox .right p span {
+  font: 25px/1 "Noto Sans KR";
+  color: #333;
+}
+.members .slide:nth-of-type(4) {
+  width: 100%;
+  height: 100%;
+  background: #fedc01;
+  padding: 40px;
+}
+.members .slide:nth-of-type(4) .slideBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.members .slide:nth-of-type(4) .slideBox .left {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/memberSlider4.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.members .slide:nth-of-type(4) .slideBox .right {
+  flex: 1.7;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding: 25px 0px 0px 70px;
+}
+.members .slide:nth-of-type(4) .slideBox .right h3 {
+  font: 14px/1 "Noto Sans KR";
+  color: #333;
+  margin-bottom: 15px;
+}
+.members .slide:nth-of-type(4) .slideBox .right h2 {
+  font: bold 36px/1 "Noto Sans KR";
+  color: #333;
+  margin-bottom: 20px;
+}
+.members .slide:nth-of-type(4) .slideBox .right p {
+  font: 16px/1.8 "Noto Sans KR";
+  color: #333;
+  padding-right: 20vw;
+}
+.members .slide:nth-of-type(4) .slideBox .right p span {
+  font: 25px/1 "Noto Sans KR";
+  color: #333;
+}
+.members .slide:nth-of-type(5) {
+  width: 100%;
+  height: 100%;
+  background: #5eda2b;
+  padding: 40px;
+}
+.members .slide:nth-of-type(5) .slideBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.members .slide:nth-of-type(5) .slideBox .left {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/memberSlider5.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.members .slide:nth-of-type(5) .slideBox .right {
+  flex: 1.7;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding: 25px 0px 0px 70px;
+}
+.members .slide:nth-of-type(5) .slideBox .right h3 {
+  font: 14px/1 "Noto Sans KR";
+  color: #333;
+  margin-bottom: 15px;
+}
+.members .slide:nth-of-type(5) .slideBox .right h2 {
+  font: bold 36px/1 "Noto Sans KR";
+  color: #333;
+  margin-bottom: 20px;
+}
+.members .slide:nth-of-type(5) .slideBox .right p {
+  font: 16px/1.8 "Noto Sans KR";
+  color: #333;
+  padding-right: 20vw;
+}
+.members .slide:nth-of-type(5) .slideBox .right p span {
+  font: 25px/1 "Noto Sans KR";
+  color: #333;
+}
+.members .slide:nth-of-type(6) {
+  width: 100%;
+  height: 100%;
+  background: #f03c69;
+  padding: 40px;
+}
+.members .slide:nth-of-type(6) .slideBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.members .slide:nth-of-type(6) .slideBox .left {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/memberSlider6.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.members .slide:nth-of-type(6) .slideBox .right {
+  flex: 1.7;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding: 25px 0px 0px 70px;
+}
+.members .slide:nth-of-type(6) .slideBox .right h3 {
+  font: 14px/1 "Noto Sans KR";
+  color: #333;
+  margin-bottom: 15px;
+}
+.members .slide:nth-of-type(6) .slideBox .right h2 {
+  font: bold 36px/1 "Noto Sans KR";
+  color: #333;
+  margin-bottom: 20px;
+}
+.members .slide:nth-of-type(6) .slideBox .right p {
+  font: 16px/1.8 "Noto Sans KR";
+  color: #333;
+  padding-right: 20vw;
+}
+.members .slide:nth-of-type(6) .slideBox .right p span {
+  font: 25px/1 "Noto Sans KR";
+  color: #333;
+}
+.members .slide:nth-of-type(7) {
+  width: 100%;
+  height: 100%;
+  background: #ff9dd1;
+  padding: 40px;
+}
+.members .slide:nth-of-type(7) .slideBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.members .slide:nth-of-type(7) .slideBox .left {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/memberSlider7.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.members .slide:nth-of-type(7) .slideBox .right {
+  flex: 1.7;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding: 25px 0px 0px 70px;
+}
+.members .slide:nth-of-type(7) .slideBox .right h3 {
+  font: 14px/1 "Noto Sans KR";
+  color: #333;
+  margin-bottom: 15px;
+}
+.members .slide:nth-of-type(7) .slideBox .right h2 {
+  font: bold 36px/1 "Noto Sans KR";
+  color: #333;
+  margin-bottom: 20px;
+}
+.members .slide:nth-of-type(7) .slideBox .right p {
+  font: 16px/1.8 "Noto Sans KR";
+  color: #333;
+  padding-right: 20vw;
+}
+.members .slide:nth-of-type(7) .slideBox .right p span {
+  font: 25px/1 "Noto Sans KR";
+  color: #333;
+}
+.members .slide:nth-of-type(8) {
+  width: 100%;
+  height: 100%;
+  background: #fedc01;
+  padding: 40px;
+}
+.members .slide:nth-of-type(8) .slideBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.members .slide:nth-of-type(8) .slideBox .left {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/memberSlider8.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.members .slide:nth-of-type(8) .slideBox .right {
+  flex: 1.7;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding: 25px 0px 0px 70px;
+}
+.members .slide:nth-of-type(8) .slideBox .right h3 {
+  font: 14px/1 "Noto Sans KR";
+  color: #333;
+  margin-bottom: 15px;
+}
+.members .slide:nth-of-type(8) .slideBox .right h2 {
+  font: bold 36px/1 "Noto Sans KR";
+  color: #333;
+  margin-bottom: 20px;
+}
+.members .slide:nth-of-type(8) .slideBox .right p {
+  font: 16px/1.8 "Noto Sans KR";
+  color: #333;
+  padding-right: 20vw;
+}
+.members .slide:nth-of-type(8) .slideBox .right p span {
+  font: 25px/1 "Noto Sans KR";
+  color: #333;
+}
+.members .slide:nth-of-type(9) {
+  width: 100%;
+  height: 100%;
+  background: #66c2f6;
+  padding: 40px;
+}
+.members .slide:nth-of-type(9) .slideBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.members .slide:nth-of-type(9) .slideBox .left {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/memberSlider9.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.members .slide:nth-of-type(9) .slideBox .right {
+  flex: 1.7;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding: 25px 0px 0px 70px;
+}
+.members .slide:nth-of-type(9) .slideBox .right h3 {
+  font: 14px/1 "Noto Sans KR";
+  color: #333;
+  margin-bottom: 15px;
+}
+.members .slide:nth-of-type(9) .slideBox .right h2 {
+  font: bold 36px/1 "Noto Sans KR";
+  color: #333;
+  margin-bottom: 20px;
+}
+.members .slide:nth-of-type(9) .slideBox .right p {
+  font: 16px/1.8 "Noto Sans KR";
+  color: #333;
+  padding-right: 20vw;
+}
+.members .slide:nth-of-type(9) .slideBox .right p span {
+  font: 25px/1 "Noto Sans KR";
+  color: #333;
+}
+.members .next,
+.members .prev {
+  padding: 30px 20px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #171717;
+  color: white;
+  font: bold 26px/1 "Noto Sans KR";
+  border: none;
+}
+.members .next {
+  right: 0;
 }
 .members .membersBox {
   width: 100%;
@@ -3902,16 +4353,16 @@ a {
   padding: 180px 0px;
 }
 .members .membersBox:nth-of-type(1) .membersName h1 {
-  font: bold 50px/1 "Work Sans";
+  font: bold 50px/1 "Noto Sans KR";
   color: #333;
   margin-bottom: 20px;
 }
 .members .membersBox:nth-of-type(1) .membersName h3 {
-  font: 20px/1 "Work Sans";
+  font: 20px/1 "Noto Sans KR";
   color: rgba(16, 16, 16, 0.6);
 }
 .members .membersBox:nth-of-type(1) .membersDesc {
-  font: 18px/1 "Work Sans";
+  font: 18px/1 "Noto Sans KR";
   color: #333;
   text-align: justify;
   word-break: break-all;
@@ -3927,7 +4378,7 @@ a {
 }
 .members .membersBox:nth-of-type(1) .membersDesc p {
   width: 90%;
-  font: bold 18px/1.2 "Work Sans";
+  font: 18px/1.2 "Noto Sans KR";
   color: #333;
 }
 .members .membersBox:nth-of-type(1) .membersImg {
@@ -3965,16 +4416,16 @@ a {
   text-align: right;
 }
 .members .membersBox:nth-of-type(2) .membersName h1 {
-  font: bold 50px/1 "Work Sans";
+  font: bold 50px/1 "Noto Sans KR";
   color: #333;
   margin-bottom: 20px;
 }
 .members .membersBox:nth-of-type(2) .membersName h3 {
-  font: 20px/1 "Work Sans";
+  font: 20px/1 "Noto Sans KR";
   color: rgba(16, 16, 16, 0.6);
 }
 .members .membersBox:nth-of-type(2) .membersDesc {
-  font: 18px/1 "Work Sans";
+  font: 18px/1 "Noto Sans KR";
   color: #333;
   text-align: justify;
   word-break: break-all;
@@ -3990,7 +4441,7 @@ a {
 }
 .members .membersBox:nth-of-type(2) .membersDesc p {
   width: 90%;
-  font: bold 18px/1.2 "Work Sans";
+  font: 18px/1.2 "Noto Sans KR";
   color: #333;
   text-align: right;
   margin-left: 10%;
@@ -4028,16 +4479,16 @@ a {
   padding: 180px 0px;
 }
 .members .membersBox:nth-of-type(3) .membersName h1 {
-  font: bold 50px/1 "Work Sans";
+  font: bold 50px/1 "Noto Sans KR";
   color: #333;
   margin-bottom: 20px;
 }
 .members .membersBox:nth-of-type(3) .membersName h3 {
-  font: 20px/1 "Work Sans";
+  font: 20px/1 "Noto Sans KR";
   color: rgba(16, 16, 16, 0.6);
 }
 .members .membersBox:nth-of-type(3) .membersDesc {
-  font: 18px/1 "Work Sans";
+  font: 18px/1 "Noto Sans KR";
   color: #333;
   text-align: justify;
   word-break: break-all;
@@ -4053,7 +4504,7 @@ a {
 }
 .members .membersBox:nth-of-type(3) .membersDesc p {
   width: 90%;
-  font: bold 18px/1.2 "Work Sans";
+  font: 18px/1.2 "Noto Sans KR";
   color: #333;
 }
 .members .membersBox:nth-of-type(3) .membersImg {
@@ -4092,16 +4543,16 @@ a {
   text-align: right;
 }
 .members .membersBox:nth-of-type(4) .membersName h1 {
-  font: bold 50px/1 "Work Sans";
+  font: bold 50px/1 "Noto Sans KR";
   color: #333;
   margin-bottom: 20px;
 }
 .members .membersBox:nth-of-type(4) .membersName h3 {
-  font: 20px/1 "Work Sans";
+  font: 20px/1 "Noto Sans KR";
   color: rgba(16, 16, 16, 0.6);
 }
 .members .membersBox:nth-of-type(4) .membersDesc {
-  font: 18px/1 "Work Sans";
+  font: 18px/1 "Noto Sans KR";
   color: #333;
   text-align: justify;
   word-break: break-all;
@@ -4117,7 +4568,7 @@ a {
 }
 .members .membersBox:nth-of-type(4) .membersDesc p {
   width: 90%;
-  font: bold 18px/1.2 "Work Sans";
+  font: 18px/1.2 "Noto Sans KR";
   color: #333;
   text-align: right;
   margin-left: 10%;
@@ -4193,16 +4644,16 @@ a {
     padding: 180px 0px;
   }
   .members .membersBox:nth-of-type(1) .membersName h1 {
-    font: bold 50px/1 "Work Sans";
+    font: bold 50px/1 "Noto Sans KR";
     color: #333;
     margin-bottom: 20px;
   }
   .members .membersBox:nth-of-type(1) .membersName h3 {
-    font: 20px/1 "Work Sans";
+    font: 20px/1 "Noto Sans KR";
     color: rgba(16, 16, 16, 0.6);
   }
   .members .membersBox:nth-of-type(1) .membersDesc {
-    font: 18px/1 "Work Sans";
+    font: 18px/1 "Noto Sans KR";
     color: #333;
     text-align: justify;
     word-break: break-all;
@@ -4218,7 +4669,7 @@ a {
   }
   .members .membersBox:nth-of-type(1) .membersDesc p {
     width: 90%;
-    font: bold 18px/1.2 "Work Sans";
+    font: bold 18px/1.2 "Noto Sans KR";
     color: #333;
   }
   .members .membersBox:nth-of-type(1) .membersImg {
@@ -4256,16 +4707,16 @@ a {
     text-align: right;
   }
   .members .membersBox:nth-of-type(2) .membersName h1 {
-    font: bold 50px/1 "Work Sans";
+    font: bold 50px/1 "Noto Sans KR";
     color: #333;
     margin-bottom: 20px;
   }
   .members .membersBox:nth-of-type(2) .membersName h3 {
-    font: 20px/1 "Work Sans";
+    font: 20px/1 "Noto Sans KR";
     color: rgba(16, 16, 16, 0.6);
   }
   .members .membersBox:nth-of-type(2) .membersDesc {
-    font: 18px/1 "Work Sans";
+    font: 18px/1 "Noto Sans KR";
     color: #333;
     text-align: justify;
     word-break: break-all;
@@ -4281,7 +4732,7 @@ a {
   }
   .members .membersBox:nth-of-type(2) .membersDesc p {
     width: 90%;
-    font: bold 18px/1.2 "Work Sans";
+    font: bold 18px/1.2 "Noto Sans KR";
     color: #333;
     text-align: right;
     margin-left: 10%;
@@ -4319,16 +4770,16 @@ a {
     padding: 180px 0px;
   }
   .members .membersBox:nth-of-type(3) .membersName h1 {
-    font: bold 50px/1 "Work Sans";
+    font: bold 50px/1 "Noto Sans KR";
     color: #333;
     margin-bottom: 20px;
   }
   .members .membersBox:nth-of-type(3) .membersName h3 {
-    font: 20px/1 "Work Sans";
+    font: 20px/1 "Noto Sans KR";
     color: rgba(16, 16, 16, 0.6);
   }
   .members .membersBox:nth-of-type(3) .membersDesc {
-    font: 18px/1 "Work Sans";
+    font: 18px/1 "Noto Sans KR";
     color: #333;
     text-align: justify;
     word-break: break-all;
@@ -4344,7 +4795,7 @@ a {
   }
   .members .membersBox:nth-of-type(3) .membersDesc p {
     width: 90%;
-    font: bold 18px/1.2 "Work Sans";
+    font: bold 18px/1.2 "Noto Sans KR";
     color: #333;
   }
   .members .membersBox:nth-of-type(3) .membersImg {
@@ -4383,16 +4834,16 @@ a {
     text-align: right;
   }
   .members .membersBox:nth-of-type(4) .membersName h1 {
-    font: bold 50px/1 "Work Sans";
+    font: bold 50px/1 "Noto Sans KR";
     color: #333;
     margin-bottom: 20px;
   }
   .members .membersBox:nth-of-type(4) .membersName h3 {
-    font: 20px/1 "Work Sans";
+    font: 20px/1 "Noto Sans KR";
     color: rgba(16, 16, 16, 0.6);
   }
   .members .membersBox:nth-of-type(4) .membersDesc {
-    font: 18px/1 "Work Sans";
+    font: 18px/1 "Noto Sans KR";
     color: #333;
     text-align: justify;
     word-break: break-all;
@@ -4408,7 +4859,7 @@ a {
   }
   .members .membersBox:nth-of-type(4) .membersDesc p {
     width: 90%;
-    font: bold 18px/1.2 "Work Sans";
+    font: bold 18px/1.2 "Noto Sans KR";
     color: #333;
     text-align: right;
     margin-left: 10%;
@@ -5268,9 +5719,9 @@ a {
 .video .subtitle .subLeft .title {
   font: bold 51px/1.3 "Noto Sans KR";
   background: radial-gradient(circle, #7f7fd5, #86a8e7, #91eae4);
-  background-size: 100%;
-  color: transparent;
+  background-size: 200%;
   -webkit-background-clip: text;
+  color: transparent;
   animation: animation 1.7s linear infinite;
 }
 @keyframes animation {

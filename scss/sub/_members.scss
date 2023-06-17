@@ -5,9 +5,13 @@
 	.subVisual {
 		width: 100%;
 		height: 480px;
-		background: black;
 		position: relative;
-		background-image: url('../img/bg1.png');
+		overflow: hidden;
+
+		video {
+			object-fit: contain;
+			object-position: 0vw -20vw;
+		}
 
 		.background {
 			width: 50%;
@@ -22,7 +26,7 @@
 	.titContainer {
 		width: 100%;
 		height: 300px;
-		padding: 150px 15vw 150px;
+		padding: 150px 15vw 0px;
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 96px;
@@ -36,6 +40,530 @@
 			margin-top: 20px;
 			margin-bottom: 96px;
 		}
+	}
+
+	.slider {
+		width: 100%;
+		height: 584px;
+		margin: 0 auto;
+		position: relative;
+		background: tomato;
+		overflow: hidden;
+		margin-bottom: 100px;
+	}
+
+	.slide {
+		height: 600px;
+		color: white;
+		font-size: 50px;
+		width: 100%;
+		height: 100%;
+		display: none;
+		line-height: 300px;
+		display: inline-block;
+
+		&:nth-of-type(1) {
+			width: 100%;
+			height: 100%;
+			background: #ff9dd1;
+			padding: 40px;
+
+			.slideBox {
+				width: 100%;
+				height: 100%;
+				display: flex;
+
+				.left {
+					flex: 1;
+					width: 100%;
+					height: 100%;
+					background-image: url(../img/memberSlider1.png);
+					background-size: contain;
+					background-repeat: no-repeat;
+					background-position: right;
+				}
+
+				.right {
+					flex: 1.7;
+					width: 100%;
+					height: 100%;
+					text-align: left;
+					padding: 25px 0px 0px 70px;
+
+					h3 {
+						font: 14px/1 $ikeaFontKo;
+						color: $fontColorBl;
+						margin-bottom: 15px;
+					}
+
+					h2 {
+						font: bold 36px/1 $ikeaFontKo;
+						color: $fontColorBl;
+						margin-bottom: 20px;
+					}
+
+					p {
+						font: 16px/1.8 $ikeaFontKo;
+						color: $fontColorBl;
+						padding-right: 20vw;
+
+						span {
+							font: 25px/1 $ikeaFontKo;
+							color: $fontColorBl;
+						}
+					}
+				}
+			}
+		}
+
+		&:nth-of-type(2) {
+			width: 100%;
+			height: 100%;
+			background: #67e9c3;
+			padding: 40px;
+
+			.slideBox {
+				width: 100%;
+				height: 100%;
+				display: flex;
+
+				.left {
+					flex: 1;
+					width: 100%;
+					height: 100%;
+					background-image: url(../img/memberSlider2.png);
+					background-size: contain;
+					background-repeat: no-repeat;
+					background-position: right;
+				}
+
+				.right {
+					flex: 1.7;
+					width: 100%;
+					height: 100%;
+					text-align: left;
+					padding: 25px 0px 0px 70px;
+
+					h3 {
+						font: 14px/1 $ikeaFontKo;
+						color: $fontColorBl;
+						margin-bottom: 15px;
+					}
+
+					h2 {
+						font: bold 36px/1 $ikeaFontKo;
+						color: $fontColorBl;
+						margin-bottom: 20px;
+					}
+
+					p {
+						font: 16px/1.8 $ikeaFontKo;
+						color: $fontColorBl;
+						padding-right: 20vw;
+
+						span {
+							font: 25px/1 $ikeaFontKo;
+							color: $fontColorBl;
+						}
+					}
+				}
+			}
+		}
+
+		&:nth-of-type(3) {
+			width: 100%;
+			height: 100%;
+			background: #66c2f6;
+			padding: 40px;
+
+			.slideBox {
+				width: 100%;
+				height: 100%;
+				display: flex;
+
+				.left {
+					flex: 1;
+					width: 100%;
+					height: 100%;
+					background-image: url(../img/memberSlider3.png);
+					background-size: contain;
+					background-repeat: no-repeat;
+					background-position: right;
+				}
+
+				.right {
+					flex: 1.7;
+					width: 100%;
+					height: 100%;
+					text-align: left;
+					padding: 25px 0px 0px 70px;
+
+					h3 {
+						font: 14px/1 $ikeaFontKo;
+						color: $fontColorBl;
+						margin-bottom: 15px;
+					}
+
+					h2 {
+						font: bold 36px/1 $ikeaFontKo;
+						color: $fontColorBl;
+						margin-bottom: 20px;
+					}
+
+					p {
+						font: 16px/1.8 $ikeaFontKo;
+						color: $fontColorBl;
+						padding-right: 20vw;
+
+						span {
+							font: 25px/1 $ikeaFontKo;
+							color: $fontColorBl;
+						}
+					}
+				}
+			}
+		}
+
+		&:nth-of-type(4) {
+			width: 100%;
+			height: 100%;
+			background: #fedc01;
+			padding: 40px;
+
+			.slideBox {
+				width: 100%;
+				height: 100%;
+				display: flex;
+
+				.left {
+					flex: 1;
+					width: 100%;
+					height: 100%;
+					background-image: url(../img/memberSlider4.png);
+					background-size: contain;
+					background-repeat: no-repeat;
+					background-position: right;
+				}
+
+				.right {
+					flex: 1.7;
+					width: 100%;
+					height: 100%;
+					text-align: left;
+					padding: 25px 0px 0px 70px;
+
+					h3 {
+						font: 14px/1 $ikeaFontKo;
+						color: $fontColorBl;
+						margin-bottom: 15px;
+					}
+
+					h2 {
+						font: bold 36px/1 $ikeaFontKo;
+						color: $fontColorBl;
+						margin-bottom: 20px;
+					}
+
+					p {
+						font: 16px/1.8 $ikeaFontKo;
+						color: $fontColorBl;
+						padding-right: 20vw;
+
+						span {
+							font: 25px/1 $ikeaFontKo;
+							color: $fontColorBl;
+						}
+					}
+				}
+			}
+		}
+
+		&:nth-of-type(5) {
+			width: 100%;
+			height: 100%;
+			background: #5eda2b;
+			padding: 40px;
+
+			.slideBox {
+				width: 100%;
+				height: 100%;
+				display: flex;
+
+				.left {
+					flex: 1;
+					width: 100%;
+					height: 100%;
+					background-image: url(../img/memberSlider5.png);
+					background-size: contain;
+					background-repeat: no-repeat;
+					background-position: right;
+				}
+
+				.right {
+					flex: 1.7;
+					width: 100%;
+					height: 100%;
+					text-align: left;
+					padding: 25px 0px 0px 70px;
+
+					h3 {
+						font: 14px/1 $ikeaFontKo;
+						color: $fontColorBl;
+						margin-bottom: 15px;
+					}
+
+					h2 {
+						font: bold 36px/1 $ikeaFontKo;
+						color: $fontColorBl;
+						margin-bottom: 20px;
+					}
+
+					p {
+						font: 16px/1.8 $ikeaFontKo;
+						color: $fontColorBl;
+						padding-right: 20vw;
+
+						span {
+							font: 25px/1 $ikeaFontKo;
+							color: $fontColorBl;
+						}
+					}
+				}
+			}
+		}
+
+		&:nth-of-type(6) {
+			width: 100%;
+			height: 100%;
+			background: #f03c69;
+			padding: 40px;
+
+			.slideBox {
+				width: 100%;
+				height: 100%;
+				display: flex;
+
+				.left {
+					flex: 1;
+					width: 100%;
+					height: 100%;
+					background-image: url(../img/memberSlider6.png);
+					background-size: contain;
+					background-repeat: no-repeat;
+					background-position: right;
+				}
+
+				.right {
+					flex: 1.7;
+					width: 100%;
+					height: 100%;
+					text-align: left;
+					padding: 25px 0px 0px 70px;
+
+					h3 {
+						font: 14px/1 $ikeaFontKo;
+						color: $fontColorBl;
+						margin-bottom: 15px;
+					}
+
+					h2 {
+						font: bold 36px/1 $ikeaFontKo;
+						color: $fontColorBl;
+						margin-bottom: 20px;
+					}
+
+					p {
+						font: 16px/1.8 $ikeaFontKo;
+						color: $fontColorBl;
+						padding-right: 20vw;
+
+						span {
+							font: 25px/1 $ikeaFontKo;
+							color: $fontColorBl;
+						}
+					}
+				}
+			}
+		}
+
+		&:nth-of-type(7) {
+			width: 100%;
+			height: 100%;
+			background: #ff9dd1;
+			padding: 40px;
+
+			.slideBox {
+				width: 100%;
+				height: 100%;
+				display: flex;
+
+				.left {
+					flex: 1;
+					width: 100%;
+					height: 100%;
+					background-image: url(../img/memberSlider7.png);
+					background-size: contain;
+					background-repeat: no-repeat;
+					background-position: right;
+				}
+
+				.right {
+					flex: 1.7;
+					width: 100%;
+					height: 100%;
+					text-align: left;
+					padding: 25px 0px 0px 70px;
+
+					h3 {
+						font: 14px/1 $ikeaFontKo;
+						color: $fontColorBl;
+						margin-bottom: 15px;
+					}
+
+					h2 {
+						font: bold 36px/1 $ikeaFontKo;
+						color: $fontColorBl;
+						margin-bottom: 20px;
+					}
+
+					p {
+						font: 16px/1.8 $ikeaFontKo;
+						color: $fontColorBl;
+						padding-right: 20vw;
+
+						span {
+							font: 25px/1 $ikeaFontKo;
+							color: $fontColorBl;
+						}
+					}
+				}
+			}
+		}
+
+		&:nth-of-type(8) {
+			width: 100%;
+			height: 100%;
+			background: #fedc01;
+			padding: 40px;
+
+			.slideBox {
+				width: 100%;
+				height: 100%;
+				display: flex;
+
+				.left {
+					flex: 1;
+					width: 100%;
+					height: 100%;
+					background-image: url(../img/memberSlider8.png);
+					background-size: contain;
+					background-repeat: no-repeat;
+					background-position: right;
+				}
+
+				.right {
+					flex: 1.7;
+					width: 100%;
+					height: 100%;
+					text-align: left;
+					padding: 25px 0px 0px 70px;
+
+					h3 {
+						font: 14px/1 $ikeaFontKo;
+						color: $fontColorBl;
+						margin-bottom: 15px;
+					}
+
+					h2 {
+						font: bold 36px/1 $ikeaFontKo;
+						color: $fontColorBl;
+						margin-bottom: 20px;
+					}
+
+					p {
+						font: 16px/1.8 $ikeaFontKo;
+						color: $fontColorBl;
+						padding-right: 20vw;
+
+						span {
+							font: 25px/1 $ikeaFontKo;
+							color: $fontColorBl;
+						}
+					}
+				}
+			}
+		}
+
+		&:nth-of-type(9) {
+			width: 100%;
+			height: 100%;
+			background: #66c2f6;
+			padding: 40px;
+
+			.slideBox {
+				width: 100%;
+				height: 100%;
+				display: flex;
+
+				.left {
+					flex: 1;
+					width: 100%;
+					height: 100%;
+					background-image: url(../img/memberSlider9.png);
+					background-size: contain;
+					background-repeat: no-repeat;
+					background-position: right;
+				}
+
+				.right {
+					flex: 1.7;
+					width: 100%;
+					height: 100%;
+					text-align: left;
+					padding: 25px 0px 0px 70px;
+
+					h3 {
+						font: 14px/1 $ikeaFontKo;
+						color: $fontColorBl;
+						margin-bottom: 15px;
+					}
+
+					h2 {
+						font: bold 36px/1 $ikeaFontKo;
+						color: $fontColorBl;
+						margin-bottom: 20px;
+					}
+
+					p {
+						font: 16px/1.8 $ikeaFontKo;
+						color: $fontColorBl;
+						padding-right: 20vw;
+
+						span {
+							font: 25px/1 $ikeaFontKo;
+							color: $fontColorBl;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.next,
+	.prev {
+		padding: 30px 20px;
+		display: block;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		background: $ikeaBl;
+		color: white;
+		font: bold 26px/1 $ikeaFontKo;
+		border: none;
+	}
+
+	.next {
+		right: 0;
 	}
 
 	.membersBox {
@@ -58,19 +586,19 @@
 				padding: 180px 0px;
 
 				h1 {
-					font: bold 50px/1 $ikeaFont;
+					font: bold 50px/1 $ikeaFontKo;
 					color: $fontColorBl;
 					margin-bottom: 20px;
 				}
 
 				h3 {
-					font: 20px/1 $ikeaFont;
+					font: 20px/1 $ikeaFontKo;
 					color: $fontColorGrC;
 				}
 			}
 
 			.membersDesc {
-				font: 18px/1 $ikeaFont;
+				font: 18px/1 $ikeaFontKo;
 				color: $fontColorBl;
 				text-align: justify;
 				word-break: break-all;
@@ -86,7 +614,7 @@
 
 				p {
 					width: 90%;
-					font: bold 18px/1.2 $ikeaFont;
+					font: 18px/1.2 $ikeaFontKo;
 					color: $fontColorBl;
 				}
 			}
@@ -129,19 +657,19 @@
 				text-align: right;
 
 				h1 {
-					font: bold 50px/1 $ikeaFont;
+					font: bold 50px/1 $ikeaFontKo;
 					color: $fontColorBl;
 					margin-bottom: 20px;
 				}
 
 				h3 {
-					font: 20px/1 $ikeaFont;
+					font: 20px/1 $ikeaFontKo;
 					color: $fontColorGrC;
 				}
 			}
 
 			.membersDesc {
-				font: 18px/1 $ikeaFont;
+				font: 18px/1 $ikeaFontKo;
 				color: $fontColorBl;
 				text-align: justify;
 				word-break: break-all;
@@ -157,7 +685,7 @@
 
 				p {
 					width: 90%;
-					font: bold 18px/1.2 $ikeaFont;
+					font: 18px/1.2 $ikeaFontKo;
 					color: $fontColorBl;
 					text-align: right;
 					margin-left: 10%;
@@ -200,19 +728,19 @@
 				padding: 180px 0px;
 
 				h1 {
-					font: bold 50px/1 $ikeaFont;
+					font: bold 50px/1 $ikeaFontKo;
 					color: $fontColorBl;
 					margin-bottom: 20px;
 				}
 
 				h3 {
-					font: 20px/1 $ikeaFont;
+					font: 20px/1 $ikeaFontKo;
 					color: $fontColorGrC;
 				}
 			}
 
 			.membersDesc {
-				font: 18px/1 $ikeaFont;
+				font: 18px/1 $ikeaFontKo;
 				color: $fontColorBl;
 				text-align: justify;
 				word-break: break-all;
@@ -228,7 +756,7 @@
 
 				p {
 					width: 90%;
-					font: bold 18px/1.2 $ikeaFont;
+					font: 18px/1.2 $ikeaFontKo;
 					color: $fontColorBl;
 				}
 			}
@@ -272,19 +800,19 @@
 				text-align: right;
 
 				h1 {
-					font: bold 50px/1 $ikeaFont;
+					font: bold 50px/1 $ikeaFontKo;
 					color: $fontColorBl;
 					margin-bottom: 20px;
 				}
 
 				h3 {
-					font: 20px/1 $ikeaFont;
+					font: 20px/1 $ikeaFontKo;
 					color: $fontColorGrC;
 				}
 			}
 
 			.membersDesc {
-				font: 18px/1 $ikeaFont;
+				font: 18px/1 $ikeaFontKo;
 				color: $fontColorBl;
 				text-align: justify;
 				word-break: break-all;
@@ -300,7 +828,7 @@
 
 				p {
 					width: 90%;
-					font: bold 18px/1.2 $ikeaFont;
+					font: 18px/1.2 $ikeaFontKo;
 					color: $fontColorBl;
 					text-align: right;
 					margin-left: 10%;
@@ -388,19 +916,19 @@
 					padding: 180px 0px;
 
 					h1 {
-						font: bold 50px/1 $ikeaFont;
+						font: bold 50px/1 $ikeaFontKo;
 						color: $fontColorBl;
 						margin-bottom: 20px;
 					}
 
 					h3 {
-						font: 20px/1 $ikeaFont;
+						font: 20px/1 $ikeaFontKo;
 						color: $fontColorGrC;
 					}
 				}
 
 				.membersDesc {
-					font: 18px/1 $ikeaFont;
+					font: 18px/1 $ikeaFontKo;
 					color: $fontColorBl;
 					text-align: justify;
 					word-break: break-all;
@@ -416,7 +944,7 @@
 
 					p {
 						width: 90%;
-						font: bold 18px/1.2 $ikeaFont;
+						font: bold 18px/1.2 $ikeaFontKo;
 						color: $fontColorBl;
 					}
 				}
@@ -459,19 +987,19 @@
 					text-align: right;
 
 					h1 {
-						font: bold 50px/1 $ikeaFont;
+						font: bold 50px/1 $ikeaFontKo;
 						color: $fontColorBl;
 						margin-bottom: 20px;
 					}
 
 					h3 {
-						font: 20px/1 $ikeaFont;
+						font: 20px/1 $ikeaFontKo;
 						color: $fontColorGrC;
 					}
 				}
 
 				.membersDesc {
-					font: 18px/1 $ikeaFont;
+					font: 18px/1 $ikeaFontKo;
 					color: $fontColorBl;
 					text-align: justify;
 					word-break: break-all;
@@ -487,7 +1015,7 @@
 
 					p {
 						width: 90%;
-						font: bold 18px/1.2 $ikeaFont;
+						font: bold 18px/1.2 $ikeaFontKo;
 						color: $fontColorBl;
 						text-align: right;
 						margin-left: 10%;
@@ -530,19 +1058,19 @@
 					padding: 180px 0px;
 
 					h1 {
-						font: bold 50px/1 $ikeaFont;
+						font: bold 50px/1 $ikeaFontKo;
 						color: $fontColorBl;
 						margin-bottom: 20px;
 					}
 
 					h3 {
-						font: 20px/1 $ikeaFont;
+						font: 20px/1 $ikeaFontKo;
 						color: $fontColorGrC;
 					}
 				}
 
 				.membersDesc {
-					font: 18px/1 $ikeaFont;
+					font: 18px/1 $ikeaFontKo;
 					color: $fontColorBl;
 					text-align: justify;
 					word-break: break-all;
@@ -558,7 +1086,7 @@
 
 					p {
 						width: 90%;
-						font: bold 18px/1.2 $ikeaFont;
+						font: bold 18px/1.2 $ikeaFontKo;
 						color: $fontColorBl;
 					}
 				}
@@ -602,19 +1130,19 @@
 					text-align: right;
 
 					h1 {
-						font: bold 50px/1 $ikeaFont;
+						font: bold 50px/1 $ikeaFontKo;
 						color: $fontColorBl;
 						margin-bottom: 20px;
 					}
 
 					h3 {
-						font: 20px/1 $ikeaFont;
+						font: 20px/1 $ikeaFontKo;
 						color: $fontColorGrC;
 					}
 				}
 
 				.membersDesc {
-					font: 18px/1 $ikeaFont;
+					font: 18px/1 $ikeaFontKo;
 					color: $fontColorBl;
 					text-align: justify;
 					word-break: break-all;
@@ -630,7 +1158,7 @@
 
 					p {
 						width: 90%;
-						font: bold 18px/1.2 $ikeaFont;
+						font: bold 18px/1.2 $ikeaFontKo;
 						color: $fontColorBl;
 						text-align: right;
 						margin-left: 10%;
