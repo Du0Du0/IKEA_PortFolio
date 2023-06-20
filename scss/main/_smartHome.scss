@@ -1,672 +1,103 @@
 #smartHome {
 	width: 100vw;
-	height: 890px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-image: url(../img/smartHomeBg6.png);
+	height: 790px;
+	background: url(../img/smartHomeBg3.png);
 	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
-	position: relative;
-	padding: 120px 10vw 150px;
 
-	span {
-		position: absolute;
-		left: 2vw;
-		bottom: 3vw;
-		font: 130px/1 $ikeaFont;
-		color: $grey;
-		opacity: 0.9;
+	.container {
+		max-width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		padding: 150px 10vw 96px;
+		position: relative;
 	}
-
-	.newsContainer {
-		padding: 0px 3vw 0px;
+	.swiper-container {
 		width: 100%;
-		height: 628px;
-		display: flex;
-		position: absolute;
+		height: 100%;
+		position: static;
 
-		.newsWrap {
-			width: calc(100% / 3);
-			height: 100%;
-			float: left;
-			overflow: hidden;
-			//news 슬라이드 왼쪽 화살표
-			&:nth-of-type(1) {
-				flex: 1.8;
-				font: 70px/6 $ikeaFont;
-				color: transparent;
-				-webkit-text-stroke: 1px $fontColorW;
-				align-items: center;
-				cursor: pointer;
-				z-index: 555;
-				padding-left: 1vw;
-			}
+		.swiper-wrapper {
+			.swiper-slide {
+				text-align: center;
+				width: 350px;
+				height: 465px;
+				font-size: 18px;
+				background: rgb(255, 255, 255);
+				border-radius: 10px;
+				background: transparent;
+				border: 2px solid white;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				text-align: left;
+				padding: 80px 45px;
+				position: relative;
 
-			//news 중앙 슬라이드 메뉴
-			&:nth-of-type(2) {
-				flex: 18;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-
-				//news 슬라이드 중앙 영역 상단부분
-				.newsUp {
-					width: 100%;
-					height: 640px;
-					flex: 6;
-
-					justify-content: center;
-
-					//news 슬라이드 start
-					.swiper-container {
-						display: flex;
-						width: 100%;
-						height: 100%;
-
-						.swiper-wrapper {
-							//news 슬라이드 1 start
-							width: 100%;
-							height: 100%;
-							display: flex;
-							justify-content: center;
-
-							&:nth-of-type(even) {
-								margin-top: 0vw;
-							}
-
-							.animation {
-								display: none;
-								font: 150px/1 $ikeaFont;
-								position: relative;
-								z-index: 1000;
-								bottom: 60px;
-								left: 180px;
-								color: transparent;
-								-webkit-text-stroke: 1px $fontColorW;
-								display: block;
-
-								&.movingText {
-									animation: fillingText 1s;
-									animation-fill-mode: forwards;
-									animation-duration: 1s;
-
-									@keyframes fillingText {
-										0% {
-											transform: translateX(0);
-										}
-										100% {
-											color: $fontColorW;
-
-											transform: translateX(100px);
-										}
-									}
-								}
-							}
-
-							.swiper-slide {
-								width: 350px;
-								height: 465px;
-								border: 1.5px solid $bgW;
-								top: 1vw;
-								cursor: pointer;
-								overflow: hidden;
-								border-radius: 10px;
-								position: relative;
-								padding: 60px 3vw;
-
-								&.on:hover {
-									border: none;
-									border-radius: 0px;
-								}
-
-								.smartBg {
-									width: 100%;
-									height: 100%;
-									object-fit: fill;
-									position: absolute;
-									top: 50%;
-									left: 50%;
-									transform: translate(-50%, -50%);
-									display: none;
-
-									&.on {
-										display: block;
-									}
-								}
-
-								h4 {
-									position: relative;
-									font: 18px/1 $ikeaFont;
-									color: $fontColorW;
-									margin-bottom: 130px;
-									z-index: 1;
-								}
-
-								h2 {
-									position: relative;
-									font: bold 30px/1 $ikeaFont;
-									color: $fontColorW;
-									z-index: 1;
-									margin-bottom: 100px;
-								}
-
-								.controlBtn {
-									width: 11vw;
-									height: 35px;
-									background: $grey;
-									border: 1px solid $bgW;
-									position: relative;
-									display: flex;
-									justify-content: center;
-									align-items: center;
-									z-index: 1;
-									cursor: pointer;
-									border-radius: 50px;
-									font: bold 12px/1 $ikeaFont;
-									color: $fontColorBl;
-									gap: 10px;
-
-									&:hover {
-										color: $fontColorBl;
-									}
-								}
-							}
-						}
-					}
+				h4 {
+					position: relative;
+					font: 18px/1 $ikeaFontKo;
+					color: $fontColorW;
+					margin-bottom: 130px;
+					z-index: 1;
 				}
 
-				//news 슬라이드 중앙 영역 하단부분
-				.newsDown {
-					flex: 3;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					height: 400px;
-					width: 100%;
-
-					//news 슬라이드 아래 재생/일시정지 버튼
-					button {
-						width: 50px;
-						height: 50px;
-						border-radius: 50px;
-						background: transparent;
-						border: 1px solid $bgW;
-						font: 18px/1 $ikeaFont;
-						color: $fontColorW;
-						cursor: pointer;
-
-						&:hover {
-							backdrop-filter: brightness(0.1);
-							opacity: 0.8;
-							border: none;
-							color: $fontColorW;
-						}
-					}
+				h2 {
+					position: relative;
+					font: bold 30px/1 $ikeaFontKo;
+					color: $fontColorW;
+					z-index: 1;
+					margin-bottom: 100px;
 				}
-			}
 
-			//news 슬라이드 오른쪽 화살표
-			&:nth-of-type(3) {
-				height: 628px;
-				flex: 1.8;
-				text-align: end;
-				align-items: center;
-				font: 70px/6 $ikeaFont;
-				color: transparent;
-				-webkit-text-stroke: 1px $fontColorW;
-				cursor: pointer;
-				padding-right: 1vw;
-			}
-		}
-	}
-}
-
-@media screen and (max-width: $tablet) {
-	#smartHome {
-		width: 100vw;
-		height: 800px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background-image: url(../img/smartHomeBg6.png);
-		background-position: center;
-		background-size: cover;
-		position: relative;
-		padding: 150px 10vw 150px;
-
-		span {
-			position: absolute;
-			left: 2vw;
-			bottom: 3vw;
-			font: 90px/1 $ikeaFont;
-			color: $grey;
-			opacity: 0.9;
-			margin-left: 10px;
-		}
-
-		.newsContainer {
-			padding: 0px 3vw 0px;
-			width: 100%;
-			height: 628px;
-			display: flex;
-			position: absolute;
-
-			.newsWrap {
-				width: calc(100% / 3);
-				height: 100%;
-				float: left;
-
-				//news 슬라이드 왼쪽 화살표
-				&:nth-of-type(1) {
-					flex: 1.8;
-					font: 70px/6 $ikeaFont;
+				.animation {
+					font: 150px/1 $ikeaFont;
+					position: relative;
+					z-index: 1000;
+					bottom: -22px;
+					left: 0px;
+					text-align: right;
 					color: transparent;
 					-webkit-text-stroke: 1px $fontColorW;
-					align-items: center;
-					cursor: pointer;
-					padding-left: 1vw;
-					z-index: 555;
-				}
 
-				//news 중앙 슬라이드 메뉴
-				&:nth-of-type(2) {
-					flex: 18;
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
+					&.movingText {
+						animation: fillingText 1s infinite;
+						animation-fill-mode: forwards;
+						animation-duration: 1s;
 
-					//news 슬라이드 중앙 영역 상단부분
-					.newsUp {
-						width: 100%;
-						height: 540px;
-						flex: 6;
-						justify-content: space-between;
-
-						//news 슬라이드 start
-						.swiper-container {
-							display: flex;
-							width: 100%;
-							height: 100%;
-
-							.swiper-wrapper {
-								//news 슬라이드 1 start
-								width: 100%;
-								height: 100%;
-								position: relative;
-
-								&:nth-of-type(even) {
-									margin-top: 0vw;
-								}
-
-								.animation {
-									font: 150px/1 $ikeaFont;
-									position: relative;
-									z-index: 1000;
-									bottom: 60px;
-									left: 180px;
-									color: transparent;
-									-webkit-text-stroke: 1px $fontColorW;
-									display: block;
-
-									&.movingText {
-										animation: fillingText 1s;
-										animation-fill-mode: forwards;
-										animation-duration: 1s;
-
-										@keyframes fillingText {
-											0% {
-												transform: translateX(0);
-											}
-											100% {
-												color: $fontColorW;
-
-												transform: translateX(100px);
-											}
-										}
-									}
-								}
-
-								.swiper-slide {
-									width: 350px;
-									height: 415px;
-									border: 1.5px solid $bgW;
-									top: 1vw;
-									cursor: pointer;
-									overflow: hidden;
-									border-radius: 10px;
-									position: relative;
-									padding: 60px 3vw;
-
-									&.on:hover {
-										border: none;
-										border-radius: 0px;
-									}
-
-									.smartBg {
-										width: 100%;
-										height: 100%;
-										object-fit: fill;
-										position: absolute;
-										top: 50%;
-										left: 50%;
-										transform: translate(-50%, -50%);
-										display: none;
-
-										&.on {
-											display: block;
-										}
-									}
-
-									h4 {
-										position: relative;
-										font: 18px/1 $ikeaFont;
-										color: $fontColorW;
-										margin-bottom: 130px;
-										z-index: 1;
-									}
-
-									h2 {
-										position: relative;
-										font: bold 30px/1 $ikeaFont;
-										color: $fontColorW;
-										z-index: 1;
-										margin-bottom: 100px;
-									}
-
-									.controlBtn {
-										width: 11vw;
-										height: 35px;
-										background: $grey;
-										border: 1px solid $bgW;
-										position: relative;
-										display: flex;
-										justify-content: center;
-										align-items: center;
-										z-index: 1;
-										cursor: pointer;
-										border-radius: 50px;
-										font: bold 12px/1 $ikeaFont;
-										color: $fontColorBl;
-										gap: 10px;
-
-										&:hover {
-											color: $fontColorBl;
-										}
-									}
-								}
+						@keyframes fillingText {
+							0% {
+								transform: translateX(0);
 							}
-						}
-					}
-
-					//news 슬라이드 중앙 영역 하단부분
-					.newsDown {
-						flex: 2;
-						display: flex;
-						justify-content: center;
-						align-items: center;
-						height: 400px;
-						width: 100%;
-
-						//news 슬라이드 아래 재생/일시정지 버튼
-						button {
-							width: 50px;
-							height: 50px;
-							border-radius: 50px;
-							background: transparent;
-							border: 1px solid $bgW;
-							font: 18px/1 $ikeaFont;
-							color: $fontColorW;
-							cursor: pointer;
-
-							&:hover {
-								backdrop-filter: brightness(0.1);
-								opacity: 0.8;
-								border: none;
+							100% {
 								color: $fontColorW;
+								transform: translateX(100px);
 							}
 						}
 					}
-				}
-
-				//news 슬라이드 오른쪽 화살표
-				&:nth-of-type(3) {
-					height: 628px;
-					flex: 1.8;
-					align-items: center;
-					font: 70px/6 $ikeaFont;
-					color: transparent;
-					-webkit-text-stroke: 1px $fontColorW;
-					cursor: pointer;
-					z-index: 555;
-					padding-right: 1vw;
 				}
 			}
 		}
-	}
-}
 
-@media screen and (max-width: $mobile) {
-	#smartHome {
-		width: 100vw;
-		height: 800px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background-image: url(../img/smartHomeBg6.png);
-		background-position: center;
-		background-size: cover;
-		position: relative;
-		padding: 96px 5vw 96px;
-
-		span {
+		.swiper-button-prev {
 			position: absolute;
-			left: 2vw;
-			bottom: 3vw;
-			font: 60px/1 $ikeaFont;
-			color: $grey;
-			opacity: 0.9;
-			margin-left: 10px;
+			top: 45%;
+			left: 50px;
+			width: 45px;
+			height: 45px;
+			transform: translateY(-50%);
+			margin-top: 0px;
 		}
 
-		.newsContainer {
-			width: 100%;
-			height: 508px;
-			display: flex;
+		.swiper-button-next {
 			position: absolute;
-
-			.newsWrap {
-				width: calc(100% / 3);
-				height: 500px;
-				float: left;
-
-				//news 슬라이드 왼쪽 화살표
-				&:nth-of-type(1) {
-					flex: 2.8;
-					font: 50px/8 $ikeaFont;
-					color: transparent;
-					-webkit-text-stroke: 1px $fontColorW;
-					align-items: center;
-					cursor: pointer;
-					z-index: 555;
-				}
-
-				//news 중앙 슬라이드 메뉴
-				&:nth-of-type(2) {
-					flex: 18;
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-
-					//news 슬라이드 중앙 영역 상단부분
-					.newsUp {
-						width: 100%;
-						height: 500px;
-						flex: 7;
-
-						justify-content: center;
-
-						//news 슬라이드 start
-						.swiper-container {
-							display: flex;
-							width: 100%;
-							height: 100%;
-							border-radius: 10px;
-
-							.swiper-wrapper {
-								//news 슬라이드 1 start
-								width: 100%;
-								height: 100%;
-								position: relative;
-
-								&:nth-of-type(even) {
-									margin-top: 0vw;
-								}
-
-								.animation {
-									font: 150px/1 $ikeaFont;
-									position: relative;
-									z-index: 1000;
-									bottom: 60px;
-									left: 180px;
-									color: transparent;
-									-webkit-text-stroke: 1px $fontColorW;
-									display: block;
-
-									&.movingText {
-										animation: fillingText 1s;
-										animation-fill-mode: forwards;
-										animation-duration: 1s;
-
-										@keyframes fillingText {
-											0% {
-												transform: translateX(0);
-											}
-											100% {
-												color: $fontColorW;
-
-												transform: translateX(100px);
-											}
-										}
-									}
-								}
-
-								.swiper-slide {
-									width: 350px;
-									height: 415px;
-									border: 1.5px solid $bgW;
-									top: 1vw;
-									cursor: pointer;
-									overflow: hidden;
-									border-radius: 10px;
-									position: relative;
-									padding: 60px 3vw;
-
-									&.on:hover {
-										border: none;
-										border-radius: 0px;
-									}
-
-									.smartBg {
-										width: 100%;
-										height: 100%;
-										object-fit: fill;
-										position: absolute;
-										top: 50%;
-										left: 50%;
-										transform: translate(-50%, -50%);
-										display: none;
-
-										&.on {
-											display: block;
-										}
-									}
-
-									h4 {
-										position: relative;
-										font: 18px/1 $ikeaFont;
-										color: $fontColorW;
-										margin-bottom: 130px;
-										z-index: 1;
-									}
-
-									h2 {
-										position: relative;
-										font: bold 30px/1 $ikeaFont;
-										color: $fontColorW;
-										z-index: 1;
-										margin-bottom: 100px;
-									}
-
-									.controlBtn {
-										width: 11vw;
-										height: 35px;
-										background: $grey;
-										border: 1px solid $bgW;
-										position: relative;
-										display: flex;
-										justify-content: center;
-										align-items: center;
-										z-index: 1;
-										cursor: pointer;
-										border-radius: 50px;
-										font: bold 12px/1 $ikeaFont;
-										color: $fontColorBl;
-										gap: 10px;
-
-										&:hover {
-											color: $fontColorBl;
-										}
-									}
-								}
-							}
-						}
-					}
-
-					//news 슬라이드 중앙 영역 하단부분
-					.newsDown {
-						flex: 1;
-						width: 100%;
-						height: 0px;
-						display: flex;
-						justify-content: center;
-						align-items: center;
-
-						height: 400px;
-						width: 100%;
-						//news 슬라이드 아래 재생/일시정지 버튼
-						button {
-							width: 50px;
-							height: 50px;
-							border-radius: 50px;
-							background: transparent;
-							border: 1px solid $bgW;
-							font: 18px/1 $ikeaFont;
-							color: $fontColorW;
-							cursor: pointer;
-
-							&:hover {
-								backdrop-filter: brightness(0.1);
-								opacity: 0.8;
-								border: none;
-								color: $fontColorW;
-							}
-						}
-					}
-				}
-
-				//news 슬라이드 오른쪽 화살표
-				&:nth-of-type(3) {
-					height: 508px;
-					flex: 2.8;
-					align-items: center;
-					font: 50px/8 $ikeaFont;
-					color: transparent;
-					-webkit-text-stroke: 1px $fontColorW;
-					cursor: pointer;
-					z-index: 555;
-				}
-			}
+			top: 45%;
+			right: 50px;
+			width: 45px;
+			height: 45px;
+			transform: translateY(-50%);
+			margin-top: 0px;
 		}
 	}
 }

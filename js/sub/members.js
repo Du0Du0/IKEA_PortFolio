@@ -22,52 +22,54 @@ fetch('DB/members.json')
 		memberBoxContainer.innerHTML = tags;
 	});
 
+/*
+window.scrollY : 브라우저의 스크롤 거리값 반환 (동적)
+DOM.offsetTop : 해당돔요소의 세로 위치값 반환 (정적)
+window.scrollTo({left: 가로스크롤 위치값, top: 세로스크롤 위치값}) : 해당 위치값으로 스크롤 이동
+*/
+
+const boxes = document.querySelectorAll('.box1');
+const circles = document.querySelectorAll('.circle');
+
+// Depending on screen size how much the circles will grow?
+
+window.addEventListener('scroll', () => {
+	const scrollY = window.scrollY - 450;
+	boxes.forEach((circle) => {
+		circle.style.clipPath = `circle(${scrollY}px at center)`;
+	});
+});
+
 //슬라이더
-
-// Variables
-
-// Set index to 0
 let currentSlide = 0;
-// Store all slides
-const slides = document.querySelectorAll('.slider .slide');
-// Store total number of slides
-const totalSlides = slides.length;
 
-// Functions
-// ----------------------------
+const slides = document.querySelectorAll('.slider .slide');
+const totalSlides = slides.length;
 
 // Hides all slides, Displays Current index
 function cycleSlides() {
-	// stores current slide
 	const slide = slides[currentSlide];
-	// hides all slides
 	slides.forEach((slide) => {
 		slide.style.display = 'none';
 	});
-	// display current slide
 	slide.style.display = 'inline-block';
 }
 
-// call click function when next button is clicked
 document.querySelector('.next').addEventListener('click', function () {
-	// update current slide index
 	currentSlide += 1;
-	// if on last slide, reset index to 0
+
 	if (currentSlide > totalSlides - 1) {
 		currentSlide = 0;
 	}
-	// run cycle slides function to display slide
 	cycleSlides();
 });
 
-// call click function when prev button is clicked
 document.querySelector('.prev').addEventListener('click', function () {
-	// update current slide index
 	currentSlide -= 1;
-	// if on first slide, move to last slide
+
 	if (currentSlide < 0) {
 		currentSlide = totalSlides - 1;
 	}
-	// run cycle slides function to display slide
+
 	cycleSlides();
 });

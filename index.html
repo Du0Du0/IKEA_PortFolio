@@ -15,11 +15,20 @@
   <script defer type="module" src="js/main/smartHome.js"></script>
   <script defer type="module" src="js/main/news.js"></script>
   <script defer type="module" src="js/main/promotion.js"></script>
+  <script defer type="module" src="js/main/sns.js"></script>
+  <script defer type="module" src="js/main/notice.js"></script>
   <script defer type="module" src="js/sub/location.js"></script>
   <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
   <script src="https://kit.fontawesome.com/1178528ead.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="#">
+
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+
+
+
 
 </head>
 
@@ -93,8 +102,8 @@
       <div class="bg"></div>
       <div class="bg">
         <p>Lorem ipsum dolor sit amet.</p>
-        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, fuga? orem ipsum
-          Lorem ipsum dolor sit amet consectetur
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing<br>elit. Soluta, fuga? orem ipsum
+          Lorem ipsum dolor<br> sit amet consectetur
         </h1>
       </div>
       <!-- Main pointBox2 (text) -->
@@ -203,89 +212,33 @@
 
   <!-- smartHome start -->
   <section id="smartHome">
-    <span>Smart Living</span>
-
-    <div class="newsContainer">
-
-      <!-- news 슬라이드 왼쪽 화살표 -->
-      <div class="newsWrap">
-        <i class="fa-solid fa-chevron-left"></i>
-      </div>
-
-      <!--news 중앙 슬라이드 메뉴-->
-      <div class="newsWrap">
-        <div class="newsUp">
-          <div class="swiper-container second ">
-
-
-
-          </div>
+    <div class="container">
+      <!-- Slider main container -->
+      <div class="swiper-container first">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <article data-slide="1" class="swiper-slide">Slide 1</article>
+          <articledata-slide="2" class="swiper-slide">Slide 2</articledata-slide=>
+            <article data-slide="3" class="swiper-slide">Slide 3</article>
+            <article data-slide="4" class="swiper-slide">Slide 4</article>
+            <article data-slide="5" class="swiper-slide">Slide 5</article>
+            <article data-slide="6" class="swiper-slide">Slide 6</article>
+            <article data-slide="7" class="swiper-slide">Slide 7</article>
+            <article data-slide="8" class="swiper-slide">Slide 8</article>
+            <article data-slide="9" class="swiper-slide">Slide 9</article>
         </div>
-        <div class="newsDown">
-          <button><i class="fa-solid fa-play"></i></button>
-        </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white "></div>
+
       </div>
 
-      <!-- news 슬라이드 오른쪽 화살표 -->
-      <div class="newsWrap">
-        <i class=" fa-solid fa-chevron-right rightBtn"></i>
-      </div>
+
     </div>
   </section>
   <!-- museum  end -->
 
-  <!-- newsRoom start -->
-  <section id="news">
 
-    <!-- <div class="grid"></div>
-    <div class="grid"></div>
-    <div class="grid"></div>
-    <div class="grid"></div>
-    <div class="grid"></div>
-    <div class="grid"></div>
-    <div class="grid"></div>
-    <div class="grid"></div> -->
-    <!-- <div class="marquee">
-      <span>IKEA IKEA IKEA IKEA IKEA IKEA IKEA IKEA IKEA IKEA IKEA IKEA IKEA IKEA IKEA </span>
-    </div> -->
-    <div class="newsContainer">
-      <div class="leftWrap">
-        <div class="titWrap">
-          <h2>Newsroom</h2>
-          <p>One brand, many companies, and many, many people – that’s us in a nutshell. Spread all over the world, we
-            have a passion
-            for home furnishing and an inspiring shared vision: to create a better everyday life for the many people.
-            This, together
-            with our straightforward business idea, shared values, and a culture based on the spirit of togetherness.
-          </p>
-        </div>
-        <div class="loadingWrap">
-
-
-          <div class="loadingBtns">
-            <!-- news loading bar -->
-            <span class="swiper-progress-bar">
-              <span class="slide_progress-bar"></span>
-            </span>
-            <button><i class="fa-sharp fa-solid fa-chevron-left"></i></button>
-
-
-            <!-- news count paging -->
-            <span class="swiper-pagination"></span>
-            <button><i class="fa-sharp fa-solid fa-chevron-right"></i></button>
-
-
-            <button><i class="fa-solid fa-pause"></i></button>
-            <button><i class="fa-sharp fa-solid fa-play"></i></button>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-container first">
-
-      </div>
-    </div>
-  </section>
-  <!-- newsRoom end -->
 
   <!-- promotion start -->
   <section id="promotion">
@@ -419,41 +372,48 @@
       </div>
     </div>
   </section>
-  <!-- 
+
   <section id="sns">
-    <div class="snsContainer">
-      <div class="snsWrap">
-        <i class="fa-sharp fa-solid fa-chevron-left"></i>
-      </div>
-      <div class="snsWrap">
-        캠핑
-      </div>
-      <div class="snsWrap">
-        <h3>시</h3>
-        <h2>기억</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ipsam.</p>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-      <div class="snsWrap">
-        <h4>오늘의핫아이템</h4>
-      </div>
-      <div class="snsWrap">
-        <h3>시</h3>
-        <h2>기억</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ipsam.</p>
-        <p>Lorem ipsum dolor sit amet.</p>
 
-      </div>
-      <div class="snsWrap">캠핑</div>
-      <div class="snsWrap">
-        <i class="fa-sharp fa-solid fa-chevron-right"></i>
-      </div>
+    <div class="bgLeft">1</div>
+    <div class="bgRight">2</div>
 
+    <div class="container">
+      <!-- Slider main container -->
+      <div class="swiper-container second">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper ">
+          <div class="swiper-slide">
+            <h3>가구</h3>
+            <h2>생활용품</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia modi, numquam rerum ducimus cupiditate?
+            </p>
+          </div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+          <div class="swiper-slide">Slide 10</div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
+      </div>
     </div>
-  </section> -->
 
-  <!-- 
-<section id="showRoom">
+
+  </section>
+  <!-- museum  end -->
+
+  </section>
+
+
+  <section id="showRoom">
     <div class="showRoomContainer">
       <div class="showRoomWrap">
         <h4>공지사항</h4>
@@ -467,27 +427,74 @@
         <div class="titSub"></div>
       </div>
     </div>
-  </section> 
+  </section>
 
- <section id="gallery">
-    <div class="galleryContainer">
-      <div class="galleryWrap">
+
+  <!-- notice start -->
+  <section id="notice">
+    <div class="noticeContainer">
+      <div class="noticeWrap">
         <h4>공지사항</h4>
-        <p>바로가기</p>
-        <p>아이콘</p>
+        <p class="goBtn">바로가기&nbsp;&nbsp;&nbsp;<span><i class="fa-solid fa-arrow-right"></i></span></p>
+        <p class="iconWrap"><span><i class="fa-brands fa-facebook-f"></i></span><span><i
+              class="fa-brands fa-youtube"></i></span><span><i class="fa-brands fa-square-instagram"></i></span><span><i
+              class="fa-solid fa-blog"></i></span></p>
       </div>
-      <div class="galleryWrap"></div>
-      <div class="contents">
-        <div class="topic"></div>
-        <div class="galleryWrap"></div>
-        <div class="titSub"></div>
+      <div class="noticeWrap">
+        <div class="contentWrap">
+          <div class="topic">토픽</div>
+          <div class="titleWrap">
+            <h2>제목</h2>
+            <p>2023.01.08</p>
+          </div>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aliquid quis laudantium
+              amet? Suscipit, saepe error! Commodi vitae doloremque dolore?</p>
+          </div>
+        </div>
+        <div class="contentWrap">
+          <div class="topic">토픽</div>
+          <div class="titleWrap">
+            <h2>제목</h2>
+            <p>2023.01.08</p>
+          </div>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aliquid quis laudantium
+              amet? Suscipit, saepe error! Commodi vitae doloremque dolore?</p>
+          </div>
+        </div>
+        <div class="contentWrap">
+          <div class="topic">토픽</div>
+          <div class="titleWrap">
+            <h2>제목</h2>
+            <p>2023.01.08</p>
+          </div>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aliquid quis laudantium
+              amet? Suscipit, saepe error! Commodi vitae doloremque dolore?</p>
+          </div>
+        </div>
+        <div class="contentWrap">
+          <div class="topic">토픽</div>
+          <div class="titleWrap">
+            <h2>제목</h2>
+            <p>2023.01.08</p>
+          </div>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aliquid quis laudantium
+              amet? Suscipit, saepe error! Commodi vitae doloremque dolore?</p>
+          </div>
+        </div>
       </div>
     </div>
-  </section> 
- -->
+  </section>
 
-  <footer>
-    <img src="../img/footer1.png" alt="">
+
+
+
+
+  <!-- <footer>
+
     <div class="footerContainer">
       <div class="footerCategory">
         <ul>
@@ -512,7 +519,7 @@
         </ul>
       </div>
     </div>
-  </footer>
+  </footer> -->
 </body>
 
 </html>

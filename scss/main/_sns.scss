@@ -1,182 +1,98 @@
 #sns {
 	width: 100vw;
-	height: 750px;
+	height: 700px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: #3589d5;
 
-	&::after {
-		content: '';
-		background-image: url(../img/news12.png);
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		height: 750px;
-		right: 0px;
-		margin-right: 50%;
-		top: 0px;
-		width: calc(100% / 2);
-		filter: brightness(0.7) blur(0.8px);
+	.bgLeft {
+		width: 50%;
+		height: 100%;
+		background-image: url('../img/imgBoxGroup1.png');
 	}
 
-	.snsContainer {
-		width: 100vw;
-		height: 810px;
-		display: flex;
-		flex-wrap: wrap;
+	.bgRight {
+		width: 50%;
+		height: 100%;
+		float: right;
+		background: $ikeaYellow;
+	}
+
+	.container {
+		max-width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		padding: 120px 15vw 96px;
 		position: absolute;
-		justify-content: center;
-		align-items: center;
-		z-index: 1;
-		padding: 150px 1vw 140px;
+		z-index: 99;
+	}
+	.swiper-container {
+		width: 100%;
+		height: 100%;
+		position: static;
 
-		.snsWrap {
-			width: calc(100% / 7);
-			height: 100%;
-			display: flex;
-			flex-wrap: wrap;
-
-			&:nth-of-type(1) {
-				flex: 0.5;
-				font: 70px/1 $ikeaFont;
-				justify-content: center;
-				color: transparent;
-				-webkit-text-stroke: 1px $fontColorW;
-				align-items: center;
-				cursor: pointer;
-			}
-			&:nth-of-type(2) {
-				flex: 0.5;
-				height: 20%;
-				justify-content: flex-start;
-				font: 60px/1 $ikeaFont;
-				color: transparent;
-				transform: rotate(-90deg);
-				-webkit-text-stroke: 1px $fontColorW;
-			}
-			&:nth-of-type(3) {
-				flex: 2;
+		.swiper-wrapper {
+			.swiper-slide {
+				text-align: center;
 				width: 440px;
-				height: 100%;
-				border: 1px solid $bgW;
+				height: 440px;
+				font-size: 18px;
+				background: rgb(255, 255, 255);
 				border-radius: 50%;
+				background: transparent;
+				border: 2px solid white;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
 				text-align: left;
 				position: relative;
+				padding: 80px 100px;
 
 				h3 {
-					font: 26px/1 $ikeaFont;
-					color: $fontColorW;
 					position: relative;
-					top: 100px;
-					left: 5vw;
+					font: 18px/1 $ikeaFontKo;
+					color: $fontColorW;
+					margin-bottom: 50px;
+					z-index: 1;
 				}
+
 				h2 {
-					font: 26px/1 $ikeaFont;
-					color: $fontColorW;
 					position: relative;
-					top: 150px;
-					left: 3.5vw;
+					font: bold 30px/1 $ikeaFontKo;
+					color: $fontColorW;
+					z-index: 1;
+					margin-bottom: 40px;
 				}
 
 				p {
-					font: 26px/1 $ikeaFont;
-					color: $fontColorW;
 					position: relative;
-					top: 60px;
-					left: 5vw;
-
-					&:nth-of-type(2) {
-						font: 16px/1 $ikeaFont;
-						color: $fontColorW;
-						position: relative;
-						top: -5px;
-						left: 5vw;
-					}
-				}
-			}
-			&:nth-of-type(4) {
-				flex: 3;
-				width: 100%;
-				flex: 1;
-				padding: 0;
-				font: 70px/1 $ikeaFont;
-				color: $fontColorBl;
-
-				h4 {
-					margin: 0px auto;
-					text-orientation: upright;
-					writing-mode: vertical-rl;
-					white-space: nowrap;
-					letter-spacing: 0.2px;
-					color: transparent;
-					-webkit-text-stroke: 1px white;
-				}
-			}
-			&:nth-of-type(5) {
-				flex: 2;
-				width: 440px;
-				height: 100%;
-				border: 1px solid $bgW;
-				border-radius: 50%;
-				flex: 2;
-				width: 440px;
-				height: 100%;
-				border: 1px solid $bgW;
-				border-radius: 50%;
-				text-align: left;
-				position: relative;
-
-				h3 {
-					font: 26px/1 $ikeaFont;
+					font: 16px/1.8 $ikeaFontKo;
 					color: $fontColorW;
-					position: relative;
-					top: 100px;
-					left: 5vw;
+					z-index: 1;
+					margin-bottom: 100px;
 				}
-				h2 {
-					font: 26px/1 $ikeaFont;
-					color: $fontColorW;
-					position: relative;
-					top: 150px;
-					left: 3.5vw;
-				}
+			}
+		}
 
-				p {
-					font: 26px/1 $ikeaFont;
-					color: $fontColorW;
-					position: relative;
-					top: 60px;
-					left: 5vw;
+		.swiper-button-prev {
+			position: absolute;
+			top: 45%;
+			left: 50px;
+			width: 45px;
+			height: 45px;
+			transform: translateY(-200%);
+			margin-top: 0px;
+		}
 
-					&:nth-of-type(2) {
-						font: 16px/1 $ikeaFont;
-						color: $fontColorW;
-						position: relative;
-						top: -5px;
-						left: 5vw;
-					}
-				}
-			}
-			&:nth-of-type(6) {
-				flex: 0.5;
-				flex: 0.5;
-				height: 20%;
-				justify-content: flex-start;
-				font: 60px/1 $ikeaFont;
-				color: transparent;
-				transform: rotate(90deg);
-				-webkit-text-stroke: 1px $fontColorW;
-			}
-			&:nth-of-type(7) {
-				flex: 0.5;
-				font: 70px/1 $ikeaFont;
-				justify-content: center;
-				color: transparent;
-				-webkit-text-stroke: 1px $fontColorW;
-				align-items: center;
-				cursor: pointer;
-			}
+		.swiper-button-next {
+			position: absolute;
+			top: 45%;
+			right: 50px;
+			width: 45px;
+			height: 45px;
+			transform: translateY(-200%);
+			margin-top: 0px;
 		}
 	}
 }

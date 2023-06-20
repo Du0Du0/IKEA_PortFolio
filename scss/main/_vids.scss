@@ -21,20 +21,20 @@
 
 			.vidsTit {
 				flex: 1.65;
-				font: 70px/1 $ikeaFont;
+				font: 70px/1 $ikeaFontKo;
 				color: $fontColorBl;
 			}
 
 			.vidsSub {
 				flex: 1;
-				font: 26px/1.3 $ikeaFont;
+				font: 26px/1.3 $ikeaFontKo;
 				color: $fontColorGrC;
 				text-align: justify;
 				word-break: break-all;
 				letter-spacing: 0.1px;
 
 				strong {
-					font: bold 26px/1 $ikeaFont;
+					font: bold 26px/1 $ikeaFontKo;
 					color: $fontColorBl;
 					letter-spacing: 0.1px;
 				}
@@ -62,7 +62,7 @@
 					flex: 1;
 					width: 100%;
 					height: 20px;
-					font: 26px/3.5 $ikeaFont;
+					font: 26px/3.5 $ikeaFontKo;
 					color: $grey;
 					border-bottom: 1px solid #ddd;
 					cursor: pointer;
@@ -72,7 +72,7 @@
 				.vidsBarTit {
 					width: 100%;
 					flex: 3.5;
-					font: 23px/7 $ikeaFont;
+					font: 23px/7 $ikeaFontKo;
 					color: $grey;
 					writing-mode: vertical-rl;
 					padding-top: 1.5vw;
@@ -102,14 +102,14 @@
 
 						h4 {
 							color: $grey;
-							font: 26px/1 $ikeaFont;
+							font: 26px/1 $ikeaFontKo;
 							text-align: left;
 						}
 
 						h2 {
 							color: $fontColorW;
 							width: 600px;
-							font: 38px/1.2 $ikeaFont;
+							font: 38px/1.2 $ikeaFontKo;
 							text-align: left;
 							z-index: 999;
 							text-align: justify;
@@ -121,7 +121,7 @@
 							width: 600px;
 							text-align: justify;
 							word-break: break-all;
-							font: 18px/1.2 $ikeaFont;
+							font: 18px/1.2 $ikeaFontKo;
 							text-align: left;
 							margin-top: 2vw;
 							margin-bottom: 96px;
@@ -137,7 +137,7 @@
 						height: 71px;
 						background: #623fe4;
 						border: none;
-						font: 18px/71px $ikeaFont;
+						font: 18px/71px $ikeaFontKo;
 						color: $grey;
 						cursor: pointer;
 						align-items: flex-end;
@@ -190,7 +190,7 @@
 					width: 100%;
 					height: 50px;
 					flex: 1.65;
-					font: 70px/1 $ikeaFont;
+					font: 70px/1 $ikeaFontKo;
 					color: $fontColorBl;
 					margin-bottom: 50px;
 				}
@@ -198,7 +198,7 @@
 				.vidsSub {
 					flex: 1;
 					width: 100%;
-					font: 18px/1.3 $ikeaFont;
+					font: 18px/1.3 $ikeaFontKo;
 					color: $fontColorGrC;
 					text-align: justify;
 					word-break: break-all;
@@ -206,7 +206,7 @@
 					margin-bottom: 50px;
 
 					strong {
-						font: bold 18px/1 $ikeaFont;
+						font: bold 18px/1 $ikeaFontKo;
 						color: $fontColorBl;
 						letter-spacing: 0.1px;
 					}
@@ -234,7 +234,7 @@
 						flex: 1;
 						width: 100%;
 						height: 20px;
-						font: 26px/3.5 $ikeaFont;
+						font: 26px/3.5 $ikeaFontKo;
 						color: $grey;
 						border-bottom: 1px solid #ddd;
 						cursor: pointer;
@@ -244,7 +244,7 @@
 					.vidsBarTit {
 						width: 100%;
 						flex: 3.5;
-						font: 20px/7 $ikeaFont;
+						font: 20px/7 $ikeaFontKo;
 						color: $grey;
 						writing-mode: vertical-rl;
 						padding-top: 3vw;
@@ -273,7 +273,7 @@
 							h4 {
 								position: relative;
 								color: $grey;
-								font: 26px/1 $ikeaFont;
+								font: 26px/1 $ikeaFontKo;
 								text-align: left;
 								margin-bottom: 80px;
 							}
@@ -281,7 +281,7 @@
 							h2 {
 								color: $fontColorW;
 								width: 100%;
-								font: 23px/1.2 $ikeaFont;
+								font: 23px/1.2 $ikeaFontKo;
 								text-align: left;
 								z-index: 999;
 							}
@@ -293,7 +293,7 @@
 
 								text-align: justify;
 								word-break: break-all;
-								font: 18px/1.2 $ikeaFont;
+								font: 18px/1.2 $ikeaFontKo;
 								text-align: left;
 								margin-top: 2vw;
 								margin-bottom: 96px;
@@ -308,7 +308,7 @@
 							height: 71px;
 							background: #623fe4;
 							border: none;
-							font: 18px/71px $ikeaFont;
+							font: 18px/71px $ikeaFontKo;
 							color: $grey;
 							cursor: pointer;
 
@@ -362,7 +362,7 @@
 					width: 100%;
 					height: 50px;
 					flex: 1.65;
-					font: 50px/1 $ikeaFont;
+					font: 50px/1 $ikeaFontKo;
 					color: $fontColorBl;
 					margin-bottom: 50px;
 				}
@@ -370,7 +370,7 @@
 				.vidsSub {
 					flex: 1;
 					width: 100%;
-					font: 18px/1.3 $ikeaFont;
+					font: 18px/1.3 $ikeaFontKo;
 					color: $fontColorGrC;
 					text-align: justify;
 					word-break: break-all;
@@ -378,7 +378,7 @@
 					margin-bottom: 50px;
 
 					strong {
-						font: bold 18px/1 $ikeaFont;
+						font: bold 18px/1 $ikeaFontKo;
 						color: $fontColorBl;
 						letter-spacing: 0.1px;
 					}
@@ -406,7 +406,7 @@
 						flex: 1;
 						width: 100%;
 						height: 20px;
-						font: 23px/3.5 $ikeaFont;
+						font: 23px/3.5 $ikeaFontKo;
 						color: $grey;
 						border-bottom: 1px solid #ddd;
 						cursor: pointer;
@@ -416,7 +416,7 @@
 					.vidsBarTit {
 						width: 100%;
 						flex: 3.5;
-						font: 18px/7 $ikeaFont;
+						font: 18px/7 $ikeaFontKo;
 						color: $grey;
 						writing-mode: vertical-rl;
 						padding-top: 7vw;
@@ -445,7 +445,7 @@
 							h4 {
 								position: relative;
 								color: $grey;
-								font: 23px/1 $ikeaFont;
+								font: 23px/1 $ikeaFontKo;
 								text-align: left;
 								margin-bottom: 80px;
 							}
@@ -453,7 +453,7 @@
 							h2 {
 								color: $fontColorW;
 								width: 100%;
-								font: 18px/1.2 $ikeaFont;
+								font: 18px/1.2 $ikeaFontKo;
 								text-align: left;
 								z-index: 999;
 							}
@@ -464,7 +464,7 @@
 								width: 330px;
 								text-align: justify;
 								word-break: break-all;
-								font: 18px/1.2 $ikeaFont;
+								font: 18px/1.2 $ikeaFontKo;
 								text-align: left;
 								margin-top: 2vw;
 								margin-bottom: 96px;
@@ -480,7 +480,7 @@
 							height: 63px;
 							background: #623fe4;
 							border: none;
-							font: 14px/63px $ikeaFont;
+							font: 14px/63px $ikeaFontKo;
 							color: $grey;
 							cursor: pointer;
 

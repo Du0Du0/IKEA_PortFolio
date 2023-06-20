@@ -72,7 +72,7 @@ header {
 				padding: 0px 10vw 0px;
 
 				h2 {
-					font: 70px/1 $ikeaFont;
+					font: 70px/1 $ikeaFontKo;
 					color: $grey;
 					animation: appear 0.5s linear;
 					animation-fill-mode: backwards;
@@ -138,7 +138,7 @@ header {
 						float: left;
 						margin-top: 30px;
 						gap: 0px;
-						font: 24px/35px $ikeaFont;
+						font: 24px/35px $ikeaFontKo;
 						color: $fontColorGr;
 						cursor: pointer;
 
@@ -158,13 +158,13 @@ header {
 						float: left;
 						margin-top: 20px;
 						gap: 30px;
-						font: 24px/35px $ikeaFont;
+						font: 24px/35px $ikeaFontKo;
 						color: $fontColorGr;
 						cursor: pointer;
 					}
 
 					li {
-						font: 24px/35px $ikeaFont;
+						font: 24px/35px $ikeaFontKo;
 						color: $fontColorGr;
 						animation: appear 0.5s linear;
 						animation-fill-mode: backwards;
@@ -232,7 +232,7 @@ header {
 
 	.menu {
 		flex: 1.5;
-		font: 35px/1 $ikeaFont;
+		font: 35px/1 $ikeaFontKo;
 		color: $grey;
 		cursor: pointer;
 
@@ -262,7 +262,7 @@ header {
 		cursor: pointer;
 
 		p {
-			font: bold 35px/1 $ikeaFont;
+			font: bold 35px/1 $ikeaFontKo;
 			color: $grey;
 
 			a {
@@ -315,7 +315,7 @@ header {
 					padding: 0px 10vw 0px;
 
 					h2 {
-						font: 70px/1 $ikeaFont;
+						font: 70px/1 $ikeaFontKo;
 						color: $grey;
 						animation: appear 0.5s linear;
 						animation-fill-mode: backwards;
@@ -373,7 +373,7 @@ header {
 					}
 
 					li {
-						font: 24px/35px $ikeaFont;
+						font: 24px/35px $ikeaFontKo;
 						color: $fontColorGr;
 						animation: appear 0.5s linear;
 						animation-fill-mode: backwards;
@@ -416,7 +416,7 @@ header {
 
 		.menu {
 			flex: 1.5;
-			font: 35px/1 $ikeaFont;
+			font: 35px/1 $ikeaFontKo;
 			color: $grey;
 			cursor: pointer;
 
@@ -446,7 +446,7 @@ header {
 			cursor: pointer;
 
 			p {
-				font: 35px/1 $ikeaFont;
+				font: 35px/1 $ikeaFontKo;
 				color: $grey;
 			}
 		}
@@ -495,7 +495,7 @@ header {
 					padding: 0px 5vw 0px;
 
 					h2 {
-						font: 44px/1 $ikeaFont;
+						font: 44px/1 $ikeaFontKo;
 						color: $grey;
 						animation: appear 0.5s linear;
 						animation-fill-mode: backwards;
@@ -553,7 +553,7 @@ header {
 					}
 
 					li {
-						font: 24px/35px $ikeaFont;
+						font: 24px/35px $ikeaFontKo;
 						color: $fontColorGr;
 						animation: appear 0.5s linear;
 						animation-fill-mode: backwards;
@@ -596,7 +596,7 @@ header {
 
 		.menu {
 			flex: 1.5;
-			font: 30px/1 $ikeaFont;
+			font: 30px/1 $ikeaFontKo;
 			color: $grey;
 			cursor: pointer;
 
@@ -626,7 +626,7 @@ header {
 			cursor: pointer;
 
 			p {
-				font: 30px/1 $ikeaFont;
+				font: 30px/1 $ikeaFontKo;
 				color: $grey;
 			}
 		}

@@ -92,7 +92,7 @@ header .leftBar .leftBarWrap .leftBarTit {
   padding: 0px 10vw 0px;
 }
 header .leftBar .leftBarWrap .leftBarTit h2 {
-  font: 70px/1 "Work Sans";
+  font: 70px/1 "Noto Sans KR";
   color: #e9e9e9;
   animation: appear 0.5s linear;
   animation-fill-mode: backwards;
@@ -153,7 +153,7 @@ header .leftBar .leftBarWrap .leftBarList ul:nth-of-type(2) {
   float: left;
   margin-top: 30px;
   gap: 0px;
-  font: 24px/35px "Work Sans";
+  font: 24px/35px "Noto Sans KR";
   color: #969696;
   cursor: pointer;
 }
@@ -167,12 +167,12 @@ header .leftBar .leftBarWrap .leftBarList ul:nth-of-type(3) {
   float: left;
   margin-top: 20px;
   gap: 30px;
-  font: 24px/35px "Work Sans";
+  font: 24px/35px "Noto Sans KR";
   color: #969696;
   cursor: pointer;
 }
 header .leftBar .leftBarWrap .leftBarList ul li {
-  font: 24px/35px "Work Sans";
+  font: 24px/35px "Noto Sans KR";
   color: #969696;
   animation: appear 0.5s linear;
   animation-fill-mode: backwards;
@@ -228,7 +228,7 @@ header .leftBar.lft {
 }
 header .menu {
   flex: 1.5;
-  font: 35px/1 "Work Sans";
+  font: 35px/1 "Noto Sans KR";
   color: #e9e9e9;
   cursor: pointer;
 }
@@ -254,7 +254,7 @@ header .logo {
   cursor: pointer;
 }
 header .logo p {
-  font: bold 35px/1 "Work Sans";
+  font: bold 35px/1 "Noto Sans KR";
   color: #e9e9e9;
 }
 header .logo p a:visited {
@@ -300,7 +300,7 @@ header .logo p a:visited {
     padding: 0px 10vw 0px;
   }
   header .leftBar .leftBarWrap .leftBarTit h2 {
-    font: 70px/1 "Work Sans";
+    font: 70px/1 "Noto Sans KR";
     color: #e9e9e9;
     animation: appear 0.5s linear;
     animation-fill-mode: backwards;
@@ -352,7 +352,7 @@ header .logo p a:visited {
     }
   }
   header .leftBar .leftBarWrap .leftBarList li {
-    font: 24px/35px "Work Sans";
+    font: 24px/35px "Noto Sans KR";
     color: #969696;
     animation: appear 0.5s linear;
     animation-fill-mode: backwards;
@@ -388,7 +388,7 @@ header .logo p a:visited {
   }
   header .menu {
     flex: 1.5;
-    font: 35px/1 "Work Sans";
+    font: 35px/1 "Noto Sans KR";
     color: #e9e9e9;
     cursor: pointer;
   }
@@ -414,7 +414,7 @@ header .logo p a:visited {
     cursor: pointer;
   }
   header .logo p {
-    font: 35px/1 "Work Sans";
+    font: 35px/1 "Noto Sans KR";
     color: #e9e9e9;
   }
 }
@@ -458,7 +458,7 @@ header .logo p a:visited {
     padding: 0px 5vw 0px;
   }
   header .leftBar .leftBarWrap .leftBarTit h2 {
-    font: 44px/1 "Work Sans";
+    font: 44px/1 "Noto Sans KR";
     color: #e9e9e9;
     animation: appear 0.5s linear;
     animation-fill-mode: backwards;
@@ -510,7 +510,7 @@ header .logo p a:visited {
     }
   }
   header .leftBar .leftBarWrap .leftBarList li {
-    font: 24px/35px "Work Sans";
+    font: 24px/35px "Noto Sans KR";
     color: #969696;
     animation: appear 0.5s linear;
     animation-fill-mode: backwards;
@@ -546,7 +546,7 @@ header .logo p a:visited {
   }
   header .menu {
     flex: 1.5;
-    font: 30px/1 "Work Sans";
+    font: 30px/1 "Noto Sans KR";
     color: #e9e9e9;
     cursor: pointer;
   }
@@ -572,16 +572,20 @@ header .logo p a:visited {
     cursor: pointer;
   }
   header .logo p {
-    font: 30px/1 "Work Sans";
+    font: 30px/1 "Noto Sans KR";
     color: #e9e9e9;
   }
 }
 footer {
   width: 100vw;
-  height: 451px;
+  height: 461px;
+  bottom: 0;
+  position: relative;
+  left: 0;
+  right: 0;
 }
 footer img {
-  padding-top: 150px;
+  padding-top: 0px;
   margin-bottom: 0;
   object-fit: cover;
   width: 100%;
@@ -592,7 +596,7 @@ footer .footerContainer {
   width: 100%;
   height: 300px;
   flex-direction: column;
-  background: #171717;
+  background: white;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -600,8 +604,8 @@ footer .footerContainer {
   padding: 110px 1vw 0px;
 }
 footer .footerContainer li {
-  font: 25px/1 "Work Sans";
-  color: #e9e9e9;
+  font: 25px/1 "Noto Sans KR";
+  color: #333;
   float: left;
   cursor: pointer;
 }
@@ -624,7 +628,7 @@ footer .footerLeftCategory {
   padding-top: 70px;
   width: 100%;
   height: 100%;
-  background: #171717;
+  background: white;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -636,8 +640,8 @@ footer .footerLeftCategory ul {
   display: flex;
 }
 footer .footerLeftCategory ul:nth-of-type(1) li {
-  font: 18px/1 "Work Sans";
-  color: #eee;
+  font: 16px/1 "Noto Sans KR";
+  color: #333;
 }
 footer .footerLeftCategory ul:nth-of-type(1) li:nth-of-type(1):after {
   content: "|";
@@ -647,12 +651,13 @@ footer .footerLeftCategory ul:nth-of-type(1) li:nth-of-type(1):after {
   margin-right: 20px;
 }
 footer .footerLeftCategory ul:nth-of-type(2) li {
-  font: 18px/1 "Work Sans";
-  color: #969696;
+  font: 16px/1 "Noto Sans KR";
+  color: #333;
+  margin-left: -100px;
 }
 footer .footerLeftCategory ul li {
-  font: 18px/1 "Work Sans";
-  color: #eee;
+  font: 16px/1 "Noto Sans KR";
+  color: #333;
   cursor: pointer;
 }
 footer .footerLeftCategory ul li:after {
@@ -744,7 +749,7 @@ a {
 }
 #visual .visualWrap .bg:nth-of-type(8) {
   padding: 15px 1vw 0px;
-  font: 18px/1 "Work Sans";
+  font: 18px/1 "Noto Sans KR";
   color: #e9e9e9;
   border: 1px solid #eee;
   cursor: pointer;
@@ -757,7 +762,7 @@ a {
 }
 #visual .visualWrap .bg:nth-of-type(9) {
   padding: 170px 1vw 15px;
-  font: 18px/1 "Work Sans";
+  font: 18px/1 "Noto Sans KR";
   color: #e9e9e9;
   text-align: start;
 }
@@ -770,14 +775,14 @@ a {
   padding: 60px 0vw 0px;
 }
 #visual .visualWrap .bg:nth-of-type(12) h1 {
-  width: 80%;
-  font: 30px/1 "Work Sans";
-  color: #e9e9e9;
+  width: 100%;
+  font: 30px/1 "Noto Sans KR";
+  color: #cdcdcd;
   text-align: justify;
   word-break: break-all;
 }
 #visual .visualWrap .bg:nth-of-type(12) p {
-  font: 18px/1 "Work Sans";
+  font: 18px/1 "Noto Sans KR";
   color: #969696;
   text-align: justify;
   word-break: break-all;
@@ -786,7 +791,7 @@ a {
 #visual .visualWrap .bg:nth-of-type(13) {
   text-align: end;
   padding: 170px 1vw 15px;
-  font: 18px/1 "Work Sans";
+  font: 18px/1 "Noto Sans KR";
   color: #e9e9e9;
   border: 1px solid #eee;
   cursor: pointer;
@@ -817,7 +822,7 @@ a {
   }
   #visual .visualWrap .bg:nth-of-type(12) h1 {
     width: 90%;
-    font: 28px/1 "Work Sans";
+    font: 28px/1 "Noto Sans KR";
   }
   #visual .visualWrap .bg:nth-of-type(13) {
     padding: 170px 2vw 15px;
@@ -873,7 +878,7 @@ a {
   height: 100%;
   flex: 1;
   background: #f9f9f9;
-  font: 70px/180px "Work Sans";
+  font: 70px/180px "Noto Sans KR";
   color: #333;
 }
 #products .productsContainer .productsSub {
@@ -915,7 +920,7 @@ a {
 }
 #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem .productsName {
   text-align: center;
-  font: 18px/25px "Work Sans";
+  font: 18px/25px "Noto Sans KR";
   color: #333;
   margin-top: auto;
 }
@@ -955,7 +960,7 @@ a {
   align-items: center;
   flex: 1;
   background: #171717;
-  font: 26px "Work Sans";
+  font: 26px "Noto Sans KR";
   color: #eee;
   cursor: pointer;
 }
@@ -967,7 +972,7 @@ a {
   align-items: center;
   flex: 1;
   background: #171717;
-  font: 26px/5px "Work Sans";
+  font: 26px/5px "Noto Sans KR";
   color: #eee;
   cursor: pointer;
 }
@@ -994,7 +999,7 @@ a {
 #products .productsContainer .productsSub .btnWrap .hyperBtns {
   width: 20%;
   height: 100%;
-  font: 18px/1 "Work Sans";
+  font: 18px/1 "Noto Sans KR";
   color: #333;
   display: flex;
   padding: 0px 0vw 0px;
@@ -1034,7 +1039,7 @@ a {
     padding: 0px 5vw 60px;
   }
   #products .productsContainer .productsTit {
-    font: 50px/180px "Work Sans";
+    font: 50px/180px "Noto Sans KR";
   }
   #products .productsContainer .productsSub {
     height: 53%;
@@ -1230,19 +1235,19 @@ a {
 }
 #vids .vidsContainer .vidsTextWrap .vidsTit {
   flex: 1.65;
-  font: 70px/1 "Work Sans";
+  font: 70px/1 "Noto Sans KR";
   color: #333;
 }
 #vids .vidsContainer .vidsTextWrap .vidsSub {
   flex: 1;
-  font: 26px/1.3 "Work Sans";
+  font: 26px/1.3 "Noto Sans KR";
   color: rgba(16, 16, 16, 0.6);
   text-align: justify;
   word-break: break-all;
   letter-spacing: 0.1px;
 }
 #vids .vidsContainer .vidsTextWrap .vidsSub strong {
-  font: bold 26px/1 "Work Sans";
+  font: bold 26px/1 "Noto Sans KR";
   color: #333;
   letter-spacing: 0.1px;
 }
@@ -1267,7 +1272,7 @@ a {
   flex: 1;
   width: 100%;
   height: 20px;
-  font: 26px/3.5 "Work Sans";
+  font: 26px/3.5 "Noto Sans KR";
   color: #e9e9e9;
   border-bottom: 1px solid #ddd;
   cursor: pointer;
@@ -1276,7 +1281,7 @@ a {
 #vids .vidsContainer .vidsVideoWrap .video .vidsBarTit {
   width: 100%;
   flex: 3.5;
-  font: 23px/7 "Work Sans";
+  font: 23px/7 "Noto Sans KR";
   color: #e9e9e9;
   writing-mode: vertical-rl;
   padding-top: 1.5vw;
@@ -1305,13 +1310,13 @@ a {
 }
 #vids .vidsContainer .vidsVideoWrap .video.on .vidsOnSpan h4 {
   color: #e9e9e9;
-  font: 26px/1 "Work Sans";
+  font: 26px/1 "Noto Sans KR";
   text-align: left;
 }
 #vids .vidsContainer .vidsVideoWrap .video.on .vidsOnSpan h2 {
   color: #eee;
   width: 600px;
-  font: 38px/1.2 "Work Sans";
+  font: 38px/1.2 "Noto Sans KR";
   text-align: left;
   z-index: 999;
   text-align: justify;
@@ -1322,7 +1327,7 @@ a {
   width: 600px;
   text-align: justify;
   word-break: break-all;
-  font: 18px/1.2 "Work Sans";
+  font: 18px/1.2 "Noto Sans KR";
   text-align: left;
   margin-top: 2vw;
   margin-bottom: 96px;
@@ -1337,7 +1342,7 @@ a {
   height: 71px;
   background: #623fe4;
   border: none;
-  font: 18px/71px "Work Sans";
+  font: 18px/71px "Noto Sans KR";
   color: #e9e9e9;
   cursor: pointer;
   align-items: flex-end;
@@ -1368,14 +1373,14 @@ a {
     width: 100%;
     height: 50px;
     flex: 1.65;
-    font: 70px/1 "Work Sans";
+    font: 70px/1 "Noto Sans KR";
     color: #333;
     margin-bottom: 50px;
   }
   #vids .vidsContainer .vidsTextWrap .vidsSub {
     flex: 1;
     width: 100%;
-    font: 18px/1.3 "Work Sans";
+    font: 18px/1.3 "Noto Sans KR";
     color: rgba(16, 16, 16, 0.6);
     text-align: justify;
     word-break: break-all;
@@ -1383,7 +1388,7 @@ a {
     margin-bottom: 50px;
   }
   #vids .vidsContainer .vidsTextWrap .vidsSub strong {
-    font: bold 18px/1 "Work Sans";
+    font: bold 18px/1 "Noto Sans KR";
     color: #333;
     letter-spacing: 0.1px;
   }
@@ -1408,7 +1413,7 @@ a {
     flex: 1;
     width: 100%;
     height: 20px;
-    font: 26px/3.5 "Work Sans";
+    font: 26px/3.5 "Noto Sans KR";
     color: #e9e9e9;
     border-bottom: 1px solid #ddd;
     cursor: pointer;
@@ -1417,7 +1422,7 @@ a {
   #vids .vidsContainer .vidsVideoWrap .video .vidsBarTit {
     width: 100%;
     flex: 3.5;
-    font: 20px/7 "Work Sans";
+    font: 20px/7 "Noto Sans KR";
     color: #e9e9e9;
     writing-mode: vertical-rl;
     padding-top: 3vw;
@@ -1445,14 +1450,14 @@ a {
   #vids .vidsContainer .vidsVideoWrap .video.on .vidsOnSpan h4 {
     position: relative;
     color: #e9e9e9;
-    font: 26px/1 "Work Sans";
+    font: 26px/1 "Noto Sans KR";
     text-align: left;
     margin-bottom: 80px;
   }
   #vids .vidsContainer .vidsVideoWrap .video.on .vidsOnSpan h2 {
     color: #eee;
     width: 100%;
-    font: 23px/1.2 "Work Sans";
+    font: 23px/1.2 "Noto Sans KR";
     text-align: left;
     z-index: 999;
   }
@@ -1462,7 +1467,7 @@ a {
     width: 330px;
     text-align: justify;
     word-break: break-all;
-    font: 18px/1.2 "Work Sans";
+    font: 18px/1.2 "Noto Sans KR";
     text-align: left;
     margin-top: 2vw;
     margin-bottom: 96px;
@@ -1476,7 +1481,7 @@ a {
     height: 71px;
     background: #623fe4;
     border: none;
-    font: 18px/71px "Work Sans";
+    font: 18px/71px "Noto Sans KR";
     color: #e9e9e9;
     cursor: pointer;
   }
@@ -1506,14 +1511,14 @@ a {
     width: 100%;
     height: 50px;
     flex: 1.65;
-    font: 50px/1 "Work Sans";
+    font: 50px/1 "Noto Sans KR";
     color: #333;
     margin-bottom: 50px;
   }
   #vids .vidsContainer .vidsTextWrap .vidsSub {
     flex: 1;
     width: 100%;
-    font: 18px/1.3 "Work Sans";
+    font: 18px/1.3 "Noto Sans KR";
     color: rgba(16, 16, 16, 0.6);
     text-align: justify;
     word-break: break-all;
@@ -1521,7 +1526,7 @@ a {
     margin-bottom: 50px;
   }
   #vids .vidsContainer .vidsTextWrap .vidsSub strong {
-    font: bold 18px/1 "Work Sans";
+    font: bold 18px/1 "Noto Sans KR";
     color: #333;
     letter-spacing: 0.1px;
   }
@@ -1546,7 +1551,7 @@ a {
     flex: 1;
     width: 100%;
     height: 20px;
-    font: 23px/3.5 "Work Sans";
+    font: 23px/3.5 "Noto Sans KR";
     color: #e9e9e9;
     border-bottom: 1px solid #ddd;
     cursor: pointer;
@@ -1555,7 +1560,7 @@ a {
   #vids .vidsContainer .vidsVideoWrap .video .vidsBarTit {
     width: 100%;
     flex: 3.5;
-    font: 18px/7 "Work Sans";
+    font: 18px/7 "Noto Sans KR";
     color: #e9e9e9;
     writing-mode: vertical-rl;
     padding-top: 7vw;
@@ -1583,14 +1588,14 @@ a {
   #vids .vidsContainer .vidsVideoWrap .video.on .vidsOnSpan h4 {
     position: relative;
     color: #e9e9e9;
-    font: 23px/1 "Work Sans";
+    font: 23px/1 "Noto Sans KR";
     text-align: left;
     margin-bottom: 80px;
   }
   #vids .vidsContainer .vidsVideoWrap .video.on .vidsOnSpan h2 {
     color: #eee;
     width: 100%;
-    font: 18px/1.2 "Work Sans";
+    font: 18px/1.2 "Noto Sans KR";
     text-align: left;
     z-index: 999;
   }
@@ -1600,7 +1605,7 @@ a {
     width: 330px;
     text-align: justify;
     word-break: break-all;
-    font: 18px/1.2 "Work Sans";
+    font: 18px/1.2 "Noto Sans KR";
     text-align: left;
     margin-top: 2vw;
     margin-bottom: 96px;
@@ -1614,7 +1619,7 @@ a {
     height: 63px;
     background: #623fe4;
     border: none;
-    font: 14px/63px "Work Sans";
+    font: 14px/63px "Noto Sans KR";
     color: #e9e9e9;
     cursor: pointer;
   }
@@ -1634,86 +1639,66 @@ a {
 }
 #smartHome {
   width: 100vw;
-  height: 890px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../img/smartHomeBg6.png);
+  height: 790px;
+  background: url(../img/smartHomeBg3.png);
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+}
+#smartHome .container {
+  max-width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 150px 10vw 96px;
   position: relative;
-  padding: 120px 10vw 150px;
 }
-#smartHome span {
-  position: absolute;
-  left: 2vw;
-  bottom: 3vw;
-  font: 130px/1 "Work Sans";
-  color: #e9e9e9;
-  opacity: 0.9;
-}
-#smartHome .newsContainer {
-  padding: 0px 3vw 0px;
-  width: 100%;
-  height: 628px;
-  display: flex;
-  position: absolute;
-}
-#smartHome .newsContainer .newsWrap {
-  width: 33.3333333333%;
-  height: 100%;
-  float: left;
-  overflow: hidden;
-}
-#smartHome .newsContainer .newsWrap:nth-of-type(1) {
-  flex: 1.8;
-  font: 70px/6 "Work Sans";
-  color: transparent;
-  -webkit-text-stroke: 1px #eee;
-  align-items: center;
-  cursor: pointer;
-  z-index: 555;
-  padding-left: 1vw;
-}
-#smartHome .newsContainer .newsWrap:nth-of-type(2) {
-  flex: 18;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp {
-  width: 100%;
-  height: 640px;
-  flex: 6;
-  justify-content: center;
-}
-#smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container {
-  display: flex;
+#smartHome .swiper-container {
   width: 100%;
   height: 100%;
+  position: static;
 }
-#smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
+#smartHome .swiper-container .swiper-wrapper .swiper-slide {
+  text-align: center;
+  width: 350px;
+  height: 465px;
+  font-size: 18px;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  background: transparent;
+  border: 2px solid white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+  padding: 80px 45px;
+  position: relative;
 }
-#smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper:nth-of-type(even) {
-  margin-top: 0vw;
+#smartHome .swiper-container .swiper-wrapper .swiper-slide h4 {
+  position: relative;
+  font: 18px/1 "Noto Sans KR";
+  color: #eee;
+  margin-bottom: 130px;
+  z-index: 1;
 }
-#smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper .animation {
-  display: none;
+#smartHome .swiper-container .swiper-wrapper .swiper-slide h2 {
+  position: relative;
+  font: bold 30px/1 "Noto Sans KR";
+  color: #eee;
+  z-index: 1;
+  margin-bottom: 100px;
+}
+#smartHome .swiper-container .swiper-wrapper .swiper-slide .animation {
   font: 150px/1 "Work Sans";
   position: relative;
   z-index: 1000;
-  bottom: 60px;
-  left: 180px;
+  bottom: -22px;
+  left: 0px;
+  text-align: right;
   color: transparent;
   -webkit-text-stroke: 1px #eee;
-  display: block;
 }
-#smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper .animation.movingText {
-  animation: fillingText 1s;
+#smartHome .swiper-container .swiper-wrapper .swiper-slide .animation.movingText {
+  animation: fillingText 1s infinite;
   animation-fill-mode: forwards;
   animation-duration: 1s;
 }
@@ -1726,483 +1711,25 @@ a {
     transform: translateX(100px);
   }
 }
-#smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper .swiper-slide {
-  width: 350px;
-  height: 465px;
-  border: 1.5px solid #f9f9f9;
-  top: 1vw;
-  cursor: pointer;
-  overflow: hidden;
-  border-radius: 10px;
-  position: relative;
-  padding: 60px 3vw;
-}
-#smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper .swiper-slide.on:hover {
-  border: none;
-  border-radius: 0px;
-}
-#smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper .swiper-slide .smartBg {
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
+#smartHome .swiper-container .swiper-button-prev {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: none;
+  top: 45%;
+  left: 50px;
+  width: 45px;
+  height: 45px;
+  transform: translateY(-50%);
+  margin-top: 0px;
 }
-#smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper .swiper-slide .smartBg.on {
-  display: block;
-}
-#smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper .swiper-slide h4 {
-  position: relative;
-  font: 18px/1 "Work Sans";
-  color: #eee;
-  margin-bottom: 130px;
-  z-index: 1;
-}
-#smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper .swiper-slide h2 {
-  position: relative;
-  font: bold 30px/1 "Work Sans";
-  color: #eee;
-  z-index: 1;
-  margin-bottom: 100px;
-}
-#smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper .swiper-slide .controlBtn {
-  width: 11vw;
-  height: 35px;
-  background: #e9e9e9;
-  border: 1px solid #f9f9f9;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  cursor: pointer;
-  border-radius: 50px;
-  font: bold 12px/1 "Work Sans";
-  color: #333;
-  gap: 10px;
-}
-#smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper .swiper-slide .controlBtn:hover {
-  color: #333;
-}
-#smartHome .newsContainer .newsWrap:nth-of-type(2) .newsDown {
-  flex: 3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 400px;
-  width: 100%;
-}
-#smartHome .newsContainer .newsWrap:nth-of-type(2) .newsDown button {
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  background: transparent;
-  border: 1px solid #f9f9f9;
-  font: 18px/1 "Work Sans";
-  color: #eee;
-  cursor: pointer;
-}
-#smartHome .newsContainer .newsWrap:nth-of-type(2) .newsDown button:hover {
-  backdrop-filter: brightness(0.1);
-  opacity: 0.8;
-  border: none;
-  color: #eee;
-}
-#smartHome .newsContainer .newsWrap:nth-of-type(3) {
-  height: 628px;
-  flex: 1.8;
-  text-align: end;
-  align-items: center;
-  font: 70px/6 "Work Sans";
-  color: transparent;
-  -webkit-text-stroke: 1px #eee;
-  cursor: pointer;
-  padding-right: 1vw;
+#smartHome .swiper-container .swiper-button-next {
+  position: absolute;
+  top: 45%;
+  right: 50px;
+  width: 45px;
+  height: 45px;
+  transform: translateY(-50%);
+  margin-top: 0px;
 }
 
-@media screen and (max-width: 1023px) {
-  #smartHome {
-    width: 100vw;
-    height: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../img/smartHomeBg6.png);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    padding: 150px 10vw 150px;
-  }
-  #smartHome span {
-    position: absolute;
-    left: 2vw;
-    bottom: 3vw;
-    font: 90px/1 "Work Sans";
-    color: #e9e9e9;
-    opacity: 0.9;
-    margin-left: 10px;
-  }
-  #smartHome .newsContainer {
-    padding: 0px 3vw 0px;
-    width: 100%;
-    height: 628px;
-    display: flex;
-    position: absolute;
-  }
-  #smartHome .newsContainer .newsWrap {
-    width: 33.3333333333%;
-    height: 100%;
-    float: left;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(1) {
-    flex: 1.8;
-    font: 70px/6 "Work Sans";
-    color: transparent;
-    -webkit-text-stroke: 1px #eee;
-    align-items: center;
-    cursor: pointer;
-    padding-left: 1vw;
-    z-index: 555;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) {
-    flex: 18;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp {
-    width: 100%;
-    height: 540px;
-    flex: 6;
-    justify-content: space-between;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container {
-    display: flex;
-    width: 100%;
-    height: 100%;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper {
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper:nth-of-type(even) {
-    margin-top: 0vw;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper .animation {
-    font: 150px/1 "Work Sans";
-    position: relative;
-    z-index: 1000;
-    bottom: 60px;
-    left: 180px;
-    color: transparent;
-    -webkit-text-stroke: 1px #eee;
-    display: block;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper .animation.movingText {
-    animation: fillingText 1s;
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
-  }
-  @keyframes fillingText {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      color: #eee;
-      transform: translateX(100px);
-    }
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper .swiper-slide {
-    width: 350px;
-    height: 415px;
-    border: 1.5px solid #f9f9f9;
-    top: 1vw;
-    cursor: pointer;
-    overflow: hidden;
-    border-radius: 10px;
-    position: relative;
-    padding: 60px 3vw;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper .swiper-slide.on:hover {
-    border: none;
-    border-radius: 0px;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper .swiper-slide .smartBg {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper .swiper-slide .smartBg.on {
-    display: block;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper .swiper-slide h4 {
-    position: relative;
-    font: 18px/1 "Work Sans";
-    color: #eee;
-    margin-bottom: 130px;
-    z-index: 1;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper .swiper-slide h2 {
-    position: relative;
-    font: bold 30px/1 "Work Sans";
-    color: #eee;
-    z-index: 1;
-    margin-bottom: 100px;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper .swiper-slide .controlBtn {
-    width: 11vw;
-    height: 35px;
-    background: #e9e9e9;
-    border: 1px solid #f9f9f9;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    cursor: pointer;
-    border-radius: 50px;
-    font: bold 12px/1 "Work Sans";
-    color: #333;
-    gap: 10px;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper .swiper-slide .controlBtn:hover {
-    color: #333;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsDown {
-    flex: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-    width: 100%;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsDown button {
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    background: transparent;
-    border: 1px solid #f9f9f9;
-    font: 18px/1 "Work Sans";
-    color: #eee;
-    cursor: pointer;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsDown button:hover {
-    backdrop-filter: brightness(0.1);
-    opacity: 0.8;
-    border: none;
-    color: #eee;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(3) {
-    height: 628px;
-    flex: 1.8;
-    align-items: center;
-    font: 70px/6 "Work Sans";
-    color: transparent;
-    -webkit-text-stroke: 1px #eee;
-    cursor: pointer;
-    z-index: 555;
-    padding-right: 1vw;
-  }
-}
-@media screen and (max-width: 639px) {
-  #smartHome {
-    width: 100vw;
-    height: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../img/smartHomeBg6.png);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    padding: 96px 5vw 96px;
-  }
-  #smartHome span {
-    position: absolute;
-    left: 2vw;
-    bottom: 3vw;
-    font: 60px/1 "Work Sans";
-    color: #e9e9e9;
-    opacity: 0.9;
-    margin-left: 10px;
-  }
-  #smartHome .newsContainer {
-    width: 100%;
-    height: 508px;
-    display: flex;
-    position: absolute;
-  }
-  #smartHome .newsContainer .newsWrap {
-    width: 33.3333333333%;
-    height: 500px;
-    float: left;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(1) {
-    flex: 2.8;
-    font: 50px/8 "Work Sans";
-    color: transparent;
-    -webkit-text-stroke: 1px #eee;
-    align-items: center;
-    cursor: pointer;
-    z-index: 555;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) {
-    flex: 18;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp {
-    width: 100%;
-    height: 500px;
-    flex: 7;
-    justify-content: center;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper {
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper:nth-of-type(even) {
-    margin-top: 0vw;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper .animation {
-    font: 150px/1 "Work Sans";
-    position: relative;
-    z-index: 1000;
-    bottom: 60px;
-    left: 180px;
-    color: transparent;
-    -webkit-text-stroke: 1px #eee;
-    display: block;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper .animation.movingText {
-    animation: fillingText 1s;
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
-  }
-  @keyframes fillingText {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      color: #eee;
-      transform: translateX(100px);
-    }
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper .swiper-slide {
-    width: 350px;
-    height: 415px;
-    border: 1.5px solid #f9f9f9;
-    top: 1vw;
-    cursor: pointer;
-    overflow: hidden;
-    border-radius: 10px;
-    position: relative;
-    padding: 60px 3vw;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper .swiper-slide.on:hover {
-    border: none;
-    border-radius: 0px;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper .swiper-slide .smartBg {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper .swiper-slide .smartBg.on {
-    display: block;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper .swiper-slide h4 {
-    position: relative;
-    font: 18px/1 "Work Sans";
-    color: #eee;
-    margin-bottom: 130px;
-    z-index: 1;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper .swiper-slide h2 {
-    position: relative;
-    font: bold 30px/1 "Work Sans";
-    color: #eee;
-    z-index: 1;
-    margin-bottom: 100px;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper .swiper-slide .controlBtn {
-    width: 11vw;
-    height: 35px;
-    background: #e9e9e9;
-    border: 1px solid #f9f9f9;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    cursor: pointer;
-    border-radius: 50px;
-    font: bold 12px/1 "Work Sans";
-    color: #333;
-    gap: 10px;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsUp .swiper-container .swiper-wrapper .swiper-slide .controlBtn:hover {
-    color: #333;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsDown {
-    flex: 1;
-    width: 100%;
-    height: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-    width: 100%;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsDown button {
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    background: transparent;
-    border: 1px solid #f9f9f9;
-    font: 18px/1 "Work Sans";
-    color: #eee;
-    cursor: pointer;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(2) .newsDown button:hover {
-    backdrop-filter: brightness(0.1);
-    opacity: 0.8;
-    border: none;
-    color: #eee;
-  }
-  #smartHome .newsContainer .newsWrap:nth-of-type(3) {
-    height: 508px;
-    flex: 2.8;
-    align-items: center;
-    font: 50px/8 "Work Sans";
-    color: transparent;
-    -webkit-text-stroke: 1px #eee;
-    cursor: pointer;
-    z-index: 555;
-  }
-}
 #news {
   width: 100vw;
   height: 860px;
@@ -3666,176 +3193,341 @@ a {
 }
 #sns {
   width: 100vw;
-  height: 750px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #3589d5;
-}
-#sns::after {
-  content: "";
-  background-image: url(../img/news12.png);
+  height: 700px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 750px;
-  right: 0px;
-  margin-right: 50%;
-  top: 0px;
+  display: flex;
+}
+#sns .bgLeft {
   width: 50%;
-  filter: brightness(0.7) blur(0.8px);
+  height: 100%;
+  background-image: url("../img/imgBoxGroup1.png");
 }
-#sns .snsContainer {
-  width: 100vw;
-  height: 810px;
-  display: flex;
-  flex-wrap: wrap;
+#sns .bgRight {
+  width: 50%;
+  height: 100%;
+  float: right;
+  background: #fec202;
+}
+#sns .container {
+  max-width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 120px 15vw 96px;
   position: absolute;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  padding: 150px 1vw 140px;
+  z-index: 99;
 }
-#sns .snsContainer .snsWrap {
-  width: 14.2857142857%;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-#sns .snsContainer .snsWrap:nth-of-type(1) {
-  flex: 0.5;
-  font: 70px/1 "Work Sans";
-  justify-content: center;
-  color: transparent;
-  -webkit-text-stroke: 1px #eee;
-  align-items: center;
-  cursor: pointer;
-}
-#sns .snsContainer .snsWrap:nth-of-type(2) {
-  flex: 0.5;
-  height: 20%;
-  justify-content: flex-start;
-  font: 60px/1 "Work Sans";
-  color: transparent;
-  transform: rotate(-90deg);
-  -webkit-text-stroke: 1px #eee;
-}
-#sns .snsContainer .snsWrap:nth-of-type(3) {
-  flex: 2;
-  width: 440px;
-  height: 100%;
-  border: 1px solid #f9f9f9;
-  border-radius: 50%;
-  text-align: left;
-  position: relative;
-}
-#sns .snsContainer .snsWrap:nth-of-type(3) h3 {
-  font: 26px/1 "Work Sans";
-  color: #eee;
-  position: relative;
-  top: 100px;
-  left: 5vw;
-}
-#sns .snsContainer .snsWrap:nth-of-type(3) h2 {
-  font: 26px/1 "Work Sans";
-  color: #eee;
-  position: relative;
-  top: 150px;
-  left: 3.5vw;
-}
-#sns .snsContainer .snsWrap:nth-of-type(3) p {
-  font: 26px/1 "Work Sans";
-  color: #eee;
-  position: relative;
-  top: 60px;
-  left: 5vw;
-}
-#sns .snsContainer .snsWrap:nth-of-type(3) p:nth-of-type(2) {
-  font: 16px/1 "Work Sans";
-  color: #eee;
-  position: relative;
-  top: -5px;
-  left: 5vw;
-}
-#sns .snsContainer .snsWrap:nth-of-type(4) {
-  flex: 3;
+#sns .swiper-container {
   width: 100%;
-  flex: 1;
-  padding: 0;
-  font: 70px/1 "Work Sans";
-  color: #333;
-}
-#sns .snsContainer .snsWrap:nth-of-type(4) h4 {
-  margin: 0px auto;
-  text-orientation: upright;
-  writing-mode: vertical-rl;
-  white-space: nowrap;
-  letter-spacing: 0.2px;
-  color: transparent;
-  -webkit-text-stroke: 1px white;
-}
-#sns .snsContainer .snsWrap:nth-of-type(5) {
-  flex: 2;
-  width: 440px;
   height: 100%;
-  border: 1px solid #f9f9f9;
-  border-radius: 50%;
-  flex: 2;
+  position: static;
+}
+#sns .swiper-container .swiper-wrapper .swiper-slide {
+  text-align: center;
   width: 440px;
-  height: 100%;
-  border: 1px solid #f9f9f9;
+  height: 440px;
+  font-size: 18px;
+  background: rgb(255, 255, 255);
   border-radius: 50%;
+  background: transparent;
+  border: 2px solid white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: left;
   position: relative;
+  padding: 80px 100px;
 }
-#sns .snsContainer .snsWrap:nth-of-type(5) h3 {
-  font: 26px/1 "Work Sans";
-  color: #eee;
+#sns .swiper-container .swiper-wrapper .swiper-slide h3 {
   position: relative;
-  top: 100px;
-  left: 5vw;
-}
-#sns .snsContainer .snsWrap:nth-of-type(5) h2 {
-  font: 26px/1 "Work Sans";
+  font: 18px/1 "Noto Sans KR";
   color: #eee;
-  position: relative;
-  top: 150px;
-  left: 3.5vw;
+  margin-bottom: 50px;
+  z-index: 1;
 }
-#sns .snsContainer .snsWrap:nth-of-type(5) p {
-  font: 26px/1 "Work Sans";
+#sns .swiper-container .swiper-wrapper .swiper-slide h2 {
+  position: relative;
+  font: bold 30px/1 "Noto Sans KR";
   color: #eee;
-  position: relative;
-  top: 60px;
-  left: 5vw;
+  z-index: 1;
+  margin-bottom: 40px;
 }
-#sns .snsContainer .snsWrap:nth-of-type(5) p:nth-of-type(2) {
-  font: 16px/1 "Work Sans";
+#sns .swiper-container .swiper-wrapper .swiper-slide p {
+  position: relative;
+  font: 16px/1.8 "Noto Sans KR";
   color: #eee;
-  position: relative;
-  top: -5px;
-  left: 5vw;
+  z-index: 1;
+  margin-bottom: 100px;
 }
-#sns .snsContainer .snsWrap:nth-of-type(6) {
-  flex: 0.5;
-  flex: 0.5;
-  height: 20%;
-  justify-content: flex-start;
-  font: 60px/1 "Work Sans";
-  color: transparent;
-  transform: rotate(90deg);
-  -webkit-text-stroke: 1px #eee;
+#sns .swiper-container .swiper-button-prev {
+  position: absolute;
+  top: 45%;
+  left: 50px;
+  width: 45px;
+  height: 45px;
+  transform: translateY(-200%);
+  margin-top: 0px;
 }
-#sns .snsContainer .snsWrap:nth-of-type(7) {
-  flex: 0.5;
-  font: 70px/1 "Work Sans";
-  justify-content: center;
-  color: transparent;
-  -webkit-text-stroke: 1px #eee;
-  align-items: center;
-  cursor: pointer;
+#sns .swiper-container .swiper-button-next {
+  position: absolute;
+  top: 45%;
+  right: 50px;
+  width: 45px;
+  height: 45px;
+  transform: translateY(-200%);
+  margin-top: 0px;
 }
 
+#showRoom {
+  width: 100vw;
+  height: 750px;
+  background: #f9f9f9;
+  padding: 96px 10vw 96px;
+  display: flex;
+}
+#showRoom .showRoomContainer {
+  width: 100%;
+  height: 100%;
+  background: yellow;
+  display: flex;
+}
+#showRoom .showRoomContainer .showRoomWrap {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#showRoom .showRoomContainer .showRoomWrap:nth-of-type(1) {
+  flex: 1;
+  background: blue;
+}
+#showRoom .showRoomContainer .showRoomWrap:nth-of-type(2) {
+  flex: 2;
+  background: rgb(25, 179, 102);
+}
+
+#notice {
+  width: 100vw;
+  height: 750px;
+  background: white;
+  padding: 0px 10vw 0px;
+}
+#notice .noticeContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 96px 0px 96px;
+}
+#notice .noticeContainer .noticeWrap {
+  width: 100%;
+  height: 100%;
+}
+#notice .noticeContainer .noticeWrap:nth-of-type(1) {
+  flex: 0.5;
+  width: 100%;
+  height: 100%;
+  background: white;
+  padding-top: 60px;
+}
+#notice .noticeContainer .noticeWrap:nth-of-type(1) h4 {
+  font: bold 70px/1 "Noto Sans KR";
+  color: #171717;
+  margin-bottom: 70px;
+}
+#notice .noticeContainer .noticeWrap:nth-of-type(1) .goBtn {
+  font: 18px/1 "Noto Sans KR";
+  color: #171717;
+  margin-bottom: 150px;
+  cursor: pointer;
+}
+#notice .noticeContainer .noticeWrap:nth-of-type(1) .iconWrap {
+  font: 26px/1 "Noto Sans KR";
+  color: #171717;
+  display: flex;
+  gap: 30px;
+}
+#notice .noticeContainer .noticeWrap:nth-of-type(2) {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap {
+  display: flex;
+  width: 50%;
+  height: 50%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  padding-top: 60px;
+  border-left: 1px solid #e9e9e9;
+  cursor: pointer;
+}
+#notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .topic {
+  width: 100%;
+  font: 16px/1 "Noto Sans KR";
+  color: #1188bb;
+  margin-bottom: 20px;
+}
+#notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .titleWrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+#notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .titleWrap h2 {
+  font: bold 24px/1 "Noto Sans KR";
+  color: #171717;
+}
+#notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .titleWrap p {
+  font: 16px/1 "Noto Sans KR";
+  color: #171717;
+}
+#notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .content {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: justify;
+  word-break: break-all;
+}
+#notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .content p {
+  font: 18px/1.6 "Noto Sans KR";
+  color: #171717;
+}
+
+@media screen and (max-width: 1023px) {
+  #notice {
+    height: 744px;
+    padding: 0px 5vw 0px;
+  }
+  #notice .noticeContainer {
+    padding: 96px 0px 96px;
+  }
+  #notice .noticeContainer .noticeWrap:nth-of-type(1) {
+    flex: 0.55;
+    padding-top: 30px;
+  }
+  #notice .noticeContainer .noticeWrap:nth-of-type(1) h4 {
+    font: bold 56px/1 "Noto Sans KR";
+    margin-bottom: 50px;
+  }
+  #notice .noticeContainer .noticeWrap:nth-of-type(1) .goBtn {
+    font: 14.4px/1 "Noto Sans KR";
+    margin-bottom: 48px;
+  }
+  #notice .noticeContainer .noticeWrap:nth-of-type(1) .iconWrap {
+    font: 24px/1 "Noto Sans KR";
+    gap: 20px;
+  }
+  #notice .noticeContainer .noticeWrap:nth-of-type(2) {
+    flex: 1;
+    display: block;
+    flex-direction: column;
+  }
+  #notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 10px;
+    padding-top: 30px;
+    border-left: 1px solid #e9e9e9;
+    padding-left: 40px;
+  }
+  #notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .topic {
+    width: 100%;
+    font: 12.8px/1 "Noto Sans KR";
+    color: #1188bb;
+    margin-bottom: 20px;
+  }
+  #notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .titleWrap {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  #notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .titleWrap h2 {
+    font: bold 19.2px/1 "Noto Sans KR";
+    color: #171717;
+  }
+  #notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .titleWrap p {
+    font: 12.8px/1 "Noto Sans KR";
+    color: #171717;
+  }
+  #notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .content {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: justify;
+    word-break: break-all;
+  }
+  #notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .content p {
+    font: 14.4px/1.6 "Noto Sans KR";
+    color: #171717;
+  }
+}
+@media screen and (max-width: 639px) {
+  #notice {
+    height: 744px;
+    padding: 0px 5vw 0px;
+  }
+  #notice .noticeContainer {
+    padding: 35px 0px 35px;
+    display: block;
+  }
+  #notice .noticeContainer .noticeWrap:nth-of-type(1) {
+    flex: 0.55;
+    height: auto;
+    padding-top: 0px;
+    background: blue;
+  }
+  #notice .noticeContainer .noticeWrap:nth-of-type(1) h4 {
+    width: 50%;
+    font: bold 49px/1 "Noto Sans KR";
+    margin-bottom: 0px;
+    float: left;
+  }
+  #notice .noticeContainer .noticeWrap:nth-of-type(1) .goBtn {
+    width: 50%;
+    font: 12.6px/4 "Noto Sans KR";
+    margin-bottom: 20px;
+    float: right;
+    text-align: end;
+  }
+  #notice .noticeContainer .noticeWrap:nth-of-type(1) .iconWrap {
+    display: none;
+  }
+  #notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap {
+    padding: 0px;
+    padding-top: 30px;
+    border-left: none;
+    padding-left: 0px;
+  }
+  #notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .topic {
+    font: 11.2px/1 "Noto Sans KR";
+  }
+  #notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .titleWrap {
+    margin-bottom: 20px;
+  }
+  #notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .titleWrap h2 {
+    font: bold 16.8px/1 "Noto Sans KR";
+    color: #171717;
+  }
+  #notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .titleWrap p {
+    font: 11.2px/1 "Noto Sans KR";
+    color: #171717;
+  }
+  #notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .content {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: justify;
+    word-break: break-all;
+  }
+  #notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .content p {
+    font: 12.6px/1.5 "Noto Sans KR";
+    color: #171717;
+  }
+}
 .location {
   width: 100vw;
   height: 100vh;
@@ -3871,27 +3563,216 @@ a {
 }
 .members .titContainer {
   width: 100%;
-  height: 300px;
-  padding: 150px 15vw 0px;
+  height: auto;
+  padding: 150px 0vw 250px;
+  margin-bottom: 96px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 96px;
+  justify-content: center;
+}
+.members .titContainer p {
+  position: relative;
+  top: 3vw;
+  font: 20px/1 "Noto Sans KR";
+  color: #333;
+  text-align: center;
+  z-index: 99;
+}
+.members .titContainer img {
+  top: 2vw;
+  width: 100px;
+  margin: 0px auto;
+  height: 100px;
+  position: relative;
+  z-index: 99;
 }
 .members .titContainer h1 {
-  flex: 1;
-  text-align: left;
-  font: bold 70px/1 "Noto Sans KR";
-  color: #333;
-  margin-top: 20px;
+  text-align: center;
+  font: bold 550px/1 "Noto Sans KR";
+  color: #010001;
   margin-bottom: 96px;
+  margin: 0px auto;
+  z-index: 99;
+  position: relative;
+  animation: textBig 3s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+@keyframes textBig {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+.members html {
+  min-height: 100vh;
+}
+.members section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 165vh;
+  margin-top: 480px;
+  padding: 0px 0vw 0px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.members .box1 {
+  z-index: 1;
+  position: relative;
+}
+.members .box1:nth-of-type(1) {
+  grid-column: 1/span 1;
+  grid-row: 1/span 1;
+  background-color: #fedc01;
+  transition: clip-path 1s linear;
+  clip-path: circle(0px at center);
+}
+.members .box1:nth-of-type(2) {
+  grid-column: 2/span 1;
+  grid-row: 1/span 1;
+  background-color: #fedc01;
+  transition: clip-path 1s linear;
+  clip-path: circle(0px at center);
+}
+.members section .box1:nth-child(3) {
+  grid-column: 3/span 1;
+  grid-row: 1/span 1;
+  background-color: #fedc01;
+  transition: clip-path 1s linear;
+  clip-path: circle(0px at center);
+}
+.members section .box:nth-child(4) {
+  grid-column: 4/span 1;
+  grid-row: 1/span 1;
+  background-color: #fedc01;
+  transition: clip-path 1s linear;
+  clip-path: circle(0px at center);
+}
+.members .box1:nth-of-type(5) {
+  grid-column: 1/span 1;
+  grid-row: 2/span 1;
+  background-color: #fedc01;
+  transition: clip-path 1s linear;
+  clip-path: circle(0px at center);
+}
+.members .box1:nth-of-type(6) {
+  grid-column: 2/span 1;
+  grid-row: 2/span 1;
+  background-color: #fedc01;
+  transition: clip-path 1s linear;
+  clip-path: circle(0px at center);
+}
+.members section .box1:nth-child(7) {
+  grid-column: 3/span 1;
+  grid-row: 2/span 1;
+  background-color: #fedc01;
+  transition: clip-path 1s linear;
+  clip-path: circle(0px at center);
+}
+.members section .box:nth-child(8) {
+  grid-column: 4/span 1;
+  grid-row: 2/span 1;
+  background-color: #fedc01;
+  transition: clip-path 1s linear;
+  clip-path: circle(0px at center);
+}
+.members .box1:nth-of-type(9) {
+  grid-column: 1/span 1;
+  grid-row: 3/span 1;
+  background-color: #fedc01;
+  transition: clip-path 1s linear;
+  clip-path: circle(0px at center);
+}
+.members .box1:nth-of-type(10) {
+  grid-column: 2/span 1;
+  grid-row: 3/span 1;
+  background-color: #fedc01;
+  transition: clip-path 1s linear;
+  clip-path: circle(0px at center);
+}
+.members section .box1:nth-child(11) {
+  grid-column: 3/span 1;
+  grid-row: 3/span 1;
+  background-color: #fedc01;
+  transition: clip-path 1s linear;
+  clip-path: circle(0px at center);
+}
+.members section .box:nth-child(12) {
+  grid-column: 4/span 1;
+  grid-row: 3/span 1;
+  background-color: #fedc01;
+  transition: clip-path 1s linear;
+  clip-path: circle(0px at center);
+}
+.members .box1:nth-of-type(13) {
+  grid-column: 1/span 1;
+  grid-row: 4/span 1;
+  background-color: #fedc01;
+  transition: clip-path 1s linear;
+  clip-path: circle(0px at center);
+}
+.members .box1:nth-of-type(14) {
+  grid-column: 2/span 1;
+  grid-row: 4/span 1;
+  background-color: #fedc01;
+  transition: clip-path 1s linear;
+  clip-path: circle(0px at center);
+}
+.members section .box1:nth-child(15) {
+  grid-column: 3/span 1;
+  grid-row: 4/span 1;
+  background-color: #fedc01;
+  transition: clip-path 1s linear;
+  clip-path: circle(0px at center);
+}
+.members section .box:nth-child(16) {
+  grid-column: 4/span 1;
+  grid-row: 4/span 1;
+  background-color: #fedc01;
+  transition: clip-path 1s linear;
+  clip-path: circle(0px at center);
+}
+.members .middleText {
+  width: 100%;
+  height: 300px;
+  font: 25px/1.4 "Noto Sans KR";
+  color: #333;
+  text-align: center;
+  padding: 150px 15vw 0px;
+}
+.members .middleText p {
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  animation: appearContents 5s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 5s;
+  transition: opacity 0.5s;
+}
+@keyframes appearContents {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .members .slider {
   width: 100%;
   height: 584px;
   margin: 0 auto;
-  position: relative;
+  margin-top: 20px;
   background: tomato;
   overflow: hidden;
+  position: relative;
+  z-index: 99;
+  top: 0;
+  left: 0;
   margin-bottom: 100px;
 }
 .members .slide {
@@ -3904,18 +3785,18 @@ a {
   line-height: 300px;
   display: inline-block;
 }
-.members .slide:nth-of-type(1) {
+.members .slide:nth-of-type(4) {
   width: 100%;
   height: 100%;
   background: #ff9dd1;
   padding: 40px;
 }
-.members .slide:nth-of-type(1) .slideBox {
+.members .slide:nth-of-type(4) .slideBox {
   width: 100%;
   height: 100%;
   display: flex;
 }
-.members .slide:nth-of-type(1) .slideBox .left {
+.members .slide:nth-of-type(4) .slideBox .left {
   flex: 1;
   width: 100%;
   height: 100%;
@@ -3924,29 +3805,29 @@ a {
   background-repeat: no-repeat;
   background-position: right;
 }
-.members .slide:nth-of-type(1) .slideBox .right {
+.members .slide:nth-of-type(4) .slideBox .right {
   flex: 1.7;
   width: 100%;
   height: 100%;
   text-align: left;
   padding: 25px 0px 0px 70px;
 }
-.members .slide:nth-of-type(1) .slideBox .right h3 {
+.members .slide:nth-of-type(4) .slideBox .right h3 {
   font: 14px/1 "Noto Sans KR";
   color: #333;
   margin-bottom: 15px;
 }
-.members .slide:nth-of-type(1) .slideBox .right h2 {
+.members .slide:nth-of-type(4) .slideBox .right h2 {
   font: bold 36px/1 "Noto Sans KR";
   color: #333;
   margin-bottom: 20px;
 }
-.members .slide:nth-of-type(1) .slideBox .right p {
+.members .slide:nth-of-type(4) .slideBox .right p {
   font: 16px/1.8 "Noto Sans KR";
   color: #333;
   padding-right: 20vw;
 }
-.members .slide:nth-of-type(1) .slideBox .right p span {
+.members .slide:nth-of-type(4) .slideBox .right p span {
   font: 25px/1 "Noto Sans KR";
   color: #333;
 }
@@ -4042,18 +3923,18 @@ a {
   font: 25px/1 "Noto Sans KR";
   color: #333;
 }
-.members .slide:nth-of-type(4) {
+.members .slide:nth-of-type(1) {
   width: 100%;
   height: 100%;
   background: #fedc01;
   padding: 40px;
 }
-.members .slide:nth-of-type(4) .slideBox {
+.members .slide:nth-of-type(1) .slideBox {
   width: 100%;
   height: 100%;
   display: flex;
 }
-.members .slide:nth-of-type(4) .slideBox .left {
+.members .slide:nth-of-type(1) .slideBox .left {
   flex: 1;
   width: 100%;
   height: 100%;
@@ -4062,29 +3943,29 @@ a {
   background-repeat: no-repeat;
   background-position: right;
 }
-.members .slide:nth-of-type(4) .slideBox .right {
+.members .slide:nth-of-type(1) .slideBox .right {
   flex: 1.7;
   width: 100%;
   height: 100%;
   text-align: left;
   padding: 25px 0px 0px 70px;
 }
-.members .slide:nth-of-type(4) .slideBox .right h3 {
+.members .slide:nth-of-type(1) .slideBox .right h3 {
   font: 14px/1 "Noto Sans KR";
   color: #333;
   margin-bottom: 15px;
 }
-.members .slide:nth-of-type(4) .slideBox .right h2 {
+.members .slide:nth-of-type(1) .slideBox .right h2 {
   font: bold 36px/1 "Noto Sans KR";
   color: #333;
   margin-bottom: 20px;
 }
-.members .slide:nth-of-type(4) .slideBox .right p {
+.members .slide:nth-of-type(1) .slideBox .right p {
   font: 16px/1.8 "Noto Sans KR";
   color: #333;
   padding-right: 20vw;
 }
-.members .slide:nth-of-type(4) .slideBox .right p span {
+.members .slide:nth-of-type(1) .slideBox .right p span {
   font: 25px/1 "Noto Sans KR";
   color: #333;
 }
@@ -4378,7 +4259,7 @@ a {
 }
 .members .membersBox:nth-of-type(1) .membersDesc p {
   width: 90%;
-  font: 18px/1.2 "Noto Sans KR";
+  font: 16px/1.8 "Noto Sans KR";
   color: #333;
 }
 .members .membersBox:nth-of-type(1) .membersImg {
@@ -4397,7 +4278,7 @@ a {
   width: 500px;
   height: 500px;
   position: relative;
-  background: #fec202;
+  background: #fedc01;
   z-index: 999;
   transform: translate(50%, 40%);
   opacity: 0.6;
@@ -4441,7 +4322,7 @@ a {
 }
 .members .membersBox:nth-of-type(2) .membersDesc p {
   width: 90%;
-  font: 18px/1.2 "Noto Sans KR";
+  font: 16px/1.8 "Noto Sans KR";
   color: #333;
   text-align: right;
   margin-left: 10%;
@@ -4462,7 +4343,7 @@ a {
   width: 650px;
   height: 300px;
   position: relative;
-  background: #fec202;
+  background: #fedc01;
   z-index: 999;
   transform: translate(15%, 40%);
   opacity: 0.6;
@@ -4504,7 +4385,7 @@ a {
 }
 .members .membersBox:nth-of-type(3) .membersDesc p {
   width: 90%;
-  font: 18px/1.2 "Noto Sans KR";
+  font: 16px/1.8 "Noto Sans KR";
   color: #333;
 }
 .members .membersBox:nth-of-type(3) .membersImg {
@@ -4523,7 +4404,7 @@ a {
   width: 700px;
   height: 500px;
   position: relative;
-  background: #fec202;
+  background: #fedc01;
   z-index: 999;
   transform: translate(30%, 40%);
   opacity: 0.6;
@@ -4568,7 +4449,7 @@ a {
 }
 .members .membersBox:nth-of-type(4) .membersDesc p {
   width: 90%;
-  font: 18px/1.2 "Noto Sans KR";
+  font: 16px/1.8 "Noto Sans KR";
   color: #333;
   text-align: right;
   margin-left: 10%;
@@ -4589,304 +4470,13 @@ a {
   width: 600px;
   height: 500px;
   position: relative;
-  background: #fec202;
+  background: #fedc01;
   z-index: 999;
   transform: translate(20%, 20%);
   opacity: 0.6;
   mix-blend-mode: darken;
 }
 
-@media screen and (max-width: 1023px) {
-  .members .subVisual {
-    height: 480px;
-  }
-  .members .subVisual .background {
-    width: 50%;
-    height: 80px;
-    background: rgb(192, 110, 110);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-  .members .titContainer {
-    width: 100%;
-    height: 300px;
-    padding: 150px 15vw 150px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 96px;
-  }
-  .members .titContainer h1 {
-    flex: 1;
-    text-align: left;
-    font: bold 70px/1 "Noto Sans KR";
-    color: #333;
-    margin-top: 20px;
-    margin-bottom: 96px;
-  }
-  .members .membersBox {
-    width: 100%;
-    height: 754px;
-    padding: 0px 15vw 0px;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    margin-bottom: 50px;
-  }
-  .members .membersBox:nth-of-type(1) {
-    width: 100%;
-    height: 519px;
-    display: flex;
-  }
-  .members .membersBox:nth-of-type(1) .membersName {
-    flex: 1;
-    height: 50px;
-    padding: 180px 0px;
-  }
-  .members .membersBox:nth-of-type(1) .membersName h1 {
-    font: bold 50px/1 "Noto Sans KR";
-    color: #333;
-    margin-bottom: 20px;
-  }
-  .members .membersBox:nth-of-type(1) .membersName h3 {
-    font: 20px/1 "Noto Sans KR";
-    color: rgba(16, 16, 16, 0.6);
-  }
-  .members .membersBox:nth-of-type(1) .membersDesc {
-    font: 18px/1 "Noto Sans KR";
-    color: #333;
-    text-align: justify;
-    word-break: break-all;
-    padding: 60px 0px 60px;
-    width: 35%;
-    height: 240px;
-    background: rgb(255, 255, 255);
-    position: absolute;
-    z-index: 500;
-    bottom: 0;
-    left: 0;
-    margin-left: 15vw;
-  }
-  .members .membersBox:nth-of-type(1) .membersDesc p {
-    width: 90%;
-    font: bold 18px/1.2 "Noto Sans KR";
-    color: #333;
-  }
-  .members .membersBox:nth-of-type(1) .membersImg {
-    flex: 2;
-    width: 50%;
-    height: 100%;
-    background: rgb(32, 32, 32);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    z-index: -5;
-    overflow: hidden;
-  }
-  .members .membersBox:nth-of-type(1) .membersImg .colorBg {
-    width: 500px;
-    height: 500px;
-    position: relative;
-    background: #fec202;
-    z-index: 999;
-    transform: translate(50%, 40%);
-    opacity: 0.6;
-    mix-blend-mode: darken;
-  }
-  .members .membersBox:nth-of-type(2) {
-    width: 100%;
-    height: 519px;
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  .members .membersBox:nth-of-type(2) .membersName {
-    flex: 1;
-    height: 50px;
-    padding: 180px 0px;
-    text-align: right;
-  }
-  .members .membersBox:nth-of-type(2) .membersName h1 {
-    font: bold 50px/1 "Noto Sans KR";
-    color: #333;
-    margin-bottom: 20px;
-  }
-  .members .membersBox:nth-of-type(2) .membersName h3 {
-    font: 20px/1 "Noto Sans KR";
-    color: rgba(16, 16, 16, 0.6);
-  }
-  .members .membersBox:nth-of-type(2) .membersDesc {
-    font: 18px/1 "Noto Sans KR";
-    color: #333;
-    text-align: justify;
-    word-break: break-all;
-    padding: 60px 0px 60px;
-    width: 35%;
-    height: 240px;
-    background: rgb(255, 255, 255);
-    position: absolute;
-    z-index: 500;
-    bottom: 0;
-    right: 0;
-    margin-right: 15vw;
-  }
-  .members .membersBox:nth-of-type(2) .membersDesc p {
-    width: 90%;
-    font: bold 18px/1.2 "Noto Sans KR";
-    color: #333;
-    text-align: right;
-    margin-left: 10%;
-  }
-  .members .membersBox:nth-of-type(2) .membersImg {
-    flex: 2;
-    width: 50%;
-    height: 100%;
-    background: rgb(32, 32, 32);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    z-index: -5;
-    overflow: hidden;
-  }
-  .members .membersBox:nth-of-type(2) .membersImg .colorBg {
-    width: 650px;
-    height: 300px;
-    position: relative;
-    background: #fec202;
-    z-index: 999;
-    transform: translate(15%, 40%);
-    opacity: 0.6;
-    mix-blend-mode: darken;
-  }
-  .members .membersBox:nth-of-type(3) {
-    width: 100%;
-    height: 519px;
-    display: flex;
-  }
-  .members .membersBox:nth-of-type(3) .membersName {
-    flex: 1;
-    height: 50px;
-    padding: 180px 0px;
-  }
-  .members .membersBox:nth-of-type(3) .membersName h1 {
-    font: bold 50px/1 "Noto Sans KR";
-    color: #333;
-    margin-bottom: 20px;
-  }
-  .members .membersBox:nth-of-type(3) .membersName h3 {
-    font: 20px/1 "Noto Sans KR";
-    color: rgba(16, 16, 16, 0.6);
-  }
-  .members .membersBox:nth-of-type(3) .membersDesc {
-    font: 18px/1 "Noto Sans KR";
-    color: #333;
-    text-align: justify;
-    word-break: break-all;
-    padding: 60px 0px 60px;
-    width: 35%;
-    height: 240px;
-    background: rgb(255, 255, 255);
-    position: absolute;
-    z-index: 500;
-    bottom: 0;
-    left: 0;
-    margin-left: 15vw;
-  }
-  .members .membersBox:nth-of-type(3) .membersDesc p {
-    width: 90%;
-    font: bold 18px/1.2 "Noto Sans KR";
-    color: #333;
-  }
-  .members .membersBox:nth-of-type(3) .membersImg {
-    flex: 2;
-    width: 50%;
-    height: 100%;
-    background: rgb(32, 32, 32);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    z-index: -5;
-    overflow: hidden;
-  }
-  .members .membersBox:nth-of-type(3) .membersImg .colorBg {
-    width: 700px;
-    height: 500px;
-    position: relative;
-    background: #fec202;
-    z-index: 999;
-    transform: translate(30%, 40%);
-    opacity: 0.6;
-    mix-blend-mode: darken;
-  }
-  .members .membersBox:nth-of-type(4) {
-    width: 100%;
-    height: 519px;
-    display: flex;
-    flex-direction: row-reverse;
-    margin-bottom: 150px;
-  }
-  .members .membersBox:nth-of-type(4) .membersName {
-    flex: 1;
-    height: 50px;
-    padding: 180px 0px;
-    text-align: right;
-  }
-  .members .membersBox:nth-of-type(4) .membersName h1 {
-    font: bold 50px/1 "Noto Sans KR";
-    color: #333;
-    margin-bottom: 20px;
-  }
-  .members .membersBox:nth-of-type(4) .membersName h3 {
-    font: 20px/1 "Noto Sans KR";
-    color: rgba(16, 16, 16, 0.6);
-  }
-  .members .membersBox:nth-of-type(4) .membersDesc {
-    font: 18px/1 "Noto Sans KR";
-    color: #333;
-    text-align: justify;
-    word-break: break-all;
-    padding: 60px 0px 60px;
-    width: 35%;
-    height: 240px;
-    background: rgb(255, 255, 255);
-    position: absolute;
-    z-index: 500;
-    bottom: 0;
-    right: 0;
-    margin-right: 15vw;
-  }
-  .members .membersBox:nth-of-type(4) .membersDesc p {
-    width: 90%;
-    font: bold 18px/1.2 "Noto Sans KR";
-    color: #333;
-    text-align: right;
-    margin-left: 10%;
-  }
-  .members .membersBox:nth-of-type(4) .membersImg {
-    flex: 2;
-    width: 50%;
-    height: 100%;
-    background: rgb(32, 32, 32);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    z-index: -5;
-    overflow: hidden;
-  }
-  .members .membersBox:nth-of-type(4) .membersImg .colorBg {
-    width: 600px;
-    height: 500px;
-    position: relative;
-    background: #fec202;
-    z-index: 999;
-    transform: translate(20%, 20%);
-    opacity: 0.6;
-    mix-blend-mode: darken;
-  }
-}
 .signUp {
   width: 100vw;
   height: 100vh;
@@ -5664,7 +5254,7 @@ a {
 }
 .video {
   width: 100vw;
-  height: 100vh;
+  min-height: calc(100vh - 461px);
 }
 .video .subVisual {
   width: 100%;
@@ -5714,7 +5304,7 @@ a {
 .video .subtitle .subLeft h3 {
   font: 26px/1 "Noto Sans KR";
   color: #eee;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .video .subtitle .subLeft .title {
   font: bold 51px/1.3 "Noto Sans KR";
@@ -5723,6 +5313,7 @@ a {
   -webkit-background-clip: text;
   color: transparent;
   animation: animation 1.7s linear infinite;
+  margin-bottom: 15px;
 }
 @keyframes animation {
   to {
@@ -5741,17 +5332,50 @@ a {
   transform: translate(-15%, 5%);
   width: 238px;
   height: 238px;
-  position: relative;
 }
 .video .subtitle .subRight {
   width: 50%;
-  height: 220%;
-  margin-top: -26vw;
+  height: 200%;
+  margin-top: -395px;
+  position: relative;
 }
 .video .subtitle .subRight video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.video .subtitle .subRight .pauseBtn {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  position: absolute;
+  z-index: 9999;
+  bottom: 30px;
+  left: 30px;
+  font: 26px/1 "Noto Sans KR";
+  color: #eee;
+  background-image: url(../img/pauseWhite.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+}
+.video .subtitle .subRight .playBtn {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  position: absolute;
+  z-index: 9999;
+  bottom: 30px;
+  left: 30px;
+  font: 26px/1 "Noto Sans KR";
+  color: #eee;
+  background-image: url(../img/playWhite.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  display: none;
 }
 .video .middleText {
   width: 100%;
@@ -5783,6 +5407,7 @@ a {
   cursor: pointer;
   background: radial-gradient(circle, #7f7fd5, #86a8e7, #91eae4);
   background-size: 200%;
+  border: none;
   animation: animation 1.7s linear infinite;
 }
 @keyframes animation {
@@ -5801,12 +5426,46 @@ a {
 .video .imgBoxContainer .imgBoxLeft {
   width: 50%;
   height: 100%;
+  position: relative;
 }
 .video .imgBoxContainer .imgBoxLeft video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+.video .imgBoxContainer .imgBoxLeft .pauseBtn2 {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  position: absolute;
+  z-index: 9999;
+  bottom: 30px;
+  left: 30px;
+  font: 26px/1 "Noto Sans KR";
+  color: #eee;
+  background-image: url(../img/pauseWhite.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+}
+.video .imgBoxContainer .imgBoxLeft .playBtn2 {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  position: absolute;
+  z-index: 9999;
+  bottom: 30px;
+  left: 30px;
+  font: 26px/1 "Noto Sans KR";
+  color: #eee;
+  background-image: url(../img/playWhite.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  display: none;
 }
 .video .imgBoxContainer .imgBoxRight {
   width: 50%;
@@ -5823,14 +5482,28 @@ a {
   flex: 1;
   width: 50%;
   height: 100%;
-  background: lightblue;
   overflow: hidden;
+  position: relative;
+  cursor: pointer;
 }
 .video .imgBoxContainer .imgBoxRight .imgBoxTop .imgBox1 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+.video .imgBoxContainer .imgBoxRight .imgBoxTop .imgBox1 button {
+  width: 80px;
+  height: 80px;
+  background: #dcdcdc;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font: bold 16px/1 "Noto Sans KR";
+  color: #333;
+  cursor: pointer;
 }
 .video .imgBoxContainer .imgBoxRight .imgBoxTop .imgBox2 {
   flex: 1;
@@ -5885,7 +5558,13 @@ a {
   flex: 1;
   width: 50%;
   height: 100%;
-  border: 1px solid red;
+  overflow: hidden;
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+.video .imbedVideoContainer .imbedVideo iframe {
+  width: 100%;
 }
 .video .btnContainer {
   width: 100%;
@@ -5903,6 +5582,7 @@ a {
   border-radius: 50px;
   margin: 0px auto;
   cursor: pointer;
+  border: none;
   background: radial-gradient(circle, #7f7fd5, #86a8e7, #91eae4);
   background-size: 200%;
   animation: animation 1.7s linear infinite;
@@ -5916,9 +5596,8 @@ a {
   width: 100%;
   height: auto;
   background: #090909;
-  padding: 150px 15vw 150px;
+  padding: 150px 15vw 100px;
   flex-direction: row;
-  margin-bottom: 150px;
 }
 .video .videoListContainer .container {
   width: 100%;
@@ -5986,6 +5665,10 @@ a {
   .video .subVisual {
     height: 380px;
   }
+  .video .subVisual video {
+    object-fit: contain;
+    object-position: -55vw -48vw;
+  }
   .video .subVisual .background {
     background: #090909;
   }
@@ -6046,7 +5729,6 @@ a {
     flex: 1;
     width: 100%;
     height: 479px;
-    background: grey;
   }
   .video .btnContainer {
     width: 100%;
@@ -6075,6 +5757,149 @@ a {
     margin-top: 3vw;
     font: 16px/1.5 "Noto Sans KR";
     color: #e9e9e9;
+  }
+  .video .videoListContainer .container .videoCircle {
+    width: 100%;
+    height: 100%;
+    background-color: #f9f9f9;
+    border-radius: 50%;
+  }
+}
+@media screen and (max-width: 639px) {
+  .video .subVisual {
+    height: 300px;
+  }
+  .video .subVisual video {
+    object-position: -205vw -110vw;
+  }
+  .video .subVisual .background {
+    background: #090909;
+  }
+  .video .titContainer {
+    padding: 96px 5vw 0px;
+    background: #090909;
+  }
+  .video .titContainer h1 {
+    font: bold 36px/1 "Noto Sans KR";
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  .video .subtitle {
+    height: auto;
+    padding: 0px 5vw 50px;
+  }
+  .video .subtitle .subLeft {
+    padding-top: 56px;
+  }
+  .video .subtitle .subLeft h3 {
+    font: 25px/1 "Noto Sans KR";
+    white-space: nowrap;
+  }
+  .video .subtitle .subLeft .title {
+    font: bold 36px/1.3 "Noto Sans KR";
+  }
+  .video .subtitle .subLeft p {
+    font: 16px/1.6 "Noto Sans KR";
+    width: 120%;
+  }
+  .video .subtitle .subLeft img {
+    width: 130px;
+    height: 130px;
+  }
+  .video .subtitle .subRight {
+    width: 100%;
+    height: 500px;
+    margin-top: -10vw;
+  }
+  .video .subtitle .subRight video {
+    width: 100%;
+    height: 100%;
+  }
+  .video .middleText {
+    padding: 0px 5vw 26px;
+  }
+  .video .middleText p {
+    font: 16px/1.6 "Noto Sans KR";
+    margin-bottom: 66px;
+  }
+  .video .middleText button {
+    width: 215px;
+    height: 40px;
+    font: 12px/1 "Noto Sans KR";
+    border: none;
+  }
+  .video .imgBoxContainer {
+    width: 100%;
+    height: auto;
+    padding: 0px 5vw 50px;
+  }
+  .video .imgBoxContainer .imgBoxLeft {
+    width: 100%;
+    height: 500px;
+  }
+  .video .imgBoxContainer .imgBoxLeft video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .video .imgBoxContainer .imgBoxRight {
+    width: 100%;
+    height: 100%;
+  }
+  .video .imgBoxContainer .imgBoxRight .imgBoxTop {
+    width: 100;
+    height: 100%;
+    display: block;
+  }
+  .video .imgBoxContainer .imgBoxRight .imgBoxTop .imgBox1 {
+    width: 100%;
+    height: 368px;
+  }
+  .video .imgBoxContainer .imgBoxRight .imgBoxTop .imgBox1 img {
+    width: 100%;
+  }
+  .video .imgBoxContainer .imgBoxRight .imgBoxTop .imgBox2 {
+    width: 100%;
+    height: 368px;
+  }
+  .video .imgBoxContainer .imgBoxRight .imgBoxDown {
+    width: 100%;
+    height: 368px;
+  }
+  .video .imbedVideoContainer {
+    height: 460px;
+    padding: 0px 5vw 0px;
+  }
+  .video .imbedVideoContainer .imbedText {
+    width: 100%;
+    height: 217px;
+  }
+  .video .imbedVideoContainer .imbedVideo {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0;
+  }
+  .video .imbedVideoContainer .imbedVideo iframe {
+    width: 100%;
+    height: 100%;
+  }
+  .video .btnContainer {
+    padding: 55px 5vw 0px;
+  }
+  .video .btnContainer button {
+    width: 215px;
+    height: 40px;
+    font: 12px/1 "Noto Sans KR";
+  }
+  .video .videoListContainer {
+    padding: 80px 5vw 150px;
+  }
+  .video .videoListContainer .container .viedoBox1 .textBox {
+    padding: 30px;
+  }
+  .video .videoListContainer .container .viedoBox1 .textBox h3 {
+    font: 25px/1.5 "Noto Sans KR";
   }
   .video .videoListContainer .container .videoCircle {
     width: 100%;

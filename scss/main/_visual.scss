@@ -33,7 +33,7 @@
 			// Main pointBox1 (none color box)
 			&:nth-of-type(8) {
 				padding: 15px 1vw 0px;
-				font: 18px/1 $ikeaFont;
+				font: 18px/1 $ikeaFontKo;
 				color: $grey;
 				border: 1px solid $fontColorW;
 				cursor: pointer;
@@ -48,7 +48,7 @@
 
 			&:nth-of-type(9) {
 				padding: 170px 1vw 15px;
-				font: 18px/1 $ikeaFont;
+				font: 18px/1 $ikeaFontKo;
 				color: $grey;
 				text-align: start;
 			}
@@ -63,15 +63,15 @@
 				padding: 60px 0vw 0px;
 
 				h1 {
-					width: 80%;
-					font: 30px/1 $ikeaFont;
-					color: $grey;
+					width: 100%;
+					font: 30px/1 $ikeaFontKo;
+					color: #cdcdcd;
 					text-align: justify;
 					word-break: break-all;
 				}
 
 				p {
-					font: 18px/1 $ikeaFont;
+					font: 18px/1 $ikeaFontKo;
 					color: $fontColorGr;
 					text-align: justify;
 					word-break: break-all;
@@ -83,7 +83,7 @@
 			&:nth-of-type(13) {
 				text-align: end;
 				padding: 170px 1vw 15px;
-				font: 18px/1 $ikeaFont;
+				font: 18px/1 $ikeaFontKo;
 				color: $grey;
 				border: 1px solid $fontColorW;
 				cursor: pointer;
@@ -124,7 +124,7 @@
 				&:nth-of-type(12) {
 					h1 {
 						width: 90%;
-						font: 28px/1 $ikeaFont;
+						font: 28px/1 $ikeaFontKo;
 					}
 				}
 

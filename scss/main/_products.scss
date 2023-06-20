@@ -19,7 +19,7 @@
 			height: 100%;
 			flex: 1;
 			background: $bgW;
-			font: 70px/180px $ikeaFont;
+			font: 70px/180px $ikeaFontKo;
 			color: $fontColorBl;
 		}
 
@@ -63,7 +63,7 @@
 						}
 						.productsName {
 							text-align: center;
-							font: 18px/25px $ikeaFont;
+							font: 18px/25px $ikeaFontKo;
 							color: $fontColorBl;
 							margin-top: auto;
 						}
@@ -111,7 +111,7 @@
 						align-items: center;
 						flex: 1;
 						background: $ikeaBl;
-						font: 26px $ikeaFont;
+						font: 26px $ikeaFontKo;
 						color: $fontColorW;
 						cursor: pointer;
 					}
@@ -125,7 +125,7 @@
 						align-items: center;
 						flex: 1;
 						background: $ikeaBl;
-						font: 26px/5px $ikeaFont;
+						font: 26px/5px $ikeaFontKo;
 						color: $fontColorW;
 						cursor: pointer;
 					}
@@ -159,7 +159,7 @@
 				.hyperBtns {
 					width: calc(100% / 5);
 					height: 100%;
-					font: 18px/1 $ikeaFont;
+					font: 18px/1 $ikeaFontKo;
 					color: $fontColorBl;
 					display: flex;
 					padding: 0px 0vw 0px;
@@ -216,7 +216,7 @@
 
 		.productsContainer {
 			.productsTit {
-				font: 50px/180px $ikeaFont;
+				font: 50px/180px $ikeaFontKo;
 			}
 
 			.productsSub {

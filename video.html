@@ -72,20 +72,26 @@
 
     <!-- video sub title -->
     <div class="subtitle">
+
       <!-- video sub title_left side -->
       <div class="subLeft">
         <h3>The OBEGRÄNSAD collection</h3>
-        <div class="title">Find your sound</div>span>
-          <p>Home is the new studio! Created together with electronic music artists, Swedish House Mafia, this
-            just-launched collection helps music makers and other creatives to find their state of flow, wherever they
-            call home.</p>
-          <img src="img/arrowDown.png">
+        <div class="title">Find your sound</div>
+        <p>Home is the new studio! Created together with electronic music artists, Swedish House Mafia, this
+          just-launched collection helps music makers and other creatives to find their state of flow, wherever they
+          call home.</p>
+        <img src="img/arrowDown.png">
       </div>
       <!-- video sub title_right side -->
       <figure class="subRight">
-        <video src="img/SHM.mp4" autoplay muted loop>
-      </figure>
+        <div class="videoBtnContainer">
+          <span><button class="pauseBtn"></button></span>
+          <span><button class="playBtn"></button></span>
+        </div>
+        <video class="vidSubTit" src="img/SHM.mp4" autoplay muted loop>
     </div>
+    </figure>
+
 
     <div class="middleText">
       <p>Almost every musician – even Swedish House Mafia – started out at home. Maybe with just a guitar in the
@@ -98,12 +104,19 @@
 
     <div class="imgBoxContainer">
       <figure class="imgBoxLeft">
-        <video src="img/imgBoxRight_video.mp4" autoplay muted loop></video>
+        <div class="videoBtnContainer2">
+          <span><button class="pauseBtn2"></button></span>
+          <span><button class="playBtn2"></button></span>
+        </div>
+        <video class="vidImgBox" src="img/imgBoxRight_video.mp4" autoplay muted loop></video>
       </figure>
 
       <div class="imgBoxRight">
         <div class="imgBoxTop">
-          <div class="imgBox1"><img src="img/video_imgBox1.png"> </div>
+          <div class="imgBox1"><img class="changeImg" src="img/imgBoxGroup1.png">
+
+            <button><span id="result">1</span>&nbsp;/&nbsp;5</button>
+          </div>
           <div class="imgBox2"><img src="img/video_imgBox2.png"></div>
 
         </div>
@@ -127,7 +140,7 @@
           collection.</p>
       </div>
       <div class="imbedVideo"><iframe width="787.5" height="453.39"
-          src="https://www.youtube.com/embed/qFnEbDsbdRE?autoplay=1&mute=1&playsinline=1"
+          src="https://www.youtube.com/embed/qFnEbDsbdRE?cc_load_policy=0&autoplay=1&mute=1&playsinline=1&rel=0&loop=1&playlist=qFnEbDsbdRE&controls=0"
           title="OBEGRÄNSAD collection feat. IKEA and Swedish House Mafia" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe></div>
@@ -148,7 +161,33 @@
   <!-- video end -->
 
 
+  <footer>
+    <img src="../img/videoFooterTop.png" alt="">
+    <div class="footerContainer">
+      <div class="footerCategory">
+        <ul>
+          <li>International sales</li>
+          <li>About IKEA</li>
+          <li>IKEA Museum</li>
+          <li>Work with us</li>
+          <li>Ethics</li>
+        </ul>
+      </div>
 
+      <div class="footerLeftCategory">
+        <ul>
+          <li>Cookie information</li>
+          <li>Privacy statment</li>
+        </ul>
+        <ul>
+          <li>© Inter IKEA Systems B.V. 1999 - 2023</li>
+        </ul>
+        <ul>
+          <li>Co-worker Login</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
