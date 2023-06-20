@@ -9,14 +9,16 @@
 	.bgLeft {
 		width: 50%;
 		height: 100%;
-		background-image: url('../img/imgBoxGroup1.png');
+		background-image: url('../img/smartHome1.png');
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 
 	.bgRight {
 		width: 50%;
 		height: 100%;
 		float: right;
-		background: $ikeaYellow;
+		background: #4881c2;
 	}
 
 	.container {
@@ -27,6 +29,7 @@
 		position: absolute;
 		z-index: 99;
 	}
+
 	.swiper-container {
 		width: 100%;
 		height: 100%;
@@ -51,7 +54,7 @@
 
 				h3 {
 					position: relative;
-					font: 18px/1 $ikeaFontKo;
+					font: 16px/1 $ikeaFontKo;
 					color: $fontColorW;
 					margin-bottom: 50px;
 					z-index: 1;
@@ -59,7 +62,7 @@
 
 				h2 {
 					position: relative;
-					font: bold 30px/1 $ikeaFontKo;
+					font: bold 24px/1 $ikeaFontKo;
 					color: $fontColorW;
 					z-index: 1;
 					margin-bottom: 40px;
@@ -67,7 +70,7 @@
 
 				p {
 					position: relative;
-					font: 16px/1.8 $ikeaFontKo;
+					font: 18px/1.5 $ikeaFontKo;
 					color: $fontColorW;
 					z-index: 1;
 					margin-bottom: 100px;
@@ -77,22 +80,224 @@
 
 		.swiper-button-prev {
 			position: absolute;
-			top: 45%;
+			top: 40%;
 			left: 50px;
-			width: 45px;
-			height: 45px;
+			width: 26px;
+			height: 26px;
 			transform: translateY(-200%);
 			margin-top: 0px;
 		}
 
 		.swiper-button-next {
 			position: absolute;
-			top: 45%;
+			top: 40%;
 			right: 50px;
-			width: 45px;
-			height: 45px;
+			width: 26px;
+			height: 26px;
 			transform: translateY(-200%);
 			margin-top: 0px;
+		}
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	#sns {
+		width: 100vw;
+		height: 600px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: flex;
+
+		.bgLeft {
+			width: 50%;
+			height: 100%;
+		}
+
+		.bgRight {
+			width: 50%;
+			height: 100%;
+			float: right;
+		}
+
+		.container {
+			max-width: 100%;
+			height: 100%;
+			margin: 0 auto;
+			padding: 120px 10vw 96px;
+			position: absolute;
+			z-index: 99;
+		}
+
+		.swiper-container {
+			width: 100%;
+			height: 100%;
+			position: static;
+
+			.swiper-wrapper {
+				.swiper-slide {
+					text-align: center;
+					width: 320px;
+					height: 320px;
+					font-size: 18px;
+					background: rgb(255, 255, 255);
+					border-radius: 50%;
+					background: transparent;
+					border: 2px solid white;
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: cover;
+					text-align: left;
+					position: relative;
+					padding: 80px 64px;
+
+					h3 {
+						position: relative;
+						font: 12.8px/1 $ikeaFontKo;
+						color: $fontColorW;
+						margin-bottom: 25px;
+						z-index: 1;
+					}
+
+					h2 {
+						position: relative;
+						font: bold 19.2px/1 $ikeaFontKo;
+						color: $fontColorW;
+						z-index: 1;
+						margin-bottom: 25px;
+					}
+
+					p {
+						position: relative;
+						font: 14.4px/1.5 $ikeaFontKo;
+						color: $fontColorW;
+						z-index: 1;
+						margin-bottom: 0px;
+						text-align: justify;
+						word-break: break-all;
+					}
+				}
+			}
+
+			.swiper-button-prev {
+				position: absolute;
+				top: 32%;
+				left: 50px;
+				width: 24px;
+				height: 24px;
+				transform: translateY(-200%);
+				margin-top: 0px;
+			}
+
+			.swiper-button-next {
+				position: absolute;
+				top: 32%;
+				right: 50px;
+				width: 24px;
+				height: 24px;
+				transform: translateY(-200%);
+				margin-top: 0px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	#sns {
+		width: 100vw;
+		height: 600px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: flex;
+
+		.bgLeft {
+			width: 50%;
+			height: 100%;
+		}
+
+		.bgRight {
+			width: 50%;
+			height: 100%;
+			float: right;
+		}
+
+		.container {
+			max-width: 100%;
+			height: 100%;
+			margin: 0 auto;
+			padding: 120px 10vw 96px;
+			position: absolute;
+			z-index: 99;
+		}
+
+		.swiper-container {
+			width: 80%;
+			height: 90%;
+			position: static;
+
+			.swiper-wrapper {
+				.swiper-slide {
+					text-align: center;
+					width: 110px;
+					height: 300px;
+					font-size: 18px;
+					backdrop-filter: brightness(0.4);
+					border-radius: 50%;
+					background: transparent;
+					border: none;
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: cover;
+					text-align: left;
+					position: relative;
+					padding: 70px 56px;
+
+					h3 {
+						position: relative;
+						font: 11.2px/1 $ikeaFontKo;
+						color: $fontColorW;
+						margin-bottom: 25px;
+						z-index: 1;
+					}
+
+					h2 {
+						position: relative;
+						font: bold 16.8px/1 $ikeaFontKo;
+						color: $fontColorW;
+						z-index: 1;
+						margin-bottom: 25px;
+					}
+
+					p {
+						position: relative;
+						font: 12.6px/1.5 $ikeaFontKo;
+						color: $fontColorW;
+						z-index: 1;
+						margin-bottom: 100px;
+					}
+				}
+			}
+
+			.swiper-button-prev {
+				position: absolute;
+				top: 30%;
+				left: 30px;
+				width: 24px;
+				height: 24px;
+				transform: translateY(-200%);
+				margin-top: 0px;
+			}
+
+			.swiper-button-next {
+				position: absolute;
+				top: 30%;
+				right: 30px;
+				width: 24px;
+				height: 24px;
+				transform: translateY(-200%);
+				margin-top: 0px;
+			}
 		}
 	}
 }

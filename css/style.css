@@ -2238,7 +2238,7 @@ a {
 #promotion {
   width: 100vw;
   height: 810px;
-  background: linear-gradient(to right, #0058ab, #fff94c);
+  background: linear-gradient(90deg, #2d55d6 0%, #db3885 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2284,237 +2284,60 @@ a {
   flex-wrap: wrap;
   flex-direction: column;
 }
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg {
+#promotion .promotionContainer .promotionWrap:nth-of-type(1) .top {
+  flex: 1;
   width: 100%;
-  height: 50%;
-  flex: 3;
+  height: 100%;
+  margin-top: 60px;
+}
+#promotion .promotionContainer .promotionWrap:nth-of-type(1) .top video {
+  width: 100%;
+  height: 100%;
+}
+#promotion .promotionContainer .promotionWrap:nth-of-type(1) .down {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  margin-top: 25px;
   display: flex;
-  margin: 0px auto;
-  display: flex;
-  gap: 15px;
 }
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery {
-  width: 100%;
+#promotion .promotionContainer .promotionWrap:nth-of-type(1) .down .downLeft {
+  flex: 1;
+  width: 50%;
   height: 100%;
 }
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer {
-  width: 100%;
+#promotion .promotionContainer .promotionWrap:nth-of-type(1) .down .downLeft h3 {
+  font: 24px/1 "Noto Sans KR";
+  color: #eee;
+  margin-bottom: 10px;
+}
+#promotion .promotionContainer .promotionWrap:nth-of-type(1) .down .downLeft h2 {
+  font: bold 24px/1 "Noto Sans KR";
+  color: #eee;
+}
+#promotion .promotionContainer .promotionWrap:nth-of-type(1) .down .downRight {
+  flex: 0.1;
+  width: 50%;
   height: 100%;
-  cursor: pointer;
-  overflow: hidden;
-  position: relative;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer:hover .imgDescHover {
-  display: block;
-  position: absolute;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: scale(1);
-  transition: all 0.3s ease-in-out;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer img:hover {
-  transform: scale(1.05);
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer .imgDescription {
-  display: none;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer .imgDescription .title {
-  font: 18px/1 "Work Sans";
-  color: #171717;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer .imgDescription .category {
-  font: 18px/1 "Work Sans";
-  color: #333;
-  margin-bottom: 5px;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer .imgDescription .p {
-  font: 18px/1 "Work Sans";
-  color: #171717;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer .title {
-  font: 18px/1 "Work Sans";
-  color: #171717;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer .category {
-  font: 18px/1 "Work Sans";
-  color: #333;
-  margin-bottom: 5px;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer .p {
-  font: 18px/1 "Work Sans";
-  color: #171717;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgDescHover {
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  white-space: nowrap;
-  display: none;
-  padding: 1rem;
-  background: white;
-  font-weight: 400;
-  margin-top: 1.25rem;
-  margin-left: -2rem;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 {
-  width: 80%;
-  height: 100%;
-  display: flex;
-  gap: 15px;
-  flex-direction: column;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 {
-  background: rgb(112, 20, 49);
-  width: 100%;
-  height: 40%;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer {
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  overflow: hidden;
-  position: relative;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer:hover .imgDescHover {
-  display: block;
-  position: absolute;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: scale(1);
-  transition: all 0.3s ease-in-out;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer img:hover {
-  transform: scale(1.05);
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer .imgDescription {
-  display: block;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer .imgDescription .title {
-  font: 18px/1 "Work Sans";
-  color: #171717;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer .imgDescription .category {
-  font: 18px/1 "Work Sans";
-  color: #333;
-  margin-bottom: 5px;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer .imgDescription .p {
-  font: 18px/1 "Work Sans";
-  color: #171717;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer .title {
-  font: 18px/1 "Work Sans";
-  color: #171717;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer .category {
-  font: 18px/1 "Work Sans";
-  color: #333;
-  margin-bottom: 5px;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer .p {
-  font: 18px/1 "Work Sans";
-  color: #171717;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgDescHover {
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  white-space: nowrap;
-  display: none;
-  padding: 1rem;
-  background: white;
-  font-weight: 400;
-  margin-top: 1.25rem;
-  margin-left: -2rem;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 {
-  width: 100%;
-  height: 60%;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer {
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  overflow: hidden;
-  position: relative;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer:hover .imgDescHover {
-  display: block;
-  position: absolute;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: scale(1);
-  transition: all 0.3s ease-in-out;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer img:hover {
-  transform: scale(1.05);
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer .imgDescription {
-  display: none;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer .imgDescription .title {
-  font: 18px/1 "Work Sans";
-  color: #171717;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer .imgDescription .category {
-  font: 18px/1 "Work Sans";
-  color: #333;
-  margin-bottom: 5px;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer .imgDescription .p {
-  font: 18px/1 "Work Sans";
-  color: #171717;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer .title {
-  font: 18px/1 "Work Sans";
-  color: #171717;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer .category {
-  font: 18px/1 "Work Sans";
-  color: #333;
-  margin-bottom: 5px;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer .p {
-  font: 18px/1 "Work Sans";
-  color: #171717;
-}
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgDescHover {
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  white-space: nowrap;
-  display: none;
-  padding: 1rem;
-  background: white;
-  font-weight: 400;
-  margin-top: 1.25rem;
-  margin-left: -2rem;
+  font: 22px/1 "Noto Sans KR";
+  color: #eee;
+  text-align: end;
 }
 #promotion .promotionContainer .promotionWrap:nth-of-type(2) {
   width: 100%;
   flex: 1;
   padding: 0;
-  font: 65px/1 "Work Sans";
-  color: #eee;
 }
 #promotion .promotionContainer .promotionWrap:nth-of-type(2) h4 {
   margin: 0px auto;
   text-orientation: upright;
   writing-mode: vertical-rl;
   white-space: wrap;
-  letter-spacing: 0px;
+  word-spacing: -55px;
+  margin-top: 15px;
+  font: bold 80px/1 "Noto Sans KR";
+  color: transparent;
+  -webkit-text-stroke: 1px #eee;
 }
 #promotion .promotionContainer .promotionWrap:nth-of-type(3) {
   width: 100%;
@@ -2522,63 +2345,65 @@ a {
   overflow-x: hidden;
 }
 #promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns {
+  flex: 1;
   width: 100%;
-  height: 100%;
+  height: 90%;
   overflow-y: scroll;
   overflow-x: none;
+  padding-right: 50px;
+  text-align: justify;
+  word-break: break-all;
 }
 #promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns h3 {
-  font: 23px/1 "Work Sans";
+  font: bold 24px/1 "Noto Sans KR";
   color: #eee;
   margin-bottom: 10px;
 }
 #promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns h4 {
-  font: 18px/1 "Work Sans";
-  color: #e9e9e9;
+  font: 18px/1.5 "Noto Sans KR";
+  color: #ffc6ec;
   margin-bottom: 10px;
 }
 #promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns p {
-  font: 18px/1 "Work Sans";
+  font: 16px/1 "Noto Sans KR";
   color: #eee;
 }
 #promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns::-webkit-scrollbar {
-  width: 10px;
+  width: 9px;
 }
 #promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns::-webkit-scrollbar-thumb {
-  background-color: #b4ca68;
+  background-color: #e96aa6;
 }
 #promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns::-webkit-scrollbar-track {
   background-color: transparent;
 }
+#promotion .promotionContainer .promotionWrap:nth-of-type(3) .snsGoBtn {
+  flex: 0.5;
+  width: 100%;
+  height: 10%;
+  font: 16px/1 "Noto Sans KR";
+  color: #eee;
+  margin-left: -60px;
+  text-align: end;
+  margin-top: 20px;
+}
 
 @media screen and (max-width: 1023px) {
   #promotion {
-    width: 100vw;
-    height: 1200px;
-    background: linear-gradient(to right, #0058ab, #fff94c);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    height: auto;
   }
   #promotion .promotionContainer {
-    width: 100vw;
-    height: 900px;
-    display: block;
-    flex-wrap: wrap;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    padding: 0px 10vw 96px;
+    height: 1200px;
+    flex-direction: column;
+    padding: 60px 5vw 60px;
   }
   #promotion .promotionContainer .circleText {
-    width: 440px;
-    height: 440px;
+    width: 540px;
+    height: 540px;
     position: absolute;
     z-index: -1;
-    top: -230px;
-    left: -90px;
+    top: -90px;
+    left: -110px;
     animation: rotateImage 10s linear infinite;
     transform-origin: 50% 50%;
     opacity: 0.5;
@@ -2589,316 +2414,81 @@ a {
     }
   }
   #promotion .promotionContainer .promotionWrap {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+    height: auto;
   }
   #promotion .promotionContainer .promotionWrap:nth-of-type(1) {
-    width: 100%;
-    height: 50%;
-    flex: 2;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex: 1.75;
+    order: 2;
   }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg {
+  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .top {
+    flex: 1;
     width: 100%;
-    height: 50%;
-    flex: 3;
-    display: flex;
-    margin: 0px auto;
-    display: flex;
-    gap: 15px;
+    height: 100%;
+    margin-top: 0px;
   }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery {
+  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .top video {
     width: 100%;
     height: 100%;
   }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    overflow: hidden;
-    position: relative;
+  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .down .downLeft h3 {
+    font: 19.2px/1 "Noto Sans KR";
   }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer:hover .imgDescHover {
-    display: block;
-    position: absolute;
+  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .down .downLeft h2 {
+    font: bold 19.2px/1 "Noto Sans KR";
   }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: scale(1);
-    transition: all 0.3s ease-in-out;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer img:hover {
-    transform: scale(1.05);
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer .imgDescription {
-    display: none;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer .imgDescription .title {
-    font: 18px/1 "Work Sans";
-    color: #171717;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer .imgDescription .category {
-    font: 18px/1 "Work Sans";
-    color: #333;
-    margin-bottom: 5px;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer .imgDescription .p {
-    font: 18px/1 "Work Sans";
-    color: #171717;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer .title {
-    font: 18px/1 "Work Sans";
-    color: #171717;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer .category {
-    font: 18px/1 "Work Sans";
-    color: #333;
-    margin-bottom: 5px;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer .p {
-    font: 18px/1 "Work Sans";
-    color: #171717;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgDescHover {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    white-space: nowrap;
-    display: none;
-    padding: 1rem;
-    background: white;
-    font-weight: 400;
-    margin-top: 1.25rem;
-    margin-left: -2rem;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 {
-    width: 80%;
-    height: 100%;
-    display: flex;
-    gap: 15px;
-    flex-direction: column;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 {
-    background: rgb(112, 20, 49);
-    width: 100%;
-    height: 40%;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    overflow: hidden;
-    position: relative;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer:hover .imgDescHover {
-    display: block;
-    position: absolute;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: scale(1);
-    transition: all 0.3s ease-in-out;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer img:hover {
-    transform: scale(1.05);
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer .imgDescription {
-    display: block;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer .imgDescription .title {
-    font: 18px/1 "Work Sans";
-    color: #171717;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer .imgDescription .category {
-    font: 18px/1 "Work Sans";
-    color: #333;
-    margin-bottom: 5px;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer .imgDescription .p {
-    font: 18px/1 "Work Sans";
-    color: #171717;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer .title {
-    font: 18px/1 "Work Sans";
-    color: #171717;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer .category {
-    font: 18px/1 "Work Sans";
-    color: #333;
-    margin-bottom: 5px;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer .p {
-    font: 18px/1 "Work Sans";
-    color: #171717;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgDescHover {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    white-space: nowrap;
-    display: none;
-    padding: 1rem;
-    background: white;
-    font-weight: 400;
-    margin-top: 1.25rem;
-    margin-left: -2rem;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 {
-    width: 100%;
-    height: 60%;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    overflow: hidden;
-    position: relative;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer:hover .imgDescHover {
-    display: block;
-    position: absolute;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: scale(1);
-    transition: all 0.3s ease-in-out;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer img:hover {
-    transform: scale(1.05);
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer .imgDescription {
-    display: none;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer .imgDescription .title {
-    font: 18px/1 "Work Sans";
-    color: #171717;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer .imgDescription .category {
-    font: 18px/1 "Work Sans";
-    color: #333;
-    margin-bottom: 5px;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer .imgDescription .p {
-    font: 18px/1 "Work Sans";
-    color: #171717;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer .title {
-    font: 18px/1 "Work Sans";
-    color: #171717;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer .category {
-    font: 18px/1 "Work Sans";
-    color: #333;
-    margin-bottom: 5px;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer .p {
-    font: 18px/1 "Work Sans";
-    color: #171717;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgDescHover {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    white-space: nowrap;
-    display: none;
-    padding: 1rem;
-    background: white;
-    font-weight: 400;
-    margin-top: 1.25rem;
-    margin-left: -2rem;
+  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .down .downRight {
+    font: 19px/1 "Noto Sans KR";
   }
   #promotion .promotionContainer .promotionWrap:nth-of-type(2) {
-    margin-top: 40px;
-    width: 100%;
-    height: 100px;
-    flex: 1;
-    padding: 0;
-    font: 65px/1 "Work Sans";
-    color: #eee;
+    order: 1;
+    flex: 0.45;
   }
   #promotion .promotionContainer .promotionWrap:nth-of-type(2) h4 {
-    margin: 0px auto;
-    text-orientation: upright;
     writing-mode: horizontal-tb;
-    white-space: wrap;
-    letter-spacing: 0px;
+    margin-top: 0px;
+    font: bold 56px/1 "Noto Sans KR";
   }
   #promotion .promotionContainer .promotionWrap:nth-of-type(3) {
-    width: 100%;
     flex: 2;
-    overflow-x: hidden;
+    order: 3;
   }
   #promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns {
-    margin-top: 10px;
     width: 100%;
-    height: 40%;
-    overflow-y: scroll;
-    overflow-x: none;
+    height: 90%;
   }
   #promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns h3 {
-    font: 26px/1 "Work Sans";
-    color: #eee;
-    margin-bottom: 10px;
+    font: bold 19.2px/1 "Noto Sans KR";
+    margin-bottom: 15px;
   }
   #promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns h4 {
-    font: 18px/1 "Work Sans";
-    color: #eee;
-    margin-bottom: 10px;
+    font: 14.4px/1.5 "Noto Sans KR";
   }
   #promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns p {
-    font: 16px/1 "Work Sans";
-    color: #eee;
+    font: 12.8px/1 "Noto Sans KR";
   }
   #promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns::-webkit-scrollbar {
-    width: 10px;
+    width: 7px;
   }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns::-webkit-scrollbar-thumb {
-    background-color: #b4ca68;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns::-webkit-scrollbar-track {
-    background-color: transparent;
+  #promotion .promotionContainer .promotionWrap:nth-of-type(3) .snsGoBtn {
+    font: 14.4px/1 "Noto Sans KR";
+    margin-top: 15px;
   }
 }
 @media screen and (max-width: 639px) {
   #promotion {
-    width: 100vw;
-    height: 800px;
-    background: linear-gradient(to right, #0058ab, #fff94c);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    height: auto;
   }
   #promotion .promotionContainer {
-    width: 100vw;
     height: 900px;
-    display: block;
-    flex-wrap: wrap;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    padding: 150px 10vw 150px;
+    padding: 50px 5vw 50px;
   }
   #promotion .promotionContainer .circleText {
-    width: 440px;
-    height: 440px;
+    width: 400px;
+    height: 400px;
     position: absolute;
     z-index: -1;
-    top: -230px;
-    left: -90px;
+    top: -90px;
+    left: -110px;
     animation: rotateImage 10s linear infinite;
     transform-origin: 50% 50%;
     opacity: 0.5;
@@ -2909,286 +2499,64 @@ a {
     }
   }
   #promotion .promotionContainer .promotionWrap {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+    height: auto;
   }
   #promotion .promotionContainer .promotionWrap:nth-of-type(1) {
-    width: 100%;
-    height: 30%;
-    flex: 2;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex: 1.5;
+    order: 2;
   }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg {
+  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .top {
+    flex: 1;
     width: 100%;
-    height: 50%;
-    flex: 3;
-    display: flex;
-    margin: 0px auto;
-    display: flex;
-    gap: 15px;
+    height: 100%;
+    margin-top: 0px;
   }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery {
+  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .top video {
     width: 100%;
     height: 100%;
   }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    overflow: hidden;
-    position: relative;
+  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .down .downLeft h3 {
+    font: 16.8px/1 "Noto Sans KR";
   }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer:hover .imgDescHover {
-    display: block;
-    position: absolute;
+  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .down .downLeft h2 {
+    font: bold 16.8px/1 "Noto Sans KR";
   }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: scale(1);
-    transition: all 0.3s ease-in-out;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer img:hover {
-    transform: scale(1.05);
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer .imgDescription {
-    display: none;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer .imgDescription .title {
-    font: 18px/1 "Work Sans";
-    color: #171717;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer .imgDescription .category {
-    font: 18px/1 "Work Sans";
-    color: #333;
-    margin-bottom: 5px;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer .imgDescription .p {
-    font: 18px/1 "Work Sans";
-    color: #171717;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer .title {
-    font: 18px/1 "Work Sans";
-    color: #171717;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer .category {
-    font: 18px/1 "Work Sans";
-    color: #333;
-    margin-bottom: 5px;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgContainer .p {
-    font: 18px/1 "Work Sans";
-    color: #171717;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery .imgDescHover {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    white-space: nowrap;
-    display: none;
-    padding: 1rem;
-    background: white;
-    font-weight: 400;
-    margin-top: 1.25rem;
-    margin-left: -2rem;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 {
-    width: 80%;
-    height: 100%;
-    display: flex;
-    gap: 15px;
-    flex-direction: column;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 {
-    background: rgb(112, 20, 49);
-    width: 100%;
-    height: 40%;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    overflow: hidden;
-    position: relative;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer:hover .imgDescHover {
-    display: block;
-    position: absolute;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: scale(1);
-    transition: all 0.3s ease-in-out;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer img:hover {
-    transform: scale(1.05);
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer .imgDescription {
-    display: block;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer .imgDescription .title {
-    font: 18px/1 "Work Sans";
-    color: #171717;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer .imgDescription .category {
-    font: 18px/1 "Work Sans";
-    color: #333;
-    margin-bottom: 5px;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer .imgDescription .p {
-    font: 18px/1 "Work Sans";
-    color: #171717;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer .title {
-    font: 18px/1 "Work Sans";
-    color: #171717;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer .category {
-    font: 18px/1 "Work Sans";
-    color: #333;
-    margin-bottom: 5px;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgContainer .p {
-    font: 18px/1 "Work Sans";
-    color: #171717;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery3 .imgDescHover {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    white-space: nowrap;
-    display: none;
-    padding: 1rem;
-    background: white;
-    font-weight: 400;
-    margin-top: 1.25rem;
-    margin-left: -2rem;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 {
-    width: 100%;
-    height: 60%;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    overflow: hidden;
-    position: relative;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer:hover .imgDescHover {
-    display: block;
-    position: absolute;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: scale(1);
-    transition: all 0.3s ease-in-out;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer img:hover {
-    transform: scale(1.05);
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer .imgDescription {
-    display: none;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer .imgDescription .title {
-    font: 18px/1 "Work Sans";
-    color: #171717;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer .imgDescription .category {
-    font: 18px/1 "Work Sans";
-    color: #333;
-    margin-bottom: 5px;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer .imgDescription .p {
-    font: 18px/1 "Work Sans";
-    color: #171717;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer .title {
-    font: 18px/1 "Work Sans";
-    color: #171717;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer .category {
-    font: 18px/1 "Work Sans";
-    color: #333;
-    margin-bottom: 5px;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgContainer .p {
-    font: 18px/1 "Work Sans";
-    color: #171717;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .itemImg .gallery2 .gallery4 .imgDescHover {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    white-space: nowrap;
-    display: none;
-    padding: 1rem;
-    background: white;
-    font-weight: 400;
-    margin-top: 1.25rem;
-    margin-left: -2rem;
+  #promotion .promotionContainer .promotionWrap:nth-of-type(1) .down .downRight {
+    font: 17px/1 "Noto Sans KR";
   }
   #promotion .promotionContainer .promotionWrap:nth-of-type(2) {
-    margin-top: 40px;
-    width: 100%;
-    height: 100px;
-    flex: 1;
-    padding: 0;
-    font: 50px/1 "Work Sans";
-    color: #eee;
+    order: 1;
+    flex: 0.35;
   }
   #promotion .promotionContainer .promotionWrap:nth-of-type(2) h4 {
-    margin: 0px auto;
-    text-orientation: upright;
-    writing-mode: horizontal-tb;
-    white-space: wrap;
-    letter-spacing: 0px;
+    font: bold 49px/1 "Noto Sans KR";
   }
   #promotion .promotionContainer .promotionWrap:nth-of-type(3) {
-    width: 100%;
-    flex: 2;
-    overflow-x: hidden;
+    flex: 1;
+    order: 3;
   }
   #promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns {
-    margin-top: 10px;
     width: 100%;
-    height: 0%;
-    overflow-y: scroll;
-    overflow-x: none;
+    height: 90%;
+    padding-right: 50px;
   }
   #promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns h3 {
-    font: 23px/1 "Work Sans";
-    color: #eee;
-    margin-bottom: 10px;
+    font: bold 16.8px/1 "Noto Sans KR";
+    margin-bottom: 15px;
   }
   #promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns h4 {
-    font: 18px/1 "Work Sans";
-    color: #eee;
-    margin-bottom: 10px;
+    font: 12.6px/1.5 "Noto Sans KR";
   }
   #promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns p {
-    font: 16px/1 "Work Sans";
-    color: #eee;
+    font: 11.2px/1 "Noto Sans KR";
   }
   #promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns::-webkit-scrollbar {
-    width: 10px;
+    width: 5.5px;
   }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns::-webkit-scrollbar-thumb {
-    background-color: #b4ca68;
-  }
-  #promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns::-webkit-scrollbar-track {
-    background-color: transparent;
+  #promotion .promotionContainer .promotionWrap:nth-of-type(3) .snsGoBtn {
+    margin-left: 0;
+    font: 12.6px/1 "Noto Sans KR";
+    margin-top: 15px;
   }
 }
 #sns {
@@ -3202,13 +2570,15 @@ a {
 #sns .bgLeft {
   width: 50%;
   height: 100%;
-  background-image: url("../img/imgBoxGroup1.png");
+  background-image: url("../img/smartHome1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #sns .bgRight {
   width: 50%;
   height: 100%;
   float: right;
-  background: #fec202;
+  background: #4881c2;
 }
 #sns .container {
   max-width: 100%;
@@ -3241,44 +2611,220 @@ a {
 }
 #sns .swiper-container .swiper-wrapper .swiper-slide h3 {
   position: relative;
-  font: 18px/1 "Noto Sans KR";
+  font: 16px/1 "Noto Sans KR";
   color: #eee;
   margin-bottom: 50px;
   z-index: 1;
 }
 #sns .swiper-container .swiper-wrapper .swiper-slide h2 {
   position: relative;
-  font: bold 30px/1 "Noto Sans KR";
+  font: bold 24px/1 "Noto Sans KR";
   color: #eee;
   z-index: 1;
   margin-bottom: 40px;
 }
 #sns .swiper-container .swiper-wrapper .swiper-slide p {
   position: relative;
-  font: 16px/1.8 "Noto Sans KR";
+  font: 18px/1.5 "Noto Sans KR";
   color: #eee;
   z-index: 1;
   margin-bottom: 100px;
 }
 #sns .swiper-container .swiper-button-prev {
   position: absolute;
-  top: 45%;
+  top: 40%;
   left: 50px;
-  width: 45px;
-  height: 45px;
+  width: 26px;
+  height: 26px;
   transform: translateY(-200%);
   margin-top: 0px;
 }
 #sns .swiper-container .swiper-button-next {
   position: absolute;
-  top: 45%;
+  top: 40%;
   right: 50px;
-  width: 45px;
-  height: 45px;
+  width: 26px;
+  height: 26px;
   transform: translateY(-200%);
   margin-top: 0px;
 }
 
+@media screen and (max-width: 1023px) {
+  #sns {
+    width: 100vw;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+  }
+  #sns .bgLeft {
+    width: 50%;
+    height: 100%;
+  }
+  #sns .bgRight {
+    width: 50%;
+    height: 100%;
+    float: right;
+  }
+  #sns .container {
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 120px 10vw 96px;
+    position: absolute;
+    z-index: 99;
+  }
+  #sns .swiper-container {
+    width: 100%;
+    height: 100%;
+    position: static;
+  }
+  #sns .swiper-container .swiper-wrapper .swiper-slide {
+    text-align: center;
+    width: 320px;
+    height: 320px;
+    font-size: 18px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+    position: relative;
+    padding: 80px 64px;
+  }
+  #sns .swiper-container .swiper-wrapper .swiper-slide h3 {
+    position: relative;
+    font: 12.8px/1 "Noto Sans KR";
+    color: #eee;
+    margin-bottom: 25px;
+    z-index: 1;
+  }
+  #sns .swiper-container .swiper-wrapper .swiper-slide h2 {
+    position: relative;
+    font: bold 19.2px/1 "Noto Sans KR";
+    color: #eee;
+    z-index: 1;
+    margin-bottom: 25px;
+  }
+  #sns .swiper-container .swiper-wrapper .swiper-slide p {
+    position: relative;
+    font: 14.4px/1.5 "Noto Sans KR";
+    color: #eee;
+    z-index: 1;
+    margin-bottom: 0px;
+    text-align: justify;
+    word-break: break-all;
+  }
+  #sns .swiper-container .swiper-button-prev {
+    position: absolute;
+    top: 32%;
+    left: 50px;
+    width: 24px;
+    height: 24px;
+    transform: translateY(-200%);
+    margin-top: 0px;
+  }
+  #sns .swiper-container .swiper-button-next {
+    position: absolute;
+    top: 32%;
+    right: 50px;
+    width: 24px;
+    height: 24px;
+    transform: translateY(-200%);
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 639px) {
+  #sns {
+    width: 100vw;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+  }
+  #sns .bgLeft {
+    width: 50%;
+    height: 100%;
+  }
+  #sns .bgRight {
+    width: 50%;
+    height: 100%;
+    float: right;
+  }
+  #sns .container {
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 120px 10vw 96px;
+    position: absolute;
+    z-index: 99;
+  }
+  #sns .swiper-container {
+    width: 80%;
+    height: 90%;
+    position: static;
+  }
+  #sns .swiper-container .swiper-wrapper .swiper-slide {
+    text-align: center;
+    width: 110px;
+    height: 300px;
+    font-size: 18px;
+    backdrop-filter: brightness(0.4);
+    border-radius: 50%;
+    background: transparent;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+    position: relative;
+    padding: 70px 56px;
+  }
+  #sns .swiper-container .swiper-wrapper .swiper-slide h3 {
+    position: relative;
+    font: 11.2px/1 "Noto Sans KR";
+    color: #eee;
+    margin-bottom: 25px;
+    z-index: 1;
+  }
+  #sns .swiper-container .swiper-wrapper .swiper-slide h2 {
+    position: relative;
+    font: bold 16.8px/1 "Noto Sans KR";
+    color: #eee;
+    z-index: 1;
+    margin-bottom: 25px;
+  }
+  #sns .swiper-container .swiper-wrapper .swiper-slide p {
+    position: relative;
+    font: 12.6px/1.5 "Noto Sans KR";
+    color: #eee;
+    z-index: 1;
+    margin-bottom: 100px;
+  }
+  #sns .swiper-container .swiper-button-prev {
+    position: absolute;
+    top: 30%;
+    left: 30px;
+    width: 24px;
+    height: 24px;
+    transform: translateY(-200%);
+    margin-top: 0px;
+  }
+  #sns .swiper-container .swiper-button-next {
+    position: absolute;
+    top: 30%;
+    right: 30px;
+    width: 24px;
+    height: 24px;
+    transform: translateY(-200%);
+    margin-top: 0px;
+  }
+}
 #showRoom {
   width: 100vw;
   height: 750px;

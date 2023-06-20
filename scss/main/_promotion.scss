@@ -1,7 +1,7 @@
 #promotion {
 	width: 100vw;
 	height: 810px;
-	background: linear-gradient(to right, #0058ab, #fff94c);
+	background: linear-gradient(90deg, #2d55d6 0%, #db3885 100%);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -50,261 +50,48 @@
 				flex-wrap: wrap;
 				flex-direction: column;
 
-				.itemImg {
+				.top {
+					flex: 1;
 					width: 100%;
-					height: calc(100% / 2);
-					flex: 3;
-					display: flex;
-					margin: 0px auto;
-					display: flex;
-					gap: 15px;
+					height: 100%;
+					margin-top: 60px;
 
-					//사진 1
-					.gallery {
+					video {
 						width: 100%;
 						height: 100%;
+					}
+				}
+				.down {
+					flex: 1;
+					width: 100%;
+					height: 100%;
+					margin-top: 25px;
+					display: flex;
 
-						.imgContainer {
-							width: 100%;
-							height: 100%;
-							cursor: pointer;
-							overflow: hidden;
-							position: relative;
-
-							&:hover .imgDescHover {
-								display: block;
-								position: absolute;
-							}
-
-							img {
-								width: 100%;
-								height: 100%;
-								object-fit: cover;
-								transform: scale(1);
-								transition: all 0.3s ease-in-out;
-
-								&:hover {
-									transform: scale(1.05);
-								}
-							}
-
-							.imgDescription {
-								display: none;
-
-								.title {
-									font: 18px/1 $ikeaFont;
-									color: $ikeaBl;
-								}
-
-								.category {
-									font: 18px/1 $ikeaFont;
-									color: $fontColorBl;
-									margin-bottom: 5px;
-								}
-
-								.p {
-									font: 18px/1 $ikeaFont;
-									color: $ikeaBl;
-								}
-							}
-
-							.title {
-								font: 18px/1 $ikeaFont;
-								color: $ikeaBl;
-							}
-
-							.category {
-								font: 18px/1 $ikeaFont;
-								color: $fontColorBl;
-								margin-bottom: 5px;
-							}
-
-							.p {
-								font: 18px/1 $ikeaFont;
-								color: $ikeaBl;
-							}
+					.downLeft {
+						flex: 1;
+						width: 50%;
+						height: 100%;
+						h3 {
+							font: 24px/1 $ikeaFontKo;
+							color: $fontColorW;
+							margin-bottom: 10px;
 						}
 
-						.imgDescHover {
-							z-index: 1;
-							position: absolute;
-							top: 0;
-							left: 0;
-							white-space: nowrap;
-							display: none;
-							padding: 1rem;
-							background: white;
-							font-weight: 400;
-							margin-top: 1.25rem;
-							margin-left: -2rem;
+						h2 {
+							font: bold 24px/1 $ikeaFontKo;
+							color: $fontColorW;
 						}
 					}
-					.gallery2 {
-						width: 80%;
+
+					.downRight {
+						flex: 0.1;
+						width: 50%;
 						height: 100%;
-						display: flex;
-						gap: 15px;
-						flex-direction: column;
+						font: 22px/1 $ikeaFontKo;
+						color: $fontColorW;
 
-						.gallery3 {
-							background: rgb(112, 20, 49);
-							width: 100%;
-							height: 40%;
-
-							.imgContainer {
-								width: 100%;
-								height: 100%;
-								cursor: pointer;
-								overflow: hidden;
-								position: relative;
-
-								&:hover .imgDescHover {
-									display: block;
-									position: absolute;
-								}
-
-								img {
-									width: 100%;
-									height: 100%;
-									object-fit: cover;
-									transform: scale(1);
-									transition: all 0.3s ease-in-out;
-
-									&:hover {
-										transform: scale(1.05);
-									}
-								}
-
-								.imgDescription {
-									display: block;
-
-									.title {
-										font: 18px/1 $ikeaFont;
-										color: $ikeaBl;
-									}
-
-									.category {
-										font: 18px/1 $ikeaFont;
-										color: $fontColorBl;
-										margin-bottom: 5px;
-									}
-
-									.p {
-										font: 18px/1 $ikeaFont;
-										color: $ikeaBl;
-									}
-								}
-
-								.title {
-									font: 18px/1 $ikeaFont;
-									color: $ikeaBl;
-								}
-
-								.category {
-									font: 18px/1 $ikeaFont;
-									color: $fontColorBl;
-									margin-bottom: 5px;
-								}
-
-								.p {
-									font: 18px/1 $ikeaFont;
-									color: $ikeaBl;
-								}
-							}
-
-							.imgDescHover {
-								z-index: 1;
-								position: absolute;
-								top: 0;
-								left: 0;
-								white-space: nowrap;
-								display: none;
-								padding: 1rem;
-								background: white;
-								font-weight: 400;
-								margin-top: 1.25rem;
-								margin-left: -2rem;
-							}
-						}
-						.gallery4 {
-							width: 100%;
-							height: 60%;
-
-							.imgContainer {
-								width: 100%;
-								height: 100%;
-								cursor: pointer;
-								overflow: hidden;
-								position: relative;
-
-								&:hover .imgDescHover {
-									display: block;
-									position: absolute;
-								}
-
-								img {
-									width: 100%;
-									height: 100%;
-									object-fit: cover;
-									transform: scale(1);
-									transition: all 0.3s ease-in-out;
-
-									&:hover {
-										transform: scale(1.05);
-									}
-								}
-
-								.imgDescription {
-									display: none;
-
-									.title {
-										font: 18px/1 $ikeaFont;
-										color: $ikeaBl;
-									}
-
-									.category {
-										font: 18px/1 $ikeaFont;
-										color: $fontColorBl;
-										margin-bottom: 5px;
-									}
-
-									.p {
-										font: 18px/1 $ikeaFont;
-										color: $ikeaBl;
-									}
-								}
-
-								.title {
-									font: 18px/1 $ikeaFont;
-									color: $ikeaBl;
-								}
-
-								.category {
-									font: 18px/1 $ikeaFont;
-									color: $fontColorBl;
-									margin-bottom: 5px;
-								}
-
-								.p {
-									font: 18px/1 $ikeaFont;
-									color: $ikeaBl;
-								}
-							}
-
-							.imgDescHover {
-								z-index: 1;
-								position: absolute;
-								top: 0;
-								left: 0;
-								white-space: nowrap;
-								display: none;
-								padding: 1rem;
-								background: white;
-								font-weight: 400;
-								margin-top: 1.25rem;
-								margin-left: -2rem;
-							}
-						}
+						text-align: end;
 					}
 				}
 			}
@@ -313,15 +100,17 @@
 				width: 100%;
 				flex: 1;
 				padding: 0;
-				font: 65px/1 $ikeaFont;
-				color: $fontColorW;
 
 				h4 {
 					margin: 0px auto;
 					text-orientation: upright;
 					writing-mode: vertical-rl;
 					white-space: wrap;
-					letter-spacing: 0px;
+					word-spacing: -55px;
+					margin-top: 15px;
+					font: bold 80px/1 $ikeaFontKo;
+					color: transparent;
+					-webkit-text-stroke: 1px $fontColorW;
 				}
 			}
 
@@ -331,37 +120,52 @@
 				overflow-x: hidden;
 
 				.sns {
+					flex: 1;
 					width: 100%;
-					height: 100%;
+					height: 90%;
 					overflow-y: scroll;
 					overflow-x: none;
+					padding-right: 50px;
+					text-align: justify;
+					word-break: break-all;
 
 					h3 {
-						font: 23px/1 $ikeaFont;
+						font: bold 24px/1 $ikeaFontKo;
 						color: $fontColorW;
 						margin-bottom: 10px;
 					}
 
 					h4 {
-						font: 18px/1 $ikeaFont;
-						color: $grey;
+						font: 18px/1.5 $ikeaFontKo;
+						color: #ffc6ec;
 						margin-bottom: 10px;
 					}
 
 					p {
-						font: 18px/1 $ikeaFont;
+						font: 16px/1 $ikeaFontKo;
 						color: $fontColorW;
 					}
 
 					&::-webkit-scrollbar {
-						width: 10px;
+						width: 9px;
 					}
 					&::-webkit-scrollbar-thumb {
-						background-color: #b4ca68;
+						background-color: #e96aa6;
 					}
 					&::-webkit-scrollbar-track {
 						background-color: transparent;
 					}
+				}
+
+				.snsGoBtn {
+					flex: 0.5;
+					width: 100%;
+					height: 10%;
+					font: 16px/1 $ikeaFontKo;
+					color: $fontColorW;
+					margin-left: -60px;
+					text-align: end;
+					margin-top: 20px;
 				}
 			}
 		}
@@ -370,32 +174,20 @@
 
 @media screen and (max-width: $tablet) {
 	#promotion {
-		width: 100vw;
-		height: 1200px;
-		background: linear-gradient(to right, #0058ab, #fff94c);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		overflow: hidden;
+		height: auto;
 
 		.promotionContainer {
-			width: 100vw;
-			height: 900px;
-			display: block;
-			flex-wrap: wrap;
-			position: relative;
-			justify-content: center;
-			align-items: center;
-			z-index: 1;
-			padding: 0px 10vw 96px;
+			height: 1200px;
+			flex-direction: column;
+			padding: 60px 5vw 60px;
 
 			.circleText {
-				width: 440px;
-				height: 440px;
+				width: 540px;
+				height: 540px;
 				position: absolute;
 				z-index: -1;
-				top: -230px;
-				left: -90px;
+				top: -90px;
+				left: -110px;
 				animation: rotateImage 10s linear infinite;
 				transform-origin: 50% 50%;
 				opacity: 0.5;
@@ -408,334 +200,81 @@
 			}
 
 			.promotionWrap {
-				width: 100%;
-				height: 100%;
-				overflow: hidden;
+				height: auto;
 
 				//gallery
 				&:nth-of-type(1) {
-					width: 100%;
-					height: 50%;
-					flex: 2;
-					display: flex;
-					flex-wrap: wrap;
-					flex-direction: column;
+					flex: 1.75;
+					order: 2;
 
-					.itemImg {
+					.top {
+						flex: 1;
 						width: 100%;
-						height: calc(100% / 2);
-						flex: 3;
-						display: flex;
-						margin: 0px auto;
-						display: flex;
-						gap: 15px;
+						height: 100%;
+						margin-top: 0px;
 
-						//사진 1
-						.gallery {
+						video {
 							width: 100%;
 							height: 100%;
-
-							.imgContainer {
-								width: 100%;
-								height: 100%;
-								cursor: pointer;
-								overflow: hidden;
-								position: relative;
-
-								&:hover .imgDescHover {
-									display: block;
-									position: absolute;
-								}
-
-								img {
-									width: 100%;
-									height: 100%;
-									object-fit: cover;
-									transform: scale(1);
-									transition: all 0.3s ease-in-out;
-
-									&:hover {
-										transform: scale(1.05);
-									}
-								}
-
-								.imgDescription {
-									display: none;
-
-									.title {
-										font: 18px/1 $ikeaFont;
-										color: $ikeaBl;
-									}
-
-									.category {
-										font: 18px/1 $ikeaFont;
-										color: $fontColorBl;
-										margin-bottom: 5px;
-									}
-
-									.p {
-										font: 18px/1 $ikeaFont;
-										color: $ikeaBl;
-									}
-								}
-
-								.title {
-									font: 18px/1 $ikeaFont;
-									color: $ikeaBl;
-								}
-
-								.category {
-									font: 18px/1 $ikeaFont;
-									color: $fontColorBl;
-									margin-bottom: 5px;
-								}
-
-								.p {
-									font: 18px/1 $ikeaFont;
-									color: $ikeaBl;
-								}
+						}
+					}
+					.down {
+						.downLeft {
+							h3 {
+								font: 19.2px/1 $ikeaFontKo;
 							}
 
-							.imgDescHover {
-								z-index: 1;
-								position: absolute;
-								top: 0;
-								left: 0;
-								white-space: nowrap;
-								display: none;
-								padding: 1rem;
-								background: white;
-								font-weight: 400;
-								margin-top: 1.25rem;
-								margin-left: -2rem;
+							h2 {
+								font: bold 19.2px/1 $ikeaFontKo;
 							}
 						}
-						.gallery2 {
-							width: 80%;
-							height: 100%;
-							display: flex;
-							gap: 15px;
-							flex-direction: column;
 
-							.gallery3 {
-								background: rgb(112, 20, 49);
-								width: 100%;
-								height: 40%;
-
-								.imgContainer {
-									width: 100%;
-									height: 100%;
-									cursor: pointer;
-									overflow: hidden;
-									position: relative;
-
-									&:hover .imgDescHover {
-										display: block;
-										position: absolute;
-									}
-
-									img {
-										width: 100%;
-										height: 100%;
-										object-fit: cover;
-										transform: scale(1);
-										transition: all 0.3s ease-in-out;
-
-										&:hover {
-											transform: scale(1.05);
-										}
-									}
-
-									.imgDescription {
-										display: block;
-
-										.title {
-											font: 18px/1 $ikeaFont;
-											color: $ikeaBl;
-										}
-
-										.category {
-											font: 18px/1 $ikeaFont;
-											color: $fontColorBl;
-											margin-bottom: 5px;
-										}
-
-										.p {
-											font: 18px/1 $ikeaFont;
-											color: $ikeaBl;
-										}
-									}
-
-									.title {
-										font: 18px/1 $ikeaFont;
-										color: $ikeaBl;
-									}
-
-									.category {
-										font: 18px/1 $ikeaFont;
-										color: $fontColorBl;
-										margin-bottom: 5px;
-									}
-
-									.p {
-										font: 18px/1 $ikeaFont;
-										color: $ikeaBl;
-									}
-								}
-
-								.imgDescHover {
-									z-index: 1;
-									position: absolute;
-									top: 0;
-									left: 0;
-									white-space: nowrap;
-									display: none;
-									padding: 1rem;
-									background: white;
-									font-weight: 400;
-									margin-top: 1.25rem;
-									margin-left: -2rem;
-								}
-							}
-							.gallery4 {
-								width: 100%;
-								height: 60%;
-
-								.imgContainer {
-									width: 100%;
-									height: 100%;
-									cursor: pointer;
-									overflow: hidden;
-									position: relative;
-
-									&:hover .imgDescHover {
-										display: block;
-										position: absolute;
-									}
-
-									img {
-										width: 100%;
-										height: 100%;
-										object-fit: cover;
-										transform: scale(1);
-										transition: all 0.3s ease-in-out;
-
-										&:hover {
-											transform: scale(1.05);
-										}
-									}
-
-									.imgDescription {
-										display: none;
-
-										.title {
-											font: 18px/1 $ikeaFont;
-											color: $ikeaBl;
-										}
-
-										.category {
-											font: 18px/1 $ikeaFont;
-											color: $fontColorBl;
-											margin-bottom: 5px;
-										}
-
-										.p {
-											font: 18px/1 $ikeaFont;
-											color: $ikeaBl;
-										}
-									}
-
-									.title {
-										font: 18px/1 $ikeaFont;
-										color: $ikeaBl;
-									}
-
-									.category {
-										font: 18px/1 $ikeaFont;
-										color: $fontColorBl;
-										margin-bottom: 5px;
-									}
-
-									.p {
-										font: 18px/1 $ikeaFont;
-										color: $ikeaBl;
-									}
-								}
-
-								.imgDescHover {
-									z-index: 1;
-									position: absolute;
-									top: 0;
-									left: 0;
-									white-space: nowrap;
-									display: none;
-									padding: 1rem;
-									background: white;
-									font-weight: 400;
-									margin-top: 1.25rem;
-									margin-left: -2rem;
-								}
-							}
+						.downRight {
+							font: 19px/1 $ikeaFontKo;
 						}
 					}
 				}
 
 				&:nth-of-type(2) {
-					margin-top: 40px;
-					width: 100%;
-					height: 100px;
-					flex: 1;
-					padding: 0;
-					font: 65px/1 $ikeaFont;
-					color: $fontColorW;
+					order: 1;
+					flex: 0.45;
 
 					h4 {
-						margin: 0px auto;
-						text-orientation: upright;
 						writing-mode: horizontal-tb;
-						white-space: wrap;
-						letter-spacing: 0px;
+						margin-top: 0px;
+						font: bold 56px/1 $ikeaFontKo;
 					}
 				}
 
 				&:nth-of-type(3) {
-					width: 100%;
 					flex: 2;
-					overflow-x: hidden;
+					order: 3;
 
 					.sns {
-						margin-top: 10px;
 						width: 100%;
-						height: 40%;
-						overflow-y: scroll;
-						overflow-x: none;
+						height: 90%;
 
 						h3 {
-							font: 26px/1 $ikeaFont;
-							color: $fontColorW;
-							margin-bottom: 10px;
+							font: bold 19.2px/1 $ikeaFontKo;
+							margin-bottom: 15px;
 						}
 
 						h4 {
-							font: 18px/1 $ikeaFont;
-							color: $fontColorW;
-							margin-bottom: 10px;
+							font: 14.4px/1.5 $ikeaFontKo;
 						}
 
 						p {
-							font: 16px/1 $ikeaFont;
-							color: $fontColorW;
+							font: 12.8px/1 $ikeaFontKo;
 						}
 
 						&::-webkit-scrollbar {
-							width: 10px;
+							width: 7px;
 						}
-						&::-webkit-scrollbar-thumb {
-							background-color: #b4ca68;
-						}
-						&::-webkit-scrollbar-track {
-							background-color: transparent;
-						}
+					}
+
+					.snsGoBtn {
+						font: 14.4px/1 $ikeaFontKo;
+						margin-top: 15px;
 					}
 				}
 			}
@@ -745,32 +284,19 @@
 
 @media screen and (max-width: $mobile) {
 	#promotion {
-		width: 100vw;
-		height: 800px;
-		background: linear-gradient(to right, #0058ab, #fff94c);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		overflow: hidden;
+		height: auto;
 
 		.promotionContainer {
-			width: 100vw;
 			height: 900px;
-			display: block;
-			flex-wrap: wrap;
-			position: relative;
-			justify-content: center;
-			align-items: center;
-			z-index: 1;
-			padding: 150px 10vw 150px;
+			padding: 50px 5vw 50px;
 
 			.circleText {
-				width: 440px;
-				height: 440px;
+				width: 400px;
+				height: 400px;
 				position: absolute;
 				z-index: -1;
-				top: -230px;
-				left: -90px;
+				top: -90px;
+				left: -110px;
 				animation: rotateImage 10s linear infinite;
 				transform-origin: 50% 50%;
 				opacity: 0.5;
@@ -783,334 +309,81 @@
 			}
 
 			.promotionWrap {
-				width: 100%;
-				height: 100%;
-				overflow: hidden;
+				height: auto;
 
 				//gallery
 				&:nth-of-type(1) {
-					width: 100%;
-					height: 30%;
-					flex: 2;
-					display: flex;
-					flex-wrap: wrap;
-					flex-direction: column;
+					flex: 1.5;
+					order: 2;
 
-					.itemImg {
+					.top {
+						flex: 1;
 						width: 100%;
-						height: calc(100% / 2);
-						flex: 3;
-						display: flex;
-						margin: 0px auto;
-						display: flex;
-						gap: 15px;
+						height: 100%;
+						margin-top: 0px;
 
-						//사진 1
-						.gallery {
+						video {
 							width: 100%;
 							height: 100%;
-
-							.imgContainer {
-								width: 100%;
-								height: 100%;
-								cursor: pointer;
-								overflow: hidden;
-								position: relative;
-
-								&:hover .imgDescHover {
-									display: block;
-									position: absolute;
-								}
-
-								img {
-									width: 100%;
-									height: 100%;
-									object-fit: cover;
-									transform: scale(1);
-									transition: all 0.3s ease-in-out;
-
-									&:hover {
-										transform: scale(1.05);
-									}
-								}
-
-								.imgDescription {
-									display: none;
-
-									.title {
-										font: 18px/1 $ikeaFont;
-										color: $ikeaBl;
-									}
-
-									.category {
-										font: 18px/1 $ikeaFont;
-										color: $fontColorBl;
-										margin-bottom: 5px;
-									}
-
-									.p {
-										font: 18px/1 $ikeaFont;
-										color: $ikeaBl;
-									}
-								}
-
-								.title {
-									font: 18px/1 $ikeaFont;
-									color: $ikeaBl;
-								}
-
-								.category {
-									font: 18px/1 $ikeaFont;
-									color: $fontColorBl;
-									margin-bottom: 5px;
-								}
-
-								.p {
-									font: 18px/1 $ikeaFont;
-									color: $ikeaBl;
-								}
+						}
+					}
+					.down {
+						.downLeft {
+							h3 {
+								font: 16.8px/1 $ikeaFontKo;
 							}
 
-							.imgDescHover {
-								z-index: 1;
-								position: absolute;
-								top: 0;
-								left: 0;
-								white-space: nowrap;
-								display: none;
-								padding: 1rem;
-								background: white;
-								font-weight: 400;
-								margin-top: 1.25rem;
-								margin-left: -2rem;
+							h2 {
+								font: bold 16.8px/1 $ikeaFontKo;
 							}
 						}
-						.gallery2 {
-							width: 80%;
-							height: 100%;
-							display: flex;
-							gap: 15px;
-							flex-direction: column;
 
-							.gallery3 {
-								background: rgb(112, 20, 49);
-								width: 100%;
-								height: 40%;
-
-								.imgContainer {
-									width: 100%;
-									height: 100%;
-									cursor: pointer;
-									overflow: hidden;
-									position: relative;
-
-									&:hover .imgDescHover {
-										display: block;
-										position: absolute;
-									}
-
-									img {
-										width: 100%;
-										height: 100%;
-										object-fit: cover;
-										transform: scale(1);
-										transition: all 0.3s ease-in-out;
-
-										&:hover {
-											transform: scale(1.05);
-										}
-									}
-
-									.imgDescription {
-										display: block;
-
-										.title {
-											font: 18px/1 $ikeaFont;
-											color: $ikeaBl;
-										}
-
-										.category {
-											font: 18px/1 $ikeaFont;
-											color: $fontColorBl;
-											margin-bottom: 5px;
-										}
-
-										.p {
-											font: 18px/1 $ikeaFont;
-											color: $ikeaBl;
-										}
-									}
-
-									.title {
-										font: 18px/1 $ikeaFont;
-										color: $ikeaBl;
-									}
-
-									.category {
-										font: 18px/1 $ikeaFont;
-										color: $fontColorBl;
-										margin-bottom: 5px;
-									}
-
-									.p {
-										font: 18px/1 $ikeaFont;
-										color: $ikeaBl;
-									}
-								}
-
-								.imgDescHover {
-									z-index: 1;
-									position: absolute;
-									top: 0;
-									left: 0;
-									white-space: nowrap;
-									display: none;
-									padding: 1rem;
-									background: white;
-									font-weight: 400;
-									margin-top: 1.25rem;
-									margin-left: -2rem;
-								}
-							}
-							.gallery4 {
-								width: 100%;
-								height: 60%;
-
-								.imgContainer {
-									width: 100%;
-									height: 100%;
-									cursor: pointer;
-									overflow: hidden;
-									position: relative;
-
-									&:hover .imgDescHover {
-										display: block;
-										position: absolute;
-									}
-
-									img {
-										width: 100%;
-										height: 100%;
-										object-fit: cover;
-										transform: scale(1);
-										transition: all 0.3s ease-in-out;
-
-										&:hover {
-											transform: scale(1.05);
-										}
-									}
-
-									.imgDescription {
-										display: none;
-
-										.title {
-											font: 18px/1 $ikeaFont;
-											color: $ikeaBl;
-										}
-
-										.category {
-											font: 18px/1 $ikeaFont;
-											color: $fontColorBl;
-											margin-bottom: 5px;
-										}
-
-										.p {
-											font: 18px/1 $ikeaFont;
-											color: $ikeaBl;
-										}
-									}
-
-									.title {
-										font: 18px/1 $ikeaFont;
-										color: $ikeaBl;
-									}
-
-									.category {
-										font: 18px/1 $ikeaFont;
-										color: $fontColorBl;
-										margin-bottom: 5px;
-									}
-
-									.p {
-										font: 18px/1 $ikeaFont;
-										color: $ikeaBl;
-									}
-								}
-
-								.imgDescHover {
-									z-index: 1;
-									position: absolute;
-									top: 0;
-									left: 0;
-									white-space: nowrap;
-									display: none;
-									padding: 1rem;
-									background: white;
-									font-weight: 400;
-									margin-top: 1.25rem;
-									margin-left: -2rem;
-								}
-							}
+						.downRight {
+							font: 17px/1 $ikeaFontKo;
 						}
 					}
 				}
 
 				&:nth-of-type(2) {
-					margin-top: 40px;
-					width: 100%;
-					height: 100px;
-					flex: 1;
-					padding: 0;
-					font: 50px/1 $ikeaFont;
-					color: $fontColorW;
+					order: 1;
+					flex: 0.35;
 
 					h4 {
-						margin: 0px auto;
-						text-orientation: upright;
-						writing-mode: horizontal-tb;
-						white-space: wrap;
-						letter-spacing: 0px;
+						font: bold 49px/1 $ikeaFontKo;
 					}
 				}
 
 				&:nth-of-type(3) {
-					width: 100%;
-					flex: 2;
-					overflow-x: hidden;
+					flex: 1;
+					order: 3;
 
 					.sns {
-						margin-top: 10px;
 						width: 100%;
-						height: 0%;
-						overflow-y: scroll;
-						overflow-x: none;
+						height: 90%;
+						padding-right: 50px;
 
 						h3 {
-							font: 23px/1 $ikeaFont;
-							color: $fontColorW;
-							margin-bottom: 10px;
+							font: bold 16.8px/1 $ikeaFontKo;
+							margin-bottom: 15px;
 						}
 
 						h4 {
-							font: 18px/1 $ikeaFont;
-							color: $fontColorW;
-							margin-bottom: 10px;
+							font: 12.6px/1.5 $ikeaFontKo;
 						}
 
 						p {
-							font: 16px/1 $ikeaFont;
-							color: $fontColorW;
+							font: 11.2px/1 $ikeaFontKo;
 						}
 
 						&::-webkit-scrollbar {
-							width: 10px;
+							width: 5.5px;
 						}
-						&::-webkit-scrollbar-thumb {
-							background-color: #b4ca68;
-						}
-						&::-webkit-scrollbar-track {
-							background-color: transparent;
-						}
+					}
+
+					.snsGoBtn {
+						margin-left: 0;
+						font: 12.6px/1 $ikeaFontKo;
+						margin-top: 15px;
 					}
 				}
 			}

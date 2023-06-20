@@ -5,11 +5,11 @@ new Swiper('.swiper-container', {
 	prevButton: '.swiper-button-prev',
 	slidesPerView: 2,
 	paginationClickable: true,
-	spaceBetween: 400,
+	spaceBetween: 440,
 	breakpoints: {
 		1920: {
 			slidesPerView: 2,
-			spaceBetween: 400,
+			spaceBetween: 440,
 		},
 		1820: {
 			slidesPerView: 2,
@@ -17,25 +17,42 @@ new Swiper('.swiper-container', {
 		},
 		1720: {
 			slidesPerView: 2,
-			spaceBetween: 200,
+			spaceBetween: 300,
 		},
 
 		1620: {
 			slidesPerView: 2,
-			spaceBetween: 150,
+			spaceBetween: 250,
 		},
 
 		1520: {
 			slidesPerView: 2,
-			spaceBetween: 35,
+			spaceBetween: 200,
+		},
+
+		1420: {
+			slidesPerView: 2,
+			spaceBetween: 150,
+		},
+		1320: {
+			slidesPerView: 2,
+			spaceBetween: 100,
+		},
+		1220: {
+			slidesPerView: 2,
+			spaceBetween: 70,
+		},
+		1120: {
+			slidesPerView: 2,
+			spaceBetween: 50,
 		},
 		1024: {
 			slidesPerView: 2,
-			spaceBetween: 30,
+			spaceBetween: 120,
 		},
 		689: {
 			slidesPerView: 1,
-			spaceBetween: 10,
+			spaceBetween: 5,
 		},
 	},
 });
