@@ -5,6 +5,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
+	overflow: hidden;
 
 	.bgLeft {
 		width: 50%;
@@ -52,7 +53,7 @@
 
 	.container {
 		max-width: 100%;
-		height: 100%;
+		height: 500px;
 		margin: 0 auto;
 		padding: 120px 15vw 96px;
 		position: absolute;
@@ -61,8 +62,9 @@
 
 	.swiper-container {
 		width: 100%;
-		height: 100%;
+		height: 500px;
 		position: static;
+		overflow: hidden;
 
 		.swiper-wrapper {
 			.swiper-slide {
@@ -109,7 +111,7 @@
 
 		.swiper-button-prev {
 			position: absolute;
-			top: 40%;
+			top: 75%;
 			left: 200px;
 			width: 26px;
 			height: 26px;
@@ -119,7 +121,7 @@
 
 		.swiper-button-next {
 			position: absolute;
-			top: 40%;
+			top: 75%;
 			right: 200px;
 			width: 26px;
 			height: 26px;
@@ -159,7 +161,7 @@
 
 		.container {
 			max-width: 100%;
-			height: 100%;
+			height: 600px;
 			margin: 0 auto;
 			padding: 120px 10vw 96px;
 			position: absolute;
@@ -168,7 +170,7 @@
 
 		.swiper-container {
 			width: 100%;
-			height: 100%;
+			height: 400px;
 			position: static;
 
 			.swiper-wrapper {
@@ -218,7 +220,7 @@
 
 			.swiper-button-prev {
 				position: absolute;
-				top: 32%;
+				top: 53%;
 				left: 50px;
 				width: 24px;
 				height: 24px;
@@ -228,7 +230,7 @@
 
 			.swiper-button-next {
 				position: absolute;
-				top: 32%;
+				top: 53%;
 				right: 50px;
 				width: 24px;
 				height: 24px;
@@ -261,7 +263,7 @@
 
 		.container {
 			max-width: 100%;
-			height: 100%;
+			height: 600px;
 			margin: 0 auto;
 			padding: 120px 10vw 96px;
 			position: absolute;
@@ -270,7 +272,7 @@
 
 		.swiper-container {
 			width: 80%;
-			height: 90%;
+			height: 400px;
 			position: static;
 
 			.swiper-wrapper {
@@ -318,7 +320,7 @@
 
 			.swiper-button-prev {
 				position: absolute;
-				top: 30%;
+				top: 50%;
 				left: 30px;
 				width: 24px;
 				height: 24px;
@@ -328,7 +330,7 @@
 
 			.swiper-button-next {
 				position: absolute;
-				top: 30%;
+				top: 50%;
 				right: 30px;
 				width: 24px;
 				height: 24px;

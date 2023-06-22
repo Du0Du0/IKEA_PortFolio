@@ -2883,6 +2883,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  overflow: hidden;
 }
 #sns .bgLeft {
   width: 50%;
@@ -2926,7 +2927,7 @@ a {
 }
 #sns .container {
   max-width: 100%;
-  height: 100%;
+  height: 500px;
   margin: 0 auto;
   padding: 120px 15vw 96px;
   position: absolute;
@@ -2934,8 +2935,9 @@ a {
 }
 #sns .swiper-container {
   width: 100%;
-  height: 100%;
+  height: 500px;
   position: static;
+  overflow: hidden;
 }
 #sns .swiper-container .swiper-wrapper .swiper-slide {
   text-align: center;
@@ -2976,7 +2978,7 @@ a {
 }
 #sns .swiper-container .swiper-button-prev {
   position: absolute;
-  top: 40%;
+  top: 75%;
   left: 200px;
   width: 26px;
   height: 26px;
@@ -2985,7 +2987,7 @@ a {
 }
 #sns .swiper-container .swiper-button-next {
   position: absolute;
-  top: 40%;
+  top: 75%;
   right: 200px;
   width: 26px;
   height: 26px;
@@ -3019,7 +3021,7 @@ a {
   }
   #sns .container {
     max-width: 100%;
-    height: 100%;
+    height: 600px;
     margin: 0 auto;
     padding: 120px 10vw 96px;
     position: absolute;
@@ -3027,7 +3029,7 @@ a {
   }
   #sns .swiper-container {
     width: 100%;
-    height: 100%;
+    height: 400px;
     position: static;
   }
   #sns .swiper-container .swiper-wrapper .swiper-slide {
@@ -3071,7 +3073,7 @@ a {
   }
   #sns .swiper-container .swiper-button-prev {
     position: absolute;
-    top: 32%;
+    top: 53%;
     left: 50px;
     width: 24px;
     height: 24px;
@@ -3080,7 +3082,7 @@ a {
   }
   #sns .swiper-container .swiper-button-next {
     position: absolute;
-    top: 32%;
+    top: 53%;
     right: 50px;
     width: 24px;
     height: 24px;
@@ -3108,7 +3110,7 @@ a {
   }
   #sns .container {
     max-width: 100%;
-    height: 100%;
+    height: 600px;
     margin: 0 auto;
     padding: 120px 10vw 96px;
     position: absolute;
@@ -3116,7 +3118,7 @@ a {
   }
   #sns .swiper-container {
     width: 80%;
-    height: 90%;
+    height: 400px;
     position: static;
   }
   #sns .swiper-container .swiper-wrapper .swiper-slide {
@@ -3158,7 +3160,7 @@ a {
   }
   #sns .swiper-container .swiper-button-prev {
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 30px;
     width: 24px;
     height: 24px;
@@ -3167,7 +3169,7 @@ a {
   }
   #sns .swiper-container .swiper-button-next {
     position: absolute;
-    top: 30%;
+    top: 50%;
     right: 30px;
     width: 24px;
     height: 24px;
@@ -3243,6 +3245,21 @@ a {
   display: flex;
   gap: 30px;
 }
+#notice .noticeContainer .noticeWrap:nth-of-type(1) .iconWrap i {
+  cursor: pointer;
+}
+#notice .noticeContainer .noticeWrap:nth-of-type(1) .iconWrap span:nth-of-type(1):hover {
+  color: rgb(16, 16, 158);
+}
+#notice .noticeContainer .noticeWrap:nth-of-type(1) .iconWrap span:nth-of-type(2):hover {
+  color: rgb(213, 5, 32);
+}
+#notice .noticeContainer .noticeWrap:nth-of-type(1) .iconWrap span:nth-of-type(3):hover {
+  color: rgb(208, 2, 136);
+}
+#notice .noticeContainer .noticeWrap:nth-of-type(1) .iconWrap span:nth-of-type(4):hover {
+  color: rgb(8, 113, 5);
+}
 #notice .noticeContainer .noticeWrap:nth-of-type(2) {
   flex: 1;
   width: 100%;
@@ -3260,13 +3277,15 @@ a {
   padding: 50px;
   padding-top: 60px;
   border-left: 1px solid #e9e9e9;
-  cursor: pointer;
 }
 #notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .topic {
   width: 100%;
   font: 16px/1 "Noto Sans KR";
   color: #1188bb;
   margin-bottom: 20px;
+}
+#notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .topic p {
+  cursor: pointer;
 }
 #notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .titleWrap {
   width: 100%;
@@ -3275,13 +3294,24 @@ a {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 #notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .titleWrap h2 {
-  font: bold 24px/1 "Noto Sans KR";
+  width: 70%;
+  font: bold 24px/1.5 "Noto Sans KR";
   color: #171717;
+  text-align: justify;
+  word-break: break-all;
+}
+#notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .titleWrap h2:hover {
+  text-decoration-line: underline;
+  text-decoration-color: #171717;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+  text-underline-position: under;
 }
 #notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .titleWrap p {
-  font: 16px/1 "Noto Sans KR";
+  font: 16px/2.5 "Noto Sans KR";
   color: #171717;
 }
 #notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .content {
@@ -3293,6 +3323,7 @@ a {
 #notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .content p {
   font: 18px/1.6 "Noto Sans KR";
   color: #171717;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1023px) {
@@ -3344,11 +3375,11 @@ a {
     margin-bottom: 40px;
   }
   #notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .titleWrap h2 {
-    font: bold 19.2px/1 "Noto Sans KR";
+    font: bold 19.2px/1.5 "Noto Sans KR";
     color: #171717;
   }
   #notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .titleWrap p {
-    font: 12.8px/1 "Noto Sans KR";
+    font: 12.8px/2.5 "Noto Sans KR";
     color: #171717;
   }
   #notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .content {
@@ -3406,11 +3437,11 @@ a {
     margin-bottom: 20px;
   }
   #notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .titleWrap h2 {
-    font: bold 16.8px/1 "Noto Sans KR";
+    font: bold 16.8px/1.8 "Noto Sans KR";
     color: #171717;
   }
   #notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .titleWrap p {
-    font: 11.2px/1 "Noto Sans KR";
+    font: 11.2px/2.5 "Noto Sans KR";
     color: #171717;
   }
   #notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .content {
@@ -6395,6 +6426,121 @@ a {
   #visual .visualWrap .bg:nth-of-type(13) {
     padding: 170px 3vw 10px;
   }
+}
+.gallery {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.gallery .subVisual {
+  width: 100%;
+  height: 480px;
+  position: relative;
+  overflow: hidden;
+}
+.gallery .subVisual .background {
+  width: 50%;
+  height: 80px;
+  background: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.gallery .titContainer {
+  width: 100%;
+  height: 300px;
+  padding: 150px 15vw 246px;
+}
+.gallery .titContainer h1 {
+  text-align: left;
+  font: bold 70px/1 "Noto Sans KR";
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 96px;
+}
+.gallery .searchBox {
+  width: 100%;
+  padding: 50px 10px 20px;
+  font-size: 0;
+}
+.gallery .searchBox input {
+  width: 260px;
+  height: 30px;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding-left: 10px;
+}
+.gallery .searchBox .btnSearch {
+  width: 80px;
+  height: 29px;
+  background: #333;
+  color: #fff;
+  font: bold 12px/29px "arial";
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+  transform: translateY(-1px);
+}
+.gallery .loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: opacity 1s;
+  z-index: 3;
+}
+.gallery .loading.off {
+  opacity: 0;
+  z-index: -1;
+}
+.gallery .wrap {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1s;
+}
+.gallery .wrap.on {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.gallery .wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.gallery .wrap li {
+  width: 20%;
+  float: left;
+  padding: 10px;
+}
+.gallery .wrap li > div {
+  width: 100%;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05);
+}
+.gallery .wrap li > div .thumb {
+  width: 100%;
+}
+.gallery .wrap li > div p {
+  font: 18px/1.2 "Architects daughter";
+  color: #777;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.gallery .wrap li > div .profile {
+  width: 100%;
+}
+.gallery .wrap li > div .profile img {
+  width: 36px;
+}
+.gallery .wrap li > div .profile span {
+  display: inline-block;
+  font: 12px/1 "arial";
+  color: orange;
+  margin-left: 5px;
+  transform: translateY(-10px);
 }
 
 /*# sourceMappingURL=style.css.map */
