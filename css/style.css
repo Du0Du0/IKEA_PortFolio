@@ -864,7 +864,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 96px 17vw 96px;
+  padding: 96px 10vw 96px;
 }
 #products .productsContainer {
   width: 100%;
@@ -876,22 +876,22 @@ a {
 #products .productsContainer .productsTit {
   width: 100%;
   height: 100%;
-  flex: 1;
+  flex: 2;
   background: #f9f9f9;
-  font: 70px/180px "Noto Sans KR";
+  font: bold 70px/1 "Noto Sans KR";
   color: #333;
 }
 #products .productsContainer .productsSub {
-  width: 100%;
+  width: 74%;
   height: 100%;
-  flex: 3;
+  flex: 1;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 0px 5vw 0px;
+  padding: 0px 0vw 0px;
 }
 #products .productsContainer .productsSub .slideContainer {
-  width: 110%;
+  width: 100%;
   overflow: hidden;
   display: flex;
   height: 50%;
@@ -900,7 +900,7 @@ a {
 }
 #products .productsContainer .productsSub .slideContainer .slideWrap {
   gap: 20px;
-  display: inline-flex;
+  display: flex;
   animation: moveRe 20s linear infinite;
   animation-delay: 0s;
   justify-content: center;
@@ -943,11 +943,11 @@ a {
   height: 100%;
   flex: 1.2;
   display: flex;
-  gap: 20px;
+  gap: 0px;
 }
 #products .productsContainer .productsSub .btnWrap .arrowBtns {
-  width: 20%;
-  height: 90%;
+  width: 22.2222222222%;
+  height: 100%;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -977,12 +977,12 @@ a {
   cursor: pointer;
 }
 #products .productsContainer .productsSub .btnWrap .circleBtns {
-  width: 20%;
+  width: 25%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 1.2vw 0px;
+  padding: 0px 0vw 0px;
   gap: 20px;
 }
 #products .productsContainer .productsSub .btnWrap .circleBtns button {
@@ -997,9 +997,9 @@ a {
   background: #171717;
 }
 #products .productsContainer .productsSub .btnWrap .hyperBtns {
-  width: 20%;
+  width: 25%;
   height: 100%;
-  font: 18px/1 "Noto Sans KR";
+  font: 16px/1 "Noto Sans KR";
   color: #333;
   display: flex;
   padding: 0px 0vw 0px;
@@ -1010,51 +1010,155 @@ a {
 
 @media screen and (max-width: 1023px) {
   #products {
-    height: 600px;
-    padding: 0px 10vw 60px;
+    width: 100vw;
+    height: 500px;
+    background: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 96px 5vw 96px;
   }
   #products .productsContainer {
-    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   #products .productsContainer .productsTit {
-    height: 70px;
+    width: 100%;
+    height: 100%;
+    flex: 2;
+    background: #f9f9f9;
+    font: bold 56px/1 "Noto Sans KR";
+    color: #333;
   }
   #products .productsContainer .productsSub {
-    height: 53%;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     padding: 0px 0vw 0px;
   }
+  #products .productsContainer .productsSub .slideContainer {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    height: 50%;
+    flex: 2.5;
+    position: relative;
+  }
+  #products .productsContainer .productsSub .slideContainer .slideWrap {
+    gap: 20px;
+    display: flex;
+    animation: moveRe 20s linear infinite;
+    animation-delay: 0s;
+    justify-content: center;
+  }
+  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem {
+    width: 214px;
+    height: 100%;
+    background: #f0f0f0;
+  }
+  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem .productsImg {
+    display: flex;
+    justify-content: center;
+  }
+  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem .productsImg img {
+    width: 150px;
+    height: 150px;
+  }
+  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem .productsName {
+    text-align: center;
+    font: 18px/25px "Noto Sans KR";
+    color: #333;
+    margin-top: auto;
+  }
+  #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:hover {
+    background: #e9e9e9;
+  }
+  @keyframes moveRe {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translateX(-3000px);
+    }
+  }
+  #products .productsContainer .productsSub .slideContainer .slideWrap:hover {
+    animation-play-state: paused;
+  }
+  #products .productsContainer .productsSub .btnWrap {
+    width: 100%;
+    height: 100%;
+    flex: 1.2;
+    display: flex;
+    gap: 0px;
+  }
   #products .productsContainer .productsSub .btnWrap .arrowBtns {
-    width: 27.7777777778%;
-    height: 90%;
+    width: 22.2222222222%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  #products .productsContainer .productsSub .btnWrap .arrowBtns .leftArrowBtn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background: #171717;
+    font: 26px "Noto Sans KR";
+    color: #eee;
+    cursor: pointer;
+  }
+  #products .productsContainer .productsSub .btnWrap .arrowBtns .rigtArrowBtn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background: #171717;
+    font: 26px/5px "Noto Sans KR";
+    color: #eee;
+    cursor: pointer;
   }
   #products .productsContainer .productsSub .btnWrap .circleBtns {
-    width: 27.7777777778%;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0vw 0px;
+    gap: 20px;
+  }
+  #products .productsContainer .productsSub .btnWrap .circleBtns button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: none;
+    background: #cccccc;
+    cursor: pointer;
+  }
+  #products .productsContainer .productsSub .btnWrap .circleBtns button.on {
+    background: #171717;
   }
   #products .productsContainer .productsSub .btnWrap .hyperBtns {
-    width: 27.7777777778%;
-  }
-}
-@media screen and (max-width: 639px) {
-  #products {
-    padding: 0px 5vw 60px;
-  }
-  #products .productsContainer .productsTit {
-    font: 50px/180px "Noto Sans KR";
-  }
-  #products .productsContainer .productsSub {
-    height: 53%;
-  }
-  #products .productsContainer .productsSub .btnWrap .arrowBtns {
-    width: 50%;
-    height: 80%;
-  }
-  #products .productsContainer .productsSub .btnWrap .circleBtns {
-    display: none;
-  }
-  #products .productsContainer .productsSub .btnWrap .hyperBtns {
-    width: 50%;
+    width: 25%;
+    height: 100%;
+    font: 16px/1 "Noto Sans KR";
+    color: #333;
+    display: flex;
+    padding: 0px 0vw 0px;
     justify-content: left;
-    margin-top: -7px;
+    align-items: center;
+    cursor: pointer;
   }
 }
 #room {
@@ -1214,7 +1318,7 @@ a {
 }
 #vids {
   width: 100vw;
-  height: 900px;
+  height: 950px;
   background: #f9f9f9;
   padding: 96px 10vw 120px;
   display: flex;
@@ -1235,19 +1339,21 @@ a {
 }
 #vids .vidsContainer .vidsTextWrap .vidsTit {
   flex: 1.65;
-  font: 70px/1 "Noto Sans KR";
+  font: bold 70px/1 "Noto Sans KR";
   color: #333;
+  margin-bottom: 50px;
 }
 #vids .vidsContainer .vidsTextWrap .vidsSub {
   flex: 1;
-  font: 26px/1.3 "Noto Sans KR";
+  font: 24px/1.3 "Noto Sans KR";
   color: rgba(16, 16, 16, 0.6);
   text-align: justify;
   word-break: break-all;
   letter-spacing: 0.1px;
+  margin-bottom: 30px;
 }
 #vids .vidsContainer .vidsTextWrap .vidsSub strong {
-  font: bold 26px/1 "Noto Sans KR";
+  font: bold 24px/1 "Noto Sans KR";
   color: #333;
   letter-spacing: 0.1px;
 }
@@ -1272,7 +1378,7 @@ a {
   flex: 1;
   width: 100%;
   height: 20px;
-  font: 26px/3.5 "Noto Sans KR";
+  font: 26px/4 "Noto Sans KR";
   color: #e9e9e9;
   border-bottom: 1px solid #ddd;
   cursor: pointer;
@@ -1281,7 +1387,7 @@ a {
 #vids .vidsContainer .vidsVideoWrap .video .vidsBarTit {
   width: 100%;
   flex: 3.5;
-  font: 23px/7 "Noto Sans KR";
+  font: 24px/7 "Noto Sans KR";
   color: #e9e9e9;
   writing-mode: vertical-rl;
   padding-top: 1.5vw;
@@ -1306,17 +1412,18 @@ a {
   backdrop-filter: blur(10px) opacity(0.3);
   width: 100%;
   height: 100%;
-  padding: 60px 5vw 60px;
+  padding: 100px 5vw 60px;
 }
 #vids .vidsContainer .vidsVideoWrap .video.on .vidsOnSpan h4 {
   color: #e9e9e9;
-  font: 26px/1 "Noto Sans KR";
+  font: 20px/1 "Noto Sans KR";
   text-align: left;
+  margin-bottom: 10px;
 }
 #vids .vidsContainer .vidsVideoWrap .video.on .vidsOnSpan h2 {
   color: #eee;
   width: 600px;
-  font: 38px/1.2 "Noto Sans KR";
+  font: 30px/1.2 "Noto Sans KR";
   text-align: left;
   z-index: 999;
   text-align: justify;
@@ -1327,7 +1434,7 @@ a {
   width: 600px;
   text-align: justify;
   word-break: break-all;
-  font: 18px/1.2 "Noto Sans KR";
+  font: 18px/1.5 "Noto Sans KR";
   text-align: left;
   margin-top: 2vw;
   margin-bottom: 96px;
@@ -1342,7 +1449,7 @@ a {
   height: 71px;
   background: #623fe4;
   border: none;
-  font: 18px/71px "Noto Sans KR";
+  font: 16px/71px "Noto Sans KR";
   color: #e9e9e9;
   cursor: pointer;
   align-items: flex-end;
@@ -1360,11 +1467,18 @@ a {
     flex: 5;
   }
 }
+#vids p {
+  margin-top: 20px;
+  text-align: end;
+  font: 16px/1 "Noto Sans KR";
+  color: #333;
+  cursor: pointer;
+}
 
 @media screen and (max-width: 1023px) {
   #vids {
     height: 900px;
-    padding: 96px 10vw 120px;
+    padding: 60px 5vw 120px;
   }
   #vids .vidsContainer .vidsTextWrap {
     display: block;
@@ -1373,14 +1487,14 @@ a {
     width: 100%;
     height: 50px;
     flex: 1.65;
-    font: 70px/1 "Noto Sans KR";
+    font: bold 56px/1 "Noto Sans KR";
     color: #333;
     margin-bottom: 50px;
   }
   #vids .vidsContainer .vidsTextWrap .vidsSub {
     flex: 1;
-    width: 100%;
-    font: 18px/1.3 "Noto Sans KR";
+    width: 60%;
+    font: 14.4px/1.5 "Noto Sans KR";
     color: rgba(16, 16, 16, 0.6);
     text-align: justify;
     word-break: break-all;
@@ -1388,7 +1502,7 @@ a {
     margin-bottom: 50px;
   }
   #vids .vidsContainer .vidsTextWrap .vidsSub strong {
-    font: bold 18px/1 "Noto Sans KR";
+    font: bold 14.4px/1.5 "Noto Sans KR";
     color: #333;
     letter-spacing: 0.1px;
   }
@@ -1413,7 +1527,7 @@ a {
     flex: 1;
     width: 100%;
     height: 20px;
-    font: 26px/3.5 "Noto Sans KR";
+    font: 24px/4 "Noto Sans KR";
     color: #e9e9e9;
     border-bottom: 1px solid #ddd;
     cursor: pointer;
@@ -1422,7 +1536,7 @@ a {
   #vids .vidsContainer .vidsVideoWrap .video .vidsBarTit {
     width: 100%;
     flex: 3.5;
-    font: 20px/7 "Noto Sans KR";
+    font: 19px/7 "Noto Sans KR";
     color: #e9e9e9;
     writing-mode: vertical-rl;
     padding-top: 3vw;
@@ -1445,19 +1559,19 @@ a {
   }
   #vids .vidsContainer .vidsVideoWrap .video.on .vidsOnSpan {
     backdrop-filter: blur(10px) opacity(0.3);
-    padding: 35px 5vw 0px;
+    padding: 100px 5vw 0px;
   }
   #vids .vidsContainer .vidsVideoWrap .video.on .vidsOnSpan h4 {
     position: relative;
     color: #e9e9e9;
-    font: 26px/1 "Noto Sans KR";
+    font: 19.2px/1 "Noto Sans KR";
     text-align: left;
-    margin-bottom: 80px;
+    margin-bottom: 10px;
   }
   #vids .vidsContainer .vidsVideoWrap .video.on .vidsOnSpan h2 {
     color: #eee;
-    width: 100%;
-    font: 23px/1.2 "Noto Sans KR";
+    width: 90%;
+    font: 19.2px/1.2 "Noto Sans KR";
     text-align: left;
     z-index: 999;
   }
@@ -1467,7 +1581,7 @@ a {
     width: 330px;
     text-align: justify;
     word-break: break-all;
-    font: 18px/1.2 "Noto Sans KR";
+    font: 14.4px/1.5 "Noto Sans KR";
     text-align: left;
     margin-top: 2vw;
     margin-bottom: 96px;
@@ -1481,7 +1595,7 @@ a {
     height: 71px;
     background: #623fe4;
     border: none;
-    font: 18px/71px "Noto Sans KR";
+    font: 14.4px/71px "Noto Sans KR";
     color: #e9e9e9;
     cursor: pointer;
   }
@@ -1498,11 +1612,18 @@ a {
       flex: 5;
     }
   }
+  #vids p {
+    margin-top: 20px;
+    text-align: end;
+    font: 14.4px/1 "Noto Sans KR";
+    color: #333;
+    cursor: pointer;
+  }
 }
 @media screen and (max-width: 639px) {
   #vids {
     height: 900px;
-    padding: 96px 5vw 120px;
+    padding: 60px 5vw 120px;
   }
   #vids .vidsContainer .vidsTextWrap {
     display: block;
@@ -1511,14 +1632,14 @@ a {
     width: 100%;
     height: 50px;
     flex: 1.65;
-    font: 50px/1 "Noto Sans KR";
+    font: bold 49px/1 "Noto Sans KR";
     color: #333;
     margin-bottom: 50px;
   }
   #vids .vidsContainer .vidsTextWrap .vidsSub {
     flex: 1;
-    width: 100%;
-    font: 18px/1.3 "Noto Sans KR";
+    width: 70%;
+    font: 12.6px/1.5 "Noto Sans KR";
     color: rgba(16, 16, 16, 0.6);
     text-align: justify;
     word-break: break-all;
@@ -1526,7 +1647,7 @@ a {
     margin-bottom: 50px;
   }
   #vids .vidsContainer .vidsTextWrap .vidsSub strong {
-    font: bold 18px/1 "Noto Sans KR";
+    font: bold 12.6px/1.5 "Noto Sans KR";
     color: #333;
     letter-spacing: 0.1px;
   }
@@ -1551,7 +1672,7 @@ a {
     flex: 1;
     width: 100%;
     height: 20px;
-    font: 23px/3.5 "Noto Sans KR";
+    font: 16.8px/6 "Noto Sans KR";
     color: #e9e9e9;
     border-bottom: 1px solid #ddd;
     cursor: pointer;
@@ -1560,16 +1681,16 @@ a {
   #vids .vidsContainer .vidsVideoWrap .video .vidsBarTit {
     width: 100%;
     flex: 3.5;
-    font: 18px/7 "Noto Sans KR";
+    font: 16.8px/7 "Noto Sans KR";
     color: #e9e9e9;
     writing-mode: vertical-rl;
-    padding-top: 7vw;
+    padding-top: 10vw;
     text-align: left;
     cursor: pointer;
     backdrop-filter: brightness(0.8);
   }
   #vids .vidsContainer .vidsVideoWrap .video.on {
-    flex: 2;
+    flex: 3;
     background: #a3a3a3;
     animation: videoMove 0.5s linear;
     background-position: center;
@@ -1583,19 +1704,19 @@ a {
   }
   #vids .vidsContainer .vidsVideoWrap .video.on .vidsOnSpan {
     backdrop-filter: blur(10px) opacity(0.3);
-    padding: 30px 5vw 0px;
+    padding: 160px 5vw 0px;
   }
   #vids .vidsContainer .vidsVideoWrap .video.on .vidsOnSpan h4 {
     position: relative;
     color: #e9e9e9;
-    font: 23px/1 "Noto Sans KR";
+    font: 11.2px/1 "Noto Sans KR";
     text-align: left;
-    margin-bottom: 80px;
+    margin-bottom: 10px;
   }
   #vids .vidsContainer .vidsVideoWrap .video.on .vidsOnSpan h2 {
     color: #eee;
-    width: 100%;
-    font: 18px/1.2 "Noto Sans KR";
+    width: 90%;
+    font: 16.8px/1.2 "Noto Sans KR";
     text-align: left;
     z-index: 999;
   }
@@ -1605,7 +1726,7 @@ a {
     width: 330px;
     text-align: justify;
     word-break: break-all;
-    font: 18px/1.2 "Noto Sans KR";
+    font: 12.6px/1.5 "Noto Sans KR";
     text-align: left;
     margin-top: 2vw;
     margin-bottom: 96px;
@@ -1615,11 +1736,11 @@ a {
     position: absolute;
     bottom: 0px;
     right: 0px;
-    width: 153px;
-    height: 63px;
+    width: 209px;
+    height: 71px;
     background: #623fe4;
     border: none;
-    font: 14px/63px "Noto Sans KR";
+    font: 14.4px/71px "Noto Sans KR";
     color: #e9e9e9;
     cursor: pointer;
   }
@@ -1633,8 +1754,15 @@ a {
       writing-mode: vertical-rl;
     }
     to {
-      flex: 2;
+      flex: 5;
     }
+  }
+  #vids p {
+    margin-top: 20px;
+    text-align: end;
+    font: 12.6px/1 "Noto Sans KR";
+    color: #333;
+    cursor: pointer;
   }
 }
 #smartHome {
@@ -1661,15 +1789,13 @@ a {
   text-align: center;
   width: 350px;
   height: 465px;
-  font-size: 18px;
   background: rgb(255, 255, 255);
   border-radius: 10px;
   background: transparent;
-  border: 2px solid white;
+  border: 1px solid white;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: left;
   padding: 80px 45px;
   position: relative;
 }
@@ -1679,6 +1805,7 @@ a {
   color: #eee;
   margin-bottom: 130px;
   z-index: 1;
+  text-align: left;
 }
 #smartHome .swiper-container .swiper-wrapper .swiper-slide h2 {
   position: relative;
@@ -1686,13 +1813,15 @@ a {
   color: #eee;
   z-index: 1;
   margin-bottom: 100px;
+  text-align: left;
 }
 #smartHome .swiper-container .swiper-wrapper .swiper-slide .animation {
-  font: 150px/1 "Work Sans";
-  position: relative;
+  font: 154px/1 "Work Sans";
+  position: absolute;
   z-index: 1000;
-  bottom: -22px;
-  left: 0px;
+  bottom: -72px;
+  right: 72px;
+  transform: translate(-50% 50%);
   text-align: right;
   color: transparent;
   -webkit-text-stroke: 1px #eee;
@@ -1713,7 +1842,7 @@ a {
 }
 #smartHome .swiper-container .swiper-button-prev {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50px;
   width: 45px;
   height: 45px;
@@ -1722,7 +1851,7 @@ a {
 }
 #smartHome .swiper-container .swiper-button-next {
   position: absolute;
-  top: 45%;
+  top: 50%;
   right: 50px;
   width: 45px;
   height: 45px;
@@ -1730,6 +1859,194 @@ a {
   margin-top: 0px;
 }
 
+@media screen and (max-width: 1023px) {
+  #smartHome {
+    width: 100vw;
+    height: 790px;
+    background: url(../img/smartHomeBg3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #smartHome .container {
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 150px 5vw 96px;
+    position: relative;
+  }
+  #smartHome .swiper-container {
+    width: 100%;
+    height: 100%;
+    position: static;
+  }
+  #smartHome .swiper-container .swiper-wrapper .swiper-slide {
+    text-align: center;
+    width: 350px;
+    height: 465px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    background: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 45px;
+    position: relative;
+  }
+  #smartHome .swiper-container .swiper-wrapper .swiper-slide h4 {
+    position: relative;
+    font: 14.4px/1 "Noto Sans KR";
+    color: #eee;
+    margin-bottom: 130px;
+    z-index: 1;
+    text-align: left;
+  }
+  #smartHome .swiper-container .swiper-wrapper .swiper-slide h2 {
+    position: relative;
+    font: bold 24px/1 "Noto Sans KR";
+    color: #eee;
+    z-index: 1;
+    margin-bottom: 100px;
+    text-align: left;
+  }
+  #smartHome .swiper-container .swiper-wrapper .swiper-slide .animation {
+    font: 140px/1 "Work Sans";
+    position: absolute;
+    z-index: 1000;
+    bottom: -72px;
+    right: 72px;
+    transform: translate(-50% 50%);
+    text-align: right;
+    color: transparent;
+    -webkit-text-stroke: 1px #eee;
+  }
+  #smartHome .swiper-container .swiper-wrapper .swiper-slide .animation.movingText {
+    animation: fillingText 1s infinite;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+  }
+  @keyframes fillingText {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      color: #eee;
+      transform: translateX(100px);
+    }
+  }
+  #smartHome .swiper-container .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%);
+    margin-top: 0px;
+  }
+  #smartHome .swiper-container .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%);
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  #smartHome {
+    width: 100vw;
+    height: 790px;
+    background: url(../img/smartHomeBg3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #smartHome .container {
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 150px 10vw 96px;
+    position: relative;
+  }
+  #smartHome .swiper-container {
+    width: 100%;
+    height: 100%;
+    position: static;
+  }
+  #smartHome .swiper-container .swiper-wrapper .swiper-slide {
+    text-align: center;
+    width: 350px;
+    height: 465px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    background: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 45px;
+    position: relative;
+  }
+  #smartHome .swiper-container .swiper-wrapper .swiper-slide h4 {
+    position: relative;
+    font: 12.6px/1 "Noto Sans KR";
+    color: #eee;
+    margin-bottom: 130px;
+    z-index: 1;
+    text-align: left;
+  }
+  #smartHome .swiper-container .swiper-wrapper .swiper-slide h2 {
+    position: relative;
+    font: bold 21px/1 "Noto Sans KR";
+    color: #eee;
+    z-index: 1;
+    margin-bottom: 100px;
+    text-align: left;
+  }
+  #smartHome .swiper-container .swiper-wrapper .swiper-slide .animation {
+    font: 140px/1 "Work Sans";
+    position: absolute;
+    z-index: 1000;
+    bottom: -72px;
+    right: 72px;
+    transform: translate(-50% 50%);
+    text-align: right;
+    color: transparent;
+    -webkit-text-stroke: 1px #eee;
+  }
+  #smartHome .swiper-container .swiper-wrapper .swiper-slide .animation.movingText {
+    animation: fillingText 1s infinite;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+  }
+  @keyframes fillingText {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      color: #eee;
+      transform: translateX(100px);
+    }
+  }
+  #smartHome .swiper-container .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%);
+    margin-top: 0px;
+  }
+  #smartHome .swiper-container .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%);
+    margin-top: 0px;
+  }
+}
 #news {
   width: 100vw;
   height: 860px;
@@ -2574,11 +2891,38 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+#sns .bgLeft .leftTxt {
+  padding: 10px;
+  margin-left: 5vw;
+  margin-top: 220px;
+  font: 40px/1 "Noto Sans KR";
+  color: transparent;
+  -webkit-text-stroke: 1px #eee;
+  text-align: left;
+  text-orientation: sideways;
+  transform: rotate(180deg);
+  writing-mode: vertical-rl;
+  white-space: wrap;
+  word-spacing: -10px;
+}
 #sns .bgRight {
   width: 50%;
   height: 100%;
-  float: right;
   background: #4881c2;
+}
+#sns .bgRight .rightTxt {
+  float: right;
+  color: transparent;
+  margin-top: 230px;
+  font: 40px/1 "Noto Sans KR";
+  -webkit-text-stroke: 1px #eee;
+  margin-right: 5vw;
+  padding: 10px;
+  text-orientation: sideways;
+  transform: rotate(180deg);
+  writing-mode: vertical-rl;
+  white-space: wrap;
+  word-spacing: -10px;
 }
 #sns .container {
   max-width: 100%;
@@ -2633,7 +2977,7 @@ a {
 #sns .swiper-container .swiper-button-prev {
   position: absolute;
   top: 40%;
-  left: 50px;
+  left: 200px;
   width: 26px;
   height: 26px;
   transform: translateY(-200%);
@@ -2642,7 +2986,7 @@ a {
 #sns .swiper-container .swiper-button-next {
   position: absolute;
   top: 40%;
-  right: 50px;
+  right: 200px;
   width: 26px;
   height: 26px;
   transform: translateY(-200%);
@@ -2662,10 +3006,16 @@ a {
     width: 50%;
     height: 100%;
   }
+  #sns .bgLeft .leftTxt {
+    display: none;
+  }
   #sns .bgRight {
     width: 50%;
     height: 100%;
     float: right;
+  }
+  #sns .bgRight .rightTxt {
+    display: none;
   }
   #sns .container {
     max-width: 100%;
@@ -3078,11 +3428,466 @@ a {
   width: 100vw;
   height: 100vh;
 }
-.location .inner #map {
+.location .subVisual {
   width: 100%;
-  height: 400px;
-  background: #111;
+  height: 480px;
   position: relative;
+  overflow: hidden;
+}
+.location .subVisual video {
+  object-fit: contain;
+  object-position: 0vw -28vw;
+}
+.location .subVisual .background {
+  width: 50%;
+  height: 80px;
+  background: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.location .titContainer {
+  width: 100%;
+  height: 300px;
+  padding: 150px 15vw 246px;
+}
+.location .titContainer h1 {
+  text-align: left;
+  font: bold 70px/1 "Noto Sans KR";
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 96px;
+}
+.location #map {
+  width: 100%;
+  height: 600px;
+  margin: 0px auto;
+  position: relative;
+}
+.location .storeListContainer {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.location .storeListContainer .left {
+  width: 35%;
+  height: 100%;
+  background: #fff;
+}
+.location .storeListContainer .left h2 {
+  margin-top: 40px;
+  font: bold 51px/1 "Noto Sans KR";
+  color: #171717;
+  margin-bottom: 50px;
+}
+.location .storeListContainer .left p {
+  font: 18px/1.5 "Noto Sans KR";
+  color: #171717;
+}
+.location .rightContainer {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+}
+.location .rightContainer .list {
+  width: calc 50%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.location .rightContainer .list:nth-of-type(1) {
+  width: 50%;
+  height: 50%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #e9e9e9;
+}
+.location .rightContainer .list:nth-of-type(1):hover {
+  background: #e0e1fa;
+}
+.location .rightContainer .list:nth-of-type(1).on {
+  background: #c4c7fc;
+}
+.location .rightContainer .list:nth-of-type(1) .storeName {
+  flex: 0.5;
+  text-align: left;
+  padding: 32px;
+  margin-top: 5px;
+}
+.location .rightContainer .list:nth-of-type(1) .storeName .tit {
+  font: bold 51px/1 "Noto Sans KR";
+  color: #3500ea;
+}
+.location .rightContainer .list:nth-of-type(1) .storeAddress {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+.location .rightContainer .list:nth-of-type(1) .storeAddress p {
+  font: 16px/1 "Noto Sans KR";
+  color: #3500ea;
+}
+.location .rightContainer .list:nth-of-type(1) .storeOpen {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+.location .rightContainer .list:nth-of-type(1) .storeOpen p {
+  font: 16px/1.8 "Noto Sans KR";
+  color: #3500ea;
+}
+.location .rightContainer .list:nth-of-type(1) .storeOpen p span {
+  font: bold 16px/1.8 "Noto Sans KR";
+}
+.location .rightContainer .list:nth-of-type(1) .storeOpen h4 {
+  font: 16px/1.8 "Noto Sans KR";
+  color: #3500ea;
+  padding-left: 2em;
+}
+.location .rightContainer .list:nth-of-type(1) .storePhone {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+.location .rightContainer .list:nth-of-type(1) .storePhone p {
+  font: 16px/1 "Noto Sans KR";
+  color: #3500ea;
+}
+.location .rightContainer .list:nth-of-type(1) .storeSite {
+  width: 100%;
+  height: auto;
+  padding-left: 20px;
+}
+.location .rightContainer .list:nth-of-type(1) .storeSite p {
+  font: 16px/1 "Noto Sans KR";
+  color: #3500ea;
+}
+.location .rightContainer .list:nth-of-type(2) {
+  width: 50%;
+  height: 50%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #e9e9e9;
+  text-align: left;
+}
+.location .rightContainer .list:nth-of-type(2):hover {
+  background: #e0e1fa;
+}
+.location .rightContainer .list:nth-of-type(2).on {
+  background: #c4c7fc;
+}
+.location .rightContainer .list:nth-of-type(2) .storeName {
+  flex: 0.5;
+  text-align: left;
+  padding: 32px;
+  margin-top: 5px;
+}
+.location .rightContainer .list:nth-of-type(2) .storeName .tit {
+  font: bold 51px/1 "Noto Sans KR";
+  background: repeating-linear-gradient(45deg, #3500ea, #3500ea 0.5px, #e7e8fc 0.5px, #e7e8fc 1.2px);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.location .rightContainer .list:nth-of-type(2) .storeAddress {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+.location .rightContainer .list:nth-of-type(2) .storeAddress p {
+  font: 16px/1 "Noto Sans KR";
+  color: #3500ea;
+}
+.location .rightContainer .list:nth-of-type(2) .storeOpen {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+.location .rightContainer .list:nth-of-type(2) .storeOpen p {
+  font: 16px/1.8 "Noto Sans KR";
+  color: #3500ea;
+}
+.location .rightContainer .list:nth-of-type(2) .storeOpen p span {
+  font: bold 16px/1.8 "Noto Sans KR";
+}
+.location .rightContainer .list:nth-of-type(2) .storeOpen h4 {
+  font: 16px/1.8 "Noto Sans KR";
+  color: #3500ea;
+}
+.location .rightContainer .list:nth-of-type(2) .storePhone {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+.location .rightContainer .list:nth-of-type(2) .storePhone p {
+  font: 16px/1 "Noto Sans KR";
+  color: #3500ea;
+}
+.location .rightContainer .list:nth-of-type(2) .storeSite {
+  width: 100%;
+  height: auto;
+  padding-left: 20px;
+}
+.location .rightContainer .list:nth-of-type(2) .storeSite p {
+  font: 16px/1 "Noto Sans KR";
+  color: #3500ea;
+}
+.location .rightContainer .list:nth-of-type(3) {
+  width: 50%;
+  height: 50%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #e9e9e9;
+  text-align: left;
+}
+.location .rightContainer .list:nth-of-type(3):hover {
+  background: #e0e1fa;
+}
+.location .rightContainer .list:nth-of-type(3).on {
+  background: #c4c7fc;
+}
+.location .rightContainer .list:nth-of-type(3) .storeName {
+  flex: 0.5;
+  text-align: left;
+  padding: 32px;
+  margin-top: 5px;
+}
+.location .rightContainer .list:nth-of-type(3) .storeName .tit {
+  font: bold 51px/1 "Noto Sans KR";
+  background: repeating-linear-gradient(45deg, #3500ea, #3500ea 0.5px, #e7e8fc 0.5px, #e7e8fc 1.2px);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.location .rightContainer .list:nth-of-type(3) .storeAddress {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+.location .rightContainer .list:nth-of-type(3) .storeAddress p {
+  font: 16px/1 "Noto Sans KR";
+  color: #3500ea;
+}
+.location .rightContainer .list:nth-of-type(3) .storeOpen {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+.location .rightContainer .list:nth-of-type(3) .storeOpen p {
+  font: 16px/1.8 "Noto Sans KR";
+  color: #3500ea;
+}
+.location .rightContainer .list:nth-of-type(3) .storeOpen p span {
+  font: bold 16px/1.8 "Noto Sans KR";
+}
+.location .rightContainer .list:nth-of-type(3) .storeOpen h4 {
+  font: 16px/1.8 "Noto Sans KR";
+  color: #3500ea;
+}
+.location .rightContainer .list:nth-of-type(3) .storePhone {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+.location .rightContainer .list:nth-of-type(3) .storePhone p {
+  font: 16px/1 "Noto Sans KR";
+  color: #3500ea;
+}
+.location .rightContainer .list:nth-of-type(3) .storeSite {
+  width: 100%;
+  height: auto;
+  padding-left: 20px;
+}
+.location .rightContainer .list:nth-of-type(3) .storeSite p {
+  font: 16px/1 "Noto Sans KR";
+  color: #3500ea;
+}
+.location .rightContainer .list:nth-of-type(4) {
+  width: 50%;
+  height: 50%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #e9e9e9;
+  text-align: left;
+}
+.location .rightContainer .list:nth-of-type(4):hover {
+  background: #e0e1fa;
+}
+.location .rightContainer .list:nth-of-type(4).on {
+  background: #c4c7fc;
+}
+.location .rightContainer .list:nth-of-type(4) .storeName {
+  flex: 0.5;
+  text-align: left;
+  padding: 32px;
+  margin-top: 5px;
+}
+.location .rightContainer .list:nth-of-type(4) .storeName .tit {
+  font: bold 51px/1 "Noto Sans KR";
+  background: repeating-linear-gradient(45deg, #3500ea, #3500ea 0.5px, #e7e8fc 0.5px, #e7e8fc 1.2px);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.location .rightContainer .list:nth-of-type(4) .storeAddress {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+.location .rightContainer .list:nth-of-type(4) .storeAddress p {
+  font: 16px/1 "Noto Sans KR";
+  color: #3500ea;
+}
+.location .rightContainer .list:nth-of-type(4) .storeOpen {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+.location .rightContainer .list:nth-of-type(4) .storeOpen p {
+  font: 16px/1.8 "Noto Sans KR";
+  color: #3500ea;
+}
+.location .rightContainer .list:nth-of-type(4) .storeOpen p span {
+  font: bold 16px/1.8 "Noto Sans KR";
+}
+.location .rightContainer .list:nth-of-type(4) .storeOpen h4 {
+  font: 16px/1.8 "Noto Sans KR";
+  color: #3500ea;
+}
+.location .rightContainer .list:nth-of-type(4) .storePhone {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+.location .rightContainer .list:nth-of-type(4) .storePhone p {
+  font: 16px/1 "Noto Sans KR";
+  color: #3500ea;
+}
+.location .rightContainer .list:nth-of-type(4) .storeSite {
+  width: 100%;
+  height: auto;
+  padding-left: 20px;
+}
+.location .rightContainer .list:nth-of-type(4) .storeSite p {
+  font: 16px/1 "Noto Sans KR";
+  color: #3500ea;
+}
+.location .contactContainer {
+  width: 100%;
+  height: 500px;
+}
+.location .contactContainer .contact {
+  width: 100%;
+  height: 100%;
+  float: left;
+  border-top: 1px solid #e9e9e9;
+}
+.location .contactContainer .contact:nth-of-type(1) {
+  width: 35%;
+  height: 100%;
+}
+.location .contactContainer .contact:nth-of-type(1) h2 {
+  margin-top: 40px;
+  font: bold 51px/1 "Noto Sans KR";
+  color: #171717;
+  margin-bottom: 50px;
+}
+.location .contactContainer .contact:nth-of-type(2) {
+  width: 32.5%;
+  height: 100%;
+  border-left: 1px solid #e9e9e9;
+  padding: 43px 1vw 43px;
+  font: 16px/1 "Noto Sans KR";
+  color: #3500ea;
+  margin-bottom: 150px;
+  background: #e0e1fa;
+}
+.location .contactContainer .contact:nth-of-type(2) label {
+  width: 100%;
+}
+.location .contactContainer .contact:nth-of-type(2) input {
+  display: block;
+  width: 100%;
+  height: 25px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 5px;
+  background: #fafaff;
+  border: none;
+  font: 16px/1 "Noto Sans KR";
+  color: #3500ea;
+}
+.location .contactContainer .contact:nth-of-type(2) textarea {
+  display: block;
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  background: #fafaff;
+  padding: 1px;
+  border: none;
+  font: 16px/1 "Noto Sans KR";
+  color: #3500ea;
+  resize: none;
+}
+.location .contactContainer .contact:nth-of-type(2) .submitBtn {
+  width: 150px;
+  height: 41px;
+  color: #3500ea;
+  font: 16px/1 "Noto Sans KR";
+}
+.location .contactContainer .contact:nth-of-type(3) {
+  width: 32.5%;
+  height: 100%;
+  border-left: 1px solid #e9e9e9;
+  padding: 43px 1vw 43px;
+  font: 16px/1 "Noto Sans KR";
+  color: #3500ea;
+  margin-bottom: 150px;
+  background: #e0e1fa;
+  font: 40px/1 "Noto Sans KR";
+}
+.location .contactContainer .contact:nth-of-type(3) .svgBox {
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.location .contactContainer .contact:nth-of-type(3) .svgBox svg path {
+  fill: rgba(0, 0, 0, 0.3);
+  stroke: #000;
+  stroke-width: 10;
+  stroke-dasharray: 2730;
+  stroke-dashoffset: 2730;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 1s;
+}
+.location .contactContainer .contact:nth-of-type(3) .svgBox:hover svg path {
+  stroke-dashoffset: 0;
 }
 
 .members {

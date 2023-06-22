@@ -2,11 +2,11 @@
 const vidsSection = document.querySelector('#vids');
 const vidsVideoWrap = vidsSection.querySelector('.vidsVideoWrap');
 const key = 'AIzaSyCKs11Yu98hp6fq7N54tY2iWSY9qvTh4cM';
-
 const list = 'PLWgHnOZUp_4H3oyXBnWAhhQhWulLsuoPO';
 
 let videoIsOn;
 
+// 화면 줄이면 보이는 동영상 갯수 설정
 window.addEventListener('resize', function () {
 	console.log('resize event!');
 
@@ -14,22 +14,20 @@ window.addEventListener('resize', function () {
 
 	if (window.innerWidth >= 1024 && window.innerWidth <= 1920) {
 		num = 5;
-		rr(num);
+		resizeVids(num);
 		console.log(num);
 	} else if (window.innerWidth >= 639 && window.innerWidth <= 1023) {
 		num = 3;
-		console.log('sas');
-		rr(num);
+		resizeVids(num);
 		console.log(num);
 	} else if (window.innerWidth < 638) {
 		num = 2;
-		console.log('sas2');
-		rr(num);
+		resizeVids(num);
 		console.log(num);
 	}
 });
 
-function rr(num) {
+function resizeVids(num) {
 	const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${list}&key=${key}&maxResults=${num}`;
 	fetch(url)
 		.then((data) => data.json())
@@ -64,6 +62,7 @@ function rr(num) {
 			const vidsBarTit = vidsSection.querySelectorAll('.vidsBarTit');
 			const vidsSpan = vidsSection.querySelectorAll('.vidsOnSpan');
 			const discoverBtn = vidsSection.querySelectorAll('.discoverBtn');
+
 			// box클릭하면 해당 box열리는 기본 기능
 			videos.forEach((video, idx) => {
 				if (videos[idx].classList.contains('on')) {
@@ -107,6 +106,7 @@ function rr(num) {
 			});
 		});
 }
+
 //vids pop 찹업창 띄우기
 document.body.addEventListener('click', (e) => {
 	if (e.target.className === 'discoverBtn')
@@ -114,7 +114,7 @@ document.body.addEventListener('click', (e) => {
 	if (e.target.className === 'close') removePop();
 });
 
-//vids 동적으로 팝업 생성 함수
+//vids 동적으로 팝업 생성
 function createPop(id) {
 	const tags = `	
 			<div class='con'>
@@ -134,7 +134,7 @@ function createPop(id) {
 
 const vidsCloseBtn = document.querySelector('.close');
 
-//팝업제거 함수
+//팝업제거
 function removePop() {
 	document.querySelector('.pop').classList.remove('on');
 	setTimeout(() => document.querySelector('.pop').remove(), 1000);

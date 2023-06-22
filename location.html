@@ -13,8 +13,33 @@
   <script defer src="js/sub/video.js"></script>
   <script defer src="js/sub/location.js"></script>
   <script src="https://kit.fontawesome.com/1178528ead.js" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=be0e6a448d5b266e02a1457647324d73"></script>
   <link rel="shortcut icon" href="#">
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=be0e6a448d5b266e02a1457647324d73">
+  </script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script defer src="js/location.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init('PP62q-Mt-zJtTKVyq');
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        this.contact_number.value = Math.random() * 100000 | 0;
+        // service ID, template ID
+        emailjs.sendForm('service_zxmrkcb', 'template_gtne1ai', this)
+          .then(function () {
+            console.log('SUCCESS!');
+          }, function (error) {
+            console.log('FAILED...', error);
+          });
+      });
+    }
+  </script>
+
 </head>
 
 <body>
@@ -39,7 +64,7 @@
           <ul>
             <li><a href="members.html">Members</a></li>
             <li><a href="video.html"></a>Video</a></li>
-            <li><a href="communtity.html"></a>Communtity</a></li>
+            <li><a href="location.html">Location</a></li>
             <li><a href="gallery.html"></a>Gallery</a></li>
             <li><a href="department.html"></a>Department</a></li>
           </ul>
@@ -57,19 +82,212 @@
       </div>
     </div>
   </header>
-
-  <section class="container location">
-
-
-    <div class="inner">
-      <h2>location</h2>
-    </div>
-
-    <div id="map"></div>
-  </section>
   <!-- header end -->
 
+  <!-- location start -->
+  <section class="contents location">
+    <!-- video top banner -->
+    <figure class="subVisual">
+      <video src="../img/locationSubvisual.mp4" autoplay loop muted></video>
+      <div class="background"></div>
+    </figure>
 
+    <!-- video page title -->
+    <div class="titContainer">
+      <h1>매장찾기</h1>
+
+
+      <div id="map">map</div>
+      <div class="storeListContainer">
+        <div class="left">
+          <h2>매장안내</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit commodi ipsum, aliquam nesciunt
+            doloremque laboriosam alias harum dignissimos rem iusto tempore. Iste dolorum alias, quidem aliquam
+            perferendis ea porro?</p>
+        </div>
+
+        <div class="rightContainer">
+          <div class="list on">
+            <div class="storeName">
+              <h2 class="tit">고양</h2>
+            </div>
+
+            <div class="storeAddress">
+              <p>IKEA 고양점 | 경기도 고양시 덕양구 권율대로 420</p>
+            </div>
+
+            <div class="storeOpen">
+              <p><i class="fa-regular fa-clock"></i>&nbsp;&nbsp;&nbsp;
+                <span>영업 중</span>
+                21:00에 영업 종료
+              </p>
+              <h4>
+                주중 11:00 AM - 09:00 PM<br>
+                주말 10:00AM - 09:00PM</h4>
+            </div>
+
+            <div class="storePhone">
+              <p><i class="fa-solid fa-phone"></i> &nbsp;&nbsp;&nbsp;1670-4532</p>
+            </div>
+
+
+
+          </div>
+          <div class="list">
+            <div class="storeName">
+              <h2 class="tit">기흥</h2>
+            </div>
+
+            <div class="storeAddress">
+              <p>IKEA 기흥점 경기도 용인시 기흥구 신고매로 62</p>
+            </div>
+
+            <div class="storeOpen">
+              <p><i class="fa-regular fa-clock"></i>&nbsp;&nbsp;&nbsp;
+                <span>영업 중</span>
+                20:00에 영업 종료
+              </p>
+              <h4>주중 11:00 AM - 08:00 PM<br>
+                주말 10:00AM - 09:00PM</h4>
+            </div>
+
+            <div class="storePhone">
+              <p><i class="fa-solid fa-phone"></i> &nbsp;&nbsp;&nbsp;1670-4532</p>
+            </div>
+
+
+
+
+
+          </div>
+          <div class="list">
+            <div class="storeName">
+              <h2 class="tit">광명</h2>
+            </div>
+
+            <div class="storeAddress">
+              <p>IKEA 광명점 경기도 광명시 일직로 17</p>
+            </div>
+
+            <div class="storeOpen">
+              <p><i class="fa-regular fa-clock"></i>&nbsp;&nbsp;&nbsp;
+                <span>영업 중</span>
+                20:00에 영업 종료
+              </p>
+              <h4>
+                주중 11:00 AM - 08:00 PM<br>
+                주말 10:00AM - 09:00PM</h4>
+            </div>
+
+            <div class="storePhone">
+              <p><i class="fa-solid fa-phone"></i> &nbsp;&nbsp;&nbsp;1670-4532</p>
+            </div>
+
+
+
+
+          </div>
+          <div class="list">
+            <div class="storeName">
+              <h2 class="tit">동부산</h2>
+            </div>
+
+            <div class="storeAddress">
+              <p>IKEA 동부산점 부산시 기장군 기장읍 동부산관광3로 17</p>
+            </div>
+
+            <div class="storeOpen">
+              <p><i class="fa-regular fa-clock"></i>&nbsp;&nbsp;&nbsp;
+                <span>영업 중</span>
+                20:00에 영업 종료
+              </p>
+              <h4>
+                주중 11:00 AM - 08:00 PM<br>
+                주말 10:00AM - 09:00PM</h4>
+            </div>
+
+            <div class="storePhone">
+              <p><i class="fa-solid fa-phone"></i> &nbsp;&nbsp;&nbsp;1670-4532</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="contactContainer">
+        <div class="contact">
+
+          <h2>문의</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit commodi ipsum, aliquam nesciunt
+            doloremque laboriosam alias harum dignissimos rem iusto tempore. Iste dolorum alias, quidem aliquam
+            perferendis ea porro?</p>
+
+        </div>
+        <div class="contact">
+
+          <form id="contact-form">
+            <!-- 내부적으로 고유 키값이 넘어가는 폼요소 (수정필요 없음) -->
+            <input type="hidden" name="contact_number">
+
+            <!-- 작성하는 사용자 이름 입력받을 폼 요소 -->
+            <label><i class="fa-solid fa-user"></i>&nbsp;&nbsp;&nbsp; Name</label>
+            <input type="text" name="user_name">
+            <label><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;&nbsp;Email</label>
+
+            <!-- 작성하는 사용자의 이메일주소를 입력받을 폼 요소 -->
+            <input type="email" name="user_email">
+            <label><i class="fa-solid fa-pencil"></i>&nbsp;&nbsp;&nbsp;Message</label>
+
+            <!-- 작성 내용을 입력 받을 폼 요소 -->
+            <textarea name="message"></textarea>
+            <input class="submitBtn" type="submit" value="Send">
+          </form>
+        </div>
+        <div class="contact">
+          <div class="svgBox">
+            <!-- viewBox: 가로위치, 세로위치, 넓이비율, 세로비율 -->
+            <svg viewBox="0 0 640 512">
+              <path
+                d="M407 47c9.4-9.4 24.6-9.4 33.9 0l17.2 17.2c1.9-.1 3.9-.2 5.8-.2h32c11.2 0 21.9 2.3 31.6 6.5L543 55c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L564 101.9c7.6 12.2 12 26.7 12 42.1c0 10.2 7.4 18.8 16.7 23c27.9 12.5 47.3 40.5 47.3 73c0 26.2-12.6 49.4-32 64v32c0 8.8-7.2 16-16 16H560c-8.8 0-16-7.2-16-16V320H480v16c0 8.8-7.2 16-16 16H432c-8.8 0-16-7.2-16-16V318.4c-11.8-2.4-22.7-7.4-32-14.4c-1.5-1.1-2.9-2.3-4.3-3.5c-17-14.7-27.7-36.4-27.7-60.5c0-8.8-7.2-16-16-16s-16 7.2-16 16c0 44.7 26.2 83.2 64 101.2V352c0 17.7 14.3 32 32 32h32v64c0 17.7-14.3 32-32 32H352c-17.7 0-32-14.3-32-32V372c-19.8 7.7-41.4 12-64 12s-44.2-4.3-64-12v76c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V329.1L45.9 369.7c-5.4 12.1-19.6 17.6-31.7 12.2S-3.3 362.4 2.1 350.3L24 300.9c5.3-11.9 8-24.7 8-37.7C32 155.7 117.2 68 223.8 64.1l.2-.1h7.2H256h32c41.7 0 83.4 12.1 117.2 25.7c1.7-1.8 3.5-3.6 5.3-5.2L407 81c-9.4-9.4-9.4-24.6 0-33.9zm73 185a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zm88 24a24 24 0 1 0 0-48 24 24 0 1 0 0 48zM480 144a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm48 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </section>
+  <!-- video end -->
+
+
+  <!-- <footer>
+    <img src="../img/videoFooterTop.png" alt="">
+    <div class="footerContainer">
+      <div class="footerCategory">
+        <ul>
+          <li>International sales</li>
+          <li>About IKEA</li>
+          <li>IKEA Museum</li>
+          <li>Work with us</li>
+          <li>Ethics</li>
+        </ul>
+      </div>
+
+      <div class="footerLeftCategory">
+        <ul>
+          <li>Cookie information</li>
+          <li>Privacy statment</li>
+        </ul>
+        <ul>
+          <li>© Inter IKEA Systems B.V. 1999 - 2023</li>
+        </ul>
+        <ul>
+          <li>Co-worker Login</li>
+        </ul>
+      </div>
+    </div>
+  </footer> -->
 </body>
 
 </html>

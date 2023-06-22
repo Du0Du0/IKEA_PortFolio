@@ -2,15 +2,563 @@
 	width: 100vw;
 	height: 100vh;
 
-	.inner {
-		h2 {
+	.subVisual {
+		width: 100%;
+		height: 480px;
+		position: relative;
+		overflow: hidden;
+
+		video {
+			object-fit: contain;
+			object-position: 0vw -28vw;
 		}
 
-		#map {
+		.background {
+			width: 50%;
+			height: 80px;
+			background: white;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+	}
+
+	.titContainer {
+		width: 100%;
+		height: 300px;
+		padding: 150px 15vw 246px;
+
+		h1 {
+			text-align: left;
+			font: bold 70px/1 $ikeaFontKo;
+			color: $fontColorBl;
+			margin-top: 20px;
+			margin-bottom: 96px;
+		}
+	}
+
+	#map {
+		width: 100%;
+		height: 600px;
+		margin: 0px auto;
+		position: relative;
+	}
+
+	.storeListContainer {
+		width: 100%;
+		height: 600px;
+		display: flex;
+		flex-wrap: wrap;
+
+		.left {
+			width: 35%;
+			height: 100%;
+			background: #fff;
+
+			h2 {
+				margin-top: 40px;
+				font: bold 51px/1 $ikeaFontKo;
+				color: $ikeaBl;
+				margin-bottom: 50px;
+			}
+
+			p {
+				font: 18px/1.5 $ikeaFontKo;
+				color: $ikeaBl;
+			}
+		}
+	}
+
+	.rightContainer {
+		width: 65%;
+		height: 100%;
+		display: flex;
+		flex-wrap: wrap;
+
+		background: #fff;
+
+		.list {
+			width: calc (100% /2);
+			height: 100%;
+			display: flex;
+			flex-wrap: wrap;
+
+			&:nth-of-type(1) {
+				width: 50%;
+				height: 50%;
+				background: #fff;
+				display: flex;
+				flex-direction: column;
+				border-left: 1px solid $grey;
+
+				&:hover {
+					background: #e0e1fa;
+				}
+
+				&.on {
+					background: #c4c7fc;
+				}
+
+				.storeName {
+					flex: 0.5;
+					text-align: left;
+					padding: 32px;
+					margin-top: 5px;
+
+					.tit {
+						font: bold 51px/1 $ikeaFontKo;
+						color: #3500ea;
+					}
+				}
+
+				.storeAddress {
+					width: 100%;
+					height: auto;
+					margin-bottom: 10px;
+					padding-left: 20px;
+
+					p {
+						font: 16px/1 $ikeaFontKo;
+						color: #3500ea;
+					}
+				}
+
+				.storeOpen {
+					width: 100%;
+					height: auto;
+					margin-bottom: 10px;
+					padding-left: 20px;
+					p {
+						font: 16px/1.8 $ikeaFontKo;
+						color: #3500ea;
+
+						span {
+							font: bold 16px/1.8 $ikeaFontKo;
+						}
+					}
+					h4 {
+						font: 16px/1.8 $ikeaFontKo;
+						color: #3500ea;
+						padding-left: 2em;
+					}
+				}
+
+				.storePhone {
+					width: 100%;
+					height: auto;
+					margin-bottom: 10px;
+					padding-left: 20px;
+
+					p {
+						font: 16px/1 $ikeaFontKo;
+						color: #3500ea;
+					}
+				}
+
+				.storeSite {
+					width: 100%;
+					height: auto;
+					padding-left: 20px;
+					p {
+						font: 16px/1 $ikeaFontKo;
+						color: #3500ea;
+					}
+				}
+			}
+
+			&:nth-of-type(2) {
+				width: 50%;
+				height: 50%;
+				background: #fff;
+				display: flex;
+				flex-direction: column;
+				border-left: 1px solid $grey;
+				text-align: left;
+
+				&:hover {
+					background: #e0e1fa;
+				}
+
+				&.on {
+					background: #c4c7fc;
+				}
+				.storeName {
+					flex: 0.5;
+					text-align: left;
+					padding: 32px;
+					margin-top: 5px;
+
+					.tit {
+						font: bold 51px/1 $ikeaFontKo;
+						background: repeating-linear-gradient(
+							45deg,
+							#3500ea,
+							#3500ea 0.5px,
+							#e7e8fc 0.5px,
+							#e7e8fc 1.2px
+						);
+						-webkit-background-clip: text;
+						-webkit-text-fill-color: transparent;
+						background-clip: text;
+						color: transparent;
+					}
+				}
+
+				.storeAddress {
+					width: 100%;
+					height: auto;
+					margin-bottom: 10px;
+					padding-left: 20px;
+
+					p {
+						font: 16px/1 $ikeaFontKo;
+						color: #3500ea;
+					}
+				}
+
+				.storeOpen {
+					width: 100%;
+					height: auto;
+					margin-bottom: 10px;
+					padding-left: 20px;
+					p {
+						font: 16px/1.8 $ikeaFontKo;
+						color: #3500ea;
+
+						span {
+							font: bold 16px/1.8 $ikeaFontKo;
+						}
+					}
+					h4 {
+						font: 16px/1.8 $ikeaFontKo;
+						color: #3500ea;
+					}
+				}
+
+				.storePhone {
+					width: 100%;
+					height: auto;
+					margin-bottom: 10px;
+					padding-left: 20px;
+
+					p {
+						font: 16px/1 $ikeaFontKo;
+						color: #3500ea;
+					}
+				}
+
+				.storeSite {
+					width: 100%;
+					height: auto;
+					padding-left: 20px;
+					p {
+						font: 16px/1 $ikeaFontKo;
+						color: #3500ea;
+					}
+				}
+			}
+
+			&:nth-of-type(3) {
+				width: 50%;
+				height: 50%;
+				background: #fff;
+				display: flex;
+				flex-direction: column;
+				border-left: 1px solid $grey;
+				text-align: left;
+
+				&:hover {
+					background: #e0e1fa;
+				}
+
+				&.on {
+					background: #c4c7fc;
+				}
+				.storeName {
+					flex: 0.5;
+					text-align: left;
+					padding: 32px;
+					margin-top: 5px;
+
+					.tit {
+						font: bold 51px/1 $ikeaFontKo;
+						background: repeating-linear-gradient(
+							45deg,
+							#3500ea,
+							#3500ea 0.5px,
+							#e7e8fc 0.5px,
+							#e7e8fc 1.2px
+						);
+						-webkit-background-clip: text;
+						-webkit-text-fill-color: transparent;
+						background-clip: text;
+						color: transparent;
+					}
+				}
+
+				.storeAddress {
+					width: 100%;
+					height: auto;
+					margin-bottom: 10px;
+					padding-left: 20px;
+
+					p {
+						font: 16px/1 $ikeaFontKo;
+						color: #3500ea;
+					}
+				}
+
+				.storeOpen {
+					width: 100%;
+					height: auto;
+					margin-bottom: 10px;
+					padding-left: 20px;
+					p {
+						font: 16px/1.8 $ikeaFontKo;
+						color: #3500ea;
+
+						span {
+							font: bold 16px/1.8 $ikeaFontKo;
+						}
+					}
+					h4 {
+						font: 16px/1.8 $ikeaFontKo;
+						color: #3500ea;
+					}
+				}
+
+				.storePhone {
+					width: 100%;
+					height: auto;
+					margin-bottom: 10px;
+					padding-left: 20px;
+
+					p {
+						font: 16px/1 $ikeaFontKo;
+						color: #3500ea;
+					}
+				}
+
+				.storeSite {
+					width: 100%;
+					height: auto;
+					padding-left: 20px;
+					p {
+						font: 16px/1 $ikeaFontKo;
+						color: #3500ea;
+					}
+				}
+			}
+			&:nth-of-type(4) {
+				width: 50%;
+				height: 50%;
+				background: #fff;
+				display: flex;
+				flex-direction: column;
+				border-left: 1px solid $grey;
+				text-align: left;
+
+				&:hover {
+					background: #e0e1fa;
+				}
+
+				&.on {
+					background: #c4c7fc;
+				}
+				.storeName {
+					flex: 0.5;
+					text-align: left;
+					padding: 32px;
+					margin-top: 5px;
+
+					.tit {
+						font: bold 51px/1 $ikeaFontKo;
+						background: repeating-linear-gradient(
+							45deg,
+							#3500ea,
+							#3500ea 0.5px,
+							#e7e8fc 0.5px,
+							#e7e8fc 1.2px
+						);
+						-webkit-background-clip: text;
+						-webkit-text-fill-color: transparent;
+						background-clip: text;
+						color: transparent;
+					}
+				}
+
+				.storeAddress {
+					width: 100%;
+					height: auto;
+					margin-bottom: 10px;
+					padding-left: 20px;
+
+					p {
+						font: 16px/1 $ikeaFontKo;
+						color: #3500ea;
+					}
+				}
+
+				.storeOpen {
+					width: 100%;
+					height: auto;
+					margin-bottom: 10px;
+					padding-left: 20px;
+					p {
+						font: 16px/1.8 $ikeaFontKo;
+						color: #3500ea;
+
+						span {
+							font: bold 16px/1.8 $ikeaFontKo;
+						}
+					}
+					h4 {
+						font: 16px/1.8 $ikeaFontKo;
+						color: #3500ea;
+					}
+				}
+
+				.storePhone {
+					width: 100%;
+					height: auto;
+					margin-bottom: 10px;
+					padding-left: 20px;
+
+					p {
+						font: 16px/1 $ikeaFontKo;
+						color: #3500ea;
+					}
+				}
+
+				.storeSite {
+					width: 100%;
+					height: auto;
+					padding-left: 20px;
+					p {
+						font: 16px/1 $ikeaFontKo;
+						color: #3500ea;
+					}
+				}
+			}
+		}
+	}
+
+	.contactContainer {
+		width: 100%;
+		height: 500px;
+
+		.contact {
 			width: 100%;
-			height: 400px;
-			background: #111;
-			position: relative;
+			height: 100%;
+			float: left;
+			border-top: 1px solid $grey;
+
+			&:nth-of-type(1) {
+				width: 35%;
+				height: 100%;
+
+				h2 {
+					margin-top: 40px;
+					font: bold 51px/1 $ikeaFontKo;
+					color: $ikeaBl;
+					margin-bottom: 50px;
+				}
+			}
+
+			&:nth-of-type(2) {
+				width: 32.5%;
+				height: 100%;
+				border-left: 1px solid $grey;
+				padding: 43px 1vw 43px;
+				font: 16px/1 $ikeaFontKo;
+				color: #3500ea;
+				margin-bottom: 150px;
+				background: #e0e1fa;
+
+				label {
+					width: 100%;
+				}
+				input {
+					display: block;
+					width: 100%;
+					height: 25px;
+					margin-top: 10px;
+					margin-bottom: 30px;
+					padding: 5px;
+					background: #fafaff;
+					border: none;
+					font: 16px/1 $ikeaFontKo;
+					color: #3500ea;
+				}
+				textarea {
+					display: block;
+					width: 100%;
+					height: 100px;
+					margin-top: 10px;
+					margin-bottom: 30px;
+					background: #fafaff;
+					padding: 1px;
+					border: none;
+					font: 16px/1 $ikeaFontKo;
+					color: #3500ea;
+					resize: none;
+				}
+
+				.submitBtn {
+					width: 150px;
+					height: 41px;
+					color: #3500ea;
+					font: 16px/1 $ikeaFontKo;
+				}
+			}
+
+			&:nth-of-type(3) {
+				width: 32.5%;
+				height: 100%;
+				border-left: 1px solid $grey;
+				padding: 43px 1vw 43px;
+				font: 16px/1 $ikeaFontKo;
+				color: #3500ea;
+				margin-bottom: 150px;
+				background: #e0e1fa;
+				font: 40px/1 $ikeaFontKo;
+
+				.svgBox {
+					width: 100%;
+					height: 100%;
+					border: 1px solid red;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+
+					//path모션 설정방법
+					//1.개발자도구에서 stroke-dasharray값을 계속 늘리면 다시 선이 온전히 완성되는 수치값 파악
+					//2.위의 수치값을 stroke-dasharray로 지정 (가시영역에서의 선의 길이)
+					//3.똑같은 수치값을 마이너스로 stroke-dashoffset에 지정
+					//4.hover시 stroke-dashoffset값을 0으로 변경
+
+					svg {
+						path {
+							fill: rgba(0, 0, 0, 0.3);
+							stroke: #000;
+							stroke-width: 10;
+							//선의 빈간격 설정, 빈간격크기만큼 선의 그어져있는 부분도 같이 늘어남
+							stroke-dasharray: 2730;
+							stroke-dashoffset: 2730;
+							stroke-linecap: round;
+							transition: stroke-dashoffset 1s;
+						}
+					}
+
+					&:hover {
+						svg {
+							path {
+								stroke-dashoffset: 0;
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }

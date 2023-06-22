@@ -12,13 +12,42 @@
 		background-image: url('../img/smartHome1.png');
 		background-repeat: no-repeat;
 		background-size: cover;
+
+		.leftTxt {
+			padding: 10px;
+			margin-left: 5vw;
+			margin-top: 220px;
+			font: 40px/1 $ikeaFontKo;
+			color: transparent;
+			-webkit-text-stroke: 1px $fontColorW;
+			text-align: left;
+			text-orientation: sideways;
+			transform: rotate(180deg);
+			writing-mode: vertical-rl;
+			white-space: wrap;
+			word-spacing: -10px;
+		}
 	}
 
 	.bgRight {
 		width: 50%;
 		height: 100%;
-		float: right;
 		background: #4881c2;
+
+		.rightTxt {
+			float: right;
+			color: transparent;
+			margin-top: 230px;
+			font: 40px/1 $ikeaFontKo;
+			-webkit-text-stroke: 1px $fontColorW;
+			margin-right: 5vw;
+			padding: 10px;
+			text-orientation: sideways;
+			transform: rotate(180deg);
+			writing-mode: vertical-rl;
+			white-space: wrap;
+			word-spacing: -10px;
+		}
 	}
 
 	.container {
@@ -81,7 +110,7 @@
 		.swiper-button-prev {
 			position: absolute;
 			top: 40%;
-			left: 50px;
+			left: 200px;
 			width: 26px;
 			height: 26px;
 			transform: translateY(-200%);
@@ -91,7 +120,7 @@
 		.swiper-button-next {
 			position: absolute;
 			top: 40%;
-			right: 50px;
+			right: 200px;
 			width: 26px;
 			height: 26px;
 			transform: translateY(-200%);
@@ -112,12 +141,20 @@
 		.bgLeft {
 			width: 50%;
 			height: 100%;
+
+			.leftTxt {
+				display: none;
+			}
 		}
 
 		.bgRight {
 			width: 50%;
 			height: 100%;
 			float: right;
+
+			.rightTxt {
+				display: none;
+			}
 		}
 
 		.container {

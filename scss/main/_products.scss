@@ -5,7 +5,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 96px 17vw 96px;
+	padding: 96px 10vw 96px;
 
 	.productsContainer {
 		width: 100%;
@@ -17,23 +17,23 @@
 		.productsTit {
 			width: 100%;
 			height: 100%;
-			flex: 1;
+			flex: 2;
 			background: $bgW;
-			font: 70px/180px $ikeaFontKo;
+			font: bold 70px/1 $ikeaFontKo;
 			color: $fontColorBl;
 		}
 
 		.productsSub {
-			width: 100%;
+			width: 74%;
 			height: 100%;
-			flex: 3;
+			flex: 1;
 			display: flex;
 			flex-wrap: wrap;
 			flex-direction: column;
-			padding: 0px 5vw 0px;
+			padding: 0px 0vw 0px;
 
 			.slideContainer {
-				width: 110%;
+				width: 100%;
 				overflow: hidden;
 				display: flex;
 				height: calc(100% / 2);
@@ -42,8 +42,7 @@
 
 				.slideWrap {
 					gap: 20px;
-
-					display: inline-flex;
+					display: flex;
 					animation: moveRe 20s linear infinite;
 					animation-delay: 0s;
 					justify-content: center;
@@ -93,11 +92,11 @@
 				height: calc(100% / 1);
 				flex: 1.2;
 				display: flex;
-				gap: 20px;
+				gap: 0px;
 
 				.arrowBtns {
-					width: calc(100% / 5);
-					height: 90%;
+					width: calc(100% / 4.5);
+					height: 100%;
 					display: flex;
 					text-align: center;
 					justify-content: center;
@@ -133,12 +132,12 @@
 
 				// products 캐럿셀 원형 버튼
 				.circleBtns {
-					width: calc(100% / 5);
+					width: calc(100% / 4);
 					height: 100%;
 					display: flex;
 					justify-content: center;
 					align-items: center;
-					padding: 0px 1.2vw 0px;
+					padding: 0px 0vw 0px;
 					gap: 20px;
 
 					button {
@@ -157,9 +156,9 @@
 
 				// products 모든 카테고리 바로가기
 				.hyperBtns {
-					width: calc(100% / 5);
+					width: calc(100% / 4);
 					height: 100%;
-					font: 18px/1 $ikeaFontKo;
+					font: 16px/1 $ikeaFontKo;
 					color: $fontColorBl;
 					display: flex;
 					padding: 0px 0vw 0px;
@@ -174,71 +173,173 @@
 
 @media screen and (max-width: $tablet) {
 	#products {
-		height: 600px;
-		padding: 0px 10vw 60px;
+		width: 100vw;
+		height: 500px;
+		background: $bgW;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 96px 5vw 96px;
 
 		.productsContainer {
-			flex-wrap: wrap;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
 
 			.productsTit {
-				height: 70px;
+				width: 100%;
+				height: 100%;
+				flex: 2;
+				background: $bgW;
+				font: bold 56px/1 $ikeaFontKo;
+				color: $fontColorBl;
 			}
 
 			.productsSub {
-				height: 53%;
+				width: 100%;
+				height: 100%;
+				flex: 1;
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: column;
 				padding: 0px 0vw 0px;
 
-				// products 하단 버튼 메뉴들
-				.btnWrap {
-					.arrowBtns {
-						width: calc(100% / 3.6);
-						height: 90%;
-					}
+				.slideContainer {
+					width: 100%;
+					overflow: hidden;
+					display: flex;
+					height: calc(100% / 2);
+					flex: 2.5;
+					position: relative;
 
-					// products 캐럿셀 원형 버튼
-					.circleBtns {
-						width: calc(100% / 3.6);
-					}
+					.slideWrap {
+						gap: 20px;
+						display: flex;
+						animation: moveRe 20s linear infinite;
+						animation-delay: 0s;
+						justify-content: center;
 
-					// products 모든 카테고리 바로가기
-					.hyperBtns {
-						width: calc(100% / 3.6);
+						.slideItem {
+							width: 214px;
+							height: 100%;
+							background: $boxGrey;
+
+							.productsImg {
+								display: flex;
+								justify-content: center;
+								img {
+									width: 150px;
+									height: 150px;
+								}
+							}
+							.productsName {
+								text-align: center;
+								font: 18px/25px $ikeaFontKo;
+								color: $fontColorBl;
+								margin-top: auto;
+							}
+
+							&:hover {
+								background: #e9e9e9;
+							}
+						}
+
+						@keyframes moveRe {
+							0% {
+								transform: translate3d(0, 0, 0);
+							}
+							to {
+								transform: translateX(-3000px);
+							}
+						}
+
+						&:hover {
+							animation-play-state: paused;
+						}
 					}
 				}
-			}
-		}
-	}
-}
-
-@media screen and (max-width: $mobile) {
-	#products {
-		padding: 0px 5vw 60px;
-
-		.productsContainer {
-			.productsTit {
-				font: 50px/180px $ikeaFontKo;
-			}
-
-			.productsSub {
-				height: 53%;
-
 				// products 하단 버튼 메뉴들
 				.btnWrap {
+					width: 100%;
+					height: calc(100% / 1);
+					flex: 1.2;
+					display: flex;
+					gap: 0px;
+
 					.arrowBtns {
-						width: calc(100% / 2);
-						height: 80%;
+						width: calc(100% / 4.5);
+						height: 100%;
+						display: flex;
+						text-align: center;
+						justify-content: center;
+
+						// products 왼쪽 화살표
+						.leftArrowBtn {
+							width: 100%;
+							height: 100%;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							flex: 1;
+							background: $ikeaBl;
+							font: 26px $ikeaFontKo;
+							color: $fontColorW;
+							cursor: pointer;
+						}
+
+						//  products 오른쪽 화살표
+						.rigtArrowBtn {
+							width: 100%;
+							height: 100%;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							flex: 1;
+							background: $ikeaBl;
+							font: 26px/5px $ikeaFontKo;
+							color: $fontColorW;
+							cursor: pointer;
+						}
 					}
 
 					// products 캐럿셀 원형 버튼
 					.circleBtns {
-						display: none;
+						width: calc(100% / 4);
+						height: 100%;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						padding: 0px 0vw 0px;
+						gap: 20px;
+
+						button {
+							width: 15px;
+							height: 15px;
+							border-radius: 50%;
+							border: none;
+							background: $carotBtn;
+							cursor: pointer;
+
+							&.on {
+								background: $ikeaBl;
+							}
+						}
 					}
 
 					// products 모든 카테고리 바로가기
 					.hyperBtns {
-						width: calc(100% / 2);
+						width: calc(100% / 4);
+						height: 100%;
+						font: 16px/1 $ikeaFontKo;
+						color: $fontColorBl;
+						display: flex;
+						padding: 0px 0vw 0px;
 						justify-content: left;
-						margin-top: -7px;
+						align-items: center;
+						cursor: pointer;
 					}
 				}
 			}
