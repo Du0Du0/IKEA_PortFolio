@@ -1037,7 +1037,7 @@ a {
   #products .productsContainer .productsSub {
     width: 100%;
     height: 100%;
-    flex: 14;
+    flex: 1;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -1045,10 +1045,10 @@ a {
   }
   #products .productsContainer .productsSub .slideContainer {
     width: 100%;
-    height: 100%;
+    overflow: hidden;
     display: flex;
     height: 50%;
-    flex: 10;
+    flex: 2.5;
     position: relative;
   }
   #products .productsContainer .productsSub .slideContainer .slideWrap {
@@ -1094,7 +1094,7 @@ a {
   #products .productsContainer .productsSub .btnWrap {
     width: 100%;
     height: 100%;
-    flex: 4;
+    flex: 1.2;
     display: flex;
     gap: 0px;
   }
@@ -1767,7 +1767,7 @@ a {
 }
 #smartHome {
   width: 100vw;
-  height: 810px;
+  height: 790px;
   background: url(../img/smartHomeBg3.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -1777,14 +1777,13 @@ a {
   max-width: 100%;
   height: 100%;
   margin: 0 auto;
-  padding: 130px 10vw 100px;
+  padding: 150px 10vw 96px;
   position: relative;
 }
 #smartHome .swiper-container {
   width: 100%;
   height: 100%;
   position: static;
-  padding: 0px 2vw 0px;
 }
 #smartHome .swiper-container .swiper-wrapper .swiper-slide {
   text-align: center;
@@ -1799,13 +1798,6 @@ a {
   background-size: cover;
   padding: 80px 45px;
   position: relative;
-}
-#smartHome .swiper-container .swiper-wrapper .swiper-slide:hover {
-  border: none;
-  box-shadow: 21px 27px 19px 0px rgba(0, 0, 0, 0.4);
-}
-#smartHome .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(even) {
-  top: 2vw;
 }
 #smartHome .swiper-container .swiper-wrapper .swiper-slide h4 {
   position: relative;
@@ -1823,57 +1815,29 @@ a {
   margin-bottom: 100px;
   text-align: left;
 }
-#smartHome .swiper-container .swiper-wrapper .swiper-slide .smartBg {
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: none;
-}
-#smartHome .swiper-container .swiper-wrapper .swiper-slide .smartBg.on {
-  display: block;
-  border-radius: 10px;
-}
 #smartHome .swiper-container .swiper-wrapper .swiper-slide .animation {
   font: 154px/1 "Work Sans";
   position: absolute;
   z-index: 1000;
   bottom: -72px;
   right: 72px;
-  text-align: right;
   transform: translate(-50% 50%);
+  text-align: right;
   color: transparent;
   -webkit-text-stroke: 1px #eee;
 }
-#smartHome .swiper-container .swiper-wrapper .swiper-slide .animation.movingTextOdd {
-  animation: fillingTextOdd 1s ease-out;
+#smartHome .swiper-container .swiper-wrapper .swiper-slide .animation.movingText {
+  animation: fillingText 1s infinite;
   animation-fill-mode: forwards;
   animation-duration: 1s;
 }
-@keyframes fillingTextOdd {
+@keyframes fillingText {
   0% {
     transform: translateX(0);
   }
   100% {
     color: #eee;
-    transform: translateX(-120px);
-  }
-}
-#smartHome .swiper-container .swiper-wrapper .swiper-slide .animation.movingTextEven {
-  animation: fillingTextEven 1s ease-out;
-  animation-fill-mode: forwards;
-  animation-duration: 1s;
-}
-@keyframes fillingTextEven {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    color: #eee;
-    transform: translateX(120px);
+    transform: translateX(100px);
   }
 }
 #smartHome .swiper-container .swiper-button-prev {
@@ -2640,15 +2604,12 @@ a {
 #promotion .promotionContainer .promotionWrap:nth-of-type(1) .top {
   flex: 1;
   width: 100%;
-  height: 0;
+  height: 100%;
   margin-top: 60px;
-  position: relative;
-  padding-bottom: 38%;
 }
-#promotion .promotionContainer .promotionWrap:nth-of-type(1) .top iframe {
+#promotion .promotionContainer .promotionWrap:nth-of-type(1) .top video {
   width: 100%;
   height: 100%;
-  position: absolute;
 }
 #promotion .promotionContainer .promotionWrap:nth-of-type(1) .down {
   flex: 1;
@@ -2661,7 +2622,6 @@ a {
   flex: 1;
   width: 50%;
   height: 100%;
-  cursor: pointer;
 }
 #promotion .promotionContainer .promotionWrap:nth-of-type(1) .down .downLeft h3 {
   font: 24px/1 "Noto Sans KR";
@@ -2691,7 +2651,6 @@ a {
   writing-mode: vertical-rl;
   white-space: wrap;
   word-spacing: -55px;
-  letter-spacing: 5px;
   margin-top: 15px;
   font: bold 80px/1 "Noto Sans KR";
   color: transparent;
@@ -2716,18 +2675,15 @@ a {
   font: bold 24px/1 "Noto Sans KR";
   color: #eee;
   margin-bottom: 10px;
-  cursor: pointer;
 }
 #promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns h4 {
   font: 18px/1.5 "Noto Sans KR";
   color: #ffc6ec;
   margin-bottom: 10px;
-  cursor: pointer;
 }
 #promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns p {
   font: 16px/1 "Noto Sans KR";
   color: #eee;
-  cursor: pointer;
 }
 #promotion .promotionContainer .promotionWrap:nth-of-type(3) .sns::-webkit-scrollbar {
   width: 9px;
@@ -2747,7 +2703,6 @@ a {
   margin-left: -60px;
   text-align: end;
   margin-top: 20px;
-  cursor: pointer;
 }
 
 @media screen and (max-width: 1023px) {
@@ -3008,7 +2963,6 @@ a {
   padding: 80px 100px;
   text-align: justify;
   word-break: break-all;
-  cursor: pointer;
 }
 #museum .swiper-container .swiper-wrapper .swiper-slide:hover {
   background: rgba(0, 0, 0, 0.5);
@@ -3028,23 +2982,17 @@ a {
   z-index: 1;
   margin-bottom: 15px;
 }
-#museum .swiper-container .swiper-wrapper .swiper-slide .con {
+#museum .swiper-container .swiper-wrapper .swiper-slide p {
   position: relative;
   font: 18px/1.5 "Noto Sans KR";
   color: #eee;
   z-index: 1;
   margin-bottom: 40px;
 }
-#museum .swiper-container .swiper-wrapper .swiper-slide .date {
-  position: relative;
-  font: 18px/1.5 "Noto Sans KR";
-  color: #eee;
-  z-index: 1;
-}
 #museum .swiper-container .swiper-button-prev {
   position: absolute;
   top: 75%;
-  left: 20px;
+  left: 200px;
   width: 26px;
   height: 26px;
   transform: translateY(-200%);
@@ -3053,7 +3001,7 @@ a {
 #museum .swiper-container .swiper-button-next {
   position: absolute;
   top: 75%;
-  right: 20px;
+  right: 200px;
   width: 26px;
   height: 26px;
   transform: translateY(-200%);
@@ -3061,7 +3009,7 @@ a {
 }
 
 @media screen and (max-width: 1023px) {
-  #museum {
+  #sns {
     width: 100vw;
     height: 600px;
     background-position: center;
@@ -3069,115 +3017,14 @@ a {
     background-size: cover;
     display: flex;
   }
-  #museum .bgLeft {
+  #sns .bgLeft {
     width: 50%;
     height: 100%;
     background-image: url("../img/smartHome1.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
-  #museum .bgLeft .leftTxt {
-    display: none;
-  }
-  #museum .bgRight {
-    width: 50%;
-    height: 100%;
-    background: #4881c2;
-  }
-  #museum .bgRight .rightTxt {
-    display: none;
-  }
-  #museum .container {
-    max-width: 100%;
-    height: 600px;
-    margin: 0 auto;
-    padding: 120px 10vw 96px;
-    position: absolute;
-    z-index: 99;
-  }
-  #museum .swiper-container {
-    width: 100%;
-    height: 400px;
-    position: static;
-  }
-  #museum .swiper-container .swiper-wrapper .swiper-slide {
-    text-align: center;
-    width: 320px;
-    height: 320px;
-    font-size: 18px;
-    background: rgb(255, 255, 255);
-    border-radius: 50%;
-    background: transparent;
-    border: 2px solid white;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: left;
-    position: relative;
-    padding: 80px 64px;
-  }
-  #museum .swiper-container .swiper-wrapper .swiper-slide h3 {
-    position: relative;
-    font: 12.8px/1 "Noto Sans KR";
-    color: #eee;
-    margin-bottom: 25px;
-    z-index: 1;
-  }
-  #museum .swiper-container .swiper-wrapper .swiper-slide h2 {
-    position: relative;
-    font: bold 19.2px/1 "Noto Sans KR";
-    color: #eee;
-    z-index: 1;
-    margin-bottom: 25px;
-  }
-  #museum .swiper-container .swiper-wrapper .swiper-slide .con {
-    position: relative;
-    font: 14.4px/1.5 "Noto Sans KR";
-    color: #eee;
-    z-index: 1;
-    margin-bottom: 0px;
-    text-align: justify;
-    word-break: break-all;
-  }
-  #museum .swiper-container .swiper-wrapper .swiper-slide .date {
-    display: none;
-  }
-  #museum .swiper-container .swiper-button-prev {
-    position: absolute;
-    top: 53%;
-    left: 50px;
-    width: 24px;
-    height: 24px;
-    transform: translateY(-200%);
-    margin-top: 0px;
-  }
-  #museum .swiper-container .swiper-button-next {
-    position: absolute;
-    top: 53%;
-    right: 50px;
-    width: 24px;
-    height: 24px;
-    transform: translateY(-200%);
-    margin-top: 0px;
-  }
-}
-@media screen and (max-width: 639px) {
-  #museum {
-    width: 100vw;
-    height: 600px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-  }
-  #museum .bgLeft {
-    width: 50%;
-    height: 100%;
-    background-image: url("../img/smartHome1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  #museum .bgLeft .leftTxt {
+  #sns .bgLeft .leftTxt {
     height: 100%;
     padding: 10px;
     margin-left: 5vw;
@@ -3194,15 +3041,31 @@ a {
     writing-mode: vertical-rl;
     word-spacing: 5px;
   }
-  #museum .bgRight {
+  #sns .bgRight {
     width: 50%;
     height: 100%;
     background: #4881c2;
   }
-  #museum .bgRight .rightTxt {
+  #sns .bgRight .rightTxt {
+    height: 100%;
+    float: right;
+    color: transparent;
+    position: relative;
+    text-align: center;
+    top: 0%;
+    transform: translateY(50%);
+    font: 40px/1 "Noto Sans KR";
+    -webkit-text-stroke: 1px #eee;
+    margin-right: 5vw;
+    padding: 10px;
+    text-orientation: sideways;
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+    white-space: pre-wrap;
+    word-spacing: 5px;
     display: none;
   }
-  #museum .container {
+  #sns .container {
     max-width: 100%;
     height: 600px;
     margin: 0 auto;
@@ -3210,12 +3073,101 @@ a {
     position: absolute;
     z-index: 99;
   }
-  #museum .swiper-container {
+  #sns .swiper-container {
+    width: 100%;
+    height: 400px;
+    position: static;
+  }
+  #sns .swiper-container .swiper-wrapper .swiper-slide {
+    text-align: center;
+    width: 320px;
+    height: 320px;
+    font-size: 18px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+    position: relative;
+    padding: 80px 64px;
+  }
+  #sns .swiper-container .swiper-wrapper .swiper-slide h3 {
+    position: relative;
+    font: 12.8px/1 "Noto Sans KR";
+    color: #eee;
+    margin-bottom: 25px;
+    z-index: 1;
+  }
+  #sns .swiper-container .swiper-wrapper .swiper-slide h2 {
+    position: relative;
+    font: bold 19.2px/1 "Noto Sans KR";
+    color: #eee;
+    z-index: 1;
+    margin-bottom: 25px;
+  }
+  #sns .swiper-container .swiper-wrapper .swiper-slide p {
+    position: relative;
+    font: 14.4px/1.5 "Noto Sans KR";
+    color: #eee;
+    z-index: 1;
+    margin-bottom: 0px;
+    text-align: justify;
+    word-break: break-all;
+  }
+  #sns .swiper-container .swiper-button-prev {
+    position: absolute;
+    top: 53%;
+    left: 50px;
+    width: 24px;
+    height: 24px;
+    transform: translateY(-200%);
+    margin-top: 0px;
+  }
+  #sns .swiper-container .swiper-button-next {
+    position: absolute;
+    top: 53%;
+    right: 50px;
+    width: 24px;
+    height: 24px;
+    transform: translateY(-200%);
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 639px) {
+  #sns {
+    width: 100vw;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+  }
+  #sns .bgLeft {
+    width: 50%;
+    height: 100%;
+  }
+  #sns .bgRight {
+    width: 50%;
+    height: 100%;
+    float: right;
+  }
+  #sns .container {
+    max-width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    padding: 120px 10vw 96px;
+    position: absolute;
+    z-index: 99;
+  }
+  #sns .swiper-container {
     width: 80%;
     height: 400px;
     position: static;
   }
-  #museum .swiper-container .swiper-wrapper .swiper-slide {
+  #sns .swiper-container .swiper-wrapper .swiper-slide {
     text-align: center;
     width: 110px;
     height: 300px;
@@ -3231,27 +3183,28 @@ a {
     position: relative;
     padding: 70px 56px;
   }
-  #museum .swiper-container .swiper-wrapper .swiper-slide h3 {
+  #sns .swiper-container .swiper-wrapper .swiper-slide h3 {
     position: relative;
     font: 11.2px/1 "Noto Sans KR";
     color: #eee;
     margin-bottom: 25px;
     z-index: 1;
   }
-  #museum .swiper-container .swiper-wrapper .swiper-slide h2 {
+  #sns .swiper-container .swiper-wrapper .swiper-slide h2 {
     position: relative;
     font: bold 16.8px/1 "Noto Sans KR";
     color: #eee;
     z-index: 1;
     margin-bottom: 25px;
   }
-  #museum .swiper-container .swiper-wrapper .swiper-slide .con {
+  #sns .swiper-container .swiper-wrapper .swiper-slide p {
     position: relative;
     font: 12.6px/1.5 "Noto Sans KR";
     color: #eee;
     z-index: 1;
+    margin-bottom: 100px;
   }
-  #museum .swiper-container .swiper-button-prev {
+  #sns .swiper-container .swiper-button-prev {
     position: absolute;
     top: 50%;
     left: 30px;
@@ -3260,7 +3213,7 @@ a {
     transform: translateY(-200%);
     margin-top: 0px;
   }
-  #museum .swiper-container .swiper-button-next {
+  #sns .swiper-container .swiper-button-next {
     position: absolute;
     top: 50%;
     right: 30px;
@@ -5175,7 +5128,7 @@ a {
   font: 16px/1 "Noto Sans KR";
   color: #969696;
 }
-.signUp .info2 form table .addressBtn {
+.signUp .info2 form table button {
   width: 108px;
   height: 41px;
   background: #1b2539;
@@ -5233,22 +5186,11 @@ a {
   color: #333;
   transform: translate(0, 8%);
 }
-.signUp .info2 form table input[class=address]:nth-of-type(1) {
-  width: 40%;
-}
 .signUp .info2 form table input[class=address]:nth-of-type(2) {
   width: 92%;
 }
 .signUp .info2 form table input[class=address]:nth-of-type(3) {
   width: 92%;
-}
-.signUp .info2 form table input[class=address]:nth-of-type(4) {
-  width: 45%;
-  float: left;
-  margin-right: 5px;
-}
-.signUp .info2 form table input[class=address]:nth-of-type(5) {
-  width: 46.5%;
 }
 .signUp .info2 form table .addressTit::after {
   content: "*";
@@ -6647,4 +6589,4 @@ a {
   transform: translateY(-10px);
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.csssssas.map */

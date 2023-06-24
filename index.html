@@ -15,21 +15,13 @@
   <script defer type="module" src="js/main/smartHome.js"></script>
   <script defer type="module" src="js/main/news.js"></script>
   <script defer type="module" src="js/main/promotion.js"></script>
-  <script defer type="module" src="js/main/sns.js"></script>
+  <script defer type="module" src="js/main/museum.js"></script>
   <script defer type="module" src="js/main/notice.js"></script>
   <script defer type="module" src="js/sub/location.js"></script>
-  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
-
   <script src="https://kit.fontawesome.com/1178528ead.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="#">
-
-
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css'>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
-
-
-
-
 </head>
 
 <body>
@@ -124,11 +116,8 @@
       <div class="productsSub">
         <div class="slideContainer">
           <div class="slideWrap">
-
-
           </div>
         </div>
-
 
         <!-- products 하단 버튼 메뉴들 -->
         <div class="btnWrap">
@@ -156,7 +145,6 @@
             <i class="fa-sharp fa-solid fa-chevron-right"></i>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -181,37 +169,34 @@
       </div>
       <p>바로가기 &nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></p>
     </div>
-
   </section>
   <!-- vids end -->
+
 
   <!-- smartHome start -->
   <section id="smartHome">
     <div class="container">
       <!-- Slider main container -->
       <div class="swiper-container first">
-        <!-- Additional required wrapper -->
+        <!-- Slides -->
         <div class="swiper-wrapper">
           <article data-slide="1" class="swiper-slide">Slide 1</article>
-          <articledata-slide="2" class="swiper-slide">Slide 2</articledata-slide=>
-            <article data-slide="3" class="swiper-slide">Slide 3</article>
-            <article data-slide="4" class="swiper-slide">Slide 4</article>
-            <article data-slide="5" class="swiper-slide">Slide 5</article>
-            <article data-slide="6" class="swiper-slide">Slide 6</article>
-            <article data-slide="7" class="swiper-slide">Slide 7</article>
-            <article data-slide="8" class="swiper-slide">Slide 8</article>
-            <article data-slide="9" class="swiper-slide">Slide 9</article>
+          <article data-slide="2" class="swiper-slide">Slide 2</article>
+          <article data-slide="3" class="swiper-slide">Slide 3</article>
+          <article data-slide="4" class="swiper-slide">Slide 4</article>
+          <article data-slide="5" class="swiper-slide">Slide 5</article>
+          <article data-slide="6" class="swiper-slide">Slide 6</article>
+          <article data-slide="7" class="swiper-slide">Slide 7</article>
+          <article data-slide="8" class="swiper-slide">Slide 8</article>
+          <article data-slide="9" class="swiper-slide">Slide 9</article>
         </div>
-        <!-- If we need navigation buttons -->
+        <!-- navigation buttons -->
         <div class="swiper-button-prev swiper-button-white"></div>
         <div class="swiper-button-next swiper-button-white "></div>
-
       </div>
-
-
     </div>
   </section>
-  <!-- museum  end -->
+  <!-- smartHome end -->
 
 
 
@@ -219,20 +204,25 @@
   <section id="promotion">
     <div class="promotionContainer">
       <img class="circleText" src="img/textCircle2.png">
-      <!-- promotion 왼쪽 커스터마이징 영역 -->
+      <!-- promotion left side -->
       <div class="promotionWrap">
-        <div class="top"><iframe width="100%" height="320" src="https://www.youtube-nocookie.com/embed/_5SyZ0TXPH0"
-            title="YouTube video player" frameborder="0"
+        <div class="top">
+          <iframe src="https://www.youtube-nocookie.com/embed/_5SyZ0TXPH0" title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe></div>
+            allowfullscreen playsinline></iframe>
+        </div>
         <div class="down">
 
           <div class="downLeft">
-            <h3>Lorem ipsum dolor, sit amet consectetur </h3>
-            <h2>Lorem ipsum dolor </h2>
+            <a href="#">
+              <h3>Lorem ipsum dolor, sit amet consectetur </h3>
+              <h2>Lorem ipsum dolor </h2>
+            </a>
           </div>
           <div class="downRight">
-            <i class="fa-solid fa-arrow-right"></i>
+            <a href="#">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -304,105 +294,37 @@
           <br>
           <br>
         </div>
-        <div class="snsGoBtn">바로가기&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></div>
+        <div class="snsGoBtn"><a href="#">바로가기&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a></div>
       </div>
     </div>
   </section>
   <!-- promotion end -->
 
-  <!-- sns start -->
-  <section id="sns">
-
+  <!-- museum start -->
+  <section id="museum">
+    <!-- left background -->
     <div class="bgLeft">
-      <h2 class="leftTxt">깊은밤의 이방인</h2>
+      <!-- left titleList -->
+      <h2 class="leftTxt">Existence Maximum</h2>
     </div>
-
+    <!-- right background -->
     <div class="bgRight">
-      <h2 class="rightTxt">화사한 아침</h2>
+      <!-- right titleList -->
+      <h2 class="rightTxt">Our Roots</h2>
     </div>
-
     <div class="container">
-
       <!-- Slider main container -->
-
       <div class="swiper-container second">
-
         <!-- Additional required wrapper -->
-
         <div class="swiper-wrapper ">
-
-          <div class="swiper-slide">
-            <h3>가구</h3>
-            <h2>생활용품</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia modi, numquam rerum ducimus cupiditate?
-            </p>
-          </div>
-          <div class="swiper-slide">
-            <h3>가구</h3>
-            <h2>생활용품</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia modi, numquam rerum ducimus cupiditate?
-            </p>
-          </div>
-          <div class="swiper-slide">
-            <h3>가구</h3>
-            <h2>생활용품</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia modi, numquam rerum ducimus cupiditate?
-            </p>
-          </div>
-          <div class="swiper-slide">
-            <h3>가구</h3>
-            <h2>생활용품</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia modi, numquam rerum ducimus cupiditate?
-            </p>
-          </div>
-          <div class="swiper-slide">
-            <h3>가구</h3>
-            <h2>생활용품</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia modi, numquam rerum ducimus cupiditate?
-            </p>
-          </div>
-          <div class="swiper-slide">
-            <h3>가구</h3>
-            <h2>생활용품</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia modi, numquam rerum ducimus cupiditate?
-            </p>
-          </div>
-          <div class="swiper-slide">
-            <h3>가구</h3>
-            <h2>생활용품</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia modi, numquam rerum ducimus cupiditate?
-            </p>
-          </div>
-          <div class="swiper-slide">
-            <h3>가구</h3>
-            <h2>생활용품</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia modi, numquam rerum ducimus cupiditate?
-            </p>
-          </div>
-          <div class="swiper-slide">
-            <h3>가구</h3>
-            <h2>생활용품</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia modi, numquam rerum ducimus cupiditate?
-            </p>
-          </div>
-          <div class="swiper-slide">
-            <h3>가구</h3>
-            <h2>생활용품</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia modi, numquam rerum ducimus cupiditate?
-            </p>
-          </div>
         </div>
-
-        <!-- If we need navigation buttons -->
+        <!-- navigation buttons -->
         <div class="swiper-button-prev swiper-button-white"></div>
         <div class="swiper-button-next swiper-button-white"></div>
       </div>
     </div>
-
   </section>
-  <!-- sns  end -->
-
-
+  <!-- museum  end -->
 
   <!-- notice start -->
   <section id="notice">

@@ -13,6 +13,8 @@ fetch('DB/smartHome.json')
                 <figure class="swiper-slide" >
                     <h4>${data.topic}</h4>
                     <h2>${data.title}</h2>
+
+										<img class="smartBg " src = 'img/${data.picOn}'>
                     <span class="animation">${data.animation}</span>
                 </figure>`;
 		});
@@ -22,14 +24,62 @@ fetch('DB/smartHome.json')
 		const controlBtns = smartSection.querySelectorAll('.controlBtn');
 		const smartBgs = smartSection.querySelectorAll('.smartBg');
 		const swiperSlides = smartSection.querySelectorAll('.swiper-slide');
-		const animation = smartSection.querySelectorAll('.animation');
+		const animations = smartSection.querySelectorAll('.animation');
+
+		for (var i = 0; i < animations.length; i++) {
+			if (i % 2 === 0) {
+				// 홀수
+				animations[i].style.bottom = '-72px';
+				animations[i].style.left = '72px';
+				animations[i].style.textAlign = 'left';
+			} else {
+				animations[i].style.bottom = '-72px';
+				animations[i].style.right = '72px';
+				animations[i].style.textAlign = 'right';
+			}
+		}
 
 		swiperSlides.forEach((swiperSlide, idx) => {
 			swiperSlide.addEventListener('mouseenter', (e) => {
 				e.preventDefault();
 				smartBgs[idx].classList.add('on'); // smartBgs를 사용해야 함
 				swiperSlides[idx].classList.add('on'); // smartBgs를 사용해야 함
-				animation[idx].classList.add('movingText');
+
+				if (idx % 2 === 0) {
+					animations[idx].classList.add('movingTextOdd');
+				} else {
+					animations[idx].classList.add('movingTextEven');
+				}
+			});
+		});
+
+		//일정시간마다 배경이 바뀌는 스크립트
+		const imgArray = [
+			'smartHomeBg1.png',
+			'smartHomeBg2.png',
+			'smartHomeBg3.png',
+			'smartHomeBg4.png',
+			'smartHomeBg5.png',
+			'smartHomeBg6.png',
+		];
+
+		function showImage() {
+			const imgNum = Math.floor(Math.random() * imgArray.length);
+			const objImg = document.getElementById('smartHome');
+			objImg.style.backgroundImage = `url(img/${imgArray[imgNum]})`;
+
+			setTimeout(showImage, 5000);
+		}
+
+		showImage();
+
+		swiperSlides.forEach((swiperSlide, idx) => {
+			swiperSlide.addEventListener('mouseleave', (e) => {
+				e.preventDefault();
+				smartBgs[idx].classList.remove('on');
+				swiperSlides[idx].classList.remove('on');
+				animations[idx].classList.remove('movingTextOdd');
+				animations[idx].classList.remove('movingTextEven');
 			});
 		});
 
@@ -40,11 +90,11 @@ fetch('DB/smartHome.json')
 			prevButton: '.swiper-button-prev',
 			slidesPerView: 3,
 			paginationClickable: true,
-			spaceBetween: 180,
+			spaceBetween: 150,
 			breakpoints: {
 				1920: {
 					slidesPerView: 3,
-					spaceBetween: 180,
+					spaceBetween: 150,
 				},
 				1024: {
 					slidesPerView: 2,

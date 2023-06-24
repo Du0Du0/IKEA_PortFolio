@@ -13,6 +13,7 @@
   <script defer src="js/sub/subVisual.js"></script>
   <script src="https://kit.fontawesome.com/1178528ead.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="#">
+  <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 </head>
 
 <body>
@@ -95,7 +96,7 @@
               </th>
               <td>
                 <input type="text" name="userid" id="userid">
-                <button type="button" class="checkIdBtn">중복확인</button><br>
+
                 <p>영문(소문자만가능), 숫자를 포함한 6~12자 조합으로 입력해주세요.</p>
               </td>
             </tr>
@@ -106,8 +107,8 @@
               </th>
               <td>
                 <input type="text" name="nickname" id="nickname">
-                <button type="button" class="checkNickBtn">중복확인</button><br>
-                <p>영문(소문자만가능), 숫자를 포함한 6~12자 조합으로 입력해주세요.</p>
+
+                <p>한글,영문(대소문자가능), 숫자,공백을 포함한 1~12자 조합으로 입력해주세요.</p>
               </td>
             </tr>
 
@@ -118,7 +119,7 @@
               </th>
               <td>
                 <input type="password" name="password" id="password" placeholder="새 비밀번호"><br>
-                <p>비밀번호를 입력해주세요.</p>
+                <p>영문,숫자,특수문자(~!@#$%^&*)를 포함한 10~20자 조합으로 입력해 주세요.</p>
               </td>
             </tr>
 
@@ -147,7 +148,7 @@
                 <select name="emailAdress" id="emailAdress">
                   <option value="write">직접입력</option>
                   <option value="naver">naver.com</option>
-                  <option value="gmail">goole.com</option>
+                  <option value="gmail">google.com</option>
                 </select>
               </td>
             </tr>
@@ -232,10 +233,11 @@
               <label for="address" class="addressTit">주소</label>
             </th>
             <td>
-              <input class="address" type="text" name="address" id="address">&nbsp;<button
-                class="addressBtn">우편번호</button><br>
-              <input class="address" type="text" name="address" id="address"><br>
-              <input class="address" type="text" name="address" id="address">
+              <input type="text" id="sample6_postcode" placeholder="우편번호" class='address'>
+              <input type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기" class="addressBtn"><br>
+              <input type="text" id="sample6_address" placeholder="주소" class='address'><br>
+              <input type="text" id="sample6_detailAddress" placeholder="상세주소" class='address'>
+              <input type="text" id="sample6_extraAddress" placeholder="참고항목" class='address'>
             </td>
           </tr>
 

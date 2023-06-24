@@ -201,7 +201,7 @@
 			.productsSub {
 				width: 100%;
 				height: 100%;
-				flex: 1;
+				flex: 14;
 				display: flex;
 				flex-wrap: wrap;
 				flex-direction: column;
@@ -209,10 +209,10 @@
 
 				.slideContainer {
 					width: 100%;
-					overflow: hidden;
+					height: 100%;
 					display: flex;
 					height: calc(100% / 2);
-					flex: 2.5;
+					flex: 10;
 					position: relative;
 
 					.slideWrap {
@@ -265,7 +265,7 @@
 				.btnWrap {
 					width: 100%;
 					height: calc(100% / 1);
-					flex: 1.2;
+					flex: 4;
 					display: flex;
 					gap: 0px;
 

@@ -8,7 +8,7 @@
       "control1": "Turn on the Light",
       "picOff": "smartHome1-1.png",
       "picOn": "smartHome1.png",
-      "animation": "I"
+      "animation": "E"
     },
     {
       "title": "Blinds",
@@ -16,7 +16,7 @@
       "description": "Control your blinds by voice",
       "control": "Lower blinds",
       "control1": "Raise blinds",
-      "picOn": "smartHome2.png",
+      "picOn": "4.jpg",
       "picOff": "smartHome2-1.png",
       "animation": "S"
     },
@@ -28,7 +28,7 @@
       "control1": "Stop the music",
       "picOn": "smartHome5.png",
       "picOff": "smartHome5-1.png",
-      "animation": "R"
+      "animation": "M"
     },
     {
       "title": "Lights",
@@ -38,7 +38,7 @@
       "control1": "Turn on the blue light",
       "picOn": "smartHome3.png",
       "picOff": "smartHome3-1.png",
-      "animation": "M"
+      "animation": "A"
     },
     {
       "title": "Lamp",
@@ -48,7 +48,7 @@
       "control1": "Turn on the blue light",
       "picOn": "smartHome4.png",
       "picOff": "smartHome4-1.png",
-      "animation": "A"
+      "animation": "R"
     },
     {
       "title": "Air purifier",
