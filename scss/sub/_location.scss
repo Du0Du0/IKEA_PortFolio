@@ -33,8 +33,38 @@
 			font: bold 70px/1 $ikeaFontKo;
 			color: $fontColorBl;
 			margin-top: 20px;
-			margin-bottom: 96px;
+			margin-bottom: 150px;
 		}
+	}
+
+	.trafficBtn {
+		width: 119px;
+		height: 41px;
+		background: $tableBtn;
+		border: 1px solid $ikeaBl;
+		border-radius: 5px;
+		color: $fontColorW;
+		border: none;
+		transform: translate(0, -5%);
+		font: 15px/1 $ikeaFontKo;
+		float: right;
+		margin-bottom: 50px;
+		cursor: pointer;
+	}
+
+	.mapPrintBtn {
+		width: 119px;
+		height: 41px;
+		background: #fff;
+		border: 1px solid $ikeaBl;
+		border-radius: 5px;
+		color: $fontColorBl;
+		transform: translate(0, -5%);
+		font: 15px/1 $ikeaFontKo;
+		float: right;
+		margin-left: 10px;
+		margin-bottom: 50px;
+		cursor: pointer;
 	}
 
 	#map {
@@ -63,8 +93,11 @@
 			}
 
 			p {
+				padding-right: 50px;
 				font: 18px/1.5 $ikeaFontKo;
-				color: $ikeaBl;
+				color: $fontColorBl;
+				text-align: justify;
+				word-break: break-all;
 			}
 		}
 	}
@@ -74,7 +107,6 @@
 		height: 100%;
 		display: flex;
 		flex-wrap: wrap;
-
 		background: #fff;
 
 		.list {
@@ -82,6 +114,7 @@
 			height: 100%;
 			display: flex;
 			flex-wrap: wrap;
+			cursor: pointer;
 
 			&:nth-of-type(1) {
 				width: 50%;
@@ -102,12 +135,30 @@
 				.storeName {
 					flex: 0.5;
 					text-align: left;
-					padding: 32px;
+					padding: 32px 32px 32px 20px;
 					margin-top: 5px;
 
 					.tit {
 						font: bold 51px/1 $ikeaFontKo;
-						color: #3500ea;
+						background: repeating-linear-gradient(
+							45deg,
+							#3500ea,
+							#3500ea 0.5px,
+							#e7e8fc 0.5px,
+							#e7e8fc 1.2px
+						);
+						-webkit-background-clip: text;
+						-webkit-text-fill-color: transparent;
+						background-clip: text;
+						color: transparent;
+
+						&.on {
+							color: #3500ea;
+							background: none;
+							-webkit-background-clip: initial;
+							-webkit-text-fill-color: #3500ea;
+							background-clip: initial;
+						}
 					}
 				}
 
@@ -185,7 +236,7 @@
 				.storeName {
 					flex: 0.5;
 					text-align: left;
-					padding: 32px;
+					padding: 32px 32px 32px 20px;
 					margin-top: 5px;
 
 					.tit {
@@ -201,6 +252,13 @@
 						-webkit-text-fill-color: transparent;
 						background-clip: text;
 						color: transparent;
+						&.on {
+							color: #3500ea;
+							background: none;
+							-webkit-background-clip: initial;
+							-webkit-text-fill-color: #3500ea;
+							background-clip: initial;
+						}
 					}
 				}
 
@@ -277,7 +335,7 @@
 				.storeName {
 					flex: 0.5;
 					text-align: left;
-					padding: 32px;
+					padding: 32px 32px 32px 20px;
 					margin-top: 5px;
 
 					.tit {
@@ -293,6 +351,13 @@
 						-webkit-text-fill-color: transparent;
 						background-clip: text;
 						color: transparent;
+						&.on {
+							color: #3500ea;
+							background: none;
+							-webkit-background-clip: initial;
+							-webkit-text-fill-color: #3500ea;
+							background-clip: initial;
+						}
 					}
 				}
 
@@ -368,7 +433,7 @@
 				.storeName {
 					flex: 0.5;
 					text-align: left;
-					padding: 32px;
+					padding: 32px 32px 32px 20px;
 					margin-top: 5px;
 
 					.tit {
@@ -384,6 +449,14 @@
 						-webkit-text-fill-color: transparent;
 						background-clip: text;
 						color: transparent;
+
+						&.on {
+							color: #3500ea;
+							background: none;
+							-webkit-background-clip: initial;
+							-webkit-text-fill-color: #3500ea;
+							background-clip: initial;
+						}
 					}
 				}
 
@@ -463,6 +536,14 @@
 					color: $ikeaBl;
 					margin-bottom: 50px;
 				}
+
+				p {
+					padding-right: 50px;
+					font: 18px/1.5 $ikeaFontKo;
+					color: $fontColorBl;
+					text-align: justify;
+					word-break: break-all;
+				}
 			}
 
 			&:nth-of-type(2) {
@@ -473,7 +554,7 @@
 				font: 16px/1 $ikeaFontKo;
 				color: #3500ea;
 				margin-bottom: 150px;
-				background: #e0e1fa;
+				background: #fff;
 
 				label {
 					width: 100%;
@@ -481,12 +562,13 @@
 				input {
 					display: block;
 					width: 100%;
-					height: 25px;
+					height: 35px;
 					margin-top: 10px;
 					margin-bottom: 30px;
 					padding: 5px;
-					background: #fafaff;
-					border: none;
+					border-radius: 5px;
+					background: #fff;
+					border: 1px solid #cfcfcf;
 					font: 16px/1 $ikeaFontKo;
 					color: #3500ea;
 				}
@@ -496,9 +578,10 @@
 					height: 100px;
 					margin-top: 10px;
 					margin-bottom: 30px;
-					background: #fafaff;
+					background: #fff;
 					padding: 1px;
-					border: none;
+					border-radius: 5px;
+					border: 1px solid #cfcfcf;
 					font: 16px/1 $ikeaFontKo;
 					color: #3500ea;
 					resize: none;
@@ -507,8 +590,13 @@
 				.submitBtn {
 					width: 150px;
 					height: 41px;
-					color: #3500ea;
-					font: 16px/1 $ikeaFontKo;
+					background: $tableBtn;
+					border: 1px solid $ikeaBl;
+					border-radius: 5px;
+					color: $fontColorW;
+					border: none;
+					font: 15px/1 $ikeaFontKo;
+					cursor: pointer;
 				}
 			}
 
@@ -520,13 +608,12 @@
 				font: 16px/1 $ikeaFontKo;
 				color: #3500ea;
 				margin-bottom: 150px;
-				background: #e0e1fa;
+				background: #fff;
 				font: 40px/1 $ikeaFontKo;
 
 				.svgBox {
 					width: 100%;
 					height: 100%;
-					border: 1px solid red;
 					display: flex;
 					align-items: center;
 					justify-content: center;
@@ -539,12 +626,12 @@
 
 					svg {
 						path {
-							fill: rgba(0, 0, 0, 0.3);
-							stroke: #000;
+							fill: #e0e1fa;
+							stroke: #3500ea;
 							stroke-width: 10;
 							//선의 빈간격 설정, 빈간격크기만큼 선의 그어져있는 부분도 같이 늘어남
-							stroke-dasharray: 2730;
-							stroke-dashoffset: 2730;
+							stroke-dasharray: 17292;
+							stroke-dashoffset: 17292;
 							stroke-linecap: round;
 							transition: stroke-dashoffset 1s;
 						}
@@ -557,6 +644,651 @@
 							}
 						}
 					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	.location {
+		.subVisual {
+			height: 380px;
+
+			video {
+				object-fit: contain;
+				object-position: -45vw -58vw;
+			}
+
+			.background {
+				background: #fff;
+			}
+		}
+
+		.titContainer {
+			padding: 150px 10vw 246px;
+
+			h1 {
+				font: bold 70px/1 $ikeaFontKo;
+				margin-top: 20px;
+				margin-bottom: 96px;
+			}
+		}
+
+		.trafficBtn {
+			font: 12.8px/1 $ikeaFontKo;
+		}
+
+		.mapPrintBtn {
+			font: 12.8px/1 $ikeaFontKo;
+		}
+
+		#map {
+			width: 100%;
+			height: 500px;
+		}
+
+		.storeListContainer {
+			width: 100%;
+			height: auto;
+
+			.left {
+				width: 40%;
+				h2 {
+					margin-top: 60px;
+					font: bold 56px/1 $ikeaFontKo;
+				}
+
+				p {
+					padding-right: 50px;
+					font: 14.4px/1.8 $ikeaFontKo;
+				}
+			}
+		}
+
+		.rightContainer {
+			width: 60%;
+			height: 100%;
+
+			.list {
+				&:nth-of-type(1) {
+					width: 100%;
+
+					padding-bottom: 32px;
+
+					.storeName {
+						.tit {
+							font: bold 51px/1 $ikeaFontKo;
+						}
+					}
+
+					.storeAddress {
+						width: 100%;
+
+						p {
+							font: 14.4px/1 $ikeaFontKo;
+						}
+					}
+
+					.storeOpen {
+						width: 100%;
+
+						p {
+							font: 14.4px/1.8 $ikeaFontKo;
+
+							span {
+								font: bold 14.4px/1.8 $ikeaFontKo;
+							}
+						}
+						h4 {
+							font: 14.4px/1.8 $ikeaFontKo;
+							color: #3500ea;
+						}
+					}
+
+					.storePhone {
+						width: 100%;
+
+						p {
+							font: 14.4px/1 $ikeaFontKo;
+						}
+					}
+
+					.storeSite {
+						width: 100%;
+
+						p {
+							font: 14.4px/1 $ikeaFontKo;
+						}
+					}
+				}
+
+				&:nth-of-type(2) {
+					width: 100%;
+					height: 50%;
+					padding-bottom: 32px;
+
+					.storeName {
+						.tit {
+							font: bold 51px/1 $ikeaFontKo;
+						}
+					}
+
+					.storeAddress {
+						width: 100%;
+						height: auto;
+						margin-bottom: 10px;
+						padding-left: 20px;
+
+						p {
+							font: 14.4px/1 $ikeaFontKo;
+						}
+					}
+
+					.storeOpen {
+						width: 100%;
+
+						p {
+							font: 14.4px/1.8 $ikeaFontKo;
+
+							span {
+								font: bold 14.4px/1.8 $ikeaFontKo;
+							}
+						}
+						h4 {
+							font: 14.4px/1.8 $ikeaFontKo;
+						}
+					}
+
+					.storePhone {
+						width: 100%;
+
+						p {
+							font: 14.4px/1 $ikeaFontKo;
+						}
+					}
+
+					.storeSite {
+						width: 100%;
+
+						p {
+							font: 14.4px/1 $ikeaFontKo;
+						}
+					}
+				}
+
+				&:nth-of-type(3) {
+					width: 100%;
+					padding-bottom: 32px;
+
+					.storeName {
+						.tit {
+							font: bold 51px/1 $ikeaFontKo;
+						}
+					}
+
+					.storeAddress {
+						width: 100%;
+
+						p {
+							font: 14.4px/1 $ikeaFontKo;
+						}
+					}
+
+					.storeOpen {
+						width: 100%;
+
+						p {
+							font: 14.4px/1.8 $ikeaFontKo;
+
+							span {
+								font: bold 14.4px/1.8 $ikeaFontKo;
+							}
+						}
+						h4 {
+							font: 14.4px/1.8 $ikeaFontKo;
+						}
+					}
+
+					.storePhone {
+						width: 100%;
+
+						p {
+							font: 14.4px/1 $ikeaFontKo;
+						}
+					}
+
+					.storeSite {
+						width: 100%;
+
+						p {
+							font: 14.4px/1 $ikeaFontKo;
+							color: #3500ea;
+						}
+					}
+				}
+				&:nth-of-type(4) {
+					width: 100%;
+					padding-bottom: 32px;
+
+					.storeName {
+						.tit {
+							font: bold 51px/1 $ikeaFontKo;
+						}
+					}
+
+					.storeAddress {
+						width: 100%;
+
+						p {
+							font: 14.4px/1 $ikeaFontKo;
+						}
+					}
+
+					.storeOpen {
+						width: 100%;
+
+						p {
+							font: 14.4px/1.8 $ikeaFontKo;
+
+							span {
+								font: bold 14.4px/1.8 $ikeaFontKo;
+							}
+						}
+						h4 {
+							font: 14.4px/1.8 $ikeaFontKo;
+						}
+					}
+
+					.storePhone {
+						width: 100%;
+
+						p {
+							font: 14.4px/1 $ikeaFontKo;
+						}
+					}
+
+					.storeSite {
+						width: 100%;
+
+						p {
+							font: 14.4px/1 $ikeaFontKo;
+						}
+					}
+				}
+			}
+		}
+
+		.contactContainer {
+			width: 100%;
+			height: 500px;
+
+			.contact {
+				&:nth-of-type(1) {
+					width: 40%;
+
+					h2 {
+						margin-top: 60px;
+						font: bold 56px/1 $ikeaFontKo;
+					}
+
+					p {
+						padding-right: 50px;
+						font: 14.4px/1.8 $ikeaFontKo;
+					}
+				}
+
+				&:nth-of-type(2) {
+					width: 60%;
+					padding: 43px 2vw 43px;
+					font: 14.4px/1 $ikeaFontKo;
+					margin-bottom: 0px;
+
+					input {
+						font: 14.4px/1 $ikeaFontKo;
+					}
+					textarea {
+						font: 14.4px/1 $ikeaFontKo;
+					}
+
+					.submitBtn {
+						width: 130px;
+						height: 41px;
+						font: 12.8px/1 $ikeaFontKo;
+					}
+				}
+
+				&:nth-of-type(3) {
+					width: 60%;
+					float: right;
+					padding: 43px 2vw 43px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.location {
+		.subVisual {
+			height: 300px;
+
+			video {
+				object-position: -205vw -110vw;
+			}
+
+			.background {
+			}
+		}
+
+		.titContainer {
+			padding: 96px 5vw 0px;
+			h1 {
+				font: bold 36px/1 $ikeaFontKo;
+				margin-top: 20px;
+				margin-bottom: 96px;
+			}
+		}
+
+		.trafficBtn {
+			font: 11.2px/1 $ikeaFontKo;
+			height: 32.8px;
+			width: 100px;
+			margin-bottom: 20px;
+		}
+
+		.mapPrintBtn {
+			font: 11.2px/1 $ikeaFontKo;
+			height: 32.8px;
+			width: 100px;
+			display: none;
+			margin-bottom: 20px;
+		}
+
+		#map {
+			height: 300px;
+		}
+
+		.storeListContainer {
+			width: 100%;
+			height: auto;
+
+			.left {
+				width: 100%;
+				h2 {
+					margin-top: 40px;
+					font: bold 49px/1 $ikeaFontKo;
+					margin-bottom: 30px;
+				}
+
+				p {
+					padding-right: 0px;
+					font: 12.6px/1.8 $ikeaFontKo;
+					margin-bottom: 30px;
+				}
+			}
+		}
+
+		.rightContainer {
+			width: 100%;
+			height: 100%;
+
+			.list {
+				&:nth-of-type(1) {
+					width: 100%;
+					padding-bottom: 32px;
+					border-left: none;
+
+					.storeName {
+						.tit {
+							font: bold 49px/1 $ikeaFontKo;
+						}
+					}
+
+					.storeAddress {
+						width: 100%;
+
+						p {
+							font: 12.6px/1 $ikeaFontKo;
+						}
+					}
+
+					.storeOpen {
+						width: 100%;
+
+						p {
+							font: 12.6px/1.8 $ikeaFontKo;
+
+							span {
+								font: bold 12.6px/1.8 $ikeaFontKo;
+							}
+						}
+						h4 {
+							font: 12.6px/1.8 $ikeaFontKo;
+						}
+					}
+
+					.storePhone {
+						width: 100%;
+
+						p {
+							font: 12.6px/1 $ikeaFontKo;
+						}
+					}
+
+					.storeSite {
+						width: 100%;
+
+						p {
+							font: 12.6px/1 $ikeaFontKo;
+						}
+					}
+				}
+
+				&:nth-of-type(2) {
+					width: 100%;
+					border-left: none;
+
+					.storeName {
+						.tit {
+							font: bold 49px/1 $ikeaFontKo;
+						}
+					}
+
+					.storeAddress {
+						width: 100%;
+						height: auto;
+						margin-bottom: 10px;
+						padding-left: 20px;
+
+						p {
+							font: 14.4px/1 $ikeaFontKo;
+						}
+					}
+
+					.storeOpen {
+						width: 100%;
+
+						p {
+							font: 12.6px/1.8 $ikeaFontKo;
+
+							span {
+								font: bold 12.6px/1.8 $ikeaFontKo;
+							}
+						}
+						h4 {
+							font: 12.6px/1.8 $ikeaFontKo;
+						}
+					}
+
+					.storePhone {
+						width: 100%;
+
+						p {
+							font: 12.6px/1 $ikeaFontKo;
+						}
+					}
+
+					.storeSite {
+						width: 100%;
+
+						p {
+							font: 12.6px/1 $ikeaFontKo;
+						}
+					}
+				}
+
+				&:nth-of-type(3) {
+					width: 100%;
+					padding-bottom: 32px;
+					border-left: none;
+
+					.storeName {
+						.tit {
+							font: bold 49px/1 $ikeaFontKo;
+						}
+					}
+
+					.storeAddress {
+						width: 100%;
+
+						p {
+							font: 12.6px/1 $ikeaFontKo;
+						}
+					}
+
+					.storeOpen {
+						width: 100%;
+
+						p {
+							font: 12.6px/1.8 $ikeaFontKo;
+
+							span {
+								font: bold 12.6px/1.8 $ikeaFontKo;
+							}
+						}
+						h4 {
+							font: 12.6px/1.8 $ikeaFontKo;
+						}
+					}
+
+					.storePhone {
+						width: 100%;
+
+						p {
+							font: 12.6px/1 $ikeaFontKo;
+						}
+					}
+
+					.storeSite {
+						width: 100%;
+
+						p {
+							font: 12.6px/1 $ikeaFontKo;
+						}
+					}
+				}
+				&:nth-of-type(4) {
+					width: 100%;
+					padding-bottom: 32px;
+					border-left: none;
+
+					.storeName {
+						.tit {
+							font: bold 49px/1 $ikeaFontKo;
+						}
+					}
+
+					.storeAddress {
+						width: 100%;
+
+						p {
+							font: 12.6px/1 $ikeaFontKo;
+						}
+					}
+
+					.storeOpen {
+						width: 100%;
+
+						p {
+							font: 12.6px/1.8 $ikeaFontKo;
+
+							span {
+								font: bold 12.6px/1.8 $ikeaFontKo;
+							}
+						}
+						h4 {
+							font: 12.6px/1.8 $ikeaFontKo;
+						}
+					}
+
+					.storePhone {
+						width: 100%;
+
+						p {
+							font: 12.6px/1 $ikeaFontKo;
+						}
+					}
+
+					.storeSite {
+						width: 100%;
+
+						p {
+							font: 12.6px/1 $ikeaFontKo;
+						}
+					}
+				}
+			}
+		}
+
+		.contactContainer {
+			width: 100%;
+			height: 500px;
+
+			.contact {
+				&:nth-of-type(1) {
+					width: 100%;
+					height: 230px;
+
+					h2 {
+						margin-top: 60px;
+						font: bold 49px/1 $ikeaFontKo;
+					}
+
+					p {
+						width: 100%;
+						padding-right: 0px;
+						font: 12.6px/1.8 $ikeaFontKo;
+					}
+				}
+
+				&:nth-of-type(2) {
+					width: 100%;
+					padding: 43px 2vw 43px;
+					font: 12.6px/1 $ikeaFontKo;
+					border-top: none;
+					border-left: none;
+					padding-left: 0;
+
+					input {
+						font: 12.6px/1 $ikeaFontKo;
+					}
+					textarea {
+						font: 12.6px/1 $ikeaFontKo;
+					}
+
+					.submitBtn {
+						width: 100px;
+						height: 37px;
+						font: 11.2px/1 $ikeaFontKo;
+					}
+				}
+
+				&:nth-of-type(3) {
+					width: 100%;
+					margin: 0px auto;
+					padding: 0px 0vw 43px;
+					border: none;
 				}
 			}
 		}

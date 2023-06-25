@@ -1,28 +1,31 @@
 const mapContainer = document.querySelector('#map');
 const btns = document.querySelectorAll('.rightContainer .list');
+const tits = document.querySelectorAll('.tit');
+
+const trafficBtn = document.querySelector('.trafficBtn');
 
 const icon = document.querySelector('.svgBox path');
 const icon_len = 2730;
 
 const baseline = -window.innerHeight / 2;
 
-window.addEventListener('scroll', () => {
-	const scroll = window.scrollY;
-	//해당 섹션 영역에 도달했을때 다시 0으로 보정된 스크롤값
-	let scroll2 = (scroll - secs[2].offsetTop - baseline) * 5;
+// window.addEventListener('scroll', () => {
+// 	const scroll = window.scrollY;
+// 	//해당 섹션 영역에 도달했을때 다시 0으로 보정된 스크롤값
+// 	let scroll2 = (scroll - secs[2].offsetTop - baseline) * 5;
 
-	//해당 섹션에 스크롤이 도달하면
-	if (scroll > secs[2].offsetTop + baseline) {
-		//아이콘의 strokeDashoffset값을 보정된 scroll2값으로 계속 뺴줌 (선이 그어지기 시작함)
-		icon.style.strokeDashoffset = icon_len - scroll2;
-		//scroll2값이 만약에 전체 선의 길이를 넘어가는 순간 값을 0으로 강제고정
-		//이렇게 하지 않으면 다시 반대방향으로 선이 빠지게됨
-		scroll2 >= icon_len && (scroll2 = icon_len);
-	} else {
-		//해당 섹션에서 스크롤이 벗어나게 되면 다시 strokeDashoffset값을 원래 고정해서 초기화
-		icon.style.strokeDashoffset = icon_len;
-	}
-});
+// 	//해당 섹션에 스크롤이 도달하면
+// 	if (scroll > secs[2].offsetTop + baseline) {
+// 		//아이콘의 strokeDashoffset값을 보정된 scroll2값으로 계속 뺴줌 (선이 그어지기 시작함)
+// 		icon.style.strokeDashoffset = icon_len - scroll2;
+// 		//scroll2값이 만약에 전체 선의 길이를 넘어가는 순간 값을 0으로 강제고정
+// 		//이렇게 하지 않으면 다시 반대방향으로 선이 빠지게됨
+// 		scroll2 >= icon_len && (scroll2 = icon_len);
+// 	} else {
+// 		//해당 섹션에서 스크롤이 벗어나게 되면 다시 strokeDashoffset값을 원래 고정해서 초기화
+// 		icon.style.strokeDashoffset = icon_len;
+// 	}
+// });
 
 let active_index = 0;
 
@@ -33,12 +36,6 @@ const markerInfo = [
 		imgSrc: 'img/marker1.png',
 		imgSize: new kakao.maps.Size(110, 100),
 		imgPos: { offset: new kakao.maps.Point(56, 80) },
-		content:
-			'<div class="customoverlay">' +
-			'  <a href="https://map.kakao.com/link/map/11394059" target="_blank">' +
-			'    <span class="title">구의야구공원</span>' +
-			'  </a>' +
-			'</div>',
 		button: btns[0],
 	},
 	{
@@ -79,6 +76,24 @@ map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPLEFT);
 //맵줌컨트롤 인스턴스 생성후 맵인스턴스에 바인딩
 const zoomControl = new kakao.maps.ZoomControl();
 map.addControl(zoomControl, kakao.maps.ControlPosition.LEFT);
+map.removeOverlayMapTypeId(kakao.maps.MapTypeId.TRAFFIC);
+
+let toggle = false;
+
+//토글 버튼 클릭시 교통량정보 ON/OFF
+trafficBtn.addEventListener('click', () => {
+	toggle = !toggle;
+
+	if (toggle) {
+		map.addOverlayMapTypeId(kakao.maps.MapTypeId.TRAFFIC);
+		trafficBtn.innerHTML = '교통정보 OFF';
+		trafficBtn.style.background = '#1b2539';
+	} else if (!toggle) {
+		map.removeOverlayMapTypeId(kakao.maps.MapTypeId.TRAFFIC);
+		trafficBtn.innerHTML = '교통정보 ON';
+		trafficBtn.style.background = '#1b2539;';
+	}
+});
 
 //markerInfo배열 데이터를 통해 기존 맵인스턴스에 반복을 돌며 마커 생성하고 바인딩
 markerInfo.forEach((info, idx) => {
@@ -86,6 +101,7 @@ markerInfo.forEach((info, idx) => {
 		position: info.position,
 		image: new kakao.maps.MarkerImage(info.imgSrc, info.imgSize, info.imgPos, info.content),
 	});
+
 	marker.setMap(map);
 
 	//지점 버튼을 클릭시
@@ -97,6 +113,9 @@ markerInfo.forEach((info, idx) => {
 
 		for (const el of btns) el.classList.remove('on');
 		btns[idx].classList.add('on');
+
+		for (const el of tits) el.classList.remove('on');
+		tits[idx].classList.add('on');
 	});
 });
 
@@ -108,8 +127,3 @@ window.addEventListener('resize', () => {
 
 //위의 정보로 최종 마커이미지 인스턴스 생성
 const markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption);
-
-//해당 이미지 인스턴스를 마커생성하는 구문에 추가
-const marker = new kakao.maps.Marker({ position: position, image: markerImage }); //마커 인스턴스 생성
-
-marker.setMap(map);

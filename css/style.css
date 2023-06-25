@@ -3581,7 +3581,35 @@ a {
   font: bold 70px/1 "Noto Sans KR";
   color: #333;
   margin-top: 20px;
-  margin-bottom: 96px;
+  margin-bottom: 150px;
+}
+.location .trafficBtn {
+  width: 119px;
+  height: 41px;
+  background: #1b2539;
+  border: 1px solid #171717;
+  border-radius: 5px;
+  color: #eee;
+  border: none;
+  transform: translate(0, -5%);
+  font: 15px/1 "Noto Sans KR";
+  float: right;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+.location .mapPrintBtn {
+  width: 119px;
+  height: 41px;
+  background: #fff;
+  border: 1px solid #171717;
+  border-radius: 5px;
+  color: #333;
+  transform: translate(0, -5%);
+  font: 15px/1 "Noto Sans KR";
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 50px;
+  cursor: pointer;
 }
 .location #map {
   width: 100%;
@@ -3607,8 +3635,11 @@ a {
   margin-bottom: 50px;
 }
 .location .storeListContainer .left p {
+  padding-right: 50px;
   font: 18px/1.5 "Noto Sans KR";
-  color: #171717;
+  color: #333;
+  text-align: justify;
+  word-break: break-all;
 }
 .location .rightContainer {
   width: 65%;
@@ -3622,6 +3653,7 @@ a {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
+  cursor: pointer;
 }
 .location .rightContainer .list:nth-of-type(1) {
   width: 50%;
@@ -3640,12 +3672,23 @@ a {
 .location .rightContainer .list:nth-of-type(1) .storeName {
   flex: 0.5;
   text-align: left;
-  padding: 32px;
+  padding: 32px 32px 32px 20px;
   margin-top: 5px;
 }
 .location .rightContainer .list:nth-of-type(1) .storeName .tit {
   font: bold 51px/1 "Noto Sans KR";
+  background: repeating-linear-gradient(45deg, #3500ea, #3500ea 0.5px, #e7e8fc 0.5px, #e7e8fc 1.2px);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.location .rightContainer .list:nth-of-type(1) .storeName .tit.on {
   color: #3500ea;
+  background: none;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: #3500ea;
+  background-clip: initial;
 }
 .location .rightContainer .list:nth-of-type(1) .storeAddress {
   width: 100%;
@@ -3712,7 +3755,7 @@ a {
 .location .rightContainer .list:nth-of-type(2) .storeName {
   flex: 0.5;
   text-align: left;
-  padding: 32px;
+  padding: 32px 32px 32px 20px;
   margin-top: 5px;
 }
 .location .rightContainer .list:nth-of-type(2) .storeName .tit {
@@ -3722,6 +3765,13 @@ a {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+}
+.location .rightContainer .list:nth-of-type(2) .storeName .tit.on {
+  color: #3500ea;
+  background: none;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: #3500ea;
+  background-clip: initial;
 }
 .location .rightContainer .list:nth-of-type(2) .storeAddress {
   width: 100%;
@@ -3787,7 +3837,7 @@ a {
 .location .rightContainer .list:nth-of-type(3) .storeName {
   flex: 0.5;
   text-align: left;
-  padding: 32px;
+  padding: 32px 32px 32px 20px;
   margin-top: 5px;
 }
 .location .rightContainer .list:nth-of-type(3) .storeName .tit {
@@ -3797,6 +3847,13 @@ a {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+}
+.location .rightContainer .list:nth-of-type(3) .storeName .tit.on {
+  color: #3500ea;
+  background: none;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: #3500ea;
+  background-clip: initial;
 }
 .location .rightContainer .list:nth-of-type(3) .storeAddress {
   width: 100%;
@@ -3862,7 +3919,7 @@ a {
 .location .rightContainer .list:nth-of-type(4) .storeName {
   flex: 0.5;
   text-align: left;
-  padding: 32px;
+  padding: 32px 32px 32px 20px;
   margin-top: 5px;
 }
 .location .rightContainer .list:nth-of-type(4) .storeName .tit {
@@ -3872,6 +3929,13 @@ a {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+}
+.location .rightContainer .list:nth-of-type(4) .storeName .tit.on {
+  color: #3500ea;
+  background: none;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: #3500ea;
+  background-clip: initial;
 }
 .location .rightContainer .list:nth-of-type(4) .storeAddress {
   width: 100%;
@@ -3939,6 +4003,13 @@ a {
   color: #171717;
   margin-bottom: 50px;
 }
+.location .contactContainer .contact:nth-of-type(1) p {
+  padding-right: 50px;
+  font: 18px/1.5 "Noto Sans KR";
+  color: #333;
+  text-align: justify;
+  word-break: break-all;
+}
 .location .contactContainer .contact:nth-of-type(2) {
   width: 32.5%;
   height: 100%;
@@ -3947,7 +4018,7 @@ a {
   font: 16px/1 "Noto Sans KR";
   color: #3500ea;
   margin-bottom: 150px;
-  background: #e0e1fa;
+  background: #fff;
 }
 .location .contactContainer .contact:nth-of-type(2) label {
   width: 100%;
@@ -3955,12 +4026,13 @@ a {
 .location .contactContainer .contact:nth-of-type(2) input {
   display: block;
   width: 100%;
-  height: 25px;
+  height: 35px;
   margin-top: 10px;
   margin-bottom: 30px;
   padding: 5px;
-  background: #fafaff;
-  border: none;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #cfcfcf;
   font: 16px/1 "Noto Sans KR";
   color: #3500ea;
 }
@@ -3970,9 +4042,10 @@ a {
   height: 100px;
   margin-top: 10px;
   margin-bottom: 30px;
-  background: #fafaff;
+  background: #fff;
   padding: 1px;
-  border: none;
+  border-radius: 5px;
+  border: 1px solid #cfcfcf;
   font: 16px/1 "Noto Sans KR";
   color: #3500ea;
   resize: none;
@@ -3980,8 +4053,13 @@ a {
 .location .contactContainer .contact:nth-of-type(2) .submitBtn {
   width: 150px;
   height: 41px;
-  color: #3500ea;
-  font: 16px/1 "Noto Sans KR";
+  background: #1b2539;
+  border: 1px solid #171717;
+  border-radius: 5px;
+  color: #eee;
+  border: none;
+  font: 15px/1 "Noto Sans KR";
+  cursor: pointer;
 }
 .location .contactContainer .contact:nth-of-type(3) {
   width: 32.5%;
@@ -3991,23 +4069,22 @@ a {
   font: 16px/1 "Noto Sans KR";
   color: #3500ea;
   margin-bottom: 150px;
-  background: #e0e1fa;
+  background: #fff;
   font: 40px/1 "Noto Sans KR";
 }
 .location .contactContainer .contact:nth-of-type(3) .svgBox {
   width: 100%;
   height: 100%;
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .location .contactContainer .contact:nth-of-type(3) .svgBox svg path {
-  fill: rgba(0, 0, 0, 0.3);
-  stroke: #000;
+  fill: #e0e1fa;
+  stroke: #3500ea;
   stroke-width: 10;
-  stroke-dasharray: 2730;
-  stroke-dashoffset: 2730;
+  stroke-dasharray: 17292;
+  stroke-dashoffset: 17292;
   stroke-linecap: round;
   transition: stroke-dashoffset 1s;
 }
@@ -4015,6 +4092,495 @@ a {
   stroke-dashoffset: 0;
 }
 
+@media screen and (max-width: 1023px) {
+  .location .subVisual {
+    height: 380px;
+  }
+  .location .subVisual video {
+    object-fit: contain;
+    object-position: -45vw -58vw;
+  }
+  .location .subVisual .background {
+    background: #fff;
+  }
+  .location .titContainer {
+    padding: 150px 10vw 246px;
+  }
+  .location .titContainer h1 {
+    font: bold 70px/1 "Noto Sans KR";
+    margin-top: 20px;
+    margin-bottom: 96px;
+  }
+  .location .trafficBtn {
+    font: 12.8px/1 "Noto Sans KR";
+  }
+  .location .mapPrintBtn {
+    font: 12.8px/1 "Noto Sans KR";
+  }
+  .location #map {
+    width: 100%;
+    height: 500px;
+  }
+  .location .storeListContainer {
+    width: 100%;
+    height: auto;
+  }
+  .location .storeListContainer .left {
+    width: 40%;
+  }
+  .location .storeListContainer .left h2 {
+    margin-top: 60px;
+    font: bold 56px/1 "Noto Sans KR";
+  }
+  .location .storeListContainer .left p {
+    padding-right: 50px;
+    font: 14.4px/1.8 "Noto Sans KR";
+  }
+  .location .rightContainer {
+    width: 60%;
+    height: 100%;
+  }
+  .location .rightContainer .list:nth-of-type(1) {
+    width: 100%;
+    padding-bottom: 32px;
+  }
+  .location .rightContainer .list:nth-of-type(1) .storeName .tit {
+    font: bold 51px/1 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(1) .storeAddress {
+    width: 100%;
+  }
+  .location .rightContainer .list:nth-of-type(1) .storeAddress p {
+    font: 14.4px/1 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(1) .storeOpen {
+    width: 100%;
+  }
+  .location .rightContainer .list:nth-of-type(1) .storeOpen p {
+    font: 14.4px/1.8 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(1) .storeOpen p span {
+    font: bold 14.4px/1.8 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(1) .storeOpen h4 {
+    font: 14.4px/1.8 "Noto Sans KR";
+    color: #3500ea;
+  }
+  .location .rightContainer .list:nth-of-type(1) .storePhone {
+    width: 100%;
+  }
+  .location .rightContainer .list:nth-of-type(1) .storePhone p {
+    font: 14.4px/1 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(1) .storeSite {
+    width: 100%;
+  }
+  .location .rightContainer .list:nth-of-type(1) .storeSite p {
+    font: 14.4px/1 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(2) {
+    width: 100%;
+    height: 50%;
+    padding-bottom: 32px;
+  }
+  .location .rightContainer .list:nth-of-type(2) .storeName .tit {
+    font: bold 51px/1 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(2) .storeAddress {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    padding-left: 20px;
+  }
+  .location .rightContainer .list:nth-of-type(2) .storeAddress p {
+    font: 14.4px/1 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(2) .storeOpen {
+    width: 100%;
+  }
+  .location .rightContainer .list:nth-of-type(2) .storeOpen p {
+    font: 14.4px/1.8 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(2) .storeOpen p span {
+    font: bold 14.4px/1.8 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(2) .storeOpen h4 {
+    font: 14.4px/1.8 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(2) .storePhone {
+    width: 100%;
+  }
+  .location .rightContainer .list:nth-of-type(2) .storePhone p {
+    font: 14.4px/1 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(2) .storeSite {
+    width: 100%;
+  }
+  .location .rightContainer .list:nth-of-type(2) .storeSite p {
+    font: 14.4px/1 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(3) {
+    width: 100%;
+    padding-bottom: 32px;
+  }
+  .location .rightContainer .list:nth-of-type(3) .storeName .tit {
+    font: bold 51px/1 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(3) .storeAddress {
+    width: 100%;
+  }
+  .location .rightContainer .list:nth-of-type(3) .storeAddress p {
+    font: 14.4px/1 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(3) .storeOpen {
+    width: 100%;
+  }
+  .location .rightContainer .list:nth-of-type(3) .storeOpen p {
+    font: 14.4px/1.8 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(3) .storeOpen p span {
+    font: bold 14.4px/1.8 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(3) .storeOpen h4 {
+    font: 14.4px/1.8 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(3) .storePhone {
+    width: 100%;
+  }
+  .location .rightContainer .list:nth-of-type(3) .storePhone p {
+    font: 14.4px/1 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(3) .storeSite {
+    width: 100%;
+  }
+  .location .rightContainer .list:nth-of-type(3) .storeSite p {
+    font: 14.4px/1 "Noto Sans KR";
+    color: #3500ea;
+  }
+  .location .rightContainer .list:nth-of-type(4) {
+    width: 100%;
+    padding-bottom: 32px;
+  }
+  .location .rightContainer .list:nth-of-type(4) .storeName .tit {
+    font: bold 51px/1 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(4) .storeAddress {
+    width: 100%;
+  }
+  .location .rightContainer .list:nth-of-type(4) .storeAddress p {
+    font: 14.4px/1 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(4) .storeOpen {
+    width: 100%;
+  }
+  .location .rightContainer .list:nth-of-type(4) .storeOpen p {
+    font: 14.4px/1.8 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(4) .storeOpen p span {
+    font: bold 14.4px/1.8 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(4) .storeOpen h4 {
+    font: 14.4px/1.8 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(4) .storePhone {
+    width: 100%;
+  }
+  .location .rightContainer .list:nth-of-type(4) .storePhone p {
+    font: 14.4px/1 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(4) .storeSite {
+    width: 100%;
+  }
+  .location .rightContainer .list:nth-of-type(4) .storeSite p {
+    font: 14.4px/1 "Noto Sans KR";
+  }
+  .location .contactContainer {
+    width: 100%;
+    height: 500px;
+  }
+  .location .contactContainer .contact:nth-of-type(1) {
+    width: 40%;
+  }
+  .location .contactContainer .contact:nth-of-type(1) h2 {
+    margin-top: 60px;
+    font: bold 56px/1 "Noto Sans KR";
+  }
+  .location .contactContainer .contact:nth-of-type(1) p {
+    padding-right: 50px;
+    font: 14.4px/1.8 "Noto Sans KR";
+  }
+  .location .contactContainer .contact:nth-of-type(2) {
+    width: 60%;
+    padding: 43px 2vw 43px;
+    font: 14.4px/1 "Noto Sans KR";
+    margin-bottom: 0px;
+  }
+  .location .contactContainer .contact:nth-of-type(2) input {
+    font: 14.4px/1 "Noto Sans KR";
+  }
+  .location .contactContainer .contact:nth-of-type(2) textarea {
+    font: 14.4px/1 "Noto Sans KR";
+  }
+  .location .contactContainer .contact:nth-of-type(2) .submitBtn {
+    width: 130px;
+    height: 41px;
+    font: 12.8px/1 "Noto Sans KR";
+  }
+  .location .contactContainer .contact:nth-of-type(3) {
+    width: 60%;
+    float: right;
+    padding: 43px 2vw 43px;
+  }
+}
+@media screen and (max-width: 639px) {
+  .location .subVisual {
+    height: 300px;
+  }
+  .location .subVisual video {
+    object-position: -205vw -110vw;
+  }
+  .location .titContainer {
+    padding: 96px 5vw 0px;
+  }
+  .location .titContainer h1 {
+    font: bold 36px/1 "Noto Sans KR";
+    margin-top: 20px;
+    margin-bottom: 96px;
+  }
+  .location .trafficBtn {
+    font: 11.2px/1 "Noto Sans KR";
+    height: 32.8px;
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  .location .mapPrintBtn {
+    font: 11.2px/1 "Noto Sans KR";
+    height: 32.8px;
+    width: 100px;
+    display: none;
+    margin-bottom: 20px;
+  }
+  .location #map {
+    height: 300px;
+  }
+  .location .storeListContainer {
+    width: 100%;
+    height: auto;
+  }
+  .location .storeListContainer .left {
+    width: 100%;
+  }
+  .location .storeListContainer .left h2 {
+    margin-top: 40px;
+    font: bold 49px/1 "Noto Sans KR";
+    margin-bottom: 30px;
+  }
+  .location .storeListContainer .left p {
+    padding-right: 0px;
+    font: 12.6px/1.8 "Noto Sans KR";
+    margin-bottom: 30px;
+  }
+  .location .rightContainer {
+    width: 100%;
+    height: 100%;
+  }
+  .location .rightContainer .list:nth-of-type(1) {
+    width: 100%;
+    padding-bottom: 32px;
+    border-left: none;
+  }
+  .location .rightContainer .list:nth-of-type(1) .storeName .tit {
+    font: bold 49px/1 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(1) .storeAddress {
+    width: 100%;
+  }
+  .location .rightContainer .list:nth-of-type(1) .storeAddress p {
+    font: 12.6px/1 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(1) .storeOpen {
+    width: 100%;
+  }
+  .location .rightContainer .list:nth-of-type(1) .storeOpen p {
+    font: 12.6px/1.8 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(1) .storeOpen p span {
+    font: bold 12.6px/1.8 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(1) .storeOpen h4 {
+    font: 12.6px/1.8 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(1) .storePhone {
+    width: 100%;
+  }
+  .location .rightContainer .list:nth-of-type(1) .storePhone p {
+    font: 12.6px/1 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(1) .storeSite {
+    width: 100%;
+  }
+  .location .rightContainer .list:nth-of-type(1) .storeSite p {
+    font: 12.6px/1 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(2) {
+    width: 100%;
+    border-left: none;
+  }
+  .location .rightContainer .list:nth-of-type(2) .storeName .tit {
+    font: bold 49px/1 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(2) .storeAddress {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    padding-left: 20px;
+  }
+  .location .rightContainer .list:nth-of-type(2) .storeAddress p {
+    font: 14.4px/1 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(2) .storeOpen {
+    width: 100%;
+  }
+  .location .rightContainer .list:nth-of-type(2) .storeOpen p {
+    font: 12.6px/1.8 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(2) .storeOpen p span {
+    font: bold 12.6px/1.8 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(2) .storeOpen h4 {
+    font: 12.6px/1.8 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(2) .storePhone {
+    width: 100%;
+  }
+  .location .rightContainer .list:nth-of-type(2) .storePhone p {
+    font: 12.6px/1 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(2) .storeSite {
+    width: 100%;
+  }
+  .location .rightContainer .list:nth-of-type(2) .storeSite p {
+    font: 12.6px/1 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(3) {
+    width: 100%;
+    padding-bottom: 32px;
+    border-left: none;
+  }
+  .location .rightContainer .list:nth-of-type(3) .storeName .tit {
+    font: bold 49px/1 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(3) .storeAddress {
+    width: 100%;
+  }
+  .location .rightContainer .list:nth-of-type(3) .storeAddress p {
+    font: 12.6px/1 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(3) .storeOpen {
+    width: 100%;
+  }
+  .location .rightContainer .list:nth-of-type(3) .storeOpen p {
+    font: 12.6px/1.8 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(3) .storeOpen p span {
+    font: bold 12.6px/1.8 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(3) .storeOpen h4 {
+    font: 12.6px/1.8 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(3) .storePhone {
+    width: 100%;
+  }
+  .location .rightContainer .list:nth-of-type(3) .storePhone p {
+    font: 12.6px/1 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(3) .storeSite {
+    width: 100%;
+  }
+  .location .rightContainer .list:nth-of-type(3) .storeSite p {
+    font: 12.6px/1 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(4) {
+    width: 100%;
+    padding-bottom: 32px;
+    border-left: none;
+  }
+  .location .rightContainer .list:nth-of-type(4) .storeName .tit {
+    font: bold 49px/1 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(4) .storeAddress {
+    width: 100%;
+  }
+  .location .rightContainer .list:nth-of-type(4) .storeAddress p {
+    font: 12.6px/1 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(4) .storeOpen {
+    width: 100%;
+  }
+  .location .rightContainer .list:nth-of-type(4) .storeOpen p {
+    font: 12.6px/1.8 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(4) .storeOpen p span {
+    font: bold 12.6px/1.8 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(4) .storeOpen h4 {
+    font: 12.6px/1.8 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(4) .storePhone {
+    width: 100%;
+  }
+  .location .rightContainer .list:nth-of-type(4) .storePhone p {
+    font: 12.6px/1 "Noto Sans KR";
+  }
+  .location .rightContainer .list:nth-of-type(4) .storeSite {
+    width: 100%;
+  }
+  .location .rightContainer .list:nth-of-type(4) .storeSite p {
+    font: 12.6px/1 "Noto Sans KR";
+  }
+  .location .contactContainer {
+    width: 100%;
+    height: 500px;
+  }
+  .location .contactContainer .contact:nth-of-type(1) {
+    width: 100%;
+    height: 230px;
+  }
+  .location .contactContainer .contact:nth-of-type(1) h2 {
+    margin-top: 60px;
+    font: bold 49px/1 "Noto Sans KR";
+  }
+  .location .contactContainer .contact:nth-of-type(1) p {
+    width: 100%;
+    padding-right: 0px;
+    font: 12.6px/1.8 "Noto Sans KR";
+  }
+  .location .contactContainer .contact:nth-of-type(2) {
+    width: 100%;
+    padding: 43px 2vw 43px;
+    font: 12.6px/1 "Noto Sans KR";
+    border-top: none;
+    border-left: none;
+    padding-left: 0;
+  }
+  .location .contactContainer .contact:nth-of-type(2) input {
+    font: 12.6px/1 "Noto Sans KR";
+  }
+  .location .contactContainer .contact:nth-of-type(2) textarea {
+    font: 12.6px/1 "Noto Sans KR";
+  }
+  .location .contactContainer .contact:nth-of-type(2) .submitBtn {
+    width: 100px;
+    height: 37px;
+    font: 11.2px/1 "Noto Sans KR";
+  }
+  .location .contactContainer .contact:nth-of-type(3) {
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px 0vw 43px;
+    border: none;
+  }
+}
 .members {
   width: 100vw;
   height: 100vh;
