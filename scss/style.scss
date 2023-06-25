@@ -18,11 +18,15 @@ $fontColorGrC: #10101099;
 //members
 $tableBg: #f4f5f6;
 $tableBtn: #1b2539;
+$tableCheckBox: #1b2539;
 $inputBorder: #cfcfcf;
 $ikeaFontKo: 'Noto Sans KR';
 
 //video
 $videoBgBl: #090909;
+
+//signUp
+$errRed: #d80000;
 
 $tablet: 1023px;
 $mobile: 639px;
@@ -42,9 +46,10 @@ a:visited {
 
 .h {
 	position: absolute;
-	z-index: -99999;
+	z-index: -999999999;
 	top: 0;
 	left: 0;
+	visibility: hidden;
 }
 
 //common

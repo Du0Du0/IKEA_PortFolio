@@ -60,7 +60,6 @@
 
   <!-- Sign Up start -->
   <section class="content signUp">
-
     <!-- Upper Title & Timeline Container -->
     <div class="titContainer">
       <h1>회원가입</h1>
@@ -85,233 +84,261 @@
       <!-- form1 title-->
       <h2>필수정보입력</h2>
       <form action="result.html" method="get" id="signUp">
-        <!-- <legend class="h">회원가입 폼 필수정보 항목
-            </legend> -->
-        <table>
-          <tbody>
-            <!-- user id-->
+        <fieldset>
+          <legend class="h">회원가입 폼 필수정보 항목
+          </legend>
+          <table border="0">
+            <tbody>
+              <!-- user id-->
+              <tr>
+                <th scope="row">
+                  <label for="userid">아이디</label>
+                </th>
+                <td>
+                  <input type="text" name="userid" id="userid" autofocus>
+
+                  <p class="idErr">영문(소문자만가능), 숫자를 포함한 6~12자 조합으로 입력해주세요.</p>
+                </td>
+              </tr>
+              <!-- nickname -->
+              <tr>
+                <th scope="row">
+                  <label for="nickname">닉네임</label>
+                </th>
+                <td>
+                  <input type="text" name="nickname" id="nickname">
+
+                  <p class="nickErr">한글,영문(대소문자가능), 숫자,공백을 포함한 1~12자 조합으로 입력해주세요.</p>
+                </td>
+              </tr>
+
+              <!-- password -->
+              <tr>
+                <th>
+                  <label for="password">비밀번호</label>
+                </th>
+                <td>
+                  <input type="password" name="password" id="password" placeholder="새 비밀번호" autocomplete="off"><i
+                    class="fa-regular fa-eye"></i><br>
+
+                  <progress max="4" value="0" id="meter"></progress>
+                  <p class="pwdErr">영문,숫자,특수문자(~!@#$%^&*)를 포함한 10~20자 조합으로 입력해 주세요.</p>
+                </td>
+              </tr>
+
+              <!-- password double check-->
+              <tr>
+                <th>
+                  <label for="passwordCheck">비밀번호 확인</label>
+                </th>
+                <td>
+                  <input type="password" name="passwordCheck" id="passwordCheck" placeholder="변경할 비밀번호 확인"><i
+                    class="fa-regular fa-eye"></i><br>
+                  <p class="pwdErr2">비밀번호 확인을 위해 다시 한번 입력해 주세요.</p>
+                </td>
+              </tr>
+
+              <!-- email-->
+              <tr>
+                <th>
+                  <label for="email">이메일</label>
+                  <label for="emailAddress" class="h">이메일주소</label>
+                  <label for="emailAddressSelect" class="h">이메일주소선택</label>
+                </th>
+                <td>
+                  <input type="email" name="email" id="email">&nbsp;<span>@</span>&nbsp;
+                  <input type="email" name="emailAddress" id="emailAddress">
+                  <select name="emailAddressSelect" id="emailAddressSelect">
+                    <option value="">직접입력</option>
+                    <option value="naver.com">naver.com</option>
+                    <option value="google.com">google.com</option>
+                    <option value="yahoo.co.kr">yahoo.co.kr</option>
+                    <option value="freechai.com">freechai.com</option>
+                    <option value="empal.com">empal.com</option>
+                    <option value="intizen.com">intizen.com</option>
+                    <option value="hanmir.com">hanmir.com</option>
+                    <option value="paran.com">paran.com</option>
+                    <option value="hotmail.com">hotmail.com</option>
+                    <option value="hanmail.net">hanmail.net</option>
+                    <option value="nate.com">nate.com</option>
+                  </select>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+      </form>
+    </div>
+    <!-- form1 end-->
+
+    <!-- form2 start-->
+    <div class="info2">
+      <h2>선택정보입력</h2>
+      <form action="result.html" method="get" id="signUp2">
+        <fieldset>
+          <legend class="h">회원가입 폼 선택정보 항목 </legend>
+          <table border="0">
+            <!-- job -->
             <tr>
               <th scope="row">
-                <label for="userid">아이디</label>
+                <label for="job">직업</label>
               </th>
               <td>
-                <input type="text" name="userid" id="userid">
-
-                <p>영문(소문자만가능), 숫자를 포함한 6~12자 조합으로 입력해주세요.</p>
+                <input type="text" name="job" id="job">
               </td>
             </tr>
-            <!-- nickname -->
+
+            <!-- introduce -->
             <tr>
               <th scope="row">
-                <label for="nickname">닉네임</label>
+                <label for="introduce">프로필 소개</label>
               </th>
               <td>
-                <input type="text" name="nickname" id="nickname">
-
-                <p>한글,영문(대소문자가능), 숫자,공백을 포함한 1~12자 조합으로 입력해주세요.</p>
+                <textarea name="introduce" id="introduce" placeholder="프로필 소개를 입력해주세요." cols="30" rows="6"
+                  class="introduceForm"></textarea><br>
+                <span class="textareaCount">(0/200)</span>
               </td>
             </tr>
 
-            <!-- password -->
+            <!-- interest -->
             <tr>
-              <th>
-                <label for="password">비밀번호</label>
+              <th scope="row">
+                취미
               </th>
               <td>
-                <input type="password" name="password" id="password" placeholder="새 비밀번호"><br>
-                <p>영문,숫자,특수문자(~!@#$%^&*)를 포함한 10~20자 조합으로 입력해 주세요.</p>
+                <input type="checkbox" name="hobby" id="game" value="게임">
+                <label for="game">게임</label>
+
+                <input type="checkbox" name="hobby" id="song" value="노래">
+                <label for="song">노래</label>
+
+                <input type="checkbox" name="hobby" id="hiking" value="등산">
+                <label for="hiking">등산</label>
+
+                <input type="checkbox" name="hobby" id="reading" value="읽기">
+                <label for="reading">읽기</label>
+
+                <input type="checkbox" name="hobby" id="etc" value="기타">
+                <label for="etc">기타</label>
+            </tr>
+
+            <tr>
+              <th scope="row">
+                <label for="domain">홈페이지</label>
+              </th>
+              <td>
+                <input type="text" name="domain" id="domain" placeholder="홈페이지가 있는 경우 링크를 입력해주세요. 예)www.myhome.co.kr">
               </td>
             </tr>
 
-            <!-- password double check-->
             <tr>
-              <th>
-                <label for="passwordCheck">비밀번호 확인</label>
+              <th scope="row">
+                <label for="city">지역</label>
               </th>
               <td>
-                <input type="password" name="passwordCheck" id="passwordCheck" placeholder="변경할 비밀번호 확인"><br>
-                <p>비밀번호 확인을 위해 다시 한번 입력해 주세요.</p>
-              </td>
-            </tr>
-
-            <!-- email-->
-            <tr>
-              <th>
-                <!-- 이메일 라벨 두개만들고 하나는 날리기 -->
-                <!-- id는 한페이지에 두개 있으면 안됨 -->
-                <!-- name과 id는 다르게 주는 것이 좋음 -->
-                <label for="email">이메일</label>
-              </th>
-              <td>
-                <input type="email" name="email" id="email">&nbsp;<span>@</span>&nbsp;<input type="email" name="email"
-                  id="email">
-                <select name="emailAdress" id="emailAdress">
-                  <option value="write">직접입력</option>
-                  <option value="naver">naver.com</option>
-                  <option value="gmail">google.com</option>
+                <select name="city" id="city">
+                  <option value="서울">서울</option>
+                  <option value="경기">경기</option>
+                  <option value="광주">광주</option>
+                  <option value="대구">대구</option>
+                  <option value="대전">대전</option>
+                  <option value="세종">세종</option>
+                  <option value="부산">부산</option>
+                  <option value="울산">울산</option>
+                  <option value="인천">인천</option>
+                  <option value="강원">강원</option>
+                  <option value="경남">경남</option>
+                  <option value="경북">경북</option>
+                  <option value="전남">전남</option>
+                  <option value="전북">전북</option>
+                  <option value="충북">충북</option>
+                  <option value="충남">충남</option>
+                  <option value="제주">제주</option>
                 </select>
               </td>
             </tr>
-          </tbody>
-        </table>
-      </form>
-    </div>
-    <!-- form1 end-->
 
-    <!-- form1 start-->
-    <div class="info2">
-      <h2>선택정보입력</h2>
-      <form action="result.html" method="get" id="signUp">
-        <!-- <legend class="h">회원가입 폼 선택정보 항목 -->
-        <table>
-          <!-- job -->
-          <tr>
-            <th scope="row">
-              <label for="job">직업</label>
-            </th>
-            <td>
-              <input type="text" name="job" id="job">
-            </td>
-          </tr>
-
-          <!-- introduce -->
-          <tr>
-            <th scope="row">
-              <label for="introduce">프로필 소개</label>
-            </th>
-            <td>
-              <textarea name="introduce" id="introduce" placeholder="프로필 소개를 입력해주세요." cols="30" rows="6"></textarea><br>
-              <span>(0/200)</span>
-            </td>
-          </tr>
-
-          <!-- interest -->
-          <tr>
-            <th scope="row">
-              취미
-            </th>
-            <td>
-              <input type="checkbox" name="hobby" id="game" value="game">
-              <label for="game">게임</label>
-
-              <input type="checkbox" name="hobby" id="song" value="song">
-              <label for="song">노래</label>
-
-              <input type="checkbox" name="hobby" id="hiking" value="hiking">
-              <label for="song">등산</label>
-
-              <input type="checkbox" name="hobby" id="reading" value="reading">
-              <label for="reading">읽기</label>
-
-              <input type="checkbox" name="hobby" id="etc" value="etc">
-              <label for="etc">기타</label>
-          </tr>
-
-          <tr>
-            <th scope="row">
-              <label for="domain">홈페이지</label>
-            </th>
-            <td>
-              <input type="text" name="domain" id="domain" placeholder="홈페이지가 있는 경우 링크를 입력해주세요. 예)www.myhome.co.kr">
-            </td>
-          </tr>
-
-          <tr>
-            <th scope="row">
-              <label for="city">지역</label>
-            </th>
-            <td>
-              <select name="city" id="city">
-                <option value="seoul">서울</option>
-                <option value="busan">부산</option>
-              </select>
-            </td>
-          </tr>
-
-          <tr>
-            <th scope="row">
-              <label for="address" class="addressTit">주소</label>
-            </th>
-            <td>
-              <input type="text" id="sample6_postcode" placeholder="우편번호" class='address'>
-              <input type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기" class="addressBtn"><br>
-              <input type="text" id="sample6_address" placeholder="주소" class='address'><br>
-              <input type="text" id="sample6_detailAddress" placeholder="상세주소" class='address'>
-              <input type="text" id="sample6_extraAddress" placeholder="참고항목" class='address'>
-            </td>
-          </tr>
-
-          <tbody>
             <tr>
+              <th scope="row">
+                <label for="sample6_postcode" class="h">우편번호</label>
+                <label for="sample6_address" class="addressTit">주소</label>
+                <label for="sample6_detailAddress" class="h">상세주소</label>
+                <label for="sample6_extraAddress" class="h">참고항목</label>
+              </th>
+              <td>
+                <input type="text" name="postcode" id="sample6_postcode" placeholder="우편번호" class='address' readonly>
+                <input type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기" class="addressBtn"><br>
+                <input type="text" name="address" id="sample6_address" placeholder="주소" class='address'><br>
+                <input type="text" name="detailAddress" id="sample6_detailAddress" placeholder="상세주소" class='address'>
+                <input type="text" name="extraAddress" id="sample6_extraAddress" placeholder="참고항목" class='address'>
+              </td>
             </tr>
-          </tbody>
-        </table>
+            </tbody>
+          </table>
+        </fieldset>
       </form>
     </div>
-    <!-- form1 end-->
+    <!-- form2 end-->
 
+    <!-- form3 start-->
     <div class="info3">
       <h2>정보수신 동의</h2>
-      <form action="result.html" method="get" id="signUp">
-        <!-- <legend class="h">회원가입 폼 정보수신동의 항목 -->
-        <table>
-          <!-- job -->
-          <tr>
-            <th scope="row">
-              메일수신
-            </th>
-            <td>
-              <input type="radio" name="mail" id="mail" value="true">
-              <label for="mail">받겠습니다.</label>
+      <form action="result.html" method="get" id="signUp3">
+        <fieldset>
+          <legend class="h">회원가입 폼 정보수신동의 항목</legend>
+          <table border="0">
+            <!-- mail -->
+            <tr>
+              <th scope="row">
+                메일수신
+              </th>
+              <td>
+                <input type="radio" name="mail" id="agree1Y" value="Y">
+                <label for="agree1Y">받겠습니다.</label>
 
-              <input type="radio" name="mail" id="mail" value="false">
-              <label for="mail">받지않겠습니다.</label>
-            </td>
-          </tr>
+                <input type="radio" name="mail" id="agree1N" value="N">
+                <label for="agree1N">받지않겠습니다.</label>
+              </td>
+            </tr>
+            <!-- sms -->
+            <tr>
+              <th scope="row">
+                SMS 수신
+              </th>
+              <td>
+                <input type="radio" name="sms" id="agree2Y" value="Y">
+                <label for="agree2Y">받겠습니다.</label>
 
-          <!-- sms -->
-          <tr>
-            <th scope="row">
-              SMS 수신
-            </th>
-            <td>
+                <input type="radio" name="sms" id="agree2N" value="N">
+                <label for="agree2N">받지않겠습니다.</label>
+              </td>
+            </tr>
+            <!-- kakao -->
+            <tr>
+              <th scope="row">
+                알림톡 수신
+              </th>
+              <td>
+                <input type="radio" name="kakao" id="agree3Y" value="Y">
+                <label for="agree3Y">받겠습니다.</label>
 
-              <input type="radio" name="sms" id="sms" value="true">
-              <label for="sms">받겠습니다.</label>
-
-              <input type="radio" name="sms" id="sms" value="false">
-              <label for="sms">받지않겠습니다.</label>
-            </td>
-          </tr>
-
-
-          <!-- sms -->
-          <tr>
-            <th scope="row">
-              알림톡 수신
-            </th>
-            <td>
-              <input type="radio" name="kakao" id="kakao" value="true">
-              <label for="kakao">받겠습니다.</label>
-
-              <input type="radio" name="kakao" id="kakao" value="false">
-              <label for="sms">받지않겠습니다.</label>
-            </td>
-          </tr>
-
-
-          <tbody>
-        </table>
+                <input type="radio" name="kakao" id="agree3N" value="N">
+                <label for="agree3N">받지않겠습니다.</label>
+              </td>
+            </tr>
+            <tbody>
+          </table>
+        </fieldset>
       </form>
     </div>
+    <!-- form3 end-->
 
     <div class="btnSet">
-      <input type="reset" value="취소">
+      <input type="reset" value="취소" class="resetBtn">
       <input type="submit" value="제출">
     </div>
   </section>
   <!-- Sign Up end -->
-
 </body>
 
 </html>
