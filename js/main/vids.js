@@ -6,13 +6,13 @@ const list = 'PLWgHnOZUp_4H3oyXBnWAhhQhWulLsuoPO';
 
 let videoIsOn;
 
+let num;
+
+resizeVids(5);
+
 // 화면 줄이면 보이는 동영상 갯수 설정
 window.addEventListener('resize', function () {
 	console.log('resize event!');
-
-	let num;
-
-	resizeVids(5);
 
 	if (window.innerWidth >= 1024 && window.innerWidth <= 1920) {
 		num = 5;

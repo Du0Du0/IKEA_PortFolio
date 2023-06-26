@@ -20,7 +20,9 @@ fetch(url)
           <div class="viedoBox1" >
           <div class="videoCircle" style = "background-image : url(${
 						json.items[idx].snippet.thumbnails.maxres.url
-					})" data-video-id = "${item.snippet.resourceId.videoId}" >
+					})" data-video-id = "${
+				item.snippet.resourceId.videoId
+			}" data-cursor="link" data-name="Show Video">
           </div>
           <div class="textBox">
           <span class="listTitle">${
@@ -33,6 +35,127 @@ fetch(url)
   `;
 		});
 		container.innerHTML = tags;
+
+		const videoCircles = document.querySelectorAll('.videoCircle');
+
+		// 커스텀 마우스 커서
+
+		const cursor = document.querySelector('.cursor');
+		document.addEventListener('mousemove', (e) => {
+			cursor.setAttribute(
+				'style',
+				'top: ' + (e.pageY - 60) + 'px; left: ' + (e.pageX - 60) + 'px;'
+			);
+		});
+
+		document.addEventListener('click', (e) => {
+			console.log(e.target);
+			cursor.classList.add('click');
+
+			setTimeout(() => {
+				cursor.classList.remove('click');
+			}, 500);
+		});
+
+		videoCircles.forEach((videoCircle) => {
+			videoCircle.addEventListener('mouseover', (e) => {
+				console.log('아놔');
+				const dataName = e.target.getAttribute('data-name');
+				cursor.classList.add('hover');
+				cursor.innerText = dataName;
+			});
+		});
+
+		videoCircles.forEach((videoCircle) => {
+			videoCircle.addEventListener('mouseleave', (e) => {
+				console.log('아놔');
+				cursor.innerText = '';
+				cursor.classList.remove('hover');
+			});
+		});
+
+		const iframe = document.querySelector('.cursorOverlay');
+		iframe.addEventListener('mouseenter', (e) => {
+			console.log('아놔3');
+			const dataName = e.target.getAttribute('data-name');
+			cursor.classList.add('hover');
+			cursor.innerText = dataName;
+		});
+
+		iframe.addEventListener('mouseleave', (e) => {
+			console.log('아놔');
+			cursor.innerText = '';
+			cursor.classList.remove('hover');
+		});
+
+		const imgBox1 = document.querySelector('.imgBox1');
+		imgBox1.addEventListener('mouseenter', (e) => {
+			console.log('아놔3');
+			const dataName = e.target.getAttribute('data-name');
+			cursor.classList.add('hover');
+			cursor.innerText = dataName;
+		});
+
+		imgBox1.addEventListener('mouseleave', (e) => {
+			console.log('아놔');
+			cursor.innerText = '';
+			cursor.classList.remove('hover');
+		});
+		const goButton = document.querySelector('.btnContainer button');
+		goButton.addEventListener('mouseenter', (e) => {
+			console.log('아놔3');
+			const dataName = e.target.getAttribute('data-name');
+			cursor.classList.add('hover');
+			cursor.innerText = dataName;
+		});
+
+		goButton.addEventListener('mouseleave', (e) => {
+			console.log('아놔');
+			cursor.innerText = '';
+			cursor.classList.remove('hover');
+		});
+
+		const btnWrap = document.querySelector('.btnWrap');
+		btnWrap.addEventListener('mouseenter', (e) => {
+			console.log('아놔3');
+			const dataName = e.target.getAttribute('data-name');
+			cursor.classList.add('hover');
+			cursor.innerText = dataName;
+		});
+
+		btnWrap.addEventListener('mouseleave', (e) => {
+			console.log('아놔');
+			cursor.innerText = '';
+			cursor.classList.remove('hover');
+		});
+
+		const vidSubTit = document.querySelector('.vidSubTit');
+		vidSubTit.addEventListener('mouseenter', (e) => {
+			console.log('아놔3');
+			const dataName = e.target.getAttribute('data-name');
+			cursor.classList.add('hover');
+			cursor.innerText = dataName;
+		});
+
+		vidSubTit.addEventListener('mouseleave', (e) => {
+			console.log('아놔');
+			cursor.innerText = '';
+			cursor.classList.remove('hover');
+		});
+
+		const vidImgBox = document.querySelector('.vidImgBox');
+		vidImgBox.addEventListener('mouseenter', (e) => {
+			console.log('아놔3');
+			const dataName = e.target.getAttribute('data-name');
+			cursor.classList.add('hover');
+			cursor.innerText = dataName;
+		});
+
+		vidImgBox.addEventListener('mouseleave', (e) => {
+			console.log('아놔');
+			cursor.innerText = '';
+			cursor.classList.remove('hover');
+		});
 	});
 
 //subtitle 동영상 재생 멈춤 기능

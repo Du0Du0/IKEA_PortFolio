@@ -73,7 +73,7 @@
   <section class="contents video">
     <!-- video top banner -->
     <figure class="subVisual">
-      <video src="../img/pexels.mp4" autoplay loop muted></video>
+      <video src="https://Du0Du0.github.io/IKEA-Redesign-Web/img/pexels.mp4" autoplay loop muted></video>
       <div class="background"></div>
     </figure>
 
@@ -102,7 +102,7 @@
           <span><button class="pauseBtn"></button></span>
           <span><button class="playBtn"></button></span>
         </div>
-        <video class="vidSubTit" src="img/SHM.mp4" autoplay muted loop>
+        <video class="vidSubTit" src="img/SHM.mp4" autoplay muted loop data-name="Pause">
     </div>
     </figure>
 
@@ -113,7 +113,7 @@
         in front of the mirror, or on a laptop in the living room. With the new OBEGRÄNSAD collection, on sale around
         the world
         from 1 October, it has never been simpler to make room for creativity in the space you already have.</p>
-      <button>See all collections at IKEA.kr</button>
+      <button class="btnWrap" data-name="Collections">See all collections at IKEA.kr</button>
     </div>
 
     <div class="imgBoxContainer">
@@ -122,12 +122,12 @@
           <span><button class="pauseBtn2"></button></span>
           <span><button class="playBtn2"></button></span>
         </div>
-        <video class="vidImgBox" src="img/imgBoxRight_video.mp4" autoplay muted loop></video>
+        <video class="vidImgBox" src="img/imgBoxRight_video.mp4" autoplay muted loop data-name="Pause"></video>
       </figure>
 
       <div class="imgBoxRight">
         <div class="imgBoxTop">
-          <div class="imgBox1"><img class="changeImg" src="img/imgBoxGroup1.png">
+          <div class="imgBox1" data-name="Click"><img class="changeImg" src="img/imgBoxGroup1.png">
 
             <button><span id="result">1</span>&nbsp;/&nbsp;5</button>
           </div>
@@ -154,14 +154,16 @@
           collection.</p>
       </div>
       <div class="imbedVideo"><iframe width="787.5" height="453.39"
-          src="https://www.youtube.com/embed/qFnEbDsbdRE?cc_load_policy=0&autoplay=1&mute=1&playsinline=1&rel=0&loop=1&playlist=qFnEbDsbdRE&controls=0"
+          src="https://www.youtube.com/embed/qFnEbDsbdRE?cc_load_policy=0&autoplay=1&mute=1&playsinline=1&rel=0&loop=1&autohide=1&playlist=qFnEbDsbdRE&controls=0"
           title="OBEGRÄNSAD collection feat. IKEA and Swedish House Mafia" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe></div>
+          allowfullscreen></iframe>
+        <div class="cursorOverlay" data-name="Pause"></div>
+      </div>
     </div>
 
-    <div class="btnContainer">
-      <button>See all collections at IKEA.kr</button>
+    <div class=" btnContainer">
+      <button data-name="Collections">See all collections at IKEA.kr</button>
     </div>
 
     <div class="videoListContainer">
@@ -171,8 +173,19 @@
 
       </div>
     </div>
+
+    <div class="cursor">
+
+    </div>
+
   </section>
   <!-- video end -->
+
+
+
+
+
+
 
 
   <footer>

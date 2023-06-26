@@ -1,5 +1,6 @@
 .video {
 	width: 100vw;
+	cursor: none;
 
 	min-height: calc(100vh - 461px);
 	.subVisual {
@@ -116,7 +117,7 @@
 				background-repeat: no-repeat;
 				background-size: contain;
 				border: none;
-				cursor: pointer;
+				cursor: none;
 			}
 
 			.playBtn {
@@ -133,7 +134,7 @@
 				background-repeat: no-repeat;
 				background-size: contain;
 				border: none;
-				cursor: pointer;
+				cursor: none;
 				display: none;
 			}
 		}
@@ -167,7 +168,7 @@
 			border-radius: 50px;
 			margin: 0px auto;
 			margin-bottom: 50px;
-			cursor: pointer;
+			cursor: none;
 			background: radial-gradient(circle, #7f7fd5, #86a8e7, #91eae4);
 			background-size: 200%;
 			border: none;
@@ -215,7 +216,7 @@
 				background-repeat: no-repeat;
 				background-size: contain;
 				border: none;
-				cursor: pointer;
+				cursor: none;
 			}
 
 			.playBtn2 {
@@ -232,7 +233,7 @@
 				background-repeat: no-repeat;
 				background-size: contain;
 				border: none;
-				cursor: pointer;
+				cursor: none;
 				display: none;
 			}
 		}
@@ -254,7 +255,7 @@
 					height: 100%;
 					overflow: hidden;
 					position: relative;
-					cursor: pointer;
+					cursor: none;
 
 					img {
 						width: 100%;
@@ -274,7 +275,7 @@
 						right: 20px;
 						font: bold 16px /1 $ikeaFontKo;
 						color: $fontColorBl;
-						cursor: pointer;
+						cursor: none;
 					}
 				}
 				.imgBox2 {
@@ -348,6 +349,15 @@
 
 			iframe {
 				width: 100%;
+				z-index: 1;
+			}
+
+			.cursorOverlay {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 60%;
 			}
 		}
 	}
@@ -367,7 +377,7 @@
 			color: $ikeaBl;
 			border-radius: 50px;
 			margin: 0px auto;
-			cursor: pointer;
+			cursor: none;
 			border: none;
 			background: radial-gradient(circle, #7f7fd5, #86a8e7, #91eae4);
 			background-size: 200%;
@@ -439,7 +449,7 @@
 				height: 100%;
 				background-color: $bgW;
 				border-radius: 50%;
-				cursor: pointer;
+				cursor: none;
 				background-size: cover;
 				background-position: center;
 				background-repeat: no-repeat;
@@ -454,6 +464,54 @@
 						}
 					}
 				}
+			}
+		}
+	}
+
+	.cursor {
+		pointer-events: none;
+		position: absolute;
+		width: 80px;
+		height: 80px;
+		background: radial-gradient(
+			circle,
+			#fff 0%,
+			#fff 3.99%,
+			#000 4%,
+			#000 68.99%,
+			#fff 70%,
+			#fff 100%
+		);
+		border-radius: 50%;
+		text-align: center;
+		align-items: center;
+		color: white;
+		font: 18px/80px $ikeaFontKo;
+		z-index: 99999;
+		transition: all 0.1s;
+		transition-delay: width, height 1s;
+		overflow: hidden;
+
+		&.hover {
+			width: 150px;
+			height: 150px;
+			font: 18px/150px $ikeaFontKo;
+			background: radial-gradient(circle, #000 4%, #000 68.99%, #fff 70%, #fff 100%);
+			overflow: hidden;
+		}
+
+		&.click {
+			animation: click 0.3s ease-in-out;
+		}
+		@keyframes click {
+			0% {
+				transform: scale(1);
+			}
+			5% {
+				transform: scale(1.3);
+			}
+			100% {
+				transform: scale(1);
 			}
 		}
 	}
