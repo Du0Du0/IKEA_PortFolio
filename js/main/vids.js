@@ -12,6 +12,8 @@ window.addEventListener('resize', function () {
 
 	let num;
 
+	resizeVids(5);
+
 	if (window.innerWidth >= 1024 && window.innerWidth <= 1920) {
 		num = 5;
 		resizeVids(num);

@@ -17,10 +17,10 @@ fetch(url)
 
 			tags += `
   
-          <div class="viedoBox1">
+          <div class="viedoBox1" >
           <div class="videoCircle" style = "background-image : url(${
 						json.items[idx].snippet.thumbnails.maxres.url
-					})">
+					})" data-video-id = "${item.snippet.resourceId.videoId}" >
           </div>
           <div class="textBox">
           <span class="listTitle">${
@@ -115,3 +115,37 @@ imgBox1.addEventListener('click', () => {
 		currentidx = -1;
 	} else return;
 });
+
+//vids pop 찹업창 띄우기
+document.body.addEventListener('click', (e) => {
+	if (e.target.className === 'videoCircle')
+		createPop(e.target.closest('.videoCircle').getAttribute('data-video-id'));
+	if (e.target.className === 'close') removePop();
+});
+
+//vids 동적으로 팝업 생성
+function createPop(id) {
+	const tags = `	
+			<div class='con'>
+			<iframe src='https://www.youtube.com/embed/${id}'></iframe></div>
+			<span class='close'>x</span>
+	`;
+	const pop = document.createElement('aside');
+	pop.className = 'pop';
+	pop.innerHTML = tags;
+	document.body.append(pop);
+	console.log('.pop');
+
+	//특정 코드를 강제로 동기화시키고 싶을때는 setTimeout에 delay를 0초로 지정해서 코드를 패키징 (강제로 wep api에 넘어갔다가 다시 콜스택 젤 마지막에 등록)
+	setTimeout(() => document.querySelector('.pop').classList.add('on'), 0);
+	document.body.style.overflow = 'hidden';
+}
+
+const vidsCloseBtn = document.querySelector('.close');
+
+//팝업제거
+function removePop() {
+	document.querySelector('.pop').classList.remove('on');
+	setTimeout(() => document.querySelector('.pop').remove(), 1000);
+	document.body.style.overflow = 'auto';
+}

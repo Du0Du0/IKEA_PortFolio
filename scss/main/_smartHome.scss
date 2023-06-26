@@ -174,12 +174,15 @@
 					background: rgb(255, 255, 255);
 					border-radius: 10px;
 					background: transparent;
-
 					background-position: center;
 					background-repeat: no-repeat;
 					background-size: cover;
 					padding: 80px 45px;
 					position: relative;
+
+					&:nth-of-type(even) {
+						top: 0vw;
+					}
 
 					h4 {
 						position: relative;
@@ -209,6 +212,7 @@
 						text-align: right;
 						color: transparent;
 						-webkit-text-stroke: 1px $fontColorW;
+						display: none;
 
 						&.movingText {
 							animation: fillingText 1s infinite;
@@ -339,7 +343,7 @@
 			.swiper-button-prev {
 				position: absolute;
 				top: 50%;
-				left: 50px;
+				left: 5vw;
 				width: 30px;
 				height: 30px;
 				transform: translateY(-50%);
@@ -349,7 +353,7 @@
 			.swiper-button-next {
 				position: absolute;
 				top: 50%;
-				right: 50px;
+				right: 5vw;
 				width: 30px;
 				height: 30px;
 				transform: translateY(-50%);
