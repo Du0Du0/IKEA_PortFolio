@@ -594,91 +594,109 @@ header .logo p a:visited {
     margin-left: 15px;
   }
 }
-footer {
+#footer_Bl {
   width: 100vw;
-  height: 461px;
+  height: 400px;
   bottom: 0;
   position: relative;
   left: 0;
   right: 0;
 }
-footer img {
+#footer_Bl img {
   padding-top: 0px;
   margin-bottom: 0;
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
-footer .footerContainer {
-  flex: 1;
+#footer_Bl .footerContainer {
   width: 100%;
   height: 300px;
   flex-direction: column;
   background: white;
   display: flex;
+}
+#footer_Bl .footerContainer .footerTopWrap {
+  display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  padding: 80px 1vw 0px;
+  padding: 80px 0vw 0px;
 }
-footer .footerContainer li {
+#footer_Bl .footerContainer .footerTopWrap .footerTop {
+  display: flex;
+  justify-content: center;
+}
+#footer_Bl .footerContainer .footerTopWrap .footerTop li {
   font: 25px/1 "Noto Sans KR";
   color: #333;
   float: left;
   cursor: pointer;
 }
-footer .footerContainer li:after {
+#footer_Bl .footerContainer .footerTopWrap .footerTop li:after {
   content: "|";
   top: 50%;
   left: 100%;
   margin-left: 20px;
   margin-right: 20px;
 }
-footer .footerContainer li:nth-of-type(5):after {
+#footer_Bl .footerContainer .footerTopWrap .footerDown li {
+  font: 25px/1 "Noto Sans KR";
+  color: #333;
+  float: left;
+  cursor: pointer;
+}
+#footer_Bl .footerContainer .footerTopWrap .footerDown li:after {
+  content: "|";
+  top: 50%;
+  left: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#footer_Bl .footerContainer .footerTopWrap .footerDown li:nth-of-type(2):after {
   content: "";
   top: 50%;
   left: 100%;
   margin-left: 20px;
   margin-right: 20px;
 }
-footer .footerLeftCategory {
+#footer_Bl .footerContainer .footerLeftCategory {
   flex: 1;
   padding-top: 70px;
   width: 100%;
   height: 100%;
-  background: white;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
 }
-footer .footerLeftCategory ul {
+#footer_Bl .footerContainer .footerLeftCategory ul {
   float: left;
   margin-left: 10px;
   display: flex;
 }
-footer .footerLeftCategory ul:nth-of-type(1) li {
+#footer_Bl .footerContainer .footerLeftCategory ul:nth-of-type(1) li {
   font: 16px/1 "Noto Sans KR";
   color: #333;
 }
-footer .footerLeftCategory ul:nth-of-type(1) li:nth-of-type(1):after {
+#footer_Bl .footerContainer .footerLeftCategory ul:nth-of-type(1) li:nth-of-type(1):after {
   content: "|";
   top: 50%;
   left: 100%;
   margin-left: 20px;
   margin-right: 20px;
 }
-footer .footerLeftCategory ul:nth-of-type(2) li {
+#footer_Bl .footerContainer .footerLeftCategory ul:nth-of-type(2) li {
   font: 16px/1 "Noto Sans KR";
   color: #333;
   margin-left: -100px;
 }
-footer .footerLeftCategory ul li {
+#footer_Bl .footerContainer .footerLeftCategory ul li {
   font: 16px/1 "Noto Sans KR";
   color: #333;
   cursor: pointer;
 }
-footer .footerLeftCategory ul li:after {
+#footer_Bl .footerContainer .footerLeftCategory ul li:after {
   content: "";
   top: 50%;
   left: 100%;
@@ -687,94 +705,112 @@ footer .footerLeftCategory ul li:after {
 }
 
 @media screen and (max-width: 1023px) {
-  footer {
+  #footer_Bl {
     width: 100vw;
-    height: 461px;
+    height: 361px;
     bottom: 0;
     position: relative;
     left: 0;
     right: 0;
   }
-  footer img {
+  #footer_Bl img {
     padding-top: 0px;
     margin-bottom: 0;
     object-fit: cover;
     width: 100%;
     height: 100%;
   }
-  footer .footerContainer {
-    flex: 1;
+  #footer_Bl .footerContainer {
     width: 100%;
     height: 300px;
     flex-direction: column;
+    background: white;
+    display: flex;
+  }
+  #footer_Bl .footerContainer .footerTopWrap {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    padding: 70px 1vw 0px;
+    padding: 60px 0vw 0px;
   }
-  footer .footerContainer li {
+  #footer_Bl .footerContainer .footerTopWrap .footerTop {
+    display: flex;
+    justify-content: center;
+  }
+  #footer_Bl .footerContainer .footerTopWrap .footerTop li {
     font: 16px/1 "Noto Sans KR";
     color: #333;
-    text-align: center;
+    float: left;
     cursor: pointer;
   }
-  footer .footerContainer li:after {
+  #footer_Bl .footerContainer .footerTopWrap .footerTop li:after {
     content: "|";
     top: 50%;
     left: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
-  footer .footerContainer li:nth-of-type(5):after {
+  #footer_Bl .footerContainer .footerTopWrap .footerDown li {
+    font: 16px/1 "Noto Sans KR";
+    color: #333;
+    float: left;
+    cursor: pointer;
+  }
+  #footer_Bl .footerContainer .footerTopWrap .footerDown li:after {
+    content: "|";
+    top: 50%;
+    left: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #footer_Bl .footerContainer .footerTopWrap .footerDown li:nth-of-type(2):after {
     content: "";
     top: 50%;
     left: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
-  footer .footerLeftCategory {
+  #footer_Bl .footerContainer .footerLeftCategory {
     flex: 1;
-    padding-top: 80px;
+    padding-top: 70px;
     width: 100%;
     height: 100%;
-    display: block;
+    background: white;
+    display: flex;
     flex-wrap: nowrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    margin: 0px auto;
   }
-  footer .footerLeftCategory ul {
-    float: none;
+  #footer_Bl .footerContainer .footerLeftCategory ul {
+    float: left;
     margin-left: 10px;
     display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
-  footer .footerLeftCategory ul:nth-of-type(1) li {
+  #footer_Bl .footerContainer .footerLeftCategory ul:nth-of-type(1) li {
     font: 16px/1 "Noto Sans KR";
     color: #333;
   }
-  footer .footerLeftCategory ul:nth-of-type(1) li:nth-of-type(1):after {
+  #footer_Bl .footerContainer .footerLeftCategory ul:nth-of-type(1) li:nth-of-type(1):after {
     content: "|";
     top: 50%;
     left: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
-  footer .footerLeftCategory ul:nth-of-type(2) li {
+  #footer_Bl .footerContainer .footerLeftCategory ul:nth-of-type(2) li {
     font: 16px/1 "Noto Sans KR";
     color: #333;
     margin-left: 0px;
-    padding-left: 10vw;
   }
-  footer .footerLeftCategory ul li {
+  #footer_Bl .footerContainer .footerLeftCategory ul li {
     font: 16px/1 "Noto Sans KR";
     color: #333;
     cursor: pointer;
   }
-  footer .footerLeftCategory ul li:after {
+  #footer_Bl .footerContainer .footerLeftCategory ul li:after {
     content: "";
     top: 50%;
     left: 100%;
@@ -782,110 +818,448 @@ footer .footerLeftCategory ul li:after {
     margin-right: 20px;
   }
 }
-@media screen and (max-width: 1023px) {
-  footer {
+@media screen and (max-width: 639px) {
+  #footer_Bl {
     width: 100vw;
-    height: 461px;
+    height: 350px;
     bottom: 0;
     position: relative;
     left: 0;
     right: 0;
   }
-  footer img {
+  #footer_Bl img {
     padding-top: 0px;
     margin-bottom: 0;
     object-fit: cover;
     width: 100%;
-    height: 70%;
+    height: 100%;
   }
-  footer .footerContainer {
-    flex: 1;
+  #footer_Bl .footerContainer {
     width: 100%;
     height: 300px;
     flex-direction: column;
     display: flex;
+  }
+  #footer_Bl .footerContainer .footerTopWrap {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 70px 4vw 0px;
+    padding: 60px 0vw 0px;
   }
-  footer .footerContainer li {
+  #footer_Bl .footerContainer .footerTopWrap .footerTop {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  #footer_Bl .footerContainer .footerTopWrap .footerTop li {
     font: 16px/1 "Noto Sans KR";
     color: #333;
-    text-align: center;
+    float: left;
     cursor: pointer;
   }
-  footer .footerContainer li:after {
+  #footer_Bl .footerContainer .footerTopWrap .footerTop li:after {
     content: "|";
     top: 50%;
     left: 100%;
     margin-left: 10px;
     margin-right: 10px;
   }
-  footer .footerContainer li:nth-of-type(1) {
-    margin-left: 13%;
+  #footer_Bl .footerContainer .footerTopWrap .footerDown li {
+    font: 16px/1 "Noto Sans KR";
+    color: #333;
+    float: left;
+    cursor: pointer;
   }
-  footer .footerContainer li:nth-of-type(4) {
-    text-align: center;
-    margin-left: 38%;
-    margin-top: 20px;
-  }
-  footer .footerContainer li:nth-of-type(4):after {
+  #footer_Bl .footerContainer .footerTopWrap .footerDown li:after {
+    content: "|";
+    top: 50%;
+    left: 100%;
     margin-left: 10px;
     margin-right: 10px;
   }
-  footer .footerContainer li:nth-of-type(5) {
-    text-align: center;
-    margin-top: 20px;
-  }
-  footer .footerContainer li:nth-of-type(5):after {
+  #footer_Bl .footerContainer .footerTopWrap .footerDown li:nth-of-type(2):after {
     content: "";
     top: 50%;
     left: 100%;
     margin-left: 10px;
     margin-right: 10px;
   }
-  footer .footerLeftCategory {
+  #footer_Bl .footerContainer .footerLeftCategory {
     flex: 1;
-    padding-top: 60px;
+    padding-top: 50px;
     width: 100%;
-    height: 100%;
-    display: block;
+    height: 80%;
+    background: white;
+    display: flex;
     flex-wrap: nowrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    margin: 0px auto;
   }
-  footer .footerLeftCategory ul {
-    float: none;
+  #footer_Bl .footerContainer .footerLeftCategory ul {
+    float: left;
+    margin-left: 10px;
     display: flex;
-    justify-content: center;
     margin-bottom: 15px;
-    text-align: center;
   }
-  footer .footerLeftCategory ul:nth-of-type(1) li {
+  #footer_Bl .footerContainer .footerLeftCategory ul:nth-of-type(1) li {
     font: 16px/1 "Noto Sans KR";
     color: #333;
   }
-  footer .footerLeftCategory ul:nth-of-type(1) li:nth-of-type(1):after {
+  #footer_Bl .footerContainer .footerLeftCategory ul:nth-of-type(1) li:nth-of-type(1):after {
     content: "|";
     top: 50%;
     left: 100%;
     margin-left: 10px;
     margin-right: 10px;
   }
-  footer .footerLeftCategory ul:nth-of-type(2) li {
+  #footer_Bl .footerContainer .footerLeftCategory ul:nth-of-type(2) li {
     font: 16px/1 "Noto Sans KR";
     color: #333;
     margin-left: 0px;
   }
-  footer .footerLeftCategory ul li {
+  #footer_Bl .footerContainer .footerLeftCategory ul li {
     font: 16px/1 "Noto Sans KR";
     color: #333;
     cursor: pointer;
   }
-  footer .footerLeftCategory ul li:after {
+  #footer_Bl .footerContainer .footerLeftCategory ul li:after {
+    content: "";
+    top: 50%;
+    left: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+#footer_W {
+  width: 100vw;
+  height: 400px;
+  bottom: 0;
+  position: relative;
+  left: 0;
+  right: 0;
+}
+#footer_W img {
+  padding-top: 0px;
+  margin-bottom: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+#footer_W .footerContainer {
+  width: 100%;
+  height: 300px;
+  flex-direction: column;
+  background: #171717;
+  display: flex;
+}
+#footer_W .footerContainer .footerTopWrap {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0vw 0px;
+}
+#footer_W .footerContainer .footerTopWrap .footerTop {
+  display: flex;
+  justify-content: center;
+}
+#footer_W .footerContainer .footerTopWrap .footerTop li {
+  font: 25px/1 "Noto Sans KR";
+  color: #e9e9e9;
+  float: left;
+  cursor: pointer;
+}
+#footer_W .footerContainer .footerTopWrap .footerTop li:after {
+  content: "|";
+  top: 50%;
+  left: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#footer_W .footerContainer .footerTopWrap .footerDown li {
+  font: 25px/1 "Noto Sans KR";
+  color: #e9e9e9;
+  float: left;
+  cursor: pointer;
+}
+#footer_W .footerContainer .footerTopWrap .footerDown li:after {
+  content: "|";
+  top: 50%;
+  left: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#footer_W .footerContainer .footerTopWrap .footerDown li:nth-of-type(2):after {
+  content: "";
+  top: 50%;
+  left: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#footer_W .footerContainer .footerLeftCategory {
+  flex: 1;
+  padding-top: 70px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer_W .footerContainer .footerLeftCategory ul {
+  float: left;
+  margin-left: 10px;
+  display: flex;
+}
+#footer_W .footerContainer .footerLeftCategory ul:nth-of-type(1) li {
+  font: 16px/1 "Noto Sans KR";
+  color: #969696;
+}
+#footer_W .footerContainer .footerLeftCategory ul:nth-of-type(1) li:nth-of-type(1):after {
+  content: "|";
+  top: 50%;
+  left: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#footer_W .footerContainer .footerLeftCategory ul:nth-of-type(2) li {
+  font: 16px/1 "Noto Sans KR";
+  color: #969696;
+  margin-left: -100px;
+}
+#footer_W .footerContainer .footerLeftCategory ul li {
+  font: 16px/1 "Noto Sans KR";
+  color: #969696;
+  cursor: pointer;
+}
+#footer_W .footerContainer .footerLeftCategory ul li:after {
+  content: "";
+  top: 50%;
+  left: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 1023px) {
+  #footer_W {
+    width: 100vw;
+    height: 361px;
+    bottom: 0;
+    position: relative;
+    left: 0;
+    right: 0;
+  }
+  #footer_W img {
+    padding-top: 0px;
+    margin-bottom: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  #footer_W .footerContainer {
+    width: 100%;
+    height: 300px;
+    flex-direction: column;
+    display: flex;
+  }
+  #footer_W .footerContainer .footerTopWrap {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0vw 0px;
+  }
+  #footer_W .footerContainer .footerTopWrap .footerTop {
+    display: flex;
+    justify-content: center;
+  }
+  #footer_W .footerContainer .footerTopWrap .footerTop li {
+    font: 16px/1 "Noto Sans KR";
+    color: #e9e9e9;
+    float: left;
+    cursor: pointer;
+  }
+  #footer_W .footerContainer .footerTopWrap .footerTop li:after {
+    content: "|";
+    top: 50%;
+    left: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #footer_W .footerContainer .footerTopWrap .footerDown li {
+    font: 16px/1 "Noto Sans KR";
+    color: #e9e9e9;
+    float: left;
+    cursor: pointer;
+  }
+  #footer_W .footerContainer .footerTopWrap .footerDown li:after {
+    content: "|";
+    top: 50%;
+    left: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #footer_W .footerContainer .footerTopWrap .footerDown li:nth-of-type(2):after {
+    content: "";
+    top: 50%;
+    left: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #footer_W .footerContainer .footerLeftCategory {
+    flex: 1;
+    padding-top: 70px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #footer_W .footerContainer .footerLeftCategory ul {
+    float: left;
+    margin-left: 10px;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  #footer_W .footerContainer .footerLeftCategory ul:nth-of-type(1) li {
+    font: 16px/1 "Noto Sans KR";
+    color: #969696;
+  }
+  #footer_W .footerContainer .footerLeftCategory ul:nth-of-type(1) li:nth-of-type(1):after {
+    content: "|";
+    top: 50%;
+    left: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #footer_W .footerContainer .footerLeftCategory ul:nth-of-type(2) li {
+    font: 16px/1 "Noto Sans KR";
+    color: #969696;
+    margin-left: 0px;
+  }
+  #footer_W .footerContainer .footerLeftCategory ul li {
+    font: 16px/1 "Noto Sans KR";
+    color: #969696;
+    cursor: pointer;
+  }
+  #footer_W .footerContainer .footerLeftCategory ul li:after {
+    content: "";
+    top: 50%;
+    left: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 639px) {
+  #footer_W {
+    width: 100vw;
+    height: 350px;
+    bottom: 0;
+    position: relative;
+    left: 0;
+    right: 0;
+  }
+  #footer_W img {
+    padding-top: 0px;
+    margin-bottom: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  #footer_W .footerContainer {
+    width: 100%;
+    height: 300px;
+    flex-direction: column;
+    display: flex;
+  }
+  #footer_W .footerContainer .footerTopWrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0vw 0px;
+  }
+  #footer_W .footerContainer .footerTopWrap .footerTop {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  #footer_W .footerContainer .footerTopWrap .footerTop li {
+    font: 16px/1 "Noto Sans KR";
+    color: #e9e9e9;
+    float: left;
+    cursor: pointer;
+  }
+  #footer_W .footerContainer .footerTopWrap .footerTop li:after {
+    content: "|";
+    top: 50%;
+    left: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #footer_W .footerContainer .footerTopWrap .footerDown li {
+    font: 16px/1 "Noto Sans KR";
+    color: #e9e9e9;
+    float: left;
+    cursor: pointer;
+  }
+  #footer_W .footerContainer .footerTopWrap .footerDown li:after {
+    content: "|";
+    top: 50%;
+    left: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #footer_W .footerContainer .footerTopWrap .footerDown li:nth-of-type(2):after {
+    content: "";
+    top: 50%;
+    left: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #footer_W .footerContainer .footerLeftCategory {
+    flex: 1;
+    padding-top: 50px;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #footer_W .footerContainer .footerLeftCategory ul {
+    float: left;
+    margin-left: 10px;
+    display: flex;
+    margin-bottom: 15px;
+  }
+  #footer_W .footerContainer .footerLeftCategory ul:nth-of-type(1) li {
+    font: 16px/1 "Noto Sans KR";
+    color: #969696;
+  }
+  #footer_W .footerContainer .footerLeftCategory ul:nth-of-type(1) li:nth-of-type(1):after {
+    content: "|";
+    top: 50%;
+    left: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #footer_W .footerContainer .footerLeftCategory ul:nth-of-type(2) li {
+    font: 16px/1 "Noto Sans KR";
+    color: #969696;
+    margin-left: 0px;
+  }
+  #footer_W .footerContainer .footerLeftCategory ul li {
+    font: 16px/1 "Noto Sans KR";
+    color: #969696;
+    cursor: pointer;
+  }
+  #footer_W .footerContainer .footerLeftCategory ul li:after {
     content: "";
     top: 50%;
     left: 100%;
@@ -1805,7 +2179,7 @@ a {
 }
 #vids .vidsContainer .vidsVideoWrap .video.on .vidsOnSpan h2 {
   color: #eee;
-  width: 600px;
+  width: 550px;
   font: 30px/1.2 "Noto Sans KR";
   text-align: left;
   z-index: 999;
@@ -1814,7 +2188,7 @@ a {
 }
 #vids .vidsContainer .vidsVideoWrap .video.on .vidsOnSpan p {
   color: #e9e9e9;
-  width: 600px;
+  width: 550px;
   text-align: justify;
   word-break: break-all;
   font: 18px/1.5 "Noto Sans KR";
@@ -8196,23 +8570,23 @@ a {
     margin-right: 10px;
   }
 }
-.video {
+.videoSub {
   width: 100vw;
   cursor: none;
-  min-height: calc(100vh - 461px);
+  min-height: calc(100vh - 400px);
   background: #090909;
 }
-.video .subVisual {
+.videoSub .subVisual {
   width: 100%;
   height: 480px;
   position: relative;
   overflow: hidden;
 }
-.video .subVisual video {
+.videoSub .subVisual video {
   object-fit: contain;
   object-position: 0vw -28vw;
 }
-.video .subVisual .background {
+.videoSub .subVisual .background {
   width: 50%;
   height: 80px;
   background: #090909;
@@ -8220,37 +8594,37 @@ a {
   bottom: 0;
   left: 0;
 }
-.video .titContainer {
+.videoSub .titContainer {
   width: 100%;
   height: 300px;
   padding: 150px 15vw 246px;
 }
-.video .titContainer h1 {
+.videoSub .titContainer h1 {
   text-align: left;
   font: bold 70px/1 "Noto Sans KR";
   color: #eee;
   margin-top: 20px;
   margin-bottom: 96px;
 }
-.video .subtitle {
+.videoSub .subtitle {
   width: 100%;
   height: 500px;
   padding: 0px 15vw 50px;
   display: flex;
   flex-wrap: wrap;
 }
-.video .subtitle .subLeft {
+.videoSub .subtitle .subLeft {
   width: 50%;
   height: 100%;
   position: relative;
   padding-right: 100px;
 }
-.video .subtitle .subLeft h3 {
+.videoSub .subtitle .subLeft h3 {
   font: 26px/1 "Noto Sans KR";
   color: #eee;
   margin-bottom: 20px;
 }
-.video .subtitle .subLeft .title {
+.videoSub .subtitle .subLeft .title {
   font: bold 51px/1.3 "Noto Sans KR";
   background: radial-gradient(circle, #7f7fd5, #86a8e7, #91eae4);
   background-size: 200%;
@@ -8264,7 +8638,7 @@ a {
     background-position: 200% center;
   }
 }
-.video .subtitle .subLeft p {
+.videoSub .subtitle .subLeft p {
   font: 16px/1.6 "Noto Sans KR";
   color: #eee;
   text-align: justify;
@@ -8272,28 +8646,28 @@ a {
   width: 95%;
   margin-top: -0.7vw;
 }
-.video .subtitle .subLeft img {
+.videoSub .subtitle .subLeft img {
   transform: translate(-15%, 5%);
   width: 238px;
   height: 238px;
 }
-.video .subtitle .subRight {
+.videoSub .subtitle .subRight {
   width: 50%;
   height: 200%;
   margin-top: -395px;
   position: relative;
 }
-.video .subtitle .subRight video {
+.videoSub .subtitle .subRight video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.video .subtitle .subRight .pauseBtn {
+.videoSub .subtitle .subRight .pauseBtn {
   width: 30px;
   height: 30px;
   background: transparent;
   position: absolute;
-  z-index: 9999;
+  z-index: 44;
   bottom: 30px;
   left: 30px;
   font: 26px/1 "Noto Sans KR";
@@ -8304,12 +8678,12 @@ a {
   border: none;
   cursor: none;
 }
-.video .subtitle .subRight .playBtn {
+.videoSub .subtitle .subRight .playBtn {
   width: 30px;
   height: 30px;
   background: transparent;
   position: absolute;
-  z-index: 9999;
+  z-index: 44;
   bottom: 30px;
   left: 30px;
   font: 26px/1 "Noto Sans KR";
@@ -8321,7 +8695,7 @@ a {
   cursor: none;
   display: none;
 }
-.video .middleText {
+.videoSub .middleText {
   width: 100%;
   height: auto;
   background: #090909;
@@ -8330,7 +8704,7 @@ a {
   padding: 96px 14.9vw 96px;
   z-index: 2;
 }
-.video .middleText p {
+.videoSub .middleText p {
   font: 36px/1.3 "Noto Sans KR";
   color: #eee;
   margin-bottom: 96px;
@@ -8338,7 +8712,7 @@ a {
   word-wrap: break-word;
   padding-top: 36px;
 }
-.video .middleText button {
+.videoSub .middleText button {
   width: 259px;
   height: 56px;
   font: 15px/1 "Noto Sans KR";
@@ -8357,30 +8731,30 @@ a {
     background-position: 200% center;
   }
 }
-.video .imgBoxContainer {
+.videoSub .imgBoxContainer {
   width: 100%;
   height: 900px;
   display: flex;
   flex-wrap: wrap;
   padding: 0px 15vw 150px;
 }
-.video .imgBoxContainer .imgBoxLeft {
+.videoSub .imgBoxContainer .imgBoxLeft {
   width: 50%;
   height: 100%;
   position: relative;
 }
-.video .imgBoxContainer .imgBoxLeft video {
+.videoSub .imgBoxContainer .imgBoxLeft video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
-.video .imgBoxContainer .imgBoxLeft .pauseBtn2 {
+.videoSub .imgBoxContainer .imgBoxLeft .pauseBtn2 {
   width: 30px;
   height: 30px;
   background: transparent;
   position: absolute;
-  z-index: 9999;
+  z-index: 44;
   bottom: 30px;
   left: 30px;
   font: 26px/1 "Noto Sans KR";
@@ -8391,12 +8765,12 @@ a {
   border: none;
   cursor: none;
 }
-.video .imgBoxContainer .imgBoxLeft .playBtn2 {
+.videoSub .imgBoxContainer .imgBoxLeft .playBtn2 {
   width: 30px;
   height: 30px;
   background: transparent;
   position: absolute;
-  z-index: 9999;
+  z-index: 44;
   bottom: 30px;
   left: 30px;
   font: 26px/1 "Noto Sans KR";
@@ -8408,18 +8782,18 @@ a {
   cursor: none;
   display: none;
 }
-.video .imgBoxContainer .imgBoxRight {
+.videoSub .imgBoxContainer .imgBoxRight {
   width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-.video .imgBoxContainer .imgBoxRight .imgBoxTop {
+.videoSub .imgBoxContainer .imgBoxRight .imgBoxTop {
   width: 100%;
   height: 50%;
   display: flex;
 }
-.video .imgBoxContainer .imgBoxRight .imgBoxTop .imgBox1 {
+.videoSub .imgBoxContainer .imgBoxRight .imgBoxTop .imgBox1 {
   flex: 1;
   width: 50%;
   height: 100%;
@@ -8427,13 +8801,13 @@ a {
   position: relative;
   cursor: none;
 }
-.video .imgBoxContainer .imgBoxRight .imgBoxTop .imgBox1 img {
+.videoSub .imgBoxContainer .imgBoxRight .imgBoxTop .imgBox1 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
-.video .imgBoxContainer .imgBoxRight .imgBoxTop .imgBox1 button {
+.videoSub .imgBoxContainer .imgBoxRight .imgBoxTop .imgBox1 button {
   width: 80px;
   height: 80px;
   background: #dcdcdc;
@@ -8446,55 +8820,55 @@ a {
   color: #333;
   cursor: none;
 }
-.video .imgBoxContainer .imgBoxRight .imgBoxTop .imgBox2 {
+.videoSub .imgBoxContainer .imgBoxRight .imgBoxTop .imgBox2 {
   flex: 1;
   width: 50%;
   height: 100%;
   background: rgb(89, 135, 150);
   overflow: hidden;
 }
-.video .imgBoxContainer .imgBoxRight .imgBoxTop .imgBox2 img {
+.videoSub .imgBoxContainer .imgBoxRight .imgBoxTop .imgBox2 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
-.video .imgBoxContainer .imgBoxRight .imgBoxDown {
+.videoSub .imgBoxContainer .imgBoxRight .imgBoxDown {
   width: 100%;
   height: 50%;
   display: flex;
   overflow: hidden;
 }
-.video .imgBoxContainer .imgBoxRight .imgBoxDown img {
+.videoSub .imgBoxContainer .imgBoxRight .imgBoxDown img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
-.video .imbedVideoContainer {
+.videoSub .imbedVideoContainer {
   width: 100%;
   height: 453.39px;
   padding: 0px 15vw 0px;
   display: flex;
 }
-.video .imbedVideoContainer .imbedText {
+.videoSub .imbedVideoContainer .imbedText {
   flex: 0.6;
   width: 50%;
   height: 100%;
   background: #1b1b1b;
   padding: 42px;
 }
-.video .imbedVideoContainer .imbedText h2 {
+.videoSub .imbedVideoContainer .imbedText h2 {
   margin-top: 5vw;
   font: bold 26px/1 "Noto Sans KR";
   color: #eee;
 }
-.video .imbedVideoContainer .imbedText p {
+.videoSub .imbedVideoContainer .imbedText p {
   margin-top: 3vw;
   font: 16px/1.5 "Noto Sans KR";
   color: #eee;
 }
-.video .imbedVideoContainer .imbedVideo {
+.videoSub .imbedVideoContainer .imbedVideo {
   flex: 1;
   width: 50%;
   height: 100%;
@@ -8504,24 +8878,24 @@ a {
   padding-bottom: 56.25%;
   z-index: 1;
 }
-.video .imbedVideoContainer .imbedVideo iframe {
+.videoSub .imbedVideoContainer .imbedVideo iframe {
   width: 100%;
   z-index: 1;
 }
-.video .imbedVideoContainer .imbedVideo .cursorOverlay {
+.videoSub .imbedVideoContainer .imbedVideo .cursorOverlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 60%;
 }
-.video .btnContainer {
+.videoSub .btnContainer {
   width: 100%;
   height: auto;
   display: flex;
   padding: 96px 15vw 0px;
 }
-.video .btnContainer button {
+.videoSub .btnContainer button {
   width: 259px;
   height: 56px;
   background-color: #f9f9f9;
@@ -8541,13 +8915,13 @@ a {
     background-position: 200% center;
   }
 }
-.video .videoListContainer {
+.videoSub .videoListContainer {
   width: 100%;
   height: auto;
   padding: 150px 15vw 100px;
   flex-direction: row;
 }
-.video .videoListContainer .container {
+.videoSub .videoListContainer .container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -8555,13 +8929,13 @@ a {
   justify-content: center;
   gap: 40px;
 }
-.video .videoListContainer .container .viedoBox1 {
+.videoSub .videoListContainer .container .viedoBox1 {
   width: 300px;
   height: 300px;
   position: relative;
   margin-bottom: 50px;
 }
-.video .videoListContainer .container .viedoBox1 .textBox {
+.videoSub .videoListContainer .container .viedoBox1 .textBox {
   width: 50%;
   height: 100%;
   position: absolute;
@@ -8575,19 +8949,19 @@ a {
   overflow: hidden;
   background: #090909;
 }
-.video .videoListContainer .container .viedoBox1 .textBox .listTitle {
+.videoSub .videoListContainer .container .viedoBox1 .textBox .listTitle {
   font: bold 20px/1.2 "Noto Sans KR";
   text-align: start;
   color: #eee;
 }
-.video .videoListContainer .container .viedoBox1 .textBox p {
+.videoSub .videoListContainer .container .viedoBox1 .textBox p {
   margin-top: 3vw;
   font: 16px/1.5 "Noto Sans KR";
   color: #e9e9e9;
   text-align: justify;
   word-break: break-all;
 }
-.video .videoListContainer .container .videoCircle {
+.videoSub .videoListContainer .container .videoCircle {
   width: 100%;
   height: 100%;
   background-color: #f9f9f9;
@@ -8597,7 +8971,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
 }
-.video .videoListContainer .container .videoCircle:hover {
+.videoSub .videoListContainer .container .videoCircle:hover {
   animation: rotate 1.7s linear infinite;
   color: transparent;
 }
@@ -8606,7 +8980,7 @@ a {
     transform: rotate(360deg);
   }
 }
-.video .cursor {
+.videoSub .cursor {
   pointer-events: none;
   position: absolute;
   width: 80px;
@@ -8622,21 +8996,21 @@ a {
   transition-delay: width, height 1s;
   overflow: hidden;
 }
-.video .cursor.hover {
+.videoSub .cursor.hover {
   width: 150px;
   height: 150px;
   font: 18px/150px "Noto Sans KR";
   background: radial-gradient(circle, #000 4%, #000 68.99%, #fff 70%, #fff 100%);
   overflow: hidden;
 }
-.video .cursor.hoverPageIndicator {
+.videoSub .cursor.hoverPageIndicator {
   width: 0px;
   height: 0px;
   font: 18px/150px "Noto Sans KR";
   background: radial-gradient(circle, #000 4%, #000 68.99%, #fff 70%, #fff 100%);
   overflow: hidden;
 }
-.video .cursor.click {
+.videoSub .cursor.click {
   animation: click 0.3s ease-in-out;
 }
 @keyframes click {
@@ -8650,7 +9024,7 @@ a {
     transform: scale(1);
   }
 }
-.video .goTopBtn {
+.videoSub .goTopBtn {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -8665,7 +9039,7 @@ a {
   color: #eee;
   animation: animateBorder 9s ease infinite;
 }
-.video .goTopBtn:hover {
+.videoSub .goTopBtn:hover {
   border: none;
   z-index: 1;
   color: #333;
@@ -8687,98 +9061,98 @@ a {
 }
 
 @media screen and (max-width: 1023px) {
-  .video .subVisual {
+  .videoSub .subVisual {
     height: 380px;
   }
-  .video .subVisual video {
+  .videoSub .subVisual video {
     object-fit: contain;
     object-position: -55vw -48vw;
   }
-  .video .titContainer {
+  .videoSub .titContainer {
     padding: 150px 10vw 246px;
   }
-  .video .titContainer h1 {
+  .videoSub .titContainer h1 {
     font: bold 70px/1 "Noto Sans KR";
     margin-top: 20px;
     margin-bottom: 96px;
   }
-  .video .subtitle {
+  .videoSub .subtitle {
     height: auto;
     padding: 150px 10vw 50px;
   }
-  .video .subtitle .subLeft {
+  .videoSub .subtitle .subLeft {
     order: 2;
     width: 100%;
     padding-top: 450px;
   }
-  .video .subtitle .subRight {
+  .videoSub .subtitle .subRight {
     width: 100%;
     height: 500px;
     margin-top: -16vw;
   }
-  .video .subtitle .subRight video {
+  .videoSub .subtitle .subRight video {
     width: 100%;
     height: 900px;
   }
-  .video .middleText {
+  .videoSub .middleText {
     padding: 0px 10vw 26px;
   }
-  .video .middleText p {
+  .videoSub .middleText p {
     margin-bottom: 66px;
   }
-  .video .imgBoxContainer {
+  .videoSub .imgBoxContainer {
     padding: 35px 10vw 90px;
   }
-  .video .imbedVideoContainer {
+  .videoSub .imbedVideoContainer {
     height: 676px;
     padding: 0px 10vw 0px;
     flex-direction: column;
   }
-  .video .imbedVideoContainer .imbedText {
+  .videoSub .imbedVideoContainer .imbedText {
     flex: 0.2;
     width: 100%;
     height: 197px;
     padding: 42px;
   }
-  .video .imbedVideoContainer .imbedText h2 {
+  .videoSub .imbedVideoContainer .imbedText h2 {
     margin-top: 0;
   }
-  .video .imbedVideoContainer .imbedText p {
+  .videoSub .imbedVideoContainer .imbedText p {
     margin-top: 2vw;
   }
-  .video .imbedVideoContainer .imbedVideo {
+  .videoSub .imbedVideoContainer .imbedVideo {
     flex: 1;
     width: 100%;
     height: 479px;
   }
-  .video .btnContainer {
+  .videoSub .btnContainer {
     width: 100%;
     height: auto;
     display: flex;
     padding: 86px 15vw 0px;
   }
-  .video .videoListContainer {
+  .videoSub .videoListContainer {
     padding: 96px 10vw 150px;
   }
-  .video .videoListContainer .container {
+  .videoSub .videoListContainer .container {
     gap: 40px;
   }
-  .video .videoListContainer .container .viedoBox1 {
+  .videoSub .videoListContainer .container .viedoBox1 {
     margin-bottom: 10px;
   }
-  .video .videoListContainer .container .viedoBox1 .textBox {
+  .videoSub .videoListContainer .container .viedoBox1 .textBox {
     padding: 30px;
   }
-  .video .videoListContainer .container .viedoBox1 .textBox h3 {
+  .videoSub .videoListContainer .container .viedoBox1 .textBox h3 {
     font: bold 26px/1.5 "Noto Sans KR";
     color: #eee;
   }
-  .video .videoListContainer .container .viedoBox1 .textBox p {
+  .videoSub .videoListContainer .container .viedoBox1 .textBox p {
     margin-top: 3vw;
     font: 16px/1.5 "Noto Sans KR";
     color: #e9e9e9;
   }
-  .video .videoListContainer .container .videoCircle {
+  .videoSub .videoListContainer .container .videoCircle {
     width: 100%;
     height: 100%;
     background-color: #f9f9f9;
@@ -8786,138 +9160,138 @@ a {
   }
 }
 @media screen and (max-width: 639px) {
-  .video .subVisual {
+  .videoSub .subVisual {
     height: 300px;
   }
-  .video .subVisual video {
+  .videoSub .subVisual video {
     object-position: -205vw -110vw;
   }
-  .video .titContainer {
+  .videoSub .titContainer {
     padding: 96px 5vw 0px;
   }
-  .video .titContainer h1 {
+  .videoSub .titContainer h1 {
     font: bold 36px/1 "Noto Sans KR";
     margin-top: 20px;
     margin-bottom: 0px;
   }
-  .video .subtitle {
+  .videoSub .subtitle {
     height: auto;
     padding: 0px 5vw 50px;
   }
-  .video .subtitle .subLeft {
+  .videoSub .subtitle .subLeft {
     padding-top: 56px;
   }
-  .video .subtitle .subLeft h3 {
+  .videoSub .subtitle .subLeft h3 {
     font: 25px/1 "Noto Sans KR";
     white-space: nowrap;
   }
-  .video .subtitle .subLeft .title {
+  .videoSub .subtitle .subLeft .title {
     font: bold 36px/1.3 "Noto Sans KR";
   }
-  .video .subtitle .subLeft p {
+  .videoSub .subtitle .subLeft p {
     font: 16px/1.6 "Noto Sans KR";
     width: 120%;
   }
-  .video .subtitle .subLeft img {
+  .videoSub .subtitle .subLeft img {
     width: 130px;
     height: 130px;
   }
-  .video .subtitle .subRight {
+  .videoSub .subtitle .subRight {
     width: 100%;
     height: 500px;
     margin-top: -10vw;
   }
-  .video .subtitle .subRight video {
+  .videoSub .subtitle .subRight video {
     width: 100%;
     height: 100%;
   }
-  .video .middleText {
+  .videoSub .middleText {
     padding: 0px 5vw 26px;
   }
-  .video .middleText p {
+  .videoSub .middleText p {
     font: 16px/1.6 "Noto Sans KR";
     margin-bottom: 66px;
   }
-  .video .middleText button {
+  .videoSub .middleText button {
     width: 215px;
     height: 40px;
     font: 12px/1 "Noto Sans KR";
     border: none;
   }
-  .video .imgBoxContainer {
+  .videoSub .imgBoxContainer {
     width: 100%;
     height: auto;
     padding: 0px 5vw 50px;
   }
-  .video .imgBoxContainer .imgBoxLeft {
+  .videoSub .imgBoxContainer .imgBoxLeft {
     width: 100%;
     height: 500px;
   }
-  .video .imgBoxContainer .imgBoxLeft video {
+  .videoSub .imgBoxContainer .imgBoxLeft video {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
   }
-  .video .imgBoxContainer .imgBoxRight {
+  .videoSub .imgBoxContainer .imgBoxRight {
     width: 100%;
     height: 100%;
   }
-  .video .imgBoxContainer .imgBoxRight .imgBoxTop {
+  .videoSub .imgBoxContainer .imgBoxRight .imgBoxTop {
     width: 100;
     height: 100%;
     display: block;
   }
-  .video .imgBoxContainer .imgBoxRight .imgBoxTop .imgBox1 {
+  .videoSub .imgBoxContainer .imgBoxRight .imgBoxTop .imgBox1 {
     width: 100%;
     height: 368px;
   }
-  .video .imgBoxContainer .imgBoxRight .imgBoxTop .imgBox1 img {
+  .videoSub .imgBoxContainer .imgBoxRight .imgBoxTop .imgBox1 img {
     width: 100%;
   }
-  .video .imgBoxContainer .imgBoxRight .imgBoxTop .imgBox2 {
-    width: 100%;
-    height: 368px;
-  }
-  .video .imgBoxContainer .imgBoxRight .imgBoxDown {
+  .videoSub .imgBoxContainer .imgBoxRight .imgBoxTop .imgBox2 {
     width: 100%;
     height: 368px;
   }
-  .video .imbedVideoContainer {
+  .videoSub .imgBoxContainer .imgBoxRight .imgBoxDown {
+    width: 100%;
+    height: 368px;
+  }
+  .videoSub .imbedVideoContainer {
     height: 460px;
     padding: 0px 5vw 0px;
   }
-  .video .imbedVideoContainer .imbedText {
+  .videoSub .imbedVideoContainer .imbedText {
     width: 100%;
     height: 217px;
   }
-  .video .imbedVideoContainer .imbedVideo {
+  .videoSub .imbedVideoContainer .imbedVideo {
     width: 100%;
     height: 100%;
     padding-bottom: 0;
   }
-  .video .imbedVideoContainer .imbedVideo iframe {
+  .videoSub .imbedVideoContainer .imbedVideo iframe {
     width: 100%;
     height: 100%;
   }
-  .video .btnContainer {
+  .videoSub .btnContainer {
     padding: 55px 5vw 0px;
   }
-  .video .btnContainer button {
+  .videoSub .btnContainer button {
     width: 215px;
     height: 40px;
     font: 12px/1 "Noto Sans KR";
   }
-  .video .videoListContainer {
+  .videoSub .videoListContainer {
     padding: 80px 5vw 150px;
   }
-  .video .videoListContainer .container .viedoBox1 .textBox {
+  .videoSub .videoListContainer .container .viedoBox1 .textBox {
     padding: 30px;
   }
-  .video .videoListContainer .container .viedoBox1 .textBox h3 {
+  .videoSub .videoListContainer .container .viedoBox1 .textBox h3 {
     font: 25px/1.5 "Noto Sans KR";
   }
-  .video .videoListContainer .container .videoCircle {
+  .videoSub .videoListContainer .container .videoCircle {
     width: 100%;
     height: 100%;
     background-color: #f9f9f9;

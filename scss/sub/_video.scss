@@ -1,7 +1,7 @@
-.video {
+.videoSub {
 	width: 100vw;
 	cursor: none;
-	min-height: calc(100vh - 461px);
+	min-height: calc(100vh - 400px);
 	background: $videoBgBl;
 
 	.subVisual {
@@ -108,7 +108,7 @@
 				height: 30px;
 				background: transparent;
 				position: absolute;
-				z-index: 9999;
+				z-index: 44;
 				bottom: 30px;
 				left: 30px;
 				font: 26px/1 $ikeaFontKo;
@@ -125,7 +125,7 @@
 				height: 30px;
 				background: transparent;
 				position: absolute;
-				z-index: 9999;
+				z-index: 44;
 				bottom: 30px;
 				left: 30px;
 				font: 26px/1 $ikeaFontKo;
@@ -206,7 +206,7 @@
 				height: 30px;
 				background: transparent;
 				position: absolute;
-				z-index: 9999;
+				z-index: 44;
 				bottom: 30px;
 				left: 30px;
 				font: 26px/1 $ikeaFontKo;
@@ -223,7 +223,7 @@
 				height: 30px;
 				background: transparent;
 				position: absolute;
-				z-index: 9999;
+				z-index: 44;
 				bottom: 30px;
 				left: 30px;
 				font: 26px/1 $ikeaFontKo;
@@ -558,7 +558,7 @@
 }
 
 @media screen and (max-width: $tablet) {
-	.video {
+	.videoSub {
 		.subVisual {
 			height: 380px;
 
@@ -685,7 +685,7 @@
 }
 
 @media screen and (max-width: $mobile) {
-	.video {
+	.videoSub {
 		.subVisual {
 			height: 300px;
 

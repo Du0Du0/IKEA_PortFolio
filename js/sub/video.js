@@ -1,4 +1,4 @@
-const videoSection = document.querySelector('.video');
+const videoSection = document.querySelector('.videoSub');
 const container = videoSection.querySelector('.container');
 const key = 'AIzaSyCKs11Yu98hp6fq7N54tY2iWSY9qvTh4cM';
 const list = 'PLWgHnOZUp_4FJWdMzYeEAM4Waf8IhnZCB';
