@@ -11,6 +11,7 @@
   <script defer src="js/common/header.js"></script>
   <script defer src="js/common/footer.js"></script>
   <script defer src="js/sub/video.js"></script>
+  <script defer type='module' src="js/sub/scroll.js"></script>
   <script src="https://kit.fontawesome.com/1178528ead.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="#">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -85,7 +86,7 @@
     </div>
 
     <!-- video sub title -->
-    <div class="subtitle">
+    <div class="subtitle myScroll">
 
       <!-- video sub title_left side -->
       <div class="subLeft">
@@ -107,7 +108,7 @@
     </figure>
 
 
-    <div class="middleText">
+    <div class="middleText myScroll">
       <p>Almost every musician – even Swedish House Mafia – started out at home. Maybe with just a guitar in the
         garage, a voice
         in front of the mirror, or on a laptop in the living room. With the new OBEGRÄNSAD collection, on sale around
@@ -116,7 +117,7 @@
       <button class="btnWrap" data-name="Collections">See all collections at IKEA.kr</button>
     </div>
 
-    <div class="imgBoxContainer">
+    <div class="imgBoxContainer myScroll">
       <figure class="imgBoxLeft">
         <div class="videoBtnContainer2">
           <span><button class="pauseBtn2"></button></span>
@@ -147,7 +148,7 @@
     </div>
 
 
-    <div class="imbedVideoContainer">
+    <div class="imbedVideoContainer myScroll">
       <div class="imbedText">
         <h2>Unlimited creativity for those with limited means</h2>
         <p>A desk, an armchair and even a record player! Meet these and many more stars from the new OBEGRÄNSAD
@@ -166,7 +167,7 @@
       <button data-name="Collections">See all collections at IKEA.kr</button>
     </div>
 
-    <div class="videoListContainer">
+    <div class="videoListContainer myScroll">
 
       <div class="container">
 
@@ -175,10 +176,15 @@
     </div>
 
     <div class="cursor">
-
     </div>
 
+    <!-- go Top Button -->
+
+    <button class="goTopBtn"> Go Top </button>
+
+
   </section>
+
   <!-- video end -->
 
 
@@ -201,6 +207,7 @@
         </ul>
       </div>
 
+
       <div class="footerLeftCategory">
         <ul>
           <li>Cookie information</li>
@@ -215,6 +222,18 @@
       </div>
     </div>
   </footer>
+
+  <!-- side page indicator -->
+  <ul id="scroll_navi">
+    <li class="on">Title</li>
+    <li>About</li>
+    <li>Photo</li>
+    <li> Video</li>
+    <li>List</li>
+  </ul>
+
+
 </body>
+
 
 </html>

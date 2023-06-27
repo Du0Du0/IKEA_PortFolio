@@ -156,6 +156,40 @@ fetch(url)
 			cursor.innerText = '';
 			cursor.classList.remove('hover');
 		});
+
+		const btns = document.querySelectorAll('#scroll_navi li');
+		btns.forEach((btn) => {
+			btn.addEventListener('mouseover', (e) => {
+				console.log('아놔3');
+				const dataName = e.target.getAttribute('data-name');
+				cursor.classList.add('hoverPageIndicator');
+				cursor.innerText = dataName;
+			});
+
+			// Go Top Button
+			const goTopBtn = document.querySelector('.goTopBtn');
+
+			goTopBtn.addEventListener('click', () => {
+				window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+			});
+
+			goTopBtn.addEventListener('mouseenter', () => {
+				cursor.classList.add('hoverPageIndicator');
+			});
+
+			goTopBtn.addEventListener('mouseleave', () => {
+				cursor.classList.remove('hoverPageIndicator');
+			});
+		});
+
+		btns.forEach((btn) => {
+			btn.addEventListener('mouseleave', (e) => {
+				console.log('아놔3');
+				const dataName = e.target.getAttribute('data-name');
+				cursor.classList.remove('hoverPageIndicator');
+				cursor.innerText = dataName;
+			});
+		});
 	});
 
 //subtitle 동영상 재생 멈춤 기능
@@ -251,7 +285,7 @@ function createPop(id) {
 	const tags = `	
 			<div class='con'>
 			<iframe src='https://www.youtube.com/embed/${id}'></iframe></div>
-			<span class='close'>x</span>
+			<span class='close'><i class="fa-solid fa-xmark"></i></span>
 	`;
 	const pop = document.createElement('aside');
 	pop.className = 'pop';

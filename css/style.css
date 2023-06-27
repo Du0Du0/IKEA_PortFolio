@@ -8200,6 +8200,7 @@ a {
   width: 100vw;
   cursor: none;
   min-height: calc(100vh - 461px);
+  background: #090909;
 }
 .video .subVisual {
   width: 100%;
@@ -8223,7 +8224,6 @@ a {
   width: 100%;
   height: 300px;
   padding: 150px 15vw 246px;
-  background: #090909;
 }
 .video .titContainer h1 {
   text-align: left;
@@ -8235,7 +8235,6 @@ a {
 .video .subtitle {
   width: 100%;
   height: 500px;
-  background: #090909;
   padding: 0px 15vw 50px;
   display: flex;
   flex-wrap: wrap;
@@ -8329,7 +8328,6 @@ a {
   display: flex;
   flex-direction: column;
   padding: 96px 14.9vw 96px;
-  background: #090909;
   z-index: 2;
 }
 .video .middleText p {
@@ -8338,7 +8336,6 @@ a {
   margin-bottom: 96px;
   text-align: justify;
   word-wrap: break-word;
-  background: #090909;
   padding-top: 36px;
 }
 .video .middleText button {
@@ -8365,7 +8362,6 @@ a {
   height: 900px;
   display: flex;
   flex-wrap: wrap;
-  background: #090909;
   padding: 0px 15vw 150px;
 }
 .video .imgBoxContainer .imgBoxLeft {
@@ -8480,7 +8476,6 @@ a {
   height: 453.39px;
   padding: 0px 15vw 0px;
   display: flex;
-  background: #090909;
 }
 .video .imbedVideoContainer .imbedText {
   flex: 0.6;
@@ -8523,7 +8518,6 @@ a {
 .video .btnContainer {
   width: 100%;
   height: auto;
-  background: #090909;
   display: flex;
   padding: 96px 15vw 0px;
 }
@@ -8550,7 +8544,6 @@ a {
 .video .videoListContainer {
   width: 100%;
   height: auto;
-  background: #090909;
   padding: 150px 15vw 100px;
   flex-direction: row;
 }
@@ -8559,21 +8552,18 @@ a {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  background: #090909;
   justify-content: center;
   gap: 40px;
 }
 .video .videoListContainer .container .viedoBox1 {
   width: 300px;
   height: 300px;
-  background: #090909;
   position: relative;
   margin-bottom: 50px;
 }
 .video .videoListContainer .container .viedoBox1 .textBox {
   width: 50%;
   height: 100%;
-  background: #090909;
   position: absolute;
   top: 0;
   right: 0;
@@ -8583,6 +8573,7 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
+  background: #090909;
 }
 .video .videoListContainer .container .viedoBox1 .textBox .listTitle {
   font: bold 20px/1.2 "Noto Sans KR";
@@ -8638,6 +8629,13 @@ a {
   background: radial-gradient(circle, #000 4%, #000 68.99%, #fff 70%, #fff 100%);
   overflow: hidden;
 }
+.video .cursor.hoverPageIndicator {
+  width: 0px;
+  height: 0px;
+  font: 18px/150px "Noto Sans KR";
+  background: radial-gradient(circle, #000 4%, #000 68.99%, #fff 70%, #fff 100%);
+  overflow: hidden;
+}
 .video .cursor.click {
   animation: click 0.3s ease-in-out;
 }
@@ -8652,6 +8650,41 @@ a {
     transform: scale(1);
   }
 }
+.video .goTopBtn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1;
+  background: radial-gradient(circle, #000 4%, #000 68.99%, #fff 70%);
+  box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.363);
+  font: 16.8px/1 "Noto Sans KR";
+  color: #eee;
+  animation: animateBorder 9s ease infinite;
+}
+.video .goTopBtn:hover {
+  border: none;
+  z-index: 1;
+  color: #333;
+  background: linear-gradient(270deg, #96f061, #a259d3, #1d9de0, #e790b0);
+  box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.363);
+  background-size: 800% 800%;
+  animation: animateBorder 9s ease infinite;
+}
+@keyframes animateBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 @media screen and (max-width: 1023px) {
   .video .subVisual {
@@ -8661,12 +8694,8 @@ a {
     object-fit: contain;
     object-position: -55vw -48vw;
   }
-  .video .subVisual .background {
-    background: #090909;
-  }
   .video .titContainer {
     padding: 150px 10vw 246px;
-    background: #090909;
   }
   .video .titContainer h1 {
     font: bold 70px/1 "Noto Sans KR";
@@ -8725,7 +8754,6 @@ a {
   .video .btnContainer {
     width: 100%;
     height: auto;
-    background: #090909;
     display: flex;
     padding: 86px 15vw 0px;
   }
@@ -8764,12 +8792,8 @@ a {
   .video .subVisual video {
     object-position: -205vw -110vw;
   }
-  .video .subVisual .background {
-    background: #090909;
-  }
   .video .titContainer {
     padding: 96px 5vw 0px;
-    background: #090909;
   }
   .video .titContainer h1 {
     font: bold 36px/1 "Noto Sans KR";
@@ -9151,6 +9175,55 @@ a {
   color: orange;
   margin-left: 5px;
   transform: translateY(-10px);
+}
+
+#scroll_navi {
+  position: fixed;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#scroll_navi li {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #333;
+  background: #333;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  text-indent: 9999px;
+}
+#scroll_navi li.on {
+  text-indent: 0px;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  font: 12.8px/50px "Noto Sans KR";
+  color: #fff;
+  border: 1px solid #fff;
+  text-align: center;
+  background: radial-gradient(circle, #000 4%, #000 68.99%, #fff 70%, #fff 100%);
+}
+
+@media screen and (max-width: 1023px) {
+  #scroll_navi {
+    right: 30px;
+  }
+  #scroll_navi li {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media screen and (max-width: 639px) {
+  #scroll_navi {
+    right: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
