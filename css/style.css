@@ -5345,7 +5345,7 @@ a {
 }
 .members {
   width: 100vw;
-  height: 100vh;
+  min-height: calc(100vh - 400px);
 }
 .members .subVisual {
   width: 100%;
@@ -5555,7 +5555,7 @@ a {
   opacity: 0;
   animation: appearContents 5s ease-in-out;
   animation-fill-mode: forwards;
-  animation-delay: 3s;
+  animation-delay: 1s;
   transition: opacity 0.5s;
 }
 @keyframes appearContents {
@@ -6043,8 +6043,9 @@ a {
   margin-bottom: 20px;
 }
 .members .membersBox:nth-of-type(1) .membersName h3 {
-  font: 20px/1 "Noto Sans KR";
+  font: 16px/1 "Noto Sans KR";
   color: rgba(16, 16, 16, 0.6);
+  font-style: italic;
 }
 .members .membersBox:nth-of-type(1) .membersDesc {
   font: 18px/1 "Noto Sans KR";
@@ -6106,8 +6107,9 @@ a {
   margin-bottom: 20px;
 }
 .members .membersBox:nth-of-type(2) .membersName h3 {
-  font: 20px/1 "Noto Sans KR";
+  font: 16px/1 "Noto Sans KR";
   color: rgba(16, 16, 16, 0.6);
+  font-style: italic;
 }
 .members .membersBox:nth-of-type(2) .membersDesc {
   font: 18px/1 "Noto Sans KR";
@@ -6169,8 +6171,9 @@ a {
   margin-bottom: 20px;
 }
 .members .membersBox:nth-of-type(3) .membersName h3 {
-  font: 20px/1 "Noto Sans KR";
+  font: 16px/1 "Noto Sans KR";
   color: rgba(16, 16, 16, 0.6);
+  font-style: italic;
 }
 .members .membersBox:nth-of-type(3) .membersDesc {
   font: 18px/1 "Noto Sans KR";
@@ -6233,8 +6236,9 @@ a {
   margin-bottom: 20px;
 }
 .members .membersBox:nth-of-type(4) .membersName h3 {
-  font: 20px/1 "Noto Sans KR";
+  font: 16px/1 "Noto Sans KR";
   color: rgba(16, 16, 16, 0.6);
+  font-style: italic;
 }
 .members .membersBox:nth-of-type(4) .membersDesc {
   font: 18px/1 "Noto Sans KR";
@@ -6279,6 +6283,100 @@ a {
   transform: translate(20%, 20%);
   opacity: 0.6;
   mix-blend-mode: darken;
+}
+.members .container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 15vw 0px;
+  margin-bottom: 150px;
+}
+.members .tile {
+  height: auto;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  align-items: center;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.members .tile h3 {
+  color: #333;
+  font: bold 30px/1 "Noto Sans KR";
+  margin-bottom: 10px;
+}
+.members .tile h2 {
+  color: #333;
+  font: bold 40px/1 "Noto Sans KR";
+}
+.members .tile h4 {
+  margin-top: 40px;
+  color: #333;
+  font: 16px/1.5 "Noto Sans KR";
+  margin-bottom: 10px;
+  font-style: italic;
+  padding-right: 250px;
+}
+.members .tile p {
+  margin-top: 10px;
+  color: #333;
+  font: 16px/1.8 "Noto Sans KR";
+  text-align: justify;
+  word-break: break-all;
+}
+.members .tile .articleImg {
+  object-fit: cover;
+  width: 100%;
+  height: 90%;
+}
+.members .tile .articleIcon {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 40px;
+}
+.members .sticky {
+  position: sticky;
+  top: 200px;
+  color: rgb(31, 31, 31);
+}
+.members .sticky-container {
+  display: flex;
+  margin-bottom: 120px;
+  position: relative;
+}
+.members .sticky-container h2 {
+  text-align: left;
+  float: left;
+  justify-content: left;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.members .sticky-container .tile.sticky {
+  height: 400px;
+  margin-bottom: 0px;
+}
+.members .sticky-container .tile {
+  height: auto;
+}
+.members .sticky-container .tile:not(.sticky) {
+  width: 100%;
+}
+.members .col-2 {
+  width: 50%;
+}
+.members .flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.members .title-before::before {
+  text-align: center;
+  flex-grow: 1;
+  width: 100%;
+  padding: 15px;
 }
 
 @media screen and (max-width: 1023px) {
