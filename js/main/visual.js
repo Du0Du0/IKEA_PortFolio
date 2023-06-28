@@ -3,7 +3,7 @@ const bgs = visualSection.querySelectorAll('.bg');
 const pointBox1 = bgs[7];
 const pointBox2 = bgs[12];
 
-//visual pointBox toggle기능
+// visual pointBox toggle기능 1
 pointBox1.addEventListener('click', (e) => {
 	e.preventDefault();
 	pointBox1.classList.add('on');
@@ -17,6 +17,7 @@ pointBox1.addEventListener('click', (e) => {
 	} else return;
 });
 
+// visual pointBox toggle기능 2
 pointBox2.addEventListener('click', (e) => {
 	e.preventDefault();
 

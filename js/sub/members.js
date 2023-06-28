@@ -44,11 +44,10 @@ window.addEventListener('scroll', () => {
 	const changeColorTxt = membersSection.querySelectorAll('.tile h3, .tile h2, .tile h4, .tile p');
 
 	window.addEventListener('scroll', () => {
-		console.log(window.scrollY);
 
 		//첫번째 article 영역 스크롤 배경색 바뀌는 기능
 		if (window.scrollY > 5000) {
-			document.body.style.transition = '0.3s';
+
 			document.body.style.background = '#fedc01';
 		} else if (window.scrollY < 5000) {
 			document.body.style.background = '#fff';
@@ -56,7 +55,7 @@ window.addEventListener('scroll', () => {
 
 		//두번째 article 영역 스크롤 배경색 바뀌는 기능
 		if (window.scrollY > 8100) {
-			document.body.style.transition = '0.3s';
+	
 			document.body.style.background = '#090909';
 			changeColorTxt.forEach((element) => {
 				element.style.color = '#969696';
@@ -69,7 +68,7 @@ window.addEventListener('scroll', () => {
 
 		//세번째 article 영역 스크롤 배경색 바뀌는 기능
 		if (window.scrollY > 11000) {
-			document.body.style.transition = '0.3s';
+		
 			document.body.style.background = '#0058ab';
 			changeColorTxt.forEach((element) => {
 				element.style.color = '#eee';
@@ -78,7 +77,7 @@ window.addEventListener('scroll', () => {
 
 		//네번째 article 영역 스크롤 배경색 바뀌는 기능
 		if (window.scrollY > 13000) {
-			document.body.style.transition = '0.3s';
+	
 			document.body.style.background = '#fff';
 			changeColorTxt.forEach((element) => {
 				element.style.color = '#333';

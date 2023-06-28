@@ -1,31 +1,10 @@
 const mapContainer = document.querySelector('#map');
 const btns = document.querySelectorAll('.rightContainer .list');
 const tits = document.querySelectorAll('.tit');
-
 const trafficBtn = document.querySelector('.trafficBtn');
-
 const icon = document.querySelector('.svgBox path');
 const icon_len = 2730;
-
 const baseline = -window.innerHeight / 2;
-
-// window.addEventListener('scroll', () => {
-// 	const scroll = window.scrollY;
-// 	//해당 섹션 영역에 도달했을때 다시 0으로 보정된 스크롤값
-// 	let scroll2 = (scroll - secs[2].offsetTop - baseline) * 5;
-
-// 	//해당 섹션에 스크롤이 도달하면
-// 	if (scroll > secs[2].offsetTop + baseline) {
-// 		//아이콘의 strokeDashoffset값을 보정된 scroll2값으로 계속 뺴줌 (선이 그어지기 시작함)
-// 		icon.style.strokeDashoffset = icon_len - scroll2;
-// 		//scroll2값이 만약에 전체 선의 길이를 넘어가는 순간 값을 0으로 강제고정
-// 		//이렇게 하지 않으면 다시 반대방향으로 선이 빠지게됨
-// 		scroll2 >= icon_len && (scroll2 = icon_len);
-// 	} else {
-// 		//해당 섹션에서 스크롤이 벗어나게 되면 다시 strokeDashoffset값을 원래 고정해서 초기화
-// 		icon.style.strokeDashoffset = icon_len;
-// 	}
-// });
 
 let active_index = 0;
 

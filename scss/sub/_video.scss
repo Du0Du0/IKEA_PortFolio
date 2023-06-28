@@ -173,6 +173,10 @@
 			border: none;
 			animation: animation 1.7s linear infinite;
 
+			a{
+				cursor: none;
+			}
+
 			@keyframes animation {
 				to {
 					background-position: 200% center;
@@ -275,6 +279,8 @@
 						font: bold 16px /1 $ikeaFontKo;
 						color: $fontColorBl;
 						cursor: none;
+
+						
 					}
 				}
 				.imgBox2 {
@@ -380,6 +386,11 @@
 			background-size: 200%;
 			animation: animation 1.7s linear infinite;
 			z-index: 99;
+
+			a {
+							cursor: none;
+						}
+						
 			@keyframes animation {
 				to {
 					background-position: 200% center;

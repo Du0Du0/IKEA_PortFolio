@@ -13,12 +13,12 @@ fetch('DB/museum.json')
 			const con = data.content;
 			tags += `
      <div class="swiper-slide">
-            <h3>${data.topic}</h3>
-            <h2>${tit.length > 7 ? tit.split(' ').splice(0, 7).join(' ') : tit}</h2>
-            <p class="con">${con.length > 10 ? con.split(' ').splice(0, 10).join(' ') + '...' : con}
-            </p>
-						<p class="date">${data.date}&nbsp;&nbsp;| &nbsp;&nbsp;Exhibition</p>
-          </div>
+				<h3>${data.topic}</h3>
+				<h2>${tit.length > 7 ? tit.split(' ').splice(0, 7).join(' ') : tit}</h2>
+				<p class="con">${con.length > 10 ? con.split(' ').splice(0, 10).join(' ') + '...' : con}
+				</p>
+				<p class="date">${data.date}&nbsp;&nbsp;| &nbsp;&nbsp;Exhibition</p>
+			</div>
         `;
 		});
 		swiperWrapper.innerHTML = tags;
@@ -40,12 +40,14 @@ fetch('DB/museum.json')
 
 		let currentIdx = 0;
 
+		//이전 버튼 누르면 이전 목록 뜨게 하기
 		prevBtn.addEventListener('click', () => {
 			currentIdx = (currentIdx - 1 + titleLists.length) % titleLists.length;
 			leftTxt.innerText = titleLists[(currentIdx - 1 + titleLists.length) % titleLists.length];
 			rightTxt.innerText = titleLists[(currentIdx + 2) % titleLists.length];
 		});
 
+		//다음 버튼 누르면 다음 목록 뜨게 하기
 		nextBtn.addEventListener('click', () => {
 			currentIdx = (currentIdx + 1) % titleLists.length;
 			leftTxt.innerText = titleLists[(currentIdx - 1 + titleLists.length) % titleLists.length];

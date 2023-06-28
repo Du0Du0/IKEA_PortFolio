@@ -3,15 +3,14 @@ const vidsSection = document.querySelector('#vids');
 const vidsVideoWrap = vidsSection.querySelector('.vidsVideoWrap');
 const key = 'AIzaSyCKs11Yu98hp6fq7N54tY2iWSY9qvTh4cM';
 const list = 'PLWgHnOZUp_4H3oyXBnWAhhQhWulLsuoPO';
+const vidsCloseBtn = document.querySelector('.close');
 
 let videoIsOn;
-
 let num;
-
 resizeVids(5);
 
 // 화면 줄이면 보이는 동영상 갯수 설정
-window.addEventListener('resize', function () {
+window.addEventListener('resize', () => {
 	console.log('resize event!');
 
 	if (window.innerWidth >= 1024 && window.innerWidth <= 1920) {
@@ -70,9 +69,7 @@ function resizeVids(num) {
 				if (videos[idx].classList.contains('on')) {
 					vidsNum[idx].style.display = 'none';
 					vidsBarTit[idx].style.display = 'none';
-					videos[
-						idx
-					].style.backgroundImage = `url(${json.items[idx].snippet.thumbnails.maxres.url})`;
+					videos[idx].style.backgroundImage = `url(${json.items[idx].snippet.thumbnails.maxres.url})`;
 					vidsSpan[idx].style.display = 'block';
 					discoverBtn[idx].style.display = 'block';
 				}
@@ -86,9 +83,7 @@ function resizeVids(num) {
 					videos[idx].classList.contains('on')
 						? ((vidsNum[idx].style.display = 'none'),
 						  (vidsBarTit[idx].style.display = 'none'),
-						  ((videos[
-								idx
-						  ].style.backgroundImage = `url(${json.items[idx].snippet.thumbnails.maxres.url})`),
+						  ((videos[idx].style.backgroundImage = `url(${json.items[idx].snippet.thumbnails.maxres.url})`),
 						  (vidsSpan[idx].style.display = 'block')),
 						  (discoverBtn[idx].style.display = 'block'))
 						: ((vidsNum[idx].style.display = 'block'),
@@ -109,14 +104,14 @@ function resizeVids(num) {
 		});
 }
 
-//vids pop 찹업창 띄우기
+// vids pop 찹업창 띄우기
 document.body.addEventListener('click', (e) => {
 	if (e.target.className === 'discoverBtn')
 		createPop(e.target.closest('.video').getAttribute('data-video-id'));
 	if (e.target.className === 'close') removePop();
 });
 
-//vids 동적으로 팝업 생성
+// vids 동적으로 팝업 생성
 function createPop(id) {
 	const tags = `	
 			<div class='con'>
@@ -129,14 +124,12 @@ function createPop(id) {
 	document.body.append(pop);
 	console.log('.pop');
 
-	//특정 코드를 강제로 동기화시키고 싶을때는 setTimeout에 delay를 0초로 지정해서 코드를 패키징 (강제로 wep api에 넘어갔다가 다시 콜스택 젤 마지막에 등록)
+	// 특정 코드를 강제로 동기화시키고 싶을때는 setTimeout에 delay를 0초로 지정해서 코드를 패키징 (강제로 wep api에 넘어갔다가 다시 콜스택 젤 마지막에 등록)
 	setTimeout(() => document.querySelector('.pop').classList.add('on'), 0);
 	document.body.style.overflow = 'hidden';
 }
 
-const vidsCloseBtn = document.querySelector('.close');
-
-//팝업제거
+// 팝업제거
 function removePop() {
 	document.querySelector('.pop').classList.remove('on');
 	setTimeout(() => document.querySelector('.pop').remove(), 1000);

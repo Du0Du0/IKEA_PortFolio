@@ -14,12 +14,12 @@ fetch('DB/products.json')
 
 		productsData.map((data) => {
 			tags += `
-  <div class="slideItem">
-  <div class="productsImg">
-  <img src="img/${data.pic}"/>
-  </div>
-  <div class="productsName">${data.category}</div>
-  </div>`;
+				<div class="slideItem">
+				<div class="productsImg">
+				<img src="img/${data.pic}"/>
+				</div>
+				<div class="productsName">${data.category}</div>
+				</div>`;
 		});
 		slideWrap.innerHTML = tags;
 		duplicateSlides();

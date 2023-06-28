@@ -10,13 +10,12 @@ fetch('DB/smartHome.json')
 
 		smartData.forEach((data) => {
 			tags += `
-                <figure class="swiper-slide" >
-                    <h4>${data.topic}</h4>
-                    <h2>${data.title}</h2>
-
-										<img class="smartBg " src = 'img/${data.picOn}'>
-                    <span class="animation">${data.animation}</span>
-                </figure>`;
+				<figure class="swiper-slide" >
+						<h4>${data.topic}</h4>
+						<h2>${data.title}</h2>
+						<img class="smartBg " src = 'img/${data.picOn}'>
+						<span class="animation">${data.animation}</span>
+				</figure>`;
 		});
 
 		smartSlideWrap.innerHTML = tags;
@@ -28,7 +27,6 @@ fetch('DB/smartHome.json')
 
 		for (var i = 0; i < animations.length; i++) {
 			if (i % 2 === 0) {
-				// 홀수
 				animations[i].style.bottom = '-72px';
 				animations[i].style.left = '72px';
 				animations[i].style.textAlign = 'left';
@@ -42,8 +40,8 @@ fetch('DB/smartHome.json')
 		swiperSlides.forEach((swiperSlide, idx) => {
 			swiperSlide.addEventListener('mouseenter', (e) => {
 				e.preventDefault();
-				smartBgs[idx].classList.add('on'); // smartBgs를 사용해야 함
-				swiperSlides[idx].classList.add('on'); // smartBgs를 사용해야 함
+				smartBgs[idx].classList.add('on'); 
+				swiperSlides[idx].classList.add('on'); 
 
 				if (idx % 2 === 0) {
 					animations[idx].classList.add('movingTextOdd');
@@ -63,15 +61,13 @@ fetch('DB/smartHome.json')
 			'smartHomeBg6.png',
 		];
 
+		showImage();
+
 		function showImage() {
 			const imgNum = Math.floor(Math.random() * imgArray.length);
-			const objImg = document.getElementById('smartHome');
-			objImg.style.backgroundImage = `url(img/${imgArray[imgNum]})`;
-
+			smartSection.style.backgroundImage = `url(img/${imgArray[imgNum]})`;
 			setTimeout(showImage, 5000);
 		}
-
-		showImage();
 
 		swiperSlides.forEach((swiperSlide, idx) => {
 			swiperSlide.addEventListener('mouseleave', (e) => {
@@ -90,6 +86,9 @@ fetch('DB/smartHome.json')
 			prevButton: '.swiper-button-prev',
 			slidesPerView: 3,
 			paginationClickable: true,
+			lazy: {
+				loadPrevNext: true, // 이전, 다음 이미지는 미리 로딩
+			},
 			spaceBetween: 150,
 			breakpoints: {
 				1920: {

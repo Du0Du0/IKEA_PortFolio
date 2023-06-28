@@ -1,5 +1,15 @@
 const videoSection = document.querySelector('.videoSub');
 const container = videoSection.querySelector('.container');
+const goButton = videoSection.querySelector('.btnContainer button');
+const goTopBtn = document.querySelector('.goTopBtn');
+const btns = document.querySelectorAll('#scroll_navi li');
+const btnWrap = videoSection.querySelector('.btnWrap');
+const pauseBtn = videoSection.querySelector('.pauseBtn');
+const playBtn = videoSection.querySelector('.playBtn ');
+const videoBtnContainer = videoSection.querySelector('.videoBtnContainer ');
+const vidSubTit = videoSection.querySelector('.vidSubTit');
+const iframe = videoSection.querySelector('.cursorOverlay');
+const vidsCloseBtn = videoSection.querySelector('.close');
 const key = 'AIzaSyCKs11Yu98hp6fq7N54tY2iWSY9qvTh4cM';
 const list = 'PLWgHnOZUp_4FJWdMzYeEAM4Waf8IhnZCB';
 const num = 8;
@@ -39,7 +49,6 @@ fetch(url)
 		const videoCircles = document.querySelectorAll('.videoCircle');
 
 		// 커스텀 마우스 커서
-
 		const cursor = document.querySelector('.cursor');
 		document.addEventListener('mousemove', (e) => {
 			cursor.setAttribute(
@@ -57,118 +66,82 @@ fetch(url)
 			}, 500);
 		});
 
+		// video playlist cursor mouseover & leave
 		videoCircles.forEach((videoCircle) => {
 			videoCircle.addEventListener('mouseover', (e) => {
-				console.log('아놔');
-				const dataName = e.target.getAttribute('data-name');
-				cursor.classList.add('hover');
-				cursor.innerText = dataName;
+				cursorMouseOver(e);
 			});
-		});
 
-		videoCircles.forEach((videoCircle) => {
 			videoCircle.addEventListener('mouseleave', (e) => {
-				console.log('아놔');
-				cursor.innerText = '';
-				cursor.classList.remove('hover');
+				cursorMouseLeave(e);
 			});
 		});
 
-		const iframe = document.querySelector('.cursorOverlay');
+		// imbeded video cursor mouseover & leave
 		iframe.addEventListener('mouseenter', (e) => {
-			console.log('아놔3');
-			const dataName = e.target.getAttribute('data-name');
-			cursor.classList.add('hover');
-			cursor.innerText = dataName;
+			cursorMouseOver(e);
 		});
 
 		iframe.addEventListener('mouseleave', (e) => {
-			console.log('아놔');
-			cursor.innerText = '';
-			cursor.classList.remove('hover');
+			cursorMouseLeave(e);
 		});
 
-		const imgBox1 = document.querySelector('.imgBox1');
+		// imgBox1 text "click" cursor mouseover & leave
 		imgBox1.addEventListener('mouseenter', (e) => {
-			console.log('아놔3');
-			const dataName = e.target.getAttribute('data-name');
-			cursor.classList.add('hover');
-			cursor.innerText = dataName;
+			cursorMouseOver(e);
 		});
 
 		imgBox1.addEventListener('mouseleave', (e) => {
-			console.log('아놔');
-			cursor.innerText = '';
-			cursor.classList.remove('hover');
+			cursorMouseLeave(e);
 		});
-		const goButton = document.querySelector('.btnContainer button');
+
+		// go button cursor mouseover & leave
 		goButton.addEventListener('mouseenter', (e) => {
-			console.log('아놔3');
-			const dataName = e.target.getAttribute('data-name');
-			cursor.classList.add('hover');
-			cursor.innerText = dataName;
+			cursorMouseOver(e);
 		});
 
 		goButton.addEventListener('mouseleave', (e) => {
-			console.log('아놔');
-			cursor.innerText = '';
-			cursor.classList.remove('hover');
+			cursorMouseLeave(e);
 		});
 
-		const btnWrap = document.querySelector('.btnWrap');
+		// button2 cursor mouseover & leave
 		btnWrap.addEventListener('mouseenter', (e) => {
-			console.log('아놔3');
-			const dataName = e.target.getAttribute('data-name');
-			cursor.classList.add('hover');
-			cursor.innerText = dataName;
+			cursorMouseOver(e);
 		});
 
 		btnWrap.addEventListener('mouseleave', (e) => {
-			console.log('아놔');
-			cursor.innerText = '';
-			cursor.classList.remove('hover');
+			cursorMouseLeave(e);
 		});
 
-		const vidSubTit = document.querySelector('.vidSubTit');
+		// subtitle video cursor mouseover & leave
 		vidSubTit.addEventListener('mouseenter', (e) => {
-			console.log('아놔3');
-			const dataName = e.target.getAttribute('data-name');
-			cursor.classList.add('hover');
-			cursor.innerText = dataName;
+			cursorMouseOver(e);
 		});
 
 		vidSubTit.addEventListener('mouseleave', (e) => {
-			console.log('아놔');
-			cursor.innerText = '';
-			cursor.classList.remove('hover');
+			cursorMouseLeave(e);
 		});
 
-		const vidImgBox = document.querySelector('.vidImgBox');
+		// vidImgBox cursor mouseover & leave
 		vidImgBox.addEventListener('mouseenter', (e) => {
-			console.log('아놔3');
-			const dataName = e.target.getAttribute('data-name');
-			cursor.classList.add('hover');
-			cursor.innerText = dataName;
+			cursorMouseOver(e);
 		});
 
 		vidImgBox.addEventListener('mouseleave', (e) => {
-			console.log('아놔');
-			cursor.innerText = '';
-			cursor.classList.remove('hover');
+			cursorMouseLeave(e);
 		});
 
-		const btns = document.querySelectorAll('#scroll_navi li');
+		// page Indicator mouseover cursor on & off
 		btns.forEach((btn) => {
 			btn.addEventListener('mouseover', (e) => {
-				console.log('아놔3');
-				const dataName = e.target.getAttribute('data-name');
-				cursor.classList.add('hoverPageIndicator');
-				cursor.innerText = dataName;
+				indicatorCursorOn(e);
+
+				btn.addEventListener('mouseleave', (e) => {
+					indicatorCursorOff(e);
+				});
 			});
 
 			// Go Top Button
-			const goTopBtn = document.querySelector('.goTopBtn');
-
 			goTopBtn.addEventListener('click', () => {
 				window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 			});
@@ -182,50 +155,52 @@ fetch(url)
 			});
 		});
 
-		btns.forEach((btn) => {
-			btn.addEventListener('mouseleave', (e) => {
-				console.log('아놔3');
-				const dataName = e.target.getAttribute('data-name');
-				cursor.classList.remove('hoverPageIndicator');
-				cursor.innerText = dataName;
-			});
-		});
+		// 페이지 스크롤 mouseover 함수
+		function indicatorCursorOn(e) {
+			const dataName = e.target.getAttribute('data-name');
+			cursor.classList.add('hoverPageIndicator');
+			cursor.innerText = dataName;
+		}
+
+		// 페이지 스크롤 mouseleave 함수
+		function indicatorCursorOff(e) {
+			const dataName = e.target.getAttribute('data-name');
+			cursor.classList.remove('hoverPageIndicator');
+			cursor.innerText = dataName;
+		}
+
+		// 커서 "text" mouseover effect 함수
+		function cursorMouseOver(e) {
+			const dataName = e.target.getAttribute('data-name');
+			cursor.classList.add('hover');
+			cursor.innerText = dataName;
+		}
+
+		// 커서 "text" mouseleave effect 함수
+		function cursorMouseLeave(e) {
+			cursor.innerText = '';
+			cursor.classList.remove('hover');
+		}
 	});
 
 //subtitle 동영상 재생 멈춤 기능
-
-const pauseBtn = videoSection.querySelector('.pauseBtn');
-
-const playBtn = videoSection.querySelector('.playBtn ');
-
-const videoBtnContainer = videoSection.querySelector('.videoBtnContainer ');
-
-const vidSubTit = videoSection.querySelector('.vidSubTit');
-
 let count = 0;
 
 videoBtnContainer.addEventListener('click', () => {
 	count += 1;
 
 	if (count % 2 !== 0) {
-		pauseBtn.style.display = 'none';
-		playBtn.style.display = 'block';
-		vidSubTit.pause();
+	videoOn(pauseBtn, playBtn, vidSubTit);
 	} else {
-		pauseBtn.style.display = 'block';
-		playBtn.style.display = 'none';
-		vidSubTit.play();
+	videoOff(pauseBtn, playBtn, vidSubTit);
 	}
 });
 
+
 //imgBox 동영상 재생 멈춤 기능
-
 const pauseBtn2 = videoSection.querySelector('.pauseBtn2');
-
 const playBtn2 = videoSection.querySelector('.playBtn2 ');
-
 const videoBtnContainer2 = videoSection.querySelector('.videoBtnContainer2 ');
-
 const vidImgBox = videoSection.querySelector('.vidImgBox');
 
 let click = 0;
@@ -234,29 +209,39 @@ videoBtnContainer2.addEventListener('click', () => {
 	count += 1;
 
 	if (count % 2 !== 0) {
-		pauseBtn2.style.display = 'none';
-		playBtn2.style.display = 'block';
-		vidImgBox.pause();
+		videoOn(pauseBtn2, playBtn2, vidImgBox);
 	} else {
-		pauseBtn2.style.display = 'block';
-		playBtn2.style.display = 'none';
-		vidImgBox.play();
+		videoOff(pauseBtn2, playBtn2, vidImgBox);
 	}
 });
 
+
+//동영상 버튼 멈춤 함수
+function videoOn (el1, el2, el3) {
+	el1.style.display = 'none';
+	el2.style.display = 'block';
+	el3.pause();
+}
+
+//동영상 버튼 재생 함수
+function videoOff(el1, el2, el3) {
+	el1.style.display = 'block';
+	el2.style.display = 'none';
+	el3.play();
+}
+
+
 //imgBox 클릭하면 순서보여주는 기능
 const result = videoSection.querySelector('#result');
-
 const imgBox1 = videoSection.querySelector('.imgBox1');
-
 const changeImg = videoSection.querySelector('.changeImg');
 
 const imgBoxGroups = [
-	'imgBoxGroup1.png', //0
-	'imgBoxGroup2.png', //1
-	'imgBoxGroup3.png', //2
-	'imgBoxGroup4.png', //3
-	'imgBoxGroup5.png', //4
+	'imgBoxGroup1.png', 
+	'imgBoxGroup2.png', 
+	'imgBoxGroup3.png', 
+	'imgBoxGroup4.png', 
+	'imgBoxGroup5.png', 
 ];
 
 let currentidx = -1;
@@ -265,7 +250,6 @@ imgBox1.addEventListener('click', () => {
 	currentidx += 1;
 
 	result.innerHTML = currentidx + 1;
-
 	changeImg.src = `img/${imgBoxGroups[currentidx]}`;
 
 	if (currentidx > imgBoxGroups.length - 2) {
@@ -297,8 +281,6 @@ function createPop(id) {
 	setTimeout(() => document.querySelector('.pop').classList.add('on'), 0);
 	document.body.style.overflow = 'hidden';
 }
-
-const vidsCloseBtn = document.querySelector('.close');
 
 //팝업제거
 function removePop() {

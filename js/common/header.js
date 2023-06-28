@@ -17,14 +17,6 @@ menuBtn.addEventListener('click', (e) => {
 	toggleButton();
 });
 
-//header mouseover 따라다니는 원 커서 기능
-document.addEventListener('mousemove', (e) => {
-	const mouseX = e.clientX;
-	const mouseY = e.clientY;
-
-	updatePosition(mouseX, mouseY);
-});
-
 // 사이드 바 나오는 기능
 function toggleSideBar() {
 	rightBar.classList.toggle('rgt');
@@ -36,10 +28,4 @@ function toggleBarBtn() {
 	const isRgtOn = rightBar.classList.contains('rgt');
 	barBtn.style.display = isRgtOn ? 'block' : 'none';
 	closeBtn.style.display = isRgtOn ? 'none' : 'block';
-}
-
-//header mouseover 따라다니는 원 커서 기능
-function updatePosition(mouseX, mouseY) {
-	circleMouse.style.left = mouseX + 'px';
-	circleMouse.style.top = mouseY + 'px';
 }
