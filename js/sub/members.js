@@ -38,6 +38,53 @@ window.addEventListener('scroll', () => {
 	boxes.forEach((circle) => {
 		circle.style.clipPath = `circle(${scrollY}px at center)`;
 	});
+
+	// 스크롤하면 배경색 바뀌는 기능
+
+	const changeColorTxt = membersSection.querySelectorAll('.tile h3, .tile h2, .tile h4, .tile p');
+
+	window.addEventListener('scroll', () => {
+		console.log(window.scrollY);
+
+		//첫번째 article 영역 스크롤 배경색 바뀌는 기능
+		if (window.scrollY > 5000) {
+			document.body.style.transition = '0.3s';
+			document.body.style.background = '#fedc01';
+		} else if (window.scrollY < 5000) {
+			document.body.style.background = '#fff';
+		}
+
+		//두번째 article 영역 스크롤 배경색 바뀌는 기능
+		if (window.scrollY > 8100) {
+			document.body.style.transition = '0.3s';
+			document.body.style.background = '#090909';
+			changeColorTxt.forEach((element) => {
+				element.style.color = '#969696';
+			});
+		} else if (window.scrollY < 8100) {
+			changeColorTxt.forEach((element) => {
+				element.style.color = '#333';
+			});
+		}
+
+		//세번째 article 영역 스크롤 배경색 바뀌는 기능
+		if (window.scrollY > 11000) {
+			document.body.style.transition = '0.3s';
+			document.body.style.background = '#0058ab';
+			changeColorTxt.forEach((element) => {
+				element.style.color = '#eee';
+			});
+		} else return;
+
+		//네번째 article 영역 스크롤 배경색 바뀌는 기능
+		if (window.scrollY > 13000) {
+			document.body.style.transition = '0.3s';
+			document.body.style.background = '#fff';
+			changeColorTxt.forEach((element) => {
+				element.style.color = '#333';
+			});
+		} else return;
+	});
 });
 
 //슬라이더
