@@ -4105,6 +4105,13 @@ a {
     color: #171717;
   }
 }
+.html,
+html,
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 .location {
   width: 100vw;
   min-height: calc(100vh - 400px);
@@ -7728,7 +7735,7 @@ a {
 }
 .signUp {
   width: 100vw;
-  min-height: calc(100vh - 461px);
+  min-height: calc(100vh - 400px);
 }
 .signUp .titContainer {
   width: 100%;
