@@ -36,6 +36,13 @@
 					color: $ikeaBl;
 					margin-bottom: 150px;
 					cursor: pointer;
+
+					i {
+						transition: 0.5s;
+						&:hover {
+							transform: translateX(5px);
+						}
+					}
 				}
 
 				// icon icon start

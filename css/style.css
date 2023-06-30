@@ -1376,6 +1376,12 @@ a {
   align-items: center;
   cursor: pointer;
 }
+#products .productsContainer .productsSub .btnWrap .hyperBtns i {
+  transition: 0.5s;
+}
+#products .productsContainer .productsSub .btnWrap .hyperBtns i:hover {
+  transform: translateX(5px);
+}
 
 @media screen and (max-width: 1023px) {
   #products {
@@ -1785,6 +1791,12 @@ a {
   font: 16px/1 "Noto Sans KR";
   color: #333;
   cursor: pointer;
+}
+#vids p i {
+  transition: 0.5s;
+}
+#vids p i:hover {
+  transform: translateX(5px);
 }
 
 @media screen and (max-width: 1023px) {
@@ -2564,6 +2576,12 @@ a {
   margin-top: 20px;
   cursor: pointer;
 }
+#promotion .promotionContainer .promotionWrap:nth-of-type(3) .snsGoBtn i {
+  transition: 0.5s;
+}
+#promotion .promotionContainer .promotionWrap:nth-of-type(3) .snsGoBtn i:hover {
+  transform: translateX(5px);
+}
 
 @media screen and (max-width: 1023px) {
   #promotion {
@@ -3120,6 +3138,12 @@ a {
   margin-bottom: 150px;
   cursor: pointer;
 }
+#notice .noticeContainer .noticeWrap:nth-of-type(1) .goBtn i {
+  transition: 0.5s;
+}
+#notice .noticeContainer .noticeWrap:nth-of-type(1) .goBtn i:hover {
+  transform: translateX(5px);
+}
 #notice .noticeContainer .noticeWrap:nth-of-type(1) .iconWrap {
   font: 26px/1 "Noto Sans KR";
   color: #171717;
@@ -3442,7 +3466,6 @@ body {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  background: #fff;
 }
 .location .rightContainer .list {
   width: 50%;
@@ -3460,10 +3483,10 @@ body {
   border-left: 1px solid #e9e9e9;
 }
 .location .rightContainer .list:nth-of-type(1):hover {
-  background: #e0e1fa;
+  background: #f9f9f9;
 }
 .location .rightContainer .list:nth-of-type(1).on {
-  background: #c4c7fc;
+  background: #f0f0f0;
 }
 .location .rightContainer .list:nth-of-type(1) .storeName {
   flex: 0.5;
@@ -3473,17 +3496,17 @@ body {
 }
 .location .rightContainer .list:nth-of-type(1) .storeName .tit {
   font: bold 51px/1 "Noto Sans KR";
-  background: repeating-linear-gradient(45deg, #3500ea, #3500ea 0.5px, #e7e8fc 0.5px, #e7e8fc 1.2px);
+  background: repeating-linear-gradient(45deg, #333, #333 0.5px, #e7e8fc 0.5px, #e7e8fc 1.2px);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
 }
 .location .rightContainer .list:nth-of-type(1) .storeName .tit.on {
-  color: #3500ea;
+  color: #333;
   background: none;
   -webkit-background-clip: initial;
-  -webkit-text-fill-color: #3500ea;
+  -webkit-text-fill-color: #333;
   background-clip: initial;
 }
 .location .rightContainer .list:nth-of-type(1) .storeAddress {
@@ -3494,7 +3517,7 @@ body {
 }
 .location .rightContainer .list:nth-of-type(1) .storeAddress p {
   font: 16px/1 "Noto Sans KR";
-  color: #3500ea;
+  color: #333;
 }
 .location .rightContainer .list:nth-of-type(1) .storeOpen {
   width: 100%;
@@ -3504,15 +3527,15 @@ body {
 }
 .location .rightContainer .list:nth-of-type(1) .storeOpen p {
   font: 16px/1.8 "Noto Sans KR";
-  color: #3500ea;
+  color: #333;
 }
 .location .rightContainer .list:nth-of-type(1) .storeOpen p span {
-  color: #3500ea;
+  color: #333;
   font: bold 16px/1.8 "Noto Sans KR";
 }
 .location .rightContainer .list:nth-of-type(1) .storeOpen h4 {
   font: 16px/1.8 "Noto Sans KR";
-  color: #3500ea;
+  color: #333;
   padding-left: 2em;
 }
 .location .rightContainer .list:nth-of-type(1) .storePhone {
@@ -3523,16 +3546,7 @@ body {
 }
 .location .rightContainer .list:nth-of-type(1) .storePhone p {
   font: 16px/1 "Noto Sans KR";
-  color: #3500ea;
-}
-.location .rightContainer .list:nth-of-type(1) .storeSite {
-  width: 100%;
-  height: auto;
-  padding-left: 20px;
-}
-.location .rightContainer .list:nth-of-type(1) .storeSite p {
-  font: 16px/1 "Noto Sans KR";
-  color: #3500ea;
+  color: #333;
 }
 .location .rightContainer .list:nth-of-type(2) {
   width: 50%;
@@ -3544,10 +3558,10 @@ body {
   text-align: left;
 }
 .location .rightContainer .list:nth-of-type(2):hover {
-  background: #e0e1fa;
+  background: #f9f9f9;
 }
 .location .rightContainer .list:nth-of-type(2).on {
-  background: #c4c7fc;
+  background: #f0f0f0;
 }
 .location .rightContainer .list:nth-of-type(2) .storeName {
   flex: 0.5;
@@ -3557,17 +3571,17 @@ body {
 }
 .location .rightContainer .list:nth-of-type(2) .storeName .tit {
   font: bold 51px/1 "Noto Sans KR";
-  background: repeating-linear-gradient(45deg, #3500ea, #3500ea 0.5px, #e7e8fc 0.5px, #e7e8fc 1.2px);
+  background: repeating-linear-gradient(45deg, #333, #333 0.5px, #e7e8fc 0.5px, #e7e8fc 1.2px);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
 }
 .location .rightContainer .list:nth-of-type(2) .storeName .tit.on {
-  color: #3500ea;
+  color: #333;
   background: none;
   -webkit-background-clip: initial;
-  -webkit-text-fill-color: #3500ea;
+  -webkit-text-fill-color: #333;
   background-clip: initial;
 }
 .location .rightContainer .list:nth-of-type(2) .storeAddress {
@@ -3578,7 +3592,7 @@ body {
 }
 .location .rightContainer .list:nth-of-type(2) .storeAddress p {
   font: 16px/1 "Noto Sans KR";
-  color: #3500ea;
+  color: #333;
 }
 .location .rightContainer .list:nth-of-type(2) .storeOpen {
   width: 100%;
@@ -3588,14 +3602,14 @@ body {
 }
 .location .rightContainer .list:nth-of-type(2) .storeOpen p {
   font: 16px/1.8 "Noto Sans KR";
-  color: #3500ea;
+  color: #333;
 }
 .location .rightContainer .list:nth-of-type(2) .storeOpen p span {
   font: bold 16px/1.8 "Noto Sans KR";
 }
 .location .rightContainer .list:nth-of-type(2) .storeOpen h4 {
   font: 16px/1.8 "Noto Sans KR";
-  color: #3500ea;
+  color: #333;
   padding-left: 2em;
 }
 .location .rightContainer .list:nth-of-type(2) .storePhone {
@@ -3606,7 +3620,7 @@ body {
 }
 .location .rightContainer .list:nth-of-type(2) .storePhone p {
   font: 16px/1 "Noto Sans KR";
-  color: #3500ea;
+  color: #333;
 }
 .location .rightContainer .list:nth-of-type(2) .storeSite {
   width: 100%;
@@ -3615,7 +3629,7 @@ body {
 }
 .location .rightContainer .list:nth-of-type(2) .storeSite p {
   font: 16px/1 "Noto Sans KR";
-  color: #3500ea;
+  color: #333;
 }
 .location .rightContainer .list:nth-of-type(3) {
   width: 50%;
@@ -3627,10 +3641,10 @@ body {
   text-align: left;
 }
 .location .rightContainer .list:nth-of-type(3):hover {
-  background: #e0e1fa;
+  background: #f9f9f9;
 }
 .location .rightContainer .list:nth-of-type(3).on {
-  background: #c4c7fc;
+  background: #f0f0f0;
 }
 .location .rightContainer .list:nth-of-type(3) .storeName {
   flex: 0.5;
@@ -3640,17 +3654,17 @@ body {
 }
 .location .rightContainer .list:nth-of-type(3) .storeName .tit {
   font: bold 51px/1 "Noto Sans KR";
-  background: repeating-linear-gradient(45deg, #3500ea, #3500ea 0.5px, #e7e8fc 0.5px, #e7e8fc 1.2px);
+  background: repeating-linear-gradient(45deg, #333, #333 0.5px, #e7e8fc 0.5px, #e7e8fc 1.2px);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
 }
 .location .rightContainer .list:nth-of-type(3) .storeName .tit.on {
-  color: #3500ea;
+  color: #333;
   background: none;
   -webkit-background-clip: initial;
-  -webkit-text-fill-color: #3500ea;
+  -webkit-text-fill-color: #333;
   background-clip: initial;
 }
 .location .rightContainer .list:nth-of-type(3) .storeAddress {
@@ -3661,7 +3675,7 @@ body {
 }
 .location .rightContainer .list:nth-of-type(3) .storeAddress p {
   font: 16px/1 "Noto Sans KR";
-  color: #3500ea;
+  color: #333;
 }
 .location .rightContainer .list:nth-of-type(3) .storeOpen {
   width: 100%;
@@ -3671,14 +3685,14 @@ body {
 }
 .location .rightContainer .list:nth-of-type(3) .storeOpen p {
   font: 16px/1.8 "Noto Sans KR";
-  color: #3500ea;
+  color: #333;
 }
 .location .rightContainer .list:nth-of-type(3) .storeOpen p span {
   font: bold 16px/1.8 "Noto Sans KR";
 }
 .location .rightContainer .list:nth-of-type(3) .storeOpen h4 {
   font: 16px/1.8 "Noto Sans KR";
-  color: #3500ea;
+  color: #333;
   padding-left: 2em;
 }
 .location .rightContainer .list:nth-of-type(3) .storePhone {
@@ -3689,7 +3703,7 @@ body {
 }
 .location .rightContainer .list:nth-of-type(3) .storePhone p {
   font: 16px/1 "Noto Sans KR";
-  color: #3500ea;
+  color: #333;
 }
 .location .rightContainer .list:nth-of-type(3) .storeSite {
   width: 100%;
@@ -3698,7 +3712,7 @@ body {
 }
 .location .rightContainer .list:nth-of-type(3) .storeSite p {
   font: 16px/1 "Noto Sans KR";
-  color: #3500ea;
+  color: #333;
 }
 .location .rightContainer .list:nth-of-type(4) {
   width: 50%;
@@ -3710,10 +3724,10 @@ body {
   text-align: left;
 }
 .location .rightContainer .list:nth-of-type(4):hover {
-  background: #e0e1fa;
+  background: #f9f9f9;
 }
 .location .rightContainer .list:nth-of-type(4).on {
-  background: #c4c7fc;
+  background: #f0f0f0;
 }
 .location .rightContainer .list:nth-of-type(4) .storeName {
   flex: 0.5;
@@ -3723,17 +3737,17 @@ body {
 }
 .location .rightContainer .list:nth-of-type(4) .storeName .tit {
   font: bold 51px/1 "Noto Sans KR";
-  background: repeating-linear-gradient(45deg, #3500ea, #3500ea 0.5px, #e7e8fc 0.5px, #e7e8fc 1.2px);
+  background: repeating-linear-gradient(45deg, #333, #333 0.5px, #e7e8fc 0.5px, #e7e8fc 1.2px);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
 }
 .location .rightContainer .list:nth-of-type(4) .storeName .tit.on {
-  color: #3500ea;
+  color: #333;
   background: none;
   -webkit-background-clip: initial;
-  -webkit-text-fill-color: #3500ea;
+  -webkit-text-fill-color: #333;
   background-clip: initial;
 }
 .location .rightContainer .list:nth-of-type(4) .storeAddress {
@@ -3744,7 +3758,7 @@ body {
 }
 .location .rightContainer .list:nth-of-type(4) .storeAddress p {
   font: 16px/1 "Noto Sans KR";
-  color: #3500ea;
+  color: #333;
 }
 .location .rightContainer .list:nth-of-type(4) .storeOpen {
   width: 100%;
@@ -3754,14 +3768,14 @@ body {
 }
 .location .rightContainer .list:nth-of-type(4) .storeOpen p {
   font: 16px/1.8 "Noto Sans KR";
-  color: #3500ea;
+  color: #333;
 }
 .location .rightContainer .list:nth-of-type(4) .storeOpen p span {
   font: bold 16px/1.8 "Noto Sans KR";
 }
 .location .rightContainer .list:nth-of-type(4) .storeOpen h4 {
   font: 16px/1.8 "Noto Sans KR";
-  color: #3500ea;
+  color: #333;
   padding-left: 2em;
 }
 .location .rightContainer .list:nth-of-type(4) .storePhone {
@@ -3772,7 +3786,7 @@ body {
 }
 .location .rightContainer .list:nth-of-type(4) .storePhone p {
   font: 16px/1 "Noto Sans KR";
-  color: #3500ea;
+  color: #333;
 }
 .location .rightContainer .list:nth-of-type(4) .storeSite {
   width: 100%;
@@ -3781,7 +3795,7 @@ body {
 }
 .location .rightContainer .list:nth-of-type(4) .storeSite p {
   font: 16px/1 "Noto Sans KR";
-  color: #3500ea;
+  color: #333;
 }
 .location .contactContainer {
   width: 100%;
@@ -3816,7 +3830,7 @@ body {
   border-left: 1px solid #e9e9e9;
   padding: 43px 1vw 43px;
   font: 16px/1 "Noto Sans KR";
-  color: #3500ea;
+  color: #333;
   margin-bottom: 150px;
   background: #fff;
 }
@@ -3834,7 +3848,7 @@ body {
   background: #fff;
   border: 1px solid #cfcfcf;
   font: 16px/1 "Noto Sans KR";
-  color: #3500ea;
+  color: #333;
 }
 .location .contactContainer .contact:nth-of-type(2) textarea {
   display: block;
@@ -3847,7 +3861,7 @@ body {
   border-radius: 5px;
   border: 1px solid #cfcfcf;
   font: 16px/1 "Noto Sans KR";
-  color: #3500ea;
+  color: #333;
   resize: none;
 }
 .location .contactContainer .contact:nth-of-type(2) .submitBtn {
@@ -3867,7 +3881,7 @@ body {
   border-left: 1px solid #e9e9e9;
   padding: 43px 1vw 43px;
   font: 16px/1 "Noto Sans KR";
-  color: #3500ea;
+  color: #333;
   margin-bottom: 150px;
   background: #fff;
   font: 40px/1 "Noto Sans KR";
@@ -3880,8 +3894,8 @@ body {
   justify-content: center;
 }
 .location .contactContainer .contact:nth-of-type(3) .svgBox svg path {
-  fill: #e0e1fa;
-  stroke: #3500ea;
+  fill: #e9e9e9;
+  stroke: #333;
   stroke-width: 10;
   stroke-dasharray: 17292;
   stroke-dashoffset: 17292;
@@ -3964,7 +3978,6 @@ body {
   }
   .location .rightContainer .list:nth-of-type(1) .storeOpen h4 {
     font: 14.4px/1.8 "Noto Sans KR";
-    color: #3500ea;
   }
   .location .rightContainer .list:nth-of-type(1) .storePhone {
     width: 100%;
@@ -4055,7 +4068,6 @@ body {
   }
   .location .rightContainer .list:nth-of-type(3) .storeSite p {
     font: 14.4px/1 "Noto Sans KR";
-    color: #3500ea;
   }
   .location .rightContainer .list:nth-of-type(4) {
     width: 100%;

@@ -175,6 +175,13 @@
 					text-align: end;
 					margin-top: 20px;
 					cursor: pointer;
+
+					i {
+						transition: 0.5s;
+						&:hover {
+							transform: translateX(5px);
+						}
+					}
 				}
 			}
 		}

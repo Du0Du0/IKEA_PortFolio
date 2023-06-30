@@ -83,6 +83,40 @@ markerInfo.forEach((info, idx) => {
 
 	marker.setMap(map);
 
+	// print 지정 영역 선택 (지도만 프린트 가능하도록)
+	let initBody = document.body;
+
+	let hiddenVisual = document.querySelector('.subVisual');
+	let hiddenHeader = document.querySelector('#header');
+	let hiddenFooter = document.querySelector('#footer_W');
+	let hiddenStoreList = document.querySelector('.storeListContainer');
+	let hiddenRightWrap = document.querySelector('.rightContainer');
+	let hiddenContact = document.querySelector('.contactContainer');
+
+	window.onbeforeprint = function () {
+		hiddenVisual.style.display = 'none';
+		hiddenHeader.style.display = 'none';
+		hiddenFooter.style.display = 'none';
+		hiddenStoreList.style.display = 'none';
+		hiddenRightWrap.style.display = 'none';
+		hiddenContact.style.display = 'none';
+
+		document.body = document.querySelector('.location');
+	};
+
+	window.onafterprint = function () {
+		hiddenVisual.style.display = 'block';
+		hiddenHeader.style.display = 'block';
+		hiddenFooter.style.display = 'block';
+		hiddenStoreList.style.display = 'block';
+		hiddenRightWrap.style.display = 'block';
+		hiddenContact.style.display = 'block';
+
+		document.body = initBody;
+	};
+
+	window.print();
+
 	//지점 버튼을 클릭시
 	info.button.addEventListener('click', () => {
 		//현재 클릭한 버튼의 순번을 active_index전역변수에 옮겨담음

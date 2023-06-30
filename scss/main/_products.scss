@@ -136,6 +136,14 @@
 					justify-content: left;
 					align-items: center;
 					cursor: pointer;
+
+					i {
+						transition: 0.5s;
+
+						&:hover {
+							transform: translateX(5px);
+						}
+					}
 				}
 			}
 		}
