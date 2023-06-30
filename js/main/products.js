@@ -2,8 +2,8 @@
 const productsSection = document.querySelector('#products');
 const slideWrap = productsSection.querySelector('.slideWrap');
 const slideItems = Array.from(productsSection.querySelectorAll('.slideItem'));
-const leftArrowBtn = productsSection.querySelector('.leftArrowBtn');
-const rightArrowBtn = productsSection.querySelector('.rightArrowBtn');
+const nextBtn = productsSection.querySelector('.rigtArrowBtn');
+const preBtn = productsSection.querySelector('.leftArrowBtn');
 
 let tags = '';
 
@@ -24,6 +24,7 @@ fetch('DB/products.json')
 		slideWrap.innerHTML = tags;
 		duplicateSlides();
 	})
+
 	.catch((err) => {
 		console.log(err);
 	});
@@ -36,4 +37,38 @@ function duplicateSlides() {
 		const clonedSlide = slideItems[i].cloneNode(true);
 		slideWrap.appendChild(clonedSlide);
 	}
+
+	// products next button move
+	let count = 0;
+	nextBtn.addEventListener('click', () => {
+		count++;
+		console.log('+');
+		slideWrap.style.transform = `translateX(-${count * 400}px)`;
+
+		if (count * 400 == 4000) {
+			setTimeout(() => {
+				count = 0;
+				preBtn.style.backgroundColor = '#cacaca';
+				slideWrap.style.transform = `translateX(0)`;
+			}, 300);
+		} else if (count > 0) {
+			preBtn.style.backgroundColor = '#171717';
+		}
+	});
+
+	// products prev button move
+	preBtn.addEventListener('click', () => {
+		count--;
+		console.log('-');
+		console.log(count);
+		slideWrap.style.transform = `translateX(-${count * 400}px)`;
+
+		if (count <= 0) {
+			setTimeout(() => {
+				count = 0;
+				preBtn.style.backgroundColor = '#cacaca';
+				slideWrap.style.transform = `translateX(0)`;
+			}, 300);
+		}
+	});
 }

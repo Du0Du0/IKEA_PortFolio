@@ -29,22 +29,20 @@ $videoBgBl: #090909;
 //signUp
 $errRed: #d80000;
 
-$tablet: 1199px;
-$mobile: 759px;
-// $tablet: 1023px;
-// $mobile: 639px;
+$tablet: 1023px;
+$mobile: 639px;
 
 body {
 	overflow-x: hidden;
 }
 
 a:link {
-	color: inherit; /* 링크의 기본 색상을 상속받음 */
-	text-decoration: none; /* 밑줄 제거 */
+	color: inherit;
+	text-decoration: none;
 }
 
 a:visited {
-	color: inherit; /* 방문한 링크의 색상을 상속받음 */
+	color: inherit;
 }
 
 .h {
@@ -66,20 +64,15 @@ a:visited {
 //main
 @import 'main/visual';
 @import 'main/products';
-@import 'main/room';
 @import 'main/vids';
 @import 'main/smartHome';
-@import 'main/news';
 @import 'main/promotion';
 @import 'main/museum';
-@import 'main/showRoom';
 @import 'main/notice';
 
 //sub
-@import 'sub/department';
 @import 'sub/location';
 @import 'sub/members';
-@import 'sub/signIn';
 @import 'sub/signUp';
 @import 'sub/video';
 @import 'sub/subvisual';

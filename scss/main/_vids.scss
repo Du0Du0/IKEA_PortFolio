@@ -21,9 +21,12 @@
 
 			.vidsTit {
 				flex: 1.65;
-				font: bold 70px/1 $ikeaFontKo;
-				color: $fontColorBl;
 				margin-bottom: 50px;
+
+				h2 {
+					font: bold 70px/1 $ikeaFontKo;
+					color: $fontColorBl;
+				}
 			}
 
 			.vidsSub {
@@ -200,9 +203,12 @@
 					width: 100%;
 					height: 50px;
 					flex: 1.65;
-					font: bold 56px/1 $ikeaFontKo;
-					color: $fontColorBl;
 					margin-bottom: 50px;
+
+					h2 {
+						font: bold 56px/1 $ikeaFontKo;
+						color: $fontColorBl;
+					}
 				}
 
 				.vidsSub {
@@ -378,9 +384,12 @@
 					width: 100%;
 					height: 50px;
 					flex: 1.65;
-					font: bold 49px/1 $ikeaFontKo;
-					color: $fontColorBl;
 					margin-bottom: 50px;
+
+					h2 {
+						font: bold 49px/1 $ikeaFontKo;
+						color: $fontColorBl;
+					}
 				}
 
 				.vidsSub {

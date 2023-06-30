@@ -19,8 +19,11 @@
 			height: 100%;
 			flex: 2;
 			background: $bgW;
-			font: bold 70px/1 $ikeaFontKo;
-			color: $fontColorBl;
+
+			h2 {
+				font: bold 70px/1 $ikeaFontKo;
+				color: $fontColorBl;
+			}
 		}
 
 		.productsSub {
@@ -43,14 +46,16 @@
 				.slideWrap {
 					gap: 20px;
 					display: flex;
-					animation: moveRe 20s linear infinite;
+					// animation: moveRe 20s linear infinite;
 					animation-delay: 0s;
 					justify-content: center;
+					transition: 0.5s;
 
 					.slideItem {
 						width: 214px;
 						height: 100%;
 						background: $boxGrey;
+						cursor: pointer;
 
 						.productsImg {
 							display: flex;
@@ -71,19 +76,6 @@
 							background: #e9e9e9;
 						}
 					}
-
-					@keyframes moveRe {
-						0% {
-							transform: translate3d(0, 0, 0);
-						}
-						to {
-							transform: translateX(-3000px);
-						}
-					}
-
-					&:hover {
-						animation-play-state: paused;
-					}
 				}
 			}
 			// products 하단 버튼 메뉴들
@@ -95,7 +87,7 @@
 				gap: 0px;
 
 				.arrowBtns {
-					width: calc(100% / 4.5);
+					width: 208.11px;
 					height: 100%;
 					display: flex;
 					text-align: center;
@@ -109,7 +101,8 @@
 						justify-content: center;
 						align-items: center;
 						flex: 1;
-						background: $ikeaBl;
+						background: #cacaca;
+						border: none;
 						font: 26px $ikeaFontKo;
 						color: $fontColorW;
 						cursor: pointer;
@@ -120,6 +113,7 @@
 						width: 100%;
 						height: 100%;
 						display: flex;
+						border: none;
 						justify-content: center;
 						align-items: center;
 						flex: 1;
@@ -130,37 +124,14 @@
 					}
 				}
 
-				// products 캐럿셀 원형 버튼
-				.circleBtns {
-					width: calc(100% / 4);
-					height: 100%;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					padding: 0px 0vw 0px;
-					gap: 20px;
-
-					button {
-						width: 15px;
-						height: 15px;
-						border-radius: 50%;
-						border: none;
-						background: $carotBtn;
-						cursor: pointer;
-
-						&.on {
-							background: $ikeaBl;
-						}
-					}
-				}
-
 				// products 모든 카테고리 바로가기
 				.hyperBtns {
-					width: calc(100% / 4);
+					width: 208.11px;
 					height: 100%;
 					font: 16px/1 $ikeaFontKo;
 					color: $fontColorBl;
 					display: flex;
+					margin-left: 70px;
 					padding: 0px 0vw 0px;
 					justify-content: left;
 					align-items: center;
@@ -194,9 +165,12 @@
 				height: 100%;
 				flex: 2;
 				background: $bgW;
-				font: bold 56px/1 $ikeaFontKo;
-				color: $fontColorBl;
 				margin-bottom: 50px;
+
+				h2 {
+					font: bold 56px/1 $ikeaFontKo;
+					color: $fontColorBl;
+				}
 			}
 
 			.productsSub {
@@ -219,7 +193,6 @@
 					.slideWrap {
 						gap: 20px;
 						display: flex;
-						animation: moveRe 20s linear infinite;
 						animation-delay: 0s;
 						justify-content: center;
 
@@ -247,19 +220,6 @@
 								background: #e9e9e9;
 							}
 						}
-
-						@keyframes moveRe {
-							0% {
-								transform: translate3d(0, 0, 0);
-							}
-							to {
-								transform: translateX(-3000px);
-							}
-						}
-
-						&:hover {
-							animation-play-state: paused;
-						}
 					}
 				}
 				// products 하단 버튼 메뉴들
@@ -271,7 +231,7 @@
 					gap: 0px;
 
 					.arrowBtns {
-						width: calc(100% / 4.5);
+						width: 208.11px;
 						height: 100%;
 						display: flex;
 						text-align: center;
@@ -306,37 +266,14 @@
 						}
 					}
 
-					// products 캐럿셀 원형 버튼
-					.circleBtns {
-						width: calc(100% / 4);
-						height: 100%;
-						display: flex;
-						justify-content: center;
-						align-items: center;
-						padding: 0px 0vw 0px;
-						gap: 20px;
-
-						button {
-							width: 15px;
-							height: 15px;
-							border-radius: 50%;
-							border: none;
-							background: $carotBtn;
-							cursor: pointer;
-
-							&.on {
-								background: $ikeaBl;
-							}
-						}
-					}
-
 					// products 모든 카테고리 바로가기
 					.hyperBtns {
-						width: calc(100% / 4);
+						width: 208.11px;
 						height: 100%;
 						font: 14.4px/1 $ikeaFontKo;
 						color: $fontColorBl;
 						display: flex;
+						margin-left: 85px;
 						padding: 0px 0vw 0px;
 						justify-content: left;
 						align-items: center;
@@ -371,9 +308,12 @@
 				height: 100%;
 				flex: 2;
 				background: $bgW;
-				font: bold 49px/1 $ikeaFontKo;
-				color: $fontColorBl;
 				margin-bottom: 50px;
+
+				h2 {
+					font: bold 49px/1 $ikeaFontKo;
+					color: $fontColorBl;
+				}
 			}
 
 			.productsSub {
@@ -396,8 +336,6 @@
 					.slideWrap {
 						gap: 20px;
 						display: flex;
-						animation: moveRe 20s linear infinite;
-						animation-delay: 0s;
 						justify-content: center;
 
 						.slideItem {
@@ -424,19 +362,6 @@
 								background: #e9e9e9;
 							}
 						}
-
-						@keyframes moveRe {
-							0% {
-								transform: translate3d(0, 0, 0);
-							}
-							to {
-								transform: translateX(-3000px);
-							}
-						}
-
-						&:hover {
-							animation-play-state: paused;
-						}
 					}
 				}
 				// products 하단 버튼 메뉴들
@@ -448,7 +373,7 @@
 					gap: 0px;
 
 					.arrowBtns {
-						width: calc(100% / 2.5);
+						width: 208.11px;
 						height: 100%;
 						display: flex;
 						text-align: center;
@@ -483,44 +408,18 @@
 						}
 					}
 
-					// products 캐럿셀 원형 버튼
-					.circleBtns {
-						width: calc(100% / 2.5);
-						height: 100%;
-						display: flex;
-						justify-content: center;
-						align-items: center;
-						padding: 0px 0vw 0px;
-						gap: 20px;
-						display: none;
-
-						button {
-							display: none;
-							width: 15px;
-							height: 15px;
-							border-radius: 50%;
-							border: none;
-							background: $carotBtn;
-							cursor: pointer;
-
-							&.on {
-								background: $ikeaBl;
-							}
-						}
-					}
-
 					// products 모든 카테고리 바로가기
 					.hyperBtns {
-						width: calc(100% / 2.5);
+						width: 208.11px;
 						height: 100%;
 						font: 12.6px/1 $ikeaFontKo;
 						color: $fontColorBl;
 						display: flex;
 						padding: 0px 0vw 0px;
-						justify-content: left;
+						justify-content: center;
 						align-items: center;
 						cursor: pointer;
-						margin-left: 35px;
+						margin-left: 25px;
 					}
 				}
 			}
