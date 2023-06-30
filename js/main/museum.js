@@ -28,30 +28,40 @@ fetch('DB/museum.json')
 		const prevBtn = museum.querySelector('.swiper-button-prev');
 		const nextBtn = museum.querySelector('.swiper-button-next');
 
-		const titleLists = [
-			'MÄVINN',
-			'Hej Ingvar',
-			'Our Roots',
-			'Democratic Design',
-			'Us & Our Planet',
-			'Story of IKEA',
-			'Existence Maximum',
-		];
+		const titleLists = ['MÄVINN', 'Hej Ingvar', 'Our Roots', 'Democratic Design', 'Us & Our Planet', 'Story of IKEA', 'Existence Maximum'];
 
 		let currentIdx = 0;
-
+		let clickable = true;
 		//이전 버튼 누르면 이전 목록 뜨게 하기
 		prevBtn.addEventListener('click', () => {
-			currentIdx = (currentIdx - 1 + titleLists.length) % titleLists.length;
-			leftTxt.innerText = titleLists[(currentIdx - 1 + titleLists.length) % titleLists.length];
-			rightTxt.innerText = titleLists[(currentIdx + 2) % titleLists.length];
+			if (clickable) {
+				clickable = false;
+				prevBtn.style.display = 'none';
+				currentIdx = (currentIdx - 1 + titleLists.length) % titleLists.length;
+				leftTxt.innerText = titleLists[(currentIdx - 1 + titleLists.length) % titleLists.length];
+				rightTxt.innerText = titleLists[(currentIdx + 2) % titleLists.length];
+
+				setTimeout(() => {
+					clickable = true;
+					prevBtn.style.display = 'block';
+				}, 500);
+			}
 		});
 
 		//다음 버튼 누르면 다음 목록 뜨게 하기
 		nextBtn.addEventListener('click', () => {
-			currentIdx = (currentIdx + 1) % titleLists.length;
-			leftTxt.innerText = titleLists[(currentIdx - 1 + titleLists.length) % titleLists.length];
-			rightTxt.innerText = titleLists[(currentIdx + 2) % titleLists.length];
+			if (clickable) {
+				clickable = false;
+				nextBtn.style.display = 'none';
+				currentIdx = (currentIdx + 1) % titleLists.length;
+				leftTxt.innerText = titleLists[(currentIdx - 1 + titleLists.length) % titleLists.length];
+				rightTxt.innerText = titleLists[(currentIdx + 2) % titleLists.length];
+
+				setTimeout(() => {
+					clickable = true;
+					nextBtn.style.display = 'block';
+				}, 500);
+			}
 		});
 
 		// Swiper: Slider
