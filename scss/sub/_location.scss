@@ -1,6 +1,6 @@
 .location {
 	width: 100vw;
-	height: 100vh;
+	min-height: calc(100vh - 400px);
 
 	.subVisual {
 		width: 100%;
@@ -140,13 +140,7 @@
 
 					.tit {
 						font: bold 51px/1 $ikeaFontKo;
-						background: repeating-linear-gradient(
-							45deg,
-							#3500ea,
-							#3500ea 0.5px,
-							#e7e8fc 0.5px,
-							#e7e8fc 1.2px
-						);
+						background: repeating-linear-gradient(45deg, #3500ea, #3500ea 0.5px, #e7e8fc 0.5px, #e7e8fc 1.2px);
 						-webkit-background-clip: text;
 						-webkit-text-fill-color: transparent;
 						background-clip: text;
@@ -242,13 +236,7 @@
 
 					.tit {
 						font: bold 51px/1 $ikeaFontKo;
-						background: repeating-linear-gradient(
-							45deg,
-							#3500ea,
-							#3500ea 0.5px,
-							#e7e8fc 0.5px,
-							#e7e8fc 1.2px
-						);
+						background: repeating-linear-gradient(45deg, #3500ea, #3500ea 0.5px, #e7e8fc 0.5px, #e7e8fc 1.2px);
 						-webkit-background-clip: text;
 						-webkit-text-fill-color: transparent;
 						background-clip: text;
@@ -341,13 +329,7 @@
 
 					.tit {
 						font: bold 51px/1 $ikeaFontKo;
-						background: repeating-linear-gradient(
-							45deg,
-							#3500ea,
-							#3500ea 0.5px,
-							#e7e8fc 0.5px,
-							#e7e8fc 1.2px
-						);
+						background: repeating-linear-gradient(45deg, #3500ea, #3500ea 0.5px, #e7e8fc 0.5px, #e7e8fc 1.2px);
 						-webkit-background-clip: text;
 						-webkit-text-fill-color: transparent;
 						background-clip: text;
@@ -439,13 +421,7 @@
 
 					.tit {
 						font: bold 51px/1 $ikeaFontKo;
-						background: repeating-linear-gradient(
-							45deg,
-							#3500ea,
-							#3500ea 0.5px,
-							#e7e8fc 0.5px,
-							#e7e8fc 1.2px
-						);
+						background: repeating-linear-gradient(45deg, #3500ea, #3500ea 0.5px, #e7e8fc 0.5px, #e7e8fc 1.2px);
 						-webkit-background-clip: text;
 						-webkit-text-fill-color: transparent;
 						background-clip: text;

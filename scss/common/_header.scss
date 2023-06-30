@@ -244,13 +244,9 @@ header {
 
 	.menu {
 		flex: 1.5;
-		font: 35px/1 $ikeaFontKo;
+		font: 35px/110px $ikeaFontKo;
 		color: $grey;
 		cursor: pointer;
-
-		.fa-bars-staggered {
-			display: block;
-		}
 
 		.fa-xmark {
 			display: none;
@@ -428,42 +424,18 @@ header {
 		}
 
 		.menu {
-			flex: 1.5;
-			font: 35px/1 $ikeaFontKo;
-			color: $grey;
-			cursor: pointer;
+			font: 35px/110px $ikeaFontKo;
 
 			.fa-bars-staggered {
-				display: block;
 				margin-left: 50px;
-			}
-
-			.fa-xmark {
-				display: none;
-				animation: roateCloseBtn 0.5s ease-in;
-				animation-fill-mode: backwards;
-				animation-duration: 0.5s;
-				margin-left: 50px;
-
-				@keyframes roateCloseBtn {
-					from {
-						transform: rotate(0deg);
-					}
-					to {
-						transform: rotate(720deg);
-					}
-				}
 			}
 		}
 
 		.logo {
-			flex: 5;
-			cursor: pointer;
 			margin-left: 10px;
 
 			p {
-				font: 35px/1 $ikeaFontKo;
-				color: $grey;
+				font: bold 35px/110px $ikeaFontKo;
 			}
 		}
 	}
@@ -611,42 +583,14 @@ header {
 		}
 
 		.menu {
-			flex: 1.5;
-			font: 30px/1 $ikeaFontKo;
-			color: $grey;
-			cursor: pointer;
-
-			.fa-bars-staggered {
-				display: block;
-				margin-left: 50px;
-			}
-
-			.fa-xmark {
-				display: none;
-				animation: roateCloseBtn 0.5s ease-in;
-				animation-fill-mode: backwards;
-				animation-duration: 0.5s;
-				margin-left: 50px;
-
-				@keyframes roateCloseBtn {
-					from {
-						transform: rotate(0deg);
-					}
-					to {
-						transform: rotate(720deg);
-					}
-				}
-			}
+			font: 30px/95px $ikeaFontKo;
 		}
 
 		.logo {
-			flex: 5;
-			cursor: pointer;
 			padding-left: 20px;
 
 			p {
-				font: 30px/1 $ikeaFontKo;
-				color: $grey;
+				font: bold 30px/95px $ikeaFontKo;
 				margin-left: 15px;
 			}
 		}

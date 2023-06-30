@@ -1,7 +1,7 @@
 #visual {
 	width: 100vw;
 	height: 100vh;
-	background-image: url(../img/visual1.png);
+	background-image: url(../img/news10.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -16,7 +16,7 @@
 
 		.bg {
 			height: 100%;
-			border: 1px solid rgba(#3b3b3b, 0.5);
+			border: 1px solid rgba(#9f9f9f, 0.5);
 			color: yellow;
 
 			&:nth-of-type(2) {
@@ -65,7 +65,7 @@
 				h1 {
 					width: 100%;
 					font: 30px/1 $ikeaFontKo;
-					color: #cdcdcd;
+					color: $fontColorGrT;
 					text-align: justify;
 					word-break: break-all;
 				}
@@ -148,7 +148,7 @@
 			.bg {
 				// Main pointBox1 (none color box)
 				&:nth-of-type(8) {
-					padding: 10px 3vw 0px;
+					padding: 15px 3vw 170px;
 				}
 
 				&:nth-of-type(9) {
@@ -162,26 +162,16 @@
 
 					h1 {
 						display: none;
-						// width: 420px;
-						// font: 30px/1 $ikeaFont;
-						// color: $grey;
-						// text-align: justify;
-						// word-break: break-all;
 					}
 
 					p {
 						display: none;
-						// font: 18px/1 $ikeaFont;
-						// color: $fontColorGr;
-						// text-align: justify;
-						// word-break: break-all;
-						// margin-bottom: 20px;
 					}
 				}
 
 				// Main pointBox2 (yellow box)
 				&:nth-of-type(13) {
-					padding: 170px 3vw 10px;
+					padding: 170px 3vw 15px;
 				}
 			}
 		}

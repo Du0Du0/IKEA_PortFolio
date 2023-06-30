@@ -12,8 +12,9 @@ $bgW: #f9f9f9;
 $fontColorW: #eee;
 $ikeaFont: 'Work Sans';
 $fontColorBl: #333;
-$fontColorGr: #969696;
+$fontColorGr: #b5b5b5;
 $fontColorGrC: #10101099;
+$fontColorGrT: #cacaca;
 
 //members
 $tableBg: #f4f5f6;
@@ -28,8 +29,10 @@ $videoBgBl: #090909;
 //signUp
 $errRed: #d80000;
 
-$tablet: 1023px;
-$mobile: 639px;
+$tablet: 1199px;
+$mobile: 759px;
+// $tablet: 1023px;
+// $mobile: 639px;
 
 body {
 	overflow-x: hidden;
