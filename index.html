@@ -17,6 +17,8 @@
   <script defer type="module" src="js/main/museum.js"></script>
   <script defer type="module" src="js/main/notice.js"></script>
   <script defer type="module" src="js/sub/location.js"></script>
+  <script defer type="module" src="js/common/topButton.js"></script>
+  <script defer type="module" src="js/common/scroll.js"></script>
   <script src="https://kit.fontawesome.com/1178528ead.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="#">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css'>
@@ -119,7 +121,7 @@
   <!-- main visual end-->
 
   <!-- products start -->
-  <section id="products">
+  <section id="products" class="myScroll">
     <div class="productsContainer">
       <!-- products title (right side)-->
       <div class="productsTit">
@@ -159,7 +161,7 @@
   <!-- products end -->
 
   <!-- vids start -->
-  <section id="vids">
+  <section id="vids" class="myScroll">
     <div class="vidsContainer">
       <div class="vidsTextWrap">
         <!-- video page title -->
@@ -188,7 +190,7 @@
   <!-- vids end -->
 
   <!-- smartHome start -->
-  <section id="smartHome">
+  <section id="smartHome" class="myScroll">
     <div class="container">
       <!-- Slider main container -->
       <div class="swiper-container first">
@@ -213,7 +215,7 @@
   <!-- smartHome end -->
 
   <!-- promotion start -->
-  <section id="promotion">
+  <section id="promotion" class="myScroll">
     <div class="promotionContainer">
       <img class="circleText" src="img/textCircle2.png" alt="">
       <!-- promotion left side -->
@@ -315,7 +317,7 @@
   <!-- promotion end -->
 
   <!-- museum start -->
-  <section id="museum">
+  <section id="museum" class="myScroll">
     <!-- left background -->
     <div class="bgLeft">
       <!-- left titleList -->
@@ -341,7 +343,7 @@
   <!-- museum  end -->
 
   <!-- notice start -->
-  <section id="notice">
+  <section id="notice" class="myScroll">
     <div class="noticeContainer">
       <!-- left part -->
       <div class="noticeWrap">
@@ -392,6 +394,10 @@
   </section>
   <!-- notice end -->
 
+
+  <!-- go Top Button -->
+  <button class="goTopBtn w"> Go Top </button>
+
   <!-- footer start -->
   <footer id="footer_W">
     <img src="https://Du0Du0.github.io/IKEA-Redesign-Web/img/footer1.png" alt="">
@@ -425,6 +431,16 @@
     </div>
   </footer>
   <!-- footer end -->
+
+  <!-- side page indicator -->
+  <ul id="scroll_navi" class="w">
+    <li class="on">Menu</li>
+    <li>video</li>
+    <li>Living</li>
+    <li>Event</li>
+    <li>Exhibit</li>
+    <li>Notice</li>
+  </ul>
 </body>
 
 </html>

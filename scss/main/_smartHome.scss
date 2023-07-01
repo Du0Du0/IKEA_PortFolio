@@ -99,7 +99,7 @@
 							}
 							100% {
 								color: $fontColorW;
-								transform: translateX(-120px);
+								transform: translateX(-110px);
 							}
 						}
 					}
@@ -115,7 +115,7 @@
 							}
 							100% {
 								color: $fontColorW;
-								transform: translateX(120px);
+								transform: translateX(110px);
 							}
 						}
 					}
@@ -126,7 +126,7 @@
 		.swiper-button-prev {
 			position: absolute;
 			top: 50%;
-			left: 50px;
+			left: 120px;
 			width: 45px;
 			height: 45px;
 			transform: translateY(-50%);
@@ -136,7 +136,7 @@
 		.swiper-button-next {
 			position: absolute;
 			top: 50%;
-			right: 50px;
+			right: 120px;
 			width: 45px;
 			height: 45px;
 			transform: translateY(-50%);

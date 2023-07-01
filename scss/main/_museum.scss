@@ -17,7 +17,7 @@
 		.leftTxt {
 			height: 100%;
 			padding: 10px;
-			margin-left: 5vw;
+			margin-left: 9vw;
 			position: relative;
 			top: 0%;
 			transform: translateY(50%);
@@ -48,7 +48,7 @@
 			transform: translateY(50%);
 			font: 40px/1 $ikeaFontKo;
 			-webkit-text-stroke: 1px $fontColorW;
-			margin-right: 5vw;
+			margin-right: 9vw;
 			padding: 10px;
 			text-orientation: sideways;
 			transform: rotate(180deg);
@@ -134,7 +134,7 @@
 		.swiper-button-prev {
 			position: absolute;
 			top: 75%;
-			left: 20px;
+			left: 120px;
 			width: 26px;
 			height: 26px;
 			transform: translateY(-200%);
@@ -144,7 +144,7 @@
 		.swiper-button-next {
 			position: absolute;
 			top: 75%;
-			right: 20px;
+			right: 120px;
 			width: 26px;
 			height: 26px;
 			transform: translateY(-200%);

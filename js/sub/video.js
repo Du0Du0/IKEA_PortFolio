@@ -1,7 +1,6 @@
 const videoSection = document.querySelector('.videoSub');
 const container = videoSection.querySelector('.container');
 const goButton = videoSection.querySelector('.btnContainer button');
-const goTopBtn = document.querySelector('.goTopBtn');
 const btns = document.querySelectorAll('#scroll_navi li');
 const btnWrap = videoSection.querySelector('.btnWrap');
 const pauseBtn = videoSection.querySelector('.pauseBtn');
@@ -28,16 +27,12 @@ fetch(url)
 			tags += `
   
           <div class="viedoBox1" >
-          <div class="videoCircle" style = "background-image : url(${
-						json.items[idx].snippet.thumbnails.maxres.url
-					})" data-video-id = "${
+          <div class="videoCircle" style = "background-image : url(${json.items[idx].snippet.thumbnails.maxres.url})" data-video-id = "${
 				item.snippet.resourceId.videoId
 			}" data-cursor="link" data-name="Show Video">
           </div>
           <div class="textBox">
-          <span class="listTitle">${
-						tit.length > 4 ? tit.split(' ').splice(0, 4).join(' ') : tit
-					}</span>
+          <span class="listTitle">${tit.length > 4 ? tit.split(' ').splice(0, 4).join(' ') : tit}</span>
             <p>${item.snippet.publishedAt.substr(0, 10)}</p>
           </div>
       </div>
@@ -51,10 +46,7 @@ fetch(url)
 		// 커스텀 마우스 커서
 		const cursor = document.querySelector('.cursor');
 		document.addEventListener('mousemove', (e) => {
-			cursor.setAttribute(
-				'style',
-				'top: ' + (e.pageY - 60) + 'px; left: ' + (e.pageX - 60) + 'px;'
-			);
+			cursor.setAttribute('style', 'top: ' + (e.pageY - 60) + 'px; left: ' + (e.pageX - 60) + 'px;');
 		});
 
 		document.addEventListener('click', (e) => {
@@ -141,11 +133,6 @@ fetch(url)
 				});
 			});
 
-			// Go Top Button
-			goTopBtn.addEventListener('click', () => {
-				window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-			});
-
 			goTopBtn.addEventListener('mouseenter', () => {
 				cursor.classList.add('hoverPageIndicator');
 			});
@@ -190,12 +177,11 @@ videoBtnContainer.addEventListener('click', () => {
 	count += 1;
 
 	if (count % 2 !== 0) {
-	videoOn(pauseBtn, playBtn, vidSubTit);
+		videoOn(pauseBtn, playBtn, vidSubTit);
 	} else {
-	videoOff(pauseBtn, playBtn, vidSubTit);
+		videoOff(pauseBtn, playBtn, vidSubTit);
 	}
 });
-
 
 //imgBox 동영상 재생 멈춤 기능
 const pauseBtn2 = videoSection.querySelector('.pauseBtn2');
@@ -215,9 +201,8 @@ videoBtnContainer2.addEventListener('click', () => {
 	}
 });
 
-
 //동영상 버튼 멈춤 함수
-function videoOn (el1, el2, el3) {
+function videoOn(el1, el2, el3) {
 	el1.style.display = 'none';
 	el2.style.display = 'block';
 	el3.pause();
@@ -230,19 +215,12 @@ function videoOff(el1, el2, el3) {
 	el3.play();
 }
 
-
 //imgBox 클릭하면 순서보여주는 기능
 const result = videoSection.querySelector('#result');
 const imgBox1 = videoSection.querySelector('.imgBox1');
 const changeImg = videoSection.querySelector('.changeImg');
 
-const imgBoxGroups = [
-	'imgBoxGroup1.png', 
-	'imgBoxGroup2.png', 
-	'imgBoxGroup3.png', 
-	'imgBoxGroup4.png', 
-	'imgBoxGroup5.png', 
-];
+const imgBoxGroups = ['imgBoxGroup1.png', 'imgBoxGroup2.png', 'imgBoxGroup3.png', 'imgBoxGroup4.png', 'imgBoxGroup5.png'];
 
 let currentidx = -1;
 
@@ -259,8 +237,7 @@ imgBox1.addEventListener('click', () => {
 
 //vids pop 찹업창 띄우기
 document.body.addEventListener('click', (e) => {
-	if (e.target.className === 'videoCircle')
-		createPop(e.target.closest('.videoCircle').getAttribute('data-video-id'));
+	if (e.target.className === 'videoCircle') createPop(e.target.closest('.videoCircle').getAttribute('data-video-id'));
 	if (e.target.className === 'close') removePop();
 });
 

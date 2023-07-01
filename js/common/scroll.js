@@ -38,6 +38,13 @@ window.addEventListener('scroll', () => {
 		//for (const el of secs) el.classList.remove('on');
 		if (!secs[4].classList.contains('on')) secs[4].classList.add('on');
 	}
+
+	if (scroll >= secs[5].offsetTop + baseline) {
+		for (const el of btns) el.classList.remove('on');
+		btns[5].classList.add('on');
+		//for (const el of secs) el.classList.remove('on');
+		if (!secs[5].classList.contains('on')) secs[5].classList.add('on');
+	}
 });
 
 btns.forEach((btn, idx) => {

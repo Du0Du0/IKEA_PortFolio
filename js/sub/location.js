@@ -3,6 +3,7 @@ const btns = document.querySelectorAll('.rightContainer .list');
 const tits = document.querySelectorAll('.tit');
 const trafficBtn = document.querySelector('.trafficBtn');
 const icon = document.querySelector('.svgBox path');
+const mapPrintBtn = document.querySelector('.mapPrintBtn');
 const icon_len = 2730;
 const baseline = -window.innerHeight / 2;
 
@@ -93,29 +94,30 @@ markerInfo.forEach((info, idx) => {
 	let hiddenRightWrap = document.querySelector('.rightContainer');
 	let hiddenContact = document.querySelector('.contactContainer');
 
-	window.onbeforeprint = function () {
-		hiddenVisual.style.display = 'none';
-		hiddenHeader.style.display = 'none';
-		hiddenFooter.style.display = 'none';
-		hiddenStoreList.style.display = 'none';
-		hiddenRightWrap.style.display = 'none';
-		hiddenContact.style.display = 'none';
+	mapPrintBtn.addEventListener('click', () => {
+		window.onbeforeprint = function () {
+			hiddenVisual.style.display = 'none';
+			hiddenHeader.style.display = 'none';
+			hiddenFooter.style.display = 'none';
+			hiddenStoreList.style.display = 'none';
+			hiddenRightWrap.style.display = 'none';
+			hiddenContact.style.display = 'none';
 
-		document.body = document.querySelector('.location');
-	};
+			document.body = document.querySelector('.location');
+		};
 
-	window.onafterprint = function () {
-		hiddenVisual.style.display = 'block';
-		hiddenHeader.style.display = 'block';
-		hiddenFooter.style.display = 'block';
-		hiddenStoreList.style.display = 'block';
-		hiddenRightWrap.style.display = 'block';
-		hiddenContact.style.display = 'block';
+		window.onafterprint = function () {
+			hiddenVisual.style.display = 'block';
+			hiddenHeader.style.display = 'block';
+			hiddenFooter.style.display = 'block';
+			hiddenStoreList.style.display = 'block';
+			hiddenRightWrap.style.display = 'block';
+			hiddenContact.style.display = 'block';
 
-		document.body = initBody;
-	};
-
-	window.print();
+			document.body = initBody;
+		};
+		window.print();
+	});
 
 	//지점 버튼을 클릭시
 	info.button.addEventListener('click', () => {
