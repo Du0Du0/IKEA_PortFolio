@@ -40,8 +40,8 @@ fetch('DB/smartHome.json')
 		swiperSlides.forEach((swiperSlide, idx) => {
 			swiperSlide.addEventListener('mouseenter', (e) => {
 				e.preventDefault();
-				smartBgs[idx].classList.add('on'); 
-				swiperSlides[idx].classList.add('on'); 
+				smartBgs[idx].classList.add('on');
+				swiperSlides[idx].classList.add('on');
 
 				if (idx % 2 === 0) {
 					animations[idx].classList.add('movingTextOdd');
@@ -52,14 +52,7 @@ fetch('DB/smartHome.json')
 		});
 
 		//일정시간마다 배경이 바뀌는 스크립트
-		const imgArray = [
-			'smartHomeBg1.png',
-			'smartHomeBg2.png',
-			'smartHomeBg3.png',
-			'smartHomeBg4.png',
-			'smartHomeBg5.png',
-			'smartHomeBg6.png',
-		];
+		const imgArray = ['smartHomeBg1.png', 'smartHomeBg2.png', 'smartHomeBg3.png', 'smartHomeBg4.png', 'smartHomeBg5.png', 'smartHomeBg6.png'];
 
 		showImage();
 
@@ -84,7 +77,6 @@ fetch('DB/smartHome.json')
 			loop: true,
 			nextButton: '.swiper-button-next',
 			prevButton: '.swiper-button-prev',
-			slidesPerView: 3,
 			paginationClickable: true,
 			lazy: {
 				loadPrevNext: true, // 이전, 다음 이미지는 미리 로딩

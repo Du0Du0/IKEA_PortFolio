@@ -19,6 +19,7 @@
   <script defer type="module" src="js/sub/location.js"></script>
   <script defer type="module" src="js/common/topButton.js"></script>
   <script defer type="module" src="js/common/scroll.js"></script>
+  <script defer type="module" src="js/common/cookiePop.js"></script>
   <script src="https://kit.fontawesome.com/1178528ead.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="#">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css'>
@@ -222,7 +223,8 @@
       <div class="promotionWrap">
         <div class="top">
           <!-- ikea youtube embed video -->
-          <iframe src="https://www.youtube-nocookie.com/embed/_5SyZ0TXPH0" title="YouTube video player" frameborder="0"
+          <iframe src="https://www.youtube-nocookie.com/embed/_5SyZ0TXPH0?color=white&rel=0&modestbranding=1"
+            title="YouTube video player" frameborder="0" showInfo="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen playsinline></iframe>
         </div>
@@ -441,6 +443,43 @@
     <li>Exhibit</li>
     <li>Notice</li>
   </ul>
+
+  <!-- cookie popup start -->
+  <aside id="pop">
+    <div class="content">
+      <!-- cookie pop title top -->
+      <div class="top">
+        <p class="wrap">
+          <input type="checkbox" id="ck">
+          <label for="ck">7일간 보지 않기</label>
+          <a href="#" class="close"><i class="fa-solid fa-xmark"></i> 팝업닫기</a>
+        </p>
+      </div>
+
+      <div class="middle">
+        <div class="leftWrap">
+          <div class="popLeft">
+            <img src="https://Du0Du0.github.io/IKEA-Redesign-Web/img/cookiePop1.png">
+          </div>
+
+          <div class="popLeft">
+            <img src="https://Du0Du0.github.io/IKEA-Redesign-Web/img/cookiePop3.png">
+          </div>
+          <div class="popLeft">
+            <img src="https://Du0Du0.github.io/IKEA-Redesign-Web/img/cookiePop2.png">
+          </div>
+        </div>
+        <div class="rightWrap">
+          <div class="popRight">
+            <img src="https://Du0Du0.github.io/IKEA-Redesign-Web/img/cookiePop4.png">
+          </div>
+          <div class="popRight"><img src="https://Du0Du0.github.io/IKEA-Redesign-Web/img/cookiePop5.png"></div>
+          <div class="popRight"><img src="https://Du0Du0.github.io/IKEA-Redesign-Web/img/cookiePop6.png"></div>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <!-- cookie popup end -->
 </body>
 
 </html>

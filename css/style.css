@@ -1233,6 +1233,35 @@ a {
   background: #1b2539;
 }
 
+#banner {
+  width: 100%;
+  height: 40vh;
+  background: #111;
+  padding: 0px 10vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+  background-image: url(../img/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#banner h1 {
+  width: 100%;
+  text-align: center;
+  font: bold 24px/1 "arial";
+  color: #fff;
+}
+#banner p {
+  width: 100%;
+  text-align: center;
+  font: 14px/1.2 "arial";
+  color: #ccc;
+}
+
 #visual {
   width: 100vw;
   height: 100vh;
@@ -2375,6 +2404,7 @@ a {
     background-size: cover;
     padding: 80px 45px;
     position: relative;
+    cursor: pointer;
   }
   #smartHome .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(even) {
     top: 0vw;
@@ -2386,6 +2416,7 @@ a {
     margin-bottom: 130px;
     z-index: 1;
     text-align: left;
+    cursor: pointer;
   }
   #smartHome .swiper-container .swiper-wrapper .swiper-slide h2 {
     position: relative;
@@ -2394,6 +2425,7 @@ a {
     z-index: 1;
     margin-bottom: 100px;
     text-align: left;
+    cursor: pointer;
   }
   #smartHome .swiper-container .swiper-wrapper .swiper-slide .animation {
     font: 140px/1 "Work Sans";
@@ -3479,6 +3511,328 @@ a {
   #notice .noticeContainer .noticeWrap:nth-of-type(2) .contentWrap .content p {
     font: 12.6px/1.5 "Noto Sans KR";
     color: #171717;
+  }
+}
+#pop {
+  padding: 100px 15vw 100px;
+  width: 100vw;
+  height: 100%;
+  background: rgba(40, 40, 40, 0.7);
+  position: fixed;
+  margin: 0px auto;
+  border: 1px solid #777;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  display: none;
+}
+#pop .content {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+#pop .content .top {
+  width: 100%;
+  height: 35px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+#pop .content .top .wrap {
+  display: flex;
+  gap: 50px;
+}
+#pop .content .top .wrap label {
+  font: 16.2px/1 "Noto Sans KR";
+  color: #eee;
+  margin-left: -45px;
+}
+#pop .content .top .wrap .close {
+  font: 16.2px/1 "Noto Sans KR";
+  color: #eee;
+}
+#pop .content .top .wrap .close i {
+  margin-right: 5px;
+}
+#pop .middle {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+  overflow-x: hidden;
+  margin-top: 15px;
+}
+#pop .middle::-webkit-scrollbar {
+  width: 6px;
+}
+#pop .middle::-webkit-scrollbar-thumb {
+  background-color: #171717;
+}
+#pop .middle::-webkit-scrollbar-track {
+  background-color: rgba(240, 240, 240, 0.5);
+}
+#pop .middle .leftWrap {
+  width: 50%;
+  height: 150%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+#pop .middle .leftWrap .popLeft {
+  width: 100%;
+  height: 33.3333333333%;
+  background: rgb(254, 254, 254);
+  margin-bottom: 30px;
+  border-radius: 8px;
+  display: flex;
+  cursor: pointer;
+}
+#pop .middle .leftWrap .popLeft img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+#pop .middle .rightWrap {
+  width: 33.3333333333%;
+  height: 150%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+#pop .middle .rightWrap .popRight {
+  width: 100%;
+  height: 33.3333333333%;
+  background: rgb(254, 254, 254);
+  margin-bottom: 30px;
+  border-radius: 8px;
+  display: flex;
+  cursor: pointer;
+}
+#pop .middle .rightWrap .popRight img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 1023px) {
+  #pop {
+    padding: 100px 15vw 100px;
+    width: 100vw;
+    height: 100%;
+    background: rgba(40, 40, 40, 0.7);
+    position: fixed;
+    margin: 0px auto;
+    border: 1px solid #777;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    display: none;
+  }
+  #pop .content {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  #pop .content .top {
+    width: 100%;
+    height: 35px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  #pop .content .top .wrap {
+    display: flex;
+    gap: 50px;
+  }
+  #pop .content .top .wrap label {
+    font: 16.2px/1 "Noto Sans KR";
+    color: #eee;
+    margin-left: -45px;
+  }
+  #pop .content .top .wrap .close {
+    font: 16.2px/1 "Noto Sans KR";
+    color: #eee;
+  }
+  #pop .content .top .wrap .close i {
+    margin-right: 5px;
+  }
+  #pop .middle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-top: 15px;
+  }
+  #pop .middle::-webkit-scrollbar {
+    width: 6px;
+  }
+  #pop .middle::-webkit-scrollbar-thumb {
+    background-color: #171717;
+  }
+  #pop .middle::-webkit-scrollbar-track {
+    background-color: rgba(240, 240, 240, 0.5);
+  }
+  #pop .middle .leftWrap {
+    width: 100%;
+    height: 150%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px 0px 30px;
+  }
+  #pop .middle .leftWrap .popLeft {
+    width: 100%;
+    height: 33.3333333333%;
+    background: rgb(254, 254, 254);
+    margin-bottom: 30px;
+    border-radius: 8px;
+    display: flex;
+    cursor: pointer;
+  }
+  #pop .middle .leftWrap .popLeft img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+  }
+  #pop .middle .rightWrap {
+    width: 100%;
+    height: 150%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+  }
+  #pop .middle .rightWrap .popRight {
+    width: 100%;
+    height: 33.3333333333%;
+    background: rgb(254, 254, 254);
+    margin-bottom: 30px;
+    border-radius: 8px;
+    display: flex;
+    cursor: pointer;
+  }
+  #pop .middle .rightWrap .popRight img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+  }
+}
+@media screen and (max-width: 639px) {
+  #pop {
+    padding: 100px 15vw 100px;
+    width: 100vw;
+    height: 100%;
+    background: rgba(40, 40, 40, 0.7);
+    position: fixed;
+    margin: 0px auto;
+    border: 1px solid #777;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    display: none;
+  }
+  #pop .content {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  #pop .content .top {
+    width: 100%;
+    height: 35px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  #pop .content .top .wrap {
+    display: flex;
+    gap: 50px;
+  }
+  #pop .content .top .wrap label {
+    font: 16.2px/1 "Noto Sans KR";
+    color: #eee;
+    margin-left: -45px;
+  }
+  #pop .content .top .wrap .close {
+    font: 16.2px/1 "Noto Sans KR";
+    color: #eee;
+  }
+  #pop .content .top .wrap .close i {
+    margin-right: 5px;
+  }
+  #pop .middle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-top: 15px;
+  }
+  #pop .middle::-webkit-scrollbar {
+    width: 6px;
+  }
+  #pop .middle::-webkit-scrollbar-thumb {
+    background-color: #171717;
+  }
+  #pop .middle::-webkit-scrollbar-track {
+    background-color: rgba(240, 240, 240, 0.5);
+  }
+  #pop .middle .leftWrap {
+    width: 100%;
+    height: 150%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px 0px 30px;
+  }
+  #pop .middle .leftWrap .popLeft {
+    width: 100%;
+    height: 33.3333333333%;
+    background: rgb(254, 254, 254);
+    margin-bottom: 30px;
+    border-radius: 8px;
+    display: flex;
+    cursor: pointer;
+  }
+  #pop .middle .leftWrap .popLeft img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+  }
+  #pop .middle .rightWrap {
+    width: 100%;
+    height: 150%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+  }
+  #pop .middle .rightWrap .popRight {
+    width: 100%;
+    height: 33.3333333333%;
+    background: rgb(254, 254, 254);
+    margin-bottom: 30px;
+    border-radius: 8px;
+    display: flex;
+    cursor: pointer;
+  }
+  #pop .middle .rightWrap .popRight img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
   }
 }
 .html,
