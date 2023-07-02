@@ -19,9 +19,7 @@ cookieData.indexOf('today=done') < 0 ? ((pop.style.display = 'block'), disable()
 
 function disable() {
 	document.body.style.overflowY = 'scroll';
-
 	const container = document.querySelector('.bodyContainer');
-
 	container.style.position = 'fixed';
 	container.style.top = `-${window.scrollY}px`;
 	container.style.left = '0';

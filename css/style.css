@@ -1317,8 +1317,8 @@ a {
   padding: 60px 0vw 0px;
 }
 #visual .visualWrap .bg:nth-of-type(12) h1 {
-  width: 100%;
-  font: 30px/1 "Noto Sans KR";
+  width: 60%;
+  font: 26px/1 "Noto Sans KR";
   color: #cacaca;
   text-align: justify;
   word-break: break-all;
@@ -1363,8 +1363,8 @@ a {
     padding: 170px 2vw 15px;
   }
   #visual .visualWrap .bg:nth-of-type(12) h1 {
-    width: 90%;
-    font: 28px/1 "Noto Sans KR";
+    width: 60%;
+    font: 24px/1 "Noto Sans KR";
   }
   #visual .visualWrap .bg:nth-of-type(13) {
     padding: 170px 2vw 15px;
@@ -1408,6 +1408,10 @@ a {
   justify-content: center;
   padding: 150px 10vw 150px;
   margin-top: 0px;
+  background: url("../img/productsBg.png") fixed;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 }
 #products .productsContainer {
   width: 100%;
@@ -1424,6 +1428,28 @@ a {
 #products .productsContainer .productsTit h2 {
   font: bold 70px/1 "Noto Sans KR";
   color: #333;
+  animation-duration: 0.5s;
+  animation: slide 1s ease-out;
+}
+@keyframes slide {
+  from {
+    margin-left: -400px;
+    opacity: 0;
+  }
+  to {
+    left: 400px;
+    opacity: 1;
+  }
+}
+@keyframes slideBack {
+  from {
+    left: 400px;
+    opacity: 1;
+  }
+  to {
+    margin-left: -400px;
+    opacity: 0;
+  }
 }
 #products .productsContainer .productsSub {
   width: 74%;
@@ -1452,7 +1478,8 @@ a {
 #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem {
   width: 214px;
   height: 100%;
-  background: #f0f0f0;
+  background: #f7f7f7;
+  border: 1px solid rgba(229, 229, 229, 0.7);
   cursor: pointer;
 }
 #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem .productsImg {
@@ -1470,7 +1497,7 @@ a {
   margin-top: auto;
 }
 #products .productsContainer .productsSub .slideContainer .slideWrap .slideItem:hover {
-  background: #e9e9e9;
+  background: #fff;
 }
 #products .productsContainer .productsSub .btnWrap {
   width: 100%;
@@ -3545,10 +3572,19 @@ a {
   font: 16.2px/1 "Noto Sans KR";
   color: #eee;
   margin-left: -45px;
+  word-spacing: 0.5px;
+  cursor: pointer;
+}
+#pop .content .top .wrap input {
+  accent-color: rgb(250, 140, 195);
+  cursor: pointer;
+  transform: translateY(2px);
 }
 #pop .content .top .wrap .close {
   font: 16.2px/1 "Noto Sans KR";
   color: #eee;
+  word-spacing: 0.5px;
+  cursor: pointer;
 }
 #pop .content .top .wrap .close i {
   margin-right: 5px;
@@ -3573,7 +3609,7 @@ a {
 }
 #pop .middle .leftWrap {
   width: 50%;
-  height: 150%;
+  height: 100%;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -3581,7 +3617,7 @@ a {
 }
 #pop .middle .leftWrap .popLeft {
   width: 100%;
-  height: 33.3333333333%;
+  height: 40%;
   background: rgb(254, 254, 254);
   margin-bottom: 30px;
   border-radius: 8px;
@@ -3596,8 +3632,8 @@ a {
   border-radius: 8px;
 }
 #pop .middle .rightWrap {
-  width: 33.3333333333%;
-  height: 150%;
+  width: 50%;
+  height: 100%;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -3605,7 +3641,7 @@ a {
 }
 #pop .middle .rightWrap .popRight {
   width: 100%;
-  height: 33.3333333333%;
+  height: 40%;
   background: rgb(254, 254, 254);
   margin-bottom: 30px;
   border-radius: 8px;

@@ -23,9 +23,6 @@
 				grid-column: span 3;
 			}
 
-			&:nth-of-type(5) {
-			}
-
 			&:nth-of-type(7) {
 				grid-column: span 3;
 			}
@@ -63,8 +60,8 @@
 				padding: 60px 0vw 0px;
 
 				h1 {
-					width: 100%;
-					font: 30px/1 $ikeaFontKo;
+					width: 60%;
+					font: 26px/1 $ikeaFontKo;
 					color: $fontColorGrT;
 					text-align: justify;
 					word-break: break-all;
@@ -123,8 +120,8 @@
 
 				&:nth-of-type(12) {
 					h1 {
-						width: 90%;
-						font: 28px/1 $ikeaFontKo;
+						width: 60%;
+						font: 24px/1 $ikeaFontKo;
 					}
 				}
 

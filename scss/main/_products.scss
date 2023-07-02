@@ -7,6 +7,10 @@
 	justify-content: center;
 	padding: 150px 10vw 150px;
 	margin-top: 0px;
+	background: url('../img/productsBg.png') fixed;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
 
 	.productsContainer {
 		width: 100%;
@@ -23,6 +27,30 @@
 			h2 {
 				font: bold 70px/1 $ikeaFontKo;
 				color: $fontColorBl;
+				animation-duration: 0.5s;
+				animation: slide 1s ease-out;
+
+				@keyframes slide {
+					from {
+						margin-left: -400px;
+						opacity: 0;
+					}
+					to {
+						left: 400px;
+						opacity: 1;
+					}
+				}
+
+				@keyframes slideBack {
+					from {
+						left: 400px;
+						opacity: 1;
+					}
+					to {
+						margin-left: -400px;
+						opacity: 0;
+					}
+				}
 			}
 		}
 
@@ -54,7 +82,8 @@
 					.slideItem {
 						width: 214px;
 						height: 100%;
-						background: $boxGrey;
+						background: #f7f7f7;
+						border: 1px solid rgba(229, 229, 229, 0.7);
 						cursor: pointer;
 
 						.productsImg {
@@ -73,7 +102,7 @@
 						}
 
 						&:hover {
-							background: #e9e9e9;
+							background: #fff;
 						}
 					}
 				}
