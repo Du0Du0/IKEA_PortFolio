@@ -8,6 +8,7 @@
 	border: 1px solid #777;
 	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 	display: none;
+	z-index: 10000;
 
 	.content {
 		width: 100%;

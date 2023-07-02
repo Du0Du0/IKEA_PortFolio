@@ -15,7 +15,27 @@ const btnClose = pop.querySelector('.close');
 
 //브라우저 로딩시 쿠기유무에 따라 팝업 보임, 숨김 처리
 const cookieData = document.cookie;
-cookieData.indexOf('today=done') < 0 ? ((pop.style.display = 'block'), (document.body.style.overflowY = 'hidden')) : (pop.style.display = 'none');
+cookieData.indexOf('today=done') < 0 ? ((pop.style.display = 'block'), disable()) : (pop.style.display = 'none');
+
+function disable() {
+	document.body.style.overflowY = 'scroll';
+
+	const container = document.querySelector('.bodyContainer');
+
+	container.style.position = 'fixed';
+	container.style.top = `-${window.scrollY}px`;
+	container.style.left = '0';
+	container.style.width = '100%';
+}
+
+function enable() {
+	const container = document.querySelector('.bodyContainer');
+	const scrollPosition = Math.abs(parseInt(container.style.top));
+
+	container.removeAttribute('style');
+	window.scrollTo(0, scrollPosition);
+	document.body.removeAttribute('style');
+}
 
 // //쿠키 확인 이벤트
 // btnShow.addEventListener('click', (e) => {
@@ -32,7 +52,7 @@ cookieData.indexOf('today=done') < 0 ? ((pop.style.display = 'block'), (document
 
 //팝업 닫기 이벤트
 btnClose.addEventListener('click', (e) => {
-	document.body.style.overflowY = 'auto';
+	enable();
 	e.preventDefault();
 	//체크박스에 체크가 되어있으면 쿠키생성, 그렇지 않으면 해당 구문 무시
 	if (ck.checked) setCookie('today', 'done', 1);

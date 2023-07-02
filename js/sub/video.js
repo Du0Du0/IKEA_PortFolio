@@ -26,7 +26,7 @@ fetch(url)
 
 			tags += `
   
-          <div class="viedoBox1" >
+          <div class="videoBox1" >
           <div class="videoCircle" style = "background-image : url(${json.items[idx].snippet.thumbnails.maxres.url})" data-video-id = "${
 				item.snippet.resourceId.videoId
 			}" data-cursor="link" data-name="Show Video">

@@ -411,7 +411,7 @@
 			justify-content: center;
 			gap: 40px;
 
-			.viedoBox1 {
+			.videoBox1 {
 				width: 300px;
 				height: 300px;
 				position: relative;
@@ -541,9 +541,6 @@
 				object-fit: contain;
 				object-position: -55vw -48vw;
 			}
-
-			.background {
-			}
 		}
 
 		.titContainer {
@@ -629,7 +626,7 @@
 			.container {
 				gap: 40px;
 
-				.viedoBox1 {
+				.videoBox1 {
 					margin-bottom: 10px;
 
 					.textBox {
@@ -666,9 +663,6 @@
 
 			video {
 				object-position: -205vw -110vw;
-			}
-
-			.background {
 			}
 		}
 
@@ -819,7 +813,7 @@
 			padding: 80px 5vw 150px;
 
 			.container {
-				.viedoBox1 {
+				.videoBox1 {
 					.textBox {
 						padding: 30px;
 
