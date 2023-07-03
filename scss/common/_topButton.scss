@@ -24,6 +24,18 @@
 	}
 }
 
+@media screen and (max-width: $tablet) {
+	.goTopBtn {
+		display: none;
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.goTopBtn {
+		display: none;
+	}
+}
+
 .goTopBtn.w {
 	width: 80px;
 	height: 80px;
