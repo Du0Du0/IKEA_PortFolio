@@ -15,8 +15,9 @@ const btnClose = pop.querySelector('.close');
 
 //브라우저 로딩시 쿠기유무에 따라 팝업 보임, 숨김 처리
 const cookieData = document.cookie;
-cookieData.indexOf('today=done') < 0 ? ((pop.style.display = 'block'), disable()) : (pop.style.display = 'none');
+cookieData.indexOf('oneWeek=done') < 0 ? ((pop.style.display = 'block'), disable()) : (pop.style.display = 'none');
 
+// 쿠키팝업창 뜰 시 뒷 배경 스크롤 기능 방지(스크롤 보이는 채)
 function disable() {
 	document.body.style.overflowY = 'scroll';
 	const container = document.querySelector('.bodyContainer');
@@ -26,6 +27,7 @@ function disable() {
 	container.style.width = '100%';
 }
 
+// 쿠키팝업창 닫을 시 뒷 배경 스크롤 가능하도록(스크롤 보이는 채)
 function enable() {
 	const container = document.querySelector('.bodyContainer');
 	const scrollPosition = Math.abs(parseInt(container.style.top));
@@ -53,7 +55,7 @@ btnClose.addEventListener('click', (e) => {
 	enable();
 	e.preventDefault();
 	//체크박스에 체크가 되어있으면 쿠키생성, 그렇지 않으면 해당 구문 무시
-	if (ck.checked) setCookie('today', 'done', 1);
+	if (ck.checked) setCookie('oneWeek', 'done', 7);
 	pop.style.display = 'none';
 });
 
