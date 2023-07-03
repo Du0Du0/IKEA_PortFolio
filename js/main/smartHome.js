@@ -74,7 +74,7 @@ fetch('DB/smartHome.json')
 
 		// Swiper: Slider
 		new Swiper('.first', {
-			loop: true,
+			loop: false,
 			nextButton: '.swiper-button-next',
 			prevButton: '.swiper-button-prev',
 			paginationClickable: true,

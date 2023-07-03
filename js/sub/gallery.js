@@ -4,9 +4,9 @@ const input = document.querySelector('.gallery #search');
 const btnSearch = document.querySelector('.gallery .btnSearch');
 const btnInterest = document.querySelector('.gallery .btnInterest');
 const btnMine = document.querySelector('.gallery .btnMine');
-const api_key = '65b4ecdd5f2cbca267f1597b53b33323';
+const api_key = '08e2b5a2a14d18ff9a849c7109134194';
 const num = 30;
-const myId = '68950802@N02';
+const myId = '168950802@N02';
 /*
 keydown: 키를 누를때
 keyup: 키를  뗄때 (mac OS 이벤트가 두번씩 발생)
@@ -71,15 +71,10 @@ function createList(arr) {
 		tags += `
         <li class='item'>
           <div>           
-						<img class='thumb' src='https://live.staticflickr.com/${item.server}/${item.id}_${
-			item.secret
-		}_m.jpg' alt='https://live.staticflickr.com/${item.server}/${item.id}_${
-			item.secret
-		}_b.jpg' />          
+						<img class='thumb' src='https://live.staticflickr.com/${item.server}/${item.id}_${item.secret}_m.jpg' alt='https://live.staticflickr.com/${item.server}/${item.id}_${item.secret}_b.jpg' />   
+							<article class='profile'>	
+							<img src='http://farm${item.farm}.staticflickr.com/${item.server}/buddyicons/${item.owner}.jpg' />			
             <p>${item.title === '' ? 'Have a good day!!' : item.title}</p>
-
-						<article class='profile'>	
-							<img src='http://farm${item.farm}.staticflickr.com/${item.server}/buddyicons/${item.owner}.jpg' />				
 							<span class='userid'>${item.owner}</span>
 						</article>
           </div>

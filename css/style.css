@@ -3102,6 +3102,117 @@ a {
   margin-top: 0px;
 }
 
+@media screen and (max-width: 1677px) {
+  #museum {
+    width: 100vw;
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    overflow: hidden;
+  }
+  #museum .bgLeft {
+    width: 50%;
+    height: 100%;
+    background-image: url("../img/smartHome1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #museum .bgLeft .leftTxt {
+    display: none;
+  }
+  #museum .bgRight {
+    width: 50%;
+    height: 100%;
+    background: #4881c2;
+  }
+  #museum .bgRight .rightTxt {
+    display: none;
+  }
+  #museum .container {
+    max-width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    padding: 120px 15vw 96px;
+    position: absolute;
+    z-index: 99;
+  }
+  #museum .swiper-container {
+    max-width: 100%;
+    height: 500px;
+    position: static;
+    overflow: hidden;
+  }
+  #museum .swiper-container .swiper-wrapper .swiper-slide {
+    text-align: center;
+    width: 440px;
+    height: 440px;
+    font-size: 18px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+    position: relative;
+    padding: 80px 100px;
+    text-align: justify;
+    word-break: break-all;
+    cursor: pointer;
+  }
+  #museum .swiper-container .swiper-wrapper .swiper-slide:hover {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+  }
+  #museum .swiper-container .swiper-wrapper .swiper-slide h3 {
+    position: relative;
+    font: 16px/1 "Noto Sans KR";
+    color: #eee;
+    margin-bottom: 35px;
+    z-index: 1;
+  }
+  #museum .swiper-container .swiper-wrapper .swiper-slide h2 {
+    position: relative;
+    font: bold 24px/1 "Noto Sans KR";
+    color: #eee;
+    z-index: 1;
+    margin-bottom: 15px;
+  }
+  #museum .swiper-container .swiper-wrapper .swiper-slide .con {
+    position: relative;
+    font: 18px/1.5 "Noto Sans KR";
+    color: #eee;
+    z-index: 1;
+    margin-bottom: 40px;
+  }
+  #museum .swiper-container .swiper-wrapper .swiper-slide .date {
+    position: relative;
+    font: 18px/1.5 "Noto Sans KR";
+    color: #eee;
+    z-index: 1;
+  }
+  #museum .swiper-container .swiper-button-prev {
+    position: absolute;
+    top: 75%;
+    left: 120px;
+    width: 26px;
+    height: 26px;
+    transform: translateY(-200%);
+    margin-top: 0px;
+  }
+  #museum .swiper-container .swiper-button-next {
+    position: absolute;
+    top: 75%;
+    right: 120px;
+    width: 26px;
+    height: 26px;
+    transform: translateY(-200%);
+    margin-top: 0px;
+  }
+}
 @media screen and (max-width: 1023px) {
   #museum {
     width: 100vw;
@@ -9280,6 +9391,10 @@ body {
   position: relative;
   overflow: hidden;
 }
+.gallery .subVisual video {
+  object-fit: contain;
+  object-position: 0vw -20vw;
+}
 .gallery .subVisual .background {
   width: 50%;
   height: 80px;
@@ -9300,29 +9415,79 @@ body {
   margin-top: 20px;
   margin-bottom: 96px;
 }
-.gallery .searchBox {
+.gallery .searchBarWrap {
+  padding: 30px 0px 30px;
+  margin-bottom: 96px;
+  background: #eff3ff;
+}
+.gallery .searchBarWrap .searchBox {
   width: 100%;
-  padding: 50px 10px 20px;
-  font-size: 0;
+  padding: 50px 10px 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
-.gallery .searchBox input {
-  width: 260px;
+.gallery .searchBarWrap .searchBox input {
+  width: 600px;
+  height: 70px;
+  background: transparent;
+  border: 4px solid #1877f2;
+  padding: 10px 30px;
+  position: relative;
+  background-image: url(../img/gallerySearch.png);
+  background-repeat: no-repeat;
+  background-size: 45px;
+  background-position: 98% 50%;
+  font: bold 18px/70px "Noto Sans KR";
+  color: #333;
+}
+.gallery .searchBarWrap .searchBox input:focus {
+  outline: none;
+}
+.gallery .searchBarWrap .searchBox input::placeholder {
+  font: bold 18px/70px "Noto Sans KR";
+  color: #1877f2;
+}
+.gallery .searchBarWrap .searchBox .fa-magnifying-glass {
+  font: bold 18px/70px "Noto Sans KR";
+  color: #1877f2;
+}
+.gallery .searchBarWrap .searchBox .btnSearch {
+  width: 150px;
+  height: 70px;
+  border: 4px solid #1877f2;
+  background-color: #eff3ff;
+  cursor: pointer;
+}
+.gallery .searchBarWrap .searchBox .btnSearch p {
+  font: bold 18px/50px "Noto Sans KR";
+  color: #1877f2;
+}
+.gallery .searchBarWrap .btnSet {
+  width: 760px;
+  display: flex;
+  margin: 0px auto;
+  justify-content: left;
+  gap: 5px;
+  margin-bottom: 50px;
+}
+.gallery .searchBarWrap .btnSet .btnInterest {
+  width: 150px;
   height: 30px;
-  background: #fff;
-  border: 1px solid #ddd;
-  padding-left: 10px;
-}
-.gallery .searchBox .btnSearch {
-  width: 80px;
-  height: 29px;
-  background: #333;
-  color: #fff;
-  font: bold 12px/29px "arial";
-  text-align: center;
+  background: transparent;
+  font: 18px/30px "Noto Sans KR";
+  color: #333;
   border: none;
   cursor: pointer;
-  margin-left: 5px;
-  transform: translateY(-1px);
+}
+.gallery .searchBarWrap .btnSet .btnMine {
+  width: 150px;
+  height: 30px;
+  background: transparent;
+  font: 18px/30px "Noto Sans KR";
+  color: #474747;
+  border: none;
+  cursor: pointer;
 }
 .gallery .loading {
   position: fixed;
@@ -9352,7 +9517,7 @@ body {
   clear: both;
 }
 .gallery .wrap li {
-  width: 20%;
+  width: 25%;
   float: left;
   padding: 10px;
 }
@@ -9364,25 +9529,407 @@ body {
 }
 .gallery .wrap li > div .thumb {
   width: 100%;
+  cursor: pointer;
 }
 .gallery .wrap li > div p {
-  font: 18px/1.2 "Architects daughter";
-  color: #777;
+  font: bold 22px/1.2 "Noto Sans KR";
+  color: #333;
   margin-top: 10px;
   margin-bottom: 20px;
 }
 .gallery .wrap li > div .profile {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -2.5vw;
+  margin-bottom: 30px;
+  cursor: pointer;
 }
 .gallery .wrap li > div .profile img {
-  width: 36px;
+  width: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 5;
 }
 .gallery .wrap li > div .profile span {
   display: inline-block;
-  font: 12px/1 "arial";
-  color: orange;
+  font: 12px/1 "Noto Sans KR";
+  color: #1198bb;
   margin-left: 5px;
+  margin-top: 20px;
   transform: translateY(-10px);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1023px) {
+  .gallery {
+    width: 100%;
+    min-height: calc(100vh - 400px);
+    overflow: hidden;
+    position: relative;
+  }
+  .gallery .subVisual {
+    width: 100%;
+    height: 480px;
+    position: relative;
+    overflow: hidden;
+  }
+  .gallery .subVisual video {
+    object-fit: contain;
+    object-position: 0vw -20vw;
+  }
+  .gallery .subVisual .background {
+    width: 50%;
+    height: 80px;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .gallery .titContainer {
+    width: 100%;
+    height: 300px;
+    padding: 150px 15vw 246px;
+  }
+  .gallery .titContainer h1 {
+    text-align: left;
+    font: bold 70px/1 "Noto Sans KR";
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 96px;
+  }
+  .gallery .searchBarWrap {
+    padding: 30px 0px 30px;
+    margin-bottom: 96px;
+    background: #eff3ff;
+  }
+  .gallery .searchBarWrap .searchBox {
+    width: 100%;
+    padding: 50px 10px 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .gallery .searchBarWrap .searchBox input {
+    width: 600px;
+    height: 70px;
+    background: transparent;
+    border: 4px solid #1877f2;
+    padding: 10px 30px;
+    position: relative;
+    background-image: url(../img/gallerySearch.png);
+    background-repeat: no-repeat;
+    background-size: 45px;
+    background-position: 98% 50%;
+    font: bold 18px/70px "Noto Sans KR";
+    color: #333;
+  }
+  .gallery .searchBarWrap .searchBox input:focus {
+    outline: none;
+  }
+  .gallery .searchBarWrap .searchBox input::placeholder {
+    font: bold 18px/70px "Noto Sans KR";
+    color: #1877f2;
+  }
+  .gallery .searchBarWrap .searchBox .fa-magnifying-glass {
+    font: bold 18px/70px "Noto Sans KR";
+    color: #1877f2;
+  }
+  .gallery .searchBarWrap .searchBox .btnSearch {
+    width: 150px;
+    height: 70px;
+    border: 4px solid #1877f2;
+    background-color: #eff3ff;
+    cursor: pointer;
+  }
+  .gallery .searchBarWrap .searchBox .btnSearch p {
+    font: bold 18px/50px "Noto Sans KR";
+    color: #1877f2;
+  }
+  .gallery .searchBarWrap .btnSet {
+    width: 100%;
+    display: flex;
+    padding: 0px 10vw 0px;
+    justify-content: left;
+    gap: 5px;
+    margin-bottom: 50px;
+  }
+  .gallery .searchBarWrap .btnSet .btnInterest {
+    width: 150px;
+    height: 30px;
+    background: transparent;
+    font: 18px/30px "Noto Sans KR";
+    color: #333;
+    border: none;
+    cursor: pointer;
+  }
+  .gallery .searchBarWrap .btnSet .btnMine {
+    width: 150px;
+    height: 30px;
+    background: transparent;
+    font: 18px/30px "Noto Sans KR";
+    color: #474747;
+    border: none;
+    cursor: pointer;
+  }
+  .gallery .loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: opacity 1s;
+    z-index: 3;
+  }
+  .gallery .loading.off {
+    opacity: 0;
+    z-index: -1;
+  }
+  .gallery .wrap {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 1s;
+  }
+  .gallery .wrap.on {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  .gallery .wrap::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .gallery .wrap li {
+    width: 33.3333333333%;
+    float: left;
+    padding: 10px;
+  }
+  .gallery .wrap li > div {
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05);
+  }
+  .gallery .wrap li > div .thumb {
+    width: 100%;
+    cursor: pointer;
+  }
+  .gallery .wrap li > div p {
+    font: bold 22px/1.2 "Noto Sans KR";
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .gallery .wrap li > div .profile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2.5vw;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+  .gallery .wrap li > div .profile img {
+    width: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .gallery .wrap li > div .profile span {
+    display: inline-block;
+    font: 12px/1 "Noto Sans KR";
+    color: #1198bb;
+    margin-left: 5px;
+    margin-top: 20px;
+    transform: translateY(-10px);
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 639px) {
+  .gallery {
+    width: 100%;
+    min-height: calc(100vh - 400px);
+    overflow: hidden;
+    position: relative;
+  }
+  .gallery .subVisual {
+    width: 100%;
+    height: 480px;
+    position: relative;
+    overflow: hidden;
+  }
+  .gallery .subVisual video {
+    object-fit: contain;
+    object-position: 0vw -20vw;
+  }
+  .gallery .subVisual .background {
+    width: 50%;
+    height: 80px;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .gallery .titContainer {
+    width: 100%;
+    height: 300px;
+    padding: 150px 15vw 246px;
+  }
+  .gallery .titContainer h1 {
+    text-align: left;
+    font: bold 70px/1 "Noto Sans KR";
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 96px;
+  }
+  .gallery .searchBarWrap {
+    padding: 30px 0px 30px;
+    margin-bottom: 96px;
+    background: #eff3ff;
+  }
+  .gallery .searchBarWrap .searchBox {
+    width: 100%;
+    padding: 50px 10px 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .gallery .searchBarWrap .searchBox input {
+    width: 600px;
+    height: 70px;
+    background: transparent;
+    border: 4px solid #1877f2;
+    padding: 10px 30px;
+    position: relative;
+    background-image: url(../img/gallerySearch.png);
+    background-repeat: no-repeat;
+    background-size: 45px;
+    background-position: 98% 50%;
+    font: bold 18px/70px "Noto Sans KR";
+    color: #333;
+  }
+  .gallery .searchBarWrap .searchBox input:focus {
+    outline: none;
+  }
+  .gallery .searchBarWrap .searchBox input::placeholder {
+    font: bold 18px/70px "Noto Sans KR";
+    color: #1877f2;
+  }
+  .gallery .searchBarWrap .searchBox .fa-magnifying-glass {
+    font: bold 18px/70px "Noto Sans KR";
+    color: #1877f2;
+  }
+  .gallery .searchBarWrap .searchBox .btnSearch {
+    width: 150px;
+    height: 70px;
+    border: 4px solid #1877f2;
+    background-color: #eff3ff;
+    cursor: pointer;
+  }
+  .gallery .searchBarWrap .searchBox .btnSearch p {
+    font: bold 18px/50px "Noto Sans KR";
+    color: #1877f2;
+  }
+  .gallery .searchBarWrap .btnSet {
+    width: 100%;
+    display: flex;
+    padding: 0px 10vw 0px;
+    justify-content: left;
+    gap: 5px;
+    margin-bottom: 50px;
+  }
+  .gallery .searchBarWrap .btnSet .btnInterest {
+    width: 150px;
+    height: 30px;
+    background: transparent;
+    font: 18px/30px "Noto Sans KR";
+    color: #333;
+    border: none;
+    cursor: pointer;
+  }
+  .gallery .searchBarWrap .btnSet .btnMine {
+    width: 150px;
+    height: 30px;
+    background: transparent;
+    font: 18px/30px "Noto Sans KR";
+    color: #474747;
+    border: none;
+    cursor: pointer;
+  }
+  .gallery .loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: opacity 1s;
+    z-index: 3;
+  }
+  .gallery .loading.off {
+    opacity: 0;
+    z-index: -1;
+  }
+  .gallery .wrap {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 1s;
+  }
+  .gallery .wrap.on {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  .gallery .wrap::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .gallery .wrap li {
+    width: 100%;
+    float: left;
+    padding: 10px;
+  }
+  .gallery .wrap li > div {
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05);
+  }
+  .gallery .wrap li > div .thumb {
+    width: 100%;
+    cursor: pointer;
+  }
+  .gallery .wrap li > div p {
+    font: bold 22px/1.2 "Noto Sans KR";
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .gallery .wrap li > div .profile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10vw;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+  .gallery .wrap li > div .profile img {
+    width: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .gallery .wrap li > div .profile span {
+    display: inline-block;
+    font: 12px/1 "Noto Sans KR";
+    color: #1198bb;
+    margin-left: 5px;
+    margin-top: 20px;
+    transform: translateY(-10px);
+    cursor: pointer;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
