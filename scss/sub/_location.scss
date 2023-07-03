@@ -551,6 +551,10 @@ body {
 					border: 1px solid #cfcfcf;
 					font: 16px/1 $ikeaFontKo;
 					color: $fontColorBl;
+
+					&:focus {
+						outline: none;
+					}
 				}
 				textarea {
 					display: block;
@@ -565,6 +569,10 @@ body {
 					font: 16px/1 $ikeaFontKo;
 					color: $fontColorBl;
 					resize: none;
+
+					&:focus {
+						outline: none;
+					}
 				}
 
 				.submitBtn {

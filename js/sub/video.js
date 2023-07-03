@@ -8,7 +8,9 @@ const playBtn = videoSection.querySelector('.playBtn ');
 const videoBtnContainer = videoSection.querySelector('.videoBtnContainer ');
 const vidSubTit = videoSection.querySelector('.vidSubTit');
 const iframe = videoSection.querySelector('.cursorOverlay');
-const vidsCloseBtn = videoSection.querySelector('.close');
+const vidsCloseBtn = document.querySelector('.close');
+const secs = document.querySelectorAll('.myScroll');
+const goTopBtn = document.querySelector('.goTopBtn');
 const key = 'AIzaSyCKs11Yu98hp6fq7N54tY2iWSY9qvTh4cM';
 const list = 'PLWgHnOZUp_4FJWdMzYeEAM4Waf8IhnZCB';
 const num = 8;
@@ -46,7 +48,7 @@ fetch(url)
 		// 커스텀 마우스 커서
 		const cursor = document.querySelector('.cursor');
 		document.addEventListener('mousemove', (e) => {
-			cursor.setAttribute('style', 'top: ' + (e.pageY - 60) + 'px; left: ' + (e.pageX - 60) + 'px;');
+			cursor.setAttribute('style', 'top: ' + (e.pageY - 50) + 'px; left: ' + (e.pageX - 50) + 'px;');
 		});
 
 		document.addEventListener('click', (e) => {
@@ -67,15 +69,6 @@ fetch(url)
 			videoCircle.addEventListener('mouseleave', (e) => {
 				cursorMouseLeave(e);
 			});
-		});
-
-		// imbeded video cursor mouseover & leave
-		iframe.addEventListener('mouseenter', (e) => {
-			cursorMouseOver(e);
-		});
-
-		iframe.addEventListener('mouseleave', (e) => {
-			cursorMouseLeave(e);
 		});
 
 		// imgBox1 text "click" cursor mouseover & leave
@@ -102,24 +95,6 @@ fetch(url)
 		});
 
 		btnWrap.addEventListener('mouseleave', (e) => {
-			cursorMouseLeave(e);
-		});
-
-		// subtitle video cursor mouseover & leave
-		vidSubTit.addEventListener('mouseenter', (e) => {
-			cursorMouseOver(e);
-		});
-
-		vidSubTit.addEventListener('mouseleave', (e) => {
-			cursorMouseLeave(e);
-		});
-
-		// vidImgBox cursor mouseover & leave
-		vidImgBox.addEventListener('mouseenter', (e) => {
-			cursorMouseOver(e);
-		});
-
-		vidImgBox.addEventListener('mouseleave', (e) => {
 			cursorMouseLeave(e);
 		});
 
@@ -238,7 +213,8 @@ imgBox1.addEventListener('click', () => {
 //vids pop 찹업창 띄우기
 document.body.addEventListener('click', (e) => {
 	if (e.target.className === 'videoCircle') createPop(e.target.closest('.videoCircle').getAttribute('data-video-id'));
-	if (e.target.className === 'close') removePop();
+
+	if (e.target.className === 'close1' || e.target.closest('.close1')) removePop();
 });
 
 //vids 동적으로 팝업 생성
@@ -246,7 +222,7 @@ function createPop(id) {
 	const tags = `	
 			<div class='con'>
 			<iframe src='https://www.youtube.com/embed/${id}'></iframe></div>
-			<span class='close'><i class="fa-solid fa-xmark"></i></span>
+			<span class='close1'><i class="fa-solid fa-xmark"></i></span>
 	`;
 	const pop = document.createElement('aside');
 	pop.className = 'pop';
@@ -264,4 +240,5 @@ function removePop() {
 	document.querySelector('.pop').classList.remove('on');
 	setTimeout(() => document.querySelector('.pop').remove(), 1000);
 	document.body.style.overflow = 'auto';
+	document.body.style.overflowX = 'hidden';
 }

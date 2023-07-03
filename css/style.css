@@ -1105,7 +1105,7 @@ a {
   object-fit: cover;
   border: none;
 }
-.pop .close {
+.pop .close1 {
   font: 35px/1 "$ikeaFont";
   color: #eee;
   position: absolute;
@@ -4524,6 +4524,9 @@ body {
   font: 16px/1 "Noto Sans KR";
   color: #333;
 }
+.location .contactContainer .contact:nth-of-type(2) input:focus {
+  outline: none;
+}
 .location .contactContainer .contact:nth-of-type(2) textarea {
   display: block;
   width: 100%;
@@ -4537,6 +4540,9 @@ body {
   font: 16px/1 "Noto Sans KR";
   color: #333;
   resize: none;
+}
+.location .contactContainer .contact:nth-of-type(2) textarea:focus {
+  outline: none;
 }
 .location .contactContainer .contact:nth-of-type(2) .submitBtn {
   width: 150px;
@@ -9022,12 +9028,12 @@ body {
   }
   .videoSub .subtitle {
     height: auto;
-    padding: 150px 10vw 50px;
+    padding: 96px 10vw 50px;
   }
   .videoSub .subtitle .subLeft {
     order: 2;
     width: 100%;
-    padding-top: 450px;
+    padding-top: 50px;
   }
   .videoSub .subtitle .subRight {
     width: 100%;
@@ -9036,7 +9042,40 @@ body {
   }
   .videoSub .subtitle .subRight video {
     width: 100%;
-    height: 900px;
+    height: 500px;
+  }
+  .videoSub .subtitle .subRight video .pauseBtn {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    position: absolute;
+    z-index: 44;
+    bottom: 30px;
+    left: 30px;
+    font: 26px/1 "Noto Sans KR";
+    color: #eee;
+    background-image: url(../img/pauseWhite.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    cursor: none;
+  }
+  .videoSub .subtitle .subRight video .playBtn {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    position: absolute;
+    z-index: 44;
+    bottom: 30px;
+    left: 30px;
+    font: 26px/1 "Noto Sans KR";
+    color: #eee;
+    background-image: url(../img/playWhite.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    cursor: none;
+    display: none;
   }
   .videoSub .middleText {
     padding: 0px 10vw 26px;
