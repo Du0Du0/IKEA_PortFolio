@@ -83,13 +83,9 @@ function resizeVids(num) {
 					videos[idx].classList.contains('on')
 						? ((vidsNum[idx].style.display = 'none'),
 						  (vidsBarTit[idx].style.display = 'none'),
-						  ((videos[idx].style.backgroundImage = `url(${json.items[idx].snippet.thumbnails.maxres.url})`),
-						  (vidsSpan[idx].style.display = 'block')),
+						  ((videos[idx].style.backgroundImage = `url(${json.items[idx].snippet.thumbnails.maxres.url})`), (vidsSpan[idx].style.display = 'block')),
 						  (discoverBtn[idx].style.display = 'block'))
-						: ((vidsNum[idx].style.display = 'block'),
-						  (vidsBarTit[idx].style.display = 'block'),
-						  (vidsSpan[idx].style.display = 'none'),
-						  (discoverBtn[idx].style.display = 'none'));
+						: ((vidsNum[idx].style.display = 'block'), (vidsBarTit[idx].style.display = 'block'), (vidsSpan[idx].style.display = 'none'), (discoverBtn[idx].style.display = 'none'));
 
 					for (let i = 0; i < videos.length; i++) {
 						if (!videos[i].classList.contains('on')) {
@@ -106,8 +102,7 @@ function resizeVids(num) {
 
 // vids pop 찹업창 띄우기
 document.body.addEventListener('click', (e) => {
-	if (e.target.className === 'discoverBtn')
-		createPop(e.target.closest('.video').getAttribute('data-video-id'));
+	if (e.target.className === 'discoverBtn') createPop(e.target.closest('.video').getAttribute('data-video-id'));
 	if (e.target.className === 'close') removePop();
 });
 
@@ -135,3 +130,21 @@ function removePop() {
 	setTimeout(() => document.querySelector('.pop').remove(), 1000);
 	document.body.style.overflow = 'auto';
 }
+
+// vids page title animation
+const vidsTit = vidsSection.querySelector('.vidsTit h2');
+
+window.addEventListener('scroll', () => {
+	let value = window.scrollY;
+	console.log('scrollY', value);
+
+	if (value > 869) {
+		vidsTit.style.animation = 'slide 1s ease-out forwards ';
+	} else {
+		vidsTit.style.animation = 'slideBack 1s ease-out forwards';
+	}
+
+	if (value > 1693) {
+		vidsTit.style.animation = 'slideBack 1s ease-out forwards';
+	}
+});

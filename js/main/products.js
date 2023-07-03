@@ -5,7 +5,7 @@ const slideItems = Array.from(productsSection.querySelectorAll('.slideItem'));
 const nextBtn = productsSection.querySelector('.rigtArrowBtn');
 const preBtn = productsSection.querySelector('.leftArrowBtn');
 
-const pageTit = productsSection.querySelector('.productsTit h2');
+const productsTit = productsSection.querySelector('.productsTit h2');
 
 let tags = '';
 
@@ -80,12 +80,12 @@ window.addEventListener('scroll', () => {
 	console.log('scrollY', value);
 
 	if (value > 300) {
-		pageTit.style.animation = 'slide 1s ease-out forwards ';
+		productsTit.style.animation = 'slide 1s ease-out forwards ';
 	} else {
-		pageTit.style.animation = 'slideBack 1s ease-out forwards';
+		productsTit.style.animation = 'slideBack 1s ease-out forwards';
 	}
 
 	if (value > 1100) {
-		pageTit.style.animation = 'slideBack 1s ease-out forwards';
+		productsTit.style.animation = 'slideBack 1s ease-out forwards';
 	}
 });

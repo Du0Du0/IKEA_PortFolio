@@ -1835,6 +1835,28 @@ a {
 #vids .vidsContainer .vidsTextWrap .vidsTit h2 {
   font: bold 70px/1 "Noto Sans KR";
   color: #333;
+  animation-duration: 0.5s;
+  animation: slide 1s ease-out;
+}
+@keyframes slide {
+  from {
+    margin-left: -400px;
+    opacity: 0;
+  }
+  to {
+    left: 400px;
+    opacity: 1;
+  }
+}
+@keyframes slideBack {
+  from {
+    left: 400px;
+    opacity: 1;
+  }
+  to {
+    margin-left: -400px;
+    opacity: 0;
+  }
 }
 #vids .vidsContainer .vidsTextWrap .vidsSub {
   flex: 1;
@@ -3309,6 +3331,28 @@ a {
   font: bold 70px/1 "Noto Sans KR";
   color: #171717;
   margin-bottom: 70px;
+  animation-duration: 0.5s;
+  animation: slide 1s ease-out;
+}
+@keyframes slide {
+  from {
+    margin-left: -400px;
+    opacity: 0;
+  }
+  to {
+    left: 400px;
+    opacity: 1;
+  }
+}
+@keyframes slideBack {
+  from {
+    left: 400px;
+    opacity: 1;
+  }
+  to {
+    margin-left: -400px;
+    opacity: 0;
+  }
 }
 #notice .noticeContainer .noticeWrap:nth-of-type(1) .goBtn {
   font: 18px/1 "Noto Sans KR";

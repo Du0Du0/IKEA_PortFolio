@@ -1,5 +1,6 @@
-const notice = document.querySelector('#notice');
-const noticeWrap = document.querySelectorAll('.noticeWrap')[1];
+const noticeSection = document.querySelector('#notice');
+const noticeWrap = noticeSection.querySelectorAll('.noticeWrap')[1];
+const noticeTit = noticeSection.querySelector('.noticeWrap h4');
 
 let tags = '';
 
@@ -31,3 +32,20 @@ fetch('DB/notice.json')
 	.catch((err) => {
 		console.log(err);
 	});
+
+// notice page title animation
+
+window.addEventListener('scroll', () => {
+	let value = window.scrollY;
+	console.log('scrollY', value);
+
+	if (value > 4160) {
+		noticeTit.style.animation = 'slide 1s ease-out forwards ';
+	} else {
+		noticeTit.style.animation = 'slideBack 1s ease-out forwards';
+	}
+
+	if (value > 5012) {
+		noticeTit.style.animation = 'slideBack 1s ease-out forwards';
+	}
+});

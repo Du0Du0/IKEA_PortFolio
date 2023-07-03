@@ -26,6 +26,30 @@
 				h2 {
 					font: bold 70px/1 $ikeaFontKo;
 					color: $fontColorBl;
+					animation-duration: 0.5s;
+					animation: slide 1s ease-out;
+
+					@keyframes slide {
+						from {
+							margin-left: -400px;
+							opacity: 0;
+						}
+						to {
+							left: 400px;
+							opacity: 1;
+						}
+					}
+
+					@keyframes slideBack {
+						from {
+							left: 400px;
+							opacity: 1;
+						}
+						to {
+							margin-left: -400px;
+							opacity: 0;
+						}
+					}
 				}
 			}
 
