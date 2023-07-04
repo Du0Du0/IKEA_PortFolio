@@ -8,7 +8,6 @@ const playBtn = videoSection.querySelector('.playBtn ');
 const videoBtnContainer = videoSection.querySelector('.videoBtnContainer ');
 const vidSubTit = videoSection.querySelector('.vidSubTit');
 const iframe = videoSection.querySelector('.cursorOverlay');
-const vidsCloseBtn = document.querySelector('.close');
 const secs = document.querySelectorAll('.myScroll');
 const goTopBtn = document.querySelector('.goTopBtn');
 const key = 'AIzaSyCKs11Yu98hp6fq7N54tY2iWSY9qvTh4cM';
@@ -214,7 +213,7 @@ imgBox1.addEventListener('click', () => {
 document.body.addEventListener('click', (e) => {
 	if (e.target.className === 'videoCircle') createPop(e.target.closest('.videoCircle').getAttribute('data-video-id'));
 
-	if (e.target.className === 'close1' || e.target.closest('.close1')) removePop();
+	if (e.target.className === 'close' || e.target.closest('.close')) removePop();
 });
 
 //vids 동적으로 팝업 생성
@@ -222,7 +221,7 @@ function createPop(id) {
 	const tags = `	
 			<div class='con'>
 			<iframe src='https://www.youtube.com/embed/${id}'></iframe></div>
-			<span class='close1'><i class="fa-solid fa-xmark"></i></span>
+			<span class='close'><i class="fa-solid fa-xmark"></i></span>
 	`;
 	const pop = document.createElement('aside');
 	pop.className = 'pop';

@@ -1105,7 +1105,7 @@ a {
   object-fit: cover;
   border: none;
 }
-.pop .close1 {
+.pop .close {
   font: 35px/1 "$ikeaFont";
   color: #eee;
   position: absolute;
@@ -9475,10 +9475,10 @@ body {
   position: relative;
   background-image: url(../img/gallerySearch.png);
   background-repeat: no-repeat;
-  background-size: 45px;
+  background-size: 40px;
   background-position: 98% 50%;
   font: bold 18px/70px "Noto Sans KR";
-  color: #333;
+  color: #1877f2;
 }
 .gallery .searchBarWrap .searchBox input:focus {
   outline: none;
@@ -9535,16 +9535,17 @@ body {
   transform: translate(-50%, -50%);
   opacity: 1;
   transition: opacity 1s;
-  z-index: 3;
+  z-index: 6;
 }
 .gallery .loading.off {
   opacity: 0;
-  z-index: -1;
+  z-index: 6;
 }
 .gallery .wrap {
   opacity: 0;
   transform: translateY(100px);
   transition: 1s;
+  margin-bottom: 150px;
 }
 .gallery .wrap.on {
   opacity: 1;
@@ -9611,13 +9612,13 @@ body {
   }
   .gallery .subVisual {
     width: 100%;
-    height: 480px;
+    height: 380px;
     position: relative;
     overflow: hidden;
   }
   .gallery .subVisual video {
     object-fit: contain;
-    object-position: 0vw -20vw;
+    object-position: -80vw -40vw;
   }
   .gallery .subVisual .background {
     width: 50%;
@@ -9630,7 +9631,7 @@ body {
   .gallery .titContainer {
     width: 100%;
     height: 300px;
-    padding: 150px 15vw 246px;
+    padding: 150px 10vw 246px;
   }
   .gallery .titContainer h1 {
     text-align: left;
@@ -9640,57 +9641,57 @@ body {
     margin-bottom: 96px;
   }
   .gallery .searchBarWrap {
-    padding: 30px 0px 30px;
+    padding: 20px 0px 20px;
     margin-bottom: 96px;
     background: #eff3ff;
   }
   .gallery .searchBarWrap .searchBox {
     width: 100%;
-    padding: 50px 10px 10px;
+    padding: 50px 10vw 10px;
     display: flex;
     justify-content: center;
     gap: 10px;
   }
   .gallery .searchBarWrap .searchBox input {
-    width: 600px;
-    height: 70px;
+    width: 560px;
+    height: 56px;
     background: transparent;
-    border: 4px solid #1877f2;
+    border: 3px solid #1877f2;
     padding: 10px 30px;
     position: relative;
     background-image: url(../img/gallerySearch.png);
     background-repeat: no-repeat;
-    background-size: 45px;
+    background-size: 30px;
     background-position: 98% 50%;
-    font: bold 18px/70px "Noto Sans KR";
-    color: #333;
+    font: bold 14.4px/56px "Noto Sans KR";
+    color: #1877f2;
   }
   .gallery .searchBarWrap .searchBox input:focus {
     outline: none;
   }
   .gallery .searchBarWrap .searchBox input::placeholder {
-    font: bold 18px/70px "Noto Sans KR";
+    font: bold 14.4px/56px "Noto Sans KR";
     color: #1877f2;
   }
   .gallery .searchBarWrap .searchBox .fa-magnifying-glass {
-    font: bold 18px/70px "Noto Sans KR";
+    font: bold 12px/63px "Noto Sans KR";
     color: #1877f2;
   }
   .gallery .searchBarWrap .searchBox .btnSearch {
     width: 150px;
-    height: 70px;
-    border: 4px solid #1877f2;
+    height: 56px;
+    border: 3px solid #1877f2;
     background-color: #eff3ff;
     cursor: pointer;
   }
   .gallery .searchBarWrap .searchBox .btnSearch p {
-    font: bold 18px/50px "Noto Sans KR";
+    font: bold 14.4px/50px "Noto Sans KR";
     color: #1877f2;
   }
   .gallery .searchBarWrap .btnSet {
-    width: 100%;
+    width: 80%;
     display: flex;
-    padding: 0px 10vw 0px;
+    margin: 0px auto;
     justify-content: left;
     gap: 5px;
     margin-bottom: 50px;
@@ -9699,7 +9700,7 @@ body {
     width: 150px;
     height: 30px;
     background: transparent;
-    font: 18px/30px "Noto Sans KR";
+    font: 14.4px/30px "Noto Sans KR";
     color: #333;
     border: none;
     cursor: pointer;
@@ -9708,10 +9709,11 @@ body {
     width: 150px;
     height: 30px;
     background: transparent;
-    font: 18px/30px "Noto Sans KR";
+    font: 14.4px/30px "Noto Sans KR";
     color: #474747;
     border: none;
     cursor: pointer;
+    margin-left: -3vw;
   }
   .gallery .loading {
     position: fixed;
@@ -9720,11 +9722,11 @@ body {
     transform: translate(-50%, -50%);
     opacity: 1;
     transition: opacity 1s;
-    z-index: 3;
+    z-index: 6;
   }
   .gallery .loading.off {
     opacity: 0;
-    z-index: -1;
+    z-index: 6;
   }
   .gallery .wrap {
     opacity: 0;
@@ -9756,7 +9758,7 @@ body {
     cursor: pointer;
   }
   .gallery .wrap li > div p {
-    font: bold 22px/1.2 "Noto Sans KR";
+    font: bold 14.4px/1.2 "Noto Sans KR";
     color: #333;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -9767,12 +9769,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -2.5vw;
+    margin-top: -3vw;
     margin-bottom: 30px;
     cursor: pointer;
   }
   .gallery .wrap li > div .profile img {
-    width: 80px;
+    width: 50px;
     border-radius: 50%;
     cursor: pointer;
   }
@@ -9795,13 +9797,13 @@ body {
   }
   .gallery .subVisual {
     width: 100%;
-    height: 480px;
+    height: 300px;
     position: relative;
     overflow: hidden;
   }
   .gallery .subVisual video {
     object-fit: contain;
-    object-position: 0vw -20vw;
+    object-position: -150vw -80vw;
   }
   .gallery .subVisual .background {
     width: 50%;
@@ -9814,67 +9816,67 @@ body {
   .gallery .titContainer {
     width: 100%;
     height: 300px;
-    padding: 150px 15vw 246px;
+    padding: 150px 10vw 50px;
   }
   .gallery .titContainer h1 {
     text-align: left;
-    font: bold 70px/1 "Noto Sans KR";
+    font: bold 36px/1 "Noto Sans KR";
     color: #333;
     margin-top: 20px;
     margin-bottom: 96px;
   }
   .gallery .searchBarWrap {
-    padding: 30px 0px 30px;
-    margin-bottom: 96px;
+    padding: 15px 0px 15px;
+    margin-bottom: 50px;
     background: #eff3ff;
   }
   .gallery .searchBarWrap .searchBox {
     width: 100%;
-    padding: 50px 10px 10px;
+    padding: 50px 5vw 10px;
     display: flex;
     justify-content: center;
     gap: 10px;
   }
   .gallery .searchBarWrap .searchBox input {
-    width: 600px;
-    height: 70px;
+    width: 246px;
+    height: 49px;
     background: transparent;
-    border: 4px solid #1877f2;
+    border: 2px solid #1877f2;
     padding: 10px 30px;
     position: relative;
     background-image: url(../img/gallerySearch.png);
     background-repeat: no-repeat;
-    background-size: 45px;
-    background-position: 98% 50%;
-    font: bold 18px/70px "Noto Sans KR";
-    color: #333;
+    background-size: 25px;
+    background-position: 96% 50%;
+    font: bold 12px/49px "Noto Sans KR";
+    color: #1877f2;
   }
   .gallery .searchBarWrap .searchBox input:focus {
     outline: none;
   }
   .gallery .searchBarWrap .searchBox input::placeholder {
-    font: bold 18px/70px "Noto Sans KR";
+    font: bold 12px/49px "Noto Sans KR";
     color: #1877f2;
   }
   .gallery .searchBarWrap .searchBox .fa-magnifying-glass {
-    font: bold 18px/70px "Noto Sans KR";
+    font: bold 12px/63px "Noto Sans KR";
     color: #1877f2;
   }
   .gallery .searchBarWrap .searchBox .btnSearch {
-    width: 150px;
-    height: 70px;
-    border: 4px solid #1877f2;
+    width: 128px;
+    height: 49px;
+    border: 2px solid #1877f2;
     background-color: #eff3ff;
     cursor: pointer;
   }
   .gallery .searchBarWrap .searchBox .btnSearch p {
-    font: bold 18px/50px "Noto Sans KR";
+    font: bold 12px/40px "Noto Sans KR";
     color: #1877f2;
   }
   .gallery .searchBarWrap .btnSet {
-    width: 100%;
+    width: 410px;
     display: flex;
-    padding: 0px 10vw 0px;
+    margin: 0px auto;
     justify-content: left;
     gap: 5px;
     margin-bottom: 50px;
@@ -9883,7 +9885,7 @@ body {
     width: 150px;
     height: 30px;
     background: transparent;
-    font: 18px/30px "Noto Sans KR";
+    font: 14.4px/30px "Noto Sans KR";
     color: #333;
     border: none;
     cursor: pointer;
@@ -9892,10 +9894,11 @@ body {
     width: 150px;
     height: 30px;
     background: transparent;
-    font: 18px/30px "Noto Sans KR";
+    font: 14.4px/30px "Noto Sans KR";
     color: #474747;
     border: none;
     cursor: pointer;
+    margin-left: -8vw;
   }
   .gallery .loading {
     position: fixed;
@@ -9904,11 +9907,11 @@ body {
     transform: translate(-50%, -50%);
     opacity: 1;
     transition: opacity 1s;
-    z-index: 3;
+    z-index: 6;
   }
   .gallery .loading.off {
     opacity: 0;
-    z-index: -1;
+    z-index: 6;
   }
   .gallery .wrap {
     opacity: 0;
@@ -9940,7 +9943,7 @@ body {
     cursor: pointer;
   }
   .gallery .wrap li > div p {
-    font: bold 22px/1.2 "Noto Sans KR";
+    font: bold 14.4px/1.2 "Noto Sans KR";
     color: #333;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -9951,12 +9954,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -10vw;
+    margin-top: -6vw;
     margin-bottom: 30px;
     cursor: pointer;
   }
   .gallery .wrap li > div .profile img {
-    width: 80px;
+    width: 50px;
     border-radius: 50%;
     cursor: pointer;
   }
