@@ -157,12 +157,8 @@ header .leftBar .leftBarWrap .leftBarList ul:nth-of-type(2) {
   color: #b5b5b5;
   cursor: pointer;
 }
-header .leftBar .leftBarWrap .leftBarList ul:nth-of-type(2) li:nth-of-type(1):nth-of-type(1):after {
-  content: "";
-  padding-left: 15px;
-  padding-right: 15px;
-}
-header .leftBar .leftBarWrap .leftBarList ul:nth-of-type(3) {
+
+header .leftBar .leftBarWrap .leftBarList ul:nth-of-type(2) {
   display: flex;
   float: left;
   margin-top: 20px;
