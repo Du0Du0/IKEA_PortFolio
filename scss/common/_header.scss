@@ -145,7 +145,7 @@ header {
 						li {
 							&:nth-of-type(1) {
 								&:nth-of-type(1):after {
-									content: '|';
+									content: '';
 									padding-left: 15px;
 									padding-right: 15px;
 								}
