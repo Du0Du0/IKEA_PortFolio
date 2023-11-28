@@ -1,495 +1,502 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IKEA Redesign Web</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script defer src="js/main.js"></script>
-  <script defer type="module" src="js/common/header.js"></script>
-  <script defer type="module" src="js/main/visual.js"></script>
-  <script defer type="module" src="js/main/products.js"></script>
-  <script defer type="module" src="js/main/vids.js"></script>
-  <script defer type="module" src="js/main/smartHome.js"></script>
-  <script defer type="module" src="js/main/promotion.js"></script>
-  <script defer type="module" src="js/main/museum.js"></script>
-  <script defer type="module" src="js/main/notice.js"></script>
-  <script defer type="module" src="js/sub/location.js"></script>
-  <script defer type="module" src="js/common/topButton.js"></script>
-  <script defer type="module" src="js/common/scroll.js"></script>
-  <script defer type="module" src="js/common/cookiePop.js"></script>
-  <script src="https://kit.fontawesome.com/1178528ead.js" crossorigin="anonymous"></script>
-  <link rel="shortcut icon" href="#">
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css'>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IKEA Redesign Web</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+    <script defer type="module" src="js/common/header.js"></script>
+    <script defer type="module" src="js/main/visual.js"></script>
+    <script defer type="module" src="js/main/products.js"></script>
+    <script defer type="module" src="js/main/vids.js"></script>
+    <script defer type="module" src="js/main/smartHome.js"></script>
+    <script defer type="module" src="js/main/promotion.js"></script>
+    <script defer type="module" src="js/main/museum.js"></script>
+    <script defer type="module" src="js/main/notice.js"></script>
+    <script defer type="module" src="js/sub/location.js"></script>
+    <script defer type="module" src="js/common/topButton.js"></script>
+    <script defer type="module" src="js/common/scroll.js"></script>
+    <script defer type="module" src="js/common/cookiePop.js"></script>
+    <script src="https://kit.fontawesome.com/1178528ead.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="#">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+  </head>
 
 
-<body>
-  <aside class="bodyContainer">
-    <!-- header start -->
-    <header>
-      <div class="menu">
-        <!-- header hamburger button -->
-        <i class="fa-solid fa-bars-staggered" style="rotate: 90deg;"></i>
-        <!-- header close button -->
-        <i class="fa-solid fa-xmark"></i>
-      </div>
-      <!-- header title logo -->
-      <div class="logo">
-        <p><a href="index.html">IKEA</a></p>
-      </div>
-      <!-- header right side bar -->
-      <div class="rightBar"></div>
-      <!-- header left side bar -->
-      <div class="leftBar">
-        <div class="leftBarWrap">
-          <!-- header left side title -->
-          <div class="leftBarTit">
-            <h2>IKEA Category</h2>
-          </div>
-          <!-- header left side category list -->
-          <div class="leftBarList">
-            <div class="listLine"></div>
-            <ul>
-              <li><a href="members.html">Members</a></li>
-              <li><a href="video.html">Video</a></li>
-              <li><a href="location.html">Location</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="department.html"></a></li>
-            </ul>
-            <ul>
-              <li><a href="signUp.html">Sign Up</a></li>
-              <li><a href="signIn.html">Sign In</a></li>
-            </ul>
-            <ul>
-              <!-- ikea twitter icon-->
-              <li>
-                <a href="https://twitter.com/IKEA" target="_blank" title="새창-이케아 미국 트위터">
-                  <i class="fa-brands fa-twitter"></i></a>
-              </li>
-              <!-- ikea facebook icon-->
-              <li>
-                <a href="https://www.facebook.com/IKEAUSA/" target="_blank" title="새창-이케아 미국 페이스북">
-                  <i class="fa-brands fa-facebook"></i></a>
-              </li>
-              <!-- ikea kakao icon-->
-              <li>
-                <a href="https://pf.kakao.com/_jhmfxd" target="_blank" title="새창-이케아 코리아 카카오톡">
-                  <i class="fa-solid fa-envelope"></i></a>
-              </li>
-            </ul>
-          </div>
+  <body>
+    <aside class="bodyContainer">
+      <!-- header start -->
+      <header>
+        <div class="menu">
+          <!-- header hamburger button -->
+          <i class="fa-solid fa-bars-staggered" style="rotate: 90deg;"></i>
+          <!-- header close button -->
+          <i class="fa-solid fa-xmark"></i>
         </div>
-      </div>
-    </header>
-    <!-- header end -->
-
-    <!-- main visual start -->
-    <section id="visual">
-      <!-- main visual grid start-->
-      <div class="visualWrap">
-        <div class="bg"></div>
-        <div class="bg"></div>
-        <div class="bg"></div>
-        <div class="bg"></div>
-        <div class="bg"></div>
-        <div class="bg"></div>
-        <div class="bg"></div>
-        <!-- Main pointBox(text) -->
-        <div class="bg">
-          Lorem <br>ipsum dolor sit
+        <!-- header title logo -->
+        <div class="logo">
+          <p><a href="index.html">IKEA</a></p>
         </div>
-        <div class="bg">
-          Lorem
-        </div>
-        <div class="bg"></div>
-        <div class="bg"></div>
-        <div class="bg">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, fuga? orem ipsum
-            Lorem ipsum dolor sit amet consectetur
-          </h1>
-        </div>
-        <!-- Main pointBox2 (text) -->
-        <div class="bg on">
-          Lorem<br> ipsum dolor sit
-        </div>
-        <div class="bg"></div>
-        <div class="bg"></div>
-      </div>
-    </section>
-    <!-- main visual end-->
-
-
-    <!-- products start -->
-    <section id="products" class="myScroll">
-      <div class="productsContainer">
-        <!-- products title (right side)-->
-        <div class="productsTit">
-          <h2>제품</h2>
-        </div>
-        <!-- products left side -->
-        <div class="productsSub">
-          <!-- products slide -->
-          <div class="slideContainer">
-            <div class="slideWrap">
+        <!-- header right side bar -->
+        <div class="rightBar"></div>
+        <!-- header left side bar -->
+        <div class="leftBar">
+          <div class="leftBarWrap">
+            <!-- header left side title -->
+            <div class="leftBarTit">
+              <h2>IKEA Category</h2>
+            </div>
+            <!-- header left side category list -->
+            <div class="leftBarList">
+              <div class="listLine"></div>
+              <ul>
+                <li><a href="members.html">Members</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="department.html"></a></li>
+              </ul>
+              <ul>
+                <li><a href="signUp.html">Sign Up</a></li>
+              </ul>
+              <ul>
+                <!-- ikea twitter icon-->
+                <li>
+                  <a href="https://twitter.com/IKEA" target="_blank" title="새창-이케아 미국 트위터">
+                    <i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <!-- ikea facebook icon-->
+                <li>
+                  <a href="https://www.facebook.com/IKEAUSA/" target="_blank" title="새창-이케아 미국 페이스북">
+                    <i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <!-- ikea kakao icon-->
+                <li>
+                  <a href="https://pf.kakao.com/_jhmfxd" target="_blank" title="새창-이케아 코리아 카카오톡">
+                    <i class="fa-solid fa-envelope"></i></a>
+                </li>
+              </ul>
             </div>
           </div>
-          <!-- products bottom button container -->
-          <div class="btnWrap">
-            <div class="arrowBtns">
-              <!-- products left arrow -->
-              <button class="leftArrowBtn">
-                <i class="fa-sharp fa-solid fa-chevron-left"></i>
-              </button>
-              <!-- products right arrow -->
-              <button class="rigtArrowBtn">
-                <i class="fa-sharp fa-solid fa-chevron-right"></i>
-              </button>
+        </div>
+      </header>
+      <!-- header end -->
+
+      <!-- main visual start -->
+      <section id="visual">
+        <!-- main visual grid start-->
+        <div class="visualWrap">
+          <div class="bg"></div>
+          <div class="bg"></div>
+          <div class="bg"></div>
+          <div class="bg"></div>
+          <div class="bg"></div>
+          <div class="bg"></div>
+          <div class="bg"></div>
+          <!-- Main pointBox(text) -->
+          <div class="bg">
+            Lorem <br>ipsum dolor sit
+          </div>
+          <div class="bg">
+            Lorem
+          </div>
+          <div class="bg"></div>
+          <div class="bg"></div>
+          <div class="bg">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, fuga? orem ipsum
+              Lorem ipsum dolor sit amet consectetur
+            </h1>
+          </div>
+          <!-- Main pointBox2 (text) -->
+          <div class="bg on">
+            Lorem<br> ipsum dolor sit
+          </div>
+          <div class="bg"></div>
+          <div class="bg"></div>
+        </div>
+      </section>
+      <!-- main visual end-->
+
+
+      <!-- products start -->
+      <section id="products" class="myScroll">
+        <div class="productsContainer">
+          <!-- products title (right side)-->
+          <div class="productsTit">
+            <h2>제품</h2>
+          </div>
+          <!-- products left side -->
+          <div class="productsSub">
+            <!-- products slide -->
+            <div class="slideContainer">
+              <div class="slideWrap">
+              </div>
             </div>
-            <!-- products "all category" button-->
-            <div class="hyperBtns">
-              <a herf="#" target="_blank" title="모든 카테고리 보기">
-                <p> All Categories&nbsp;&nbsp;
+            <!-- products bottom button container -->
+            <div class="btnWrap">
+              <div class="arrowBtns">
+                <!-- products left arrow -->
+                <button class="leftArrowBtn">
+                  <i class="fa-sharp fa-solid fa-chevron-left"></i>
+                </button>
+                <!-- products right arrow -->
+                <button class="rigtArrowBtn">
                   <i class="fa-sharp fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+              <!-- products "all category" button-->
+              <div class="hyperBtns">
+                <a herf="#" target="_blank" title="모든 카테고리 보기">
+                  <p> All Categories&nbsp;&nbsp;
+                    <i class="fa-sharp fa-solid fa-chevron-right"></i>
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- products end -->
+
+      <!-- vids start -->
+      <section id="vids" class="myScroll">
+        <div class="vidsContainer">
+          <div class="vidsTextWrap">
+            <!-- video page title -->
+            <div class="vidsTit">
+              <h2>비디오</h2>
+            </div>
+            <!-- video page description -->
+            <div class="vidsSub">
+              Lorem ipsum dolor sit amet consectetur <strong>adipisicing</strong> elit. Atque,
+              <strong>suscipit?</strong> Lorem ipsum dolor
+              sit amet
+              consectetur adipisicing elit. Atque, suscipit?Lorem ipsu
+            </div>
+          </div>
+          <!-- video list start -->
+          <div class="vidsVideoWrap"></div>
+          <!-- video "see more video" button -->
+          <p>
+            <a href="video.html">
+              바로가기 &nbsp;&nbsp;&nbsp;
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </p>
+        </div>
+      </section>
+      <!-- vids end -->
+
+      <!-- smartHome start -->
+      <section id="smartHome" class="myScroll">
+        <div class="container">
+          <!-- Slider main container -->
+          <div class="swiper-container first">
+            <!-- Slides -->
+            <div class="swiper-wrapper">
+              <article data-slide="1" class="swiper-slide">Slide 1</article>
+              <article data-slide="2" class="swiper-slide">Slide 2</article>
+              <article data-slide="3" class="swiper-slide">Slide 3</article>
+              <article data-slide="4" class="swiper-slide">Slide 4</article>
+              <article data-slide="5" class="swiper-slide">Slide 5</article>
+              <article data-slide="6" class="swiper-slide">Slide 6</article>
+              <article data-slide="7" class="swiper-slide">Slide 7</article>
+              <article data-slide="8" class="swiper-slide">Slide 8</article>
+              <article data-slide="9" class="swiper-slide">Slide 9</article>
+            </div>
+            <!-- navigation buttons -->
+            <div class="swiper-button-prev swiper-button-white"></div>
+            <div class="swiper-button-next swiper-button-white "></div>
+          </div>
+        </div>
+      </section>
+      <!-- smartHome end -->
+
+      <!-- promotion start -->
+      <section id="promotion" class="myScroll">
+        <div class="promotionContainer">
+          <img class="circleText" src="img/textCircle2.png" alt="">
+          <!-- promotion left side -->
+          <div class="promotionWrap">
+            <div class="top">
+              <!-- ikea youtube embed video -->
+              <iframe src="https://www.youtube-nocookie.com/embed/_5SyZ0TXPH0?color=white&rel=0&modestbranding=1"
+                title="YouTube video player" frameborder="0" showInfo="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen playsinline></iframe>
+            </div>
+            <div class="down">
+              <!-- imbed video description -->
+              <div class="downLeft">
+                <a href="#">
+                  <h3>Lorem ipsum dolor, sit amet consectetur </h3>
+                  <h2>Lorem ipsum dolor </h2>
+                </a>
+              </div>
+              <!-- arrow button -->
+              <div class="downRight">
+                <a href="#">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- promotion 중앙 제목 영역 -->
+          <div class="promotionWrap">
+            <h4>진행중이벤트</h4>
+          </div>
+
+          <!-- promotion 오른쪽 sns 영역 -->
+          <div class="promotionWrap">
+            <div class="sns">
+              <h3>Introducing our new floor lamp with WiFi speaker</h3>
+              <h4>The latest addition to our popular SYMFONISK series, this striking floor lamp with bamboo shade will
+                bring
+                a warm,
+                rustic charm to any room. Developed as part of the collaboration between IKEA and Sonos, it will
+                effortlessly fill your
+                room with beautiful light and your favourite sounds.</h4>
+              <p>2023.05.03ㆍDavid </p>
+              <br>
+              <br>
+
+              <h3>Lorem, ipsum dolor.</h3>
+              <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, nesciunt vero aliquam dicta unde
+                blanditiis quis. Harum animi a, saepe at eveniet vel architecto ipsum, iste velit ut aliquid nostrum?
+              </h4>
+              <p>2023.05.03ㆍDavid </p>
+              <br>
+              <br>
+
+              <h3>Lorem, ipsum dolor.</h3>
+              <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, nesciunt vero aliquam dicta unde
+                blanditiis quis. Harum animi a, saepe at eveniet vel architecto ipsum, iste velit ut aliquid nostrum?
+              </h4>
+              <p>2023.05.03ㆍDavid </p>
+              <br>
+              <br>
+
+              <h3>Lorem, ipsum dolor.</h3>
+              <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, nesciunt vero aliquam dicta unde
+                blanditiis quis. Harum animi a, saepe at eveniet vel architecto ipsum, iste velit ut aliquid nostrum?
+              </h4>
+              <p>2023.05.03ㆍDavid </p>
+              <br>
+              <br>
+
+              <h3>Lorem, ipsum dolor.</h3>
+              <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, nesciunt vero aliquam dicta unde
+                blanditiis quis. Harum animi a, saepe at eveniet vel architecto ipsum, iste velit ut aliquid nostrum?
+              </h4>
+              <p>2023.05.03ㆍDavid </p>
+              <br>
+              <br>
+
+              <h3>Lorem, ipsum dolor.</h3>
+              <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, nesciunt vero aliquam dicta unde
+                blanditiis quis. Harum animi a, saepe at eveniet vel architecto ipsum, iste velit ut aliquid nostrum?
+              </h4>
+              <p>2023.05.03ㆍDavid </p>
+              <br>
+              <br>
+
+              <h3>Lorem, ipsum dolor.</h3>
+              <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, nesciunt vero aliquam dicta unde
+                blanditiis quis. Harum animi a, saepe at eveniet vel architecto ipsum, iste velit ut aliquid nostrum?
+              </h4>
+              <p>2023.05.03ㆍDavid </p>
+              <br>
+              <br>
+
+              <h3>Lorem, ipsum dolor.</h3>
+              <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, nesciunt vero aliquam dicta unde
+                blanditiis quis. Harum animi a, saepe at eveniet vel architecto ipsum, iste velit ut aliquid nostrum?
+              </h4>
+              <p>2023.05.03ㆍDavid </p>
+              <br>
+              <br>
+            </div>
+            <div class="snsGoBtn"><a href="#">바로가기&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a></div>
+          </div>
+        </div>
+      </section>
+      <!-- promotion end -->
+
+      <!-- museum start -->
+      <section id="museum" class="myScroll">
+        <!-- left background -->
+        <div class="bgLeft">
+          <!-- left titleList -->
+          <h2 class="leftTxt">Existence Maximum</h2>
+        </div>
+        <!-- right background -->
+        <div class="bgRight">
+          <!-- right titleList -->
+          <h2 class="rightTxt">Our Roots</h2>
+        </div>
+        <div class="container">
+          <!-- Slider main container -->
+          <div class="swiper-container second">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper ">
+            </div>
+            <!-- navigation buttons -->
+            <div class="swiper-button-prev swiper-button-white"></div>
+            <div class="swiper-button-next swiper-button-white"></div>
+          </div>
+        </div>
+      </section>
+      <!-- museum  end -->
+
+      <!-- notice start -->
+      <section id="notice" class="myScroll">
+        <div class="noticeContainer">
+          <!-- left part -->
+          <div class="noticeWrap">
+            <!-- section notice title -->
+            <h4>공지사항</h4>
+            <!-- go button start-->
+            <div class="goBtn">
+              <a href="#" target="_self" title="현재창-공지사항">
+                <p>바로가기&nbsp;&nbsp;&nbsp;
+                  <span>
+                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                  </span>
                 </p>
               </a>
             </div>
+            <!-- icon container start-->
+            <p class="iconWrap">
+              <!-- facebook -->
+              <span>
+                <a href="https://www.facebook.com/IKEA.kr/?locale=ko_KR" target="_blank" title="새창-이케아 코리아 페이스북">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </span>
+              <!-- youtube -->
+              <span>
+                <a href="https://www.youtube.com/channel/UCvt32qJUh606U-W_hr-EF7A" target="_blank"
+                  title="새창-이케아 코리아 유튜브">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </span>
+              <!-- instagram -->
+              <span>
+                <a href="https://www.instagram.com/ikeakr/" target="_blank" title="새창-이케아 코리아 인스타그램">
+                  <i class="fa-brands fa-square-instagram"></i>
+                </a>
+              </span>
+              <!-- blog -->
+              <span>
+                <a href="https://lifeathome.ikea.com/blog/" target="_blank" title="새창-이케아 미국 블로그">
+                  <i class="fa-solid fa-blog"></i>
+                </a>
+              </span>
+            </p>
+          </div>
+          <!-- right part -->
+          <div class="noticeWrap">
           </div>
         </div>
-      </div>
-    </section>
-    <!-- products end -->
+      </section>
+      <!-- notice end -->
 
-    <!-- vids start -->
-    <section id="vids" class="myScroll">
-      <div class="vidsContainer">
-        <div class="vidsTextWrap">
-          <!-- video page title -->
-          <div class="vidsTit">
-            <h2>비디오</h2>
-          </div>
-          <!-- video page description -->
-          <div class="vidsSub">
-            Lorem ipsum dolor sit amet consectetur <strong>adipisicing</strong> elit. Atque,
-            <strong>suscipit?</strong> Lorem ipsum dolor
-            sit amet
-            consectetur adipisicing elit. Atque, suscipit?Lorem ipsu
-          </div>
-        </div>
-        <!-- video list start -->
-        <div class="vidsVideoWrap"></div>
-        <!-- video "see more video" button -->
-        <p>
-          <a href="video.html">
-            바로가기 &nbsp;&nbsp;&nbsp;
-            <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </p>
-      </div>
-    </section>
-    <!-- vids end -->
 
-    <!-- smartHome start -->
-    <section id="smartHome" class="myScroll">
-      <div class="container">
-        <!-- Slider main container -->
-        <div class="swiper-container first">
-          <!-- Slides -->
-          <div class="swiper-wrapper">
-            <article data-slide="1" class="swiper-slide">Slide 1</article>
-            <article data-slide="2" class="swiper-slide">Slide 2</article>
-            <article data-slide="3" class="swiper-slide">Slide 3</article>
-            <article data-slide="4" class="swiper-slide">Slide 4</article>
-            <article data-slide="5" class="swiper-slide">Slide 5</article>
-            <article data-slide="6" class="swiper-slide">Slide 6</article>
-            <article data-slide="7" class="swiper-slide">Slide 7</article>
-            <article data-slide="8" class="swiper-slide">Slide 8</article>
-            <article data-slide="9" class="swiper-slide">Slide 9</article>
-          </div>
-          <!-- navigation buttons -->
-          <div class="swiper-button-prev swiper-button-white"></div>
-          <div class="swiper-button-next swiper-button-white "></div>
-        </div>
-      </div>
-    </section>
-    <!-- smartHome end -->
+      <!-- go Top Button -->
+      <button class="goTopBtn w"> Go Top </button>
 
-    <!-- promotion start -->
-    <section id="promotion" class="myScroll">
-      <div class="promotionContainer">
-        <img class="circleText" src="img/textCircle2.png" alt="">
-        <!-- promotion left side -->
-        <div class="promotionWrap">
-          <div class="top">
-            <!-- ikea youtube embed video -->
-            <iframe src="https://www.youtube-nocookie.com/embed/_5SyZ0TXPH0?color=white&rel=0&modestbranding=1"
-              title="YouTube video player" frameborder="0" showInfo="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen playsinline></iframe>
-          </div>
-          <div class="down">
-            <!-- imbed video description -->
-            <div class="downLeft">
-              <a href="#">
-                <h3>Lorem ipsum dolor, sit amet consectetur </h3>
-                <h2>Lorem ipsum dolor </h2>
-              </a>
-            </div>
-            <!-- arrow button -->
-            <div class="downRight">
-              <a href="#">
-                <i class="fa-solid fa-arrow-right"></i>
-              </a>
+      <!-- footer start -->
+      <footer id="footer_W">
+        <img src="../img/footer1.png" alt="">
+        <div class="footerContainer">
+          <div class="footerCategory">
+            <div class="footerTopWrap">
+              <ul class="footerTop">
+                <li>International sales</li>
+                <li>About IKEA</li>
+                <li>IKEA Museum</li>
+              </ul>
+
+              <ul class="footerDown">
+                <li>Work with us</li>
+                <li>Ethics</li>
+              </ul>
             </div>
           </div>
-        </div>
-
-        <!-- promotion 중앙 제목 영역 -->
-        <div class="promotionWrap">
-          <h4>진행중이벤트</h4>
-        </div>
-
-        <!-- promotion 오른쪽 sns 영역 -->
-        <div class="promotionWrap">
-          <div class="sns">
-            <h3>Introducing our new floor lamp with WiFi speaker</h3>
-            <h4>The latest addition to our popular SYMFONISK series, this striking floor lamp with bamboo shade will
-              bring
-              a warm,
-              rustic charm to any room. Developed as part of the collaboration between IKEA and Sonos, it will
-              effortlessly fill your
-              room with beautiful light and your favourite sounds.</h4>
-            <p>2023.05.03ㆍDavid </p>
-            <br>
-            <br>
-
-            <h3>Lorem, ipsum dolor.</h3>
-            <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, nesciunt vero aliquam dicta unde
-              blanditiis quis. Harum animi a, saepe at eveniet vel architecto ipsum, iste velit ut aliquid nostrum?</h4>
-            <p>2023.05.03ㆍDavid </p>
-            <br>
-            <br>
-
-            <h3>Lorem, ipsum dolor.</h3>
-            <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, nesciunt vero aliquam dicta unde
-              blanditiis quis. Harum animi a, saepe at eveniet vel architecto ipsum, iste velit ut aliquid nostrum?</h4>
-            <p>2023.05.03ㆍDavid </p>
-            <br>
-            <br>
-
-            <h3>Lorem, ipsum dolor.</h3>
-            <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, nesciunt vero aliquam dicta unde
-              blanditiis quis. Harum animi a, saepe at eveniet vel architecto ipsum, iste velit ut aliquid nostrum?</h4>
-            <p>2023.05.03ㆍDavid </p>
-            <br>
-            <br>
-
-            <h3>Lorem, ipsum dolor.</h3>
-            <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, nesciunt vero aliquam dicta unde
-              blanditiis quis. Harum animi a, saepe at eveniet vel architecto ipsum, iste velit ut aliquid nostrum?</h4>
-            <p>2023.05.03ㆍDavid </p>
-            <br>
-            <br>
-
-            <h3>Lorem, ipsum dolor.</h3>
-            <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, nesciunt vero aliquam dicta unde
-              blanditiis quis. Harum animi a, saepe at eveniet vel architecto ipsum, iste velit ut aliquid nostrum?</h4>
-            <p>2023.05.03ㆍDavid </p>
-            <br>
-            <br>
-
-            <h3>Lorem, ipsum dolor.</h3>
-            <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, nesciunt vero aliquam dicta unde
-              blanditiis quis. Harum animi a, saepe at eveniet vel architecto ipsum, iste velit ut aliquid nostrum?</h4>
-            <p>2023.05.03ㆍDavid </p>
-            <br>
-            <br>
-
-            <h3>Lorem, ipsum dolor.</h3>
-            <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, nesciunt vero aliquam dicta unde
-              blanditiis quis. Harum animi a, saepe at eveniet vel architecto ipsum, iste velit ut aliquid nostrum?</h4>
-            <p>2023.05.03ㆍDavid </p>
-            <br>
-            <br>
+          <div class="footerLeftCategory">
+            <ul>
+              <li>Cookie information</li>
+              <li>Privacy statment</li>
+            </ul>
+            <ul>
+              <li>© Inter IKEA Systems B.V. 1999 - 2023</li>
+            </ul>
+            <ul>
+              <li>Co-worker Login</li>
+            </ul>
           </div>
-          <div class="snsGoBtn"><a href="#">바로가기&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a></div>
         </div>
-      </div>
-    </section>
-    <!-- promotion end -->
+      </footer>
+      <!-- footer end -->
+    </aside>
+    <!-- side page indicator -->
+    <ul id="scroll_navi" class="w">
+      <li class="on">Menu</li>
+      <li>video</li>
+      <li>Living</li>
+      <li>Event</li>
+      <li>Exhibit</li>
+      <li>Notice</li>
+    </ul>
 
-    <!-- museum start -->
-    <section id="museum" class="myScroll">
-      <!-- left background -->
-      <div class="bgLeft">
-        <!-- left titleList -->
-        <h2 class="leftTxt">Existence Maximum</h2>
-      </div>
-      <!-- right background -->
-      <div class="bgRight">
-        <!-- right titleList -->
-        <h2 class="rightTxt">Our Roots</h2>
-      </div>
-      <div class="container">
-        <!-- Slider main container -->
-        <div class="swiper-container second">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper ">
-          </div>
-          <!-- navigation buttons -->
-          <div class="swiper-button-prev swiper-button-white"></div>
-          <div class="swiper-button-next swiper-button-white"></div>
-        </div>
-      </div>
-    </section>
-    <!-- museum  end -->
-
-    <!-- notice start -->
-    <section id="notice" class="myScroll">
-      <div class="noticeContainer">
-        <!-- left part -->
-        <div class="noticeWrap">
-          <!-- section notice title -->
-          <h4>공지사항</h4>
-          <!-- go button start-->
-          <div class="goBtn">
-            <a href="#" target="_self" title="현재창-공지사항">
-              <p>바로가기&nbsp;&nbsp;&nbsp;
-                <span>
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                </span>
-              </p>
-            </a>
-          </div>
-          <!-- icon container start-->
-          <p class="iconWrap">
-            <!-- facebook -->
-            <span>
-              <a href="https://www.facebook.com/IKEA.kr/?locale=ko_KR" target="_blank" title="새창-이케아 코리아 페이스북">
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
-            </span>
-            <!-- youtube -->
-            <span>
-              <a href="https://www.youtube.com/channel/UCvt32qJUh606U-W_hr-EF7A" target="_blank" title="새창-이케아 코리아 유튜브">
-                <i class="fa-brands fa-youtube"></i>
-              </a>
-            </span>
-            <!-- instagram -->
-            <span>
-              <a href="https://www.instagram.com/ikeakr/" target="_blank" title="새창-이케아 코리아 인스타그램">
-                <i class="fa-brands fa-square-instagram"></i>
-              </a>
-            </span>
-            <!-- blog -->
-            <span>
-              <a href="https://lifeathome.ikea.com/blog/" target="_blank" title="새창-이케아 미국 블로그">
-                <i class="fa-solid fa-blog"></i>
-              </a>
-            </span>
+    <!-- cookie popup start -->
+    <aside id="pop">
+      <div class="content">
+        <!-- cookie pop title top -->
+        <div class="top">
+          <p class="wrap">
+            <input type="checkbox" id="ck">
+            <label for="ck">7일간 보지 않기</label>
+            <a href="#" class="close"><i class="fa-solid fa-xmark"></i> 팝업닫기</a>
           </p>
         </div>
-        <!-- right part -->
-        <div class="noticeWrap">
+
+        <div class="middle">
+          <div class="leftWrap">
+            <div class="popLeft">
+              <img src="../img/cookiePop1.png">
+            </div>
+
+            <div class="popLeft">
+              <img src="../img/cookiePop3.png">
+            </div>
+            <div class="popLeft">
+              <img src="../img/cookiePop2.png">
+            </div>
+          </div>
+          <div class="rightWrap">
+            <div class="popRight">
+              <img src="../img/cookiePop4.png">
+            </div>
+            <div class="popRight"><img src="../img/cookiePop5.png"></div>
+            <div class="popRight"><img src="../img/cookiePop6.png"></div>
+          </div>
         </div>
       </div>
-    </section>
-    <!-- notice end -->
+    </aside>
 
-
-    <!-- go Top Button -->
-    <button class="goTopBtn w"> Go Top </button>
-
-    <!-- footer start -->
-    <footer id="footer_W">
-      <img src="https://Du0Du0.github.io/IKEA-Redesign-Web/img/footer1.png" alt="">
-      <div class="footerContainer">
-        <div class="footerCategory">
-          <div class="footerTopWrap">
-            <ul class="footerTop">
-              <li>International sales</li>
-              <li>About IKEA</li>
-              <li>IKEA Museum</li>
-            </ul>
-
-            <ul class="footerDown">
-              <li>Work with us</li>
-              <li>Ethics</li>
-            </ul>
-          </div>
-        </div>
-        <div class="footerLeftCategory">
-          <ul>
-            <li>Cookie information</li>
-            <li>Privacy statment</li>
-          </ul>
-          <ul>
-            <li>© Inter IKEA Systems B.V. 1999 - 2023</li>
-          </ul>
-          <ul>
-            <li>Co-worker Login</li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-    <!-- footer end -->
-  </aside>
-  <!-- side page indicator -->
-  <ul id="scroll_navi" class="w">
-    <li class="on">Menu</li>
-    <li>video</li>
-    <li>Living</li>
-    <li>Event</li>
-    <li>Exhibit</li>
-    <li>Notice</li>
-  </ul>
-
-  <!-- cookie popup start -->
-  <aside id="pop">
-    <div class="content">
-      <!-- cookie pop title top -->
-      <div class="top">
-        <p class="wrap">
-          <input type="checkbox" id="ck">
-          <label for="ck">7일간 보지 않기</label>
-          <a href="#" class="close"><i class="fa-solid fa-xmark"></i> 팝업닫기</a>
-        </p>
-      </div>
-
-      <div class="middle">
-        <div class="leftWrap">
-          <div class="popLeft">
-            <img src="https://Du0Du0.github.io/IKEA-Redesign-Web/img/cookiePop1.png">
-          </div>
-
-          <div class="popLeft">
-            <img src="https://Du0Du0.github.io/IKEA-Redesign-Web/img/cookiePop3.png">
-          </div>
-          <div class="popLeft">
-            <img src="https://Du0Du0.github.io/IKEA-Redesign-Web/img/cookiePop2.png">
-          </div>
-        </div>
-        <div class="rightWrap">
-          <div class="popRight">
-            <img src="https://Du0Du0.github.io/IKEA-Redesign-Web/img/cookiePop4.png">
-          </div>
-          <div class="popRight"><img src="https://Du0Du0.github.io/IKEA-Redesign-Web/img/cookiePop5.png"></div>
-          <div class="popRight"><img src="https://Du0Du0.github.io/IKEA-Redesign-Web/img/cookiePop6.png"></div>
-        </div>
-      </div>
-    </div>
-  </aside>
-
-  <!-- cookie popup end -->
+    <!-- cookie popup end -->
 
 
 
 
-</body>
+  </body>
 
 
 </html>

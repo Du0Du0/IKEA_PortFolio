@@ -1,368 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Video</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script defer type="module" src="js/sub/members.js"></script>
-  <script defer type="module" src="js/common/header.js"></script>
-  <script defer type="module" src="js/common/footer.js"></script>
-  <script defer type="module" src="js/sub/video.js"></script>
-  <script defer type="module" src="js/sub/location.js"></script>
-  <script defer type="module" src="js/common/topButton.js"></script>
-  <script src="https://kit.fontawesome.com/1178528ead.js" crossorigin="anonymous"></script>
-  <link rel="shortcut icon" href="#">
-  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=be0e6a448d5b266e02a1457647324d73">
-  </script>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer type="module" src="js/sub/members.js"></script>
+    <script defer type="module" src="js/common/header.js"></script>
+    <script defer type="module" src="js/common/footer.js"></script>
+    <script defer type="module" src="js/sub/video.js"></script>
+    <script defer type="module" src="js/sub/location.js"></script>
+    <script defer type="module" src="js/common/topButton.js"></script>
+    <script src="https://kit.fontawesome.com/1178528ead.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="#">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=be0e6a448d5b266e02a1457647324d73">
+    </script>
 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script defer src="js/location.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init('PP62q-Mt-zJtTKVyq');
-    })();
-  </script>
-  <script type="text/javascript">
-    window.onload = function () {
-      document.getElementById('contact-form').addEventListener('submit', function (event) {
-        event.preventDefault();
-        this.contact_number.value = Math.random() * 100000 | 0;
-        // service ID, template ID
-        emailjs.sendForm('service_zxmrkcb', 'template_gtne1ai', this)
-          .then(function () {
-            console.log('SUCCESS!');
-          }, function (error) {
-            console.log('FAILED...', error);
-          });
-      });
-    }
-  </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script defer src="js/location.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init('PP62q-Mt-zJtTKVyq');
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+          event.preventDefault();
+          this.contact_number.value = Math.random() * 100000 | 0;
+          // service ID, template ID
+          emailjs.sendForm('service_zxmrkcb', 'template_gtne1ai', this)
+            .then(function () {
+              console.log('SUCCESS!');
+            }, function (error) {
+              console.log('FAILED...', error);
+            });
+        });
+      }
+    </script>
 
-</head>
+  </head>
 
-<body>
-  <!-- header start -->
-  <header id="header">
-    <div class="menu">
-      <i class="fa-solid fa-bars-staggered" style="rotate: 90deg;"></i>
-      <i class="fa-solid fa-xmark"></i>
-    </div>
-    <div class="logo">
-      <p><a href="index.html">IKEA</a></p>
-    </div>
-    <div class="rightBar"></div>
-    <div class="leftBar">
-      <div class="leftBarWrap">
-        <div class="leftBarTit">
-          <h2>IKEA Category</h2>
+  <body>
+    <!-- header start -->
+    <header id="header">
+      <div class="menu">
+        <i class="fa-solid fa-bars-staggered" style="rotate: 90deg;"></i>
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="logo">
+        <p><a href="index.html">IKEA</a></p>
+      </div>
+      <div class="rightBar"></div>
+      <div class="leftBar">
+        <div class="leftBarWrap">
+          <div class="leftBarTit">
+            <h2>IKEA Category</h2>
+          </div>
+          <div class="leftBarList">
+            <!-- <div class="circle"></div> -->
+            <div class="listLine"></div>
+            <ul>
+              <li><a href="members.html">Members</a></li>
+              <li><a href="video.html">Video</a></li>
+              <li>
+                <a href="location.html">Location</a>
+              </li>
+              <li>
+                <a href="gallery.html">Gallery</a>
+              </li>
+              <li>
+                <a href="department.html"></a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="signUp.html">Sign Up</a>
+              </li>
+              <li>
+                <a href="signIn.html">Sign In</a>
+              </li>
+            </ul>
+            <ul>
+              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="#"></a><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="#"></a><i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+
+          </div>
         </div>
-        <div class="leftBarList">
-          <!-- <div class="circle"></div> -->
-          <div class="listLine"></div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- location start -->
+    <section class="contents location">
+      <!-- video top banner -->
+      <figure class="subVisual">
+        <video src="../img/locationSubVisual.mp4" autoplay loop muted></video>
+        <div class="background"></div>
+      </figure>
+
+      <!-- video page title -->
+      <div class="titContainer">
+        <h1>매장찾기</h1>
+
+
+        <button type="button" onclick="window.print()" class="mapPrintBtn">
+          <i class="fa-solid fa-print"></i>&nbsp;&nbsp;&nbsp;약도 인쇄</button>
+        <button class="trafficBtn">교통정보 ON</button>
+        <div id="map">map</div>
+        <div class="storeListContainer">
+          <div class="left">
+            <h2>매장안내</h2>
+            <p>KEA는 현재 한국에 광명점, 고양점, 기흥점, 동부산점 4개 매장을 운영하고 있습니다. 약도와 오시는 길 안내는 각 매장 카테고리를 통해 볼 수 있습니다.</p>
+          </div>
+
+          <div class="rightContainer">
+            <div class="list on">
+              <div class="storeName">
+                <h2 class="tit on">고양</h2>
+              </div>
+
+              <div class="storeAddress">
+                <p>IKEA 고양점 | 경기도 고양시 덕양구 권율대로 420</p>
+              </div>
+
+              <div class="storeOpen">
+                <p><i class="fa-regular fa-clock"></i>&nbsp;&nbsp;&nbsp;
+                  <span>영업 중</span>
+                  21:00에 영업 종료
+                </p>
+                <h4>
+                  주중 11:00 AM - 09:00 PM<br>
+                  주말 10:00AM - 09:00PM</h4>
+              </div>
+
+              <div class="storePhone">
+                <p><i class="fa-solid fa-phone"></i> &nbsp;&nbsp;&nbsp;1670-4532</p>
+              </div>
+
+
+
+            </div>
+            <div class="list">
+              <div class="storeName">
+                <h2 class="tit">기흥</h2>
+              </div>
+
+              <div class="storeAddress">
+                <p>IKEA 기흥점 | 경기도 용인시 기흥구 신고매로 62</p>
+              </div>
+
+              <div class="storeOpen">
+                <p><i class="fa-regular fa-clock"></i>&nbsp;&nbsp;&nbsp;
+                  <span>영업 중</span>
+                  20:00에 영업 종료
+                </p>
+                <h4>주중 11:00 AM - 08:00 PM<br>
+                  주말 10:00AM - 09:00PM</h4>
+              </div>
+
+              <div class="storePhone">
+                <p><i class="fa-solid fa-phone"></i> &nbsp;&nbsp;&nbsp;1670-4532</p>
+              </div>
+
+
+
+
+
+            </div>
+            <div class="list">
+              <div class="storeName">
+                <h2 class="tit">광명</h2>
+              </div>
+
+              <div class="storeAddress">
+                <p>IKEA 광명점 | 경기도 광명시 일직로 17</p>
+              </div>
+
+              <div class="storeOpen">
+                <p><i class="fa-regular fa-clock"></i>&nbsp;&nbsp;&nbsp;
+                  <span>영업 중</span>
+                  20:00에 영업 종료
+                </p>
+                <h4>
+                  주중 11:00 AM - 08:00 PM<br>
+                  주말 10:00AM - 09:00PM</h4>
+              </div>
+
+              <div class="storePhone">
+                <p><i class="fa-solid fa-phone"></i> &nbsp;&nbsp;&nbsp;1670-4532</p>
+              </div>
+
+
+
+
+            </div>
+            <div class="list">
+              <div class="storeName">
+                <h2 class="tit">동부산</h2>
+              </div>
+
+              <div class="storeAddress">
+                <p>IKEA 동부산점 | 부산시 기장군 기장읍 동부산관광3로 17</p>
+              </div>
+
+              <div class="storeOpen">
+                <p><i class="fa-regular fa-clock"></i>&nbsp;&nbsp;&nbsp;
+                  <span>영업 중</span>
+                  20:00에 영업 종료
+                </p>
+                <h4>
+                  주중 11:00 AM - 08:00 PM<br>
+                  주말 10:00AM - 09:00PM</h4>
+              </div>
+
+              <div class="storePhone">
+                <p><i class="fa-solid fa-phone"></i> &nbsp;&nbsp;&nbsp;1670-4532</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="contactContainer">
+          <div class="contact">
+
+            <h2>문의</h2>
+            <p>원하는 정보를 찾지 못하셨다면 문의주세요. <br>소중한 피드백 감사드려요!</p>
+
+          </div>
+          <div class="contact">
+
+            <form id="contact-form">
+              <!-- 내부적으로 고유 키값이 넘어가는 폼요소 (수정필요 없음) -->
+              <input type="hidden" name="contact_number">
+
+              <!-- 작성하는 사용자 이름 입력받을 폼 요소 -->
+              <label><i class="fa-solid fa-user"></i>&nbsp;&nbsp;&nbsp; Name</label>
+              <input type="text" name="user_name">
+              <label><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;&nbsp;Email</label>
+
+              <!-- 작성하는 사용자의 이메일주소를 입력받을 폼 요소 -->
+              <input type="email" name="user_email">
+              <label><i class="fa-solid fa-pencil"></i>&nbsp;&nbsp;&nbsp;Message</label>
+
+              <!-- 작성 내용을 입력 받을 폼 요소 -->
+              <textarea name="message"></textarea>
+              <input class="submitBtn" type="submit" value="Send">
+            </form>
+          </div>
+          <div class="contact">
+            <div class="svgBox">
+              <!-- viewBox: 가로위치, 세로위치, 넓이비율, 세로비율 -->
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="507.000000pt" height="497.000000pt"
+                viewBox="0 0 507.000000 497.000000" preserveAspectRatio="xMidYMid meet">
+
+                <g transform="translate(0.000000,497.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                  <path
+                    d="M4260 4871 l-25 -7 0 -159 0 -160 165 0 165 0 3 154 c2 98 -1 158 -8 165 -12 12 -261 18 -300 7z m260 -166 l0 -115 -115 0 -115 0 0 63 c0 34 -3 86 -6 115 l-7 52 122 0 121 0 0 -115z" />
+                  <path
+                    d="M2461 4808 c-42 -46 -43 -50 -28 -66 16 -15 20 -14 64 31 47 46 47 47 28 65 -20 18 -21 18 -64 -30z" />
+                  <path
+                    d="M2249 4834 c-11 -13 -6 -22 34 -62 44 -44 48 -46 64 -29 16 16 15 19 -27 62 -49 50 -52 51 -71 29z" />
+                  <path
+                    d="M743 4818 c-37 -47 -234 -402 -229 -414 4 -12 47 -14 251 -14 236 0 245 1 245 19 0 11 -41 91 -92 178 -50 87 -102 177 -116 201 -24 43 -42 52 -59 30z m111 -220 c47 -81 86 -150 86 -153 0 -3 -79 -5 -175 -5 -96 0 -175 3 -175 6 0 7 149 273 163 292 5 7 11 11 12 10 2 -2 42 -69 89 -150z" />
+                  <path
+                    d="M2427 4662 c-16 -17 -14 -21 31 -65 26 -26 51 -47 54 -47 4 0 12 8 17 18 8 15 1 27 -38 66 -45 45 -48 46 -64 28z" />
+                  <path
+                    d="M2280 4625 c-42 -43 -43 -46 -27 -62 16 -16 20 -15 67 32 45 44 48 50 32 61 -24 19 -23 19 -72 -31z" />
+                  <path
+                    d="M1130 2665 l0 -1095 -95 0 -95 0 0 -128 0 -128 48 1 c26 1 766 2 1645 3 l1597 2 0 125 0 125 -95 0 -95 0 0 505 0 505 -475 0 -475 0 0 205 0 205 20 -20 c19 -19 33 -20 419 -20 226 0 410 4 424 9 32 13 43 46 24 74 -8 12 -65 74 -126 139 l-111 116 0 236 0 236 -200 0 -200 0 0 -236 0 -236 -68 -72 c-37 -39 -93 -99 -125 -133 l-57 -62 0 370 0 369 -980 0 -980 0 0 -1095z m688 500 c1 -297 0 -550 -3 -562 l-5 -23 -315 0 -315 0 0 565 0 565 318 -2 317 -3 3 -540z m610 -22 l2 -563 -280 0 -280 0 0 565 0 565 278 -2 277 -3 3 -562z m612 2 l0 -565 -280 0 -280 0 0 565 0 565 280 0 280 0 0 -565z m650 370 l0 -195 -150 0 -150 0 0 195 0 195 150 0 150 0 0 -195z m119 -372 c67 -71 121 -130 121 -133 0 -5 -741 -2 -766 3 -7 1 42 59 109 130 l120 127 148 0 147 0 121 -127z m-1993 -1095 l1 -478 -318 0 -319 0 0 480 0 480 318 -2 317 -3 1 -477z m1224 342 c0 -126 -2 -140 -17 -140 -10 -1 -265 -1 -568 0 -302 0 -558 0 -567 0 -16 0 -18 13 -18 140 l0 140 585 0 585 0 0 -140z m950 -340 l0 -480 -450 0 -450 0 0 480 0 480 450 0 450 0 0 -480z m-967 141 c15 -1 17 -15 17 -146 l0 -145 -585 0 -585 0 0 145 0 145 553 2 c303 2 559 2 567 1 8 -1 23 -2 33 -2z m17 -481 l0 -140 -585 0 -585 0 0 140 0 140 585 0 585 0 0 -140z m1140 -265 l0 -75 -1595 0 -1595 0 0 73 0 72 1595 2 1595 2 0 -74z" />
+                  <path
+                    d="M1685 3008 c-3 -8 -4 -86 -3 -173 l3 -160 25 0 25 0 0 170 c0 169 0 170 -23 173 -12 2 -24 -3 -27 -10z" />
+                  <path
+                    d="M2295 3008 c-3 -8 -4 -86 -3 -173 l3 -160 25 0 25 0 0 170 c0 169 0 170 -23 173 -12 2 -24 -3 -27 -10z" />
+                  <path
+                    d="M2558 2873 c-4 -193 -3 -203 27 -203 12 0 26 7 29 16 3 9 6 80 6 159 0 79 -3 150 -6 159 -3 9 -17 16 -30 16 -23 0 -23 0 -26 -147z" />
+                  <path
+                    d="M1687 2424 c-12 -12 -8 -329 4 -341 6 -6 19 -8 30 -6 18 5 19 14 17 177 -3 163 -4 171 -23 174 -12 2 -24 0 -28 -4z" />
+                  <path d="M2282 2403 c-21 -40 -8 -43 174 -43 l175 0 -3 28 -3 27 -167 3 c-151 2 -168 1 -176 -15z" />
+                  <path d="M3268 2459 c-39 -22 -2 -97 41 -82 40 14 46 53 13 81 -19 14 -31 15 -54 1z" />
+                  <path d="M3427 2452 c-24 -26 -21 -49 7 -67 45 -30 91 16 61 61 -19 29 -46 31 -68 6z" />
+                  <path d="M3592 2458 c-22 -28 -18 -64 9 -78 25 -14 69 11 69 39 0 38 -56 65 -78 39z" />
+                  <path d="M3758 2459 c-27 -15 -24 -68 5 -78 34 -13 67 7 67 40 0 40 -36 59 -72 38z" />
+                  <path
+                    d="M3233 2312 l-33 -3 0 -325 0 -324 340 0 340 0 -2 326 -3 327 -305 1 c-168 0 -320 0 -337 -2z m597 -327 l0 -275 -290 0 -290 0 0 275 0 275 290 0 290 0 0 -275z" />
+                  <path d="M2281 2062 c-21 -39 -3 -43 175 -40 l169 3 0 25 0 25 -167 3 c-153 2 -168 1 -177 -16z" />
+                  <path
+                    d="M2281 1727 c-6 -8 -8 -22 -5 -31 6 -15 26 -16 178 -14 l171 3 0 25 0 25 -166 3 c-133 2 -169 0 -178 -11z" />
+                  <path
+                    d="M4537 2922 c-16 -17 -14 -21 31 -65 46 -46 49 -47 65 -29 16 17 14 21 -31 65 -46 46 -49 47 -65 29z" />
+                  <path
+                    d="M4742 2887 c-41 -42 -42 -44 -24 -60 17 -16 21 -14 65 31 44 45 46 48 27 60 -11 6 -21 12 -23 12 -1 0 -22 -19 -45 -43z" />
+                  <path
+                    d="M4567 2712 c-46 -46 -47 -49 -29 -65 17 -16 21 -14 65 31 46 46 47 49 29 65 -17 16 -21 14 -65 -31z" />
+                  <path
+                    d="M4717 2742 c-16 -17 -14 -21 31 -65 46 -46 49 -47 65 -29 16 17 14 21 -31 65 -46 46 -49 47 -65 29z" />
+                  <path
+                    d="M319 2164 c-11 -13 -6 -22 34 -62 44 -44 48 -46 64 -29 16 16 15 19 -27 62 -49 50 -52 51 -71 29z" />
+                  <path
+                    d="M522 2137 c-41 -42 -42 -44 -24 -60 18 -16 21 -15 65 30 36 36 44 50 35 60 -17 21 -31 16 -76 -30z" />
+                  <path d="M352 1967 c-45 -45 -50 -58 -29 -75 9 -8 25 1 62 34 l50 43 -20 21 -21 20 -42 -43z" />
+                  <path
+                    d="M497 1992 c-16 -17 -14 -21 31 -65 46 -46 49 -47 65 -29 16 17 14 21 -31 65 -46 46 -49 47 -65 29z" />
+                  <path
+                    d="M4575 765 c-86 -30 -139 -128 -116 -214 16 -61 44 -96 97 -121 129 -63 277 41 261 182 -8 67 -41 113 -101 143 -56 28 -84 30 -141 10z m132 -61 c33 -21 63 -73 63 -107 0 -154 -218 -184 -260 -36 -33 113 98 208 197 143z" />
+                  <path
+                    d="M1330 470 l0 -70 -70 0 c-68 0 -70 -1 -70 -25 0 -24 2 -25 70 -25 l70 0 0 -70 c0 -68 1 -70 25 -70 24 0 25 2 25 70 l0 70 70 0 c68 0 70 1 70 25 0 24 -2 25 -70 25 l-70 0 0 70 c0 68 -1 70 -25 70 -24 0 -25 -2 -25 -70z" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!--  -->
+
+
+    </section>
+    <!-- video end -->
+
+    <!-- go Top Button -->
+    <button class="goTopBtn w"> Go Top </button>
+
+    <footer id="footer_W">
+      <img src="../img/footer1.png" alt="">
+      <div class="footerContainer">
+        <div class="footerCategory">
+          <div class="footerTopWrap">
+            <ul class="footerTop">
+              <li>International sales</li>
+              <li>About IKEA</li>
+              <li>IKEA Museum</li>
+            </ul>
+
+            <ul class="footerDown">
+              <li>Work with us</li>
+              <li>Ethics</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footerLeftCategory">
           <ul>
-            <li><a href="members.html">Members</a></li>
-            <li><a href="video.html">Video</a></li>
-            <li>
-              <a href="location.html">Location</a>
-            </li>
-            <li>
-              <a href="gallery.html">Gallery</a>
-            </li>
-            <li>
-              <a href="department.html"></a>
-            </li>
+            <li>Cookie information</li>
+            <li>Privacy statment</li>
           </ul>
           <ul>
-            <li>
-              <a href="signUp.html">Sign Up</a>
-            </li>
-            <li>
-              <a href="signIn.html">Sign In</a>
-            </li>
+            <li>© Inter IKEA Systems B.V. 1999 - 2023</li>
           </ul>
           <ul>
-            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-            <li><a href="#"></a><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="#"></a><i class="fa-solid fa-envelope"></i></a></li>
-          </ul>
-
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- header end -->
-
-  <!-- location start -->
-  <section class="contents location">
-    <!-- video top banner -->
-    <figure class="subVisual">
-      <video src="https://Du0Du0.github.io/IKEA-Redesign-Web/img/locationSubVisual.mp4" autoplay loop muted></video>
-      <div class="background"></div>
-    </figure>
-
-    <!-- video page title -->
-    <div class="titContainer">
-      <h1>매장찾기</h1>
-
-
-      <button type="button" onclick="window.print()" class="mapPrintBtn">
-        <i class="fa-solid fa-print"></i>&nbsp;&nbsp;&nbsp;약도 인쇄</button>
-      <button class="trafficBtn">교통정보 ON</button>
-      <div id="map">map</div>
-      <div class="storeListContainer">
-        <div class="left">
-          <h2>매장안내</h2>
-          <p>KEA는 현재 한국에 광명점, 고양점, 기흥점, 동부산점 4개 매장을 운영하고 있습니다. 약도와 오시는 길 안내는 각 매장 카테고리를 통해 볼 수 있습니다.</p>
-        </div>
-
-        <div class="rightContainer">
-          <div class="list on">
-            <div class="storeName">
-              <h2 class="tit on">고양</h2>
-            </div>
-
-            <div class="storeAddress">
-              <p>IKEA 고양점 | 경기도 고양시 덕양구 권율대로 420</p>
-            </div>
-
-            <div class="storeOpen">
-              <p><i class="fa-regular fa-clock"></i>&nbsp;&nbsp;&nbsp;
-                <span>영업 중</span>
-                21:00에 영업 종료
-              </p>
-              <h4>
-                주중 11:00 AM - 09:00 PM<br>
-                주말 10:00AM - 09:00PM</h4>
-            </div>
-
-            <div class="storePhone">
-              <p><i class="fa-solid fa-phone"></i> &nbsp;&nbsp;&nbsp;1670-4532</p>
-            </div>
-
-
-
-          </div>
-          <div class="list">
-            <div class="storeName">
-              <h2 class="tit">기흥</h2>
-            </div>
-
-            <div class="storeAddress">
-              <p>IKEA 기흥점 | 경기도 용인시 기흥구 신고매로 62</p>
-            </div>
-
-            <div class="storeOpen">
-              <p><i class="fa-regular fa-clock"></i>&nbsp;&nbsp;&nbsp;
-                <span>영업 중</span>
-                20:00에 영업 종료
-              </p>
-              <h4>주중 11:00 AM - 08:00 PM<br>
-                주말 10:00AM - 09:00PM</h4>
-            </div>
-
-            <div class="storePhone">
-              <p><i class="fa-solid fa-phone"></i> &nbsp;&nbsp;&nbsp;1670-4532</p>
-            </div>
-
-
-
-
-
-          </div>
-          <div class="list">
-            <div class="storeName">
-              <h2 class="tit">광명</h2>
-            </div>
-
-            <div class="storeAddress">
-              <p>IKEA 광명점 | 경기도 광명시 일직로 17</p>
-            </div>
-
-            <div class="storeOpen">
-              <p><i class="fa-regular fa-clock"></i>&nbsp;&nbsp;&nbsp;
-                <span>영업 중</span>
-                20:00에 영업 종료
-              </p>
-              <h4>
-                주중 11:00 AM - 08:00 PM<br>
-                주말 10:00AM - 09:00PM</h4>
-            </div>
-
-            <div class="storePhone">
-              <p><i class="fa-solid fa-phone"></i> &nbsp;&nbsp;&nbsp;1670-4532</p>
-            </div>
-
-
-
-
-          </div>
-          <div class="list">
-            <div class="storeName">
-              <h2 class="tit">동부산</h2>
-            </div>
-
-            <div class="storeAddress">
-              <p>IKEA 동부산점 | 부산시 기장군 기장읍 동부산관광3로 17</p>
-            </div>
-
-            <div class="storeOpen">
-              <p><i class="fa-regular fa-clock"></i>&nbsp;&nbsp;&nbsp;
-                <span>영업 중</span>
-                20:00에 영업 종료
-              </p>
-              <h4>
-                주중 11:00 AM - 08:00 PM<br>
-                주말 10:00AM - 09:00PM</h4>
-            </div>
-
-            <div class="storePhone">
-              <p><i class="fa-solid fa-phone"></i> &nbsp;&nbsp;&nbsp;1670-4532</p>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="contactContainer">
-        <div class="contact">
-
-          <h2>문의</h2>
-          <p>원하는 정보를 찾지 못하셨다면 문의주세요. <br>소중한 피드백 감사드려요!</p>
-
-        </div>
-        <div class="contact">
-
-          <form id="contact-form">
-            <!-- 내부적으로 고유 키값이 넘어가는 폼요소 (수정필요 없음) -->
-            <input type="hidden" name="contact_number">
-
-            <!-- 작성하는 사용자 이름 입력받을 폼 요소 -->
-            <label><i class="fa-solid fa-user"></i>&nbsp;&nbsp;&nbsp; Name</label>
-            <input type="text" name="user_name">
-            <label><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;&nbsp;Email</label>
-
-            <!-- 작성하는 사용자의 이메일주소를 입력받을 폼 요소 -->
-            <input type="email" name="user_email">
-            <label><i class="fa-solid fa-pencil"></i>&nbsp;&nbsp;&nbsp;Message</label>
-
-            <!-- 작성 내용을 입력 받을 폼 요소 -->
-            <textarea name="message"></textarea>
-            <input class="submitBtn" type="submit" value="Send">
-          </form>
-        </div>
-        <div class="contact">
-          <div class="svgBox">
-            <!-- viewBox: 가로위치, 세로위치, 넓이비율, 세로비율 -->
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="507.000000pt" height="497.000000pt"
-              viewBox="0 0 507.000000 497.000000" preserveAspectRatio="xMidYMid meet">
-
-              <g transform="translate(0.000000,497.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
-                <path
-                  d="M4260 4871 l-25 -7 0 -159 0 -160 165 0 165 0 3 154 c2 98 -1 158 -8 165 -12 12 -261 18 -300 7z m260 -166 l0 -115 -115 0 -115 0 0 63 c0 34 -3 86 -6 115 l-7 52 122 0 121 0 0 -115z" />
-                <path
-                  d="M2461 4808 c-42 -46 -43 -50 -28 -66 16 -15 20 -14 64 31 47 46 47 47 28 65 -20 18 -21 18 -64 -30z" />
-                <path
-                  d="M2249 4834 c-11 -13 -6 -22 34 -62 44 -44 48 -46 64 -29 16 16 15 19 -27 62 -49 50 -52 51 -71 29z" />
-                <path
-                  d="M743 4818 c-37 -47 -234 -402 -229 -414 4 -12 47 -14 251 -14 236 0 245 1 245 19 0 11 -41 91 -92 178 -50 87 -102 177 -116 201 -24 43 -42 52 -59 30z m111 -220 c47 -81 86 -150 86 -153 0 -3 -79 -5 -175 -5 -96 0 -175 3 -175 6 0 7 149 273 163 292 5 7 11 11 12 10 2 -2 42 -69 89 -150z" />
-                <path
-                  d="M2427 4662 c-16 -17 -14 -21 31 -65 26 -26 51 -47 54 -47 4 0 12 8 17 18 8 15 1 27 -38 66 -45 45 -48 46 -64 28z" />
-                <path
-                  d="M2280 4625 c-42 -43 -43 -46 -27 -62 16 -16 20 -15 67 32 45 44 48 50 32 61 -24 19 -23 19 -72 -31z" />
-                <path
-                  d="M1130 2665 l0 -1095 -95 0 -95 0 0 -128 0 -128 48 1 c26 1 766 2 1645 3 l1597 2 0 125 0 125 -95 0 -95 0 0 505 0 505 -475 0 -475 0 0 205 0 205 20 -20 c19 -19 33 -20 419 -20 226 0 410 4 424 9 32 13 43 46 24 74 -8 12 -65 74 -126 139 l-111 116 0 236 0 236 -200 0 -200 0 0 -236 0 -236 -68 -72 c-37 -39 -93 -99 -125 -133 l-57 -62 0 370 0 369 -980 0 -980 0 0 -1095z m688 500 c1 -297 0 -550 -3 -562 l-5 -23 -315 0 -315 0 0 565 0 565 318 -2 317 -3 3 -540z m610 -22 l2 -563 -280 0 -280 0 0 565 0 565 278 -2 277 -3 3 -562z m612 2 l0 -565 -280 0 -280 0 0 565 0 565 280 0 280 0 0 -565z m650 370 l0 -195 -150 0 -150 0 0 195 0 195 150 0 150 0 0 -195z m119 -372 c67 -71 121 -130 121 -133 0 -5 -741 -2 -766 3 -7 1 42 59 109 130 l120 127 148 0 147 0 121 -127z m-1993 -1095 l1 -478 -318 0 -319 0 0 480 0 480 318 -2 317 -3 1 -477z m1224 342 c0 -126 -2 -140 -17 -140 -10 -1 -265 -1 -568 0 -302 0 -558 0 -567 0 -16 0 -18 13 -18 140 l0 140 585 0 585 0 0 -140z m950 -340 l0 -480 -450 0 -450 0 0 480 0 480 450 0 450 0 0 -480z m-967 141 c15 -1 17 -15 17 -146 l0 -145 -585 0 -585 0 0 145 0 145 553 2 c303 2 559 2 567 1 8 -1 23 -2 33 -2z m17 -481 l0 -140 -585 0 -585 0 0 140 0 140 585 0 585 0 0 -140z m1140 -265 l0 -75 -1595 0 -1595 0 0 73 0 72 1595 2 1595 2 0 -74z" />
-                <path
-                  d="M1685 3008 c-3 -8 -4 -86 -3 -173 l3 -160 25 0 25 0 0 170 c0 169 0 170 -23 173 -12 2 -24 -3 -27 -10z" />
-                <path
-                  d="M2295 3008 c-3 -8 -4 -86 -3 -173 l3 -160 25 0 25 0 0 170 c0 169 0 170 -23 173 -12 2 -24 -3 -27 -10z" />
-                <path
-                  d="M2558 2873 c-4 -193 -3 -203 27 -203 12 0 26 7 29 16 3 9 6 80 6 159 0 79 -3 150 -6 159 -3 9 -17 16 -30 16 -23 0 -23 0 -26 -147z" />
-                <path
-                  d="M1687 2424 c-12 -12 -8 -329 4 -341 6 -6 19 -8 30 -6 18 5 19 14 17 177 -3 163 -4 171 -23 174 -12 2 -24 0 -28 -4z" />
-                <path d="M2282 2403 c-21 -40 -8 -43 174 -43 l175 0 -3 28 -3 27 -167 3 c-151 2 -168 1 -176 -15z" />
-                <path d="M3268 2459 c-39 -22 -2 -97 41 -82 40 14 46 53 13 81 -19 14 -31 15 -54 1z" />
-                <path d="M3427 2452 c-24 -26 -21 -49 7 -67 45 -30 91 16 61 61 -19 29 -46 31 -68 6z" />
-                <path d="M3592 2458 c-22 -28 -18 -64 9 -78 25 -14 69 11 69 39 0 38 -56 65 -78 39z" />
-                <path d="M3758 2459 c-27 -15 -24 -68 5 -78 34 -13 67 7 67 40 0 40 -36 59 -72 38z" />
-                <path
-                  d="M3233 2312 l-33 -3 0 -325 0 -324 340 0 340 0 -2 326 -3 327 -305 1 c-168 0 -320 0 -337 -2z m597 -327 l0 -275 -290 0 -290 0 0 275 0 275 290 0 290 0 0 -275z" />
-                <path d="M2281 2062 c-21 -39 -3 -43 175 -40 l169 3 0 25 0 25 -167 3 c-153 2 -168 1 -177 -16z" />
-                <path
-                  d="M2281 1727 c-6 -8 -8 -22 -5 -31 6 -15 26 -16 178 -14 l171 3 0 25 0 25 -166 3 c-133 2 -169 0 -178 -11z" />
-                <path
-                  d="M4537 2922 c-16 -17 -14 -21 31 -65 46 -46 49 -47 65 -29 16 17 14 21 -31 65 -46 46 -49 47 -65 29z" />
-                <path
-                  d="M4742 2887 c-41 -42 -42 -44 -24 -60 17 -16 21 -14 65 31 44 45 46 48 27 60 -11 6 -21 12 -23 12 -1 0 -22 -19 -45 -43z" />
-                <path
-                  d="M4567 2712 c-46 -46 -47 -49 -29 -65 17 -16 21 -14 65 31 46 46 47 49 29 65 -17 16 -21 14 -65 -31z" />
-                <path
-                  d="M4717 2742 c-16 -17 -14 -21 31 -65 46 -46 49 -47 65 -29 16 17 14 21 -31 65 -46 46 -49 47 -65 29z" />
-                <path
-                  d="M319 2164 c-11 -13 -6 -22 34 -62 44 -44 48 -46 64 -29 16 16 15 19 -27 62 -49 50 -52 51 -71 29z" />
-                <path
-                  d="M522 2137 c-41 -42 -42 -44 -24 -60 18 -16 21 -15 65 30 36 36 44 50 35 60 -17 21 -31 16 -76 -30z" />
-                <path d="M352 1967 c-45 -45 -50 -58 -29 -75 9 -8 25 1 62 34 l50 43 -20 21 -21 20 -42 -43z" />
-                <path
-                  d="M497 1992 c-16 -17 -14 -21 31 -65 46 -46 49 -47 65 -29 16 17 14 21 -31 65 -46 46 -49 47 -65 29z" />
-                <path
-                  d="M4575 765 c-86 -30 -139 -128 -116 -214 16 -61 44 -96 97 -121 129 -63 277 41 261 182 -8 67 -41 113 -101 143 -56 28 -84 30 -141 10z m132 -61 c33 -21 63 -73 63 -107 0 -154 -218 -184 -260 -36 -33 113 98 208 197 143z" />
-                <path
-                  d="M1330 470 l0 -70 -70 0 c-68 0 -70 -1 -70 -25 0 -24 2 -25 70 -25 l70 0 0 -70 c0 -68 1 -70 25 -70 24 0 25 2 25 70 l0 70 70 0 c68 0 70 1 70 25 0 24 -2 25 -70 25 l-70 0 0 70 c0 68 -1 70 -25 70 -24 0 -25 -2 -25 -70z" />
-              </g>
-            </svg>
-          </div>
-        </div>
-      </div>
-
-      <!--  -->
-
-
-  </section>
-  <!-- video end -->
-
-  <!-- go Top Button -->
-  <button class="goTopBtn w"> Go Top </button>
-
-  <footer id="footer_W">
-    <img src="https://Du0Du0.github.io/IKEA-Redesign-Web/img/footer1.png" alt="">
-    <div class="footerContainer">
-      <div class="footerCategory">
-        <div class="footerTopWrap">
-          <ul class="footerTop">
-            <li>International sales</li>
-            <li>About IKEA</li>
-            <li>IKEA Museum</li>
-          </ul>
-
-          <ul class="footerDown">
-            <li>Work with us</li>
-            <li>Ethics</li>
+            <li>Co-worker Login</li>
           </ul>
         </div>
       </div>
-      <div class="footerLeftCategory">
-        <ul>
-          <li>Cookie information</li>
-          <li>Privacy statment</li>
-        </ul>
-        <ul>
-          <li>© Inter IKEA Systems B.V. 1999 - 2023</li>
-        </ul>
-        <ul>
-          <li>Co-worker Login</li>
-        </ul>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-</body>
-<script>
+  </body>
+  <script>
 
 
 
-</script>
+  </script>
 
 </html>
