@@ -1120,7 +1120,7 @@ a {
   border-radius: 50%;
   border: none;
   position: fixed;
-  bottom: 15px;
+  bottom: 100px;
   right: 15px;
   z-index: 1;
   background: radial-gradient(circle, #000 4%, #000 68.99%, #fff 70%);
@@ -1155,7 +1155,7 @@ a {
   border-radius: 50%;
   border: none;
   position: fixed;
-  bottom: 15px;
+  bottom: 100px;
   right: 15px;
   color: #333;
   background: linear-gradient(270deg, #96f061, #a259d3, #1d9de0, #e790b0);
@@ -1212,7 +1212,7 @@ a {
 }
 #scroll_navi.w {
   position: fixed;
-  top: 75%;
+  top: 67%;
   right: 30px;
   transform: translateY(-50%);
   z-index: 5;
